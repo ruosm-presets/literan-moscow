@@ -25,7 +25,6 @@
         <key key="brand" value="Дикси" />
         <key key="name:en" value="Dixy" />
         <key key="name:ru" value="Дикси" />
-        <key key="brand" value="Дикси" />
         <combo key="shop" text="Тип магазина (если есть тележки на колесах - супермаркет)" values="supermarket, convenience" default="supermarket" delete_if_empty="true" />
         <key key="contact:phone" value="+7 800 3330201" />
         <key key="contact:website" value="http://dixy.ru" />
