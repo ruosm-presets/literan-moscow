@@ -45,7 +45,7 @@
         <key key="name:en" value="Magnoliya" />
         <key key="name:ru" value="Магнолия" />
         <combo key="shop" text="Тип магазина (если есть тележки на колесах - супермаркет)" values="supermarket, convenience" default="supermarket" />
-        <combo key="contact:phone" text="Телефон" default="+7 ххх ххххххх" />
+        <combo key="contact:phone" text="Телефон" />
         <key key="contact:website" value="http://www.mgnl.ru" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 10:00-22:00, Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00" />
         <space />

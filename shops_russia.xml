@@ -68,7 +68,7 @@
         <key key="name:ru" value="Магнит" />
         <key key="operator" value="ЗАО &quot;Тандер&quot;" />
         <combo key="shop" text="Тип магазина (если есть тележки на колесах - супермаркет)" values="supermarket, convenience" default="supermarket" />
-        <combo key="contact:phone" text="Телефон" default="+7 ххх ххххххх" />
+        <combo key="contact:phone" text="Телефон" />
         <key key="contact:website" value="http://magnit-info.ru" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 10:00-22:00, Mo-Su 09:30-22:00" />
         <space />
@@ -119,7 +119,7 @@
         <key key="name:ru" value="Пятёрочка" />
         <combo key="shop" text="Тип магазина (если есть тележки на колесах - супермаркет)" values="supermarket, convenience" default="supermarket" />
         <key key="alt_name" value="Пятерочка" />
-        <combo key="contact:phone" text="Телефон" default="+7 ххх ххххххх" />
+        <combo key="contact:phone" text="Телефон" />
         <key key="contact:website" value="https://5ka.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/pyaterochka" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 08:00-23:00, Mo-Sa 09:00-20:00; Su 10:00-19:00" />
@@ -154,7 +154,7 @@
         <key key="brand" value="У Палыча" />
         <key key="name:en" value="U Palycha" />
         <key key="name:ru" value="У Палыча" />
-        <combo key="contact:phone" text="Телефон" default="+7 ххх ххххххх" />
+        <combo key="contact:phone" text="Телефон" />
         <key key="contact:website" value="http://www.palich.ru" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-21:00, Mo-Sa 09:00-20:00; Su 10:00-19:00" />
         <space />
@@ -187,7 +187,7 @@
         <key key="brand" value="IL Патио" />
         <key key="name:en" value="IL Patio" />
         <key key="name:ru" value="IL Патио" />
-        <combo key="contact:phone" text="Телефон" default="+7 ххх ххххххх" />
+        <combo key="contact:phone" text="Телефон" />
         <key key="contact:website" value="http://ilpatio.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/ilpatio.ru" />
         <key key="cuisine" value="italian" />
@@ -209,7 +209,7 @@
         <key key="brand" value="Баскин Роббинс" />
         <key key="name:en" value="Baskin-Robbins" />
         <key key="name:ru" value="Баскин Роббинс" />
-        <combo key="contact:phone" text="Телефон" default="+7 ххх ххххххх" />
+        <combo key="contact:phone" text="Телефон" />
         <key key="contact:website" value="http://baskinrobbins.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/BaskinRobbinsRussia" />
         <key key="cuisine" value="ice_cream" />
@@ -254,7 +254,7 @@
         <key key="brand" value="Кофе Хауз" />
         <key key="name:en" value="Coffee House" />
         <key key="name:ru" value="Кофе Хауз" />
-        <combo key="contact:phone" text="Телефон" default="+7 ххх ххххххх" />
+        <combo key="contact:phone" text="Телефон" />
         <key key="contact:website" value="http://www.coffeehouse.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/coffeehouse.ru" />
         <key key="cuisine" value="coffee_shop" />
@@ -299,7 +299,7 @@
         <key key="brand" value="Крошка Картошка" />
         <key key="name:en" value="Kroshka Kartoshka" />
         <key key="name:ru" value="Крошка Картошка" />
-        <combo key="contact:phone" text="Телефон" default="+7 ххх ххххххх" />
+        <combo key="contact:phone" text="Телефон" />
         <key key="contact:website" value="http://www.kartoshka.com" />
         <key key="cuisine" value="potato" />
         <key key="diet:vegetarian" value="no" />
@@ -320,7 +320,7 @@
         <key key="brand" value="Кружка" />
         <key key="name:en" value="Kruzhka" />
         <key key="name:ru" value="Кружка" />
-        <combo key="contact:phone" text="Телефон" default="+7 ххх ххххххх" />
+        <combo key="contact:phone" text="Телефон" />
         <key key="contact:website" value="http://www.kruzhka.ru" />
         <key key="diet:vegetarian" value="no" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 08:00-23:00, Mo-Fr 12:00-24:00; Sa,Su 00:00-04:00,12:00-24:00" />
@@ -339,7 +339,7 @@
         <key key="name:en" value="McDonald's" />
         <key key="name:ru" value="Макдоналдс" />
         <key key="alt_name" value="Макдональдс" />
-        <combo key="contact:phone" text="Телефон" default="+7 ххх ххххххх" />
+        <combo key="contact:phone" text="Телефон" />
         <key key="contact:website" value="http://www.mcdonalds.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/mcdonaldsrussia" />
         <key key="cuisine" value="burger" />
@@ -362,7 +362,7 @@
         <key key="brand" value="Папа Джонс" />
         <key key="name:en" value="Papa John's" />
         <key key="name:ru" value="Папа Джонс" />
-        <combo key="contact:phone" text="Телефон" default="+7 ххх ххххххх" />
+        <combo key="contact:phone" text="Телефон" />
         <key key="contact:website" value="https://www.papajohns.ru" />
         <key key="cuisine" value="pizza" />
         <key key="diet:vegetarian" value="yes" />
@@ -382,7 +382,7 @@
         <key key="brand" value="Сабвэй" />
         <key key="name:en" value="Subway" />
         <key key="name:ru" value="Сабвэй" />
-        <combo key="contact:phone" text="Телефон" default="+7 ххх ххххххх" />
+        <combo key="contact:phone" text="Телефон" />
         <key key="contact:website" value="http://subway.ru" />
         <key key="cuisine" value="sandwich" />
         <key key="diet:vegetarian" value="yes" />
@@ -403,7 +403,7 @@
         <key key="brand" value="Старбакс" />
         <key key="name:en" value="Starbucks" />
         <key key="name:ru" value="Старбакс" />
-        <combo key="contact:phone" text="Телефон" default="+7 ххх ххххххх" />
+        <combo key="contact:phone" text="Телефон" />
         <key key="contact:website" value="http://starbuckscoffee.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/StarbucksRussia" />
         <key key="cuisine" value="coffee_shop" />
@@ -467,7 +467,7 @@
         <key key="brand" value="Шоколадница" />
         <key key="name:en" value="Shokoladnitsa" />
         <key key="name:ru" value="Шоколадница" />
-        <combo key="contact:phone" text="Телефон" default="+7 ххх ххххххх" />
+        <combo key="contact:phone" text="Телефон" />
         <key key="contact:website" value="http://shoko.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/shoko.ru" />
         <key key="cuisine" value="coffee_shop" />
@@ -488,7 +488,7 @@
         <key key="brand" value="Русский Аппетит" />
         <key key="name:en" value="Russian appetite" />
         <key key="name:ru" value="Русский Аппетит" />
-        <combo key="contact:phone" text="Телефон" default="+7 ххх ххххххх" />
+        <combo key="contact:phone" text="Телефон" />
         <key key="contact:website" value="http://xn--80a4abej.xn--p1ai/" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 08:00-23:00, Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
         <space />
@@ -505,7 +505,7 @@
         <key key="brand" value="Робин Сдобин" />
         <key key="name:en" value="Robin Sdobin" />
         <key key="name:ru" value="Робин Сдобин" />
-        <combo key="contact:phone" text="Телефон" default="+7 ххх ххххххх" />
+        <combo key="contact:phone" text="Телефон" />
         <key key="contact:website" value="http://sdobin.ru/" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 08:00-23:00, Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
         <space />
@@ -828,7 +828,7 @@
         <key key="name" value="Росбанк" />
         <key key="name:en" value="Rosbank" />
         <key key="name:ru" value="Росбанк" />
-        <combo key="contact:phone" text="Телефон" default="+7 ххх ххххххх" />
+        <combo key="contact:phone" text="Телефон" />
         <key key="contact:website" value="http://www.rosbank.ru" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 10:00-22:00, Mo-Fr 09:00-20:00; Sa 09:00-17:00" />
         <space />
@@ -918,7 +918,7 @@
         <key key="brand" value="А5" />
         <key key="name:en" value="A5" />
         <key key="name:ru" value="А5" />
-        <combo key="contact:phone" text="Телефон" default="+7 ххх ххххххх" />
+        <combo key="contact:phone" text="Телефон" />
         <key key="contact:website" value="http://apteka5.ru" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-22:00, Mo-Fr 09:00-21:00; Sa-Su 10:00-19:00" />
         <space />
