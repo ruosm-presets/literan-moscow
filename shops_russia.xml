@@ -522,21 +522,6 @@
         <check key="wheelchair" text="Есть ли доступ для инвалидной коляски?" disable_off="true" delete_if_empty="true" />
         <link href="http://euroset.ru/shops" text="Ссылка на сайт (время работы, координаты и т.п.)" />
       </item>
-      <item name="Mobil Element" ru.name="Мобил Элемент" type="node,closedway,multipolygon">
-        <label text="Магазин &quot;Мобил Элемент&quot;" />
-        <space />
-        <key key="shop" value="mobile_phone" />
-        <key key="name" value="Мобил Элемент" />
-        <key key="brand" value="Мобил Элемент" />
-        <key key="name:en" value="Mobil Element" />
-        <key key="name:ru" value="Мобил Элемент" />
-        <key key="contact:phone" value="+7 495 6467803" />
-        <key key="contact:website" value="http://www.mobilelement.ru" />
-        <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 08:00-22:30, Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" delete_if_empty="true" />
-        <space />
-        <check key="wheelchair" text="Есть ли доступ для инвалидной коляски?" disable_off="true" delete_if_empty="true" />
-        <link href="http://www.mobilelement.ru/map" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-      </item>
       <item name="Svyaznoy" ru.name="Связной" type="node,closedway,multipolygon">
         <label text="Магазин &quot;Связной&quot;" />
         <space />
@@ -567,21 +552,6 @@
         <space />
         <check key="wheelchair" text="Есть ли доступ для инвалидной коляски?" disable_off="true" delete_if_empty="true" />
         <link href="https://www.pandora.net/ru-ru/stores" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-      </item>
-      <item name="Ticketland.ru" ru.name="Ticketland.ru" type="node,closedway,multipolygon">
-        <label text="Билетные кассы Ticketland.ru" />
-        <space />
-        <key key="shop" value="ticket" />
-        <key key="tickets:theatre" value="yes" />
-        <key key="name" value="Ticketland.ru" />
-        <key key="brand" value="Ticketland.ru" />
-        <key key="operator" value="ООО «МДТЗК»" />
-        <combo key="contact:phone" text="Телефон" default="+7 903 xxxxxxx" delete_if_empty="true" />
-        <key key="contact:website" value="http://www.ticketland.ru" />
-        <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-21:00, Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00" delete_if_empty="true" />
-        <space />
-        <check key="wheelchair" text="Есть ли доступ для инвалидной коляски?" disable_off="true" delete_if_empty="true" />
-        <link href="http://www.ticketland.ru/kassa" text="Ссылка на сайт (время работы, координаты и т.п.)" />
       </item>
       <item name="Diana" ru.name="Диана (химчистка)" type="node,closedway,multipolygon">
         <label text="Химчистка &quot;Диана&quot;" />
@@ -798,22 +768,6 @@
         <combo key="ref" text="Номер терминала" delete_if_empty="true"></combo>
         <link href="https://qiwi.com/replenish/map.action?owners=1&amp;lng=55.73421489447054&amp;zoom=13" text="Ссылка на сайт (время работы, номера терминалов)" />
       </item>
-      <item name="InfoPayment terminal Mosinfo" ru.name="Справочно-платежный терминал Мосинфо" type="node">
-        <label text="Справочно-платежный терминал Мосинфо" />
-        <space />
-        <key key="amenity" value="payment_terminal" />
-        <key key="brand" value="Мосинфо" />
-        <key key="operator" value="ОАО «Городская информационно-справочная служба»" />
-        <key key="payment:notes" value="yes" />
-        <key key="tourism" value="information" />
-        <key key="information" value="terminal" />
-        <key key="contact:phone" value="+7 495 7774888" />
-        <key key="contact:website" value="http://www.giss.ru" />
-        <link href="https://prv1.lori-images.net/0007456673-middle.jpg" text="Фотография-пример" />
-        <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-21:00, Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00" delete_if_empty="true" />
-        <combo key="ref" text="Номер терминала" delete_if_empty="true"></combo>
-        <link href="http://www.giss.ru/#/objects/mit" text="Ссылка на сайт (время работы, номера терминалов)" />
-      </item>
       <item name="Payment terminal MKB" ru.name="Платежный терминал МКБ (Московский кредитный банк)" type="node">
         <label text="Платежный терминал МКБ" />
         <space />
@@ -912,30 +866,11 @@
         <check key="dispensing" text="Есть ли продажа лекарств по рецептам?" disable_off="true" delete_if_empty="true" />
         <link href="http://www.rigla.ru/stores" text="Ссылка на сайт (время работы, координаты и т.п.)" />
       </item>
-      <item name="Samson Pharma" ru.name="Самсон Фарма" type="node,closedway,multipolygon">
-        <label text="Аптека &quot;Самсон Фарма&quot;" />
-        <space />
-        <key key="amenity" value="pharmacy" />
-        <key key="healthcare" value="pharmacy" />
-        <key key="name" value="Самсон Фарма" />
-        <key key="brand" value="Самсон Фарма" />
-        <key key="name:en" value="Samson Pharma" />
-        <key key="name:ru" value="Самсон Фарма" />
-        <combo key="contact:phone" text="Телефон" default="+7 xxx xxxxxxx" delete_if_empty="true" />
-        <key key="contact:website" value="http://www.samson-f.ru" />
-        <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-21:00, Mo-Fr 08:00-22:00; Sa-Su 09:00-21:00" delete_if_empty="true" />
-        <space />
-        <check key="wheelchair" text="Есть ли доступ для инвалидной коляски?" disable_off="true" delete_if_empty="true" />
-        <check key="dispensing" text="Есть ли продажа лекарств по рецептам?" disable_off="true" delete_if_empty="true" />
-        <link href="http://www.samson-f.ru/info.aspx?id=10" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-      </item>
       <item name="Stolichki" ru.name="Столички" type="node,closedway,multipolygon">
         <label text="Аптека &quot;Столички&quot;" />
         <space />
         <key key="amenity" value="pharmacy" />
-		<short_description> first description </short_description>
         <key key="healthcare" value="pharmacy" />
-		<short_description> first description </short_description>
         <key key="name" value="Столички" />
         <key key="brand" value="Столички" />
         <key key="name:en" value="Stolichki" />
@@ -1621,49 +1556,16 @@
         <key key="opening_hours" value="24/7" />
         <combo key="capacity" text="Вместимость (за каждую стойку можно прицепить два велика)" delete_if_empty="true" />
       </item>
-      <item name="Moscow WC" ru.name="Городской туалет (Москва)" type="node,closedway,multipolygon">
-        <label text="Общ. туалет (Москва, рыжие кабинки, две двери, &quot;Городской туалет&quot;)" />
+      <item name="WC" ru.name="Городской туалет" type="node,closedway,multipolygon">
+        <label text="Общ. туалет" />
         <space />
-        <link href="https://atlas.mos.ru/?lang=ru&amp;z=9&amp;ll=37.63146432914275%2C55.78110268564032&amp;pa=139.3&amp;pp=37.63146309%2C55.78110533" text="Фотография-пример" />
         <key key="amenity" value="toilets" />
-        <key key="name" value="Городской туалет" />
-        <key key="name:en" value="City toilet" />
-        <key key="fee" value="yes" />
-        <key key="operator" value="ООО «Комхоз-Сервис»" />
-        <key key="payment:cash" value="yes" />
-        <key key="payment:credit_cards" value="yes" />
-        <key key="payment:debit_cards" value="yes" />
-        <key key="opening_hours" value="24/7" />
+        <text key="name" text="Название"  delete_if_empty="true" />
+        <text key="operator" text="Компания-оператор" delete_if_empty="true" />
+        <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-21:00, Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00, Mo-Th 09:00-13:00,13:45-17:00; Fr 09:00-13:00,13:45-15:45" delete_if_empty="true" />
+        <check key="fee" text="Платный" default="off"  delete_if_empty="true" />
         <key key="toilets:disposal" value="flush" />
         <key key="toilets:position" value="seated" />
-      </item>
-      <item name="Public transport tickets shop" ru.name="Киоск &quot;Проездные билеты&quot; (Москва)" type="node,closedway,multipolygon">
-        <label text="Киоск &quot;Проездные билеты&quot; (Москва)" />
-        <space />
-        <key key="building" value="kiosk" />
-        <key key="building:levels" value="1" />
-        <key key="shop" value="ticket" />
-        <key key="tickets:public_transport" value="yes" />
-        <key key="name" value="Проездные билеты"></key>
-        <key key="name:en" value="Public transport tickets"></key>
-        <key key="contact:website" value="http://www.mosgortrans.ru"></key>
-        <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-21:00, Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00, Mo-Th 09:00-13:00,13:45-17:00; Fr 09:00-13:00,13:45-15:45" delete_if_empty="true" />
-        <key key="operator" value="ГУП «Мосгортранс»" />
-      </item>
-      <item name="Moscow Parking meter" ru.name="Паркомат (Москва)" type="node">
-        <label text="Паркомат (Москва)" />
-        <space />
-        <key key="amenity" value="vending_machine" />
-        <key key="vending" value="parking_tickets" />
-        <key key="operator" value="ГКУ «Администратор Московского парковочного пространства»" />
-        <key key="payment:cash" value="no" />
-        <key key="payment:credit_cards" value="yes" />
-        <key key="payment:debit_cards" value="yes" />
-        <key key="contact:phone" value="+7 495 5395454" />
-        <key key="contact:website" value="http://parking.mos.ru" />
-        <combo key="ref" text="Номер паркомата" delete_if_empty="true" />
-        <key key="opening_hours" value="24/7" />
-        <link href="http://parking.mos.ru" text="Ссылка на сайт (номера паркоматов)" />
       </item>
       <item name="Postbox" ru.name="Почтовый ящик (Почта России)" type="node">
         <label text="Почтовый ящик (Почта России)" />
@@ -1689,16 +1591,6 @@
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-21:00, Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00" delete_if_empty="true" />
         <combo key="ref" text="Номер терминала" delete_if_empty="true"></combo>
         <link href="https://inpost.ru/ru/customers/nayti-blizhaishiy-terminal" text="Ссылка на сайт (время работы, номера почтоматов)" />
-      </item>
-      <item name="MGTS pay phone" ru.name="Телефон МГТС" type="node">
-        <label text="Телефон (таксофон) МГТС" />
-        <space />
-        <key key="amenity" value="telephone" />
-        <key key="operator" value="ОАО «Московская городская телефонная сеть»" />
-        <key key="payment:cash" value="no" />
-        <key key="payment:telephone_cards" value="yes" />
-        <key key="contact:website" value="http://mgts.ru" />
-        <key key="opening_hours" value="24/7" />
       </item>
       <item name="Rostelecom pay phone" ru.name="Телефон Ростелеком" type="node">
         <label text="Телефон (таксофон) Ростелеком" />
