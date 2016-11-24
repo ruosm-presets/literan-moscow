@@ -473,6 +473,40 @@
         <check key="internet_access:fee" text="Wi-Fi предоставляется бесплатно?" disable_off="true" value_on="no" delete_if_empty="true" />
         <link href="http://shoko.ru/moskva/adresa_kofeen" text="Ссылка на сайт (время работы, координаты и т.п.)" />
       </item>
+      <item name="Russian appetite" ru.name="Русский Аппетит" type="node,closedway,multipolygon">
+        <!-- Воронежская, Курская, Белгородская, Саратовская, Тамбовская, Орловская области-->
+        <label text="Фастфуд &quot;Русский Аппетит&quot;" />
+        <space />
+        <combo key="amenity" text="Кафе или киоск?" default="fast_food" values="fast_food,cafe" />
+        <key key="name" value="Русский Аппетит" />
+        <key key="brand" value="Русский Аппетит" />
+        <key key="name:en" value="Russian appetite" />
+        <key key="name:ru" value="Русский Аппетит" />
+        <combo key="contact:phone" text="Телефон" default="+7 ххх ххххххх" delete_if_empty="true" />
+        <key key="contact:website" value="http://xn--80a4abej.xn--p1ai/" />
+        <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 08:00-23:00, Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" delete_if_empty="true" />
+        <space />
+        <check key="wheelchair" text="Есть ли доступ для инвалидной коляски?" disable_off="true" delete_if_empty="true" />
+        <check key="internet_access" text="Есть ли Wi-Fi?" disable_off="false" value_on="wlan" delete_if_empty="true" />
+        <link href="http://xn--80a4abej.xn--p1ai/" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+      </item>
+      <item name="Robin Sdobin" ru.name="Робин Сдобин" type="node,closedway,multipolygon">
+        <!-- Воронежская, Московская, Смоленская, Владимирская и т.д.-->
+        <label text="Фастфуд &quot;Робин Сдобин&quot;" />
+        <space />
+        <key key="amenity" value="fast_food" />
+        <key key="name" value="Робин Сдобин" />
+        <key key="brand" value="Робин Сдобин" />
+        <key key="name:en" value="Robin Sdobin" />
+        <key key="name:ru" value="Робин Сдобин" />
+        <combo key="contact:phone" text="Телефон" default="+7 ххх ххххххх" delete_if_empty="true" />
+        <key key="contact:website" value="http://sdobin.ru/" />
+        <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 08:00-23:00, Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" delete_if_empty="true" />
+        <space />
+        <check key="wheelchair" text="Есть ли доступ для инвалидной коляски?" disable_off="true" delete_if_empty="true" />
+        <check key="internet_access" text="Есть ли Wi-Fi?" disable_off="false" value_on="wlan" delete_if_empty="true" />
+        <link href="http://sdobin.ru/" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+      </item>
     </group>
     <group name="Сотовая связь">
       <item name="Tele2" ru.name="Теле2" type="node,closedway,multipolygon">
