@@ -483,7 +483,7 @@
         <!-- Воронежская, Курская, Белгородская, Саратовская, Тамбовская, Орловская области-->
         <label text="Фастфуд &quot;Русский Аппетит&quot;" />
         <space />
-        <combo key="amenity" text="Кафе или киоск?" default="fast_food" values="fast_food,cafe" />
+        <combo key="amenity" text="Кафе или киоск?" default="fast_food" values="fast_food,cafe" ru.display_values="киоск,кафе" />
         <key key="name" value="Русский Аппетит" />
         <key key="brand" value="Русский Аппетит" />
         <key key="name:en" value="Russian appetite" />
