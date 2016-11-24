@@ -1,5 +1,11 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0">
+<?xml version="1.0" encoding="utf-8"?>
+<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
+  author="literan and others"
+  version="2016-11-24_1"
+  shortdescription="Moscow Shops"
+  ru.shortdescription="Московские заведения"
+  description="Default tag values for Moscow shops and amenities"
+  ru.description="Заготовки для добавления магазинов и иных заведений Москвы">
   <group name="POI" ru.name="POI">
     <group name="Продукты">
       <item name="VkusWill" ru.name="ВкусВилл" type="node,closedway,multipolygon">
