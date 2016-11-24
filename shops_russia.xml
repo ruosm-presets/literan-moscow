@@ -51,7 +51,7 @@
         <space />
         <check key="wheelchair" text="Есть ли доступ для инвалидной коляски?" disable_off="true" delete_if_empty="true" />
         <link href="http://www.krasnoeibeloe.ru/address" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:Красное_&_Белое" />
+        <key key="wikipedia" value="ru:Красное_&amp;_Белое" />
         <key key="wikidata" value="Q24933790" />
       </item>
       <item name="Magnit" ru.name="Магнит" type="node,closedway,multipolygon">
