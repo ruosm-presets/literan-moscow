@@ -17,9 +17,9 @@
         <key key="shop" value="convenience" />
         <key key="contact:phone" value="+7 495 6638602" />
         <key key="contact:website" value="http://vkusvill.ru" />
-        <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-21:00, Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00" delete_if_empty="true" />
+        <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-21:00, Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00" />
         <space />
-        <check key="wheelchair" text="Есть ли доступ для инвалидной коляски?" disable_off="true" delete_if_empty="true" />
+        <check key="wheelchair" text="Есть ли доступ для инвалидной коляски?" disable_off="true" />
         <link href="http://vkusvill.ru/shops" text="Ссылка на сайт (время работы, координаты и т.п.)" />
       </item>
       <item name="Izbyonka" ru.name="Избёнка" type="node,closedway,multipolygon">
@@ -32,9 +32,9 @@
         <key key="shop" value="dairy" />
         <key key="contact:phone" value="+7 495 6638602" />
         <key key="contact:website" value="http://vkusvill.ru" />
-        <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-21:00, Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00" delete_if_empty="true" />
+        <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-21:00, Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00" />
         <space />
-        <check key="wheelchair" text="Есть ли доступ для инвалидной коляски?" disable_off="true" delete_if_empty="true" />
+        <check key="wheelchair" text="Есть ли доступ для инвалидной коляски?" disable_off="true" />
         <link href="http://vkusvill.ru/shops" text="Ссылка на сайт (время работы, координаты и т.п.)" />
       </item>
       <item name="Magnoliya" ru.name="Магнолия" type="node,closedway,multipolygon">
@@ -44,12 +44,12 @@
         <key key="brand" value="Магнолия" />
         <key key="name:en" value="Magnoliya" />
         <key key="name:ru" value="Магнолия" />
-        <combo key="shop" text="Тип магазина (если есть тележки на колесах - супермаркет)" values="supermarket, convenience" default="supermarket" delete_if_empty="true" />
-        <combo key="contact:phone" text="Телефон" default="+7 ххх ххххххх" delete_if_empty="true" />
+        <combo key="shop" text="Тип магазина (если есть тележки на колесах - супермаркет)" values="supermarket, convenience" default="supermarket" />
+        <combo key="contact:phone" text="Телефон" default="+7 ххх ххххххх" />
         <key key="contact:website" value="http://www.mgnl.ru" />
-        <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 10:00-22:00, Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00" delete_if_empty="true" />
+        <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 10:00-22:00, Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00" />
         <space />
-        <check key="wheelchair" text="Есть ли доступ для инвалидной коляски?" disable_off="true" delete_if_empty="true" />
+        <check key="wheelchair" text="Есть ли доступ для инвалидной коляски?" disable_off="true" />
         <link href="http://www.mgnl.ru/shops" text="Ссылка на сайт (время работы, координаты и т.п.)" />
       </item>
     </group>
@@ -66,11 +66,11 @@
         <key key="contact:website" value="http://glowsubs.ru" />
         <key key="cuisine" value="sandwich" />
         <key key="diet:vegetarian" value="no" />
-        <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 10:00-22:00, Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" delete_if_empty="true" />
+        <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 10:00-22:00, Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
         <space />
-        <check key="wheelchair" text="Есть ли доступ для инвалидной коляски?" disable_off="true" delete_if_empty="true" />
-        <check key="internet_access" text="Есть ли Wi-Fi?" disable_off="true" value_on="wlan" delete_if_empty="true"></check>
-        <check key="internet_access:fee" text="Wi-Fi предоставляется бесплатно?" disable_off="true" value_on="no" delete_if_empty="true" />
+        <check key="wheelchair" text="Есть ли доступ для инвалидной коляски?" disable_off="true" />
+        <check key="internet_access" text="Есть ли Wi-Fi?" disable_off="true" value_on="wlan"></check>
+        <check key="internet_access:fee" text="Wi-Fi предоставляется бесплатно?" disable_off="true" value_on="no" />
         <link href="http://glowsubs.ru/restaurants" text="Ссылка на сайт (время работы, координаты и т.п.)" />
       </item>
     </group>
@@ -85,9 +85,9 @@
         <key key="name:ru" value="Мобил Элемент" />
         <key key="contact:phone" value="+7 495 6467803" />
         <key key="contact:website" value="http://www.mobilelement.ru" />
-        <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 08:00-22:30, Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" delete_if_empty="true" />
+        <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 08:00-22:30, Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
         <space />
-        <check key="wheelchair" text="Есть ли доступ для инвалидной коляски?" disable_off="true" delete_if_empty="true" />
+        <check key="wheelchair" text="Есть ли доступ для инвалидной коляски?" disable_off="true" />
         <link href="http://www.mobilelement.ru/map" text="Ссылка на сайт (время работы, координаты и т.п.)" />
       </item>
     </group>
@@ -100,11 +100,11 @@
         <key key="name" value="Ticketland.ru" />
         <key key="brand" value="Ticketland.ru" />
         <key key="operator" value="ООО «МДТЗК»" />
-        <combo key="contact:phone" text="Телефон" default="+7 903 xxxxxxx" delete_if_empty="true" />
+        <combo key="contact:phone" text="Телефон" default="+7 903 xxxxxxx" />
         <key key="contact:website" value="http://www.ticketland.ru" />
-        <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-21:00, Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00" delete_if_empty="true" />
+        <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-21:00, Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00" />
         <space />
-        <check key="wheelchair" text="Есть ли доступ для инвалидной коляски?" disable_off="true" delete_if_empty="true" />
+        <check key="wheelchair" text="Есть ли доступ для инвалидной коляски?" disable_off="true" />
         <link href="http://www.ticketland.ru/kassa" text="Ссылка на сайт (время работы, координаты и т.п.)" />
       </item>
       <item name="InfoPayment terminal Mosinfo" ru.name="Справочно-платежный терминал Мосинфо" type="node">
@@ -119,8 +119,8 @@
         <key key="contact:phone" value="+7 495 7774888" />
         <key key="contact:website" value="http://www.giss.ru" />
         <link href="https://prv1.lori-images.net/0007456673-middle.jpg" text="Фотография-пример" />
-        <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-21:00, Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00" delete_if_empty="true" />
-        <combo key="ref" text="Номер терминала" delete_if_empty="true"></combo>
+        <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-21:00, Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00" />
+        <combo key="ref" text="Номер терминала"></combo>
         <link href="http://www.giss.ru/#/objects/mit" text="Ссылка на сайт (время работы, номера терминалов)" />
       </item>	  
     </group>
@@ -134,12 +134,12 @@
         <key key="brand" value="Самсон Фарма" />
         <key key="name:en" value="Samson Pharma" />
         <key key="name:ru" value="Самсон Фарма" />
-        <combo key="contact:phone" text="Телефон" default="+7 xxx xxxxxxx" delete_if_empty="true" />
+        <combo key="contact:phone" text="Телефон" default="+7 xxx xxxxxxx" />
         <key key="contact:website" value="http://www.samson-f.ru" />
-        <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-21:00, Mo-Fr 08:00-22:00; Sa-Su 09:00-21:00" delete_if_empty="true" />
+        <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-21:00, Mo-Fr 08:00-22:00; Sa-Su 09:00-21:00" />
         <space />
-        <check key="wheelchair" text="Есть ли доступ для инвалидной коляски?" disable_off="true" delete_if_empty="true" />
-        <check key="dispensing" text="Есть ли продажа лекарств по рецептам?" disable_off="true" delete_if_empty="true" />
+        <check key="wheelchair" text="Есть ли доступ для инвалидной коляски?" disable_off="true" />
+        <check key="dispensing" text="Есть ли продажа лекарств по рецептам?" disable_off="true" />
         <link href="http://www.samson-f.ru/info.aspx?id=10" text="Ссылка на сайт (время работы, координаты и т.п.)" />
       </item>
     </group>
@@ -170,7 +170,7 @@
         <key key="name" value="Проездные билеты"></key>
         <key key="name:en" value="Public transport tickets"></key>
         <key key="contact:website" value="http://www.mosgortrans.ru"></key>
-        <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-21:00, Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00, Mo-Th 09:00-13:00,13:45-17:00; Fr 09:00-13:00,13:45-15:45" delete_if_empty="true" />
+        <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-21:00, Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00, Mo-Th 09:00-13:00,13:45-17:00; Fr 09:00-13:00,13:45-15:45" />
         <key key="operator" value="ГУП «Мосгортранс»" />
       </item>
       <item name="Moscow Parking meter" ru.name="Паркомат (Москва)" type="node">
@@ -184,7 +184,7 @@
         <key key="payment:debit_cards" value="yes" />
         <key key="contact:phone" value="+7 495 5395454" />
         <key key="contact:website" value="http://parking.mos.ru" />
-        <combo key="ref" text="Номер паркомата" delete_if_empty="true" />
+        <combo key="ref" text="Номер паркомата" />
         <key key="opening_hours" value="24/7" />
         <link href="http://parking.mos.ru" text="Ссылка на сайт (номера паркоматов)" />
       </item>
