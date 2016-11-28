@@ -21,6 +21,7 @@
         <space />
         <check key="wheelchair" text="Есть ли доступ для инвалидной коляски?" disable_off="true" />
         <link href="http://vkusvill.ru/shops" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <preset_link preset_name="Address" />
       </item>
       <item name="Izbyonka" ru.name="Избёнка" type="node,closedway,multipolygon">
         <label text="Магазин &quot;Избёнка&quot;" />
@@ -36,6 +37,7 @@
         <space />
         <check key="wheelchair" text="Есть ли доступ для инвалидной коляски?" disable_off="true" />
         <link href="http://vkusvill.ru/shops" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <preset_link preset_name="Address" />
       </item>
       <item name="Magnoliya" ru.name="Магнолия" type="node,closedway,multipolygon">
         <label text="Магазин &quot;Магнолия&quot;" />
@@ -51,6 +53,7 @@
         <space />
         <check key="wheelchair" text="Есть ли доступ для инвалидной коляски?" disable_off="true" />
         <link href="http://www.mgnl.ru/shops" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <preset_link preset_name="Address" />
       </item>
     </group>
     <group name="Общепит">
@@ -72,6 +75,7 @@
         <check key="internet_access" text="Есть ли Wi-Fi?" disable_off="true" value_on="wlan"></check>
         <check key="internet_access:fee" text="Wi-Fi предоставляется бесплатно?" disable_off="true" value_on="no" />
         <link href="http://glowsubs.ru/restaurants" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <preset_link preset_name="Address" />
       </item>
     </group>
     <group name="Сотовая связь">
@@ -89,6 +93,7 @@
         <space />
         <check key="wheelchair" text="Есть ли доступ для инвалидной коляски?" disable_off="true" />
         <link href="http://www.mobilelement.ru/map" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <preset_link preset_name="Address" />
       </item>
     </group>
     <group name="Прочие магазины/салоны">
@@ -106,6 +111,7 @@
         <space />
         <check key="wheelchair" text="Есть ли доступ для инвалидной коляски?" disable_off="true" />
         <link href="http://www.ticketland.ru/kassa" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <preset_link preset_name="Address" />
       </item>
       <item name="InfoPayment terminal Mosinfo" ru.name="Справочно-платежный терминал Мосинфо" type="node">
         <label text="Справочно-платежный терминал Мосинфо" />
@@ -141,6 +147,7 @@
         <check key="wheelchair" text="Есть ли доступ для инвалидной коляски?" disable_off="true" />
         <check key="dispensing" text="Есть ли продажа лекарств по рецептам?" disable_off="true" />
         <link href="http://www.samson-f.ru/info.aspx?id=10" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <preset_link preset_name="Address" />
       </item>
     </group>
     <group name="Городская инфраструктура">
@@ -172,6 +179,7 @@
         <key key="contact:website" value="http://www.mosgortrans.ru"></key>
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-21:00, Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00, Mo-Th 09:00-13:00,13:45-17:00; Fr 09:00-13:00,13:45-15:45" />
         <key key="operator" value="ГУП «Мосгортранс»" />
+        <preset_link preset_name="Address" />
       </item>
       <item name="Moscow Parking meter" ru.name="Паркомат (Москва)" type="node">
         <label text="Паркомат (Москва)" />
