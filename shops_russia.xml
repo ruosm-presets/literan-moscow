@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2016-11-24_2"
+  version="2016-12-11_1"
   shortdescription="Russian Shops"
   ru.shortdescription="Русские заведения"
   description="Default tag values for Russian shops and amenities"
@@ -1219,8 +1219,8 @@
         <space />
         <check key="wheelchair" text="Есть ли доступ для инвалидной коляски?" disable_off="true" />
       </item>
-      <item name="Центр госуслуг" type="node,closedway,multipolygon">
-        <label text="Центр госуслуг" />
+      <item name="Центр госуслуг (МФЦ)" type="node,closedway,multipolygon">
+        <label text="Центр госуслуг (МФЦ)" />
         <space />
         <key key="amenity" value="public_service" />
         <key key="office" value="government" />
