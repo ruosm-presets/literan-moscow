@@ -1288,8 +1288,8 @@
         <check key="wheelchair" text="Есть ли доступ для инвалидной коляски?" disable_off="true" />
         <preset_link preset_name="Address" />
       </item>
-      <item name="Центр госуслуг" type="node,closedway,multipolygon">
-        <label text="Центр госуслуг" />
+      <item name="Центр госуслуг (МФЦ)" type="node,closedway,multipolygon">
+        <label text="Центр госуслуг (МФЦ)" />
         <space />
         <key key="amenity" value="public_service" />
         <key key="office" value="government" />
