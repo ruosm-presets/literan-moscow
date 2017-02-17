@@ -1293,6 +1293,7 @@
         <space />
         <key key="amenity" value="public_service" />
         <key key="office" value="government" />
+        <key key="government" value="public_service" />
         <combo key="name" text="Наименование" default="Центр госуслуг n-ского района" />
         <combo key="official_name" text="Полное официальное наименование подразделения" default="Многофункциональный центр предоставления государственных и муниципальных услуг n-ского района" />
         <key key="alt_name" value="Мои документы" />
