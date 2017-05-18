@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2017-05-18_1"
+  version="2017-05-18_2"
   shortdescription="Russian Shops"
   ru.shortdescription="Российские заведения"
   description="Tagging preset for Russian shops and amenities"
@@ -9,9 +9,9 @@
 
   <!-- блок с шаблонами (chunk) -->
   <chunk id="health20_providedfor">
+    <space />
+    <label text="Категории лиц:" />
     <checkgroup columns="2">
-      <space />
-      <label text="Категории лиц:" />
       <check key="provided_for:infant" text="младенцы, ползающие (&lt;1 года)" disable_off="true" />
       <check key="provided_for:toddler" text="дети, начинающие ходить (1-3 года)" disable_off="true" />
       <check key="provided_for:child" text="дети (4-11 лет)" disable_off="true" />
@@ -1132,28 +1132,6 @@
         <link href="http://www.dryclean.ru/priemnye_punkty" text="Ссылка на сайт (время работы, координаты и т.п.)" />
         <preset_link preset_name="Address" />
       </item>
-      <item name="Zaim-Express" ru.name="Займ-Экспресс" type="node,closedway,multipolygon">
-        <label text="Микрокредитование &quot;Займ-Экспресс&quot;" />
-        <space />
-        <key key="shop" value="money_lender" />
-        <key key="name" value="Займ-Экспресс" />
-        <key key="operator" value="ООО Займ-Экспресс" />
-        <key key="name:ru" value="Займ-Экспресс" />
-        <key key="contact:phone" value="+7 800 333-02-02" />
-        <text key="ref" text="Номер офиса займа" />
-        <key key="contact:website" value="https://www.zaim-express.ru/" />
-        <key key="contact:facebook" value="https://www.facebook.com/moscowzaimexpress/" />
-        <key key="contact:vk" value="https://vk.com/z_express" />
-        <key key="contact:ok" value="https://ok.ru/zaim.express" />
-        <key key="contact:instagram" value="https://www.instagram.com/zaimexpress/" />
-        <key key="contact:google_plus" value="https://plus.google.com/+ZaimexpressRuMO/" />
-        <key key="contact:twitter" value="https://twitter.com/zaimexpres" />
-        <combo key="opening_hours" text="Время работы" default="Mo-Fr 09:00-21:00; Sa-Su 10:00-20:00" />
-        <space />
-        <check key="wheelchair" text="Есть ли доступ для инвалидной коляски?" disable_off="true" />
-        <link href="https://www.zaim-express.ru/adresa-ofisov/" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <preset_link preset_name="Address" />
-      </item>
       <item name="Ile de Beaute" ru.name="Иль де Ботэ" type="node,closedway,multipolygon">
         <label text="Магазин &quot;Иль де Ботэ&quot;" />
         <space />
@@ -1461,6 +1439,28 @@
         <link href="https://www.vtb24.ru/pages/officesearch.aspx" text="Ссылка на сайт (время работы, координаты и т.п.)" />
         <key key="wikipedia" value="ru:ВТБ 24" />
         <key key="wikidata" value="Q4102033" />
+        <preset_link preset_name="Address" />
+      </item>
+      <item name="Zaim-Express" ru.name="Займ-Экспресс" type="node,closedway,multipolygon">
+        <label text="Микрокредитование &quot;Займ-Экспресс&quot;" />
+        <space />
+        <key key="shop" value="money_lender" />
+        <key key="name" value="Займ-Экспресс" />
+        <key key="operator" value="ООО Займ-Экспресс" />
+        <key key="name:ru" value="Займ-Экспресс" />
+        <key key="contact:phone" value="+7 800 333-02-02" />
+        <text key="ref" text="Номер офиса займа" />
+        <key key="contact:website" value="https://www.zaim-express.ru/" />
+        <key key="contact:facebook" value="https://www.facebook.com/moscowzaimexpress/" />
+        <key key="contact:vk" value="https://vk.com/z_express" />
+        <key key="contact:ok" value="https://ok.ru/zaim.express" />
+        <key key="contact:instagram" value="https://www.instagram.com/zaimexpress/" />
+        <key key="contact:google_plus" value="https://plus.google.com/+ZaimexpressRuMO/" />
+        <key key="contact:twitter" value="https://twitter.com/zaimexpres" />
+        <combo key="opening_hours" text="Время работы" default="Mo-Fr 09:00-21:00; Sa-Su 10:00-20:00" />
+        <space />
+        <check key="wheelchair" text="Есть ли доступ для инвалидной коляски?" disable_off="true" />
+        <link href="https://www.zaim-express.ru/adresa-ofisov/" text="Ссылка на сайт (время работы, координаты и т.п.)" />
         <preset_link preset_name="Address" />
       </item>
       <item name="Post Bank" ru.name="Почта Банк" type="node,closedway,multipolygon">
