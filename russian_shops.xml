@@ -65,14 +65,14 @@
         <key key="name" value="Ароматный мир" />
         <key key="brand" value="Ароматный мир" />
         <key key="name:ru" value="Ароматный мир" />
-        <key key="drink:wine" value="bottled" />
-        <key key="drink:beer" value="bottled" />
-        <key key="drink:sparkling_wine" value="bottled" />
-        <key key="drink:vodka" value="bottled" />
-        <key key="drink:cognac" value="bottled" />
-        <key key="drink:beverage" value="bottled" />
-        <key key="drink:cider" value="bottled" />
-        <key key="drink:whisky" value="bottled" />
+        <key key="drink:wine" value="retail" />
+        <key key="drink:beer" value="retail" />
+        <key key="drink:sparkling_wine" value="retail" />
+        <key key="drink:vodka" value="retail" />
+        <key key="drink:cognac" value="retail" />
+        <key key="drink:beverage" value="retail" />
+        <key key="drink:cider" value="retail" />
+        <key key="drink:whisky" value="retail" />
         <combo key="contact:phone" text="Телефон" default="+7 495 7775190-xxxx" />
         <key key="contact:website" value="http://amwine.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/aromatny.mir" />
@@ -291,13 +291,13 @@
         <key key="brand" value="Отдохни" />
         <key key="name:ru" value="Отдохни" />
         <key key="shop" value="alcohol" />
-        <key key="drink:wine" value="bottled" />
-        <key key="drink:beer" value="bottled" />
-        <key key="drink:sparkling_wine" value="bottled" />
-        <key key="drink:vodka" value="bottled" />
-        <key key="drink:cognac" value="bottled" />
-        <key key="drink:beverage" value="bottled" />
-        <key key="drink:whisky" value="bottled" />
+        <key key="drink:wine" value="retail" />
+        <key key="drink:beer" value="retail" />
+        <key key="drink:sparkling_wine" value="retail" />
+        <key key="drink:vodka" value="retail" />
+        <key key="drink:cognac" value="retail" />
+        <key key="drink:beverage" value="retail" />
+        <key key="drink:whisky" value="retail" />
         <combo key="contact:phone" text="Телефон" default="+7 495 424-95-15" />
         <key key="contact:website" value="https://www.somelie.ru/" />
         <key key="contact:email" value="somelie@coolclever.ru" />
