@@ -126,13 +126,14 @@
         <key key="wikidata" value="Q758603" />
         <preset_link preset_name="Address" />
       </item>
-      <item name="Billa" type="node,closedway,multipolygon">
+      <item name="Billa" ru.name="Билла" type="node,closedway,multipolygon">
         <label text="Магазин &quot;Billa&quot;" />
         <space />
         <key key="name" value="Billa" />
         <key key="brand" value="Billa" />
         <key key="name:en" value="Billa" />
-        <key key="operator" value="ООО «BILLA»" />
+        <key key="name:ru" value="Билла" />
+        <key key="operator" value="ООО &quot;Билла&quot;" />
         <key key="shop" value="supermarket" />
         <combo key="contact:phone" text="Телефон" values="+7 495 785 7500-xxxxx" default="+7 495 785 7500" />
         <key key="contact:fax" value="+7 495 785 7501" />
@@ -169,6 +170,31 @@
         <space />
         <check key="wheelchair" text="Есть ли доступ для инвалидной коляски?" disable_off="true" />
         <link href="http://vkusvill.ru/shops" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <preset_link preset_name="Address" />
+      </item>
+      <item name="Detskiy Mir" ru.name="Детский мир" type="node,closedway,multipolygon">
+        <label text="Магазин &quot;Детский мир&quot;" />
+        <space />
+        <key key="name" value="Детский мир" />
+        <key key="brand" value="Детский мир" />
+        <key key="name:ru" value="Детский мир" />
+        <key key="name:en" value="Detskiy Mir" />
+        <key key="operator" value="ПАО &quot;Детский мир&quot;" />
+        <key key="shop" value="toys" />
+        <key key="contact:email" value="shop@detmir.ru" />
+        <combo key="contact:phone" text="Телефон" default="+7-800-2500000" />
+        <key key="contact:facebook" value="http://www.facebook.com/detmir" />
+        <key key="contact:instagram" value="https://instagram.com/detmir_shop" />
+        <key key="contact:twitter" value="https://twitter.com/detmir_official" />
+        <key key="contact:vk" value="http://www.vk.com/detmir" />
+        <key key="contact:website" value="https://www.detmir.ru" />
+        <key key="contact:youtube" value="http://www.youtube.com/detmirtv" />
+        <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-22:00, Mo-Su 09:00-23:00, Mo-Su 10:00-22:00, Mo-Su 11:00-21:00" />
+        <space />
+        <check key="wheelchair" text="Есть ли доступ для инвалидной коляски?" disable_off="true" />
+        <link href="https://www.detmir.ru/shops/" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <key key="wikipedia" value="ru:Детский мир (сеть магазинов)" />
+        <key key="wikidata" value="Q16643324" />
         <preset_link preset_name="Address" />
       </item>
       <item name="Dixy" ru.name="Дикси" type="node,closedway,multipolygon">
@@ -210,6 +236,28 @@
         <check key="wheelchair" text="Есть ли доступ для инвалидной коляски?" disable_off="true" />
         <link href="http://vkusvill.ru/shops" text="Ссылка на сайт (время работы, координаты и т.п.)" />
       </item>
+      <item name="Korablik" ru.name="Кораблик" type="node,closedway,multipolygon">
+        <label text="Магазин &quot;Кораблик&quot;" />
+        <space />
+        <key key="name" value="Кораблик" />
+        <key key="brand" value="Кораблик" />
+        <key key="name:ru" value="Кораблик" />
+        <key key="operator" value="ООО &quot;Кораблик-Р&quot;" />
+        <key key="shop" value="toys" />
+        <key key="contact:email" value="shop@korablik.ru" />
+        <combo key="contact:phone" text="Телефон" default="+7-495-6630343" />
+        <key key="contact:facebook" value="https://www.facebook.com/korablik.ru" />
+        <key key="contact:instagram" value="https://www.instagram.com/korablik.shop" />
+        <key key="contact:vk" value="https://vk.com/korablik.shops" />
+        <key key="contact:website" value="https://www.korablik.ru" />
+        <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 08:00-23:00" />
+        <space />
+        <check key="wheelchair" text="Есть ли доступ для инвалидной коляски?" disable_off="true" />
+        <link href="https://www.korablik.ru/shops" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <key key="wikipedia" value="ru:Кораблик (сеть магазинов)" />
+        <key key="wikidata" value="Q29982383" />
+        <preset_link preset_name="Address" />
+      </item>
       <item name="Krasnoye&amp;Beloye" ru.name="Красное&amp;Белое" type="node,closedway,multipolygon">
         <label text="Магазин &quot;Красное&amp;Белое&quot;" />
         <space />
@@ -230,6 +278,26 @@
         <link href="https://www.krasnoeibeloe.ru/address" text="Ссылка на сайт (время работы, координаты и т.п.)" />
         <key key="wikipedia" value="ru:Красное &amp; Белое" />
         <key key="wikidata" value="Q24933790" />
+        <preset_link preset_name="Address" />
+      </item>
+      <item name="Lenta" ru.name="Лента" type="node,closedway,multipolygon">
+        <label text="Магазин &quot;Лента&quot;" />
+        <space />
+        <key key="name" value="Лента" />
+        <key key="brand" value="Лента" />
+        <key key="name:ru" value="Лента" />
+        <key key="name:en" value="Lenta" />
+        <key key="operator" value="ООО &quot;Лента&quot;" />
+        <key key="shop" value="supermarket" />
+        <key key="contact:email" value="info@lenta.com" />
+        <combo key="contact:phone" text="Телефон" default="+7-800-7004111" />
+        <key key="contact:website" value="http://www.lenta.com" />
+        <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 08:00-23:00" />
+        <space />
+        <check key="wheelchair" text="Есть ли доступ для инвалидной коляски?" disable_off="true" />
+        <link href="http://www.lenta.com/magaziny/" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <key key="wikipedia" value="ru:Лента (сеть магазинов)" />
+        <key key="wikidata" value="Q4258608" />
         <preset_link preset_name="Address" />
       </item>
       <item name="Magnit" ru.name="Магнит" type="node,closedway,multipolygon">
