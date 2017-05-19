@@ -103,6 +103,29 @@
         <key key="wikidata" value="Q2868738" />
         <preset_link preset_name="Address" />
       </item>
+      <item name="Auchan" ru.name="Ашан" type="node,closedway,multipolygon">
+        <label text="Магазин &quot;Ашан&quot;" />
+        <space />
+        <key key="name" value="Ашан" />
+        <key key="brand" value="Ашан" />
+        <key key="name:ru" value="Ашан" />
+        <key key="name:en" value="Auchan" />
+        <key key="shop" value="supermarket" />
+        <combo key="contact:phone" text="Телефон" default="+7-800-7005800" />
+        <key key="contact:website" value="https://www.auchan.ru" />
+        <key key="contact:facebook" value="https://www.facebook.com/AuchanRussia" />
+        <key key="contact:instagram" value="https://www.instagram.com/auchan.ru/" />
+        <key key="contact:twitter" value="https://twitter.com/Auchan_ru" />
+        <key key="contact:vk" value="https://vk.com/auchan" />
+        <key key="contact:youtube" value="https://www.youtube.com/channel/UCoPpvvMHzIpZ7EcNZBEWhFg" />
+        <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 08:00-23:00, Mo-Su 09:00-22:00" />
+        <space />
+        <check key="wheelchair" text="Есть ли доступ для инвалидной коляски?" disable_off="true" />
+        <link href="https://www.auchan.ru/ru/shops" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <key key="wikipedia" value="ru:Auchan" />
+        <key key="wikidata" value="Q758603" />
+        <preset_link preset_name="Address" />
+      </item>
       <item name="Billa" type="node,closedway,multipolygon">
         <label text="Магазин &quot;Billa&quot;" />
         <space />
