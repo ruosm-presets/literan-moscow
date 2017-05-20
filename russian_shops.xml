@@ -126,6 +126,23 @@
         <key key="wikidata" value="Q758603" />
         <preset_link preset_name="Address" />
       </item>
+      <item name="Avoska" ru.name="Авоська" type="node,closedway,multipolygon">
+        <label text="Магазин &quot;Авоська&quot;" />
+        <space />
+        <key key="brand" value="Авоська" />
+        <key key="name" value="Авоська" />
+        <key key="name:ru" value="Авоська" />
+        <key key="operator" value="ООО &quot;Торговый дом &quot;Провиант&quot;" />
+        <combo key="shop" text="Тип магазина (если есть тележки на колесах - супермаркет)" values="supermarket, convenience" default="supermarket" />
+        <key key="contact:phone" value="+7 495 6567022" />
+        <key key="contact:email" value="info@avoska.ru" />
+        <key key="contact:website" value="http://www.avoska.ru" />
+        <combo key="opening_hours" text="Время работы" values="Mo-Sa 09:00-23:00; Su 09:00-22:00" />
+        <space />
+        <check key="wheelchair" text="Есть ли доступ для инвалидной коляски?" disable_off="true" />
+        <link href="http://www.avoska.ru/address/" text="Сайт (время работы, координаты и т.п.)" />
+        <preset_link preset_name="Address" />
+      </item>
       <item name="Billa" ru.name="Билла" type="node,closedway,multipolygon">
         <label text="Магазин &quot;Billa&quot;" />
         <space />
@@ -1431,6 +1448,29 @@
         <key key="wikipedia" value="ru:Спортмастер" />
         <key key="wikidata" value="Q4438176" />
         <preset_link preset_name="Address" />
+      </item>
+      <item name="Tsentrobuv" ru.name="ЦентрОбувь" type="node,closedway,multipolygon">
+        <label text="Магазин обуви &quot;ЦентрОбувь&quot;" />
+        <space />
+        <key key="shop" value="shoes" />
+        <key key="shoes" value="men;women;children" />
+        <key key="brand" value="ЦентрОбувь" />
+        <key key="name" value="ЦентрОбувь" />
+        <key key="name:ru" value="ЦентрОбувь" />
+        <key key="operator" value="АО &quot;Торговый дом &quot;Центробувь&quot;" />
+        <combo key="contact:phone" text="Телефон" default="+7 495 7820011" />
+        <key key="contact:email" value="office@out.centroshop.ru" />
+        <key key="contact:facebook" value="https://www.facebook.com/Centrobuv" />
+        <key key="contact:ok" value="http://www.odnoklassniki.ru/centrobuv" />
+        <key key="contact:vk" value="http://vk.com/centrobuv" />
+        <key key="contact:website" value="http://centrobuv.ru" />
+        <combo key="opening_hours" text="Время работы" values="Mo-Su 10:00-21:00, Mo-Su 10:00-20:00, Mo-Su 09:00-20:00, Mo-Su 09:00-19:00" />
+        <space />
+        <check key="wheelchair" text="Есть ли доступ для инвалидной коляски?" disable_off="true" />
+        <link href="http://centrobuv.ru/stores/" text="Сайт (время работы, координаты и т.п.)" />
+        <preset_link preset_name="Address" />
+        <key key="wikipedia" value="ru:ЦентрОбувь" />
+        <key key="wikidata" value="Q4504072" />
       </item>
       <item name="TVOE" ru.name="ТВОЁ" type="node,closedway,multipolygon">
         <label text="Магазин одежды &quot;ТВОЁ&quot;" />
