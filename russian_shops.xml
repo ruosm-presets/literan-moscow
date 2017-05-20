@@ -3033,7 +3033,7 @@
         <key key="contact:facebook" value="https://www.facebook.com/parking.mos.ru" />
         <key key="contact:twitter" value="https://twitter.com/parking_mos_ru" />
         <text key="ref" text="Номер паркомата" />
-        <key key="opening_hours" value="24/7" />``
+        <key key="opening_hours" value="24/7" />
         <link href="http://parking.mos.ru" text="Ссылка на сайт (номера паркоматов)" />
       </item>
       <item name="Postbox (Russian Post)" ru.name="Почтовый ящик (Почта России)" type="node">
