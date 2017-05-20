@@ -1486,6 +1486,7 @@
         <key key="shop" value="electronics" />
         <key key="name" value="М.Видео" />
         <key key="name:ru" value="М.Видео" />
+        <key key="operator" value="ООО &quot;М.Видео Менеджмент&quot;" />
         <combo key="contact:phone" text="Телефон" default="+7 800 2007775" />
         <key key="contact:email" value="24@mvideo.ru" />
         <key key="contact:facebook" value="http://facebook.com/mvideo.ru" />
