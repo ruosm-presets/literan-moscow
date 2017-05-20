@@ -2725,13 +2725,7 @@
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-22:00, Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
         <space />
         <check key="wheelchair" text="Есть ли доступ для инвалидной коляски?" disable_off="true" />
-        <preset_link preset_name="Address" />
-        <preset_link preset_name="Physician's: Main field specialties" />
-        <preset_link preset_name="Physician's: Subspecialties" />
-        <preset_link preset_name="Physician's: Subsubspecialties" />
-        <preset_link preset_name="Therapists and the alternative medicine: Main field specialties" />
-        <preset_link preset_name="Therapists and the alternative medicine: Subspecialties" />
-        <preset_link preset_name="Therapists and the alternative medicine: Subsubspecialties" />
+        <reference ref="health20_specialities_footer" />
       </item>
       <item name="Laboratory" ru.name="Лаборатория" type="node,closedway,multipolygon">
         <label text="Лаборатория (анализы и т.п.)" />
@@ -2747,13 +2741,7 @@
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-22:00, Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
         <space />
         <check key="wheelchair" text="Есть ли доступ для инвалидной коляски?" disable_off="true" />
-        <preset_link preset_name="Address" />
-        <preset_link preset_name="Physician's: Main field specialties" />
-        <preset_link preset_name="Physician's: Subspecialties" />
-        <preset_link preset_name="Physician's: Subsubspecialties" />
-        <preset_link preset_name="Therapists and the alternative medicine: Main field specialties" />
-        <preset_link preset_name="Therapists and the alternative medicine: Subspecialties" />
-        <preset_link preset_name="Therapists and the alternative medicine: Subsubspecialties" />
+        <reference ref="health20_specialities_footer" />
       </item>
       <item name="Rehab" ru.name="Реабелитационный центр" type="node,closedway,multipolygon">
         <label text="Реабелитационный центр" />
@@ -2788,13 +2776,7 @@
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-22:00, Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
         <space />
         <check key="wheelchair" text="Есть ли доступ для инвалидной коляски?" disable_off="true" />
-        <preset_link preset_name="Address" />
-        <preset_link preset_name="Physician's: Main field specialties" />
-        <preset_link preset_name="Physician's: Subspecialties" />
-        <preset_link preset_name="Physician's: Subsubspecialties" />
-        <preset_link preset_name="Therapists and the alternative medicine: Main field specialties" />
-        <preset_link preset_name="Therapists and the alternative medicine: Subspecialties" />
-        <preset_link preset_name="Therapists and the alternative medicine: Subsubspecialties" />
+        <reference ref="health20_specialities_footer" />
       </item>
       <item name="Sanatorium" ru.name="Санаторий" type="node,closedway,multipolygon">
         <label text="Санаторий (с лечебной специализацией)" />
@@ -2830,13 +2812,7 @@
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-22:00, Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
         <space />
         <check key="wheelchair" text="Есть ли доступ для инвалидной коляски?" disable_off="true" />
-        <preset_link preset_name="Address" />
-        <preset_link preset_name="Physician's: Main field specialties" />
-        <preset_link preset_name="Physician's: Subspecialties" />
-        <preset_link preset_name="Physician's: Subsubspecialties" />
-        <preset_link preset_name="Therapists and the alternative medicine: Main field specialties" />
-        <preset_link preset_name="Therapists and the alternative medicine: Subspecialties" />
-        <preset_link preset_name="Therapists and the alternative medicine: Subsubspecialties" />
+        <reference ref="health20_specialities_footer" />
       </item>
       <item name="Ambulance station" ru.name="Станция скорой помощи" type="node,closedway,multipolygon">
         <label text="Станция скорой помощи" />
@@ -2852,13 +2828,7 @@
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-22:00, Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
         <space />
         <check key="wheelchair" text="Есть ли доступ для инвалидной коляски?" disable_off="true" />
-        <preset_link preset_name="Address" />
-        <preset_link preset_name="Physician's: Main field specialties" />
-        <preset_link preset_name="Physician's: Subspecialties" />
-        <preset_link preset_name="Physician's: Subsubspecialties" />
-        <preset_link preset_name="Therapists and the alternative medicine: Main field specialties" />
-        <preset_link preset_name="Therapists and the alternative medicine: Subspecialties" />
-        <preset_link preset_name="Therapists and the alternative medicine: Subsubspecialties" />
+        <reference ref="health20_specialities_footer" />
       </item>
       <item name="First-aid center" ru.name="Травмпункт" type="node,closedway,multipolygon">
         <label text="Травмпункт" />
@@ -2875,13 +2845,7 @@
         <space />
         <check key="wheelchair" text="Есть ли доступ для инвалидной коляски?" disable_off="true" />
         <reference ref="health20_providedfor" />
-        <preset_link preset_name="Address" />
-        <preset_link preset_name="Physician's: Main field specialties" />
-        <preset_link preset_name="Physician's: Subspecialties" />
-        <preset_link preset_name="Physician's: Subsubspecialties" />
-        <preset_link preset_name="Therapists and the alternative medicine: Main field specialties" />
-        <preset_link preset_name="Therapists and the alternative medicine: Subspecialties" />
-        <preset_link preset_name="Therapists and the alternative medicine: Subsubspecialties" />
+        <reference ref="health20_specialities_footer" />
       </item>
       <item name="Hospice" ru.name="Хоспис" type="node,closedway,multipolygon">
         <label text="Хоспис" />
