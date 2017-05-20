@@ -337,6 +337,26 @@
         <link href="http://www.mgnl.ru/shops" text="Ссылка на сайт (время работы, координаты и т.п.)" />
         <preset_link preset_name="Address" />
       </item>
+      <item name="Monetka" ru.name="Монетка" type="node,closedway,multipolygon">
+        <label text="Магазин &quot;Монетка&quot;" />
+        <space />
+        <key key="brand" value="Монетка" />
+        <key key="name" value="Монетка" />
+        <key key="name:ru" value="Монетка" />
+        <key key="operator" value="ООО &quot;Фокус-Ритейл&quot;" />
+        <combo key="shop" text="Тип магазина (если есть тележки на колесах - супермаркет)" values="supermarket, convenience" default="supermarket" />
+        <key key="contact:phone" value="+7 800 1008500" />
+        <key key="contact:website" value="http://www.monetka.ru" />
+        <key key="contact:email" value="office@monetka.ru" />
+        <key key="contact:vk" value="http://vk.com/shop_monetka" />
+        <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 08:00-24:00, Mo-Su 09:00-22:00, Mo-Su 09:00-23:00" />
+        <space />
+        <check key="wheelchair" text="Есть ли доступ для инвалидной коляски?" disable_off="true" />
+        <link href="http://www.monetka.ru/urfo/shops_map" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <key key="wikipedia" value="ru:Монетка (сеть магазинов)" />
+        <key key="wikidata" value="Q4301704" />
+        <preset_link preset_name="Address" />
+      </item>
       <item name="Myasnitsky Ryad" ru.name="Мясницкий ряд" type="node,closedway,multipolygon">
         <label text="Магазин &quot;Мясницкий ряд&quot;" />
         <space />
@@ -1458,6 +1478,30 @@
         <link href="http://www.eldorado.ru/info/shops/11324" text="Ссылка на сайт (время работы, координаты и т.п.)" />
         <key key="wikipedia" value="ru:Эльдорадо (сеть магазинов)" />
         <key key="wikidata" value="Q4531492" />
+        <preset_link preset_name="Address" />
+      </item>
+      <item name="M.Video" ru.name="М.Видео" type="node,closedway,multipolygon">
+        <label text="Магазин &quot;М.Видео&quot;" />
+        <space />
+        <key key="shop" value="electronics" />
+        <key key="name" value="М.Видео" />
+        <key key="name:ru" value="М.Видео" />
+        <key key="operator" value="ООО &quot;М.Видео Менеджмент&quot;" />
+        <combo key="contact:phone" text="Телефон" default="+7 800 2007775" />
+        <key key="contact:email" value="24@mvideo.ru" />
+        <key key="contact:facebook" value="http://facebook.com/mvideo.ru" />
+        <key key="contact:instagram" value="http://www.instagram.com/mvideo_ru/" />
+        <key key="contact:ok" value="http://odnoklassniki.ru/mvideo" />
+        <key key="contact:twitter" value="http://twitter.com/mvideo" />
+        <key key="contact:vk" value="http://vk.com/mvideo" />
+        <key key="contact:website" value="http://www.mvideo.ru" />
+        <key key="contact:youtube" value="http://youtube.com/mvideoru" />
+        <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 10:00-22:00, Mo-Su 10:00-23:00" />
+        <space />
+        <check key="wheelchair" text="Есть ли доступ для инвалидной коляски?" disable_off="true" />
+        <link href="http://www.mvideo.ru/shops/store-list" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <key key="wikipedia" value="ru:М.Видео" />
+        <key key="wikidata" value="Q6558800" />
         <preset_link preset_name="Address" />
       </item>
     </group>
