@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2017-05-20_2"
+  version="2017-05-20_1"
   shortdescription="Russian Shops"
   ru.shortdescription="Российские заведения"
   description="Tagging preset for Russian shops and amenities"
@@ -3095,13 +3095,13 @@
         <combo key="name" text="Наименование" values="Автостоянка №" />
         <combo key="branch" text="Отделение/ветка" values="Тимирязевский ТС, Кировский ТС, Басманный ТС, Первомайский ТС, Киреевский ТС, Гагаринское ТС" />
         <!-- дополнить возможными значениями values -->
-        <combo key="operator" text="МГСА" />
+        <key key="operator" value="МГСА" />
         <text key="ref" text="Автостоянка №" />
         <key key="landuse" value="garages" />
         <preset_link preset_name="Address" />
       </item>
       <item name="Moscow WC booth" ru.name="Городской туалет (Москва)" type="node,closedway,multipolygon">
-        <label text="Общ. туалет (Москва, рыжие кабинки, две двери, &quot;Городской туалет&quot;)" />
+        <label text="Общественный туалет (Москва, рыжие кабинки, две двери, &quot;Городской туалет&quot;)" />
         <space />
         <!--<link href="https://atlas.mos.ru/?lang=ru&amp;z=9&amp;ll=37.63146432914275%2C55.78110268564032&amp;pa=139.3&amp;pp=37.63146309%2C55.78110533" text="Фотография-пример" />
         Найти ссылку не на атлас Москвы. Эта уже не открывается. -->
