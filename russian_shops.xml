@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2017-05-20_1"
+  version="2017-05-21_1"
   shortdescription="Russian Shops"
   ru.shortdescription="Российские заведения"
   description="Tagging preset for Russian shops and amenities"
