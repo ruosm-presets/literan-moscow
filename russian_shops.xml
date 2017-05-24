@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2017-05-22_1"
+  version="2017-05-24_1"
   shortdescription="Russian POIs"
   ru.shortdescription="Российские POI"
   description="Tagging preset for Russian shops and amenities"
@@ -169,7 +169,7 @@
         <key key="contact:email" value="info@avoska.ru" />
         <key key="contact:website" value="http://www.avoska.ru" />
         <combo key="opening_hours" text="Время работы" values="Mo-Sa 09:00-23:00; Su 09:00-22:00" />
-        <link href="http://www.avoska.ru/address/" text="Сайт (время работы, координаты и т.п.)" />
+        <link href="http://www.avoska.ru/address/" text="Ссылка на сайт (время работы, координаты и т.п.)" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Billa" ru.name="Билла" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Billa-Logo.svg/320px-Billa-Logo.svg.png">
@@ -1515,7 +1515,7 @@
         <key key="contact:vk" value="https://vk.com/centrobuv" />
         <key key="contact:website" value="http://centrobuv.ru" />
         <combo key="opening_hours" text="Время работы" values="Mo-Su 10:00-21:00, Mo-Su 10:00-20:00, Mo-Su 09:00-20:00, Mo-Su 09:00-19:00" />
-        <link href="http://centrobuv.ru/stores/" text="Сайт (время работы, координаты и т.п.)" />
+        <link href="http://centrobuv.ru/stores/" text="Ссылка на сайт (время работы, координаты и т.п.)" />
         <key key="wikipedia" value="ru:ЦентрОбувь" />
         <key key="wikidata" value="Q4504072" />
         <reference ref="wheelchair_address_footer" />
@@ -1617,7 +1617,7 @@
         <key key="name" value="Альфа-Банк" />
         <key key="name:en" value="Alfa-Bank" />
         <key key="name:ru" value="Альфа-Банк" />
-        <combo key="contact:phone" values="+7 495 7888878" default="+7 800 2000-000" />
+        <combo key="contact:phone" text="Телефон" values="+7 495 7888878" default="+7 800 2000-000" />
         <key key="contact:website" value="https://alfabank.ru/" />
         <key key="contact:email" value="mail@alfabank.ru" />
         <key key="contact:vk" value="https://vk.com/alfabank" />
@@ -1626,6 +1626,9 @@
         <key key="contact:twitter" value="https://twitter.com/alfabank" />
         <key key="contact:ok" value="https://ok.ru/alfabank" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 10:00-22:00, Mo-Fr 09:00-21:00; Sa 10:00-19:00" />
+        <combo key="bic" text="BIC-код (например UBSWUS33XXX)" />
+        <combo key="branch" text="Филиал (или отделение)" />
+        <text key="ref" text="Номер отделения (ref)" />
         <check key="atm" text="Есть ли банкомат (если он с 24-часовым доступом, лучше отдельной точкой)?" disable_off="true" />
         <link href="https://alfabank.ru/office/moscow/map/?kind=retail" text="Ссылка на сайт (время работы, координаты и т.п.)" />
         <key key="wikipedia" value="ru:Альфа-банк" />
@@ -1648,6 +1651,9 @@
         <key key="contact:instagram" value="https://instagram.com/bankvtb/" />
         <key key="contact:ok" value="https://ok.ru/vtb" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 10:00-22:00, Mo-Fr 09:00-20:00; Sa 10:00-17:00" />
+        <combo key="bic" text="BIC-код (например UBSWUS33XXX)" />
+        <combo key="branch" text="Филиал (или отделение)" />
+        <text key="ref" text="Номер отделения (ref)" />
         <check key="atm" text="Есть ли банкомат (если он с 24-часовым доступом, лучше отдельной точкой)?" disable_off="true" />
         <link href="http://www.bm.ru/ru/ofisy-banka/otdelenija" text="Ссылка на сайт (время работы, координаты и т.п.)" />
         <key key="wikipedia" value="ru:Банк Москвы" />
@@ -1668,6 +1674,9 @@
         <key key="contact:vk" value="https://vk.com/vtb24" />
         <key key="contact:twitter" value="https://twitter.com/bankvtb24" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 10:00-22:00, Mo-Fr 09:00-20:00; Sa 10:00-17:00" />
+        <combo key="bic" text="BIC-код (например UBSWUS33XXX)" />
+        <combo key="branch" text="Филиал (или отделение)" />
+        <text key="ref" text="Номер отделения (ref)" />
         <check key="atm" text="Есть ли банкомат (если он с 24-часовым доступом, лучше отдельной точкой)?" disable_off="true" />
         <link href="https://www.vtb24.ru/pages/officesearch.aspx" text="Ссылка на сайт (время работы, координаты и т.п.)" />
         <key key="wikipedia" value="ru:ВТБ 24" />
@@ -1710,6 +1719,9 @@
         <key key="contact:instagram" value="https://www.instagram.com/pochtabank/" />
         <key key="contact:youtube" value="https://www.youtube.com/channel/UCs2NW4p10fwTar-zqw7mUIw" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Fr 10:00-19:00, Mo-Su 10:00-22:00, Mo-Fr 10:00-20:00; Sa 10:00-17:00" />
+        <combo key="bic" text="BIC-код (например UBSWUS33XXX)" />
+        <combo key="branch" text="Филиал (или отделение)" />
+        <text key="ref" text="Номер отделения (ref)" />
         <check key="atm" text="Есть ли банкомат (если он с 24-часовым доступом, лучше отдельной точкой)?" disable_off="true" />
         <key key="wikipedia" value="ru:Почта Банк" />
         <key key="wikidata" value="Q24930461" />
@@ -1723,7 +1735,7 @@
         <key key="name" value="Райффайзен" />
         <key key="name:en" value="Raiffeisen" />
         <key key="name:ru" value="Райффайзен" />
-        <combo key="contact:phone" values="+7 495 7219100" default="+7 800 700-91-00"/>
+        <combo key="contact:phone" text="Телефон" values="+7 495 7219100" default="+7 800 700-91-00"/>
         <key key="contact:website" value="https://www.raiffeisen.ru" />
         <key key="contact:email" value="info@raiffeisen.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/raiffeisenbankrus" />
@@ -1732,6 +1744,9 @@
         <key key="contact:telegram" value="https://telegram.me/RaiffeisenbankBot" />
         <key key="contact:instagram" value="https://instagram.com/raiffeisenbank_rus" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 10:00-22:00, Mo-Fr 10:00-20:00; Sa 10:00-17:00" />
+        <combo key="bic" text="BIC-код (например UBSWUS33XXX)" />
+        <combo key="branch" text="Филиал (или отделение)" />
+        <text key="ref" text="Номер отделения (ref)" />
         <check key="atm" text="Есть ли банкомат (если он с 24-часовым доступом, лучше отдельной точкой)?" disable_off="true" />
         <link href="https://www.raiffeisen.ru/offices" text="Ссылка на сайт (время работы, координаты и т.п.)" />
         <key key="wikipedia" value="ru:Райффайзенбанк" />
@@ -1751,6 +1766,9 @@
         <key key="contact:vk" value="https://vk.com/rosbank" />
         <key key="contact:twitter" value="https://twitter.com/Rosbank_Info" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 10:00-22:00, Mo-Fr 09:00-20:00; Sa 09:00-17:00" />
+        <combo key="bic" text="BIC-код (например UBSWUS33XXX)" />
+        <combo key="branch" text="Филиал (или отделение)" />
+        <text key="ref" text="Номер отделения (ref)" />
         <check key="atm" text="Есть ли банкомат (если он с 24-часовым доступом, лучше отдельной точкой)?" disable_off="true" />
         <link href="https://www.rosbank.ru/ru/offices" text="Ссылка на сайт (время работы, координаты и т.п.)" />
         <key key="wikipedia" value="ru:Росбанк" />
@@ -1764,7 +1782,6 @@
         <key key="name" value="Сбербанк" />
         <key key="name:en" value="Sberbank" />
         <key key="name:ru" value="Сбербанк" />
-        <text key="ref" text="Номер доп. офиса/опер. кассы" default="" />
         <key key="contact:phone" value="+7 800 5555550" />
         <key key="contact:website" value="https://www.sberbank.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/bankdruzey" />
@@ -1774,6 +1791,9 @@
         <key key="contact:vk" value="https://vk.com/sberbank" />
         <key key="contact:ok" value="https://ok.ru/sberbank" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 10:00-22:00, Mo-Fr 09:30-20:00; Sa 10:00-18:00" />
+        <combo key="bic" text="BIC-код (например UBSWUS33XXX)" />
+        <combo key="branch" text="Филиал (или отделение)" />
+        <text key="ref" text="Номер доп. офиса/опер. кассы (ref)" />
         <check key="atm" text="Есть ли банкомат (если он с 24-часовым доступом, лучше отдельной точкой)?" disable_off="true" />
         <link href="https://www.sberbank.ru/ru/about/today/oib" text="Ссылка на сайт (время работы, координаты и т.п.)" />
         <key key="wikipedia" value="ru:Сбербанк России" />
@@ -1832,7 +1852,7 @@
         <key key="payment:notes" value="yes" />
         <key key="payment:credit_cards" value="yes" />
         <key key="payment:debit_cards" value="yes" />
-        <combo key="contact:phone" values="+7 495 7774888" default="+7 800 100-4-888"/>
+        <combo key="contact:phone" text="Телефон" values="+7 495 7774888" default="+7 800 100-4-888"/>
         <key key="contact:website" value="https://mkb.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/mkb.ru" />
         <key key="contact:instagram" value="https://www.instagram.com/bankmkb/" />
@@ -1876,7 +1896,7 @@
         <key key="name" value="А5" />
         <key key="brand" value="А5" />
         <key key="name:ru" value="А5" />
-        <combo key="contact:phone" values="+7 495 120-12-85" default="+7 800 200-63-03"/>
+        <combo key="contact:phone" text="Телефон" values="+7 495 120-12-85" default="+7 800 200-63-03"/>
         <key key="contact:website" value="http://apteka5.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/apteka5/" />
         <key key="contact:vk" value="https://vk.com/apteka_a5" />
@@ -1925,7 +1945,7 @@
         <key key="brand" value="Ортека" />
         <key key="name:ru" value="Ортека" />
         <key key="operator" value="ООО «НИКАМЕД»" />
-        <combo key="contact:phone" values="+7 495 7755000" default="+7 800 33-33-112" />
+        <combo key="contact:phone" text="Телефон" values="+7 495 7755000" default="+7 800 33-33-112" />
         <key key="contact:website" value="https://www.orteka.ru" />
         <key key="contact:vk" value="https://vk.com/orteka_ru" />
         <key key="contact:facebook" value="https://www.facebook.com/orteka.rus" />
@@ -2005,7 +2025,7 @@
         <key key="name" value="CMD" />
         <key key="alt_name" value="Центр молекулярной диагностики" />
         <key key="brand" value="CMD" />
-        <combo key="contact:phone" values="+7 495 7880001" default="+7 800 707 788 1"/>
+        <combo key="contact:phone" text="Телефон" values="+7 495 7880001" default="+7 800 707 788 1"/>
         <key key="contact:website" value="http://www.cmd-online.ru" />
         <key key="contact:email" value="info@cmd-online.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/cmd.online.social" />
@@ -2029,7 +2049,7 @@
         <key key="name" value="Гемотест" />
         <key key="brand" value="Гемотест" />
         <key key="name:ru" value="Гемотест" />
-        <combo key="contact:phone" values="+7 495 5321313" default="+7 800 550-13-13"/>
+        <combo key="contact:phone" text="Телефон" values="+7 495 5321313" default="+7 800 550-13-13"/>
         <key key="contact:website" value="https://www.gemotest.ru" />
         <key key="contact:vk" value="https://vk.com/gemotestlab" />
         <key key="contact:facebook" value="https://www.facebook.com/pages/%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%B8%D1%8F-%D0%93%D0%B5%D0%BC%D0%BE%D1%82%D0%B5%D1%81%D1%82-%D0%92%D1%81%D0%B5-%D0%BE%D0%B1-%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%85/197602150273658" />
@@ -2049,7 +2069,7 @@
         <key key="name" value="Инвитро" />
         <key key="brand" value="Инвитро" />
         <key key="name:ru" value="Инвитро" />
-        <combo key="contact:phone" values="+7 495 3630363" default="+7 800 200-363-0"/>
+        <combo key="contact:phone" text="Телефон" values="+7 495 3630363" default="+7 800 200-363-0"/>
         <key key="contact:website" value="https://www.invitro.ru" />
         <key key="contact:email" value="info@invitro.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/invitro.ru/" />
@@ -2890,7 +2910,7 @@
       <item name="City garage" ru.name="Городской гараж (зелёный поликарбонат)" type="closedway,multipolygon">
         <label text="Гараж во дворе (стены и крыша из зелёного поликарбоната)" />
         <space />
-        <combo key="building" text="Одиночный или группа?" values="garage,garages" display_values="одиночный, группа" default="garages" />
+        <combo key="building" text="Гараж или гаражи?" values="garage,garages" display_values="гараж, гаражи" default="garages" />
         <key key="building:levels" value="1" />
         <key key="building:colour" value="#3A8538" />
         <key key="building:material" value="plastic" />
@@ -3177,7 +3197,7 @@
         <key key="building" value="service" />
         <key key="building:levels" value="1" />
         <key key="power" value="substation" />
-        <combo key="location" text="Расположение (будка, в здании)" values="indoor, kiosk" />
+        <combo key="location" text="Расположение (будка, в здании)" values="indoor, kiosk" display_values="в здании, будка"/>
         <key key="substation" value="minor_distribution" />
         <combo key="operator" text="Компания-оператор" />
         <text key="ref" text="Номер" />
