@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2017-05-24_1"
+  version="2017-06-03_1"
   shortdescription="Russian POIs"
   ru.shortdescription="Российские POI"
   description="Tagging preset for Russian shops and amenities"
@@ -38,15 +38,25 @@
   <!-- ownership_website_phone используется только в учебных заведениях -->
   <chunk id="ownership_website_phone">
     <combo key="ownership" text="Форма собственности" default="state" values="state, private" display_values="государственная, частная" />
-    <combo key="contact:website" text="Веб-сайт" />
-    <combo key="contact:phone" text="Телефон" />
+    <reference ref="website_phone"/>
   </chunk>
-  <!-- building_address_footer используется ... на сооружениях -->
+  <!-- building_address_footer используется на сооружениях -->
   <chunk id="building_address_footer">
     <preset_link preset_name="Building" />
     <preset_link preset_name="Address" />
   </chunk>
-  <!-- health20_providedfor и health20_specialities_footer — схема тегирования Healthcare_2.0 только для медицинских заведений -->
+  <!-- website_phone -->
+  <chunk id="website_phone">
+    <combo key="contact:website" text="Веб-сайт" />
+    <combo key="contact:phone" text="Телефон" />
+  </chunk>
+  <!-- name_website_phone_oh используется, по факту, в медицинских учреждениях-->
+  <chunk id="name_website_phone_oh">
+    <text key="name" text="Наименование" />
+    <reference ref="website_phone"/>
+    <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-22:00, Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
+  </chunk>
+  <!-- health20_providedfor и health20_specialities_footer — схема тегирования Healthcare_2.0 только для медицинских учреждениях -->
   <chunk id="health20_providedfor">
     <space />
     <label text="Категории лиц:" />
@@ -721,7 +731,7 @@
         <key key="contact:website" value="http://www.coffeehouse.ru" />
         <key key="contact:email" value="info@coffeehouse.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/coffeehouse.ru" />
-        <key key="contact:instgram" value="https://instagram.com/coffeehouse" />
+        <key key="contact:instagram" value="https://instagram.com/coffeehouse" />
         <key key="contact:vk" value="https://vk.com/ru_coffeehouse" />
         <key key="contact:twitter" value="https://twitter.com/#!/ru_coffeehouse" />
         <key key="contact:youtube" value="https://www.youtube.com/user/CoffeeHouseMan" />
@@ -1053,7 +1063,7 @@
         <key key="contact:facebook" value="https://www.facebook.com/yakitoriyacafe" />
         <key key="contact:vk" value="https://vk.com/yakitoriyacafe" />
         <key key="contact:instagram" value="https://www.instagram.com/yakitoriyacafe/" />
-        <key key="cuisine" value="sushi" />
+        <key key="cuisine" value="japanese" />
         <key key="diet:vegetarian" value="yes" />
         <key key="delivery" value="yes" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 10:00-06:00, Mo-Su 10:00-05:00; Mo-Su 11:00-06:00" />
@@ -2110,8 +2120,7 @@
         <key key="government" value="register_office" />
         <combo key="name" text="Наименование" default="N-ское управление ЗАГС" />
         <combo key="official_name" text="Полное официальное наименование подразделения" default="N-ское управление ЗАГС N-ской области" />
-        <combo key="contact:website" text="Веб-сайт" />
-        <combo key="contact:phone" text="Телефон"/>
+        <reference ref="website_phone"/>
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-21:00, Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00, Mo-Th 09:00-13:00,13:45-17:00; Fr 09:00-13:00,13:45-15:45" />
         <key key="wikipedia" value="ru:ЗАГС" />
         <key key="wikidata" value="Q254213" />
@@ -2275,8 +2284,7 @@
         <key key="office" value="government" />
         <key key="government" value="education" />
         <combo key="name" text="Наименование подразделения" default="Управление образования N-ского района" />
-        <combo key="contact:website" text="Веб-сайт" />
-        <combo key="contact:phone" text="Телефон" />
+        <reference ref="website_phone"/>
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-21:00, Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00, Mo-Th 09:00-12:30,13:15-18:00; Fr 09:00-12:30,13:15-17:00" />
         <reference ref="wheelchair_address_footer" />
       </item>
@@ -2287,8 +2295,7 @@
         <key key="government" value="healthcare" />
         <combo key="name" text="Наименование" default="Центр гигиены и эпидемиологии по N-скому району" />
         <combo key="official_name" text="Полное официальное наименование подразделения" default="Федеральное бюджетное учреждение здравоохранения &quot;Центр гигиены и эпидемиологии по N-скому району&quot;" />
-        <combo key="contact:website" text="Веб-сайт" />
-        <combo key="contact:phone" text="Телефон" />
+        <reference ref="website_phone"/>
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-21:00, Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00, Mo-Th 09:00-13:00,13:45-17:00; Fr 09:00-13:00,13:45-15:45" />
         <reference ref="wheelchair_address_footer" />
       </item>
@@ -2316,8 +2323,7 @@
         <key key="government" value="recruitment" />
         <combo key="name" text="Наименование" default="Центр занятости населения" />
         <combo key="official_name" text="Полное официальное наименование подразделения" default="Государственное казенное учреждение &quot;...ский центр занятости населения&quot;" />
-        <combo key="contact:website" text="Веб-сайт" />
-        <combo key="contact:phone" text="Телефон"/>
+        <reference ref="website_phone"/>
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-21:00, Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00, Mo-Th 09:00-13:00,13:45-17:00; Fr 09:00-13:00,13:45-15:45" />
         <key key="wikipedia" value="ru:Биржа труда" />
         <key key="wikidata" value="Q1690950" />
@@ -2331,8 +2337,7 @@
         <key key="social_facility:for" value="disabled;senior" />
         <combo key="name" text="Наименование" default="Территориальный центр социального обслуживания &quot;...&quot;" />
         <combo key="official_name" text="Полное официальное наименование подразделения" default="Государственное бюджетное учреждение Территориальный центр социального обслуживания &quot;...&quot;" />
-        <combo key="contact:website" text="Веб-сайт" />
-        <combo key="contact:phone" text="Телефон" />
+        <reference ref="website_phone"/>
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-21:00, Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00, Mo-Th 09:00-20:00; Fr 09:00-18:45; Sa 09:00-17:00" />
         <reference ref="wheelchair_address_footer" />
       </item>
@@ -2520,10 +2525,7 @@
         <key key="healthcare" value="hospital" />
         <key key="health_facility:type" value="hospital" />
         <key key="medical_system:western" value="yes" />
-        <text key="name" text="Наименование" />
-        <combo key="contact:website" text="Веб-сайт" />
-        <combo key="contact:phone" text="Телефон" />
-        <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-22:00, Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
+        <reference ref="name_website_phone_oh"/>
         <reference ref="wheelchair_address_footer" />
         <reference ref="health20_providedfor" />
         <item_separator />
@@ -2537,10 +2539,7 @@
         <key key="amenity" value="clinic" />
         <key key="healthcare" value="clinic" />
         <key key="health_facility:type" value="clinic" />
-        <text key="name" text="Наименование" />
-        <combo key="contact:website" text="Веб-сайт" />
-        <combo key="contact:phone" text="Телефон"/>
-        <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-22:00, Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
+        <reference ref="name_website_phone_oh"/>
         <reference ref="wheelchair_address_footer" />
         <space />
         <label text="Медицинская система:" />
@@ -2563,10 +2562,7 @@
         <key key="amenity" value="doctors" />
         <key key="healthcare" value="doctor" />
         <key key="health_facility:type" value="office" />
-        <text key="name" text="Наименование" />
-        <combo key="contact:website" text="Веб-сайт" />
-        <combo key="contact:phone" text="Телефон"/>
-        <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-22:00, Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
+        <reference ref="name_website_phone_oh"/>
         <reference ref="wheelchair_address_footer" />
         <space />
         <label text="Медицинская система:" />
@@ -2592,10 +2588,7 @@
         <key key="medical_system:western" value="yes" />
         <key key="health_specialty:gynaecology" value="main" />
         <key key="provided_for:female" value="yes" />
-        <text key="name" text="Наименование" />
-        <combo key="contact:website" text="Веб-сайт" />
-        <combo key="contact:phone" text="Телефон" />
-        <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-22:00, Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
+        <reference ref="name_website_phone_oh"/>
         <reference ref="wheelchair_address_footer" />
         <reference ref="health20_specialities_footer" />
       </item>
@@ -2607,10 +2600,7 @@
         <key key="health_facility:type" value="laboratory" />
         <key key="medical_system:western" value="yes" />
         <key key="health_specialty:microbiology" value="yes" />
-        <text key="name" text="Наименование" />
-        <combo key="contact:website" text="Веб-сайт" />
-        <combo key="contact:phone" text="Телефон" />
-        <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-22:00, Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
+        <reference ref="name_website_phone_oh"/>
         <reference ref="wheelchair_address_footer" />
         <reference ref="health20_specialities_footer" />
       </item>
@@ -2621,10 +2611,7 @@
         <key key="healthcare" value="rehabilitation" />
         <key key="health_facility:type" value="rehabilitation" />
         <key key="medical_system:western" value="yes" />
-        <text key="name" text="Наименование" />
-        <combo key="contact:website" text="Веб-сайт" />
-        <combo key="contact:phone" text="Телефон" />
-        <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-22:00, Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
+        <reference ref="name_website_phone_oh"/>
         <reference ref="wheelchair_address_footer" />
         <item_separator />
         <label text="Если реабелитационный центр специализированный (например, наркологический)," />
@@ -2640,10 +2627,7 @@
         <key key="medical_system:western" value="yes" />
         <key key="health_specialty:gynaecology" value="main" />
         <key key="provided_for:female" value="yes" />
-        <text key="name" text="Наименование" />
-        <combo key="contact:website" text="Веб-сайт" />
-        <combo key="contact:phone" text="Телефон"/>
-        <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-22:00, Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
+        <reference ref="name_website_phone_oh"/>
         <reference ref="wheelchair_address_footer" />
         <reference ref="health20_specialities_footer" />
       </item>
@@ -2655,10 +2639,7 @@
         <key key="healthcare" value="yes" />
         <key key="health_facility:type" value="therapy" />
         <key key="medical_system:western" value="yes" />
-        <text key="name" text="Наименование" />
-        <combo key="contact:website" text="Веб-сайт" />
-        <combo key="contact:phone" text="Телефон" />
-        <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-22:00, Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
+        <reference ref="name_website_phone_oh"/>
         <reference ref="wheelchair_address_footer" />
         <item_separator />
         <label text="Если санаторий специализированный (например, кардиологический)," />
@@ -2674,9 +2655,8 @@
         <key key="medical_system:western" value="yes" />
         <key key="health_specialty:dentistry" value="yes" />
         <text key="name" text="Наименование" />
-        <combo key="contact:website" text="Веб-сайт" />
-        <combo key="contact:phone" text="Телефон" />
         <combo key="health_facility:type" text="Клиника или кабинет стоматолога" values="clinic, doctors" />
+        <reference ref="website_phone"/>
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-22:00, Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
         <reference ref="wheelchair_address_footer" />
         <reference ref="health20_providedfor" />
@@ -2690,10 +2670,7 @@
         <key key="health_facility:type" value="first_aid" />
         <key key="medical_system:western" value="yes" />
         <key key="health_specialty:emergency" value="yes" />
-        <text key="name" text="Наименование" />
-        <combo key="contact:website" text="Веб-сайт" />
-        <combo key="contact:phone" text="Телефон" />
-        <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-22:00, Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
+        <reference ref="name_website_phone_oh"/>
         <reference ref="wheelchair_address_footer" />
         <reference ref="health20_specialities_footer" />
       </item>
@@ -2705,10 +2682,7 @@
         <key key="health_facility:type" value="first_aid" />
         <key key="medical_system:western" value="yes" />
         <key key="health_specialty:traumatology" value="yes" />
-        <text key="name" text="Наименование" />
-        <combo key="contact:website" text="Веб-сайт" />
-        <combo key="contact:phone" text="Телефон" />
-        <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-22:00, Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
+        <reference ref="name_website_phone_oh"/>
         <reference ref="wheelchair_address_footer" />
         <reference ref="health20_providedfor" />
         <reference ref="health20_specialities_footer" />
@@ -2721,10 +2695,7 @@
         <key key="health_facility:type" value="nursing_home" />
         <key key="medical_system:western" value="yes" />
         <key key="health_specialty:palliative" value="yes" />
-        <text key="name" text="Наименование" />
-        <combo key="contact:website" text="Веб-сайт" />
-        <combo key="contact:phone" text="Телефон" />
-        <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-22:00, Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
+        <reference ref="name_website_phone_oh"/>
         <reference ref="wheelchair_address_footer" />
       </item>
     </group>
