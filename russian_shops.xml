@@ -2640,10 +2640,8 @@
         <key key="health_facility:type" value="clinic" />
         <key key="medical_system:western" value="yes" />
         <key key="health_specialty:dentistry" value="yes" />
-        <text key="name" text="Наименование" />
         <combo key="health_facility:type" text="Клиника или кабинет стоматолога" values="clinic, doctors" />
-        <reference ref="website_phone"/>
-        <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-22:00, Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
+        <reference ref="name_website_phone_oh"/>
         <reference ref="wheelchair_address_footer" />
         <reference ref="health20_providedfor" />
         <reference ref="health20_specialities_footer" />
