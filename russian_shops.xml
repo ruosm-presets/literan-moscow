@@ -56,6 +56,13 @@
     <reference ref="website_phone"/>
     <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-22:00, Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
   </chunk>
+  <!-- bic_branch_ref_atm используется в банках -->
+  <chunk id="bic_branch_ref_atm">
+    <combo key="bic" text="BIC-код (например UBSWUS33XXX)" />
+    <combo key="branch" text="Филиал (или отделение)" />
+    <text key="ref" text="Номер отделения (ref)" />
+    <check key="atm" text="Есть ли банкомат (если он с 24-часовым доступом, лучше отдельной точкой)?" disable_off="true" />
+  </chunk>
   <!-- health20_providedfor и health20_specialities_footer — схема тегирования Healthcare_2.0 только для медицинских учреждениях -->
   <chunk id="health20_providedfor">
     <space />
@@ -1636,10 +1643,7 @@
         <key key="contact:twitter" value="https://twitter.com/alfabank" />
         <key key="contact:ok" value="https://ok.ru/alfabank" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 10:00-22:00, Mo-Fr 09:00-21:00; Sa 10:00-19:00" />
-        <combo key="bic" text="BIC-код (например UBSWUS33XXX)" />
-        <combo key="branch" text="Филиал (или отделение)" />
-        <text key="ref" text="Номер отделения (ref)" />
-        <check key="atm" text="Есть ли банкомат (если он с 24-часовым доступом, лучше отдельной точкой)?" disable_off="true" />
+        <reference ref="bic_branch_ref_atm"/>
         <link href="https://alfabank.ru/office/moscow/map/?kind=retail" text="Ссылка на сайт (время работы, координаты и т.п.)" />
         <key key="wikipedia" value="ru:Альфа-банк" />
         <key key="wikidata" value="Q1377835" />
@@ -1661,10 +1665,7 @@
         <key key="contact:instagram" value="https://instagram.com/bankvtb/" />
         <key key="contact:ok" value="https://ok.ru/vtb" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 10:00-22:00, Mo-Fr 09:00-20:00; Sa 10:00-17:00" />
-        <combo key="bic" text="BIC-код (например UBSWUS33XXX)" />
-        <combo key="branch" text="Филиал (или отделение)" />
-        <text key="ref" text="Номер отделения (ref)" />
-        <check key="atm" text="Есть ли банкомат (если он с 24-часовым доступом, лучше отдельной точкой)?" disable_off="true" />
+        <reference ref="bic_branch_ref_atm"/>
         <link href="http://www.bm.ru/ru/ofisy-banka/otdelenija" text="Ссылка на сайт (время работы, координаты и т.п.)" />
         <key key="wikipedia" value="ru:Банк Москвы" />
         <key key="wikidata" value="Q767946" />
@@ -1684,10 +1685,7 @@
         <key key="contact:vk" value="https://vk.com/vtb24" />
         <key key="contact:twitter" value="https://twitter.com/bankvtb24" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 10:00-22:00, Mo-Fr 09:00-20:00; Sa 10:00-17:00" />
-        <combo key="bic" text="BIC-код (например UBSWUS33XXX)" />
-        <combo key="branch" text="Филиал (или отделение)" />
-        <text key="ref" text="Номер отделения (ref)" />
-        <check key="atm" text="Есть ли банкомат (если он с 24-часовым доступом, лучше отдельной точкой)?" disable_off="true" />
+        <reference ref="bic_branch_ref_atm"/>
         <link href="https://www.vtb24.ru/pages/officesearch.aspx" text="Ссылка на сайт (время работы, координаты и т.п.)" />
         <key key="wikipedia" value="ru:ВТБ 24" />
         <key key="wikidata" value="Q4102033" />
@@ -1729,10 +1727,7 @@
         <key key="contact:instagram" value="https://www.instagram.com/pochtabank/" />
         <key key="contact:youtube" value="https://www.youtube.com/channel/UCs2NW4p10fwTar-zqw7mUIw" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Fr 10:00-19:00, Mo-Su 10:00-22:00, Mo-Fr 10:00-20:00; Sa 10:00-17:00" />
-        <combo key="bic" text="BIC-код (например UBSWUS33XXX)" />
-        <combo key="branch" text="Филиал (или отделение)" />
-        <text key="ref" text="Номер отделения (ref)" />
-        <check key="atm" text="Есть ли банкомат (если он с 24-часовым доступом, лучше отдельной точкой)?" disable_off="true" />
+        <reference ref="bic_branch_ref_atm"/>
         <key key="wikipedia" value="ru:Почта Банк" />
         <key key="wikidata" value="Q24930461" />
         <link href="https://www.pochtabank.ru/map" text="Ссылка на сайт (время работы, координаты и т.п.)" />
@@ -1754,10 +1749,7 @@
         <key key="contact:telegram" value="https://telegram.me/RaiffeisenbankBot" />
         <key key="contact:instagram" value="https://instagram.com/raiffeisenbank_rus" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 10:00-22:00, Mo-Fr 10:00-20:00; Sa 10:00-17:00" />
-        <combo key="bic" text="BIC-код (например UBSWUS33XXX)" />
-        <combo key="branch" text="Филиал (или отделение)" />
-        <text key="ref" text="Номер отделения (ref)" />
-        <check key="atm" text="Есть ли банкомат (если он с 24-часовым доступом, лучше отдельной точкой)?" disable_off="true" />
+        <reference ref="bic_branch_ref_atm"/>
         <link href="https://www.raiffeisen.ru/offices" text="Ссылка на сайт (время работы, координаты и т.п.)" />
         <key key="wikipedia" value="ru:Райффайзенбанк" />
         <key key="wikidata" value="Q4389244" />
@@ -1776,10 +1768,7 @@
         <key key="contact:vk" value="https://vk.com/rosbank" />
         <key key="contact:twitter" value="https://twitter.com/Rosbank_Info" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 10:00-22:00, Mo-Fr 09:00-20:00; Sa 09:00-17:00" />
-        <combo key="bic" text="BIC-код (например UBSWUS33XXX)" />
-        <combo key="branch" text="Филиал (или отделение)" />
-        <text key="ref" text="Номер отделения (ref)" />
-        <check key="atm" text="Есть ли банкомат (если он с 24-часовым доступом, лучше отдельной точкой)?" disable_off="true" />
+        <reference ref="bic_branch_ref_atm"/>
         <link href="https://www.rosbank.ru/ru/offices" text="Ссылка на сайт (время работы, координаты и т.п.)" />
         <key key="wikipedia" value="ru:Росбанк" />
         <key key="wikidata" value="Q1119857" />
@@ -1801,10 +1790,7 @@
         <key key="contact:vk" value="https://vk.com/sberbank" />
         <key key="contact:ok" value="https://ok.ru/sberbank" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 10:00-22:00, Mo-Fr 09:30-20:00; Sa 10:00-18:00" />
-        <combo key="bic" text="BIC-код (например UBSWUS33XXX)" />
-        <combo key="branch" text="Филиал (или отделение)" />
-        <text key="ref" text="Номер доп. офиса/опер. кассы (ref)" />
-        <check key="atm" text="Есть ли банкомат (если он с 24-часовым доступом, лучше отдельной точкой)?" disable_off="true" />
+        <reference ref="bic_branch_ref_atm"/>
         <link href="https://www.sberbank.ru/ru/about/today/oib" text="Ссылка на сайт (время работы, координаты и т.п.)" />
         <key key="wikipedia" value="ru:Сбербанк России" />
         <key key="wikidata" value="Q205012" />
