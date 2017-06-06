@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2017-06-03_1"
+  version="2017-06-06_1"
   shortdescription="Russian POIs"
   ru.shortdescription="Российские POI"
   description="Tagging preset for Russian shops and amenities"
@@ -9,7 +9,7 @@
 
   <!-- Pics have been derived from https://commons.wikimedia.org/wiki/Emoji -->
 
-  <!-- блок с шаблонами (chunk) -->
+  <!-- блок с шаблонами (chunks) -->
   <!-- wheelchair_internetaccess_address_footer используется в заведениях с wifi -->
   <chunk id="wheelchair_internetaccess_address_footer">
     <space />
@@ -88,7 +88,7 @@
     <preset_link preset_name="Therapists and the alternative medicine: Subsubspecialties" />
   </chunk>
 
-  <!-- тело пресета -->
+  <!-- тело пресета (groups) -->
   <group name="POI" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Twemoji_1f1f7-1f1fa.svg/240px-Twemoji_1f1f7-1f1fa.svg.png">
     <group name="Продукты" en.name="Food shops" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Emoji_u1f347.svg/240px-Emoji_u1f347.svg.png">
       <item name="Azbuka Vkusa" ru.name="Азбука вкуса" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/b/b6/Azbuka_Vkusa.svg/256px-Azbuka_Vkusa.svg.png">
@@ -1110,7 +1110,7 @@
         <key key="name:en" value="Beeline" />
         <key key="name:ru" value="Билайн" />
         <key key="contact:phone" value="+7 800 7000611" />
-        <key key="contact:website" value="https://moskva.beeline.ru" />
+        <key key="contact:website" value="https://beeline.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/Beelinerus" />
         <key key="contact:twitter" value="https://twitter.com/Beeline_RUS" />
         <key key="contact:vk" value="https://vk.com/beeline" />
@@ -1133,7 +1133,7 @@
         <key key="name:en" value="MegaFon" />
         <key key="name:ru" value="МегаФон" />
         <key key="contact:phone" value="+7 800 5500500" />
-        <key key="contact:website" value="https://moscow.megafon.ru" />
+        <key key="contact:website" value="https://megafon.ru" />
         <key key="contact:youtube" value="https://www.youtube.com/user/MegaFonTV" />
         <key key="contact:ok" value="https://ok.ru/megafon" />
         <key key="contact:vk" value="https://vk.com/megafon" />
@@ -1141,7 +1141,7 @@
         <key key="contact:twitter" value="https://twitter.com/megafonru" />
         <key key="contact:habrahabr" value="https://habrahabr.ru/company/megafon/" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-21:00, Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
-        <link href="https://moscow.megafon.ru/help/offices/#offices" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <link href="https://megafon.ru/help/offices/#offices" text="Ссылка на сайт (время работы, координаты и т.п.)" />
         <key key="wikipedia" value="ru:Мегафон (компания)" />
         <key key="wikidata" value="Q1720713" />
         <reference ref="wheelchair_address_footer" />
@@ -3039,7 +3039,7 @@
         <key key="operator" value="ПАО «Ростелеком»" />
         <key key="payment:cash" value="no" />
         <key key="payment:telephone_cards" value="yes" />
-        <key key="contact:website" value="https://moscow.rt.ru" />
+        <key key="contact:website" value="https://rt.ru" />
         <key key="opening_hours" value="24/7" />
       </item>
       <item name="Boat rental" ru.name="Лодочная станция" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Twemoji_26f5.svg/240px-Twemoji_26f5.svg.png">
