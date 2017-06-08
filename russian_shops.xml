@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2017-06-06_1"
+  version="2017-06-08_1"
   shortdescription="Russian POIs"
   ru.shortdescription="Российские POI"
   description="Tagging preset for Russian shops and amenities"
@@ -91,14 +91,14 @@
   <!-- тело пресета (groups) -->
   <group name="POI" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Twemoji_1f1f7-1f1fa.svg/240px-Twemoji_1f1f7-1f1fa.svg.png">
     <group name="Продукты" en.name="Food shops" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Emoji_u1f347.svg/240px-Emoji_u1f347.svg.png">
-      <item name="Azbuka Vkusa" ru.name="Азбука вкуса" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/b/b6/Azbuka_Vkusa.svg/256px-Azbuka_Vkusa.svg.png">
-        <label text="Магазин &quot;Азбука вкуса&quot;" />
+      <item name="Azbuka Vkusa" ru.name="Азбука Вкуса" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/b/b6/Azbuka_Vkusa.svg/256px-Azbuka_Vkusa.svg.png">
+        <label text="Магазин &quot;Азбука Вкуса&quot;" />
         <space />
         <key key="shop" value="supermarket" />
-        <key key="name" value="Азбука вкуса" />
-        <key key="brand" value="Азбука вкуса" />
-        <key key="name:ru" value="Азбука вкуса" />
-        <key key="contact:phone" value="+7 495 5043478" />
+        <key key="name" value="Азбука Вкуса" />
+        <key key="brand" value="Азбука Вкуса" />
+        <key key="name:ru" value="Азбука Вкуса" />
+        <key key="contact:phone" value="+7 800 700-34-87" />
         <key key="contact:website" value="https://av.ru" />
         <key key="contact:email" value="welcome@azbukavkusa.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/AzbukaVkusa" />
@@ -285,6 +285,21 @@
         <link href="http://vkusvill.ru/shops" text="Ссылка на сайт (время работы, координаты и т.п.)" />
         <reference ref="wheelchair_address_footer" />
       </item>
+      <item name="Krasnaya Ikra" ru.name="Красная Икра" type="node,closedway,multipolygon" >
+        <label text="Магазин &quot;Красная Икра" />
+        <space />
+        <key key="shop" value="seafood" />
+        <key key="name" value="Красная Икра" />
+        <key key="brand" value="Красная Икра" />
+        <key key="name:ru" value="Красная Икра" />
+        <key key="operator" value="Сахалин Рыба (ИП Борисик)" />
+        <key key="contact:website" value="http://www.borisik.ru/" />
+        <key key="contact:email" value="a_borisik@mail.ru" />
+        <combo key="contact:phone" text="Телефон" default="+7 495 437-90-29" />
+        <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-22:00" default="Mo-Su 09:00-22:00" />
+        <link href="http://www.borisik.ru/addresses" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <reference ref="wheelchair_address_footer" />
+      </item>
       <item name="Krasnoye&amp;Beloye" ru.name="Красное&amp;Белое" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/5/53/Krasnoe%26Beloe._Logotip.jpg">
         <label text="Магазин &quot;Красное&amp;Белое&quot;" />
         <space />
@@ -410,9 +425,9 @@
       <item name="NASH" ru.name="НАШ" type="node,closedway,multipolygon">
         <label text="Гипермаркет &quot;НАШ&quot;" />
         <space />
-        <key key="name" value="Наш" />
+        <key key="name" value="НАШ" />
         <key key="brand" value="НАШ" />
-        <key key="name:ru" value="Наш" />
+        <key key="name:ru" value="НАШ" />
         <key key="operator" value="ОАО «Седьмой Континент»" />
         <key key="shop" value="supermarket" />
         <!-- когда примут shop=hypermarket нужно будет здесь поменять -->
@@ -604,9 +619,9 @@
         <label text="Магазин &quot;Я Любимый&quot;" />
         <space />
         <key key="shop" value="supermarket" />
-        <combo key="name" text="Наименование" values="Я любимый перекресток, Я любимый" default="Я любимый" />
-        <combo key="name:ru" text="Наименование (:ru)" values="Я любимый перекресток, Я любимый" default="Я любимый" />
-        <combo key="brand" text="Торговая марка" values="Я любимый перекресток, Я любимый" default="Я любимый" />
+        <combo key="name" text="Наименование" values="Я Любимый Перекресток, Я Любимый" default="Я Любимый" />
+        <combo key="name:ru" text="Наименование (:ru)" values="Я Любимый Перекресток, Я Любимый" default="Я Любимый" />
+        <combo key="brand" text="Торговая марка" values="Я Любимый Перекресток, Я Любимый" default="Я Любимый" />
         <key key="operator" value="ЗАО &quot;АМАТУС&quot;" />
         <key key="contact:website" value="http://i-favorite.ru/" />
         <key key="contact:email" value="info@i-favorite.com" />
@@ -2008,6 +2023,22 @@
         <key key="contact:instagram" value="https://www.instagram.com/stolichki/" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-21:00, Mo-Fr 08:00-22:00; Sa-Su 09:00-21:00" />
         <link href="http://stolichki.ru/stores/moscow_region" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <reference ref="wheelchair_dispencing_address_footer" />
+      </item>
+      <item name="Stolichnye Apteki" ru.name="Столичные аптеки" type="node,closedway,multipolygon">
+        <label text="Сеть аптек &quot;Столичные аптеки&quot;" />
+        <space />
+        <key key="amenity" value="pharmacy" />
+        <key key="healthcare" value="pharmacy" />
+        <key key="name" value="Столичные аптеки" />
+        <key key="brand" value="Столичные аптеки" />
+        <key key="name:ru" value="Столичные аптеки" />
+        <key key="operator" value="АО «Столичные аптеки»" />
+        <combo key="contact:phone" text="Телефон" />
+        <key key="contact:website" value="http://www.citypharm.ru/" />
+        <key key="contact:email" value="citypharm@citypharm.ru" />
+        <combo key="opening_hours" text="Время работы" values="24/7, Mo-Fr 08:00-20:00; Sa-Su 10:00-18:00" />
+        <link href="http://www.citypharm.ru/pharmacy/" text="Ссылка на сайт (время работы, координаты и т.п.)" />
         <reference ref="wheelchair_dispencing_address_footer" />
       </item>
       <item name="CMD" type="node,closedway,multipolygon">
