@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2017-06-08_1"
+  version="2017-06-12_1"
   shortdescription="Russian POIs"
   ru.shortdescription="Российские POI"
   description="Tagging preset for Russian shops and amenities"
@@ -35,8 +35,9 @@
     <check key="dispensing" text="Есть ли продажа лекарств по рецептам?" disable_off="true" />
     <preset_link preset_name="Address" />
   </chunk>
-  <!-- ownership_website_phone используется только в учебных заведениях -->
-  <chunk id="ownership_website_phone">
+  <!-- name_ownership_website_phone используется только в учебных заведениях -->
+  <chunk id="name_ownership_website_phone">
+    <text key="name" text="Наименование" />
     <combo key="ownership" text="Форма собственности" default="state" values="state, private" display_values="государственная, частная" />
     <reference ref="website_phone"/>
   </chunk>
@@ -2723,8 +2724,7 @@
         <key key="education_system:ru_standard" value="yes" />
         <key key="education_profile:general" value="yes" />
         <key key="education_level:preschool" value="yes" />
-        <text key="name" text="Наименование" />
-        <reference ref="ownership_website_phone" />
+        <reference ref="name_ownership_website_phone" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Primary school" ru.name="Начальная школа" type="node,closedway,multipolygon">
@@ -2736,8 +2736,7 @@
         <key key="education_profile:general" value="yes" />
         <key key="education_level:primary" value="yes" />
         <key key="education_form:fulltime" value="yes" />
-        <text key="name" text="Наименование" />
-        <reference ref="ownership_website_phone" />
+        <reference ref="name_ownership_website_phone" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="School" ru.name="Общеобразовательная школа" type="node,closedway,multipolygon">
@@ -2750,8 +2749,7 @@
         <key key="education_level:primary" value="yes" />
         <key key="education_level:secondary" value="yes" />
         <key key="education_form:fulltime" value="yes" />
-        <text key="name" text="Наименование" />
-        <reference ref="ownership_website_phone" />
+        <reference ref="name_ownership_website_phone" />
         <item_separator/>
         <label text="Школы с углублённым изучением:" />
         <checkgroup columns="3" >
@@ -2772,8 +2770,7 @@
         <key key="education_system:ru_standard" value="yes" />
         <key key="education_profile:professional" value="yes" />
         <key key="education_level:secondary" value="yes" />
-        <text key="name" text="Наименование" />
-        <reference ref="ownership_website_phone" />
+        <reference ref="name_ownership_website_phone" />
         <label text="Форма обучения:" />
         <checkgroup columns="3">
           <check key="education_form:fulltime" text="дневная" disable_off="true" />
@@ -2790,8 +2787,7 @@
         <key key="education_system:ru_standard" value="yes" />
         <key key="education_profile:professional" value="yes" />
         <key key="education_level:higher" value="yes" />
-        <text key="name" text="Наименование" />
-        <reference ref="ownership_website_phone" />
+        <reference ref="name_ownership_website_phone" />
         <label text="Форма обучения:" />
         <checkgroup columns="3">
           <check key="education_form:fulltime" text="дневная" disable_off="true" />
@@ -2810,9 +2806,9 @@
         <key key="education_profile:sport" value="yes" />
         <key key="education_level:primary" value="yes" />
         <key key="education_form:parttime" value="yes" />
-        <text key="name" text="Наименование" />
         <combo key="sport" text="Вид спорта" values="multi,archery,athletics,american_football,australian_football,baseball,basketball,beachvolleyball,billiards,boules,bowls,canadian_football,canoe,climbing,cricket,croquet,cycling,dog_racing,equestrian,field_hockey,gaelic_games,golf,gymnastics,handball,horse_racing,ice_hockey,karting,model_aerodrome,motocross,motor,pelota,racquet,rc_car,rugby_league,rugby_union,running,safety_training,shooting,skateboard,ice_skating,roller_skating,soccer,swimming,table_tennis,tennis,volleyball,9pin,10pin" values_context="sport" />
-        <reference ref="ownership_website_phone" />
+        <reference ref="name_ownership_website_phone" />
+        <combo key="opening_hours" text="Время работы" values="Mo-Su 09:00-20:00, Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Music school" ru.name="Музыкальная школа" type="node,closedway,multipolygon">
@@ -2824,8 +2820,8 @@
         <key key="education_profile:music" value="yes" />
         <key key="education_level:primary" value="yes" />
         <key key="education_form:parttime" value="yes" />
-        <text key="name" text="Наименование" />
-        <reference ref="ownership_website_phone" />
+        <reference ref="name_ownership_website_phone" />
+        <combo key="opening_hours" text="Время работы" values="Mo-Su 09:00-20:00, Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Art school" ru.name="Художественная школа" type="node,closedway,multipolygon">
@@ -2838,8 +2834,8 @@
         <key key="education_profile:visual_art" value="yes" />
         <key key="education_level:primary" value="yes" />
         <key key="education_form:parttime" value="yes" />
-        <text key="name" text="Наименование" />
-        <reference ref="ownership_website_phone" />
+        <reference ref="name_ownership_website_phone" />
+        <combo key="opening_hours" text="Время работы" values="Mo-Su 09:00-20:00, Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Driving school" ru.name="Автошкола" type="node,closedway,multipolygon">
@@ -2851,8 +2847,7 @@
         <key key="education_profile:driving" value="yes" />
         <key key="education_level:primary" value="yes" />
         <key key="education_form:parttime" value="yes" />
-        <text key="name" text="Наименование" />
-        <reference ref="ownership_website_phone" />
+        <reference ref="name_ownership_website_phone" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-22:00, Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
         <reference ref="wheelchair_address_footer" />
       </item>
@@ -2864,8 +2859,7 @@
         <key key="education" value="courses" />
         <key key="education_profile:languages" value="yes" />
         <key key="education_form:parttime" value="yes" />
-        <text key="name" text="Наименование" />
-        <reference ref="ownership_website_phone" />
+        <reference ref="name_ownership_website_phone" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-22:00, Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
         <item_separator />
         <label text="Языки:" />
