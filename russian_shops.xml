@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2017-06-13_1"
+  version="2017-06-13_2"
   shortdescription="Russian POIs"
   ru.shortdescription="Российские POI"
   description="Tagging preset for Russian shops and amenities"
@@ -1897,7 +1897,7 @@
         <link href="https://mkb.ru/about_bank/address/?type=terminal" text="Ссылка на сайт (время работы, номера терминалов)" />
         <preset_link preset_name="Address" />
       </item>
-      <item name="Payment terminal Elecsnet" ru.name="Платежный терминал Элекснет" type="node" icon="https://upload.wikimedia.org/wikipedia/ru/3/38/Mkb_logo.gif">
+      <item name="Payment terminal Elecsnet" ru.name="Платежный терминал Элекснет" type="node" >
         <label text="Платежный терминал Элекснет" />
         <space />
         <key key="amenity" value="payment_terminal" />
