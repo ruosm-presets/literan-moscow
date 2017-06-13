@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2017-06-12_1"
+  version="2017-06-13_1"
   shortdescription="Russian POIs"
   ru.shortdescription="Российские POI"
   description="Tagging preset for Russian shops and amenities"
@@ -1258,6 +1258,25 @@
         <key key="wikidata" value="Q15924718" />
         <reference ref="wheelchair_address_footer" />
       </item>
+      <item name="Eyekraft" ru.name="Айкрафт" type="node,closedway,multipolygon" >
+        <label text="Магазин оптики &quot;Айкрафт&quot;" />
+        <space />
+        <key key="shop" value="optician" />
+        <key key="name" value="Айкрафт" />
+        <key key="alt_name" value="Eyekraft" />
+        <key key="brand" value="Айкрафт" />
+        <key key="name:ru" value="Айкрафт" />
+        <combo key="contact:phone" text="Телефон" valuse="+7 800 775-55-54,+7 495 775-5554" default="+7 800 775-55-54" />
+        <key key="contact:website" value="http://www.eyekraft.ru" />
+        <key key="contact:email" value="info@eyekraft.ru" />
+        <key key="contact:vk" value="https://vk.com/eyekraftoptica" />
+        <key key="contact:facebook" value="https://www.facebook.com/eyekraft" />
+        <key key="contact:instagram" value="https://www.instagram.com/eyekraftoptica/" />
+        <key key="contact:google_plus" value="https://plus.google.com/+EyekraftRu" />
+        <combo key="opening_hours" text="Время работы" values="Mo-Su 10:00-21:00, Mo-Su 10:00-21:00, Mo-Su 09:00-22:00" />
+        <link href="http://www.eyekraft.ru/page/address/" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <reference ref="wheelchair_address_footer" />
+      </item>
       <item name="Pandora" ru.name="Pandora" type="node,closedway,multipolygon">
         <label text="Ювелирный магазин Pandora" />
         <space />
@@ -1369,7 +1388,7 @@
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Lensmaster" ru.name="Линзмастер" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/b/bb/Lensmaster.gif/320px-Lensmaster.gif">
-        <label text="Магазин &quot;Линзмастер&quot;" />
+        <label text="Магазин оптики &quot;Линзмастер&quot;" />
         <space />
         <key key="shop" value="optician" />
         <key key="name" value="Линзмастер" />
@@ -1876,6 +1895,33 @@
         <key key="wikipedia" value="ru:Московский кредитный банк" />
         <key key="wikidata" value="Q4304175" />
         <link href="https://mkb.ru/about_bank/address/?type=terminal" text="Ссылка на сайт (время работы, номера терминалов)" />
+        <preset_link preset_name="Address" />
+      </item>
+      <item name="Payment terminal Elecsnet" ru.name="Платежный терминал Элекснет" type="node" icon="https://upload.wikimedia.org/wikipedia/ru/3/38/Mkb_logo.gif">
+        <label text="Платежный терминал Элекснет" />
+        <space />
+        <key key="amenity" value="payment_terminal" />
+        <key key="brand" value="Элекснет" />
+        <key key="operator" value="АО «ЭЛЕКСНЕТ»" />
+        <key key="payment:notes" value="yes" />
+        <key key="payment:credit_cards" value="yes" />
+        <key key="payment:debit_cards" value="yes" />
+        <key key="contact:phone" value="+7 495 241-30-81;+7 495 787-29-64" />
+        <key key="contact:fax" value="+7 495 287-29-59" />
+        <key key="contact:website" value="http://elecsnet.ru" />
+        <key key="contact:email" value="info@elecsnet.ru" />
+        <key key="contact:facebook" value="https://www.facebook.com/elecsnet/" />
+        <key key="contact:instagram" value="https://www.instagram.com/bankmkb/" />
+        <key key="contact:twitter" value="https://twitter.com/elecsnet" />
+        <key key="contact:vk" value="https://vk.com/elecsnet" />
+        <key key="contact:ok" value="https://ok.ru/elecsnet" />
+        <key key="contact:youtube" value="https://www.youtube.com/user/myelecsnet" />
+        <key key="contact:livejournal" value="http://elecsnet.livejournal.com/" />
+        <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-21:00; Mo-Su 10:00-20:00" default="24/7" />
+        <text key="ref" text="Номер терминала" />
+        <key key="wikipedia" value="ru:Элекснет" />
+        <key key="wikidata" value="Q4530795" />
+        <link href="http://elecsnet.ru/terminals/addresses" text="Ссылка на сайт (время работы, номера терминалов)" />
         <preset_link preset_name="Address" />
       </item>
     </group>
@@ -2897,7 +2943,7 @@
         <key key="roof:shape" value="round" />
         <key key="roof:colour" value="#3A8538" />
         <key key="roof:material" value="plastic" />
-        <combo key="operator" text="Оператор" values="Муниципальное унитарное предприятие &quot;Гаражно-стояночное хозяйство&quot;" />
+        <combo key="operator" text="Оператор" default="Муниципальное унитарное предприятие ОАО &quot;Гаражно-стояночное хозяйство&quot;" />
         <combo key="description" text="Наименование (description)" default="Парковка №" />
         <text key="ref" text="Парковка №" />
         <preset_link preset_name="Address" />
