@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2017-06-13_2"
+  version="2017-06-20_1"
   shortdescription="Russian POIs"
   ru.shortdescription="Российские POI"
   description="Tagging preset for Russian shops and amenities"
@@ -3038,8 +3038,8 @@
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-21:00, Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00, Mo-Th 09:00-13:00,13:45-17:00; Fr 09:00-13:00,13:45-15:45" />
         <reference ref="building_address_footer" />
       </item>
-      <item name="Newsagent shop" ru.name="Газетный киоск (Пресса)" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Fxemoji_u1F4F0.svg/240px-Fxemoji_u1F4F0.svg.png">
-        <label text="Газетный киоск (Пресса)" />
+      <item name="Newsagent shop" ru.name="Газетный киоск (Пресса, Печать)" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Fxemoji_u1F4F0.svg/240px-Fxemoji_u1F4F0.svg.png">
+        <label text="Газетный киоск (Пресса, Печать)" />
         <space />
         <key key="shop" value="newsagent" />
         <key key="building" value="kiosk" />
@@ -3118,20 +3118,23 @@
         <space />
         <key key="amenity" value="boat_rental" />
         <text key="name" text="Наименование" />
-        <text key="capacity" text="Количество лодок" length="4" />
+        <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-22:00, Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
+        <text key="brand" text="Марки плавсредств" />
+        <text key="capacity" text="Количество плавсредств" length="4" />
         <text key="operator" text="Оператор" />
         <space />
         <label text="Виды плавсредств" />
         <checkgroup columns="2" >
-          <check key="motorboat_rental" text="моторные лодки" disable_off="true" />
-          <check key="houseboat_rental" text="домик на воде" disable_off="true" />
-          <check key="pedalboat_rental" text="катамаран" disable_off="true" />
-          <check key="jetski_rental" text="водный мотоцикл" disable_off="true" />
-          <check key="sailboat_rental" text="парусная лодка" disable_off="true" />
-          <check key="dinghy_rental" text="шлюпка (вёсла, моторчик и т.д.)" disable_off="true" />
-          <check key="kayak_rental" text="каяк" disable_off="true" />
-          <check key="canoe_rental" text="каноэ" disable_off="true" />
+          <check key="motorboat:rental" text="моторные лодки" disable_off="true" />
+          <check key="houseboat:rental" text="домик на воде" disable_off="true" />
+          <check key="pedalboat:rental" text="катамаран" disable_off="true" />
+          <check key="jetski:rental" text="водный мотоцикл" disable_off="true" />
+          <check key="sailing:rental" text="парусная лодка" disable_off="true" />
+          <check key="rowing:rental" text="шлюпка (вёсла, моторчик и т.д.)" disable_off="true" />
+          <check key="kayak:rental" text="каяк" disable_off="true" />
+          <check key="canoe:rental" text="каноэ" disable_off="true" />
         </checkgroup>
+        <preset_link preset_name="Contact (Schema with 'contact:*' Prefix)" />
         <preset_link preset_name="Address" />
       </item>
       <item name="Subway ventilation kiosk" ru.name="Вентшахта метрополитена" type="node,closedway,multipolygon">
