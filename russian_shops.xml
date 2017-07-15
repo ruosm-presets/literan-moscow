@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2017-06-28_1"
+  version="2017-07-15_1"
   shortdescription="Russian POIs"
   ru.shortdescription="Российские POI"
   description="Tagging preset for Russian shops and amenities"
@@ -815,7 +815,7 @@
         <key key="contact:google_plus" value="https://plus.google.com/u/0/104074968461379386338/about" />
         <key key="contact:instagram" value="https://www.instagram.com/kroshka_kartoshka_rus/" />
         <key key="cuisine" value="potato" />
-        <key key="diet:vegetarian" value="no" />
+        <key key="diet:vegetarian" value="yes" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 08:00-23:00, Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
         <reference ref="wheelchair_internetaccess_address_footer" />
         <link href="https://www.kartoshka.com/contacts" text="Ссылка на сайт (время работы, координаты и т.п.)" />
@@ -828,6 +828,7 @@
         <key key="amenity" value="pub" />
         <key key="name" value="Кружка" />
         <key key="brand" value="Кружка" />
+        <key key="craft_beer" value="yes" />
         <combo key="contact:phone" text="Телефон" />
         <key key="contact:website" value="http://www.kruzhka.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/KRUZHKA.MOSCOW" />
@@ -903,7 +904,7 @@
         <key key="contact:facebook" value="https://www.facebook.com/papajohnsru" />
         <key key="contact:instagram" value="https://instagram.com/papajohnsru" />
         <key key="cuisine" value="pizza" />
-        <key key="diet:vegetarian" value="yes" />
+        <key key="diet:vegetarian" value="no" />
         <key key="delivery" value="yes" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 11:00-23:00, Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
         <reference ref="wheelchair_internetaccess_address_footer" />
@@ -923,7 +924,7 @@
         <key key="contact:vk" value="https://vk.com/pizzahutrussia" />
         <key key="contact:instagram" value="http://instagram.com/pizzahutrussia/" />
         <key key="cuisine" value="pizza" />
-        <key key="diet:vegetarian" value="yes" />
+        <key key="diet:vegetarian" value="no" />
         <key key="delivery" value="yes" />
         <combo key="opening_hours" text="Время работы" values="Mo-Su 10:00-23:00, Mo-Su 10:00-22:00, Mo-Su 11:00-23:00, Mo-Su 09:00-23:00" default="Mo-Su 10:00-23:00" />
         <space />
@@ -945,7 +946,7 @@
         <key key="contact:email" value="subway@subway.ru" />
         <key key="contact:vk" value="https://vk.com/subwayrussia" />
         <key key="cuisine" value="sandwich" />
-        <key key="diet:vegetarian" value="yes" />
+        <key key="diet:vegetarian" value="no" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 08:00-23:00, Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
         <reference ref="wheelchair_internetaccess_address_footer" />
         <link href="http://subway.ru/stores" text="Ссылка на сайт (время работы, координаты и т.п.)" />
@@ -1055,6 +1056,7 @@
         <key key="contact:twitter" value="https://twitter.com/rusappp" />
         <key key="contact:facebook" value="https://www.facebook.com/pages/%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9-%D0%90%D0%BF%D0%BF%D0%B5%D1%82%D0%B8%D1%82/1502979646622576" />
         <key key="contact:google_plus" value="https://plus.google.com/u/0/115068711489617191788/posts" />
+        <key key="diet:vegetarian" value="no" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 08:00-23:00, Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
         <reference ref="wheelchair_internetaccess_address_footer" />
         <link href="http://xn--80a4abej.xn--p1ai/karta/" text="Ссылка на сайт (время работы, координаты и т.п.)" />
@@ -1666,6 +1668,7 @@
         <label text="Альфа-Банк" />
         <space />
         <key key="amenity" value="bank" />
+        <key key="bic" value="ALFARUMM" />
         <key key="name" value="Альфа-Банк" />
         <key key="name:en" value="Alfa-Bank" />
         <key key="name:ru" value="Альфа-Банк" />
@@ -1688,6 +1691,7 @@
         <label text="Банк Москвы" />
         <space />
         <key key="amenity" value="bank" />
+        <key key="bic" value="VTBRRUMM" />
         <key key="name" value="Банк Москвы" />
         <key key="name:en" value="Bank of Moscow" />
         <key key="name:ru" value="Банк Москвы" />
@@ -1710,6 +1714,7 @@
         <label text="ВТБ24" />
         <space />
         <key key="amenity" value="bank" />
+        <key key="bic" value="CBGURUMM" />
         <key key="name" value="ВТБ24" />
         <key key="name:en" value="VTB24" />
         <key key="name:ru" value="ВТБ24" />
@@ -1750,6 +1755,7 @@
         <label text="Почта Банк" />
         <space />
         <key key="amenity" value="bank" />
+        <key key="bic" value="POSBRUMM" />
         <key key="name" value="Почта Банк" />
         <key key="name:ru" value="Почта Банк" />
         <key key="contact:phone" value="+7 800 5500770" />
@@ -1772,6 +1778,7 @@
         <label text="Райффайзен" />
         <space />
         <key key="amenity" value="bank" />
+        <key key="bic" value="RZBMRUMM" />
         <key key="name" value="Райффайзен" />
         <key key="name:en" value="Raiffeisen" />
         <key key="name:ru" value="Райффайзен" />
@@ -1794,6 +1801,7 @@
         <label text="Росбанк" />
         <space />
         <key key="amenity" value="bank" />
+        <key key="bic" value="RSBNRUMM" />
         <key key="name" value="Росбанк" />
         <key key="name:en" value="Rosbank" />
         <key key="name:ru" value="Росбанк" />
@@ -1813,6 +1821,7 @@
         <label text="Сбербанк" />
         <space />
         <key key="amenity" value="bank" />
+        <key key="bic" value="SABRRUMM" />
         <key key="name" value="Сбербанк" />
         <key key="name:en" value="Sberbank" />
         <key key="name:ru" value="Сбербанк" />
