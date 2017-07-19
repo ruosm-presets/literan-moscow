@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2017-07-15_1"
+  version="2017-07-19_1"
   shortdescription="Russian POIs"
   ru.shortdescription="Российские POI"
   description="Tagging preset for Russian shops and amenities"
@@ -38,7 +38,7 @@
   <!-- name_ownership_website_phone используется только в учебных заведениях -->
   <chunk id="name_ownership_website_phone">
     <text key="name" text="Наименование" />
-    <combo key="ownership" text="Форма собственности" default="state" values="state, private" display_values="государственная, частная" />
+    <combo key="ownership" text="Форма собственности" values="state, private" display_values="государственная, частная" />
     <reference ref="website_phone"/>
   </chunk>
   <!-- building_address_footer используется на сооружениях -->
@@ -2909,8 +2909,7 @@
       <item name="Language school" ru.name="Курсы/школа иностранного языка" type="node,closedway,multipolygon">
         <label text="Курсы/школа иностранного языка" />
         <space />
-        <key key="amenity" value="training" />
-        <key key="training" value="language" />
+        <key key="amenity" value="language_school" />
         <key key="education" value="courses" />
         <key key="education_profile:languages" value="yes" />
         <key key="education_form:parttime" value="yes" />
