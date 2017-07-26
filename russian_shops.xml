@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2017-07-19_1"
+  version="2017-07-25_1"
   shortdescription="Russian POIs"
   ru.shortdescription="Российские POI"
   description="Tagging preset for Russian shops and amenities"
@@ -1155,7 +1155,7 @@
         <key key="contact:youtube" value="https://www.youtube.com/user/MegaFonTV" />
         <key key="contact:ok" value="https://ok.ru/megafon" />
         <key key="contact:vk" value="https://vk.com/megafon" />
-        <key key="contact:facebook" value="https://www.facebook.com/MegaFon.ru?v=wall" />
+        <key key="contact:facebook" value="https://www.facebook.com/MegaFon.ru" />
         <key key="contact:twitter" value="https://twitter.com/megafonru" />
         <key key="contact:habrahabr" value="https://habrahabr.ru/company/megafon/" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-21:00, Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
@@ -1807,7 +1807,7 @@
         <key key="name:ru" value="Росбанк" />
         <key key="contact:phone" value="+7 800 2005434" />
         <key key="contact:website" value="https://www.rosbank.ru" />
-        <key key="contact:facebook" value="https://www.facebook.com/pages/%D0%A0%D0%9E%D0%A1%D0%91%D0%90%D0%9D%D0%9A/598134936938972?fref=ts" />
+        <key key="contact:facebook" value="https://www.facebook.com/Rosbank-598134936938972/" />
         <key key="contact:vk" value="https://vk.com/rosbank" />
         <key key="contact:twitter" value="https://twitter.com/Rosbank_Info" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 10:00-22:00, Mo-Fr 09:00-20:00; Sa 09:00-17:00" />
@@ -1947,7 +1947,7 @@
         <key key="contact:website" value="http://www.366.ru" />
         <key key="contact:instagram" value="https://www.instagram.com/apteka366/" />
         <key key="contact:vk" value="https://vk.com/apteka36i6" />
-        <key key="contact:facebook" value="https://www.facebook.com/36i6-%D0%90%D0%BF%D1%82%D0%B5%D0%BA%D0%B0-%D0%9A%D1%80%D0%B0%D1%81%D0%BE%D1%82%D0%B0-%D0%97%D0%B4%D0%BE%D1%80%D0%BE%D0%B2%D1%8C%D0%B5-1568306506796189/" />
+        <key key="contact:facebook" value="https://www.facebook.com/apteka366/" />
         <key key="contact:ok" value="https://ok.ru/group/57486618853421" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 10:00-22:00, Mo-Fr 09:00-21:00; Sa-Su 10:00-19:00" />
         <link href="http://www.366.ru/pharmacies.html" text="Ссылка на сайт (время работы, координаты и т.п.)" />
@@ -1981,7 +1981,7 @@
         <key key="name:ru" value="А-мега" />
         <combo key="contact:phone" text="Телефон" values="+7 495 795-44-77" />
         <key key="contact:website" value="http://aptekamega.ru/" />
-        <key key="contact:facebook" value="https://www.facebook.com/%D0%90-%D0%9C%D0%B5%D0%B3%D0%B0-1612267465700474/" />
+        <key key="contact:facebook" value="https://www.facebook.com/apteka.a.mega/" />
         <combo key="opening_hours" text="Время работы" values="Mo-Su 09:00-22:00, Mo-Su 10:00-22:00" default="Mo-Su 10:00-22:00" />
         <link href="http://aptekamega.ru/pharmacies/" text="Ссылка на сайт (время работы, координаты и т.п.)" />
         <reference ref="wheelchair_dispencing_address_footer" />
@@ -2135,7 +2135,7 @@
         <combo key="contact:phone" text="Телефон" values="+7 495 5321313" default="+7 800 550-13-13"/>
         <key key="contact:website" value="https://www.gemotest.ru" />
         <key key="contact:vk" value="https://vk.com/gemotestlab" />
-        <key key="contact:facebook" value="https://www.facebook.com/pages/%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%B8%D1%8F-%D0%93%D0%B5%D0%BC%D0%BE%D1%82%D0%B5%D1%81%D1%82-%D0%92%D1%81%D0%B5-%D0%BE%D0%B1-%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%85/197602150273658" />
+        <key key="contact:facebook" value="https://www.facebook.com/gemotestlab/" />
         <key key="contact:ok" value="https://ok.ru/gemotest" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-22:00, Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
         <link href="https://www.gemotest.ru/address/select/maps.php" text="Ссылка на сайт (время работы, координаты и т.п.)" />
@@ -2174,8 +2174,7 @@
         <combo key="official_name" text="Полное официальное наименование подразделения" default="N-ский военный комиссариат N-ской области" />
         <combo key="contact:phone" text="Телефон"/>
         <key key="contact:website" value="http://mil.ru" />
-        <!-- <key key="contact:facebook" value="https://www.facebook.com/pages/%D0%9C%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D0%B5%D1%80%D1%81%D1%82%D0%B2%D0%BE-%D0%BE%D0%B1%D0%BE%D1%80%D0%BE%D0%BD%D1%8B-%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B9-%D0%A4%D0%B5%D0%B4%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B8/1492252324350852" />
-        валидатор ругается, потому что линк очень длинный -->
+        <key key="contact:facebook" value="https://www.facebook.com/Ministry-of-Defence-of-the-Russian-Federation-1492252324350852/" />
         <key key="contact:twitter" value="https://www.twitter.com/mod_russia" />
         <key key="contact:youtube" value="https://www.youtube.com/channel/UCQGqX5Ndpm4snE0NTjyOJnA" />
         <key key="contact:instagram" value="https://www.instagram.com/mil_ru/" />
@@ -2209,8 +2208,7 @@
         <combo key="contact:phone" text="Телефон"/>
         <key key="contact:website" value="http://roskazna.ru" />
         <key key="contact:twitter" value="https://twitter.com/FederalTreasury" />
-        <!-- <key key="contact:facebook" value="https://www.facebook.com/pages/%D0%A4%D0%B5%D0%B4%D0%B5%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5-%D0%BA%D0%B0%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%B9%D1%81%D1%82%D0%B2%D0%BE-%D0%9A%D0%B0%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%B9%D1%81%D1%82%D0%B2%D0%BE-%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8/262308223844560?fref=ts" />
-        валидатор ругается, потому что линк очень длинный -->
+        <key key="contact:facebook" value="https://www.facebook.com/FederalTreasury/" />
         <key key="contact:livejournal" value="http://roskazna.livejournal.com/" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-21:00, Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00, Mo-Th 09:00-12:30,13:15-18:00; Fr 09:00-12:30,13:15-17:00" />
         <key key="wikipedia" value="ru:Казначейство России" />
@@ -2256,7 +2254,7 @@
         <combo key="official_name" text="Полное официальное наименование подразделения" default="Главное управление Пенсионного фонда России №  по г. Москве и Московской области, Управление №" />
         <combo key="contact:phone" text="Телефон"/>
         <key key="contact:website" value="http://www.pfrf.ru" />
-        <key key="contact:facebook" value="https://www.facebook.com/pages/%D0%9F%D0%B5%D0%BD%D1%81%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9-%D1%84%D0%BE%D0%BD%D0%B4-%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B9-%D0%A4%D0%B5%D0%B4%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B8/350819391602397" />
+        <key key="contact:facebook" value="https://www.facebook.com/PensionFondRF/" />
         <key key="contact:twitter" value="https://twitter.com/#!/pension_fond" />
         <key key="contact:vk" value="https://vk.com/pension_fond" />
         <key key="contact:ok" value="https://ok.ru/pensionfond/" />
@@ -2277,7 +2275,7 @@
         <key key="contact:phone" value="+7 800 200-58-88" />
         <key key="contact:website" value="https://www.pochta.ru" />
         <key key="contact:vk" value="https://vk.com/russianpost" />
-        <key key="contact:facebook" value="https://www.facebook.com/ruspost?filter=2" />
+        <key key="contact:facebook" value="https://www.facebook.com/ruspost" />
         <key key="contact:twitter" value="https://twitter.com/ruspostofficial" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-21:00, Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00, Mo-Th 09:00-12:30,13:15-18:00; Fr 09:00-12:30,13:15-17:00" />
         <link href="https://pochta.ru/offices" text="Ссылка на сайт (время работы, координаты и т.п.)" />
