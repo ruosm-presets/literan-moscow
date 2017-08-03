@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2017-08-01_2"
+  version="2017-08-03_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   shortdescription="Russian POIs"
   ru.shortdescription="Российские POI"
@@ -12,13 +12,13 @@
 
   <!-- блок с шаблонами (chunks) -->
   <!-- wheelchair_internetaccess_address_footer используется в заведениях с wifi -->
+  <!-- При использовании в местах, отличных от общественных жирален, переделать чекбокс internet_access на комбобокс или не использовать этот чанк! -->
   <chunk id="wheelchair_internetaccess_address_footer">
     <space />
-    <checkgroup columns="1">
-      <check key="wheelchair" text="Есть ли доступ для инвалидной коляски?" disable_off="true" />
-    </checkgroup>
+    <combo key="wheelchair" text="Есть ли доступ для инвалидной коляски?" values="yes,limited,no" />
+    <space />
     <checkgroup columns="2">
-      <check key="internet_access" text="Есть ли Wi-Fi?" disable_off="true" value_on="wlan" />
+      <check key="internet_access" text="Есть ли Wi-Fi?" value_on="wlan" />
       <check key="internet_access:fee" text="Wi-Fi предоставляется бесплатно?" value_on="no" value_off="yes" />
     </checkgroup>
     <preset_link preset_name="Address" />
@@ -26,15 +26,15 @@
   <!-- wheelchair_address_footer используется в местах, куда можно зайти -->
   <chunk id="wheelchair_address_footer">
     <space />
-    <check key="wheelchair" text="Есть ли доступ для инвалидной коляски?" disable_off="true" />
+    <combo key="wheelchair" text="Есть ли доступ для инвалидной коляски?" values="yes,limited,no" />
     <preset_link preset_name="Address" />
   </chunk>
   <!-- wheelchair_dispencing_address_footer используется только в аптеках -->
   <chunk id="wheelchair_dispencing_address_footer">
     <text key="level" text="Этаж" />
     <space />
-    <check key="wheelchair" text="Есть ли доступ для инвалидной коляски?" disable_off="true" />
-    <check key="dispensing" text="Есть ли продажа лекарств по рецептам?" disable_off="true" />
+    <combo key="wheelchair" text="Есть ли доступ для инвалидной коляски?" values="yes,limited,no" />
+    <check key="dispensing" text="Есть ли продажа лекарств по рецептам?" />
     <preset_link preset_name="Address" />
   </chunk>
   <!-- building_address_footer используется на сооружениях -->
@@ -64,7 +64,7 @@
     <combo key="bic" text="BIC/SWIFT-код (например UBSWUS33XXX)" />
     <combo key="branch" text="Филиал (или отделение)" />
     <text key="ref" text="Номер отделения" />
-    <check key="atm" text="Есть ли банкомат (если он с 24-часовым доступом, лучше отдельной точкой)?" disable_off="true" />
+    <check key="atm" text="Есть ли банкомат (если он с 24-часовым доступом, лучше отдельной точкой)?" />
   </chunk>
   <!-- health20_providedfor и health20_specialities_footer — схема тегирования Healthcare_2.0 только для медицинских учреждениях -->
   <chunk id="health20_providedfor">
@@ -806,7 +806,7 @@
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 10:00-22:00, Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
         <text key="level" text="Этаж" />
         <space />
-        <check key="drive_through" text="Есть ли обслуживание в машине?" disable_off="true" />
+        <check key="drive_through" text="Есть ли обслуживание в машине?" />
         <reference ref="wheelchair_internetaccess_address_footer" />
         <link href="https://burgerking.ru/restaurants" text="Ссылка на сайт (время работы, координаты и т.п.)" />
         <key key="wikipedia" value="ru:Burger King" />
@@ -933,7 +933,7 @@
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 10:00-22:00, Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
         <text key="level" text="Этаж" />
         <space />
-        <check key="drive_through" text="Есть ли обслуживание в машине?" disable_off="true" />
+        <check key="drive_through" text="Есть ли обслуживание в машине?" />
         <reference ref="wheelchair_internetaccess_address_footer" />
         <link href="https://www.kfc.ru/restaurants" text="Ссылка на сайт (время работы, координаты и т.п.)" />
         <key key="wikipedia" value="ru:KFC" />
@@ -1004,7 +1004,7 @@
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 06:30-24:00, Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
         <text key="level" text="Этаж" />
         <space />
-        <check key="drive_through" text="Есть ли обслуживание в машине (МакАвто)?" disable_off="true" />
+        <check key="drive_through" text="Есть ли обслуживание в машине (МакАвто)?" />
         <reference ref="wheelchair_internetaccess_address_footer" />
         <link href="https://mcdonalds.ru/restaurant/map?lat=55.752609&amp;lng=37.61699" text="Ссылка на сайт (время работы, координаты и т.п.)" />
         <key key="wikipedia" value="ru:McDonald’s" />
@@ -2904,6 +2904,7 @@
         <key key="medical_system:western" value="yes" />
         <reference ref="name_website_phone_oh"/>
         <reference ref="wheelchair_address_footer" />
+        <reference ref="health20_providedfor" />
         <item_separator />
         <label text="Если санаторий специализированный (например, кардиологический)," />
         <label text="укажите специализацию (для кардиологии health_specialty:cardiology=main)" />
@@ -3272,7 +3273,7 @@
         <key key="operator" value="ФГУП «Почта России»" />
         <text key="ref" text="Инвентарный номер ящика" />
         <combo key="collection_times" text="Время выемки писем" values="Mo-Su 05:00,14:10, Mo-Fr 05:00,14:10; Sa 09:15; Su 14:10" />
-        <check key="drive_through" text="Можно ли положить письмо не выходя из авто?" disable_off="true" />
+        <check key="drive_through" text="Можно ли положить письмо не выходя из авто?" />
       </item>
       <item name="Delivery terminal InPost " ru.name="Почтомат InPost (бывш. QIWI Post)" type="node">
         <!-- сайт https://inpost.ru дохлый-->
@@ -3322,17 +3323,18 @@
         <space />
         <label text="Виды плавсредств" />
         <checkgroup columns="2" >
-          <check key="motorboat_rental" text="моторные лодки" disable_off="true" />
-          <check key="houseboat_rental" text="домик на воде" disable_off="true" />
-          <check key="pedalboat_rental" text="катамаран" disable_off="true" />
-          <check key="jetski_rental" text="водный мотоцикл" disable_off="true" />
-          <check key="sailboat_rental" text="парусная лодка" disable_off="true" />
-          <check key="dinghy_rental" text="шлюпка (вёсла, моторчик и т.д.)" disable_off="true" />
-          <check key="kayak_rental" text="каяк" disable_off="true" />
-          <check key="canoe_rental" text="каноэ" disable_off="true" />
+          <check key="motorboat_rental" text="моторные лодки" />
+          <check key="houseboat_rental" text="домик на воде" />
+          <check key="pedalboat_rental" text="катамаран" />
+          <check key="jetski_rental" text="водный мотоцикл" />
+          <check key="sailboat_rental" text="парусная лодка" />
+          <check key="dinghy_rental" text="шлюпка (вёсла, моторчик и т.д.)" />
+          <check key="kayak_rental" text="каяк" />
+          <check key="canoe_rental" text="каноэ" />
         </checkgroup>
         <preset_link preset_name="Contact (Schema with 'contact:*' Prefix)" />
         <preset_link preset_name="Address" />
+        <link href="https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dboat_rental" />
       </item>
       <item name="Subway ventilation kiosk" ru.name="Вентшахта метрополитена" type="node,closedway,multipolygon">
         <label text="Вентиляционная шахта (киоск) метрополитена" />
