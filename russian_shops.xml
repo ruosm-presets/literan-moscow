@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2017-08-03_1"
+  version="2017-08-03_2"
   link="https://github.com/ruosm-presets/literan-moscow"
   shortdescription="Russian POIs"
   ru.shortdescription="Российские POI"
@@ -2234,14 +2234,14 @@
         <key key="wikidata" value="Q4394431" />
         <reference ref="wheelchair_dispencing_address_footer" />
       </item>
-      <item name="Samson Pharma" ru.name="Самсон Фарма" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/c/cb/%D0%A1%D0%B0%D0%BC%D1%81%D0%BE%D0%BD-%D0%A4%D0%B0%D1%80%D0%BC%D0%B0.png">
-        <label text="Аптека &quot;Самсон Фарма&quot;" />
+      <item name="Samson-Pharma" ru.name="Самсон-Фарма" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/c/cb/%D0%A1%D0%B0%D0%BC%D1%81%D0%BE%D0%BD-%D0%A4%D0%B0%D1%80%D0%BC%D0%B0.png">
+        <label text="Аптека &quot;Самсон-Фарма&quot;" />
         <space />
         <key key="amenity" value="pharmacy" />
         <key key="healthcare" value="pharmacy" />
-        <key key="name" value="Самсон Фарма" />
-        <key key="brand" value="Самсон Фарма" />
-        <key key="name:ru" value="Самсон Фарма" />
+        <key key="name" value="Самсон-Фарма" />
+        <key key="brand" value="Самсон-Фарма" />
+        <key key="name:ru" value="Самсон-Фарма" />
         <combo key="contact:phone" text="Телефон" default="+7 800 250-88-00" />
         <key key="contact:website" value="http://www.samson-f.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/samsonpharma/" />
