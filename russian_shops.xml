@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2017-08-03_2"
+  version="2017-09-06_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   shortdescription="Russian POIs"
   ru.shortdescription="Российские POI"
@@ -14,8 +14,7 @@
   <!-- wheelchair_internetaccess_address_footer используется в заведениях с wifi -->
   <!-- При использовании в местах, отличных от общественных жирален, переделать чекбокс internet_access на комбобокс или не использовать этот чанк! -->
   <chunk id="wheelchair_internetaccess_address_footer">
-    <space />
-    <combo key="wheelchair" text="Есть ли доступ для инвалидной коляски?" values="yes,limited,no" />
+    <combo key="wheelchair" text="Доступ для инвалидной коляски" values="yes,limited,no" />
     <space />
     <checkgroup columns="2">
       <check key="internet_access" text="Есть ли Wi-Fi?" value_on="wlan" />
@@ -25,16 +24,14 @@
   </chunk>
   <!-- wheelchair_address_footer используется в местах, куда можно зайти -->
   <chunk id="wheelchair_address_footer">
-    <space />
-    <combo key="wheelchair" text="Есть ли доступ для инвалидной коляски?" values="yes,limited,no" />
+    <combo key="wheelchair" text="Доступ для инвалидной коляски" values="yes,limited,no" />
     <preset_link preset_name="Address" />
   </chunk>
   <!-- wheelchair_dispencing_address_footer используется только в аптеках -->
   <chunk id="wheelchair_dispencing_address_footer">
     <text key="level" text="Этаж" />
-    <space />
-    <combo key="wheelchair" text="Есть ли доступ для инвалидной коляски?" values="yes,limited,no" />
-    <check key="dispensing" text="Есть ли продажа лекарств по рецептам?" />
+    <combo key="wheelchair" text="Доступ для инвалидной коляски" values="yes,limited,no" />
+    <check key="dispensing" text="Продажа лекарств по рецептам" />
     <preset_link preset_name="Address" />
   </chunk>
   <!-- building_address_footer используется на сооружениях -->
@@ -64,7 +61,7 @@
     <combo key="bic" text="BIC/SWIFT-код (например UBSWUS33XXX)" />
     <combo key="branch" text="Филиал (или отделение)" />
     <text key="ref" text="Номер отделения" />
-    <check key="atm" text="Есть ли банкомат (если он с 24-часовым доступом, лучше отдельной точкой)?" />
+    <check key="atm" text="Наличие банкомата (если с 24-часовым доступом, нанесите его отдельной точкой)" />
   </chunk>
   <!-- health20_providedfor и health20_specialities_footer — схема тегирования Healthcare_2.0 только для медицинских учреждениях -->
   <chunk id="health20_providedfor">
@@ -94,7 +91,7 @@
   <!-- тело пресета (groups) -->
   <group name="POI" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Twemoji_1f1f7-1f1fa.svg/240px-Twemoji_1f1f7-1f1fa.svg.png">
     <group name="Продукты" en.name="Food shops" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Emoji_u1f347.svg/240px-Emoji_u1f347.svg.png">
-      <item name="Azbuka Vkusa" ru.name="Азбука Вкуса" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/b/b6/Azbuka_Vkusa.svg/256px-Azbuka_Vkusa.svg.png">
+      <item name="Azbuka Vkusa" ru.name="Азбука Вкуса" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/b/b6/Azbuka_Vkusa.svg/256px-Azbuka_Vkusa.svg.png" >
         <label text="Супермаркет &quot;Азбука Вкуса&quot;" />
         <space />
         <key key="shop" value="supermarket" />
@@ -111,8 +108,8 @@
         <key key="contact:youtube" value="https://www.youtube.com/user/azbukav" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 10:00-22:00, Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00" />
         <link href="https://av.ru/shops/#msk_azbuka" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:Азбука вкуса" />
-        <key key="wikidata" value="Q4058209" />
+        <key key="brand:wikipedia" value="ru:Азбука вкуса" />
+        <key key="brand:wikidata" value="Q4058209" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="AV Daily" ru.name="АВ Daily" type="node,closedway,multipolygon">
@@ -132,8 +129,8 @@
         <key key="contact:youtube" value="https://www.youtube.com/user/azbukav" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 10:00-22:00, Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00" />
         <link href="https://av.ru/shops/#msk_av-daily" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:Азбука вкуса" />
-        <key key="wikidata" value="Q4058209" />
+        <key key="brand:wikipedia" value="ru:Азбука вкуса" />
+        <key key="brand:wikidata" value="Q4058209" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="AV Enoteca" ru.name="АВ Энотека" type="node,closedway,multipolygon">
@@ -153,8 +150,8 @@
         <key key="contact:youtube" value="https://www.youtube.com/user/azbukav" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 10:00-22:00, Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00" />
         <link href="https://av.ru/shops/#msk_av-enoteca" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:Азбука вкуса" />
-        <key key="wikidata" value="Q4058209" />
+        <key key="brand:wikipedia" value="ru:Азбука вкуса" />
+        <key key="brand:wikidata" value="Q4058209" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="AV Market" ru.name="АВ Маркет" type="node,closedway,multipolygon">
@@ -175,8 +172,8 @@
         <key key="contact:youtube" value="https://www.youtube.com/user/azbukav" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 10:00-22:00, Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00" />
         <link href="https://av.ru/shops/#msk_av-market" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:Азбука вкуса" />
-        <key key="wikidata" value="Q4058209" />
+        <key key="brand:wikipedia" value="ru:Азбука вкуса" />
+        <key key="brand:wikidata" value="Q4058209" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Aromatny Mir" ru.name="Ароматный мир" type="node,closedway,multipolygon">
@@ -196,7 +193,7 @@
         <key key="drink:whisky" value="retail" />
         <combo key="contact:phone" text="Телефон" default="+7 495 7775190-xxxx" />
         <key key="contact:website" value="http://amwine.ru" />
-        <key key="contact:facebook" value="https://www.facebook.com/aromatny.mir" />
+        <key key="contact:facebook" value="https://www.facebook.com/amwine.ru" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 10:00-22:00, Mo-Sa 09:30-22:30; Su 11:00-22:00" />
         <link href="http://amwine.ru/customers/shops" text="Ссылка на сайт (время работы, координаты и т.п.)" />
         <reference ref="wheelchair_address_footer" />
@@ -216,8 +213,8 @@
         <key key="contact:vk" value="https://vk.com/atak" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 08:00-23:00, Mo-Su 09:00-22:00" />
         <link href="http://www.ataksupermarket.ru/shops/" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:Atac" />
-        <key key="wikidata" value="Q2868738" />
+        <key key="brand:wikipedia" value="ru:Atac" />
+        <key key="brand:wikidata" value="Q2868738" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Auchan" ru.name="Ашан" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/7/78/Auchan-logo.svg/320px-Auchan-logo.svg.png">
@@ -238,8 +235,8 @@
         <key key="contact:youtube" value="https://www.youtube.com/channel/UCoPpvvMHzIpZ7EcNZBEWhFg" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 08:00-23:00, Mo-Su 09:00-22:00" />
         <link href="https://www.auchan.ru/ru/shops" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:Auchan" />
-        <key key="wikidata" value="Q758603" />
+        <key key="brand:wikipedia" value="ru:Auchan" />
+        <key key="brand:wikidata" value="Q758603" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Avoska" ru.name="Авоська" type="node,closedway,multipolygon">
@@ -258,7 +255,7 @@
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Billa" ru.name="Билла" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Billa-Logo.svg/320px-Billa-Logo.svg.png">
-        <label text="Магазин &quot;Billa&quot;" />
+        <label text="Супермаркет &quot;Billa&quot;" />
         <space />
         <key key="name" value="Billa" />
         <key key="brand" value="Billa" />
@@ -277,8 +274,8 @@
         <key key="contact:vk" value="https://vk.com/billarussia" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 08:00-23:00, Mo-Su 09:00-22:00" />
         <link href="http://www.billa.ru/%D0%9A%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D1%8B/%D0%90%D0%B4%D1%80%D0%B5%D1%81%D0%B0_%D1%81%D1%83%D0%BF%D0%B5%D1%80%D0%BC%D0%B0%D1%80%D0%BA%D0%B5%D1%82%D0%BE%D0%B2_%D0%91%D0%98%D0%9B%D0%9B%D0%90/%D0%90%D0%B4%D1%80%D0%B5%D1%81%D0%B0_%D1%81%D1%83%D0%BF%D0%B5%D1%80%D0%BC%D0%B0%D1%80%D0%BA%D0%B5%D1%82%D0%BE%D0%B2_%D0%91%D0%98%D0%9B%D0%9B%D0%90/dd_bi_subpage.aspx" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:Billa" />
-        <key key="wikidata" value="Q537781" />
+        <key key="brand:wikipedia" value="ru:Billa" />
+        <key key="brand:wikidata" value="Q537781" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="VkusWill" ru.name="ВкусВилл" type="node,closedway,multipolygon">
@@ -300,7 +297,7 @@
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Viktoriya" ru.name="Виктория" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/2/20/Victoria_logo.png">
-        <label text="Магазин &quot;Виктория&quot;" />
+        <label text="Супермаркет &quot;Виктория&quot;" />
         <space />
         <key key="name" value="Виктория" />
         <key key="brand" value="Виктория" />
@@ -313,8 +310,8 @@
         <key key="contact:vk" value="https://vk.com/supermarket_victoria" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 08:00-24:00, Mo-Su 08:00-01:00, Mo-Su 08:00-23:00, Mo-Su 06:00-02:00" default="24/7" />
         <link href="http://xn--b1amahumm1i.xn--p1ai/company/shops/moskva-i-moskovskaya-oblast/" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:Виктория (сеть магазинов)" />
-        <key key="wikidata" value="Q4111046" />
+        <key key="brand:wikipedia" value="ru:Виктория (сеть магазинов)" />
+        <key key="brand:wikidata" value="Q4111046" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Dixy" ru.name="Дикси" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/d/de/Dixi-logo.gif">
@@ -330,8 +327,8 @@
         <key key="contact:youtube" value="https://www.youtube.com/channel/UCfFxD9xhL67LxHvsDOp_rvg" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 10:00-22:00, Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00" />
         <link href="https://dixy.ru/nearest-shop/?region=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0&amp;city=&amp;street=&amp;op.x=39&amp;op.y=15&amp;form_build_id=form-MGrIV8_EYK6C5zSMV3QI1192m6i_XP6QI9Y_b5I477c&amp;form_id=dixy_shops_block_form" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:Дикси (сеть магазинов)" />
-        <key key="wikidata" value="Q4161561" />
+        <key key="brand:wikipedia" value="ru:Дикси (сеть магазинов)" />
+        <key key="brand:wikidata" value="Q4161561" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Izbyonka" ru.name="Избёнка" type="node,closedway,multipolygon">
@@ -354,7 +351,7 @@
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Krasnaya Ikra" ru.name="Красная Икра" type="node,closedway,multipolygon" >
-        <label text="Магазин &quot;Красная Икра" />
+        <label text="Магазин &quot;Красная Икра&quot;" />
         <space />
         <key key="shop" value="seafood" />
         <key key="name" value="Красная Икра" />
@@ -384,8 +381,8 @@
         <key key="contact:instagram" value="https://instagram.com/krasnoebeloe" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-22:05, Mo-Sa 09:30-22:30; Su 11:00-22:00" />
         <link href="https://www.krasnoeibeloe.ru/address" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:Красное &amp; Белое" />
-        <key key="wikidata" value="Q24933790" />
+        <key key="brand:wikipedia" value="ru:Красное &amp; Белое" />
+        <key key="brand:wikidata" value="Q24933790" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Lenta" ru.name="Лента" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/3/30/Lenta_logo.png">
@@ -401,8 +398,8 @@
         <key key="contact:website" value="http://www.lenta.com" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 08:00-23:00" />
         <link href="http://www.lenta.com/magaziny/" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:Лента (сеть магазинов)" />
-        <key key="wikidata" value="Q4258608" />
+        <key key="brand:wikipedia" value="ru:Лента (сеть магазинов)" />
+        <key key="brand:wikidata" value="Q4258608" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Magnit" ru.name="Магнит" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/b/b7/Magnit_Logo.gif">
@@ -420,8 +417,8 @@
         <key key="contact:twitter" value="https://twitter.com/magnit_info" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 10:00-22:00, Mo-Su 09:30-22:00" />
         <link href="http://magnit-info.ru/buyers/adds/1258/1305/418426" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:Магнит (сеть магазинов)" />
-        <key key="wikidata" value="Q940518" />
+        <key key="brand:wikipedia" value="ru:Магнит (сеть магазинов)" />
+        <key key="brand:wikidata" value="Q940518" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Magnoliya" ru.name="Магнолия" type="node,closedway,multipolygon">
@@ -452,8 +449,8 @@
         <key key="contact:vk" value="https://vk.com/shop_monetka" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 08:00-24:00, Mo-Su 09:00-22:00, Mo-Su 09:00-23:00" />
         <link href="http://www.monetka.ru/urfo/shops_map" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:Монетка (сеть магазинов)" />
-        <key key="wikidata" value="Q4301704" />
+        <key key="brand:wikipedia" value="ru:Монетка (сеть магазинов)" />
+        <key key="brand:wikidata" value="Q4301704" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Myasnitsky Ryad" ru.name="Мясницкий ряд" type="node,closedway,multipolygon">
@@ -527,8 +524,8 @@
         <key key="contact:ok" value="https://ok.ru/okmarket" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 08:00-23:00, Mo-Su 08:00-24:00" />
         <link href="http://www.okmarket.ru/stores/" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:О’кей (сеть магазинов)" />
-        <key key="wikidata" value="Q4340901" />
+        <key key="brand:wikipedia" value="ru:О’кей (сеть магазинов)" />
+        <key key="brand:wikidata" value="Q4340901" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Otdohni" ru.name="Отдохни" type="node,closedway,multipolygon">
@@ -573,8 +570,8 @@
         <key key="contact:instagram" value="https://instagram.com/perekrestok" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 08:00-23:00, Mo-Sa 09:00-20:00; Su 10:00-19:00" />
         <link href="https://www.perekrestok.ru/shops" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:Перекрёсток (сеть магазинов)" />
-        <key key="wikidata" value="Q1684639" />
+        <key key="brand:wikipedia" value="ru:Перекрёсток (сеть магазинов)" />
+        <key key="brand:wikidata" value="Q1684639" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Perekryostok Express" ru.name="Перекресток Экспресс" type="node,closedway,multipolygon">
@@ -605,8 +602,8 @@
         <key key="contact:vk" value="https://vk.com/club19098821" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 08:00-23:00, Mo-Sa 09:00-20:00; Su 10:00-19:00" />
         <link href="https://5ka.ru/stores" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:Пятёрочка" />
-        <key key="wikidata" value="Q1768969" />
+        <key key="brand:wikipedia" value="ru:Пятёрочка" />
+        <key key="brand:wikidata" value="Q1768969" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Sedmoy Kontinent" ru.name="Седьмой Континент" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/b/b3/Sedmoj_Continent.png">
@@ -627,8 +624,8 @@
         <key key="contact:instagram" value="https://www.instagram.com/7cont/" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 08:00-23:00" />
         <link href="http://www.7cont.ru/customers/shops/" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:Седьмой континент" />
-        <key key="wikidata" value="Q739720" />
+        <key key="brand:wikipedia" value="ru:Седьмой континент" />
+        <key key="brand:wikidata" value="Q739720" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="SPAR" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/1/16/SPAR_logo.jpg">
@@ -644,8 +641,8 @@
         <key key="contact:twitter" value="https://twitter.com/SPARInt" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 08:00-23:00" />
         <link href="http://www.spar.ru/stores" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:Spar" />
-        <key key="wikidata" value="Q610492" />
+        <key key="brand:wikipedia" value="ru:Spar" />
+        <key key="brand:wikidata" value="Q610492" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Sushi Wok" ru.name="Суши Wok" type="node,closedway,multipolygon">
@@ -682,7 +679,7 @@
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Fix price" ru.name="Фикс прайс" type="node,closedway,multipolygon">
-        <label text="Магазин Fix price" />
+        <label text="Магазин &quot;Fix price&quot;" />
         <space />
         <key key="shop" value="variety_store" />
         <key key="name" value="Fix price" />
@@ -698,8 +695,8 @@
         <key key="contact:youtube" value="https://www.youtube.com/user/fixprice36" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 10:00-22:00, Mo-Sa 09:00-20:00; Su 10:00-19:00" />
         <link href="https://www.fix-price.ru/buyers/shops" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:Fix Price (сеть магазинов)" />
-        <key key="wikidata" value="Q4038791" />
+        <key key="brand:wikipedia" value="ru:Fix Price (сеть магазинов)" />
+        <key key="brand:wikidata" value="Q4038791" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Ya Lyubimy" ru.name="Я Любимый" type="node,closedway,multipolygon">
@@ -784,8 +781,8 @@
         <text key="level" text="Этаж" />
         <reference ref="wheelchair_internetaccess_address_footer" />
         <link href="http://baskinrobbins.ru/?n=6" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="en:Baskin-Robbins" />
-        <key key="wikidata" value="Q584601" />
+        <key key="brand:wikipedia" value="en:Baskin-Robbins" />
+        <key key="brand:wikidata" value="Q584601" />
       </item>
       <item name="Burger King" ru.name="Бургер Кинг" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/3/3a/Burger_King_Logo.svg/145px-Burger_King_Logo.svg.png">
         <label text="Фастфуд &quot;Бургер Кинг&quot;" />
@@ -805,12 +802,11 @@
         <key key="diet:vegetarian" value="no" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 10:00-22:00, Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
         <text key="level" text="Этаж" />
-        <space />
-        <check key="drive_through" text="Есть ли обслуживание в машине?" />
         <reference ref="wheelchair_internetaccess_address_footer" />
+        <check key="drive_through" text="Обслуживание в машине" />
         <link href="https://burgerking.ru/restaurants" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:Burger King" />
-        <key key="wikidata" value="Q177054" />
+        <key key="brand:wikipedia" value="ru:Burger King" />
+        <key key="brand:wikidata" value="Q177054" />
       </item>
       <item name="Domino’s Pizza" ru.name="Домино’c Пицца" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Dominos_pizza_logo.svg/240px-Dominos_pizza_logo.svg.png">
         <label text="Фастфуд &quot;Домино’c Пицца&quot;" />
@@ -822,7 +818,7 @@
         <key key="name:ru" value="Домино’c Пицца" />
         <combo key="contact:phone" text="Телефон" values="+7 495 478-88-xx,+7 495 240-83-xx,+7 495 240-84-xx" />
         <key key="contact:website" value="https://dominospizza.ru/" />
-        <key key="contact:facebook" value="https://www.facebook.com/dominospizzarus" />
+        <key key="contact:facebook" value="https://www.facebook.com/dominospizzarussia" />
         <key key="contact:vk" value="https://vk.com/dominospizza_ru" />
         <key key="contact:instagram" value="https://www.instagram.com/dominospizza_ru/" />
         <key key="cuisine" value="pizza" />
@@ -832,8 +828,8 @@
         <text key="level" text="Этаж" />
         <reference ref="wheelchair_internetaccess_address_footer" />
         <link href="https://dominospizza.ru/find_dominos" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:Domino’s Pizza" />
-        <key key="wikidata" value="Q839466" />
+        <key key="brand:wikipedia" value="ru:Domino’s Pizza" />
+        <key key="brand:wikidata" value="Q839466" />
       </item>
       <item name="Double B" ru.name="Даблби" type="node,closedway,multipolygon" >
         <label text="Кофейня &quot;Даблби&quot;" />
@@ -878,8 +874,8 @@
         <text key="level" text="Этаж" />
         <reference ref="wheelchair_internetaccess_address_footer" />
         <link href="http://dunkindonutsmoscow.ru/ru/stores" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:Dunkin’ Donuts" />
-        <key key="wikidata" value="Q847743" />
+        <key key="brand:wikipedia" value="ru:Dunkin’ Donuts" />
+        <key key="brand:wikidata" value="Q847743" />
       </item>
       <item name="Coffee House" ru.name="Кофе Хауз" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/f/fb/Kofe_Hauz_Logo.png/248px-Kofe_Hauz_Logo.png">
         <label text="Кофейня &quot;Кофе Хауз&quot;" />
@@ -894,7 +890,7 @@
         <key key="contact:facebook" value="https://www.facebook.com/coffeehouse.ru" />
         <key key="contact:instagram" value="https://instagram.com/coffeehouse" />
         <key key="contact:vk" value="https://vk.com/ru_coffeehouse" />
-        <key key="contact:twitter" value="https://twitter.com/#!/ru_coffeehouse" />
+        <key key="contact:twitter" value="https://twitter.com/ru_coffeehouse" />
         <key key="contact:youtube" value="https://www.youtube.com/user/CoffeeHouseMan" />
         <key key="contact:pinterest" value="https://pinterest.com/coffeehouseru/" />
         <key key="contact:tripadvisor" value="https://www.tripadvisor.ru/Restaurant_Review-g298484-d739968-Reviews-Coffee_House-Moscow_Central_Russia.html" />
@@ -907,11 +903,11 @@
         <key key="internet_access:fee" value="no" />
         <reference ref="wheelchair_internetaccess_address_footer" />
         <link href="http://coffeehouse.ru/adress" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:Кофе Хауз" />
-        <key key="wikidata" value="Q4236456" />
+        <key key="brand:wikipedia" value="ru:Кофе Хауз" />
+        <key key="brand:wikidata" value="Q4236456" />
       </item>
       <item name="KFC" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/b/bf/KFC_logo.svg/240px-KFC_logo.svg.png">
-        <label text="Фастфуд KFC" />
+        <label text="Фастфуд &quot;KFC&quot;" />
         <space />
         <key key="amenity" value="fast_food" />
         <key key="name" value="KFC" />
@@ -925,19 +921,18 @@
         <key key="contact:ok" value="https://ok.ru/kfcrussia" />
         <key key="contact:instagram" value="https://instagram.com/kfcrussia" />
         <key key="contact:youtube" value="https://www.youtube.com/KFCRussia" />
-        <key key="contact:twitter" value="https://twitter.com/#!/kfcrussia" />
+        <key key="contact:twitter" value="https://twitter.com/kfcrussia" />
         <key key="contact:tumblr" value="https://www.tumblr.com/blog/kfcrussia" />
         <key key="cuisine" value="chicken" />
         <key key="takeaway" value="yes" />
         <key key="diet:vegetarian" value="no" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 10:00-22:00, Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
         <text key="level" text="Этаж" />
-        <space />
-        <check key="drive_through" text="Есть ли обслуживание в машине?" />
         <reference ref="wheelchair_internetaccess_address_footer" />
+        <check key="drive_through" text="Обслуживание в машине" />
         <link href="https://www.kfc.ru/restaurants" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:KFC" />
-        <key key="wikidata" value="Q524757" />
+        <key key="brand:wikipedia" value="ru:KFC" />
+        <key key="brand:wikidata" value="Q524757" />
       </item>
       <item name="Kroshka Kartoshka" ru.name="Крошка Картошка" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/c/cc/%D0%9A%D1%80%D0%BE%D1%88%D0%BA%D0%B0-%D0%BA%D0%B0%D1%80%D1%82%D0%BE%D1%88%D0%BA%D0%B0.jpg">
         <label text="Фастфуд &quot;Крошка Картошка&quot;" />
@@ -960,8 +955,8 @@
         <text key="level" text="Этаж" />
         <reference ref="wheelchair_internetaccess_address_footer" />
         <link href="https://www.kartoshka.com/contacts" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:Крошка-картошка" />
-        <key key="wikidata" value="Q4241838" />
+        <key key="brand:wikipedia" value="ru:Крошка-картошка" />
+        <key key="brand:wikidata" value="Q4241838" />
       </item>
       <item name="Kruzhka" ru.name="Кружка" type="node,closedway,multipolygon">
         <label text="Пивная &quot;Кружка&quot;" />
@@ -980,8 +975,8 @@
         <text key="level" text="Этаж" />
         <reference ref="wheelchair_internetaccess_address_footer" />
         <link href="http://kruzhka.ru/addresses/map" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:Кружка (сеть ресторанов)" />
-        <key key="wikidata" value="Q6439558" />
+        <key key="brand:wikipedia" value="ru:Кружка (сеть ресторанов)" />
+        <key key="brand:wikidata" value="Q6439558" />
       </item>
       <item name="McDonald's" ru.name="Макдоналдс" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/McDonald%27s_Golden_Arches.svg/273px-McDonald%27s_Golden_Arches.svg.png">
         <label text="Фастфуд &quot;Макдоналдс&quot;" />
@@ -1003,12 +998,11 @@
         <key key="diet:vegetarian" value="no" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 06:30-24:00, Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
         <text key="level" text="Этаж" />
-        <space />
-        <check key="drive_through" text="Есть ли обслуживание в машине (МакАвто)?" />
         <reference ref="wheelchair_internetaccess_address_footer" />
+        <check key="drive_through" text="Обслуживание в машине (МакАвто)" />
         <link href="https://mcdonalds.ru/restaurant/map?lat=55.752609&amp;lng=37.61699" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:McDonald’s" />
-        <key key="wikidata" value="Q38076" />
+        <key key="brand:wikipedia" value="ru:McDonald’s" />
+        <key key="brand:wikidata" value="Q38076" />
       </item>
       <item name="Mu-Mu" ru.name="Му-Му" type="node,closedway,multipolygon">
         <label text="Фастфуд &quot;Му-Му&quot;" />
@@ -1032,8 +1026,8 @@
         <text key="level" text="Этаж" />
         <reference ref="wheelchair_internetaccess_address_footer" />
         <link href="https://www.cafemumu.ru/contacts/" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:Му-му (сеть ресторанов)" />
-        <key key="wikidata" value="Q6907053" />
+        <key key="brand:wikipedia" value="ru:Му-му (сеть ресторанов)" />
+        <key key="brand:wikidata" value="Q6907053" />
       </item>
       <item name="Papa John's" ru.name="Папа Джонс" type="node,closedway,multipolygon">
         <label text="Фастфуд &quot;Папа Джонс&quot;" />
@@ -1057,7 +1051,7 @@
         <link href="https://www.papajohns.ru/adresa" text="Ссылка на сайт (время работы, координаты и т.п.)" />
       </item>
       <item name="Pizza Hut" ru.name="Пицца Хат" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/0/02/PizzaHut.svg/255px-PizzaHut.svg.png">
-        <label text="Фастфуд &quot;Бургер Кинг&quot;" />
+        <label text="Фастфуд &quot;Пицца Хат&quot;" />
         <space />
         <key key="amenity" value="fast_food" />
         <key key="name" value="Pizza Hut" />
@@ -1076,8 +1070,8 @@
         <text key="level" text="Этаж" />
         <reference ref="wheelchair_internetaccess_address_footer" />
         <link href="https://www.pizzahut.ru/restaurants/" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:Пицца Хат" />
-        <key key="wikidata" value="Q191615" />
+        <key key="brand:wikipedia" value="ru:Пицца Хат" />
+        <key key="brand:wikidata" value="Q191615" />
       </item>
       <item name="Subway" ru.name="Сабвэй" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Subway_2016_logo.svg/320px-Subway_2016_logo.svg.png">
         <label text="Фастфуд &quot;Сабвэй&quot;" />
@@ -1098,8 +1092,8 @@
         <text key="level" text="Этаж" />
         <reference ref="wheelchair_internetaccess_address_footer" />
         <link href="http://subway.ru/stores" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:Subway (сеть ресторанов)" />
-        <key key="wikidata" value="Q244457" />
+        <key key="brand:wikipedia" value="ru:Subway (сеть ресторанов)" />
+        <key key="brand:wikidata" value="Q244457" />
       </item>
       <item name="Starbucks" ru.name="Старбакс" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/238px-Starbucks_Corporation_Logo_2011.svg.png">
         <label text="Кофейня &quot;Старбакс&quot;" />
@@ -1122,8 +1116,8 @@
         <text key="level" text="Этаж" />
         <reference ref="wheelchair_internetaccess_address_footer" />
         <link href="https://www.facebook.com/StarbucksRussia/app_419559581405349" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:Starbucks" />
-        <key key="wikidata" value="Q37158" />
+        <key key="brand:wikipedia" value="ru:Starbucks" />
+        <key key="brand:wikidata" value="Q37158" />
       </item>
       <item name="Stardog!s" ru.name="Стардог!s" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/b/b5/Logo_stardog%21s.png">
         <label text="Фастфуд &quot;Стардог!s&quot;" />
@@ -1137,7 +1131,7 @@
         <key key="contact:website" value="http://www.stardogs.ru" />
         <key key="contact:youtube" value="https://www.youtube.com/channel/UCLdQnDS5HTzowfvz-Uhc24A" />
         <key key="contact:instagram" value="https://instagram.com/stardogsrussia/" />
-        <key key="contact:facebook" value="https://www.facebook.com/pages/%D0%A1%D1%82%D0%B0%D1%80%D0%B4%D0%BE%D0%B3s/274934226027212?fref=ts" />
+        <key key="contact:facebook" value="https://www.facebook.com/stardogsrussia" />
         <key key="contact:vk" value="https://vk.com/club16270501" />
         <key key="contact:ok" value="https://ok.ru/group/54434706620420" />
         <key key="cuisine" value="hotdog" />
@@ -1147,8 +1141,8 @@
         <text key="level" text="Этаж" />
         <reference ref="wheelchair_internetaccess_address_footer" />
         <link href="http://www.stardogs.ru/default.aspx?page=address" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:Стардогс" />
-        <key key="wikidata" value="Q4439856" />
+        <key key="brand:wikipedia" value="ru:Стардогс" />
+        <key key="brand:wikidata" value="Q4439856" />
       </item>
       <item name="Teremok" ru.name="Теремок" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/9/99/Teremok_logo.png">
         <label text="Фастфуд &quot;Теремок&quot;" />
@@ -1171,8 +1165,8 @@
         <text key="level" text="Этаж" />
         <reference ref="wheelchair_internetaccess_address_footer" />
         <link href="http://www.teremok.ru/address/msk/" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:Теремок (сеть быстрого питания)" />
-        <key key="wikidata" value="Q4455593" />
+        <key key="brand:wikipedia" value="ru:Теремок (сеть быстрого питания)" />
+        <key key="brand:wikidata" value="Q4455593" />
       </item>
       <item name="Shokoladnitsa" ru.name="Шоколадница" type="node,closedway,multipolygon">
         <label text="Кофейня &quot;Шоколадница&quot;" />
@@ -1208,7 +1202,7 @@
         <key key="contact:vk" value="https://vk.com/club10566241" />
         <key key="contact:ok" value="https://ok.ru/profile/583525030934" />
         <key key="contact:twitter" value="https://twitter.com/rusappp" />
-        <key key="contact:facebook" value="https://www.facebook.com/pages/%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9-%D0%90%D0%BF%D0%BF%D0%B5%D1%82%D0%B8%D1%82/1502979646622576" />
+        <key key="contact:facebook" value="https://www.facebook.com/Русский-Аппетит-1502979646622576/" />
         <key key="contact:google_plus" value="https://plus.google.com/u/0/115068711489617191788/posts" />
         <key key="diet:vegetarian" value="no" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 08:00-23:00, Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
@@ -1255,7 +1249,7 @@
     </group>
     <group name="Сотовая связь" en.name="Mobile phone shops" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Twemoji_1f4f1.svg/240px-Twemoji_1f4f1.svg.png">
       <item name="Tele2" ru.name="Теле2" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Tele2_logo.svg/320px-Tele2_logo.svg.png">
-        <label text="Магазин Tele2" />
+        <label text="Магазин &quot;Tele2&quot;" />
         <space />
         <key key="shop" value="mobile_phone" />
         <key key="office" value="telecommunication" />
@@ -1272,8 +1266,8 @@
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00, Mo-Su 10:00-21:00" />
         <text key="level" text="Этаж" />
         <link href="https://msk.tele2.ru/offices" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:Tele2 Россия" />
-        <key key="wikidata" value="Q4050799" />
+        <key key="operator:wikipedia" value="ru:Tele2 Россия" />
+        <key key="operator:wikidata" value="Q4050799" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Beeline" ru.name="Билайн" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/4/4a/%D0%91%D0%B8%D0%BB%D0%B0%D0%B9%D0%BD_2.jpg">
@@ -1296,8 +1290,8 @@
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00, Mo-Su 09:00-21:00" />
         <text key="level" text="Этаж" />
         <link href="https://moskva.beeline.ru/customers/beeline-on-map/?lon=37.59401893881195&amp;lat=55.85027315163985&amp;zoom=11&amp;tab=offices&amp;filter=offices_filter_mobileService&amp;" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:Билайн" />
-        <key key="wikidata" value="Q402880" />
+        <key key="brand:wikipedia" value="ru:Билайн" />
+        <key key="brand:wikidata" value="Q402880" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="MegaFon" ru.name="МегаФон" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/MegaFon_sign%2Blogo_horiz_green_RU_%28RGB%29.svg/320px-MegaFon_sign%2Blogo_horiz_green_RU_%28RGB%29.svg.png">
@@ -1320,8 +1314,8 @@
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-21:00, Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
         <text key="level" text="Этаж" />
         <link href="https://megafon.ru/help/offices/#offices" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:Мегафон (компания)" />
-        <key key="wikidata" value="Q1720713" />
+        <key key="operator:wikipedia" value="ru:Мегафон (компания)" />
+        <key key="operator:wikidata" value="Q1720713" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="MTS" ru.name="МТС" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/MTS_logo_2015.svg/320px-MTS_logo_2015.svg.png">
@@ -1342,8 +1336,8 @@
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-22:00, Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00" />
         <text key="level" text="Этаж" />
         <link href="http://www.mts.ru/mobil_inet_and_tv/help/mts/offices" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:МТС (компания)" />
-        <key key="wikidata" value="Q1368919" />
+        <key key="operator:wikipedia" value="ru:МТС (компания)" />
+        <key key="operator:wikidata" value="Q1368919" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Euroset" ru.name="Евросеть" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/1/10/Euroset.png">
@@ -1365,8 +1359,8 @@
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-21:00, Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
         <text key="level" text="Этаж" />
         <link href="http://euroset.ru/shops" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:Евросеть" />
-        <key key="wikidata" value="Q65310" />
+        <key key="brand:wikipedia" value="ru:Евросеть" />
+        <key key="brand:wikidata" value="Q65310" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Mobil Element" ru.name="Мобил Элемент" type="node,closedway,multipolygon">
@@ -1396,8 +1390,8 @@
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-21:00, Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
         <text key="level" text="Этаж" />
         <link href="https://www.svyaznoy.ru/address_shops" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:Связной (компания)" />
-        <key key="wikidata" value="Q65371" />
+        <key key="operator:wikipedia" value="ru:Связной (компания)" />
+        <key key="operator:wikidata" value="Q65371" />
         <reference ref="wheelchair_address_footer" />
       </item>
     </group>
@@ -1419,8 +1413,8 @@
         <key key="contact:youtube" value="https://www.youtube.com/channel/UCnOC4pLMguhoKxOonAQRdHQ" />
         <combo key="opening_hours" text="Время работы" values="Mo-Su 10:00-22:00, Mo-Su 09:00-21:00" />
         <link href="https://www.adamas.ru/buy/moscow/" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:Адамас" />
-        <key key="wikidata" value="Q15924718" />
+        <key key="operator:wikipedia" value="ru:Адамас (компания)" />
+        <key key="operator:wikidata" value="Q15924718" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Eyekraft" ru.name="Айкрафт" type="node,closedway,multipolygon" >
@@ -1443,7 +1437,7 @@
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Pandora" ru.name="Pandora" type="node,closedway,multipolygon">
-        <label text="Ювелирный магазин Pandora" />
+        <label text="Ювелирный магазин &quot;Pandora&quot;" />
         <space />
         <key key="shop" value="jewelry" />
         <key key="name" value="Pandora" />
@@ -1458,12 +1452,12 @@
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 10:00-22:00, Mo-Fr 10:00-21:00; Sa-Su 10:00-22:00" />
         <text key="level" text="Этаж" />
         <link href="https://www.pandora.net/ru-ru/stores" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:Pandora (ювелирный дом)" />
-        <key key="wikidata" value="Q2241604" />
+        <key key="operator:wikipedia" value="ru:Pandora (ювелирный дом)" />
+        <key key="operator:wikidata" value="Q2241604" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Ticketland.ru" ru.name="Ticketland.ru" type="node,closedway,multipolygon">
-        <label text="Билетные кассы Ticketland.ru" />
+        <label text="Билетные кассы &quot;Ticketland.ru&quot;" />
         <space />
         <key key="shop" value="ticket" />
         <key key="tickets:theatre" value="yes" />
@@ -1496,8 +1490,8 @@
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-22:00, Mo-Su 09:00-23:00, Mo-Su 10:00-22:00, Mo-Su 11:00-21:00" />
         <text key="level" text="Этаж" />
         <link href="https://www.detmir.ru/shops/" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:Детский мир (сеть магазинов)" />
-        <key key="wikidata" value="Q16643324" />
+        <key key="brand:wikipedia" value="ru:Детский мир (сеть магазинов)" />
+        <key key="brand:wikidata" value="Q16643324" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Diana" ru.name="Диана (химчистка)" type="node,closedway,multipolygon">
@@ -1573,8 +1567,8 @@
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 10:00-22:00, Mo-Sa 10:00-21:00; Su 11:00-20:00" />
         <text key="level" text="Этаж" />
         <link href="https://www.lensmaster.ru/saloni-optiki" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:Линзмастер" />
-        <key key="wikidata" value="Q16671388" />
+        <key key="brand:wikipedia" value="ru:Линзмастер" />
+        <key key="brand:wikidata" value="Q16671388" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="L'etoile" ru.name="Л'Этуаль" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/f/f9/%D0%9B%D0%B5%D1%82%D1%83%D0%B0%D0%BB%D1%8C.jpg/240px-%D0%9B%D0%B5%D1%82%D1%83%D0%B0%D0%BB%D1%8C.jpg">
@@ -1595,8 +1589,8 @@
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 10:00-22:00, Mo-Fr 08:00-22:00; Sa-Su 09:00-21:00" />
         <text key="level" text="Этаж" />
         <link href="https://www.letoile.ru/retail/?city=156&amp;map=yes" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:Л'Этуаль" />
-        <key key="wikidata" value="Q18400706" />
+        <key key="brand:wikipedia" value="ru:Л'Этуаль" />
+        <key key="brand:wikidata" value="Q18400706" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Magnit Cosmetic" ru.name="Магнит Косметик" type="node,closedway,multipolygon">
@@ -1661,7 +1655,7 @@
         <combo key="contact:phone" text="Телефон" default="+7 800 700-21-26" />
         <key key="delivery" value="yes" />
         <key key="contact:website" value="https://ochkarik.ru/" />
-        <key key="contact:facebook" value="https://www.facebook.com/%D0%9E%D1%87%D0%BA%D0%B0%D1%80%D0%B8%D0%BA-148161638679393/" />
+        <key key="contact:facebook" value="https://www.facebook.com/Очкарик-148161638679393/" />
         <key key="contact:vk" value="https://vk.com/club19204041" />
         <combo key="opening_hours" text="Время работы" values="Mo-Su 10:00-22:00, Mo-Su 09:00-21:00" />
         <text key="level" text="Этаж" />
@@ -1677,9 +1671,10 @@
         <key key="name:ru" value="Персона" />
         <combo key="contact:phone" text="Телефон" />
         <key key="contact:website" value="http://www.persona.ru" />
-        <key key="contact:twitter" value="https://twitter.com/#!/Persona_PR" />
+        <key key="contact:twitter" value="https://twitter.com/Persona_PR" />
         <key key="contact:youtube" value="https://www.youtube.com/watch?v=qxudzLtUYZM" />
-        <key key="contact:facebook" value="https://www.facebook.com/ipersona" />
+        <!-- <key key="contact:facebook" value="https://www.facebook.com/ipersona" />
+        указан на официальном сайте, но в фб такой страницы нет -->
         <key key="contact:vk" value="https://vk.com/lab_persona" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 10:00-22:00, Mo-Fr 08:00-22:00; Sa-Su 09:00-21:00" />
         <link href="http://www.persona.ru/laboratories" text="Ссылка на сайт (время работы, координаты и т.п.)" />
@@ -1738,8 +1733,8 @@
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 10:00-22:00, Mo-Su 10:00-20:00" />
         <text key="level" text="Этаж" />
         <link href="http://www.sportmaster.ru/stores/moscow/" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:Спортмастер" />
-        <key key="wikidata" value="Q4438176" />
+        <key key="operator:wikipedia" value="ru:Спортмастер" />
+        <key key="operator:wikidata" value="Q4438176" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Tsentrobuv" ru.name="ЦентрОбувь" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/f/f2/%D0%A6%D0%B5%D0%BD%D1%82%D1%80%D0%9E%D0%B1%D1%83%D0%B2%D1%8C.png">
@@ -1756,11 +1751,11 @@
         <key key="contact:facebook" value="https://www.facebook.com/Centrobuv" />
         <key key="contact:ok" value="https:/ok.ru/centrobuv" />
         <key key="contact:vk" value="https://vk.com/centrobuv" />
-        <key key="contact:website" value="http://centrobuv.ru" />
+        <key key="contact:website" value="http://center-obuv.ru/" />
         <combo key="opening_hours" text="Время работы" values="Mo-Su 10:00-21:00, Mo-Su 10:00-20:00, Mo-Su 09:00-20:00, Mo-Su 09:00-19:00" />
-        <link href="http://centrobuv.ru/stores/" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:ЦентрОбувь" />
-        <key key="wikidata" value="Q4504072" />
+        <link href="http://center-obuv.ru/shops/moskva" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <key key="operator:wikipedia" value="ru:ЦентрОбувь" />
+        <key key="operator:wikidata" value="Q4504072" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="TVOE" ru.name="ТВОЁ" type="node,closedway,multipolygon">
@@ -1804,8 +1799,8 @@
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 10:00-21:00, Mo-Fr 08:00-22:00; Sa-Su 09:00-21:00" />
         <text key="level" text="Этаж" />
         <link href="http://www.eldorado.ru/info/shops/11324" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:Эльдорадо (сеть магазинов)" />
-        <key key="wikidata" value="Q4531492" />
+        <key key="brand:wikipedia" value="ru:Эльдорадо (сеть магазинов)" />
+        <key key="brand:wikidata" value="Q4531492" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="M.Video" ru.name="М.Видео" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/3/36/MVideo_2014.png/320px-MVideo_2014.png">
@@ -1827,8 +1822,8 @@
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 10:00-22:00, Mo-Su 10:00-23:00" />
         <text key="level" text="Этаж" />
         <link href="http://www.mvideo.ru/shops/store-list" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:М.Видео" />
-        <key key="wikidata" value="Q6558800" />
+        <key key="brand:wikipedia" value="ru:М.Видео" />
+        <key key="brand:wikidata" value="Q6558800" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Ulmart outpost" ru.name="Юлмарт (ПВЗ)" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/5/57/Logo_200x200.png">
@@ -1850,14 +1845,13 @@
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 10:00-22:00, Mo-Su 10:00-21:00" />
         <text key="level" text="Этаж" />
         <link href="https://www.ulmart.ru/help/moscow/contacts" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:Юлмарт" />
-        <key key="wikidata" value="Q4534379" />
+        <key key="brand:wikipedia" value="ru:Юлмарт" />
+        <key key="brand:wikidata" value="Q4534379" />
         <reference ref="wheelchair_address_footer" />
       </item>
     </group>
     <group name="Финансы" en.name="Finance" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Emoji_u1f4b0.svg/240px-Emoji_u1f4b0.svg.png">
-      <item name="Alfa-Bank" ru.name="Альфа-Банк" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Alfa-Bank.svg/213px-Alfa-Bank.svg.png">
-        <label text="Альфа-Банк" />
+      <item name="Alfa-Bank" ru.name="Альфа-Банк" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Alfa-Bank.svg/213px-Alfa-Bank.svg.png" preset_name_label="true">
         <space />
         <key key="amenity" value="bank" />
         <key key="bic" value="ALFARUMM" />
@@ -1873,20 +1867,19 @@
         <key key="contact:twitter" value="https://twitter.com/alfabank" />
         <key key="contact:ok" value="https://ok.ru/alfabank" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 10:00-22:00, Mo-Fr 09:00-21:00; Sa 10:00-19:00" />
+        <reference ref="wheelchair_address_footer" />
         <reference ref="bic_branch_ref_atm"/>
         <link href="https://alfabank.ru/office/moscow/map/?kind=retail" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:Альфа-банк" />
-        <key key="wikidata" value="Q1377835" />
-        <reference ref="wheelchair_address_footer" />
+        <key key="operator:wikipedia" value="ru:Альфа-банк" />
+        <key key="operator:wikidata" value="Q1377835" />
       </item>
-      <item name="Bank of Moscow" ru.name="Банк Москвы" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/5/5b/Bank_moskvy_logo.png">
-        <label text="Банк Москвы" />
+      <item name="VTB Bank of Moscow" ru.name="ВТБ Банк Москвы" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/5/5b/Bank_moskvy_logo.png" preset_name_label="true">
         <space />
         <key key="amenity" value="bank" />
         <key key="bic" value="VTBRRUMM" />
-        <key key="name" value="Банк Москвы" />
-        <key key="name:en" value="Bank of Moscow" />
-        <key key="name:ru" value="Банк Москвы" />
+        <key key="name" value="ВТБ Банк Москвы" />
+        <key key="name:en" value="VTB Bank of Moscow" />
+        <key key="name:ru" value="ВТБ Банк Москвы" />
         <key key="contact:phone" value="+7 800 2002326" />
         <key key="contact:website" value="http://www.bm.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/VTB.BankofMoscow" />
@@ -1896,14 +1889,13 @@
         <key key="contact:instagram" value="https://instagram.com/bankvtb/" />
         <key key="contact:ok" value="https://ok.ru/vtb" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 10:00-22:00, Mo-Fr 09:00-20:00; Sa 10:00-17:00" />
+        <reference ref="wheelchair_address_footer" />
         <reference ref="bic_branch_ref_atm"/>
         <link href="http://www.bm.ru/ru/ofisy-banka/otdelenija" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:Банк Москвы" />
-        <key key="wikidata" value="Q767946" />
-        <reference ref="wheelchair_address_footer" />
+        <key key="operator:wikipedia" value="ru:Банк Москвы" />
+        <key key="operator:wikidata" value="Q767946" />
       </item>
-      <item name="VTB24" ru.name="ВТБ24" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/c/cc/VTB24_Logo.svg/320px-VTB24_Logo.svg.png">
-        <label text="ВТБ24" />
+      <item name="VTB24" ru.name="ВТБ24" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/c/cc/VTB24_Logo.svg/320px-VTB24_Logo.svg.png" preset_name_label="true">
         <space />
         <key key="amenity" value="bank" />
         <key key="bic" value="CBGURUMM" />
@@ -1917,11 +1909,11 @@
         <key key="contact:vk" value="https://vk.com/vtb24" />
         <key key="contact:twitter" value="https://twitter.com/bankvtb24" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 10:00-22:00, Mo-Fr 09:00-20:00; Sa 10:00-17:00" />
+        <reference ref="wheelchair_address_footer" />
         <reference ref="bic_branch_ref_atm"/>
         <link href="https://www.vtb24.ru/pages/officesearch.aspx" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:ВТБ 24" />
-        <key key="wikidata" value="Q4102033" />
-        <reference ref="wheelchair_address_footer" />
+        <key key="operator:wikipedia" value="ru:ВТБ 24" />
+        <key key="operator:wikidata" value="Q4102033" />
       </item>
       <item name="Zaim-Express" ru.name="Займ-Экспресс" type="node,closedway,multipolygon">
         <label text="Микрокредитование &quot;Займ-Экспресс&quot;" />
@@ -1943,8 +1935,7 @@
         <link href="https://www.zaim-express.ru/adresa-ofisov/" text="Ссылка на сайт (время работы, координаты и т.п.)" />
         <reference ref="wheelchair_address_footer" />
       </item>
-      <item name="Post Bank" ru.name="Почта Банк" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/3/3b/%D0%9F%D0%BE%D1%87%D1%82%D0%B0_%D0%B1%D0%B0%D0%BD%D0%BA_%282015%29.jpg">
-        <label text="Почта Банк" />
+      <item name="Post Bank" ru.name="Почта Банк" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/3/3b/%D0%9F%D0%BE%D1%87%D1%82%D0%B0_%D0%B1%D0%B0%D0%BD%D0%BA_%282015%29.jpg" preset_name_label="true">
         <space />
         <key key="amenity" value="bank" />
         <key key="bic" value="POSBRUMM" />
@@ -1960,14 +1951,13 @@
         <key key="contact:instagram" value="https://www.instagram.com/pochtabank/" />
         <key key="contact:youtube" value="https://www.youtube.com/channel/UCs2NW4p10fwTar-zqw7mUIw" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Fr 10:00-19:00, Mo-Su 10:00-22:00, Mo-Fr 10:00-20:00; Sa 10:00-17:00" />
-        <reference ref="bic_branch_ref_atm"/>
-        <key key="wikipedia" value="ru:Почта Банк" />
-        <key key="wikidata" value="Q24930461" />
-        <link href="https://www.pochtabank.ru/map" text="Ссылка на сайт (время работы, координаты и т.п.)" />
         <reference ref="wheelchair_address_footer" />
+        <reference ref="bic_branch_ref_atm"/>
+        <key key="operator:wikipedia" value="ru:Почта Банк" />
+        <key key="operator:wikidata" value="Q24930461" />
+        <link href="https://www.pochtabank.ru/map" text="Ссылка на сайт (время работы, координаты и т.п.)" />
       </item>
-      <item name="Raiffeisen" ru.name="Райффайзен" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/c/cf/Reiffe_logo_rus.gif">
-        <label text="Райффайзен" />
+      <item name="Raiffeisen" ru.name="Райффайзен" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/c/cf/Reiffe_logo_rus.gif" preset_name_label="true">
         <space />
         <key key="amenity" value="bank" />
         <key key="bic" value="RZBMRUMM" />
@@ -1983,14 +1973,13 @@
         <key key="contact:telegram" value="https://telegram.me/RaiffeisenbankBot" />
         <key key="contact:instagram" value="https://instagram.com/raiffeisenbank_rus" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 10:00-22:00, Mo-Fr 10:00-20:00; Sa 10:00-17:00" />
+        <reference ref="wheelchair_address_footer" />
         <reference ref="bic_branch_ref_atm"/>
         <link href="https://www.raiffeisen.ru/offices" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:Райффайзенбанк" />
-        <key key="wikidata" value="Q4389244" />
-        <reference ref="wheelchair_address_footer" />
+        <key key="operator:wikipedia" value="ru:Райффайзенбанк" />
+        <key key="operator:wikidata" value="Q4389244" />
       </item>
-      <item name="Rosbank" ru.name="Росбанк" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/a/a2/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D0%A0%D0%BE%D1%81%D0%B1%D0%B0%D0%BD%D0%BA.svg/310px-%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D0%A0%D0%BE%D1%81%D0%B1%D0%B0%D0%BD%D0%BA.svg.png">
-        <label text="Росбанк" />
+      <item name="Rosbank" ru.name="Росбанк" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/a/a2/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D0%A0%D0%BE%D1%81%D0%B1%D0%B0%D0%BD%D0%BA.svg/310px-%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D0%A0%D0%BE%D1%81%D0%B1%D0%B0%D0%BD%D0%BA.svg.png"  preset_name_label="true">
         <space />
         <key key="amenity" value="bank" />
         <key key="bic" value="RSBNRUMM" />
@@ -2003,14 +1992,13 @@
         <key key="contact:vk" value="https://vk.com/rosbank" />
         <key key="contact:twitter" value="https://twitter.com/Rosbank_Info" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 10:00-22:00, Mo-Fr 09:00-20:00; Sa 09:00-17:00" />
+        <reference ref="wheelchair_address_footer" />
         <reference ref="bic_branch_ref_atm"/>
         <link href="https://www.rosbank.ru/ru/offices" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:Росбанк" />
-        <key key="wikidata" value="Q1119857" />
-        <reference ref="wheelchair_address_footer" />
+        <key key="operator:wikipedia" value="ru:Росбанк" />
+        <key key="operator:wikidata" value="Q1119857" />
       </item>
-      <item name="Sberbank" ru.name="Сбербанк" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/d/d6/Sberbank.svg/200px-Sberbank.svg.png">
-        <label text="Сбербанк" />
+      <item name="Sberbank" ru.name="Сбербанк" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/d/d6/Sberbank.svg/200px-Sberbank.svg.png" preset_name_label="true">
         <space />
         <key key="amenity" value="bank" />
         <key key="bic" value="SABRRUMM" />
@@ -2019,21 +2007,20 @@
         <key key="name:ru" value="Сбербанк" />
         <key key="contact:phone" value="+7 800 5555550" />
         <key key="contact:website" value="https://www.sberbank.ru" />
-        <key key="contact:facebook" value="https://www.facebook.com/bankdruzey" />
+        <key key="contact:facebook" value="https://www.facebook.com/sberbank" />
         <key key="contact:twitter" value="https://twitter.com/sberbank/" />
         <key key="contact:youtube" value="https://www.youtube.com/sberbank" />
         <key key="contact:instagram" value="https://instagram.com/sberbank" />
         <key key="contact:vk" value="https://vk.com/sberbank" />
         <key key="contact:ok" value="https://ok.ru/sberbank" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 10:00-22:00, Mo-Fr 09:30-20:00; Sa 10:00-18:00" />
+        <reference ref="wheelchair_address_footer" />
         <reference ref="bic_branch_ref_atm"/>
         <link href="https://www.sberbank.ru/ru/about/today/oib" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:Сбербанк России" />
-        <key key="wikidata" value="Q205012" />
-        <reference ref="wheelchair_address_footer" />
+        <key key="operator:wikipedia" value="ru:Сбербанк России" />
+        <key key="operator:wikidata" value="Q205012" />
       </item>
-      <item name="Payment terminal QIWI" ru.name="Платежный терминал QIWI" type="node" icon="https://upload.wikimedia.org/wikipedia/ru/8/89/Logo_qiwi_rgb.png">
-        <label text="Платежный терминал QIWI" />
+      <item name="Payment terminal QIWI" ru.name="Платежный терминал &quot;QIWI&quot;" type="node" icon="https://upload.wikimedia.org/wikipedia/ru/8/89/Logo_qiwi_rgb.png" preset_name_label="true">
         <space />
         <key key="amenity" value="payment_terminal" />
         <key key="brand" value="QIWI" />
@@ -2053,12 +2040,11 @@
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-21:00, Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00" />
         <text key="ref" text="Номер терминала" />
         <link href="https://qiwi.com/replenish/map.action?owners=1&amp;lng=55.73421489447054&amp;zoom=13" text="Ссылка на сайт (время работы, номера терминалов)" />
-        <key key="wikipedia" value="ru:Qiwi" />
-        <key key="wikidata" value="Q4047736" />
+        <key key="brand:wikipedia" value="ru:Qiwi" />
+        <key key="brand:wikidata" value="Q4047736" />
         <preset_link preset_name="Address" />
       </item>
-      <item name="InfoPayment terminal Mosinfo" ru.name="Справочно-платежный терминал Мосинфо" type="node">
-        <label text="Справочно-платежный терминал Мосинфо" />
+      <item name="InfoPayment terminal Mosinfo" ru.name="Справочно-платежный терминал &quot;Мосинфо&quot;" type="node" preset_name_label="true">
         <space />
         <key key="amenity" value="payment_terminal" />
         <key key="brand" value="Мосинфо" />
@@ -2075,8 +2061,7 @@
         <!-- <link href="http://www.giss.ru/#/objects/mit" text="Ссылка на сайт (время работы, номера терминалов)" /> -->
         <preset_link preset_name="Address" />
       </item>
-      <item name="Payment terminal MKB" ru.name="Платежный терминал МКБ (Московский кредитный банк)" type="node" icon="https://upload.wikimedia.org/wikipedia/ru/3/38/Mkb_logo.gif">
-        <label text="Платежный терминал МКБ" />
+      <item name="Payment terminal MKB" ru.name="Платежный терминал &quot;МКБ&quot; (Московский кредитный банк)" type="node" icon="https://upload.wikimedia.org/wikipedia/ru/3/38/Mkb_logo.gif" preset_name_label="true">
         <space />
         <key key="amenity" value="payment_terminal" />
         <key key="brand" value="Московский кредитный банк" />
@@ -2093,13 +2078,12 @@
         <link href="https://mkb.ru/images/facility/private_person/payment_outgoing/terminal_right.png" text="Фотография-пример" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-21:00, Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00" />
         <text key="ref" text="Номер терминала" />
-        <key key="wikipedia" value="ru:Московский кредитный банк" />
-        <key key="wikidata" value="Q4304175" />
+        <key key="operator:wikipedia" value="ru:Московский кредитный банк" />
+        <key key="operator:wikidata" value="Q4304175" />
         <link href="https://mkb.ru/about_bank/address/?type=terminal" text="Ссылка на сайт (время работы, номера терминалов)" />
         <preset_link preset_name="Address" />
       </item>
-      <item name="Payment terminal Elecsnet" ru.name="Платежный терминал Элекснет" type="node" >
-        <label text="Платежный терминал Элекснет" />
+      <item name="Payment terminal Elecsnet" ru.name="Платежный терминал &quot;Элекснет&quot;" type="node" preset_name_label="true">
         <space />
         <key key="amenity" value="payment_terminal" />
         <key key="brand" value="Элекснет" />
@@ -2120,15 +2104,15 @@
         <key key="contact:livejournal" value="http://elecsnet.livejournal.com/" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-21:00; Mo-Su 10:00-20:00" default="24/7" />
         <text key="ref" text="Номер терминала" />
-        <key key="wikipedia" value="ru:Элекснет" />
-        <key key="wikidata" value="Q4530795" />
+        <key key="brand:wikipedia" value="ru:Элекснет" />
+        <key key="brand:wikidata" value="Q4530795" />
         <link href="http://elecsnet.ru/terminals/addresses" text="Ссылка на сайт (время работы, номера терминалов)" />
         <preset_link preset_name="Address" />
       </item>
     </group>
     <group name="Аптеки и медицинские услуги" en.name="Pharmacies and medical services" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Twemoji_1f48a.svg/240px-Twemoji_1f48a.svg.png">
       <item name="36,6" ru.name="36,6" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/0/08/Apteka_36_6.svg/242px-Apteka_36_6.svg.png">
-        <label text="Аптека &quot;А5&quot;" />
+        <label text="Аптека &quot;36,6&quot;" />
         <space />
         <key key="amenity" value="pharmacy" />
         <key key="healthcare" value="pharmacy" />
@@ -2143,8 +2127,8 @@
         <key key="contact:ok" value="https://ok.ru/group/57486618853421" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 10:00-22:00, Mo-Fr 09:00-21:00; Sa-Su 10:00-19:00" />
         <link href="http://www.366.ru/pharmacies.html" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:36,6 (аптечная сеть)" />
-        <key key="wikidata" value="Q226889" />
+        <key key="brand:wikipedia" value="ru:36,6 (аптечная сеть)" />
+        <key key="brand:wikidata" value="Q226889" />
         <reference ref="wheelchair_dispencing_address_footer" />
       </item>
       <item name="A5" ru.name="А5" type="node,closedway,multipolygon">
@@ -2230,8 +2214,8 @@
         <key key="contact:instagram" value="https://www.instagram.com/rigla.ru/" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-22:00, Mo-Fr 08:00-22:00; Sa-Su 09:00-21:00" />
         <link href="http://www.rigla.ru/stores" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:Ригла" />
-        <key key="wikidata" value="Q4394431" />
+        <key key="brand:wikipedia" value="ru:Ригла" />
+        <key key="brand:wikidata" value="Q4394431" />
         <reference ref="wheelchair_dispencing_address_footer" />
       </item>
       <item name="Samson-Pharma" ru.name="Самсон-Фарма" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/c/cb/%D0%A1%D0%B0%D0%BC%D1%81%D0%BE%D0%BD-%D0%A4%D0%B0%D1%80%D0%BC%D0%B0.png">
@@ -2250,8 +2234,8 @@
         <key key="contact:twitter" value="https://twitter.com/samsonfarma" />
         <key key="contact:youtube" value="https://www.youtube.com/channel/UCPXq0ZxVRP8cth9_6Ht8j-w" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-21:00, Mo-Fr 08:00-22:00; Sa-Su 09:00-21:00" />
-        <key key="wikipedia" value="ru:Самсон-Фарма" />
-        <key key="wikidata" value="Q19911073" />
+        <key key="operator:wikipedia" value="ru:Самсон-Фарма" />
+        <key key="operator:wikidata" value="Q19911073" />
         <link href="http://www.samson-f.ru/pharmacies" text="Ссылка на сайт (время работы, координаты и т.п.)" />
         <reference ref="wheelchair_dispencing_address_footer" />
       </item>
@@ -2290,7 +2274,7 @@
         <reference ref="wheelchair_dispencing_address_footer" />
       </item>
       <item name="CMD" type="node,closedway,multipolygon">
-        <label text="Лаборатория &quot;CMD&quot;" />
+        <label text="Лаборатория &quot;CMD&quot; (Центр молекулярной диагностики)" />
         <space />
         <key key="amenity" value="doctors" />
         <key key="healthcare" value="doctor" />
@@ -2352,33 +2336,31 @@
         <key key="contact:instagram" value="https://instagram.com/invitro.ru/" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-22:00, Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
         <link href="https://www.invitro.ru/offices/moscow" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:Медицинская компания Инвитро" />
-        <key key="wikidata" value="Q4200546" />
+        <key key="operator:wikipedia" value="ru:Медицинская компания Инвитро" />
+        <key key="operator:wikidata" value="Q4200546" />
         <reference ref="wheelchair_address_footer" />
       </item>
     </group>
     <group name="Государственные органы" en.name="Government services" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Emoji_u1f46e.svg/240px-Emoji_u1f46e.svg.png">
-      <item name="Военкомат" type="node,closedway,multipolygon">
-        <label text="Военкомат" />
+      <item name="Военкомат" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <key key="military" value="office" />
         <combo key="name" text="Наименование" default="N-ский военкомат" />
         <combo key="official_name" text="Полное официальное наименование подразделения" default="N-ский военный комиссариат N-ской области" />
         <combo key="contact:phone" text="Телефон"/>
         <key key="contact:website" value="http://mil.ru" />
-        <key key="contact:facebook" value="https://www.facebook.com/Ministry-of-Defence-of-the-Russian-Federation-1492252324350852/" />
+        <key key="contact:facebook" value="https://www.facebook.com/mod.mil.rus/" />
         <key key="contact:twitter" value="https://www.twitter.com/mod_russia" />
         <key key="contact:youtube" value="https://www.youtube.com/channel/UCQGqX5Ndpm4snE0NTjyOJnA" />
         <key key="contact:instagram" value="https://www.instagram.com/mil_ru/" />
         <key key="contact:vk" value="https://vk.com/mil" />
         <key key="contact:ok" value="https://ok.ru/mil" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-21:00, Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00, Mo-Th 09:00-13:00,13:45-17:00; Fr 09:00-13:00,13:45-15:45" />
-        <key key="wikipedia" value="ru:Военный комиссариат" />
-        <key key="wikidata" value="Q460254" />
+        <key key="operator:wikipedia" value="ru:Военный комиссариат" />
+        <key key="operator:wikidata" value="Q460254" />
         <reference ref="wheelchair_address_footer" />
       </item>
-      <item name="ЗАГС" type="node,closedway,multipolygon">
-        <label text="ЗАГС" />
+      <item name="ЗАГС" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <key key="office" value="government" />
         <key key="government" value="register_office" />
@@ -2386,12 +2368,11 @@
         <combo key="official_name" text="Полное официальное наименование подразделения" default="N-ское управление ЗАГС N-ской области" />
         <reference ref="website_phone"/>
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-21:00, Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00, Mo-Th 09:00-13:00,13:45-17:00; Fr 09:00-13:00,13:45-15:45" />
-        <key key="wikipedia" value="ru:ЗАГС" />
-        <key key="wikidata" value="Q254213" />
+        <key key="operator:wikipedia" value="ru:ЗАГС" />
+        <key key="operator:wikidata" value="Q254213" />
         <reference ref="wheelchair_address_footer" />
       </item>
-      <item name="Казначейство" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Roskazna.png/216px-Roskazna.png">
-        <label text="Казначейство (инспекция ФНС)" />
+      <item name="Казначейство (инспекция ФНС)" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Roskazna.png/216px-Roskazna.png" preset_name_label="true">
         <space />
         <key key="office" value="government" />
         <key key="government" value="treasury" />
@@ -2403,12 +2384,11 @@
         <key key="contact:facebook" value="https://www.facebook.com/FederalTreasury/" />
         <key key="contact:livejournal" value="http://roskazna.livejournal.com/" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-21:00, Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00, Mo-Th 09:00-12:30,13:15-18:00; Fr 09:00-12:30,13:15-17:00" />
-        <key key="wikipedia" value="ru:Казначейство России" />
-        <key key="wikidata" value="Q4208422" />
+        <key key="operator:wikipedia" value="ru:Казначейство России" />
+        <key key="operator:wikidata" value="Q4208422" />
         <reference ref="wheelchair_address_footer" />
       </item>
-      <item name="Миграционная служба" type="node,closedway,multipolygon">
-        <label text="Управление/отдел по вопросам миграции МВД" />
+      <item name="Управление/отдел по вопросам миграции МВД" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <key key="office" value="government" />
         <key key="government" value="migration" />
@@ -2416,12 +2396,11 @@
         <key key="contact:website" value="https://guvm.mvd.ru/" />
         <combo key="contact:phone" text="Телефон"/>
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-21:00, Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00, Mo-Th 09:00-12:30,13:15-18:00; Fr 09:00-12:30,13:15-17:00" />
-        <key key="wikipedia" value="ru:Главное управление по вопросам миграции МВД РФ" />
-        <key key="wikidata" value="Q4346571" />
+        <key key="operator:wikipedia" value="ru:Главное управление по вопросам миграции МВД РФ" />
+        <key key="operator:wikidata" value="Q4346571" />
         <reference ref="wheelchair_address_footer" />
       </item>
-      <item name="Налоговая инспекция" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/c/cf/%D0%AD%D0%BC%D0%B1%D0%BB%D0%B5%D0%BC%D0%B0_%D0%A4%D0%9D%D0%A1_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8_%282014%29.jpg">
-        <label text="Налоговая инспекция (инспекция ФНС)" />
+      <item name="Налоговая инспекция (ФНС)" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/c/cf/%D0%AD%D0%BC%D0%B1%D0%BB%D0%B5%D0%BC%D0%B0_%D0%A4%D0%9D%D0%A1_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8_%282014%29.jpg"  preset_name_label="true">
         <space />
         <key key="office" value="government" />
         <key key="government" value="tax" />
@@ -2433,12 +2412,12 @@
         <key key="contact:vk" value="https://vk.com/nalog__ru" />
         <key key="contact:twitter" value="https://twitter.com/nalog__ru" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-21:00, Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00, Mo-Th 09:00-12:30,13:15-18:00; Fr 09:00-12:30,13:15-17:00" />
-        <key key="wikipedia" value="ru:Налоговая инспекция Российской Федерации" />
-        <key key="wikidata" value="Q4312669" />
+        <key key="operator:wikipedia" value="ru:Налоговая инспекция Российской Федерации" />
+        <key key="operator:wikidata" value="Q4312669" />
         <reference ref="wheelchair_address_footer" />
       </item>
-      <item name="Пенсионный фонд" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Logo_PFRF.JPG/235px-Logo_PFRF.JPG">
-        <label text="Пенсионный фонд (отделение, клиентская служба)" />
+      <item name="Пенсионный фонд" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Logo_PFRF.JPG/235px-Logo_PFRF.JPG" preset_name_label="true">
+        <!-- <label text="Отделение, клиентская служба" /> -->
         <space />
         <key key="office" value="government" />
         <key key="government" value="pension_fund" />
@@ -2447,22 +2426,21 @@
         <combo key="contact:phone" text="Телефон"/>
         <key key="contact:website" value="http://www.pfrf.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/PensionFondRF/" />
-        <key key="contact:twitter" value="https://twitter.com/#!/pension_fond" />
+        <key key="contact:twitter" value="https://twitter.com/pension_fond" />
         <key key="contact:vk" value="https://vk.com/pension_fond" />
         <key key="contact:ok" value="https://ok.ru/pensionfond/" />
         <key key="contact:youtube" value="https://www.youtube.com/user/pensionnijfond" />
         <key key="contact:livejournal" value="http://pensionnij-fond.livejournal.com/" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-21:00, Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00, Mo-Th 09:00-12:30,13:15-18:00; Fr 09:00-12:30,13:15-17:00" />
-        <key key="wikipedia" value="ru:Пенсионный фонд Российской Федерации" />
-        <key key="wikidata" value="Q2144353" />
+        <key key="operator:wikipedia" value="ru:Пенсионный фонд Российской Федерации" />
+        <key key="operator:wikidata" value="Q2144353" />
         <reference ref="wheelchair_address_footer" />
       </item>
-      <item name="Почта России" en.name="Russian Post" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Russian_Post.svg/298px-Russian_Post.svg.png">
-        <label text="Почтовое отделение ФГУП «Почта России»" />
+      <item name="Почтовое отделение ФГУП &quot;Почта России&quot;" en.name="Russian Post" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Russian_Post.svg/298px-Russian_Post.svg.png" preset_name_label="true">
         <space />
         <key key="amenity" value="post_office" />
         <key key="operator" value="ФГУП «Почта России»" />
-        <combo key="name" text="Наименование отделения связи" default="Отделение связи №" />
+        <combo key="name" text="Наименование отделения связи" default="Отделение связи № " />
         <text key="ref" text="Номер отделения связи" />
         <key key="contact:phone" value="+7 800 200-58-88" />
         <key key="contact:website" value="https://www.pochta.ru" />
@@ -2471,12 +2449,11 @@
         <key key="contact:twitter" value="https://twitter.com/ruspostofficial" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-21:00, Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00, Mo-Th 09:00-12:30,13:15-18:00; Fr 09:00-12:30,13:15-17:00" />
         <link href="https://pochta.ru/offices" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <key key="wikipedia" value="ru:Почта России" />
-        <key key="wikidata" value="Q1502763" />
+        <key key="operator:wikipedia" value="ru:Почта России" />
+        <key key="operator:wikidata" value="Q1502763" />
         <reference ref="wheelchair_address_footer" />
       </item>
-      <item name="Прокуратура" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Genprokuratura.png/219px-Genprokuratura.png">
-        <label text="Прокуратура" />
+      <item name="Прокуратура" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Genprokuratura.png/219px-Genprokuratura.png" preset_name_label="true">
         <space />
         <key key="office" value="government" />
         <key key="government" value="prosecutor" />
@@ -2491,12 +2468,11 @@
         <key key="contact:telegram" value="https://telegram.me/genprocrf" />
         <key key="contact:youtube" value="https://www.youtube.com/user/genprocrf" />
         <key key="contact:instagram" value="https://www.instagram.com/genprocrf/" />
-        <key key="wikipedia" value="ru:Прокуратура Российской Федерации" />
-        <key key="wikidata" value="Q2387440" />
+        <key key="operator:wikipedia" value="ru:Прокуратура Российской Федерации" />
+        <key key="operator:wikidata" value="Q2387440" />
         <reference ref="wheelchair_address_footer" />
       </item>
-      <item name="Следственный комитет" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Investigative_Committee_Russia_Emblem.png/202px-Investigative_Committee_Russia_Emblem.png">
-        <label text="Следственный комитет" />
+      <item name="Следственный комитет" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Investigative_Committee_Russia_Emblem.png/202px-Investigative_Committee_Russia_Emblem.png" preset_name_label="true">
         <space />
         <key key="office" value="government" />
         <key key="government" value="investigation" />
@@ -2509,12 +2485,11 @@
         <key key="contact:twitter" value="https://twitter.com/sledcom_rf" />
         <key key="contact:youtube" value="https://www.youtube.com/channel/UCOiAwKQuFMdJuK7wwDIoKpA" />
         <key key="contact:instagram" value="https://www.instagram.com/sledcom_rf/" />
-        <key key="wikipedia" value="ru:Следственный комитет Российской Федерации" />
-        <key key="wikidata" value="Q2577002" />
+        <key key="operator:wikipedia" value="ru:Следственный комитет Российской Федерации" />
+        <key key="operator:wikidata" value="Q2577002" />
         <reference ref="wheelchair_address_footer" />
       </item>
-      <item name="Служба государственной статистики" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Russian_Federal_State_Statistics_Service_Emblem.svg/205px-Russian_Federal_State_Statistics_Service_Emblem.svg.png">
-        <label text="Служба гос. статистики" />
+      <item name="Служба государственной статистики" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Russian_Federal_State_Statistics_Service_Emblem.svg/205px-Russian_Federal_State_Statistics_Service_Emblem.svg.png" preset_name_label="true">
         <space />
         <key key="office" value="government" />
         <key key="government" value="statistics" />
@@ -2526,12 +2501,11 @@
         <key key="contact:facebook" value="https://www.facebook.com/rosstatistika" />
         <key key="contact:livejournal" value="http://rosstatistika.livejournal.com/" />
         <key key="contact:twitter" value="https://twitter.com/rosstatistika" />
-        <key key="wikipedia" value="ru:Федеральная служба государственной статистики" />
-        <key key="wikidata" value="Q2624680" />
+        <key key="operator:wikipedia" value="ru:Федеральная служба государственной статистики" />
+        <key key="operator:wikidata" value="Q2624680" />
         <reference ref="wheelchair_address_footer" />
       </item>
-      <item name="Служба социальной защиты" type="node,closedway,multipolygon">
-        <label text="Служба соц. защиты" />
+      <item name="Служба социальной защиты" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <key key="office" value="government" />
         <key key="government" value="social_services" />
@@ -2541,8 +2515,7 @@
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-21:00, Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00, Mo-Th 09:00-12:30,13:15-18:00; Fr 09:00-12:30,13:15-17:00" />
         <reference ref="wheelchair_address_footer" />
       </item>
-      <item name="Управление образования" type="node,closedway,multipolygon">
-        <label text="Управление образования" />
+      <item name="Управление образования" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <key key="office" value="government" />
         <key key="government" value="education" />
@@ -2551,8 +2524,7 @@
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-21:00, Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00, Mo-Th 09:00-12:30,13:15-18:00; Fr 09:00-12:30,13:15-17:00" />
         <reference ref="wheelchair_address_footer" />
       </item>
-      <item name="Центр гигиены и эпидемиологии (б. СЭС)" type="node,closedway,multipolygon">
-        <label text="Центр гигиены и эпидемиологии (б. СЭС)" />
+      <item name="Центр гигиены и эпидемиологии (б. СЭС)" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <key key="office" value="government" />
         <key key="government" value="healthcare" />
@@ -2562,9 +2534,8 @@
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-21:00, Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00, Mo-Th 09:00-13:00,13:45-17:00; Fr 09:00-13:00,13:45-15:45" />
         <reference ref="wheelchair_address_footer" />
       </item>
-      <item name="Центр госуслуг (МФЦ, «Мои документы»)" type="node,closedway,multipolygon">
+      <item name="Центр госуслуг (МФЦ, &quot;Мои документы&quot;)" type="node,closedway,multipolygon" preset_name_label="true">
         <!-- МФЦ — это не только Москва и Санкт-Петербург, но и вся Россия. -->
-        <label text="Центр госуслуг (МФЦ, «Мои документы»)" />
         <space />
         <key key="amenity" value="public_service" />
         <key key="office" value="government" />
@@ -2575,12 +2546,11 @@
         <combo key="contact:website" text="Веб-сайт" values="https://md.mos.ru" />
         <combo key="contact:phone" text="Телефон"/>
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-21:00, Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00, Mo-Th 09:00-13:00,13:45-17:00; Fr 09:00-13:00,13:45-15:45" />
-        <key key="wikipedia" value="ru:Многофункциональный центр" />
-        <key key="wikidata" value="Q1021033" />
+        <key key="operator:wikipedia" value="ru:Многофункциональный центр" />
+        <key key="operator:wikidata" value="Q1021033" />
         <reference ref="wheelchair_internetaccess_address_footer" />
       </item>
-      <item name="Центр занятости" type="node,closedway,multipolygon">
-        <label text="Центр занятости (фонд занятости, биржа труда)" />
+      <item name="Центр занятости (фонд занятости, биржа труда)" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <key key="office" value="government" />
         <key key="government" value="recruitment" />
@@ -2588,12 +2558,11 @@
         <combo key="official_name" text="Полное официальное наименование подразделения" default="Государственное казенное учреждение &quot;...ский центр занятости населения&quot;" />
         <reference ref="website_phone"/>
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-21:00, Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00, Mo-Th 09:00-13:00,13:45-17:00; Fr 09:00-13:00,13:45-15:45" />
-        <key key="wikipedia" value="ru:Биржа труда" />
-        <key key="wikidata" value="Q1690950" />
+        <key key="operator:wikipedia" value="ru:Биржа труда" />
+        <key key="operator:wikidata" value="Q1690950" />
         <reference ref="wheelchair_address_footer" />
       </item>
-      <item name="Центр социального обслуживания" type="node,closedway,multipolygon">
-        <label text="Центр социального обслуживания (инвалидов, пожилых)" />
+      <item name="Центр социального обслуживания (инвалидов, пожилых)" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <key key="amenity" value="social_facility" />
         <key key="social_facility" value="outreach" />
@@ -2781,8 +2750,7 @@
         </item>
       </group>
       <separator />
-      <item name="Hospital" ru.name="Стационар (больница, госпиталь)" type="node,closedway,multipolygon">
-        <label text="Стационар (больница, госпиталь)" />
+      <item name="Hospital" ru.name="Стационар (больница, госпиталь)" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <key key="amenity" value="hospital" />
         <key key="healthcare" value="hospital" />
@@ -2791,13 +2759,12 @@
         <reference ref="name_website_phone_oh"/>
         <reference ref="wheelchair_address_footer" />
         <reference ref="health20_providedfor" />
-        <item_separator />
+        <space />
         <label text="Если больница специализированная (например, глазная)," />
         <label text="укажите специализацию (для глазной health_specialty:ophthalmology=main)" />
         <reference ref="health20_specialities_footer" />
       </item>
-      <item name="Clinic" ru.name="Поликлиника, клиника, медцентр, диспансер" type="node,closedway,multipolygon">
-        <label text="Поликлиника, клиника, медцентр, диспансер (свыше 10 врачей)" />
+      <item name="Clinic" ru.name="Поликлиника, клиника, медцентр, диспансер (&gt;10 врачей)" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <key key="amenity" value="clinic" />
         <key key="healthcare" value="clinic" />
@@ -2814,13 +2781,12 @@
           <check key="medical_system:tibetan" text="Тибетская традиционная" disable_off="true" />
         </checkgroup>
         <reference ref="health20_providedfor" />
-        <item_separator />
+        <space />
         <label text="Если клиника специализированная (например, онкологическая)," />
         <label text="укажите специализацию (для онкологической health_specialty:oncology=main)" />
         <reference ref="health20_specialities_footer" />
       </item>
-      <item name="Doctors" ru.name="Кабинет врача, медцентр, амбулатория, ФАП" type="node,closedway,multipolygon">
-        <label text="Кабинет врача, медцентр, амбулатория, ФАП (до 10 врачей)" />
+      <item name="Doctors" ru.name="Кабинет врача, медцентр, амбулатория, ФАП (&lt;10 врачей)" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <key key="amenity" value="doctors" />
         <key key="healthcare" value="doctor" />
@@ -2837,13 +2803,12 @@
           <check key="medical_system:tibetan" text="Тибетская традиционная" disable_off="true" />
         </checkgroup>
         <reference ref="health20_providedfor" />
-        <item_separator />
+        <space />
         <label text="Если кабинет специализированный (например, гастроэнтерологический)," />
         <label text="укажите специализацию (для гастроэнтерологии health_specialty:gastroenterology=main)" />
         <reference ref="health20_specialities_footer" />
       </item>
-      <item name="Woman clinic" ru.name="Женская консультация" type="node,closedway,multipolygon">
-        <label text="Женская консультация" />
+      <item name="Woman clinic" ru.name="Женская консультация" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <key key="amenity" value="clinic" />
         <key key="healthcare" value="clinic" />
@@ -2855,8 +2820,7 @@
         <reference ref="wheelchair_address_footer" />
         <reference ref="health20_specialities_footer" />
       </item>
-      <item name="Laboratory" ru.name="Лаборатория" type="node,closedway,multipolygon">
-        <label text="Лаборатория (анализы и т.п.)" />
+      <item name="Laboratory" ru.name="Лаборатория (анализы, диагностика)" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <key key="amenity" value="doctors" />
         <key key="healthcare" value="doctor" />
@@ -2867,8 +2831,7 @@
         <reference ref="wheelchair_address_footer" />
         <reference ref="health20_specialities_footer" />
       </item>
-      <item name="Rehab" ru.name="Реабелитационный центр" type="node,closedway,multipolygon">
-        <label text="Реабелитационный центр" />
+      <item name="Rehab" ru.name="Реабелитационный центр" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <key key="amenity" value="clinic" />
         <key key="healthcare" value="rehabilitation" />
@@ -2876,13 +2839,12 @@
         <key key="medical_system:western" value="yes" />
         <reference ref="name_website_phone_oh"/>
         <reference ref="wheelchair_address_footer" />
-        <item_separator />
+        <space />
         <label text="Если реабелитационный центр специализированный (например, наркологический)," />
         <label text="укажите специализацию (для наркологии health_specialty:addiction_medicine=main)" />
         <reference ref="health20_specialities_footer" />
       </item>
-      <item name="Perinatal center" ru.name="Роддом" type="node,closedway,multipolygon">
-        <label text="Роддом (перинатальный центр)" />
+      <item name="Perinatal center" ru.name="Роддом (перинатальный центр)" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <key key="amenity" value="hospital" />
         <key key="healthcare" value="hospital" />
@@ -2894,8 +2856,7 @@
         <reference ref="wheelchair_address_footer" />
         <reference ref="health20_specialities_footer" />
       </item>
-      <item name="Sanatorium" ru.name="Санаторий" type="node,closedway,multipolygon">
-        <label text="Санаторий (с лечебной специализацией)" />
+      <item name="Sanatorium" ru.name="Санаторий (с лечебной специализацией)" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <key key="leisure" value="resort" />
         <key key="resort" value="sanatorium" />
@@ -2905,13 +2866,12 @@
         <reference ref="name_website_phone_oh"/>
         <reference ref="wheelchair_address_footer" />
         <reference ref="health20_providedfor" />
-        <item_separator />
+        <space />
         <label text="Если санаторий специализированный (например, кардиологический)," />
         <label text="укажите специализацию (для кардиологии health_specialty:cardiology=main)" />
         <reference ref="health20_specialities_footer" />
       </item>
-      <item name="Dentist" ru.name="Стоматология (клиника, кабинет)" type="node,closedway,multipolygon">
-        <label text="Стоматология (клиника, кабинет)" />
+      <item name="Dentist" ru.name="Стоматология (клиника, кабинет)" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <key key="amenity" value="dentist" />
         <key key="healthcare" value="dentist" />
@@ -2924,8 +2884,7 @@
         <reference ref="health20_providedfor" />
         <reference ref="health20_specialities_footer" />
       </item>
-      <item name="Ambulance station" ru.name="Станция скорой помощи" type="node,closedway,multipolygon">
-        <label text="Станция скорой помощи" />
+      <item name="Ambulance station" ru.name="Станция скорой помощи" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <key key="emergency" value="ambulance_station" />
         <key key="healthcare" value="yes" />
@@ -2936,8 +2895,7 @@
         <reference ref="wheelchair_address_footer" />
         <reference ref="health20_specialities_footer" />
       </item>
-      <item name="First-aid center" ru.name="Травмпункт" type="node,closedway,multipolygon">
-        <label text="Травмпункт" />
+      <item name="First-aid center" ru.name="Травмпункт" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <key key="amenity" value="doctors" />
         <key key="healthcare" value="doctor" />
@@ -2949,8 +2907,7 @@
         <reference ref="health20_providedfor" />
         <reference ref="health20_specialities_footer" />
       </item>
-      <item name="Hospice" ru.name="Хоспис" type="node,closedway,multipolygon">
-        <label text="Хоспис" />
+      <item name="Hospice" ru.name="Хоспис" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <key key="amenity" value="hospital" />
         <key key="healthcare" value="hospital" />
@@ -2962,8 +2919,7 @@
       </item>
     </group>
     <group name="Образовательные учреждения" en.name="Education facilities" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Fxemoji_u1F393.svg/240px-Fxemoji_u1F393.svg.png">
-      <item name="Kindergarten" ru.name="Детский сад" type="node,closedway,multipolygon">
-        <label text="Детский сад" />
+      <item name="Kindergarten" ru.name="Детский сад" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <key key="amenity" value="kindergarten" />
         <key key="education" value="kindergarten" />
@@ -2973,8 +2929,7 @@
         <reference ref="name_ownership_website_phone" />
         <reference ref="wheelchair_address_footer" />
       </item>
-      <item name="Primary school" ru.name="Начальная школа" type="node,closedway,multipolygon">
-        <label text="Начальная школа" />
+      <item name="Primary school" ru.name="Начальная школа" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <key key="amenity" value="school" />
         <key key="education" value="school" />
@@ -2985,8 +2940,7 @@
         <reference ref="name_ownership_website_phone" />
         <reference ref="wheelchair_address_footer" />
       </item>
-      <item name="School" ru.name="Общеобразовательная школа" type="node,closedway,multipolygon">
-        <label text="Общеобразовательная школа (лицей, гимназия)" />
+      <item name="School" ru.name="Общеобразовательная школа (лицей, гимназия)" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <key key="amenity" value="school" />
         <key key="education" value="school" />
@@ -2996,7 +2950,8 @@
         <key key="education_level:secondary" value="yes" />
         <key key="education_form:fulltime" value="yes" />
         <reference ref="name_ownership_website_phone" />
-        <item_separator/>
+        <reference ref="wheelchair_address_footer" />
+        <space />
         <label text="Школы с углублённым изучением:" />
         <checkgroup columns="3" >
           <check key="education_profile:mathematics" text="математики" disable_off="true" />
@@ -3005,11 +2960,10 @@
           <check key="education_profile:biology" text="биологии" disable_off="true" />
           <check key="education_profile:languages" text="языков" disable_off="true" />
         </checkgroup>
+        <space />
         <label text="Для языковых спецшкол добавьте тег education_programme:EN/ES/DE/FR...=yes" />
-        <reference ref="wheelchair_address_footer" />
       </item>
-      <item name="College" ru.name="Колледж, ПТУ, техникум" type="node,closedway,multipolygon">
-        <label text="Колледж, ПТУ, техникум" />
+      <item name="College" ru.name="Колледж, ПТУ, техникум" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <key key="amenity" value="college" />
         <key key="education" value="college" />
@@ -3017,16 +2971,16 @@
         <key key="education_profile:professional" value="yes" />
         <key key="education_level:secondary" value="yes" />
         <reference ref="name_ownership_website_phone" />
+        <reference ref="wheelchair_address_footer" />
+        <space />
         <label text="Форма обучения:" />
         <checkgroup columns="3">
           <check key="education_form:fulltime" text="дневная" disable_off="true" />
           <check key="education_form:parttime" text="вечерняя" disable_off="true" />
           <check key="education_form:external" text="заочная" disable_off="true" />
         </checkgroup>
-        <reference ref="wheelchair_address_footer" />
       </item>
-      <item name="University" ru.name="ВУЗ" type="node,closedway,multipolygon">
-        <label text="ВУЗ (университет, институт, академия)" />
+      <item name="University" ru.name="ВУЗ (университет, институт, академия)" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <key key="amenity" value="university" />
         <key key="education" value="university" />
@@ -3034,16 +2988,16 @@
         <key key="education_profile:professional" value="yes" />
         <key key="education_level:higher" value="yes" />
         <reference ref="name_ownership_website_phone" />
+        <reference ref="wheelchair_address_footer" />
+        <space />
         <label text="Форма обучения:" />
         <checkgroup columns="3">
           <check key="education_form:fulltime" text="дневная" disable_off="true" />
           <check key="education_form:parttime" text="вечерняя" disable_off="true" />
           <check key="education_form:external" text="заочная" disable_off="true" />
         </checkgroup>
-        <reference ref="wheelchair_address_footer" />
       </item>
-      <item name="Sport school" ru.name="Спортивная школа" type="node,closedway,multipolygon">
-        <label text="Спортивная школа (ДЮСШ, ДЮСШОР)" />
+      <item name="Sport school" ru.name="Спортивная школа (ДЮСШ, ДЮСШОР)" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <key key="amenity" value="training" />
         <key key="training" value="sport" />
@@ -3057,8 +3011,7 @@
         <combo key="opening_hours" text="Время работы" values="Mo-Su 09:00-20:00, Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
         <reference ref="wheelchair_address_footer" />
       </item>
-      <item name="Music school" ru.name="Музыкальная школа" type="node,closedway,multipolygon">
-        <label text="Музыкальная школа" />
+      <item name="Music school" ru.name="Музыкальная школа" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <key key="amenity" value="music_school" />
         <key key="education" value="facultative_school" />
@@ -3070,8 +3023,7 @@
         <combo key="opening_hours" text="Время работы" values="Mo-Su 09:00-20:00, Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
         <reference ref="wheelchair_address_footer" />
       </item>
-      <item name="Art school" ru.name="Художественная школа" type="node,closedway,multipolygon">
-        <label text="Художественная школа (школа искусств)" />
+      <item name="Art school" ru.name="Художественная школа (школа искусств)" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <key key="amenity" value="training" />
         <key key="training" value="art" />
@@ -3084,8 +3036,7 @@
         <combo key="opening_hours" text="Время работы" values="Mo-Su 09:00-20:00, Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
         <reference ref="wheelchair_address_footer" />
       </item>
-      <item name="Driving school" ru.name="Автошкола" type="node,closedway,multipolygon">
-        <label text="Автошкола" />
+      <item name="Driving school" ru.name="Автошкола" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <key key="amenity" value="driving_school" />
         <key key="education" value="courses" />
@@ -3097,8 +3048,7 @@
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-22:00, Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
         <reference ref="wheelchair_address_footer" />
       </item>
-      <item name="Language school" ru.name="Курсы/школа иностранного языка" type="node,closedway,multipolygon">
-        <label text="Курсы/школа иностранного языка" />
+      <item name="Language school" ru.name="Курсы/школа иностранного языка" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <key key="amenity" value="language_school" />
         <key key="education" value="courses" />
@@ -3106,7 +3056,8 @@
         <key key="education_form:parttime" value="yes" />
         <reference ref="name_ownership_website_phone" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-22:00, Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
-        <item_separator />
+        <reference ref="wheelchair_address_footer" />
+        <space />
         <label text="Языки:" />
         <checkgroup columns="3">
           <check key="education_programme:EN" text="английский" disable_off="true" />
@@ -3116,13 +3067,11 @@
           <check key="education_programme:DE" text="немецкий" disable_off="true" />
           <check key="education_programme:FR" text="французский" disable_off="true" />
         </checkgroup>
-        <reference ref="wheelchair_address_footer" />
       </item>
     </group>
     <group name="Городская инфраструктура" en.name="Urban units" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Fxemoji_u1F3E2.svg/240px-Fxemoji_u1F3E2.svg.png">
-      <item name="Bicycle parking stands" ru.name="Велопарковка-стойки" type="node,closedway,multipolygon">
+      <item name="Bicycle parking stands" ru.name="Велопарковка (стойки)" type="node,closedway,multipolygon" preset_name_label="true">
         <!-- NB: всё то же самое прекрасно делается через пункт дефолтного пресета -->
-        <label text="Велопарковка в виде стоек, к которым нужно пристегивать велосипед" />
         <space />
         <key key="amenity" value="bicycle_parking" />
         <key key="bicycle_parking" value="stands" />
@@ -3130,10 +3079,11 @@
         <key key="covered" value="no" />
         <key key="supervised" value="no" />
         <key key="opening_hours" value="24/7" />
-        <combo key="capacity" text="Вместимость (за каждую стойку можно прицепить два велика)" />
+        <combo key="capacity" text="Вместимость (1 стойка = 2 велика)" />
       </item>
-      <item name="City garage" ru.name="Городской гараж (зелёный поликарбонат)" type="closedway,multipolygon">
-        <label text="Гараж во дворе (стены и крыша из зелёного поликарбоната)" />
+      <item name="City garage" ru.name="Городской гараж (зелёный поликарбонат)" type="closedway,multipolygon" preset_name_label="true">
+        <space />
+        <label text="Расположен в дворах жилых домов. Стены и крыша из зелёного поликарбоната." />
         <space />
         <combo key="building" text="Гараж или гаражи?" values="garage,garages" display_values="гараж, гаражи" default="garages" />
         <key key="building:levels" value="1" />
@@ -3147,7 +3097,8 @@
         <text key="ref" text="Парковка №" />
         <preset_link preset_name="Address" />
       </item>
-      <item name="MGSA garages" ru.name="Гаражи МГСА" type="closedway,multipolygon">
+      <item name="MGSA garages" ru.name="Гаражи МГСА (территория)" type="closedway,multipolygon" preset_name_label="true">
+        <space />
         <label text="Пример надписи на табличке: МГСА Тимирязевский ТС Автостоянка № 72/3" />
         <label text="Использовать для территории гаражей, а не самих зданий." />
         <space />
@@ -3159,9 +3110,9 @@
         <key key="landuse" value="garages" />
         <preset_link preset_name="Address" />
       </item>
-      <item name="Moscow WC booth" ru.name="Городской туалет (Москва)" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Emojione_1F6BE.svg/64px-Emojione_1F6BE.svg.png">
-        <label text="Общественный туалет (Москва, рыжие кабинки, две двери, &quot;Городской туалет&quot;)" />
+      <item name="Moscow WC booth" ru.name="Городской туалет (Москва)" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Emojione_1F6BE.svg/64px-Emojione_1F6BE.svg.png" preset_name_label="true">
         <space />
+        <label text="&quot;Городской туалет&quot;. Рыжие кабинки. Две двери." />
         <!--<link href="https://atlas.mos.ru/?lang=ru&amp;z=9&amp;ll=37.63146432914275%2C55.78110268564032&amp;pa=139.3&amp;pp=37.63146309%2C55.78110533" text="Фотография-пример" />
         Найти ссылку не на атлас Москвы. Эта уже не открывается. -->
         <key key="amenity" value="toilets" />
@@ -3180,8 +3131,8 @@
         <key key="building:levels" value="1" />
         <preset_link preset_name="Building" />
       </item>
-      <item name="Public transport tickets shop" ru.name="Киоск «Проездные билеты» (Москва)" type="node,closedway,multipolygon">
-        <label text="Киоск «Проездные билеты» (Москва)" />
+      <item name="Public transport tickets shop" ru.name="Киоск &quot;Проездные билеты&quot;" type="node,closedway,multipolygon">
+        <label text="Киоск для продажи билетов на общественный транспорт" />
         <space />
         <key key="building" value="kiosk" />
         <key key="building:levels" value="1" />
@@ -3190,13 +3141,12 @@
         <key key="name" value="Проездные билеты" />
         <key key="name:ru" value="Проездные билеты" />
         <key key="name:en" value="Public transport tickets" />
-        <key key="contact:website" value="http://www.mosgortrans.ru" />
+        <combo key="contact:website" text="Веб-сайт" default="http://www.mosgortrans.ru" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-21:00, Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00, Mo-Th 09:00-13:00,13:45-17:00; Fr 09:00-13:00,13:45-15:45" />
-        <key key="operator" value="ГУП «Мосгортранс»" />
+        <combo key="operator" text="Оператор" default="ГУП «Мосгортранс»" />
         <reference ref="building_address_footer" />
       </item>
-      <item name="Suburban train tickets shop" ru.name="Пригородная касса" type="node,closedway,multipolygon">
-        <label text="Пригородная касса (электрички)" />
+      <item name="Suburban train tickets shop" ru.name="Пригородная касса (электрички)" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <key key="shop" value="ticket" />
         <key key="tickets:suburban_train" value="yes" />
@@ -3208,37 +3158,37 @@
         <combo key="operator" text="Оператор" values="ОАО «ЦЕНТРАЛЬНАЯ ППК»" />
         <reference ref="building_address_footer" />
       </item>
-      <item name="Suburban train tickets vending machine" ru.name="Терминал продажи пригородных билетов" type="node">
+      <item name="Suburban train tickets vending machine" ru.name="Терминал продажи пригородных билетов (электрички)" type="node" preset_name_label="true">
         <!-- Нужно определиться между использованием public_transport_tickets:suburban_train=yes или tickets:suburban_train=yes -->
         <!-- Пока что оставляю оба варианта. Правильней из них первый. Но второй распространенней -->
-        <label text="Терминал продажи пригородных билетов (электрички)" />
         <space />
         <key key="amenity" value="vending_machine" />
         <key key="vending" value="public_transport_tickets" />
         <key key="public_transport_tickets:suburban_train" value="yes" />
         <key key="tickets:suburban_train" value="yes" />
+        <preset_link preset_name="Payment Methods" />
       </item>
-      <item name="Public transport tickets vending machine" ru.name="Терминал «Проездные билеты» (Москва)" type="node">
-        <label text="Терминал «Проездные билеты» (Москва)" />
+      <item name="Public transport tickets vending machine" ru.name="Терминал &quot;Проездные билеты&quot;" type="node">
+        <label text="Терминал продажи билетов на общественный транспорт" />
         <space />
         <key key="name" value="Проездные билеты" />
         <key key="name:ru" value="Проездные билеты" />
         <key key="name:en" value="Public transport tickets" />
         <key key="amenity" value="vending_machine" />
         <key key="vending" value="public_transport_tickets" />
+        <preset_link preset_name="Payment Methods" />
       </item>
-      <item name="Ice cream shop" ru.name="Киоск «Мороженое»" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Emojione_1F366.svg/64px-Emojione_1F366.svg.png">
-        <label text="Киоск «Мороженное»" />
+      <item name="Ice cream shop" ru.name="Киоск &quot;Мороженое&quot;" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Emojione_1F366.svg/64px-Emojione_1F366.svg.png" preset_name_label="true">
         <space />
         <key key="shop" value="ice_cream" />
         <key key="building" value="kiosk" />
         <key key="building:levels" value="1" />
         <combo key="inscription" text="Вывеска на киоске" values="Мороженое" />
+        <combo key="brand" text="Торговая марка" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-21:00, Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00, Mo-Th 09:00-13:00,13:45-17:00; Fr 09:00-13:00,13:45-15:45" />
         <reference ref="building_address_footer" />
       </item>
-      <item name="Newsagent shop" ru.name="Газетный киоск (Пресса, Печать)" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Fxemoji_u1F4F0.svg/240px-Fxemoji_u1F4F0.svg.png">
-        <label text="Газетный киоск (Пресса, Печать)" />
+      <item name="Newsagent shop" ru.name="Газетный киоск (Пресса, Печать)" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Fxemoji_u1F4F0.svg/240px-Fxemoji_u1F4F0.svg.png" preset_name_label="true">
         <space />
         <key key="shop" value="newsagent" />
         <key key="building" value="kiosk" />
@@ -3248,8 +3198,7 @@
         <text key="ref" text="Номер киоска" />
         <reference ref="building_address_footer" />
       </item>
-      <item name="Moscow parking meter" ru.name="Паркомат (Москва)" type="node">
-        <label text="Паркомат (Москва)" />
+      <item name="Moscow parking meter" ru.name="Паркомат (Москва)" type="node" preset_name_label="true">
         <space />
         <key key="amenity" value="vending_machine" />
         <key key="vending" value="parking_tickets" />
@@ -3266,18 +3215,17 @@
         <key key="opening_hours" value="24/7" />
         <link href="http://parking.mos.ru" text="Ссылка на сайт (номера паркоматов)" />
       </item>
-      <item name="Postbox (Russian Post)" ru.name="Почтовый ящик (Почта России)" type="node" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Twemoji_1f4ee.svg/240px-Twemoji_1f4ee.svg.png">
-        <label text="Почтовый ящик (Почта России)" />
+      <item name="Postbox (Russian Post)" ru.name="Почтовый ящик (Почта России)" type="node" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Twemoji_1f4ee.svg/240px-Twemoji_1f4ee.svg.png" preset_name_label="true">
         <space />
         <key key="amenity" value="post_box" />
         <key key="operator" value="ФГУП «Почта России»" />
         <text key="ref" text="Инвентарный номер ящика" />
         <combo key="collection_times" text="Время выемки писем" values="Mo-Su 05:00,14:10, Mo-Fr 05:00,14:10; Sa 09:15; Su 14:10" />
+        <space />
         <check key="drive_through" text="Можно ли положить письмо не выходя из авто?" />
       </item>
-      <item name="Delivery terminal InPost " ru.name="Почтомат InPost (бывш. QIWI Post)" type="node">
+      <item name="Delivery terminal InPost " ru.name="Почтомат InPost (бывш. QIWI Post)" type="node" preset_name_label="true">
         <!-- сайт https://inpost.ru дохлый-->
-        <label text="Почтомат InPost (бывш. QIWI Post)" />
         <space />
         <key key="amenity" value="vending_machine" />
         <key key="vending" value="parcel_pickup" />
@@ -3292,8 +3240,7 @@
         <text key="ref" text="Номер терминала" />
         <link href="https://inpost.ru/ru/customers/nayti-blizhaishiy-terminal" text="Ссылка на сайт (время работы, номера почтоматов)" />
       </item>
-      <item name="MGTS payphone" ru.name="Таксофон МГТС" type="node" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Twemoji_1f4de.svg/240px-Twemoji_1f4de.svg.png">
-        <label text="Таксофон МГТС" />
+      <item name="MGTS payphone" ru.name="Таксофон &quot;МГТС&quot;" type="node" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Twemoji_1f4de.svg/240px-Twemoji_1f4de.svg.png" preset_name_label="true">
         <space />
         <key key="amenity" value="telephone" />
         <key key="operator" value="ПАО «Московская городская телефонная сеть»" />
@@ -3302,8 +3249,7 @@
         <key key="contact:website" value="https://mgts.ru" />
         <key key="opening_hours" value="24/7" />
       </item>
-      <item name="Rostelecom payphone" ru.name="Таксофон Ростелеком" type="node" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Twemoji_1f4de.svg/240px-Twemoji_1f4de.svg.png">
-        <label text="Таксофон Ростелеком" />
+      <item name="Rostelecom payphone" ru.name="Таксофон &quot;Ростелеком&quot;" type="node" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Twemoji_1f4de.svg/240px-Twemoji_1f4de.svg.png" preset_name_label="true">
         <space />
         <key key="amenity" value="telephone" />
         <key key="operator" value="ПАО «Ростелеком»" />
@@ -3312,8 +3258,9 @@
         <key key="contact:website" value="https://rt.ru" />
         <key key="opening_hours" value="24/7" />
       </item>
-      <item name="Boat rental" ru.name="Лодочная станция" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Twemoji_26f5.svg/240px-Twemoji_26f5.svg.png">
-        <label text="Прокат плавсредств. Лодочная станция" />
+      <item name="Boat rental" ru.name="Лодочная станция" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Twemoji_26f5.svg/240px-Twemoji_26f5.svg.png" preset_name_label="true">
+        <space />
+        <label text="Прокат плавсредств." />
         <space />
         <key key="amenity" value="boat_rental" />
         <text key="name" text="Наименование" />
@@ -3336,8 +3283,7 @@
         <preset_link preset_name="Address" />
         <link href="https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dboat_rental" />
       </item>
-      <item name="Subway ventilation kiosk" ru.name="Вентшахта метрополитена" type="node,closedway,multipolygon">
-        <label text="Вентиляционная шахта (киоск) метрополитена" />
+      <item name="Subway ventilation kiosk" ru.name="Вентиляционная шахта (киоск) метрополитена" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <key key="building" value="service" />
         <key key="building:levels" value="1" />
@@ -3346,33 +3292,32 @@
         <text key="name" text="Наименование" />
         <text key="ref" text="Номер" />
       </item>
-      <item name="Gas substation" ru.name="Газорегуляторный пункт" type="node,closedway,multipolygon">
+      <item name="Gas substation" ru.name="Газорегуляторный пункт" type="node,closedway,multipolygon" preset_name_label="true">
         <!-- добавить тэги здания и этажности? -->
         <!-- нет, потому что часто это не здание -->
-        <label text="Газорегуляторный пункт" />
         <space />
         <key key="pipeline" value="substation" />
         <key key="substation" value="distribution" />
         <key key="substance" value="gas" />
         <link href="http://wikimapia.org/27936916/ru/%D0%A8%D0%BA%D0%B0%D1%84%D0%BD%D0%BE%D0%B9-%D0%B3%D0%B0%D0%B7%D0%BE%D1%80%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%82%D0%BE%D1%80%D0%BD%D1%8B%D0%B9-%D0%BF%D1%83%D0%BD%D0%BA%D1%82-%D0%A8%D0%A0%D0%9F-33#/photo/3438334" text="Фотография-пример" />
-        <combo key="operator" text="Компания-оператор" />
+        <combo key="operator" text="Оператор" />
         <text key="ref" text="Номер" />
         <reference ref="building_address_footer" />
       </item>
-      <item name="Sewage pumping station" ru.name="Канализационная насосная станция" type="node,closedway,multipolygon">
+      <item name="Sewage pumping station" ru.name="Канализационная насосная станция" type="node,closedway,multipolygon" preset_name_label="true">
         <!-- добавить тэги здания и этажности? -->
         <!-- нет, потому что часто это не здание -->
-        <label text="Канализационная насосная станция" />
         <space />
         <key key="man_made" value="pumping_station" />
         <key key="pumping_station" value="sewage" />
-        <combo key="operator" text="Компания-оператор" />
+        <combo key="operator" text="Оператор" />
         <text key="ref" text="Номер" />
         <reference ref="building_address_footer" />
       </item>
-      <item name="Communication mast" ru.name="Мачта сотовой связи" type="node">
-        <label text="Мачта сотовой связи (распространены в городах)" />
-        <label text="Сравнительно невысокие. Оснащены лишь лестницей, по которой можно взобраться для обслуживания." />
+      <item name="Communication mast" ru.name="Мачта сотовой связи" type="node" preset_name_label="true">
+        <space />
+        <label text="Распространены в городах. Сравнительно невысокие." />
+        <label text="Оснащены лишь лестницей, по которой можно взобраться для обслуживания." />
         <space />
         <key key="man_made" value="mast" />
         <key key="mast:type" value="communication" />
@@ -3382,12 +3327,13 @@
         <link href="https://wiki.openstreetmap.org/wiki/Tag:man_made%3Dmast"
           ru.href="https://wiki.openstreetmap.org/wiki/RU:Tag:man_made%3Dmast" />
         <link href="https://wiki.openstreetmap.org/wiki/Proposed_features/Telecommunications_tower" text="Proposed features/Telecommunications tower" />
-        <combo key="operator" text="Компания-оператор" />
+        <combo key="operator" text="Оператор" />
         <combo key="height" text="Высота (в метрах)" />
       </item>
-      <item name="Communication tower" ru.name="Башня сотовой связи" type="node">
-        <label text="Башня сотовой связи (распространены в сельской местности)" />
-        <label text="Выше мачт. Являются строениями. Помимо лестниц оснащены платформами." />
+      <item name="Communication tower" ru.name="Башня сотовой связи" type="node" preset_name_label="true">
+        <space />
+        <label text="Распространены в сельской местности. Выше мачт." />
+        <label text="Являются строениями. Помимо лестниц оснащены платформами." />
         <space />
         <key key="man_made" value="tower" />
         <key key="tower:type" value="communication" />
@@ -3396,18 +3342,16 @@
         <link href="https://wiki.openstreetmap.org/wiki/Tag:man_made%3Dtower"
           ru.href="https://wiki.openstreetmap.org/wiki/RU:Tag:man_made%3Dtower" />
         <link href="https://wiki.openstreetmap.org/wiki/Proposed_features/Telecommunications_tower" text="Proposed features/Telecommunications tower" />
-        <combo key="operator" text="Компания-оператор" />
+        <combo key="operator" text="Оператор" />
         <combo key="height" text="Высота (в метрах)" />
       </item>
-      <item name="Mobile phone antenna (roof)" ru.name="Антенна сотовой связи (на крыше)" type="node">
-        <label text="Антенна сотовой связи (на крышах домов)" />
+      <item name="Mobile phone antenna (roof)" ru.name="Антенна сотовой связи (на крышах домов)" type="node" preset_name_label="true">
         <space />
         <key key="communication:mobile_phone" value="yes" />
         <link href="https://wiki.openstreetmap.org/wiki/Proposed_features/Telecommunications_tower" text="Proposed features/Telecommunications tower" />
-        <combo key="operator" text="Компания-оператор" />
+        <combo key="operator" text="Оператор" />
       </item>
-      <item name="Local heat substation" ru.name="Центр./индивид. тепловой пункт" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Emojione_1F3ED.svg/64px-Emojione_1F3ED.svg.png">
-        <label text="Центральный/индивидуальный тепловой пункт" />
+      <item name="Local heat substation" ru.name="Центральный/индивидуальный тепловой пункт" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Emojione_1F3ED.svg/64px-Emojione_1F3ED.svg.png" preset_name_label="true">
         <space />
         <key key="building" value="service" />
         <key key="building:levels" value="1" />
@@ -3416,18 +3360,17 @@
         <key key="location" value="indoor" />
         <key key="substation" value="distribution" />
         <key key="man_made" value="heat_exchange_station" />
-        <combo key="operator" text="Компания-оператор" />
+        <combo key="operator" text="Оператор" />
         <reference ref="building_address_footer" />
       </item>
-      <item name="Local power substation" ru.name="Электроподстанция" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Emoji_u26a1.svg/240px-Emoji_u26a1.svg.png">
-        <label text="Электроподстанция (локальная)" />
+      <item name="Local power substation" ru.name="Электроподстанция (локальная)" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Emoji_u26a1.svg/240px-Emoji_u26a1.svg.png" preset_name_label="true">
         <space />
         <key key="building" value="service" />
         <key key="building:levels" value="1" />
         <key key="power" value="substation" />
         <combo key="location" text="Расположение (будка, в здании)" values="indoor, kiosk" display_values="в здании, будка"/>
         <key key="substation" value="minor_distribution" />
-        <combo key="operator" text="Компания-оператор" />
+        <combo key="operator" text="Оператор" />
         <text key="ref" text="Номер" />
         <reference ref="building_address_footer" />
       </item>
