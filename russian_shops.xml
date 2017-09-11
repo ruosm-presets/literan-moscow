@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2017-09-07_1"
+  version="2017-09-11_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   shortdescription="Russian POIs"
   ru.shortdescription="Российские POI"
@@ -401,7 +401,8 @@
         <combo key="contact:phone" text="Телефон" default="+7 800 7004111" />
         <key key="contact:website" value="http://www.lenta.com" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 08:00-23:00" />
-        <link href="http://www.lenta.com/magaziny/" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <!-- <link href="http://www.lenta.com/magaziny/" text="Ссылка на сайт (время работы, координаты и т.п.)" /> -->
+        <link href="https://msk.lenta.com/page/1637/" text="Ссылка на сайт (время работы, координаты и т.п.)" />
         <key key="brand:wikipedia" value="ru:Лента (сеть магазинов)" />
         <key key="brand:wikidata" value="Q4258608" />
         <reference ref="wheelchair_address_footer" />
@@ -2394,10 +2395,13 @@
       </item>
       <item name="Почтовое отделение ФГУП &quot;Почта России&quot;" en.name="Russian Post" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Russian_Post.svg/298px-Russian_Post.svg.png" preset_name_label="true">
         <space />
+        <label text="Наименование указать в формате:" />
+        <label text="&lt;Населённый пункт&gt;&lt;пробел&gt;&lt;индекс&gt;: &quot;Москва 214013&quot;" />
+        <space />
         <key key="amenity" value="post_office" />
         <key key="operator" value="ФГУП «Почта России»" />
-        <combo key="name" text="Наименование отделения связи" default="Отделение связи № " />
-        <text key="ref" text="Номер отделения связи" />
+        <combo key="name" text="Наименование отделения" values="Москва 127000" />
+        <text key="ref" text="Индекс/номер отделения" />
         <key key="contact:phone" value="+7 800 200-58-88" />
         <key key="contact:website" value="https://www.pochta.ru" />
         <key key="contact:vk" value="https://vk.com/russianpost" />
@@ -2405,6 +2409,7 @@
         <key key="contact:twitter" value="https://twitter.com/ruspostofficial" />
         <combo key="opening_hours" text="Время работы" values="24/7, Mo-Su 09:00-21:00, Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00, Mo-Th 09:00-12:30,13:15-18:00; Fr 09:00-12:30,13:15-17:00" />
         <link href="https://pochta.ru/offices" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <link href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=post_office"  text="Вики-статья" />
         <key key="operator:wikipedia" value="ru:Почта России" />
         <key key="operator:wikidata" value="Q1502763" />
         <reference ref="wheelchair_address_footer" />
@@ -3329,6 +3334,20 @@
         <combo key="operator" text="Оператор" />
         <text key="ref" text="Номер" />
         <reference ref="building_address_footer" />
+      </item>
+      <item name="Clothes dryer" ru.name="Площадка для сушки белья" type="node,closedway,multipolygon" icon="https://image.flaticon.com/icons/png/512/47/47421.png" preset_name_label="true">
+      <!-- https://d30y9cdsu7xlg0.cloudfront.net/png/174655-200.png -->
+        <space />
+        <key key="amenity" value="clothes_dryer" />
+        <combo key="clothes_dryer" text="Тип сушилки" values="pulley,rack,t-post,umbrella" display_values="с роликом,стойка,столб,в виде зонта" default="rack" />
+        <combo key="surface" text="Покрытие площадки" values="paved,unpaved,asphalt,concrete,concrete:plates,concrete:lanes,paving_stones,sett,cobblestone,grass_paver,compacted,fine_gravel,gravel,pebblestone,ground,mud,sand,grass,wood,metal" />
+        <combo key="fee" text="Платная" values="yes,no" />
+        <combo key="access" text="Доступ" values="yes,permissive,private,customers,no" />
+        <checkgroup columns="3">
+          <check key="clothes_dryer:foldable" text="Складная" />
+          <check key="clothes_dryer:portable" text="Переносная" />
+          <check key="indoor" text="В помещении" />
+        </checkgroup>
       </item>
     </group>
   </group>
