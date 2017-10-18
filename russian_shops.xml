@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2017-10-13_1"
+  version="2017-10-18_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   shortdescription="Russian POIs"
   ru.shortdescription="Российские POI"
@@ -421,6 +421,23 @@
         <key key="brand:wikidata" value="Q4258608" />
         <reference ref="wheelchair_address_footer" />
       </item>
+      <item name="Lit.ra" ru.name="Лит.Ра" type="node,closedway,multipolygon">
+        <label text="Магазин разливного пива &quot;Лит.Ра&quot;" />
+        <space />
+        <key key="shop" value="alcohol" />
+        <key key="name" value="Лит.Ра" />
+        <key key="brand" value="Лит.Ра" />
+        <key key="name:ru" value="Лит.Ра" />
+        <key key="drink:beer" value="retail" />
+        <key key="drink:beverage" value="retail" />
+        <key key="drink:cider" value="retail" />
+        <combo key="contact:phone" text="Телефон" values="+7 495 4413543,+7 812 3257052,+7 831 2161157" />
+        <key key="contact:website" value="http://litra-beer.ru/" />
+        <key key="contact:vk" value="https://vk.com/litra_beer" />
+        <combo key="opening_hours" text="Время работы" values="Mo-Su 11:00-23:00,Mo-Su 11:00-22:00" default="Mo-Su 11:00-23:00" />
+        <link href="http://litra-beer.ru/magazini/" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <reference ref="wheelchair_address_footer" />
+      </item>
       <item name="Magnit" ru.name="Магнит" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/b/b7/Magnit_Logo.gif">
         <label text="Магазин &quot;Магнит&quot;" />
         <space />
@@ -748,7 +765,6 @@
         <key key="name" value="GlowSubs" />
         <key key="brand" value="GlowSubs" />
         <key key="name:en" value="GlowSubs" />
-        <key key="name:ru" value="ГлоуСабс" />
         <key key="contact:phone" value="+7 495 2120520" />
         <key key="contact:website" value="http://glowsubs.ru" />
         <key key="contact:email" value="info@glowsubs.ru" />
@@ -972,6 +988,7 @@
         <space />
         <key key="amenity" value="pub" />
         <key key="name" value="Кружка" />
+        <key key="name:ru" value="Кружка" />
         <key key="brand" value="Кружка" />
         <key key="craft_beer" value="yes" />
         <combo key="contact:phone" text="Телефон" />
@@ -1081,10 +1098,9 @@
         <label text="Фастфуд &quot;Сабвэй&quot;" />
         <space />
         <key key="amenity" value="fast_food" />
-        <key key="name" value="Сабвэй" />
-        <key key="brand" value="Сабвэй" />
+        <key key="name" value="Subway" />
+        <key key="brand" value="Subway" />
         <key key="name:en" value="Subway" />
-        <key key="name:ru" value="Сабвэй" />
         <combo key="contact:phone" text="Телефон" default="+7 800 5554449"/>
         <key key="contact:website" value="http://subway.ru" />
         <key key="contact:email" value="subway@subway.ru" />
@@ -1431,6 +1447,7 @@
         <space />
         <key key="shop" value="jewelry" />
         <key key="name" value="Pandora" />
+        <key key="name:en" value="Pandora" />
         <key key="brand" value="Pandora" />
         <combo key="contact:phone" text="Телефон" values="+7 495 2878838-xxx" default="+7 800 7008338"/>
         <key key="contact:website" value="https://www.pandora.net/ru-ru" />
@@ -1451,6 +1468,7 @@
         <key key="shop" value="ticket" />
         <key key="tickets:theatre" value="yes" />
         <key key="name" value="Ticketland.ru" />
+        <key key="name:en" value="Ticketland.ru" />
         <key key="brand" value="Ticketland.ru" />
         <key key="operator" value="ООО «МДТЗК»" />
         <combo key="contact:phone" text="Телефон" default="+7 800 7700007" />
@@ -2253,6 +2271,7 @@
         <key key="medical_system:western" value="yes" />
         <key key="health_specialty:microbiology" value="yes" />
         <key key="name" value="CMD" />
+        <key key="name:en" value="CMD" />
         <key key="alt_name" value="Центр молекулярной диагностики" />
         <key key="brand" value="CMD" />
         <combo key="contact:phone" text="Телефон" values="+7 495 7880001" default="+7 800 7077881"/>
