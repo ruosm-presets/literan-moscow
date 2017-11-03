@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2017-11-01_1"
+  version="2017-11-03_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   shortdescription="Russian POIs"
   ru.shortdescription="Российские POI"
@@ -67,7 +67,7 @@
     <check key="atm" text="Наличие банкомата (если с 24-часовым доступом, нанесите его отдельной точкой)" />
     <preset_link preset_name="Address" />
   </chunk>
-  <!-- health20_providedfor и health20_specialities_footer — схема тегирования Healthcare_2.0 только для медицинских учреждениях -->
+  <!-- health20_providedfor и health20_specialities_footer — схема тегирования Healthcare_2.0 только для медицинских учреждений -->
   <chunk id="health20_providedfor">
     <space />
     <label text="Категории лиц:" />
