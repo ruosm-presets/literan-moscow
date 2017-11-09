@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2017-11-03_1"
+  version="2017-11-10_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   shortdescription="Russian POIs"
   ru.shortdescription="Российские POI"
@@ -1636,7 +1636,7 @@
         <key key="name" value="Мосхозторг" />
         <key key="brand" value="Мосхозторг" />
         <key key="name:ru" value="Мосхозторг" />
-        <key key="contact:phone" value="+7 800 5504747" />
+        <combo key="contact:phone" text="Телефон" default="+7 800 5504747" />
         <key key="contact:website" value="http://moshoztorg.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/MosHozTorg" />
         <key key="contact:vk" value="https://vk.com/moshoztorg" />
@@ -1827,10 +1827,10 @@
         <label text="Пункт выдачи заказов &quot;Юлмарт&quot; (ПВЗ, outpost)" />
         <space />
         <key key="shop" value="outpost" />
-        <key key="name" value="Пункт выдачи заказов Юлмарт" />
+        <key key="name" value="Юлмарт" />
         <key key="brand" value="Юлмарт" />
-        <key key="name:ru" value="Пункт выдачи заказов Юлмарт" />
-        <key key="contact:phone" value="+7 495 2874241" />
+        <key key="name:ru" value="Юлмарт" />
+        <combo key="contact:phone" text="Телефон" values="+7 495 2874241" />
         <key key="contact:website" value="https://www.ulmart.ru" />
         <key key="contact:email" value="post@ulmart.ru" />
         <key key="contact:youtube" value="https://www.youtube.com/user/ulmartofficial" />
@@ -3355,6 +3355,7 @@
         <key key="substation" value="distribution" />
         <key key="man_made" value="heat_exchange_station" />
         <combo key="operator" text="Оператор" />
+        <text key="ref" text="Номер" />
         <reference ref="building_address_footer" />
       </item>
       <item name="Local power substation" ru.name="Электроподстанция (локальная)" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Emoji_u26a1.svg/240px-Emoji_u26a1.svg.png" preset_name_label="true">
