@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2017-11-10_1"
+  version="2017-11-14_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   shortdescription="Russian POIs"
   ru.shortdescription="Российские POI"
@@ -13,7 +13,7 @@
   <!-- блок с шаблонами (chunks) -->
   <!-- wheelchair_address_footer используется в местах, куда можно зайти -->
   <chunk id="wheelchair_address_footer">
-    <combo key="wheelchair" text="Доступ для инвалидной коляски" values="yes,limited,no" />
+    <combo key="wheelchair" text="Инвалидные коляски" values="yes,limited,no" />
     <preset_link preset_name="Address" />
   </chunk>
   <!-- level_wheelchair_address_footer используется в местах, куда можно зайти и которые часто не на 1 этажах (в ТЦ) -->
@@ -27,14 +27,14 @@
     <reference ref="level_wheelchair_address_footer" />
     <space />
     <checkgroup columns="2">
-      <check key="internet_access" text="Есть ли Wi-Fi?" value_on="wlan" />
-      <check key="internet_access:fee" text="Wi-Fi предоставляется бесплатно?" value_on="no" value_off="yes" />
+      <check key="internet_access" text="Беспроводный интернет (Wi-Fi)" value_on="wlan" />
+      <check key="internet_access:fee" text="Wi-Fi бесплатный" value_on="no" value_off="yes" />
     </checkgroup>
   </chunk>
   <!-- level_wheelchair_address_dispencing_footer используется только в аптеках -->
   <chunk id="level_wheelchair_address_dispencing_footer">
     <reference ref="level_wheelchair_address_footer" />
-    <check key="dispensing" text="Продажа лекарств по рецептам" />
+    <check key="dispensing" text="Отпуск лекарств по рецептам" />
   </chunk>
   <!-- building_address_footer используется на сооружениях -->
   <chunk id="building_address_footer">
@@ -43,18 +43,18 @@
   </chunk>
   <!-- website_phone -->
   <chunk id="website_phone">
-    <combo key="contact:website" text="Веб-сайт" />
-    <combo key="contact:phone" text="Телефон" />
+    <combo key="contact:website" text="Сайт" />
+    <combo key="contact:phone" text="Номер телефона" />
   </chunk>
   <!-- name_website_phone_oh используется, по факту, в медицинских учреждениях-->
   <chunk id="name_website_phone_oh">
-    <text key="name" text="Наименование" />
+    <text key="name" text="Название" />
     <reference ref="website_phone"/>
-    <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 09:00-22:00,Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
+    <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-22:00,Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
   </chunk>
   <!-- name_ownership_website_phone используется только в учебных заведениях -->
   <chunk id="name_ownership_website_phone">
-    <text key="name" text="Наименование" />
+    <text key="name" text="Название" />
     <combo key="ownership" text="Форма собственности" values="state,private" display_values="государственная,частная" />
     <reference ref="website_phone"/>
   </chunk>
@@ -63,8 +63,8 @@
     <combo key="bic" text="BIC/SWIFT-код (например UBSWUS33XXX)" />
     <combo key="branch" text="Филиал (или отделение)" />
     <text key="ref" text="Номер отделения" />
-    <combo key="wheelchair" text="Доступ для инвалидной коляски" values="yes,limited,no" />
-    <check key="atm" text="Наличие банкомата (если с 24-часовым доступом, нанесите его отдельной точкой)" />
+    <combo key="wheelchair" text="Инвалидные коляски" values="yes,limited,no" />
+    <check key="atm" text="Банкомат (если 24/7, нанесите отдельной точкой)" />
     <preset_link preset_name="Address" />
   </chunk>
   <!-- health20_providedfor и health20_specialities_footer — схема тегирования Healthcare_2.0 только для медицинских учреждений -->
@@ -110,8 +110,8 @@
         <key key="contact:vk" value="https://vk.com/azbukavkusa_ru" />
         <key key="contact:twitter" value="https://twitter.com/azbukavkusa" />
         <key key="contact:youtube" value="https://www.youtube.com/user/azbukav" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00" />
-        <link href="https://av.ru/shops/#msk_azbuka" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00" />
+        <link href="https://av.ru/shops/#msk_azbuka" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="brand:wikipedia" value="ru:Азбука вкуса" />
         <key key="brand:wikidata" value="Q4058209" />
         <reference ref="wheelchair_address_footer" />
@@ -131,8 +131,8 @@
         <key key="contact:vk" value="https://vk.com/azbukavkusa_ru" />
         <key key="contact:twitter" value="https://twitter.com/azbukavkusa" />
         <key key="contact:youtube" value="https://www.youtube.com/user/azbukav" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00" />
-        <link href="https://av.ru/shops/#msk_av-daily" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00" />
+        <link href="https://av.ru/shops/#msk_av-daily" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="brand:wikipedia" value="ru:Азбука вкуса" />
         <key key="brand:wikidata" value="Q4058209" />
         <reference ref="wheelchair_address_footer" />
@@ -152,8 +152,8 @@
         <key key="contact:vk" value="https://vk.com/azbukavkusa_ru" />
         <key key="contact:twitter" value="https://twitter.com/azbukavkusa" />
         <key key="contact:youtube" value="https://www.youtube.com/user/azbukav" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00" />
-        <link href="https://av.ru/shops/#msk_av-enoteca" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00" />
+        <link href="https://av.ru/shops/#msk_av-enoteca" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="brand:wikipedia" value="ru:Азбука вкуса" />
         <key key="brand:wikidata" value="Q4058209" />
         <reference ref="wheelchair_address_footer" />
@@ -174,8 +174,8 @@
         <key key="contact:vk" value="https://vk.com/azbukavkusa_ru" />
         <key key="contact:twitter" value="https://twitter.com/azbukavkusa" />
         <key key="contact:youtube" value="https://www.youtube.com/user/azbukav" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00" />
-        <link href="https://av.ru/shops/#msk_av-market" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00" />
+        <link href="https://av.ru/shops/#msk_av-market" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="brand:wikipedia" value="ru:Азбука вкуса" />
         <key key="brand:wikidata" value="Q4058209" />
         <reference ref="wheelchair_address_footer" />
@@ -195,11 +195,11 @@
         <key key="drink:beverage" value="retail" />
         <key key="drink:cider" value="retail" />
         <key key="drink:whisky" value="retail" />
-        <combo key="contact:phone" text="Телефон" default="+7 495 7775190-xxxx" />
+        <combo key="contact:phone" text="Номер телефона" default="+7 495 7775190-xxxx" />
         <key key="contact:website" value="http://amwine.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/amwine.ru" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 10:00-22:00,Mo-Sa 09:30-22:30; Su 11:00-22:00" />
-        <link href="http://amwine.ru/customers/shops" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Sa 09:30-22:30; Su 11:00-22:00" />
+        <link href="http://amwine.ru/customers/shops" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="ATAC" ru.name="АТАК" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/5/56/Logo_atac.png/320px-Logo_atac.png">
@@ -210,13 +210,13 @@
         <key key="name:ru" value="АТАК" />
         <key key="name:en" value="ATAC" />
         <combo key="shop" text="Тип магазина (с тележками - супермаркет)" values="supermarket,convenience" default="supermarket" />
-        <combo key="contact:phone" text="Телефон" />
+        <combo key="contact:phone" text="Номер телефона" />
         <key key="contact:website" value="http://www.ataksupermarket.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/ATAK.Russia" />
         <key key="contact:twitter" value="https://twitter.com/ATAK_Super_PR" />
         <key key="contact:vk" value="https://vk.com/atak" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 08:00-23:00,Mo-Su 09:00-22:00" />
-        <link href="http://www.ataksupermarket.ru/shops" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 08:00-23:00,Mo-Su 09:00-22:00" />
+        <link href="http://www.ataksupermarket.ru/shops" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="brand:wikipedia" value="ru:Atac" />
         <key key="brand:wikidata" value="Q2868738" />
         <reference ref="wheelchair_address_footer" />
@@ -224,21 +224,21 @@
       <item name="Auchan" ru.name="Ашан" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/7/78/Auchan-logo.svg/320px-Auchan-logo.svg.png">
         <label text="Гипермаркет &quot;Ашан&quot;" />
         <space />
-        <combo key="name" text="Наименование" default="Ашан" values="Ашан,Ашан Сити" />
-        <combo key="brand" text="Торговая марка" default="Ашан" values="Ашан,Ашан Сити" />
-        <combo key="name:ru" text="Наименование (:ru)" default="Ашан" values="Ашан,Ашан Сити" />
-        <combo key="name:en" text="Наименование (:en)" default="Auchan" values="Auchan,Auchan City" />
+        <combo key="name" text="Название" default="Ашан" values="Ашан,Ашан Сити" />
+        <combo key="brand" text="Бренд" default="Ашан" values="Ашан,Ашан Сити" />
+        <combo key="name:ru" text="Название (:ru)" default="Ашан" values="Ашан,Ашан Сити" />
+        <combo key="name:en" text="Название (:en)" default="Auchan" values="Auchan,Auchan City" />
         <!-- когда примут shop=hypermarket нужно будет здесь поменять https://wiki.openstreetmap.org/wiki/Proposed_features/hypermarket -->
         <key key="shop" value="supermarket" />
-        <combo key="contact:phone" text="Телефон" default="+7 800 7005800" />
+        <combo key="contact:phone" text="Номер телефона" default="+7 800 7005800" />
         <key key="contact:website" value="https://www.auchan.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/AuchanRussia" />
         <key key="contact:instagram" value="https://www.instagram.com/auchan.ru" />
         <key key="contact:twitter" value="https://twitter.com/Auchan_ru" />
         <key key="contact:vk" value="https://vk.com/auchan" />
         <key key="contact:youtube" value="https://www.youtube.com/channel/UCoPpvvMHzIpZ7EcNZBEWhFg" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 08:00-23:00,Mo-Su 09:00-22:00" />
-        <link href="https://www.auchan.ru/ru/shops" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 08:00-23:00,Mo-Su 09:00-22:00" />
+        <link href="https://www.auchan.ru/ru/shops" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="brand:wikipedia" value="ru:Auchan" />
         <key key="brand:wikidata" value="Q758603" />
         <reference ref="wheelchair_address_footer" />
@@ -254,8 +254,8 @@
         <key key="contact:phone" value="+7 495 6567022" />
         <key key="contact:email" value="info@avoska.ru" />
         <key key="contact:website" value="http://www.avoska.ru" />
-        <combo key="opening_hours" text="Время работы" values="Mo-Sa 09:00-23:00; Su 09:00-22:00" />
-        <link href="http://www.avoska.ru/address" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="Mo-Sa 09:00-23:00; Su 09:00-22:00" />
+        <link href="http://www.avoska.ru/address" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Billa" ru.name="Билла" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Billa-Logo.svg/320px-Billa-Logo.svg.png">
@@ -267,7 +267,7 @@
         <key key="name:ru" value="Билла" />
         <key key="operator" value="ООО &quot;Билла&quot;" />
         <key key="shop" value="supermarket" />
-        <combo key="contact:phone" text="Телефон" values="+7 800 3337500,+7 495 7857500" default="+7 800 3337500" />
+        <combo key="contact:phone" text="Номер телефона" values="+7 800 3337500,+7 495 7857500" default="+7 800 3337500" />
         <key key="contact:fax" value="+7 495 7857501" />
         <key key="contact:website" value="http://www.billa.ru" />
         <key key="contact:email" value="mail@billa.ru" />
@@ -276,8 +276,8 @@
         <key key="contact:youtube" value="https://www.youtube.com/channel/UCSx84zsrpnikJX2PDnOYbMA" />
         <key key="contact:ok" value="https://ok.ru/group/53124549640396" />
         <key key="contact:vk" value="https://vk.com/billarussia" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 08:00-23:00,Mo-Su 09:00-22:00" />
-        <link href="http://www.billa.ru/%D0%9A%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D1%8B/%D0%90%D0%B4%D1%80%D0%B5%D1%81%D0%B0_%D1%81%D1%83%D0%BF%D0%B5%D1%80%D0%BC%D0%B0%D1%80%D0%BA%D0%B5%D1%82%D0%BE%D0%B2_%D0%91%D0%98%D0%9B%D0%9B%D0%90/%D0%90%D0%B4%D1%80%D0%B5%D1%81%D0%B0_%D1%81%D1%83%D0%BF%D0%B5%D1%80%D0%BC%D0%B0%D1%80%D0%BA%D0%B5%D1%82%D0%BE%D0%B2_%D0%91%D0%98%D0%9B%D0%9B%D0%90/dd_bi_subpage.aspx" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 08:00-23:00,Mo-Su 09:00-22:00" />
+        <link href="http://www.billa.ru/%D0%9A%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D1%8B/%D0%90%D0%B4%D1%80%D0%B5%D1%81%D0%B0_%D1%81%D1%83%D0%BF%D0%B5%D1%80%D0%BC%D0%B0%D1%80%D0%BA%D0%B5%D1%82%D0%BE%D0%B2_%D0%91%D0%98%D0%9B%D0%9B%D0%90/%D0%90%D0%B4%D1%80%D0%B5%D1%81%D0%B0_%D1%81%D1%83%D0%BF%D0%B5%D1%80%D0%BC%D0%B0%D1%80%D0%BA%D0%B5%D1%82%D0%BE%D0%B2_%D0%91%D0%98%D0%9B%D0%9B%D0%90/dd_bi_subpage.aspx" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="brand:wikipedia" value="ru:Billa" />
         <key key="brand:wikidata" value="Q537781" />
         <reference ref="wheelchair_address_footer" />
@@ -289,11 +289,11 @@
         <key key="brand" value="Верный" />
         <key key="name:ru" value="Верный" />
         <combo key="shop" text="Тип магазина (с тележками - супермаркет)" values="supermarket,convenience" default="supermarket" />
-        <combo key="contact:phone" text="Телефон" values="+7 499 7550070,+7 812 60101000,+7 343 2372246,+7 843 5247545" default="+7 499 7550070" />
+        <combo key="contact:phone" text="Номер телефона" values="+7 499 7550070,+7 812 60101000,+7 343 2372246,+7 843 5247545" default="+7 499 7550070" />
         <key key="contact:website" value="http://www.verno-info.ru" />
         <key key="contact:email" value="info@ivoin.ru" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 08:00-23:00,Mo-Su 09:00-22:00" />
-        <link href="http://www.verno-info.ru/shops" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 08:00-23:00,Mo-Su 09:00-22:00" />
+        <link href="http://www.verno-info.ru/shops" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="VkusWill" ru.name="ВкусВилл" type="node,closedway,multipolygon">
@@ -310,8 +310,8 @@
         <key key="contact:vk" value="https://vk.com/izbenka" />
         <key key="contact:instagram" value="https://www.instagram.com/izbenka_vkusvill" />
         <key key="contact:facebook" value="https://www.facebook.com/izbenka" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00" />
-        <link href="http://vkusvill.ru/shops" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00" />
+        <link href="http://vkusvill.ru/shops" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Viktoriya" ru.name="Виктория" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/2/20/Victoria_logo.png">
@@ -321,13 +321,13 @@
         <key key="brand" value="Виктория" />
         <key key="name:ru" value="Виктория" />
         <key key="shop" value="supermarket" />
-        <combo key="contact:phone" text="Телефон" default="+7 800 2004454" />
+        <combo key="contact:phone" text="Номер телефона" default="+7 800 2004454" />
         <key key="contact:website" value="http://victoria-group.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/SupermarketVictoria" />
         <key key="contact:instagram" value="https://www.instagram.com/my_victoria24" />
         <key key="contact:vk" value="https://vk.com/supermarket_victoria" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 08:00-24:00,Mo-Su 08:00-01:00,Mo-Su 08:00-23:00,Mo-Su 06:00-02:00" default="24/7" />
-        <link href="http://victoria-group.ru/company/shops/moskva-i-moskovskaya-oblast" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 08:00-24:00,Mo-Su 08:00-01:00,Mo-Su 08:00-23:00,Mo-Su 06:00-02:00" default="24/7" />
+        <link href="http://victoria-group.ru/company/shops/moskva-i-moskovskaya-oblast" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="brand:wikipedia" value="ru:Виктория (сеть магазинов)" />
         <key key="brand:wikidata" value="Q4111046" />
         <reference ref="wheelchair_address_footer" />
@@ -343,8 +343,8 @@
         <key key="contact:website" value="https://dixy.ru" />
         <key key="contact:vk" value="https://vk.com/dixyclub" />
         <key key="contact:youtube" value="https://www.youtube.com/channel/UCfFxD9xhL67LxHvsDOp_rvg" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00" />
-        <link href="https://dixy.ru/nearest-shop/?region=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0&amp;city=&amp;street=&amp;op.x=39&amp;op.y=15&amp;form_build_id=form-MGrIV8_EYK6C5zSMV3QI1192m6i_XP6QI9Y_b5I477c&amp;form_id=dixy_shops_block_form" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00" />
+        <link href="https://dixy.ru/nearest-shop/?region=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0&amp;city=&amp;street=&amp;op.x=39&amp;op.y=15&amp;form_build_id=form-MGrIV8_EYK6C5zSMV3QI1192m6i_XP6QI9Y_b5I477c&amp;form_id=dixy_shops_block_form" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="brand:wikipedia" value="ru:Дикси (сеть магазинов)" />
         <key key="brand:wikidata" value="Q4161561" />
         <reference ref="wheelchair_address_footer" />
@@ -364,8 +364,8 @@
         <key key="contact:vk" value="https://vk.com/izbenka" />
         <key key="contact:instagram" value="https://www.instagram.com/izbenka_vkusvill" />
         <key key="contact:facebook" value="https://www.facebook.com/izbenka" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00" />
-        <link href="http://vkusvill.ru/shops" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00" />
+        <link href="http://vkusvill.ru/shops" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Krasnaya Ikra" ru.name="Красная Икра" type="node,closedway,multipolygon" >
@@ -378,9 +378,9 @@
         <key key="operator" value="Сахалин Рыба (ИП Борисик)" />
         <key key="contact:website" value="http://www.borisik.ru" />
         <key key="contact:email" value="a_borisik@mail.ru" />
-        <combo key="contact:phone" text="Телефон" default="+7 495 4379029" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 09:00-22:00" default="Mo-Su 09:00-22:00" />
-        <link href="http://www.borisik.ru/addresses" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="contact:phone" text="Номер телефона" default="+7 495 4379029" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-22:00" default="Mo-Su 09:00-22:00" />
+        <link href="http://www.borisik.ru/addresses" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Krasnoye&amp;Beloye" ru.name="Красное&amp;Белое" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/5/53/Krasnoe%26Beloe._Logotip.jpg">
@@ -398,8 +398,8 @@
         <key key="contact:telegram" value="+7 922 7033000" />
         <key key="contact:whatsapp" value="+7 922 7033000" />
         <key key="contact:viber" value="+7 922 7033000" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 09:00-22:05,Mo-Sa 09:30-22:30; Su 11:00-22:00" />
-        <link href="https://www.krasnoeibeloe.ru/address" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-22:05,Mo-Sa 09:30-22:30; Su 11:00-22:00" />
+        <link href="https://www.krasnoeibeloe.ru/address" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="brand:wikipedia" value="ru:Красное &amp; Белое" />
         <key key="brand:wikidata" value="Q24933790" />
         <reference ref="wheelchair_address_footer" />
@@ -413,11 +413,11 @@
         <key key="operator" value="ООО &quot;Лента&quot;" />
         <key key="shop" value="supermarket" />
         <key key="contact:email" value="info@lenta.com" />
-        <combo key="contact:phone" text="Телефон" default="+7 800 7004111" />
+        <combo key="contact:phone" text="Номер телефона" default="+7 800 7004111" />
         <key key="contact:website" value="http://www.lenta.com" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 08:00-23:00" />
-        <!-- <link href="http://www.lenta.com/magaziny" text="Ссылка на сайт (время работы, координаты и т.п.)" /> -->
-        <link href="https://msk.lenta.com/page/1637" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 08:00-23:00" />
+        <!-- <link href="http://www.lenta.com/magaziny" text="Ссылка на сайт (часы работы, координаты и т.п.)" /> -->
+        <link href="https://msk.lenta.com/page/1637" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="brand:wikipedia" value="ru:Лента (сеть магазинов)" />
         <key key="brand:wikidata" value="Q4258608" />
         <reference ref="wheelchair_address_footer" />
@@ -432,11 +432,11 @@
         <key key="drink:beer" value="retail" />
         <key key="drink:beverage" value="retail" />
         <key key="drink:cider" value="retail" />
-        <combo key="contact:phone" text="Телефон" values="+7 495 4413543,+7 812 3257052,+7 831 2161157" />
+        <combo key="contact:phone" text="Номер телефона" values="+7 495 4413543,+7 812 3257052,+7 831 2161157" />
         <key key="contact:website" value="http://litra-beer.ru" />
         <key key="contact:vk" value="https://vk.com/litra_beer" />
-        <combo key="opening_hours" text="Время работы" values="Mo-Su 11:00-23:00,Mo-Su 11:00-22:00" default="Mo-Su 11:00-23:00" />
-        <link href="http://litra-beer.ru/magazini" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="Mo-Su 11:00-23:00,Mo-Su 11:00-22:00" default="Mo-Su 11:00-23:00" />
+        <link href="http://litra-beer.ru/magazini" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Magnit" ru.name="Магнит" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/b/b7/Magnit_Logo.gif">
@@ -452,8 +452,8 @@
         <key key="contact:website" value="http://magnit-info.ru" />
         <key key="contact:email" value="info@magnit.ru" />
         <key key="contact:twitter" value="https://twitter.com/magnit_info" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 10:00-22:00,Mo-Su 09:30-22:00" />
-        <link href="http://magnit-info.ru/buyers/adds/1258/1305/418426" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Su 09:30-22:00" />
+        <link href="http://magnit-info.ru/buyers/adds/1258/1305/418426" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="brand:wikipedia" value="ru:Магнит (сеть магазинов)" />
         <key key="brand:wikidata" value="Q940518" />
         <reference ref="wheelchair_address_footer" />
@@ -465,11 +465,11 @@
         <key key="brand" value="Магнолия" />
         <key key="name:ru" value="Магнолия" />
         <combo key="shop" text="Тип магазина (с тележками - супермаркет)" values="supermarket,convenience" default="supermarket" />
-        <combo key="contact:phone" text="Телефон" />
+        <combo key="contact:phone" text="Номер телефона" />
         <key key="contact:website" value="http://www.mgnl.ru" />
         <key key="contact:email" value="magnolia@tcfoods.ru" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00" />
-        <link href="http://www.mgnl.ru/shops" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00" />
+        <link href="http://www.mgnl.ru/shops" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Monetka" ru.name="Монетка" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/e/e0/%D0%9C%D0%BE%D0%BD%D0%B5%D1%82%D0%BA%D0%B0_%D0%BB%D0%BE%D0%B3%D0%BE.gif">
@@ -484,8 +484,8 @@
         <key key="contact:website" value="http://www.monetka.ru" />
         <key key="contact:email" value="office@monetka.ru" />
         <key key="contact:vk" value="https://vk.com/shop_monetka" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 08:00-24:00,Mo-Su 09:00-22:00,Mo-Su 09:00-23:00" />
-        <link href="http://www.monetka.ru/urfo/shops_map" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 08:00-24:00,Mo-Su 09:00-22:00,Mo-Su 09:00-23:00" />
+        <link href="http://www.monetka.ru/urfo/shops_map" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="brand:wikipedia" value="ru:Монетка (сеть магазинов)" />
         <key key="brand:wikidata" value="Q4301704" />
         <reference ref="wheelchair_address_footer" />
@@ -502,8 +502,8 @@
         <key key="contact:email" value="info2@kolbasa.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/kolbasaMR" />
         <key key="contact:vk" value="https://vk.com/kolbasamr" />
-        <combo key="opening_hours" text="Время работы" values="Mo-Sa 09:00-21:00; Su 09:00-20:00" />
-        <link href="http://www.kolbasa.ru/content/gde-kupit" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="Mo-Sa 09:00-21:00; Su 09:00-20:00" />
+        <link href="http://www.kolbasa.ru/content/gde-kupit" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Myasnov" ru.name="МясновЪ" type="node,closedway,multipolygon">
@@ -513,15 +513,15 @@
         <key key="brand" value="МясновЪ" />
         <key key="name:ru" value="МясновЪ" />
         <key key="shop" value="convenience" />
-        <combo key="contact:phone" text="Телефон" default="+7 495 4249515" />
+        <combo key="contact:phone" text="Номер телефона" default="+7 495 4249515" />
         <text key="ref" text="Номер магазина" />
         <key key="contact:website" value="https://www.myasnov.ru" />
         <key key="contact:email" value="info@coolclever.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/myasnov.russia" />
         <key key="contact:instagram" value="https://www.instagram.com/myasnov.russia" />
         <key key="contact:vk" value="https://vk.com/myasnov.russia" />
-        <combo key="opening_hours" text="Время работы" values="Mo-Su 08:00-23:00" />
-        <link href="https://www.myasnov.ru/magaziny_zdorovogo_pitaniya" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="Mo-Su 08:00-23:00" />
+        <link href="https://www.myasnov.ru/magaziny_zdorovogo_pitaniya" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="NASH" ru.name="НАШ" type="node,closedway,multipolygon">
@@ -533,7 +533,7 @@
         <key key="operator" value="ОАО «Седьмой Континент»" />
         <!-- когда примут shop=hypermarket нужно будет здесь поменять https://wiki.openstreetmap.org/wiki/Proposed_features/hypermarket -->
         <key key="shop" value="supermarket" />
-        <combo key="contact:phone" text="Телефон" default="+7 800 5007777" />
+        <combo key="contact:phone" text="Номер телефона" default="+7 800 5007777" />
         <key key="contact:website" value="http://www.7cont.ru" />
         <key key="contact:email" value="offers@7cont.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/7contin" />
@@ -541,8 +541,8 @@
         <key key="contact:vk" value="https://vk.com/7contin" />
         <key key="contact:twitter" value="https://twitter.com/7contin" />
         <key key="contact:instagram" value="https://www.instagram.com/7cont" />
-        <combo key="opening_hours" text="Время работы" values="Mo-Su 08:00-23:00,Mo-Su 09:00-23:00" default="Mo-Su 08:00-23:00" />
-        <link href="http://www.7cont.ru/customers/shops" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="Mo-Su 08:00-23:00,Mo-Su 09:00-23:00" default="Mo-Su 08:00-23:00" />
+        <link href="http://www.7cont.ru/customers/shops" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="OKEY" ru.name="О’КЕЙ" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/b/bd/Logo_ok.gif">
@@ -553,14 +553,14 @@
         <key key="name:ru" value="О’КЕЙ" />
         <!-- когда примут shop=hypermarket нужно будет здесь поменять https://wiki.openstreetmap.org/wiki/Proposed_features/hypermarket -->
         <key key="shop" value="supermarket" />
-        <combo key="contact:phone" text="Телефон" default="+7 800 2500008" />
+        <combo key="contact:phone" text="Номер телефона" default="+7 800 2500008" />
         <key key="contact:website" value="http://www.okmarket.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/okmarket.ru" />
         <key key="contact:youtube" value="https://www.youtube.com/user/marketokey" />
         <key key="contact:vk" value="https://vk.com/okmarketru" />
         <key key="contact:ok" value="https://ok.ru/okmarket" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 08:00-23:00,Mo-Su 08:00-24:00" />
-        <link href="http://www.okmarket.ru/stores" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 08:00-23:00,Mo-Su 08:00-24:00" />
+        <link href="http://www.okmarket.ru/stores" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="brand:wikipedia" value="ru:О’кей (сеть магазинов)" />
         <key key="brand:wikidata" value="Q4340901" />
         <reference ref="wheelchair_address_footer" />
@@ -579,14 +579,14 @@
         <key key="drink:cognac" value="retail" />
         <key key="drink:beverage" value="retail" />
         <key key="drink:whisky" value="retail" />
-        <combo key="contact:phone" text="Телефон" default="+7 495 4249515" />
+        <combo key="contact:phone" text="Номер телефона" default="+7 495 4249515" />
         <key key="contact:website" value="https://www.somelie.ru" />
         <key key="contact:email" value="somelie@coolclever.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/somelie.community" />
         <key key="contact:instagram" value="https://www.instagram.com/somelie__community" />
         <key key="contact:vk" value="https://vk.com/somelie.community" />
-        <combo key="opening_hours" text="Время работы" values="Mo-Su 08:00-23:00" />
-        <link href="https://www.somelie.ru/map" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="Mo-Su 08:00-23:00" />
+        <link href="https://www.somelie.ru/map" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Perekryostok" ru.name="Перекресток" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/d/d9/Perekryostok-logo-2014.svg/320px-Perekryostok-logo-2014.svg.png">
@@ -597,7 +597,7 @@
         <key key="brand" value="Перекресток" />
         <key key="name:ru" value="Перекресток" />
         <key key="alt_name" value="Перекрёсток" />
-        <combo key="contact:phone" text="Телефон" default="+7 800 2009555" />
+        <combo key="contact:phone" text="Номер телефона" default="+7 800 2009555" />
         <key key="contact:website" value="https://www.perekrestok.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/perekrestok" />
         <key key="contact:vk" value="https://vk.com/perekrestok_shop" />
@@ -605,8 +605,8 @@
         <key key="contact:youtube" value="https://www.youtube.com/channel/UCY9Nwfy_8drHqif0iryQ7Vw" />
         <key key="contact:ok" value="https://ok.ru/perekrestok.shop" />
         <key key="contact:instagram" value="https://www.instagram.com/perekrestok" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 08:00-23:00,Mo-Sa 09:00-20:00; Su 10:00-19:00" />
-        <link href="https://www.perekrestok.ru/shops" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 08:00-23:00,Mo-Sa 09:00-20:00; Su 10:00-19:00" />
+        <link href="https://www.perekrestok.ru/shops" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="brand:wikipedia" value="ru:Перекрёсток (сеть магазинов)" />
         <key key="brand:wikidata" value="Q1684639" />
         <reference ref="wheelchair_address_footer" />
@@ -620,7 +620,7 @@
         <combo key="shop" text="Тип магазина (с тележками - супермаркет)" values="supermarket,convenience" default="supermarket" />
         <key key="alt_name" value="Перекрёсток Экспресс" />
         <key key="contact:website" value="http://x5-express.ru" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 08:00-23:00,Mo-Sa 09:00-20:00; Su 10:00-19:00" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 08:00-23:00,Mo-Sa 09:00-20:00; Su 10:00-19:00" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Pyatyorochka" ru.name="Пятёрочка" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/4/4d/5ka_logo.png">
@@ -637,8 +637,8 @@
         <key key="contact:facebook" value="https://www.facebook.com/pyaterochka" />
         <key key="contact:ok" value="https://ok.ru/x5pyaterka" />
         <key key="contact:vk" value="https://vk.com/club19098821" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 08:00-23:00,Mo-Sa 09:00-20:00; Su 10:00-19:00" />
-        <link href="https://5ka.ru/stores" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 08:00-23:00,Mo-Sa 09:00-20:00; Su 10:00-19:00" />
+        <link href="https://5ka.ru/stores" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="brand:wikipedia" value="ru:Пятёрочка" />
         <key key="brand:wikidata" value="Q1768969" />
         <reference ref="wheelchair_address_footer" />
@@ -651,7 +651,7 @@
         <key key="name:ru" value="Седьмой Континент" />
         <key key="operator" value="ОАО «Седьмой Континент»" />
         <combo key="shop" text="Тип магазина (с тележками - супермаркет)" values="supermarket,convenience" default="supermarket" />
-        <combo key="contact:phone" text="Телефон" default="+7 800 5007777" />
+        <combo key="contact:phone" text="Номер телефона" default="+7 800 5007777" />
         <key key="contact:website" value="http://www.7cont.ru" />
         <key key="contact:email" value="offers@7cont.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/7contin" />
@@ -659,8 +659,8 @@
         <key key="contact:vk" value="https://vk.com/7contin" />
         <key key="contact:twitter" value="https://twitter.com/7contin" />
         <key key="contact:instagram" value="https://www.instagram.com/7cont" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 08:00-23:00" />
-        <link href="http://www.7cont.ru/customers/shops" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 08:00-23:00" />
+        <link href="http://www.7cont.ru/customers/shops" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="brand:wikipedia" value="ru:Седьмой континент" />
         <key key="brand:wikidata" value="Q739720" />
         <reference ref="wheelchair_address_footer" />
@@ -676,8 +676,8 @@
         <key key="contact:email" value="info@spar.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/spar" />
         <key key="contact:twitter" value="https://twitter.com/SPARInt" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 08:00-23:00" />
-        <link href="http://www.spar.ru/stores" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 08:00-23:00" />
+        <link href="http://www.spar.ru/stores" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="brand:wikipedia" value="ru:Spar" />
         <key key="brand:wikidata" value="Q610492" />
         <reference ref="wheelchair_address_footer" />
@@ -690,15 +690,15 @@
         <key key="name:ru" value="Суши Wok" />
         <key key="shop" value="convenience" />
         <key key="delivery" value="yes" />
-        <combo key="contact:phone" text="Телефон" default="+7 499 7544444" />
+        <combo key="contact:phone" text="Номер телефона" default="+7 499 7544444" />
         <key key="contact:website" value="https://sushiwok.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/sushiwokofficial" />
         <key key="contact:vk" value="https://vk.com/woksushi" />
         <key key="contact:instagram" value="https://www.instagram.com/sushi_wok" />
         <key key="contact:twitter" value="https://twitter.com/WokSushi" />
         <key key="contact:ok" value="https://ok.ru/group/53844357873904" />
-        <combo key="opening_hours" text="Время работы" default="Mo-Su 10:00-23:00" values="24/7,Mo-Su 10:00-23:00,Mo-Sa 09:00-20:00; Su 10:00-19:00" />
-        <link href="https://sushiwok.ru/msk/addresses" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" default="Mo-Su 10:00-23:00" values="24/7,Mo-Su 10:00-23:00,Mo-Sa 09:00-20:00; Su 10:00-19:00" />
+        <link href="https://sushiwok.ru/msk/addresses" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="U Palycha" ru.name="У Палыча" type="node,closedway,multipolygon">
@@ -711,8 +711,8 @@
         <key key="contact:phone" value="+7 800 3330163" />
         <key key="contact:website" value="http://www.palich.ru" />
         <key key="contact:email" value="com@palich.ru" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 09:00-21:00,Mo-Sa 09:00-20:00; Su 10:00-19:00" />
-        <link href="http://www.palich.ru/shops" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Sa 09:00-20:00; Su 10:00-19:00" />
+        <link href="http://www.palich.ru/shops" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Fix price" ru.name="Фикс прайс" type="node,closedway,multipolygon">
@@ -730,8 +730,8 @@
         <key key="contact:ok" value="https://ok.ru/fixprice" />
         <key key="contact:twitter" value="https://twitter.com/fix_price" />
         <key key="contact:youtube" value="https://www.youtube.com/user/fixprice36" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 10:00-22:00,Mo-Sa 09:00-20:00; Su 10:00-19:00" />
-        <link href="https://www.fix-price.ru/buyers/shops" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Sa 09:00-20:00; Su 10:00-19:00" />
+        <link href="https://www.fix-price.ru/buyers/shops" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="brand:wikipedia" value="ru:Fix Price (сеть магазинов)" />
         <key key="brand:wikidata" value="Q4038791" />
         <reference ref="level_wheelchair_address_footer" />
@@ -740,9 +740,9 @@
         <label text="Магазин &quot;Я Любимый&quot;" />
         <space />
         <key key="shop" value="supermarket" />
-        <combo key="name" text="Наименование" values="Я Любимый,Я Любимый Перекресток" default="Я Любимый" />
-        <combo key="name:ru" text="Наименование (:ru)" values="Я Любимый,Я Любимый Перекресток" default="Я Любимый" />
-        <combo key="brand" text="Торговая марка" values="Я Любимый,Я Любимый Перекресток" default="Я Любимый" />
+        <combo key="name" text="Название" values="Я Любимый,Я Любимый Перекресток" default="Я Любимый" />
+        <combo key="name:ru" text="Название (:ru)" values="Я Любимый,Я Любимый Перекресток" default="Я Любимый" />
+        <combo key="brand" text="Бренд" values="Я Любимый,Я Любимый Перекресток" default="Я Любимый" />
         <key key="operator" value="ЗАО &quot;АМАТУС&quot;" />
         <key key="contact:website" value="http://i-favorite.ru" />
         <key key="contact:email" value="info@i-favorite.com" />
@@ -754,7 +754,7 @@
         <key key="delivery" value="yes" />
         <key key="delivery:contact:phone" value="+7 499 3993079" />
         <key key="delivery:contact:website" value="http://edu-domoi.ru" />
-        <link href="http://i-favorite.ru/supermarkets" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <link href="http://i-favorite.ru/supermarkets" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address_footer" />
       </item>
     </group>
@@ -775,9 +775,9 @@
         <key key="cuisine" value="sandwich" />
         <key key="takeaway" value="yes" />
         <key key="diet:vegetarian" value="no" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
         <reference ref="level_wheelchair_address_internetaccess_footer" />
-        <link href="http://glowsubs.ru/restaurants" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <link href="http://glowsubs.ru/restaurants" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
       </item>
       <item name="IL Patio" ru.name="IL Патио" type="node,closedway,multipolygon">
         <label text="Ресторан &quot;IL Патио&quot;" />
@@ -786,7 +786,7 @@
         <key key="name" value="IL Патио" />
         <key key="brand" value="IL Патио" />
         <key key="name:ru" value="IL Патио" />
-        <combo key="contact:phone" text="Телефон" />
+        <combo key="contact:phone" text="Номер телефона" />
         <key key="contact:website" value="http://ilpatio.ru" />
         <key key="contact:email" value="info@ilpatio.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/ilpatio.ru" />
@@ -794,9 +794,9 @@
         <key key="contact:instagram" value="https://www.instagram.com/ilpatio" />
         <key key="cuisine" value="italian" />
         <key key="diet:vegetarian" value="yes" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 08:00-23:00,Mo-Fr 07:00-23:00; Sa-Su 10:00-23:00" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 08:00-23:00,Mo-Fr 07:00-23:00; Sa-Su 10:00-23:00" />
         <reference ref="level_wheelchair_address_internetaccess_footer" />
-        <link href="http://ilpatio.ru/restaurants" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <link href="http://ilpatio.ru/restaurants" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
       </item>
       <item name="Baskin-Robbins" ru.name="Баскин Роббинс" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Baskin-Robbins_logo.svg/206px-Baskin-Robbins_logo.svg.png" >
         <label text="Кафе-мороженое &quot;Баскин Роббинс&quot;" />
@@ -806,14 +806,14 @@
         <key key="brand" value="Баскин Роббинс" />
         <key key="name:en" value="Baskin-Robbins" />
         <key key="name:ru" value="Баскин Роббинс" />
-        <combo key="contact:phone" text="Телефон" />
+        <combo key="contact:phone" text="Номер телефона" />
         <key key="contact:website" value="http://baskinrobbins.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/BaskinRobbinsRussia" />
         <key key="cuisine" value="ice_cream" />
         <key key="diet:vegetarian" value="only" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 08:00-23:00,Mo-Fr 07:00-23:00; Sa-Su 10:00-23:00" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 08:00-23:00,Mo-Fr 07:00-23:00; Sa-Su 10:00-23:00" />
         <reference ref="level_wheelchair_address_internetaccess_footer" />
-        <link href="http://baskinrobbins.ru/?n=6" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <link href="http://baskinrobbins.ru/?n=6" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="brand:wikipedia" value="en:Baskin-Robbins" />
         <key key="brand:wikidata" value="Q584601" />
       </item>
@@ -825,7 +825,7 @@
         <key key="brand" value="Бургер Кинг" />
         <key key="name:en" value="Burger King" />
         <key key="name:ru" value="Бургер Кинг" />
-        <combo key="contact:phone" text="Телефон" values="+7 495 5445000-xxxx" default="+7 800 5504545 " />
+        <combo key="contact:phone" text="Номер телефона" values="+7 495 5445000-xxxx" default="+7 800 5504545 " />
         <key key="contact:website" value="https://burgerking.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/BurgerKingRussia" />
         <key key="contact:vk" value="https://vk.com/burgerking" />
@@ -833,10 +833,10 @@
         <key key="cuisine" value="burger" />
         <key key="takeaway" value="yes" />
         <key key="diet:vegetarian" value="no" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
         <reference ref="level_wheelchair_address_internetaccess_footer" />
         <check key="drive_through" text="Обслуживание в машине" />
-        <link href="https://burgerking.ru/restaurants" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <link href="https://burgerking.ru/restaurants" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="brand:wikipedia" value="ru:Burger King" />
         <key key="brand:wikidata" value="Q177054" />
       </item>
@@ -848,7 +848,7 @@
         <key key="brand" value="Домино’c Пицца" />
         <key key="name:en" value="Domino’s Pizza" />
         <key key="name:ru" value="Домино’c Пицца" />
-        <combo key="contact:phone" text="Телефон" values="+7 495 47888xx,+7 495 24083xx,+7 495 24084xx" />
+        <combo key="contact:phone" text="Номер телефона" values="+7 495 47888xx,+7 495 24083xx,+7 495 24084xx" />
         <key key="contact:website" value="https://dominospizza.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/dominospizzarussia" />
         <key key="contact:vk" value="https://vk.com/dominospizza_ru" />
@@ -856,9 +856,9 @@
         <key key="cuisine" value="pizza" />
         <key key="diet:vegetarian" value="no" />
         <key key="delivery" value="yes" />
-        <combo key="opening_hours" text="Время работы" values="Mo-Su 10:00-23:00,Mo-Su 09:00-23:00" default="Mo-Su 10:00-23:00" />
+        <combo key="opening_hours" text="Часы работы" values="Mo-Su 10:00-23:00,Mo-Su 09:00-23:00" default="Mo-Su 10:00-23:00" />
         <reference ref="level_wheelchair_address_internetaccess_footer" />
-        <link href="https://dominospizza.ru/find_dominos" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <link href="https://dominospizza.ru/find_dominos" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="brand:wikipedia" value="ru:Domino’s Pizza" />
         <key key="brand:wikidata" value="Q839466" />
       </item>
@@ -870,7 +870,7 @@
         <key key="brand" value="Даблби" />
         <key key="name:en" value="Double B" />
         <key key="name:ru" value="Даблби" />
-        <combo key="contact:phone" text="Телефон" />
+        <combo key="contact:phone" text="Номер телефона" />
         <key key="contact:website" value="http://double-b.ru" />
         <key key="contact:email" value="info@double-b.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/DoubleBCoffeeTea" />
@@ -879,9 +879,9 @@
         <key key="cuisine" value="coffee_shop" />
         <key key="takeaway" value="yes" />
         <key key="diet:vegetarian" value="no" />
-        <combo key="opening_hours" text="Время работы" values="Mo-Su 10:00-22:00,Mo-Su 08:00-23:00" />
+        <combo key="opening_hours" text="Часы работы" values="Mo-Su 10:00-22:00,Mo-Su 08:00-23:00" />
         <reference ref="level_wheelchair_address_internetaccess_footer" />
-        <link href="http://double-b.ru/#address" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <link href="http://double-b.ru/#address" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
       </item>
       <item name="Dunkin' Donuts" ru.name="Данкин Донатс" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/c/ca/Dunkin_Donuts_Logo.svg/320px-Dunkin_Donuts_Logo.svg.png">
         <label text="Кофейня &quot;Dunkin' Donuts&quot;" />
@@ -891,7 +891,7 @@
         <key key="brand" value="Dunkin' Donuts" />
         <key key="name:en" value="Dunkin' Donuts" />
         <key key="name:ru" value="Данкин Донатс" />
-        <combo key="contact:phone" text="Телефон" />
+        <combo key="contact:phone" text="Номер телефона" />
         <key key="contact:website" value="http://dunkindonutsmoscow.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/DunkinDonutsRussia" />
         <key key="contact:vk" value="https://vk.com/dunkindonuts_ru" />
@@ -900,9 +900,9 @@
         <key key="takeaway" value="yes" />
         <key key="diet:vegetarian" value="no" />
         <key key="delivery" value="yes" />
-        <combo key="opening_hours" text="Время работы" values="Mo-Su 10:00-22:00,Mo-Su 10:00-23:00" />
+        <combo key="opening_hours" text="Часы работы" values="Mo-Su 10:00-22:00,Mo-Su 10:00-23:00" />
         <reference ref="level_wheelchair_address_internetaccess_footer" />
-        <link href="http://dunkindonutsmoscow.ru/ru/stores" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <link href="http://dunkindonutsmoscow.ru/ru/stores" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="brand:wikipedia" value="ru:Dunkin’ Donuts" />
         <key key="brand:wikidata" value="Q847743" />
       </item>
@@ -913,7 +913,7 @@
         <key key="name" value="Кофе Хауз" />
         <key key="brand" value="Кофе Хауз" />
         <key key="name:ru" value="Кофе Хауз" />
-        <combo key="contact:phone" text="Телефон" />
+        <combo key="contact:phone" text="Номер телефона" />
         <key key="contact:website" value="http://www.coffeehouse.ru" />
         <key key="contact:email" value="info@coffeehouse.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/coffeehouse.ru" />
@@ -924,12 +924,12 @@
         <key key="contact:pinterest" value="https://pinterest.com/coffeehouseru" />
         <key key="cuisine" value="coffee_shop" />
         <key key="diet:vegetarian" value="yes" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 07:00-23:00; Sa-Su 10:00-23:00" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 07:00-23:00; Sa-Su 10:00-23:00" />
         <!-- во всех "Кофе Хаузах" заявлен бесплатный вай-фай-->
         <key key="internet_access" value="wlan" />
         <key key="internet_access:fee" value="no" />
         <reference ref="level_wheelchair_address_internetaccess_footer" />
-        <link href="http://coffeehouse.ru/adress" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <link href="http://coffeehouse.ru/adress" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="brand:wikipedia" value="ru:Кофе Хауз" />
         <key key="brand:wikidata" value="Q4236456" />
       </item>
@@ -940,7 +940,7 @@
         <key key="name" value="KFC" />
         <key key="brand" value="KFC" />
         <key key="name:en" value="KFC" />
-        <combo key="contact:phone" text="Телефон" default="+7 800 5558333" />
+        <combo key="contact:phone" text="Номер телефона" default="+7 800 5558333" />
         <key key="contact:website" value="https://www.kfc.ru" />
         <key key="contact:email" value="yum-press@spncomms.com" />
         <key key="contact:facebook" value="https://www.facebook.com/kfcrussia" />
@@ -953,10 +953,10 @@
         <key key="cuisine" value="chicken" />
         <key key="takeaway" value="yes" />
         <key key="diet:vegetarian" value="no" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
         <reference ref="level_wheelchair_address_internetaccess_footer" />
         <check key="drive_through" text="Обслуживание в машине" />
-        <link href="https://www.kfc.ru/restaurants" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <link href="https://www.kfc.ru/restaurants" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="brand:wikipedia" value="ru:KFC" />
         <key key="brand:wikidata" value="Q524757" />
       </item>
@@ -967,7 +967,7 @@
         <key key="name" value="Крошка Картошка" />
         <key key="brand" value="Крошка Картошка" />
         <key key="name:ru" value="Крошка Картошка" />
-        <combo key="contact:phone" text="Телефон" />
+        <combo key="contact:phone" text="Номер телефона" />
         <key key="contact:website" value="https://www.kartoshka.com" />
         <key key="contact:email" value="kroshka@kartoshka.com" />
         <key key="contact:facebook" value="https://www.facebook.com/groups/kartoshka" />
@@ -977,9 +977,9 @@
         <key key="contact:instagram" value="https://www.instagram.com/kroshka_kartoshka_rus" />
         <key key="cuisine" value="potato" />
         <key key="diet:vegetarian" value="yes" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 08:00-23:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 08:00-23:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
         <reference ref="level_wheelchair_address_internetaccess_footer" />
-        <link href="https://www.kartoshka.com/contacts" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <link href="https://www.kartoshka.com/contacts" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="brand:wikipedia" value="ru:Крошка-картошка" />
         <key key="brand:wikidata" value="Q4241838" />
       </item>
@@ -991,15 +991,15 @@
         <key key="name:ru" value="Кружка" />
         <key key="brand" value="Кружка" />
         <key key="craft_beer" value="yes" />
-        <combo key="contact:phone" text="Телефон" />
+        <combo key="contact:phone" text="Номер телефона" />
         <key key="contact:website" value="http://www.kruzhka.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/KRUZHKA.MOSCOW" />
         <key key="contact:twitter" value="https://twitter.com/Kruzhkaru" />
         <key key="contact:instagram" value="https://www.instagram.com/kruzhkaru" />
         <key key="diet:vegetarian" value="no" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 08:00-23:00,Mo-Fr 12:00-24:00; Sa-Su 00:00-04:00\,12:00-24:00" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 08:00-23:00,Mo-Fr 12:00-24:00; Sa-Su 00:00-04:00\,12:00-24:00" />
         <reference ref="level_wheelchair_address_internetaccess_footer" />
-        <link href="http://kruzhka.ru/addresses/map" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <link href="http://kruzhka.ru/addresses/map" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="brand:wikipedia" value="ru:Кружка (сеть ресторанов)" />
         <key key="brand:wikidata" value="Q6439558" />
       </item>
@@ -1011,7 +1011,7 @@
         <key key="brand" value="Макдоналдс" />
         <key key="name:en" value="McDonald's" />
         <key key="name:ru" value="Макдоналдс" />
-        <combo key="contact:phone" text="Телефон" default="+7 800 7074499"/>
+        <combo key="contact:phone" text="Номер телефона" default="+7 800 7074499"/>
         <key key="contact:website" value="https://mcdonalds.ru" />
         <key key="contact:email" value="info@ru.mcd.com" />
         <key key="contact:facebook" value="https://www.facebook.com/mcdonaldsrussia" />
@@ -1021,10 +1021,10 @@
         <key key="cuisine" value="burger" />
         <key key="takeaway" value="yes" />
         <key key="diet:vegetarian" value="no" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 06:30-24:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 06:30-24:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
         <reference ref="level_wheelchair_address_internetaccess_footer" />
         <check key="drive_through" text="Обслуживание в машине (МакАвто)" />
-        <link href="https://mcdonalds.ru/restaurant/map?lat=55.752609&amp;lng=37.61699" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <link href="https://mcdonalds.ru/restaurant/map?lat=55.752609&amp;lng=37.61699" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="brand:wikipedia" value="ru:McDonald’s" />
         <key key="brand:wikidata" value="Q38076" />
       </item>
@@ -1035,7 +1035,7 @@
         <key key="name" value="Му-Му" />
         <key key="brand" value="Му-Му" />
         <key key="name:ru" value="Му-Му" />
-        <combo key="contact:phone" text="Телефон" default="+7 499 67840xx" />
+        <combo key="contact:phone" text="Номер телефона" default="+7 499 67840xx" />
         <key key="contact:email" value="fastland@cafemumu.ru" />
         <key key="contact:website" value="https://www.cafemumu.ru" />
         <key key="contact:twitter" value="https://twitter.com/cafemumu" />
@@ -1046,9 +1046,9 @@
         <key key="cuisine" value="regional" />
         <key key="delivery" value="yes" />
         <key key="diet:vegetarian" value="yes" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 10:00-23:00,Mo-Su 09:00-23:00" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 10:00-23:00,Mo-Su 09:00-23:00" />
         <reference ref="level_wheelchair_address_internetaccess_footer" />
-        <link href="https://www.cafemumu.ru/contacts" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <link href="https://www.cafemumu.ru/contacts" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="brand:wikipedia" value="ru:Му-му (сеть ресторанов)" />
         <key key="brand:wikidata" value="Q6907053" />
       </item>
@@ -1060,7 +1060,7 @@
         <key key="brand" value="Папа Джонс" />
         <key key="name:en" value="Papa John's" />
         <key key="name:ru" value="Папа Джонс" />
-        <combo key="contact:phone" text="Телефон" />
+        <combo key="contact:phone" text="Номер телефона" />
         <key key="contact:website" value="https://www.papajohns.ru" />
         <key key="contact:vk" value="https://vk.com/papajohnsru" />
         <key key="contact:facebook" value="https://www.facebook.com/papajohnsru" />
@@ -1068,9 +1068,9 @@
         <key key="cuisine" value="pizza" />
         <key key="diet:vegetarian" value="no" />
         <key key="delivery" value="yes" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 11:00-23:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 11:00-23:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
         <reference ref="level_wheelchair_address_internetaccess_footer" />
-        <link href="https://www.papajohns.ru/adresa" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <link href="https://www.papajohns.ru/adresa" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
       </item>
       <item name="Pizza Hut" ru.name="Пицца Хат" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/0/02/PizzaHut.svg/255px-PizzaHut.svg.png">
         <label text="Фастфуд &quot;Пицца Хат&quot;" />
@@ -1088,9 +1088,9 @@
         <key key="cuisine" value="pizza" />
         <key key="diet:vegetarian" value="no" />
         <key key="delivery" value="yes" />
-        <combo key="opening_hours" text="Время работы" values="Mo-Su 10:00-23:00,Mo-Su 10:00-22:00,Mo-Su 11:00-23:00,Mo-Su 09:00-23:00" default="Mo-Su 10:00-23:00" />
+        <combo key="opening_hours" text="Часы работы" values="Mo-Su 10:00-23:00,Mo-Su 10:00-22:00,Mo-Su 11:00-23:00,Mo-Su 09:00-23:00" default="Mo-Su 10:00-23:00" />
         <reference ref="level_wheelchair_address_internetaccess_footer" />
-        <link href="https://www.pizzahut.ru/restaurants" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <link href="https://www.pizzahut.ru/restaurants" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="brand:wikipedia" value="ru:Пицца Хат" />
         <key key="brand:wikidata" value="Q191615" />
       </item>
@@ -1101,16 +1101,16 @@
         <key key="name" value="Subway" />
         <key key="brand" value="Subway" />
         <key key="name:en" value="Subway" />
-        <combo key="contact:phone" text="Телефон" default="+7 800 5554449"/>
+        <combo key="contact:phone" text="Номер телефона" default="+7 800 5554449"/>
         <key key="contact:website" value="http://subway.ru" />
         <key key="contact:email" value="subway@subway.ru" />
         <key key="contact:vk" value="https://vk.com/subwayrussia" />
         <key key="cuisine" value="sandwich" />
         <key key="takeaway" value="yes" />
         <key key="diet:vegetarian" value="no" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 08:00-23:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 08:00-23:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
         <reference ref="level_wheelchair_address_internetaccess_footer" />
-        <link href="http://subway.ru/stores" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <link href="http://subway.ru/stores" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="brand:wikipedia" value="ru:Subway (сеть ресторанов)" />
         <key key="brand:wikidata" value="Q244457" />
       </item>
@@ -1122,7 +1122,7 @@
         <key key="brand" value="Старбакс" />
         <key key="name:en" value="Starbucks" />
         <key key="name:ru" value="Старбакс" />
-        <combo key="contact:phone" text="Телефон" default="+7 499 2704040"/>
+        <combo key="contact:phone" text="Номер телефона" default="+7 499 2704040"/>
         <key key="contact:website" value="http://starbuckscoffee.ru" />
         <key key="contact:email" value="csd@starbuckscoffee.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/StarbucksRussia" />
@@ -1131,9 +1131,9 @@
         <key key="cuisine" value="coffee_shop" />
         <key key="takeaway" value="yes" />
         <key key="diet:vegetarian" value="no" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 08:00-23:00,Mo-Fr 07:00-23:00; Sa-Su 10:00-23:00" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 08:00-23:00,Mo-Fr 07:00-23:00; Sa-Su 10:00-23:00" />
         <reference ref="level_wheelchair_address_internetaccess_footer" />
-        <link href="https://www.facebook.com/StarbucksRussia/app_419559581405349" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <link href="https://www.facebook.com/StarbucksRussia/app_419559581405349" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="brand:wikipedia" value="ru:Starbucks" />
         <key key="brand:wikidata" value="Q37158" />
       </item>
@@ -1155,9 +1155,9 @@
         <key key="cuisine" value="hotdog" />
         <key key="takeaway" value="yes" />
         <key key="diet:vegetarian" value="no" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 08:00-23:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 08:00-23:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
         <reference ref="level_wheelchair_address_internetaccess_footer" />
-        <link href="http://www.stardogs.ru/default.aspx?page=address" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <link href="http://www.stardogs.ru/default.aspx?page=address" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="brand:wikipedia" value="ru:Стардогс" />
         <key key="brand:wikidata" value="Q4439856" />
       </item>
@@ -1178,9 +1178,9 @@
         <key key="contact:line" value="http://line.me/ti/p/%40teremok" />
         <key key="cuisine" value="crepe" />
         <key key="diet:vegetarian" value="yes" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 08:00-23:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 08:00-23:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
         <reference ref="level_wheelchair_address_internetaccess_footer" />
-        <link href="http://www.teremok.ru/address/msk" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <link href="http://www.teremok.ru/address/msk" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="brand:wikipedia" value="ru:Теремок (сеть быстрого питания)" />
         <key key="brand:wikidata" value="Q4455593" />
       </item>
@@ -1191,7 +1191,7 @@
         <key key="name" value="Шоколадница" />
         <key key="brand" value="Шоколадница" />
         <key key="name:ru" value="Шоколадница" />
-        <combo key="contact:phone" text="Телефон" default="+7 800 1003360"/>
+        <combo key="contact:phone" text="Номер телефона" default="+7 800 1003360"/>
         <key key="contact:website" value="http://shoko.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/shoko.ru" />
         <key key="contact:vk" value="https://vk.com/shokoru" />
@@ -1200,9 +1200,9 @@
         <key key="contact:twitter" value="https://twitter.com/wwwShokoRu" />
         <key key="cuisine" value="coffee_shop" />
         <key key="diet:vegetarian" value="no" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 08:00-23:00,Mo-Fr 07:00-23:00; Sa-Su 10:00-23:00" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 08:00-23:00,Mo-Fr 07:00-23:00; Sa-Su 10:00-23:00" />
         <reference ref="level_wheelchair_address_internetaccess_footer" />
-        <link href="http://shoko.ru/moskva/adresa_kofeen" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <link href="http://shoko.ru/moskva/adresa_kofeen" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
       </item>
       <item name="Russian Appetite" ru.name="Русский Аппетит" type="node,closedway,multipolygon">
         <!-- Воронежская, Курская, Белгородская, Саратовская, Тамбовская, Орловская области-->
@@ -1212,7 +1212,7 @@
         <key key="name" value="Русский Аппетит" />
         <key key="brand" value="Русский Аппетит" />
         <key key="name:ru" value="Русский Аппетит" />
-        <combo key="contact:phone" text="Телефон" />
+        <combo key="contact:phone" text="Номер телефона" />
         <key key="contact:website" value="http://xn--80a4abej.xn--p1ai" />
         <key key="contact:vk" value="https://vk.com/club10566241" />
         <key key="contact:ok" value="https://ok.ru/profile/583525030934" />
@@ -1220,9 +1220,9 @@
         <key key="contact:facebook" value="https://www.facebook.com/Русский-Аппетит-1502979646622576" />
         <key key="contact:google_plus" value="https://plus.google.com/u/0/115068711489617191788" />
         <key key="diet:vegetarian" value="no" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 08:00-23:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 08:00-23:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
         <reference ref="level_wheelchair_address_internetaccess_footer" />
-        <link href="http://xn--80a4abej.xn--p1ai/karta" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <link href="http://xn--80a4abej.xn--p1ai/karta" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
       </item>
       <item name="Robin Sdobin" ru.name="Робин Сдобин" type="node,closedway,multipolygon">
         <!-- Воронежская, Московская, Смоленская, Владимирская и т.д.-->
@@ -1235,9 +1235,9 @@
         <key key="contact:phone" value="+7 800 5505560" />
         <key key="contact:website" value="http://sdobin.ru" />
         <key key="contact:email" value="info@robinsdobin.ru" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 08:00-23:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 08:00-23:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
         <reference ref="level_wheelchair_address_internetaccess_footer" />
-        <link href="http://sdobin.ru" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <link href="http://sdobin.ru" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
       </item>
       <item name="Yakitoriya" ru.name="Якитория" type="node,closedway,multipolygon">
         <label text="Ресторан &quot;Якитория&quot;" />
@@ -1246,7 +1246,7 @@
         <key key="name" value="Якитория" />
         <key key="brand" value="Якитория" />
         <key key="name:ru" value="Якитория" />
-        <combo key="contact:phone" text="Телефон" />
+        <combo key="contact:phone" text="Номер телефона" />
         <key key="contact:website" value="http://www.yakitoriya.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/yakitoriyacafe" />
         <key key="contact:vk" value="https://vk.com/yakitoriyacafe" />
@@ -1254,9 +1254,9 @@
         <key key="cuisine" value="japanese" />
         <key key="diet:vegetarian" value="yes" />
         <key key="delivery" value="yes" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 10:00-06:00,Mo-Su 10:00-05:00; Mo-Su 11:00-06:00" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 10:00-06:00,Mo-Su 10:00-05:00; Mo-Su 11:00-06:00" />
         <reference ref="level_wheelchair_address_internetaccess_footer" />
-        <link href="http://www.yakitoriya.ru/addr" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <link href="http://www.yakitoriya.ru/addr" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
       </item>
     </group>
     <group name="Сотовая связь" en.name="Mobile phone shops" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Twemoji_1f4f1.svg/240px-Twemoji_1f4f1.svg.png">
@@ -1275,8 +1275,8 @@
         <key key="contact:vk" value="https://vk.com/tele2" />
         <key key="contact:ok" value="https://ok.ru/tele2" />
         <key key="contact:youtube" value="https://www.youtube.com/user/AfishaTele2" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00,Mo-Su 10:00-21:00" />
-        <link href="https://msk.tele2.ru/offices" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00,Mo-Su 10:00-21:00" />
+        <link href="https://msk.tele2.ru/offices" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="operator:wikipedia" value="ru:Tele2 Россия" />
         <key key="operator:wikidata" value="Q4050799" />
         <reference ref="level_wheelchair_address_footer" />
@@ -1298,8 +1298,8 @@
         <key key="contact:youtube" value="https://www.youtube.com/user/beelineru" />
         <key key="contact:ok" value="https://ok.ru/beeline" />
         <key key="contact:instagram" value="https://www.instagram.com/beelinerus" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00,Mo-Su 09:00-21:00" />
-        <link href="https://moskva.beeline.ru/customers/beeline-on-map/?lon=37.59401893881195&amp;lat=55.85027315163985&amp;zoom=11&amp;tab=offices&amp;filter=offices_filter_mobileService&amp;" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00,Mo-Su 09:00-21:00" />
+        <link href="https://moskva.beeline.ru/customers/beeline-on-map/?lon=37.59401893881195&amp;lat=55.85027315163985&amp;zoom=11&amp;tab=offices&amp;filter=offices_filter_mobileService&amp;" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="brand:wikipedia" value="ru:Билайн" />
         <key key="brand:wikidata" value="Q402880" />
         <reference ref="level_wheelchair_address_footer" />
@@ -1321,8 +1321,8 @@
         <key key="contact:facebook" value="https://www.facebook.com/MegaFon.ru" />
         <key key="contact:twitter" value="https://twitter.com/megafonru" />
         <key key="contact:habrahabr" value="https://habrahabr.ru/company/megafon" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
-        <link href="https://megafon.ru/help/offices/#offices" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
+        <link href="https://megafon.ru/help/offices/#offices" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="operator:wikipedia" value="ru:Мегафон (компания)" />
         <key key="operator:wikidata" value="Q1720713" />
         <reference ref="level_wheelchair_address_footer" />
@@ -1342,8 +1342,8 @@
         <key key="contact:vk" value="https://vk.com/mts" />
         <key key="contact:twitter" value="https://twitter.com/ru_mts" />
         <key key="contact:ok" value="https://ok.ru/mts" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 09:00-22:00,Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00" />
-        <link href="http://www.mts.ru/mobil_inet_and_tv/help/mts/offices" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-22:00,Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00" />
+        <link href="http://www.mts.ru/mobil_inet_and_tv/help/mts/offices" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="operator:wikipedia" value="ru:МТС (компания)" />
         <key key="operator:wikidata" value="Q1368919" />
         <reference ref="level_wheelchair_address_footer" />
@@ -1364,8 +1364,8 @@
         <key key="contact:instagram" value="https://www.instagram.com/EUROSET_RU" />
         <key key="contact:twitter" value="https://twitter.com/euroset_company" />
         <key key="contact:youtube" value="https://www.youtube.com/user/EurosetCompany" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
-        <link href="http://euroset.ru/shops" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
+        <link href="http://euroset.ru/shops" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="brand:wikipedia" value="ru:Евросеть" />
         <key key="brand:wikidata" value="Q65310" />
         <reference ref="level_wheelchair_address_footer" />
@@ -1379,8 +1379,8 @@
         <key key="name:ru" value="Мобил Элемент" />
         <key key="contact:phone" value="+7 495 6467803" />
         <key key="contact:website" value="http://www.mobilelement.ru" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 08:00-22:30,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
-        <link href="http://www.mobilelement.ru/map" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 08:00-22:30,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
+        <link href="http://www.mobilelement.ru/map" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_footer" />
       </item>
       <item name="Svyaznoy" ru.name="Связной" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/f/fa/SvyaznoyLogo.png">
@@ -1394,8 +1394,8 @@
         <key key="contact:website" value="https://www.svyaznoy.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/svyaznoy.ru" />
         <key key="contact:vk" value="https://vk.com/club11445015" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
-        <link href="https://www.svyaznoy.ru/address_shops" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
+        <link href="https://www.svyaznoy.ru/address_shops" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="operator:wikipedia" value="ru:Связной (компания)" />
         <key key="operator:wikidata" value="Q65371" />
         <reference ref="level_wheelchair_address_footer" />
@@ -1409,7 +1409,7 @@
         <key key="name" value="Адамас" />
         <key key="brand" value="Адамас" />
         <key key="name:ru" value="Адамас" />
-        <combo key="contact:phone" text="Телефон" values="+7 800 2503344-xxxx" default="+7 800 2503344" />
+        <combo key="contact:phone" text="Номер телефона" values="+7 800 2503344-xxxx" default="+7 800 2503344" />
         <key key="contact:website" value="https://www.adamas.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/adamas.club" />
         <key key="contact:email" value="office@adamas.ru" />
@@ -1417,8 +1417,8 @@
         <key key="contact:ok" value="https://ok.ru/#/group/51689238692070" />
         <key key="contact:instagram" value="https://www.instagram.com/adamas_ru" />
         <key key="contact:youtube" value="https://www.youtube.com/channel/UCnOC4pLMguhoKxOonAQRdHQ" />
-        <combo key="opening_hours" text="Время работы" values="Mo-Su 10:00-22:00,Mo-Su 09:00-21:00" />
-        <link href="https://www.adamas.ru/buy/moscow" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="Mo-Su 10:00-22:00,Mo-Su 09:00-21:00" />
+        <link href="https://www.adamas.ru/buy/moscow" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="operator:wikipedia" value="ru:Адамас (компания)" />
         <key key="operator:wikidata" value="Q15924718" />
         <reference ref="wheelchair_address_footer" />
@@ -1431,15 +1431,15 @@
         <key key="alt_name" value="Eyekraft" />
         <key key="brand" value="Айкрафт" />
         <key key="name:ru" value="Айкрафт" />
-        <combo key="contact:phone" text="Телефон" valuse="+7 800 7755554,+7 495 7755554" default="+7 800 7755554" />
+        <combo key="contact:phone" text="Номер телефона" valuse="+7 800 7755554,+7 495 7755554" default="+7 800 7755554" />
         <key key="contact:website" value="http://www.eyekraft.ru" />
         <key key="contact:email" value="info@eyekraft.ru" />
         <key key="contact:vk" value="https://vk.com/eyekraftoptica" />
         <key key="contact:facebook" value="https://www.facebook.com/eyekraft" />
         <key key="contact:instagram" value="https://www.instagram.com/eyekraftoptica" />
         <key key="contact:google_plus" value="https://plus.google.com/+EyekraftRu" />
-        <combo key="opening_hours" text="Время работы" values="Mo-Su 10:00-21:00,Mo-Su 10:00-21:00,Mo-Su 09:00-22:00" />
-        <link href="http://www.eyekraft.ru/page/address" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="Mo-Su 10:00-21:00,Mo-Su 10:00-21:00,Mo-Su 09:00-22:00" />
+        <link href="http://www.eyekraft.ru/page/address" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_footer" />
       </item>
       <item name="Pandora" ru.name="Pandora" type="node,closedway,multipolygon">
@@ -1449,15 +1449,15 @@
         <key key="name" value="Pandora" />
         <key key="name:en" value="Pandora" />
         <key key="brand" value="Pandora" />
-        <combo key="contact:phone" text="Телефон" values="+7 495 2878838-xxx" default="+7 800 7008338"/>
+        <combo key="contact:phone" text="Номер телефона" values="+7 495 2878838-xxx" default="+7 800 7008338"/>
         <key key="contact:website" value="https://www.pandora.net/ru-ru" />
         <key key="contact:email" value="info@pandora-rus.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/PandoraRussia" />
         <key key="contact:youtube" value="https://www.youtube.com/user/TheOfficialPandora" />
         <key key="contact:pinterest" value="https://pinterest.com/officialpandora" />
         <key key="contact:instagram" value="https://www.instagram.com/theofficialpandora" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-22:00" />
-        <link href="https://www.pandora.net/ru-ru/stores" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-22:00" />
+        <link href="https://www.pandora.net/ru-ru/stores" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="operator:wikipedia" value="ru:Pandora (ювелирный дом)" />
         <key key="operator:wikidata" value="Q2241604" />
         <reference ref="level_wheelchair_address_footer" />
@@ -1471,11 +1471,11 @@
         <key key="name:en" value="Ticketland.ru" />
         <key key="brand" value="Ticketland.ru" />
         <key key="operator" value="ООО «МДТЗК»" />
-        <combo key="contact:phone" text="Телефон" default="+7 800 7700007" />
+        <combo key="contact:phone" text="Номер телефона" default="+7 800 7700007" />
         <key key="contact:website" value="https://www.ticketland.ru" />
         <key key="contact:email" value="secretary@ticketland.ru" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00" />
-        <link href="https://www.ticketland.ru/kassa" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00" />
+        <link href="https://www.ticketland.ru/kassa" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Detskiy Mir" ru.name="Детский мир" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/4/41/Detsky_mir_logo.png">
@@ -1487,15 +1487,15 @@
         <key key="operator" value="ПАО &quot;Детский мир&quot;" />
         <key key="shop" value="toys" />
         <key key="contact:email" value="shop@detmir.ru" />
-        <combo key="contact:phone" text="Телефон" default="+7 800 2500000" />
+        <combo key="contact:phone" text="Номер телефона" default="+7 800 2500000" />
         <key key="contact:facebook" value="https://www.facebook.com/detmir" />
         <key key="contact:instagram" value="https://www.instagram.com/detmir_shop" />
         <key key="contact:twitter" value="https://twitter.com/detmir_official" />
         <key key="contact:vk" value="https://vk.com/detmir" />
         <key key="contact:website" value="https://www.detmir.ru" />
         <key key="contact:youtube" value="https://www.youtube.com/detmirtv" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 09:00-22:00,Mo-Su 09:00-23:00,Mo-Su 10:00-22:00,Mo-Su 11:00-21:00" />
-        <link href="https://www.detmir.ru/shops" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-22:00,Mo-Su 09:00-23:00,Mo-Su 10:00-22:00,Mo-Su 11:00-21:00" />
+        <link href="https://www.detmir.ru/shops" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="brand:wikipedia" value="ru:Детский мир (сеть магазинов)" />
         <key key="brand:wikidata" value="Q16643324" />
         <reference ref="level_wheelchair_address_footer" />
@@ -1507,14 +1507,14 @@
         <key key="name" value="Диана" />
         <key key="brand" value="Диана" />
         <key key="name:ru" value="Диана" />
-        <combo key="contact:phone" text="Телефон" default="+7 800 2008227" />
+        <combo key="contact:phone" text="Номер телефона" default="+7 800 2008227" />
         <key key="contact:website" value="http://dryclean.ru" />
         <key key="contact:email" value="diana@dryclean.ru" />
         <key key="contact:vk" value="https://vk.com/diana.dryclean" />
         <key key="contact:facebook" value="https://www.facebook.com/diana.dryclean" />
         <key key="contact:instagram" value="https://www.instagram.com/dryclean.ru" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 10:00-20:00; Sa-Su 10:00-18:00" />
-        <link href="http://www.dryclean.ru/priemnye_punkty" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 10:00-20:00; Sa-Su 10:00-18:00" />
+        <link href="http://www.dryclean.ru/priemnye_punkty" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_footer" />
       </item>
       <item name="Ile de Beaute" ru.name="Иль де Ботэ" type="node,closedway,multipolygon">
@@ -1524,7 +1524,7 @@
         <key key="name" value="Иль де Ботэ" />
         <key key="brand" value="Иль де Ботэ" />
         <key key="name:ru" value="Иль де Ботэ" />
-        <combo key="contact:phone" text="Телефон" default="+7 800 2001700" />
+        <combo key="contact:phone" text="Номер телефона" default="+7 800 2001700" />
         <key key="contact:website" value="http://iledebeaute.ru" />
         <key key="contact:email" value="info@ldb.ru" />
         <key key="contact:vk" value="https://vk.com/iledebeaute" />
@@ -1532,8 +1532,8 @@
         <key key="contact:twitter" value="https://twitter.com/IDB_OFFICIAL" />
         <key key="contact:instagram" value="https://www.instagram.com/iledebeaute_official" />
         <key key="contact:youtube" value="https://www.youtube.com/user/idbshops" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 08:00-22:00; Sa-Su 09:00-21:00" />
-        <link href="http://iledebeaute.ru/company/shops" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 08:00-22:00; Sa-Su 09:00-21:00" />
+        <link href="http://iledebeaute.ru/company/shops" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_footer" />
       </item>
       <item name="Korablik" ru.name="Кораблик" type="node,closedway,multipolygon">
@@ -1545,13 +1545,13 @@
         <key key="operator" value="ООО &quot;Кораблик-Р&quot;" />
         <key key="shop" value="toys" />
         <key key="contact:email" value="shop@korablik.ru" />
-        <combo key="contact:phone" text="Телефон" values="+7 495 6630343" default="+7 800 7750343"/>
+        <combo key="contact:phone" text="Номер телефона" values="+7 495 6630343" default="+7 800 7750343"/>
         <key key="contact:facebook" value="https://www.facebook.com/korablik.ru" />
         <key key="contact:instagram" value="https://www.instagram.com/korablik.shop" />
         <key key="contact:vk" value="https://vk.com/korablik.shops" />
         <key key="contact:website" value="https://www.korablik.ru" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 08:00-23:00" />
-        <link href="https://www.korablik.ru/shops" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 08:00-23:00" />
+        <link href="https://www.korablik.ru/shops" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Lensmaster" ru.name="Линзмастер" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/b/bb/Lensmaster.gif/320px-Lensmaster.gif">
@@ -1561,15 +1561,15 @@
         <key key="name" value="Линзмастер" />
         <key key="brand" value="Линзмастер" />
         <key key="name:ru" value="Линзмастер" />
-        <combo key="contact:phone" text="Телефон" default="+7 800 7707567" />
+        <combo key="contact:phone" text="Номер телефона" default="+7 800 7707567" />
         <key key="contact:website" value="https://www.lensmaster.ru" />
         <key key="contact:email" value="client@lensmaster.ru" />
         <key key="contact:vk" value="https://vk.com/lensmaster" />
         <key key="contact:facebook" value="https://www.facebook.com/lensmaster" />
         <key key="contact:instagram" value="https://www.instagram.com/lensmaster.ru" />
         <key key="contact:youtube" value="https://www.youtube.com/user/LensmasterOnline" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 10:00-22:00,Mo-Sa 10:00-21:00; Su 11:00-20:00" />
-        <link href="https://www.lensmaster.ru/saloni-optiki" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Sa 10:00-21:00; Su 11:00-20:00" />
+        <link href="https://www.lensmaster.ru/saloni-optiki" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="brand:wikipedia" value="ru:Линзмастер" />
         <key key="brand:wikidata" value="Q16671388" />
         <reference ref="level_wheelchair_address_footer" />
@@ -1581,7 +1581,7 @@
         <key key="name" value="Л'Этуаль" />
         <key key="brand" value="Л'Этуаль" />
         <key key="name:ru" value="Л'Этуаль" />
-        <combo key="contact:phone" text="Телефон" default="+7 800 3337711-xxxx" />
+        <combo key="contact:phone" text="Номер телефона" default="+7 800 3337711-xxxx" />
         <key key="contact:website" value="https://www.letoile.ru" />
         <key key="contact:vk" value="https://vk.com/letoile_official" />
         <key key="contact:ok" value="https://ok.ru/letoileru" />
@@ -1589,8 +1589,8 @@
         <key key="contact:livejournal" value="http://letoile-ru.livejournal.com" />
         <key key="contact:twitter" value="https://twitter.com/letoile_ru" />
         <key key="contact:instagram" value="https://www.instagram.com/letoile_official" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 08:00-22:00; Sa-Su 09:00-21:00" />
-        <link href="https://www.letoile.ru/retail/?city=156&amp;map=yes" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 08:00-22:00; Sa-Su 09:00-21:00" />
+        <link href="https://www.letoile.ru/retail/?city=156&amp;map=yes" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="brand:wikipedia" value="ru:Л'Этуаль" />
         <key key="brand:wikidata" value="Q18400706" />
         <reference ref="level_wheelchair_address_footer" />
@@ -1607,8 +1607,8 @@
         <key key="contact:phone" value="+7 800 2009002" />
         <key key="contact:website" value="https://magnitcosmetic.ru" />
         <key key="contact:email" value="info@magnit.ru" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 10:00-22:00,Mo-Su 09:30-22:00" />
-        <link href="https://magnitcosmetic.ru/shops" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Su 09:30-22:00" />
+        <link href="https://magnitcosmetic.ru/shops" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Moscow Jewelry Factory" ru.name="Московский ювелирный завод" type="node,closedway,multipolygon">
@@ -1625,8 +1625,8 @@
         <key key="contact:vk" value="https://vk.com/miuz_ru" />
         <key key="contact:ok" value="https://ok.ru/miuz.ru" />
         <key key="contact:instagram" value="https://www.instagram.com/miuz_ru" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 08:00-22:00; Sa-Su 09:00-21:00" />
-        <link href="https://www.miuz.ru/stores" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 08:00-22:00; Sa-Su 09:00-21:00" />
+        <link href="https://www.miuz.ru/stores" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Moshoztorg" ru.name="Мосхозторг" type="node,closedway,multipolygon">
@@ -1636,14 +1636,14 @@
         <key key="name" value="Мосхозторг" />
         <key key="brand" value="Мосхозторг" />
         <key key="name:ru" value="Мосхозторг" />
-        <combo key="contact:phone" text="Телефон" default="+7 800 5504747" />
+        <combo key="contact:phone" text="Номер телефона" default="+7 800 5504747" />
         <key key="contact:website" value="http://moshoztorg.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/MosHozTorg" />
         <key key="contact:vk" value="https://vk.com/moshoztorg" />
         <key key="contact:ok" value="https://ok.ru/group/54890146037790" />
         <key key="contact:instagram" value="https://www.instagram.com/moshoztorg" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 08:00-22:00; Sa-Su 09:00-21:00" />
-        <link href="http://moshoztorg.ru/magaziny" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 08:00-22:00; Sa-Su 09:00-21:00" />
+        <link href="http://moshoztorg.ru/magaziny" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Ochkarik" ru.name="Очкарик" type="node,closedway,multipolygon">
@@ -1654,13 +1654,13 @@
         <key key="brand" value="Очкарик" />
         <key key="operator" value="ООО «ОПТИК-ВИЖН»" />
         <key key="name:ru" value="Очкарик" />
-        <combo key="contact:phone" text="Телефон" default="+7 800 7002126" />
+        <combo key="contact:phone" text="Номер телефона" default="+7 800 7002126" />
         <key key="delivery" value="yes" />
         <key key="contact:website" value="https://ochkarik.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/Очкарик-148161638679393" />
         <key key="contact:vk" value="https://vk.com/club19204041" />
-        <combo key="opening_hours" text="Время работы" values="Mo-Su 10:00-22:00,Mo-Su 09:00-21:00" />
-        <link href="https://ochkarik.ru/salony-optiki" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="Mo-Su 10:00-22:00,Mo-Su 09:00-21:00" />
+        <link href="https://ochkarik.ru/salony-optiki" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_footer" />
       </item>
       <item name="Persona" ru.name="Персона" type="node,closedway,multipolygon">
@@ -1670,15 +1670,15 @@
         <key key="name" value="Персона" />
         <key key="brand" value="Персона" />
         <key key="name:ru" value="Персона" />
-        <combo key="contact:phone" text="Телефон" />
+        <combo key="contact:phone" text="Номер телефона" />
         <key key="contact:website" value="http://www.persona.ru" />
         <key key="contact:twitter" value="https://twitter.com/Persona_PR" />
         <key key="contact:youtube" value="https://www.youtube.com/watch?v=qxudzLtUYZM" />
         <!-- <key key="contact:facebook" value="https://www.facebook.com/ipersona" />
         указан на официальном сайте, но в фб такой страницы нет -->
         <key key="contact:vk" value="https://vk.com/lab_persona" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 08:00-22:00; Sa-Su 09:00-21:00" />
-        <link href="http://www.persona.ru/laboratories" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 08:00-22:00; Sa-Su 09:00-21:00" />
+        <link href="http://www.persona.ru/laboratories" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Podruzhka" ru.name="Подружка" type="node,closedway,multipolygon">
@@ -1695,8 +1695,8 @@
         <key key="contact:vk" value="https://vk.com/podrygkashop" />
         <key key="contact:instagram" value="https://www.instagram.com/podrygkashop" />
         <key key="contact:facebook" value="https://www.facebook.com/podrygkashop" />
-        <combo key="opening_hours" text="Время работы" values="Mo-Su 10:00-22:00,Mo-Su 09:00-21:00" default="Mo-Su 09:00-21:00" />
-        <link href="http://www.podrygka.ru/shoplist" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="Mo-Su 10:00-22:00,Mo-Su 09:00-21:00" default="Mo-Su 09:00-21:00" />
+        <link href="http://www.podrygka.ru/shoplist" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Smeshnie Tseni" ru.name="Смешные цены" type="node,closedway,multipolygon">
@@ -1707,8 +1707,8 @@
         <key key="name:ru" value="Смешные цены" />
         <key key="shop" value="clothes" />
         <key key="contact:website" value="http://smeshniyeceni.ru" />
-        <combo key="opening_hours" text="Время работы" />
-        <link href="http://smeshniyeceni.ru" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" />
+        <link href="http://smeshniyeceni.ru" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_footer" />
       </item>
       <item name="Sportmaster" ru.name="Спортмастер" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Sportmaster_logo_icon_2017.png/240px-Sportmaster_logo_icon_2017.png">
@@ -1730,8 +1730,8 @@
         <key key="contact:twitter" value="https://twitter.com/ru_sportmaster" />
         <key key="contact:youtube" value="https://www.youtube.com/user/sportmasterRU" />
         <key key="contact:google_plus" value="https://plus.google.com/+%D1%81%D0%BF%D0%BE%D1%80%D1%82%D0%BC%D0%B0%D1%81%D1%82%D0%B5%D1%80" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 10:00-22:00,Mo-Su 10:00-20:00" />
-        <link href="http://www.sportmaster.ru/stores/moscow" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Su 10:00-20:00" />
+        <link href="http://www.sportmaster.ru/stores/moscow" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="operator:wikipedia" value="ru:Спортмастер" />
         <key key="operator:wikidata" value="Q4438176" />
         <reference ref="level_wheelchair_address_footer" />
@@ -1745,14 +1745,14 @@
         <key key="name" value="ЦентрОбувь" />
         <key key="name:ru" value="ЦентрОбувь" />
         <key key="operator" value="АО &quot;Торговый дом &quot;Центробувь&quot;" />
-        <combo key="contact:phone" text="Телефон" default="+7 495 7820011" />
+        <combo key="contact:phone" text="Номер телефона" default="+7 495 7820011" />
         <key key="contact:email" value="office@out.centroshop.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/Centrobuv" />
         <key key="contact:ok" value="https:/ok.ru/centrobuv" />
         <key key="contact:vk" value="https://vk.com/centrobuv" />
         <key key="contact:website" value="http://center-obuv.ru" />
-        <combo key="opening_hours" text="Время работы" values="Mo-Su 10:00-21:00,Mo-Su 10:00-20:00,Mo-Su 09:00-20:00,Mo-Su 09:00-19:00" />
-        <link href="http://center-obuv.ru/shops/moskva" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="Mo-Su 10:00-21:00,Mo-Su 10:00-20:00,Mo-Su 09:00-20:00,Mo-Su 09:00-19:00" />
+        <link href="http://center-obuv.ru/shops/moskva" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="operator:wikipedia" value="ru:ЦентрОбувь" />
         <key key="operator:wikidata" value="Q4504072" />
         <reference ref="wheelchair_address_footer" />
@@ -1766,7 +1766,7 @@
         <key key="brand" value="ТВОЁ" />
         <key key="name:ru" value="ТВОЁ" />
         <key key="operator" value="ООО «ТВОЕ»" />
-        <combo key="contact:phone" text="Телефон" default="+7 800 5555696" />
+        <combo key="contact:phone" text="Номер телефона" default="+7 800 5555696" />
         <key key="contact:website" value="https://tvoe.ru" />
         <key key="contact:email" value="help@tvoe.ru" />
         <key key="contact:vk" value="https://vk.com/tvoe" />
@@ -1776,8 +1776,8 @@
         <key key="contact:twitter" value="https://twitter.com/_TBOE_" />
         <key key="contact:youtube" value="https://www.youtube.com/user/TvoeOfficial" />
         <key key="contact:google_plus" value="https://plus.google.com/u/0/+TvoeRu" />
-        <combo key="opening_hours" text="Время работы" values="Mo-Su 10:00-22:00,Mo-Su 10:00-23:00,Mo-Su 09:00-21:00,Mo-Su 09:00-22:00" />
-        <link href="https://tvoe.ru/shops" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="Mo-Su 10:00-22:00,Mo-Su 10:00-23:00,Mo-Su 09:00-21:00,Mo-Su 09:00-22:00" />
+        <link href="https://tvoe.ru/shops" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_footer" />
       </item>
       <item name="Eldorado" ru.name="Эльдорадо" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/2/24/Eldorado_Logo.svg/320px-Eldorado_Logo.svg.png">
@@ -1795,8 +1795,8 @@
         <key key="contact:google_plus" value="https://plus.google.com/u/0/116636673175550063887" />
         <key key="contact:instagram" value="https://www.instagram.com/eldorado_stores" />
         <key key="contact:vk" value="https://vk.com/eldorado_stores" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 10:00-21:00,Mo-Fr 08:00-22:00; Sa-Su 09:00-21:00" />
-        <link href="http://www.eldorado.ru/info/shops/11324" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 10:00-21:00,Mo-Fr 08:00-22:00; Sa-Su 09:00-21:00" />
+        <link href="http://www.eldorado.ru/info/shops/11324" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="brand:wikipedia" value="ru:Эльдорадо (сеть магазинов)" />
         <key key="brand:wikidata" value="Q4531492" />
         <reference ref="level_wheelchair_address_footer" />
@@ -1808,7 +1808,7 @@
         <key key="name" value="М.Видео" />
         <key key="name:ru" value="М.Видео" />
         <key key="operator" value="ООО &quot;М.Видео Менеджмент&quot;" />
-        <combo key="contact:phone" text="Телефон" default="+7 800 2007775" />
+        <combo key="contact:phone" text="Номер телефона" default="+7 800 2007775" />
         <key key="contact:email" value="24@mvideo.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/mvideo.ru" />
         <key key="contact:instagram" value="https://www.instagram.com/mvideo_ru" />
@@ -1817,8 +1817,8 @@
         <key key="contact:vk" value="https://vk.com/mvideo" />
         <key key="contact:website" value="http://www.mvideo.ru" />
         <key key="contact:youtube" value="https://www.youtube.com/mvideoru" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 10:00-22:00,Mo-Su 10:00-23:00" />
-        <link href="http://www.mvideo.ru/shops/store-list" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Su 10:00-23:00" />
+        <link href="http://www.mvideo.ru/shops/store-list" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="brand:wikipedia" value="ru:М.Видео" />
         <key key="brand:wikidata" value="Q6558800" />
         <reference ref="level_wheelchair_address_footer" />
@@ -1830,7 +1830,7 @@
         <key key="name" value="Юлмарт" />
         <key key="brand" value="Юлмарт" />
         <key key="name:ru" value="Юлмарт" />
-        <combo key="contact:phone" text="Телефон" values="+7 495 2874241" />
+        <combo key="contact:phone" text="Номер телефона" values="+7 495 2874241" />
         <key key="contact:website" value="https://www.ulmart.ru" />
         <key key="contact:email" value="post@ulmart.ru" />
         <key key="contact:youtube" value="https://www.youtube.com/user/ulmartofficial" />
@@ -1839,8 +1839,8 @@
         <key key="contact:facebook" value="https://www.facebook.com/I.love.Ulmart" />
         <key key="contact:twitter" value="https://twitter.com/Ulmart_ru" />
         <key key="contact:instagram" value="https://www.instagram.com/iloveulmart" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 10:00-22:00,Mo-Su 10:00-21:00" />
-        <link href="https://www.ulmart.ru/help/moscow/contacts" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Su 10:00-21:00" />
+        <link href="https://www.ulmart.ru/help/moscow/contacts" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="brand:wikipedia" value="ru:Юлмарт" />
         <key key="brand:wikidata" value="Q4534379" />
         <reference ref="level_wheelchair_address_footer" />
@@ -1854,7 +1854,7 @@
         <key key="name" value="Альфа-Банк" />
         <key key="name:en" value="Alfa-Bank" />
         <key key="name:ru" value="Альфа-Банк" />
-        <combo key="contact:phone" text="Телефон" values="+7 495 7888878" default="+7 800 2000000" />
+        <combo key="contact:phone" text="Номер телефона" values="+7 495 7888878" default="+7 800 2000000" />
         <key key="contact:website" value="https://alfabank.ru" />
         <key key="contact:email" value="mail@alfabank.ru" />
         <key key="contact:vk" value="https://vk.com/alfabank" />
@@ -1862,9 +1862,9 @@
         <key key="contact:youtube" value="https://www.youtube.com/user/alfabankru" />
         <key key="contact:twitter" value="https://twitter.com/alfabank" />
         <key key="contact:ok" value="https://ok.ru/alfabank" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 09:00-21:00; Sa 10:00-19:00" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 09:00-21:00; Sa 10:00-19:00" />
         <reference ref="bic_branch_ref_wheelchair_atm_address"/>
-        <link href="https://alfabank.ru/office/moscow/map/?kind=retail" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <link href="https://alfabank.ru/office/moscow/map/?kind=retail" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="operator:wikipedia" value="ru:Альфа-банк" />
         <key key="operator:wikidata" value="Q1377835" />
       </item>
@@ -1883,9 +1883,9 @@
         <key key="contact:youtube" value="https://www.youtube.com/vtbgroup" />
         <key key="contact:instagram" value="https://www.instagram.com/bankvtb" />
         <key key="contact:ok" value="https://ok.ru/vtb" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 09:00-20:00; Sa 10:00-17:00" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 09:00-20:00; Sa 10:00-17:00" />
         <reference ref="bic_branch_ref_wheelchair_atm_address"/>
-        <link href="http://www.bm.ru/ru/ofisy-banka/otdelenija" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <link href="http://www.bm.ru/ru/ofisy-banka/otdelenija" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="operator:wikipedia" value="ru:Банк Москвы" />
         <key key="operator:wikidata" value="Q767946" />
       </item>
@@ -1902,9 +1902,9 @@
         <key key="contact:facebook" value="https://www.facebook.com/vtb24" />
         <key key="contact:vk" value="https://vk.com/vtb24" />
         <key key="contact:twitter" value="https://twitter.com/bankvtb24" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 09:00-20:00; Sa 10:00-17:00" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 09:00-20:00; Sa 10:00-17:00" />
         <reference ref="bic_branch_ref_wheelchair_atm_address"/>
-        <link href="https://www.vtb24.ru/pages/officesearch.aspx" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <link href="https://www.vtb24.ru/pages/officesearch.aspx" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="operator:wikipedia" value="ru:ВТБ 24" />
         <key key="operator:wikidata" value="Q4102033" />
       </item>
@@ -1924,8 +1924,8 @@
         <key key="contact:instagram" value="https://www.instagram.com/zaimexpress" />
         <key key="contact:google_plus" value="https://plus.google.com/+ZaimexpressRuMO" />
         <key key="contact:twitter" value="https://twitter.com/zaimexpres" />
-        <combo key="opening_hours" text="Время работы" default="Mo-Fr 09:00-21:00; Sa-Su 10:00-20:00" />
-        <link href="https://www.zaim-express.ru/adresa-ofisov" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" default="Mo-Fr 09:00-21:00; Sa-Su 10:00-20:00" />
+        <link href="https://www.zaim-express.ru/adresa-ofisov" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Post Bank" ru.name="Почта Банк" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/3/3b/%D0%9F%D0%BE%D1%87%D1%82%D0%B0_%D0%B1%D0%B0%D0%BD%D0%BA_%282015%29.jpg" preset_name_label="true">
@@ -1943,11 +1943,11 @@
         <key key="contact:twitter" value="https://twitter.com/pochtabank" />
         <key key="contact:instagram" value="https://www.instagram.com/pochtabank" />
         <key key="contact:youtube" value="https://www.youtube.com/channel/UCs2NW4p10fwTar-zqw7mUIw" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Fr 10:00-19:00,Mo-Su 10:00-22:00,Mo-Fr 10:00-20:00; Sa 10:00-17:00" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Fr 10:00-19:00,Mo-Su 10:00-22:00,Mo-Fr 10:00-20:00; Sa 10:00-17:00" />
         <reference ref="bic_branch_ref_wheelchair_atm_address"/>
         <key key="operator:wikipedia" value="ru:Почта Банк" />
         <key key="operator:wikidata" value="Q24930461" />
-        <link href="https://www.pochtabank.ru/map" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <link href="https://www.pochtabank.ru/map" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
       </item>
       <item name="Raiffeisen" ru.name="Райффайзен" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/c/cf/Reiffe_logo_rus.gif" preset_name_label="true">
         <space />
@@ -1956,7 +1956,7 @@
         <key key="name" value="Райффайзен" />
         <key key="name:en" value="Raiffeisen" />
         <key key="name:ru" value="Райффайзен" />
-        <combo key="contact:phone" text="Телефон" values="+7 495 7219100" default="+7 800 7009100"/>
+        <combo key="contact:phone" text="Номер телефона" values="+7 495 7219100" default="+7 800 7009100"/>
         <key key="contact:website" value="https://www.raiffeisen.ru" />
         <key key="contact:email" value="info@raiffeisen.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/raiffeisenbankrus" />
@@ -1964,9 +1964,9 @@
         <key key="contact:vk" value="https://vk.com/raiffeisenbankrus" />
         <key key="contact:telegram" value="https://telegram.me/RaiffeisenbankBot" />
         <key key="contact:instagram" value="https://www.instagram.com/raiffeisenbank_rus" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 10:00-20:00; Sa 10:00-17:00" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 10:00-20:00; Sa 10:00-17:00" />
         <reference ref="bic_branch_ref_wheelchair_atm_address"/>
-        <link href="https://www.raiffeisen.ru/offices" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <link href="https://www.raiffeisen.ru/offices" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="operator:wikipedia" value="ru:Райффайзенбанк" />
         <key key="operator:wikidata" value="Q4389244" />
       </item>
@@ -1982,9 +1982,9 @@
         <key key="contact:facebook" value="https://www.facebook.com/Rosbank-598134936938972" />
         <key key="contact:vk" value="https://vk.com/rosbank" />
         <key key="contact:twitter" value="https://twitter.com/Rosbank_Info" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 09:00-20:00; Sa 09:00-17:00" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 09:00-20:00; Sa 09:00-17:00" />
         <reference ref="bic_branch_ref_wheelchair_atm_address"/>
-        <link href="https://www.rosbank.ru/ru/offices" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <link href="https://www.rosbank.ru/ru/offices" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="operator:wikipedia" value="ru:Росбанк" />
         <key key="operator:wikidata" value="Q1119857" />
       </item>
@@ -2003,9 +2003,9 @@
         <key key="contact:instagram" value="https://www.instagram.com/sberbank" />
         <key key="contact:vk" value="https://vk.com/sberbank" />
         <key key="contact:ok" value="https://ok.ru/sberbank" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 09:30-20:00; Sa 10:00-18:00" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 09:30-20:00; Sa 10:00-18:00" />
         <reference ref="bic_branch_ref_wheelchair_atm_address"/>
-        <link href="https://www.sberbank.ru/ru/about/today/oib" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <link href="https://www.sberbank.ru/ru/about/today/oib" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="operator:wikipedia" value="ru:Сбербанк России" />
         <key key="operator:wikidata" value="Q205012" />
       </item>
@@ -2026,9 +2026,9 @@
         <key key="contact:instagram" value="https://www.instagram.com/qiwi_russia" />
         <key key="contact:website" value="https://qiwi.com" />
         <link href="http://oriflamepro.ru/img/qiwi-terminali.JPG" text="Фотография-пример" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00" />
         <text key="ref" text="Номер терминала" />
-        <link href="https://qiwi.com/replenish/map.action?owners=1&amp;lng=55.73421489447054&amp;zoom=13" text="Ссылка на сайт (время работы, номера терминалов)" />
+        <link href="https://qiwi.com/replenish/map.action?owners=1&amp;lng=55.73421489447054&amp;zoom=13" text="Ссылка на сайт (часы работы, номера терминалов)" />
         <key key="brand:wikipedia" value="ru:Qiwi" />
         <key key="brand:wikidata" value="Q4047736" />
         <preset_link preset_name="Address" />
@@ -2042,12 +2042,9 @@
         <key key="tourism" value="information" />
         <key key="information" value="terminal" />
         <key key="contact:phone" value="+7 495 7774888" />
-        <!-- Сайт giss.ru мертвый. 2017-05-22. Вычистить, если не оживет. -->
-        <!-- <key key="contact:website" value="http://www.giss.ru" /> -->
         <link href="https://prv1.lori-images.net/0007456673-middle.jpg" text="Фотография-пример" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00" />
         <text key="ref" text="Номер терминала" />
-        <!-- <link href="http://www.giss.ru/#/objects/mit" text="Ссылка на сайт (время работы, номера терминалов)" /> -->
         <preset_link preset_name="Address" />
       </item>
       <item name="Payment terminal MKB" ru.name="Платежный терминал &quot;МКБ&quot; (Московский кредитный банк)" type="node" icon="https://upload.wikimedia.org/wikipedia/ru/3/38/Mkb_logo.gif" preset_name_label="true">
@@ -2058,18 +2055,18 @@
         <key key="payment:notes" value="yes" />
         <key key="payment:credit_cards" value="yes" />
         <key key="payment:debit_cards" value="yes" />
-        <combo key="contact:phone" text="Телефон" values="+7 495 7774888" default="+7 800 1004888"/>
+        <combo key="contact:phone" text="Номер телефона" values="+7 495 7774888" default="+7 800 1004888"/>
         <key key="contact:website" value="https://mkb.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/mkb.ru" />
         <key key="contact:instagram" value="https://www.instagram.com/bankmkb" />
         <key key="contact:twitter" value="https://twitter.com/bankmkb" />
         <key key="contact:vk" value="https://vk.com/mkb_official" />
-        <link href="https://mkb.ru/images/facility/private_person/payment_outgoing/terminal_right.png" text="Фотография-пример" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00" />
+        <link href="https://old.mkb.ru/images/facility/private_person/payment_outgoing/terminal_right.png" text="Фотография-пример" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00" />
         <text key="ref" text="Номер терминала" />
         <key key="operator:wikipedia" value="ru:Московский кредитный банк" />
         <key key="operator:wikidata" value="Q4304175" />
-        <link href="https://mkb.ru/about_bank/address/?type=terminal" text="Ссылка на сайт (время работы, номера терминалов)" />
+        <link href="https://mkb.ru/about/address/terminal" text="Ссылка на сайт (часы работы, номера терминалов)" />
         <preset_link preset_name="Address" />
       </item>
       <item name="Payment terminal Elecsnet" ru.name="Платежный терминал &quot;Элекснет&quot;" type="node" preset_name_label="true">
@@ -2085,17 +2082,16 @@
         <key key="contact:website" value="http://elecsnet.ru" />
         <key key="contact:email" value="info@elecsnet.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/elecsnet" />
-        <key key="contact:instagram" value="https://www.instagram.com/bankmkb" />
         <key key="contact:twitter" value="https://twitter.com/elecsnet" />
         <key key="contact:vk" value="https://vk.com/elecsnet" />
         <key key="contact:ok" value="https://ok.ru/elecsnet" />
         <key key="contact:youtube" value="https://www.youtube.com/user/myelecsnet" />
         <key key="contact:livejournal" value="http://elecsnet.livejournal.com" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 09:00-21:00; Mo-Su 10:00-20:00" default="24/7" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-21:00; Mo-Su 10:00-20:00" default="24/7" />
         <text key="ref" text="Номер терминала" />
         <key key="brand:wikipedia" value="ru:Элекснет" />
         <key key="brand:wikidata" value="Q4530795" />
-        <link href="http://elecsnet.ru/terminals/addresses" text="Ссылка на сайт (время работы, номера терминалов)" />
+        <link href="http://elecsnet.ru/terminals/addresses" text="Ссылка на сайт (часы работы, номера терминалов)" />
         <preset_link preset_name="Address" />
       </item>
     </group>
@@ -2108,14 +2104,14 @@
         <key key="name" value="36,6" />
         <key key="name:ru" value="36,6" />
         <key key="brand" value="36,6" />
-        <combo key="contact:phone" text="Телефон" default="+7 495 7978686-xxxx" />
+        <combo key="contact:phone" text="Номер телефона" default="+7 495 7978686-xxxx" />
         <key key="contact:website" value="http://www.366.ru" />
         <key key="contact:instagram" value="https://www.instagram.com/apteka366" />
         <key key="contact:vk" value="https://vk.com/apteka36i6" />
         <key key="contact:facebook" value="https://www.facebook.com/apteka366" />
         <key key="contact:ok" value="https://ok.ru/group/57486618853421" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 09:00-21:00; Sa-Su 10:00-19:00" />
-        <link href="http://www.366.ru/pharmacies.html" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 09:00-21:00; Sa-Su 10:00-19:00" />
+        <link href="http://www.366.ru/pharmacies.html" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="brand:wikipedia" value="ru:36,6 (аптечная сеть)" />
         <key key="brand:wikidata" value="Q226889" />
         <reference ref="level_wheelchair_address_dispencing_footer" />
@@ -2128,12 +2124,12 @@
         <key key="name" value="А5" />
         <key key="brand" value="А5" />
         <key key="name:ru" value="А5" />
-        <combo key="contact:phone" text="Телефон" values="+7 495 1201285" default="+7 800 2006303"/>
+        <combo key="contact:phone" text="Номер телефона" values="+7 495 1201285" default="+7 800 2006303"/>
         <key key="contact:website" value="http://apteka5.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/apteka5" />
         <key key="contact:vk" value="https://vk.com/apteka_a5" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 09:00-22:00,Mo-Fr 09:00-21:00; Sa-Su 10:00-19:00" />
-        <link href="http://apteka5.ru/list_of_pharmacies" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-22:00,Mo-Fr 09:00-21:00; Sa-Su 10:00-19:00" />
+        <link href="http://apteka5.ru/list_of_pharmacies" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_dispencing_footer" />
       </item>
       <item name="A-mega" ru.name="А-мега" type="node,closedway,multipolygon">
@@ -2144,11 +2140,11 @@
         <key key="name" value="А-мега" />
         <key key="brand" value="А-мега" />
         <key key="name:ru" value="А-мега" />
-        <combo key="contact:phone" text="Телефон" values="+7 495 7954477" />
+        <combo key="contact:phone" text="Номер телефона" values="+7 495 7954477" />
         <key key="contact:website" value="http://aptekamega.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/apteka.a.mega" />
-        <combo key="opening_hours" text="Время работы" values="Mo-Su 09:00-22:00,Mo-Su 10:00-22:00" default="Mo-Su 10:00-22:00" />
-        <link href="http://aptekamega.ru/pharmacies" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="Mo-Su 09:00-22:00,Mo-Su 10:00-22:00" default="Mo-Su 10:00-22:00" />
+        <link href="http://aptekamega.ru/pharmacies" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_dispencing_footer" />
       </item>
       <item name="Gorzdrav" ru.name="Горздрав" type="node,closedway,multipolygon">
@@ -2165,8 +2161,8 @@
         <key key="contact:instagram" value="https://www.instagram.com/gorzdrav" />
         <key key="contact:ok" value="https://ok.ru/group/57486617870381" />
         <key key="contact:facebook" value="https://www.facebook.com/AptekaGorzdrav" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 09:00-22:00,Mo-Fr 09:00-21:00; Sa-Su 10:00-19:00" />
-        <link href="http://www.gorzdrav.org/apteka/items" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-22:00,Mo-Fr 09:00-21:00; Sa-Su 10:00-19:00" />
+        <link href="http://www.gorzdrav.org/apteka/items" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_dispencing_footer" />
       </item>
       <item name="Orteka" ru.name="Ортека" type="node,closedway,multipolygon">
@@ -2177,13 +2173,13 @@
         <key key="brand" value="Ортека" />
         <key key="name:ru" value="Ортека" />
         <key key="operator" value="ООО «НИКАМЕД»" />
-        <combo key="contact:phone" text="Телефон" values="+7 495 7755000" default="+7 800 3333112" />
+        <combo key="contact:phone" text="Номер телефона" values="+7 495 7755000" default="+7 800 3333112" />
         <key key="contact:website" value="https://www.orteka.ru" />
         <key key="contact:vk" value="https://vk.com/orteka_ru" />
         <key key="contact:facebook" value="https://www.facebook.com/orteka.rus" />
         <key key="contact:instagram" value="https://www.instagram.com/orteka_rus" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 09:00-22:00,Mo-Fr 09:00-21:00; Sa-Su 10:00-19:00,Mo-Fr 09:00-20:00; Sa 10:00-20:00; Su 10:00-19:00" />
-        <link href="https://www.orteka.ru/salon" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-22:00,Mo-Fr 09:00-21:00; Sa-Su 10:00-19:00,Mo-Fr 09:00-20:00; Sa 10:00-20:00; Su 10:00-19:00" />
+        <link href="https://www.orteka.ru/salon" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Rigla" ru.name="Ригла" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/c/c0/Rigla_logo.png">
@@ -2194,15 +2190,15 @@
         <key key="name" value="Ригла" />
         <key key="brand" value="Ригла" />
         <key key="name:ru" value="Ригла" />
-        <combo key="contact:phone" text="Телефон" values="+7 495 2311697-xxxx" default="+7 800 7770303" />
+        <combo key="contact:phone" text="Номер телефона" values="+7 495 2311697-xxxx" default="+7 800 7770303" />
         <key key="contact:website" value="http://www.rigla.ru" />
         <key key="contact:email" value="msk@rigla.ru" />
         <key key="contact:vk" value="https://vk.com/rigla_ru" />
         <key key="contact:facebook" value="https://www.facebook.com/rigla.ru" />
         <key key="contact:ok" value="https://ok.ru/rigla.ru" />
         <key key="contact:instagram" value="https://www.instagram.com/rigla.ru" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 09:00-22:00,Mo-Fr 08:00-22:00; Sa-Su 09:00-21:00" />
-        <link href="http://www.rigla.ru/stores" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-22:00,Mo-Fr 08:00-22:00; Sa-Su 09:00-21:00" />
+        <link href="http://www.rigla.ru/stores" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="brand:wikipedia" value="ru:Ригла" />
         <key key="brand:wikidata" value="Q4394431" />
         <reference ref="level_wheelchair_address_dispencing_footer" />
@@ -2215,17 +2211,17 @@
         <key key="name" value="Самсон-Фарма" />
         <key key="brand" value="Самсон-Фарма" />
         <key key="name:ru" value="Самсон-Фарма" />
-        <combo key="contact:phone" text="Телефон" default="+7 800 2508800" />
+        <combo key="contact:phone" text="Номер телефона" default="+7 800 2508800" />
         <key key="contact:website" value="http://www.samson-f.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/samsonpharma" />
         <key key="contact:instagram" value="https://www.instagram.com/samsonpharma" />
         <key key="contact:vk" value="https://vk.com/samson_f" />
         <key key="contact:twitter" value="https://twitter.com/samsonfarma" />
         <key key="contact:youtube" value="https://www.youtube.com/channel/UCPXq0ZxVRP8cth9_6Ht8j-w" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 08:00-22:00; Sa-Su 09:00-21:00" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 08:00-22:00; Sa-Su 09:00-21:00" />
         <key key="operator:wikipedia" value="ru:Самсон-Фарма" />
         <key key="operator:wikidata" value="Q19911073" />
-        <link href="http://www.samson-f.ru/pharmacies" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <link href="http://www.samson-f.ru/pharmacies" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_dispencing_footer" />
       </item>
       <item name="Stolichki" ru.name="Столички" type="node,closedway,multipolygon">
@@ -2237,13 +2233,13 @@
         <key key="brand" value="Столички" />
         <key key="name:ru" value="Столички" />
         <key key="operator" value="ООО «НЕО-ФАРМ»" />
-        <combo key="contact:phone" text="Телефон" default="+7 800 5551115" />
+        <combo key="contact:phone" text="Номер телефона" default="+7 800 5551115" />
         <key key="contact:website" value="http://stolichki.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/stolichki" />
         <key key="contact:vk" value="https://vk.com/stolichki_official" />
         <key key="contact:instagram" value="https://www.instagram.com/stolichki" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 08:00-22:00; Sa-Su 09:00-21:00" />
-        <link href="http://stolichki.ru/stores/moscow_region" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 08:00-22:00; Sa-Su 09:00-21:00" />
+        <link href="http://stolichki.ru/stores/moscow_region" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_dispencing_footer" />
       </item>
       <item name="Stolichnye Apteki" ru.name="Столичные аптеки" type="node,closedway,multipolygon">
@@ -2255,11 +2251,11 @@
         <key key="brand" value="Столичные аптеки" />
         <key key="name:ru" value="Столичные аптеки" />
         <key key="operator" value="АО «Столичные аптеки»" />
-        <combo key="contact:phone" text="Телефон" />
+        <combo key="contact:phone" text="Номер телефона" />
         <key key="contact:website" value="http://www.citypharm.ru" />
         <key key="contact:email" value="citypharm@citypharm.ru" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Fr 08:00-20:00; Sa-Su 10:00-18:00" />
-        <link href="http://www.citypharm.ru/pharmacy" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Fr 08:00-20:00; Sa-Su 10:00-18:00" />
+        <link href="http://www.citypharm.ru/pharmacy" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_dispencing_footer" />
       </item>
       <item name="CMD" type="node,closedway,multipolygon">
@@ -2274,7 +2270,7 @@
         <key key="name:en" value="CMD" />
         <key key="alt_name" value="Центр молекулярной диагностики" />
         <key key="brand" value="CMD" />
-        <combo key="contact:phone" text="Телефон" values="+7 495 7880001" default="+7 800 7077881"/>
+        <combo key="contact:phone" text="Номер телефона" values="+7 495 7880001" default="+7 800 7077881"/>
         <key key="contact:website" value="http://www.cmd-online.ru" />
         <key key="contact:email" value="info@cmd-online.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/cmd.online.social" />
@@ -2283,8 +2279,8 @@
         <key key="contact:twitter" value="https://twitter.com/CMD_online" />
         <key key="contact:instagram" value="https://www.instagram.com/cmd_insta" />
         <key key="contact:youtube" value="https://www.youtube.com/channel/UCJLzXIczpWCx7Gelbmc3sAw" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 09:00-22:00,Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
-        <link href="http://www.cmd-online.ru/patsientam/gde-sdat-analizy" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-22:00,Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
+        <link href="http://www.cmd-online.ru/patsientam/gde-sdat-analizy" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_footer" />
       </item>
       <item name="Gemotest" ru.name="Гемотест" type="node,closedway,multipolygon">
@@ -2298,13 +2294,13 @@
         <key key="name" value="Гемотест" />
         <key key="brand" value="Гемотест" />
         <key key="name:ru" value="Гемотест" />
-        <combo key="contact:phone" text="Телефон" values="+7 495 5321313" default="+7 800 5501313"/>
+        <combo key="contact:phone" text="Номер телефона" values="+7 495 5321313" default="+7 800 5501313"/>
         <key key="contact:website" value="https://www.gemotest.ru" />
         <key key="contact:vk" value="https://vk.com/gemotestlab" />
         <key key="contact:facebook" value="https://www.facebook.com/gemotestlab" />
         <key key="contact:ok" value="https://ok.ru/gemotest" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 09:00-22:00,Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
-        <link href="https://www.gemotest.ru/address/select/maps.php" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-22:00,Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
+        <link href="https://www.gemotest.ru/address/select/maps.php" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_footer" />
       </item>
       <item name="Invitro" ru.name="Инвитро" type="node,closedway,multipolygon">
@@ -2318,14 +2314,14 @@
         <key key="name" value="Инвитро" />
         <key key="brand" value="Инвитро" />
         <key key="name:ru" value="Инвитро" />
-        <combo key="contact:phone" text="Телефон" values="+7 495 3630363" default="+7 800 2003630"/>
+        <combo key="contact:phone" text="Номер телефона" values="+7 495 3630363" default="+7 800 2003630"/>
         <key key="contact:website" value="https://www.invitro.ru" />
         <key key="contact:email" value="info@invitro.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/invitro.ru" />
         <key key="contact:vk" value="https://vk.com/invitro" />
         <key key="contact:instagram" value="https://www.instagram.com/invitro.ru" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 09:00-22:00,Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
-        <link href="https://www.invitro.ru/offices/moscow" text="Ссылка на сайт (время работы, координаты и т.п.)" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-22:00,Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
+        <link href="https://www.invitro.ru/offices/moscow" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="operator:wikipedia" value="ru:Медицинская компания Инвитро" />
         <key key="operator:wikidata" value="Q4200546" />
         <reference ref="level_wheelchair_address_footer" />
@@ -2335,9 +2331,9 @@
       <item name="Военкомат" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <key key="military" value="office" />
-        <combo key="name" text="Наименование" default="N-ский военкомат" />
-        <combo key="official_name" text="Полное официальное наименование подразделения" default="N-ский военный комиссариат N-ской области" />
-        <combo key="contact:phone" text="Телефон"/>
+        <combo key="name" text="Название" default="N-ский военкомат" />
+        <combo key="official_name" text="Полное официальное название подразделения" default="N-ский военный комиссариат N-ской области" />
+        <combo key="contact:phone" text="Номер телефона"/>
         <key key="contact:website" value="http://mil.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/mod.mil.rus" />
         <key key="contact:twitter" value="https://twitter.com/mod_russia" />
@@ -2345,7 +2341,7 @@
         <key key="contact:instagram" value="https://www.instagram.com/mil_ru" />
         <key key="contact:vk" value="https://vk.com/mil" />
         <key key="contact:ok" value="https://ok.ru/mil" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-13:00\,13:45-17:00; Fr 09:00-13:00\,13:45-15:45" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-13:00\,13:45-17:00; Fr 09:00-13:00\,13:45-15:45" />
         <key key="operator:wikipedia" value="ru:Военный комиссариат" />
         <key key="operator:wikidata" value="Q460254" />
         <reference ref="wheelchair_address_footer" />
@@ -2354,10 +2350,10 @@
         <space />
         <key key="office" value="government" />
         <key key="government" value="register_office" />
-        <combo key="name" text="Наименование" default="N-ское управление ЗАГС" />
-        <combo key="official_name" text="Полное официальное наименование подразделения" default="N-ское управление ЗАГС N-ской области" />
+        <combo key="name" text="Название" default="N-ское управление ЗАГС" />
+        <combo key="official_name" text="Полное официальное название подразделения" default="N-ское управление ЗАГС N-ской области" />
         <reference ref="website_phone"/>
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-13:00\,13:45-17:00; Fr 09:00-13:00\,13:45-15:45" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-13:00\,13:45-17:00; Fr 09:00-13:00\,13:45-15:45" />
         <key key="operator:wikipedia" value="ru:ЗАГС" />
         <key key="operator:wikidata" value="Q254213" />
         <reference ref="wheelchair_address_footer" />
@@ -2366,14 +2362,14 @@
         <space />
         <key key="office" value="government" />
         <key key="government" value="treasury" />
-        <combo key="name" text="Наименование подразделения" default="Отдел № ... Управления Федерального казначейства" />
-        <combo key="official_name" text="Полное наименование подразделения" default="Отдел № ... Управления Федерального казначейства по ... ской области" />
-        <combo key="contact:phone" text="Телефон"/>
+        <combo key="name" text="Название подразделения" default="Отдел № ... Управления Федерального казначейства" />
+        <combo key="official_name" text="Полное название подразделения" default="Отдел № ... Управления Федерального казначейства по ... ской области" />
+        <combo key="contact:phone" text="Номер телефона"/>
         <key key="contact:website" value="http://roskazna.ru" />
         <key key="contact:twitter" value="https://twitter.com/FederalTreasury" />
         <key key="contact:facebook" value="https://www.facebook.com/FederalTreasury" />
         <key key="contact:livejournal" value="http://roskazna.livejournal.com" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-12:30\,13:15-18:00; Fr 09:00-12:30\,13:15-17:00" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-12:30\,13:15-18:00; Fr 09:00-12:30\,13:15-17:00" />
         <key key="operator:wikipedia" value="ru:Казначейство России" />
         <key key="operator:wikidata" value="Q4208422" />
         <reference ref="wheelchair_address_footer" />
@@ -2382,10 +2378,10 @@
         <space />
         <key key="office" value="government" />
         <key key="government" value="migration" />
-        <combo key="name" text="Наименование подразделения" default="Отдел по вопросам миграции ГУ МВД России по г. n / n-скому району" />
+        <combo key="name" text="Название подразделения" default="Отдел по вопросам миграции ГУ МВД России по г. n / n-скому району" />
         <key key="contact:website" value="https://guvm.mvd.ru" />
-        <combo key="contact:phone" text="Телефон"/>
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-12:30\,13:15-18:00; Fr 09:00-12:30\,13:15-17:00" />
+        <combo key="contact:phone" text="Номер телефона"/>
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-12:30\,13:15-18:00; Fr 09:00-12:30\,13:15-17:00" />
         <key key="operator:wikipedia" value="ru:Главное управление по вопросам миграции МВД РФ" />
         <key key="operator:wikidata" value="Q4346571" />
         <reference ref="wheelchair_address_footer" />
@@ -2394,14 +2390,14 @@
         <space />
         <key key="office" value="government" />
         <key key="government" value="tax" />
-        <combo key="name" text="Наименование подразделения" default="ФНС России по г. ... ской области" />
-        <combo key="official_name" text="Полное официальное наименование подразделения" default="Инспекция Федеральной налоговой службы России по г. ... ской области" />
-        <combo key="contact:phone" text="Телефон"/>
+        <combo key="name" text="Название подразделения" default="ФНС России по г. ... ской области" />
+        <combo key="official_name" text="Полное официальное название подразделения" default="Инспекция Федеральной налоговой службы России по г. ... ской области" />
+        <combo key="contact:phone" text="Номер телефона"/>
         <key key="contact:website" value="https://www.nalog.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/nalog.ru" />
         <key key="contact:vk" value="https://vk.com/nalog__ru" />
         <key key="contact:twitter" value="https://twitter.com/nalog__ru" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-12:30\,13:15-18:00; Fr 09:00-12:30\,13:15-17:00" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-12:30\,13:15-18:00; Fr 09:00-12:30\,13:15-17:00" />
         <key key="operator:wikipedia" value="ru:Налоговая инспекция Российской Федерации" />
         <key key="operator:wikidata" value="Q4312669" />
         <reference ref="wheelchair_address_footer" />
@@ -2411,9 +2407,9 @@
         <space />
         <key key="office" value="government" />
         <key key="government" value="pension_fund" />
-        <combo key="name" text="Наименование подразделения" default="Главное управление ПФР №  по г. Москве и Московской области,Управление № " />
-        <combo key="official_name" text="Полное официальное наименование подразделения" default="Главное управление Пенсионного фонда России №  по г. Москве и Московской области,Управление №" />
-        <combo key="contact:phone" text="Телефон"/>
+        <combo key="name" text="Название подразделения" default="Главное управление ПФР №  по г. Москве и Московской области,Управление № " />
+        <combo key="official_name" text="Полное официальное название подразделения" default="Главное управление Пенсионного фонда России №  по г. Москве и Московской области,Управление №" />
+        <combo key="contact:phone" text="Номер телефона"/>
         <key key="contact:website" value="http://www.pfrf.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/PensionFondRF" />
         <key key="contact:twitter" value="https://twitter.com/pension_fond" />
@@ -2421,28 +2417,28 @@
         <key key="contact:ok" value="https://ok.ru/pensionfond" />
         <key key="contact:youtube" value="https://www.youtube.com/user/pensionnijfond" />
         <key key="contact:livejournal" value="http://pensionnij-fond.livejournal.com" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-12:30\,13:15-18:00; Fr 09:00-12:30\,13:15-17:00" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-12:30\,13:15-18:00; Fr 09:00-12:30\,13:15-17:00" />
         <key key="operator:wikipedia" value="ru:Пенсионный фонд Российской Федерации" />
         <key key="operator:wikidata" value="Q2144353" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Почтовое отделение ФГУП &quot;Почта России&quot;" en.name="Russian Post" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Russian_Post.svg/298px-Russian_Post.svg.png" preset_name_label="true">
         <space />
-        <label text="Наименование указать в формате:" />
+        <label text="Название указать в формате:" />
         <label text="&lt;Населённый пункт&gt;&lt;пробел&gt;&lt;индекс&gt;: &quot;Москва 214013&quot;" />
         <space />
         <key key="amenity" value="post_office" />
         <key key="operator" value="ФГУП «Почта России»" />
-        <combo key="name" text="Наименование отделения" values="Москва 127000" />
+        <combo key="name" text="Название отделения" values="Москва 127000" />
         <text key="ref" text="Индекс/номер отделения" />
         <key key="contact:phone" value="+7 800 2005888" />
         <key key="contact:website" value="https://www.pochta.ru" />
         <key key="contact:vk" value="https://vk.com/russianpost" />
         <key key="contact:facebook" value="https://www.facebook.com/ruspost" />
         <key key="contact:twitter" value="https://twitter.com/ruspostofficial" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-12:30\,13:15-18:00; Fr 09:00-12:30\,13:15-17:00" />
-        <link href="https://pochta.ru/offices" text="Ссылка на сайт (время работы, координаты и т.п.)" />
-        <link href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=post_office"  text="Вики-статья" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-12:30\,13:15-18:00; Fr 09:00-12:30\,13:15-17:00" />
+        <link href="https://pochta.ru/offices" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=post_office" />
         <key key="operator:wikipedia" value="ru:Почта России" />
         <key key="operator:wikidata" value="Q1502763" />
         <reference ref="wheelchair_address_footer" />
@@ -2451,10 +2447,10 @@
         <space />
         <key key="office" value="government" />
         <key key="government" value="prosecutor" />
-        <combo key="name" text="Наименование подразделения" default="Прокуратура n-ского района/области" />
-        <combo key="contact:website" text="Веб-сайт" default="https://www.genproc.gov.ru" />
-        <combo key="contact:phone" text="Телефон"/>
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-12:30\,13:15-18:00; Fr 09:00-12:30\,13:15-17:00" />
+        <combo key="name" text="Название подразделения" default="Прокуратура n-ского района/области" />
+        <combo key="contact:website" text="Сайт" default="https://www.genproc.gov.ru" />
+        <combo key="contact:phone" text="Номер телефона"/>
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-12:30\,13:15-18:00; Fr 09:00-12:30\,13:15-17:00" />
         <key key="contact:vk" value="https://vk.com/genprocrf" />
         <key key="contact:facebook" value="https://www.facebook.com/genprocrf" />
         <key key="contact:ok" value="https://ok.ru/genprocrf" />
@@ -2470,10 +2466,10 @@
         <space />
         <key key="office" value="government" />
         <key key="government" value="investigation" />
-        <combo key="name" text="Наименование подразделения" default="Следственный комитет n-ского района/области" />
-        <combo key="contact:website" text="Веб-сайт" default="https://sledcom.ru" />
-        <combo key="contact:phone" text="Телефон" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-12:30\,13:15-18:00; Fr 09:00-12:30\,13:15-17:00" />
+        <combo key="name" text="Название подразделения" default="Следственный комитет n-ского района/области" />
+        <combo key="contact:website" text="Сайт" default="https://sledcom.ru" />
+        <combo key="contact:phone" text="Номер телефона" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-12:30\,13:15-18:00; Fr 09:00-12:30\,13:15-17:00" />
         <key key="contact:vk" value="https://vk.com/sledcomru" />
         <key key="contact:facebook" value="https://ru-ru.facebook.com/sledcomru" />
         <key key="contact:twitter" value="https://twitter.com/sledcom_rf" />
@@ -2487,10 +2483,10 @@
         <space />
         <key key="office" value="government" />
         <key key="government" value="statistics" />
-        <combo key="name" text="Наименование подразделения" default="Отдел государственной статистики в N-ском районе" />
-        <combo key="contact:website" text="Веб-сайт" default="http://www.gks.ru" />
-        <combo key="contact:phone" text="Телефон" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-12:30\,13:15-18:00; Fr 09:00-12:30\,13:15-17:00" />
+        <combo key="name" text="Название подразделения" default="Отдел государственной статистики в N-ском районе" />
+        <combo key="contact:website" text="Сайт" default="http://www.gks.ru" />
+        <combo key="contact:phone" text="Номер телефона" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-12:30\,13:15-18:00; Fr 09:00-12:30\,13:15-17:00" />
         <key key="contact:vk" value="https://vk.com/rosstatistika" />
         <key key="contact:facebook" value="https://www.facebook.com/rosstatistika" />
         <key key="contact:livejournal" value="http://rosstatistika.livejournal.com" />
@@ -2503,29 +2499,29 @@
         <space />
         <key key="office" value="government" />
         <key key="government" value="social_services" />
-        <combo key="name" text="Наименование подразделения" default="Отдел социальной защиты населения N-ского района" />
-        <combo key="contact:website" text="Веб-сайт" default="http://www.dszn.ru" />
-        <combo key="contact:phone" text="Телефон"/>
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-12:30\,13:15-18:00; Fr 09:00-12:30\,13:15-17:00" />
+        <combo key="name" text="Название подразделения" default="Отдел социальной защиты населения N-ского района" />
+        <combo key="contact:website" text="Сайт" default="http://www.dszn.ru" />
+        <combo key="contact:phone" text="Номер телефона"/>
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-12:30\,13:15-18:00; Fr 09:00-12:30\,13:15-17:00" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Управление образования" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <key key="office" value="government" />
         <key key="government" value="education" />
-        <combo key="name" text="Наименование подразделения" default="Управление образования N-ского района" />
+        <combo key="name" text="Название подразделения" default="Управление образования N-ского района" />
         <reference ref="website_phone"/>
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-12:30\,13:15-18:00; Fr 09:00-12:30\,13:15-17:00" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-12:30\,13:15-18:00; Fr 09:00-12:30\,13:15-17:00" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Центр гигиены и эпидемиологии (б. СЭС)" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <key key="office" value="government" />
         <key key="government" value="healthcare" />
-        <combo key="name" text="Наименование" default="Центр гигиены и эпидемиологии по N-скому району" />
-        <combo key="official_name" text="Полное официальное наименование подразделения" default="Федеральное бюджетное учреждение здравоохранения &quot;Центр гигиены и эпидемиологии по N-скому району&quot;" />
+        <combo key="name" text="Название" default="Центр гигиены и эпидемиологии по N-скому району" />
+        <combo key="official_name" text="Полное официальное название подразделения" default="Федеральное бюджетное учреждение здравоохранения &quot;Центр гигиены и эпидемиологии по N-скому району&quot;" />
         <reference ref="website_phone"/>
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-13:00\,13:45-17:00; Fr 09:00-13:00\,13:45-15:45" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-13:00\,13:45-17:00; Fr 09:00-13:00\,13:45-15:45" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Центр госуслуг (МФЦ, &quot;Мои документы&quot;)" type="node,closedway,multipolygon" preset_name_label="true">
@@ -2534,12 +2530,12 @@
         <key key="amenity" value="public_service" />
         <key key="office" value="government" />
         <key key="government" value="public_service" />
-        <combo key="name" text="Наименование" default="Центр госуслуг n-ского района" />
-        <combo key="official_name" text="Полное официальное наименование подразделения" default="Многофункциональный центр предоставления государственных и муниципальных услуг n-ского района" />
+        <combo key="name" text="Название" default="Центр госуслуг n-ского района" />
+        <combo key="official_name" text="Полное официальное название подразделения" default="Многофункциональный центр предоставления государственных и муниципальных услуг n-ского района" />
         <key key="alt_name" value="Мои документы" />
-        <combo key="contact:website" text="Веб-сайт" values="https://md.mos.ru" />
-        <combo key="contact:phone" text="Телефон"/>
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-13:00\,13:45-17:00; Fr 09:00-13:00\,13:45-15:45" />
+        <combo key="contact:website" text="Сайт" values="https://md.mos.ru" />
+        <combo key="contact:phone" text="Номер телефона"/>
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-13:00\,13:45-17:00; Fr 09:00-13:00\,13:45-15:45" />
         <key key="operator:wikipedia" value="ru:Многофункциональный центр" />
         <key key="operator:wikidata" value="Q1021033" />
         <reference ref="level_wheelchair_address_internetaccess_footer" />
@@ -2548,10 +2544,10 @@
         <space />
         <key key="office" value="government" />
         <key key="government" value="recruitment" />
-        <combo key="name" text="Наименование" default="Центр занятости населения" />
-        <combo key="official_name" text="Полное официальное наименование подразделения" default="Государственное казенное учреждение &quot;...ский центр занятости населения&quot;" />
+        <combo key="name" text="Название" default="Центр занятости населения" />
+        <combo key="official_name" text="Полное официальное название подразделения" default="Государственное казенное учреждение &quot;...ский центр занятости населения&quot;" />
         <reference ref="website_phone"/>
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-13:00\,13:45-17:00; Fr 09:00-13:00\,13:45-15:45" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-13:00\,13:45-17:00; Fr 09:00-13:00\,13:45-15:45" />
         <key key="operator:wikipedia" value="ru:Биржа труда" />
         <key key="operator:wikidata" value="Q1690950" />
         <reference ref="wheelchair_address_footer" />
@@ -2561,10 +2557,10 @@
         <key key="amenity" value="social_facility" />
         <key key="social_facility" value="outreach" />
         <key key="social_facility:for" value="disabled;senior" />
-        <combo key="name" text="Наименование" default="Территориальный центр социального обслуживания &quot;...&quot;" />
-        <combo key="official_name" text="Полное официальное наименование подразделения" default="Государственное бюджетное учреждение Территориальный центр социального обслуживания &quot;...&quot;" />
+        <combo key="name" text="Название" default="Территориальный центр социального обслуживания &quot;...&quot;" />
+        <combo key="official_name" text="Полное официальное название подразделения" default="Государственное бюджетное учреждение Территориальный центр социального обслуживания &quot;...&quot;" />
         <reference ref="website_phone"/>
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-20:00; Fr 09:00-18:45; Sa 09:00-17:00" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-20:00; Fr 09:00-18:45; Sa 09:00-17:00" />
         <reference ref="wheelchair_address_footer" />
       </item>
     </group>
@@ -3002,7 +2998,7 @@
         <key key="education_form:parttime" value="yes" />
         <combo key="sport" text="Вид спорта" values="multi,archery,athletics,american_football,australian_football,baseball,basketball,beachvolleyball,billiards,boules,bowls,canadian_football,canoe,climbing,cricket,croquet,cycling,dog_racing,equestrian,field_hockey,gaelic_games,golf,gymnastics,handball,horse_racing,ice_hockey,karting,model_aerodrome,motocross,motor,pelota,racquet,rc_car,rugby_league,rugby_union,running,safety_training,shooting,skateboard,ice_skating,roller_skating,soccer,swimming,table_tennis,tennis,volleyball,9pin,10pin" values_context="sport" />
         <reference ref="name_ownership_website_phone" />
-        <combo key="opening_hours" text="Время работы" values="Mo-Su 09:00-20:00,Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
+        <combo key="opening_hours" text="Часы работы" values="Mo-Su 09:00-20:00,Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Music school" ru.name="Музыкальная школа" type="node,closedway,multipolygon" preset_name_label="true">
@@ -3014,7 +3010,7 @@
         <key key="education_level:primary" value="yes" />
         <key key="education_form:parttime" value="yes" />
         <reference ref="name_ownership_website_phone" />
-        <combo key="opening_hours" text="Время работы" values="Mo-Su 09:00-20:00,Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
+        <combo key="opening_hours" text="Часы работы" values="Mo-Su 09:00-20:00,Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Art school" ru.name="Художественная школа (школа искусств)" type="node,closedway,multipolygon" preset_name_label="true">
@@ -3027,7 +3023,7 @@
         <key key="education_level:primary" value="yes" />
         <key key="education_form:parttime" value="yes" />
         <reference ref="name_ownership_website_phone" />
-        <combo key="opening_hours" text="Время работы" values="Mo-Su 09:00-20:00,Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
+        <combo key="opening_hours" text="Часы работы" values="Mo-Su 09:00-20:00,Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Driving school" ru.name="Автошкола" type="node,closedway,multipolygon" preset_name_label="true">
@@ -3039,7 +3035,7 @@
         <key key="education_level:primary" value="yes" />
         <key key="education_form:parttime" value="yes" />
         <reference ref="name_ownership_website_phone" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 09:00-22:00,Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-22:00,Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Language school" ru.name="Курсы/школа иностранного языка" type="node,closedway,multipolygon" preset_name_label="true">
@@ -3049,7 +3045,7 @@
         <key key="education_profile:languages" value="yes" />
         <key key="education_form:parttime" value="yes" />
         <reference ref="name_ownership_website_phone" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 09:00-22:00,Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-22:00,Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
         <reference ref="wheelchair_address_footer" />
         <space />
         <label text="Языки:" />
@@ -3087,7 +3083,7 @@
         <key key="roof:colour" value="#3A8538" />
         <key key="roof:material" value="plastic" />
         <combo key="operator" text="Оператор" default="Муниципальное унитарное предприятие ОАО &quot;Гаражно-стояночное хозяйство&quot;" />
-        <combo key="description" text="Наименование (description)" default="Парковка №" />
+        <combo key="description" text="Название (description)" default="Парковка №" />
         <text key="ref" text="Парковка №" />
         <preset_link preset_name="Address" />
       </item>
@@ -3096,7 +3092,7 @@
         <label text="Пример надписи на табличке: МГСА Тимирязевский ТС Автостоянка № 72/3" />
         <label text="Использовать для территории гаражей, а не самих зданий." />
         <space />
-        <combo key="name" text="Наименование" values="Автостоянка №" />
+        <combo key="name" text="Название" values="Автостоянка №" />
         <combo key="branch" text="Отделение/ветка" values="Тимирязевский ТС,Кировский ТС,Басманный ТС,Первомайский ТС,Киреевский ТС,Гагаринское ТС" />
         <!-- дополнить возможными значениями values -->
         <key key="operator" value="МГСА" />
@@ -3107,8 +3103,6 @@
       <item name="Moscow WC booth" ru.name="Городской туалет (Москва)" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Emojione_1F6BE.svg/64px-Emojione_1F6BE.svg.png" preset_name_label="true">
         <space />
         <label text="&quot;Городской туалет&quot;. Рыжие кабинки. Две двери." />
-        <!--<link href="https://atlas.mos.ru/?lang=ru&amp;z=9&amp;ll=37.63146432914275%2C55.78110268564032&amp;pa=139.3&amp;pp=37.63146309%2C55.78110533" text="Фотография-пример" />
-        Найти ссылку не на атлас Москвы. Эта уже не открывается. -->
         <key key="amenity" value="toilets" />
         <key key="name" value="Городской туалет" />
         <key key="name:ru" value="Городской туалет" />
@@ -3135,8 +3129,8 @@
         <key key="name" value="Проездные билеты" />
         <key key="name:ru" value="Проездные билеты" />
         <key key="name:en" value="Public transport tickets" />
-        <combo key="contact:website" text="Веб-сайт" default="http://www.mosgortrans.ru" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-13:00\,13:45-17:00; Fr 09:00-13:00\,13:45-15:45" />
+        <combo key="contact:website" text="Сайт" default="http://www.mosgortrans.ru" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-13:00\,13:45-17:00; Fr 09:00-13:00\,13:45-15:45" />
         <combo key="operator" text="Оператор" default="ГУП «Мосгортранс»" />
         <reference ref="building_address_footer" />
       </item>
@@ -3147,8 +3141,8 @@
         <key key="name" value="Пригородная касса" />
         <key key="name:ru" value="Пригородная касса" />
         <key key="name:en" value="Suburban train tickets" />
-        <combo key="contact:website" text="Веб-сайт" values="http://www.central-ppk.ru" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-13:00\,13:45-17:00; Fr 09:00-13:00\,13:45-15:45" />
+        <combo key="contact:website" text="Сайт" values="http://www.central-ppk.ru" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-13:00\,13:45-17:00; Fr 09:00-13:00\,13:45-15:45" />
         <combo key="operator" text="Оператор" values="ОАО «ЦЕНТРАЛЬНАЯ ППК»" />
         <reference ref="building_address_footer" />
       </item>
@@ -3178,8 +3172,8 @@
         <key key="building" value="kiosk" />
         <key key="building:levels" value="1" />
         <combo key="inscription" text="Вывеска на киоске" values="Мороженое" />
-        <combo key="brand" text="Торговая марка" values="Айсберри" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-13:00\,13:45-17:00; Fr 09:00-13:00\,13:45-15:45" />
+        <combo key="brand" text="Бренд" values="Айсберри" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-13:00\,13:45-17:00; Fr 09:00-13:00\,13:45-15:45" />
         <reference ref="building_address_footer" />
       </item>
       <item name="Newsagent shop" ru.name="Газетный киоск (Пресса, Печать)" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Fxemoji_u1F4F0.svg/240px-Fxemoji_u1F4F0.svg.png" preset_name_label="true">
@@ -3188,7 +3182,7 @@
         <key key="building" value="kiosk" />
         <key key="building:levels" value="1" />
         <combo key="inscription" text="Вывеска на киоске" values="Пресса,Газеты,Союзпечать,Печать,Печатная продукция,Газеты и журналы,Роспечать,Пресса.рф,Вечерняя Москва,Центропечать,Пресс-Лайн,Первая полоса,Красногорские вести" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-13:00\,13:45-17:00; Fr 09:00-13:00\,13:45-15:45" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-13:00\,13:45-17:00; Fr 09:00-13:00\,13:45-15:45" />
         <text key="ref" text="Номер киоска" />
         <reference ref="building_address_footer" />
       </item>
@@ -3213,10 +3207,12 @@
         <space />
         <key key="amenity" value="post_box" />
         <key key="operator" value="ФГУП «Почта России»" />
-        <text key="ref" text="Инвентарный номер ящика" />
+        <text key="ref" text="Номер почтового ящика" />
         <combo key="collection_times" text="Время выемки писем" values="Mo-Su 05:00\,14:10,Mo-Fr 05:00\,14:10; Sa 09:15; Su 14:10" />
-        <space />
-        <check key="drive_through" text="Можно ли положить письмо не выходя из авто?" />
+        <combo key="post_box:type" text="Тип" values="pillar,lamp,wall,meter" values_context="post_box" />
+        <combo key="post_box:design" text="Модель" values="ЯПВ-Н-П,ЯПВ-Н-С,ЯПВ-Т-П,ЯПВ-Т-С,ЯПНМ-I-С,ЯПНМ-II-С,ЯПНР-СМ,ЯПНР-II-С,ЯПНР-II-С-red,ЯПНР-II-С-yellow,gabled	,rounded_pillar,small_soviet,soviet" />
+        <check key="drive_through" text="Доступен, не выходя из автомобиля" />
+        <link href="https://wiki.openstreetmap.org/wiki/RU:Tag:amenity%3Dpost_box" />
       </item>
       <item name="Delivery terminal InPost " ru.name="Почтомат &quot;InPost&quot; (бывш. &quot;QIWI Post&quot;)" type="node" preset_name_label="true">
         <!-- сайт https://inpost.ru дохлый-->
@@ -3230,9 +3226,9 @@
         <key key="payment:debit_cards" value="yes" />
         <key key="contact:phone" value="+7 800 3335146" />
         <key key="contact:website" value="https://inpost.ru" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00" />
         <text key="ref" text="Номер терминала" />
-        <link href="https://inpost.ru/ru/customers/nayti-blizhaishiy-terminal" text="Ссылка на сайт (время работы, номера почтоматов)" />
+        <link href="https://inpost.ru/ru/customers/nayti-blizhaishiy-terminal" text="Ссылка на сайт (часы работы, номера почтоматов)" />
       </item>
       <item name="MGTS payphone" ru.name="Таксофон &quot;МГТС&quot;" type="node" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Twemoji_1f4de.svg/240px-Twemoji_1f4de.svg.png" preset_name_label="true">
         <space />
@@ -3252,13 +3248,11 @@
         <key key="contact:website" value="https://rt.ru" />
         <key key="opening_hours" value="24/7" />
       </item>
-      <item name="Boat rental" ru.name="Лодочная станция" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Twemoji_26f5.svg/240px-Twemoji_26f5.svg.png" preset_name_label="true">
-        <space />
-        <label text="Прокат плавсредств." />
+      <item name="Boat rental" ru.name="Лодочная станция (прокат плавсредств)" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Twemoji_26f5.svg/240px-Twemoji_26f5.svg.png" preset_name_label="true">
         <space />
         <key key="amenity" value="boat_rental" />
-        <text key="name" text="Наименование" />
-        <combo key="opening_hours" text="Время работы" values="24/7,Mo-Su 09:00-22:00,Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
+        <text key="name" text="Название" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-22:00,Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
         <text key="capacity" text="Количество плавсредств" length="4" />
         <text key="operator" text="Оператор" />
         <space />
@@ -3283,7 +3277,7 @@
         <key key="building:levels" value="1" />
         <key key="railway" value="ventilation_shaft" />
         <key key="service" value="ventilation" />
-        <text key="name" text="Наименование" />
+        <text key="name" text="Название" />
         <text key="ref" text="Номер" />
       </item>
       <item name="Gas substation" ru.name="Газорегуляторный пункт" type="node,closedway,multipolygon" preset_name_label="true">
@@ -3316,8 +3310,6 @@
         <key key="man_made" value="mast" />
         <key key="mast:type" value="communication" />
         <key key="communication:mobile_phone" value="yes" />
-        <!--<link href="https://atlas.mos.ru/?lang=ru&amp;z=7&amp;ll=37.558189324321624%2C55.867183329454164&amp;pa=21.8&amp;pp=37.55817898%2C55.86718489" text="Фотография-пример" />
-        ссылка ни к чему не ведет -->
         <link href="https://wiki.openstreetmap.org/wiki/Tag:man_made%3Dmast"
           ru.href="https://wiki.openstreetmap.org/wiki/RU:Tag:man_made%3Dmast" />
         <link href="https://wiki.openstreetmap.org/wiki/Proposed_features/Telecommunications_tower" text="Proposed features/Telecommunications tower" />
