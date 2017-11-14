@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2017-11-14_2"
+  version="2017-11-14_3"
   link="https://github.com/ruosm-presets/literan-moscow"
   shortdescription="Russian POIs"
   ru.shortdescription="Российские POI"
@@ -2880,7 +2880,7 @@
         <key key="healthcare" value="yes" />
         <key key="health_facility:type" value="first_aid" />
         <key key="medical_system:western" value="yes" />
-        <key key="health_specialty:emergency" value="yes" />
+        <key key="health_specialty:emergency_medicine" value="yes" />
         <reference ref="name_website_phone_oh"/>
         <reference ref="wheelchair_address_footer" />
         <reference ref="health20_specialities_footer" />
