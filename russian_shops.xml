@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2.0_2017-11-16_1"
+  version="2.0_2017-11-16_2"
   link="https://github.com/ruosm-presets/literan-moscow"
   shortdescription="Russian POIs"
   ru.shortdescription="Российские POI"
@@ -251,7 +251,7 @@
         <key key="name:ru" value="Авоська" />
         <key key="operator" value="ООО &quot;Торговый дом &quot;Провиант&quot;" />
         <combo key="shop" text="Тип магазина (с тележками - супермаркет)" values="supermarket,convenience" default="supermarket" />
-        <key key="contact:phone" value="+7 495 6567022" />
+        <combo key="contact:phone" text="Номер телефона" values="+7 495 6567022;+7 495 7254154,+7 831 2716000" />
         <key key="contact:email" value="info@avoska.ru" />
         <key key="contact:website" value="http://www.avoska.ru" />
         <combo key="opening_hours" text="Часы работы" values="Mo-Sa 09:00-23:00; Su 09:00-22:00" />
@@ -503,7 +503,7 @@
         <key key="contact:facebook" value="https://www.facebook.com/kolbasaMR" />
         <key key="contact:vk" value="https://vk.com/kolbasamr" />
         <combo key="opening_hours" text="Часы работы" values="Mo-Sa 09:00-21:00; Su 09:00-20:00" />
-        <link href="http://www.kolbasa.ru/content/gde-kupit" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="http://www.kolbasa.ru/where" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Myasnov" ru.name="МясновЪ" type="node,closedway,multipolygon">
@@ -1157,7 +1157,7 @@
         <key key="diet:vegetarian" value="no" />
         <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 08:00-23:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
         <reference ref="level_wheelchair_address_internetaccess_footer" />
-        <link href="http://www.stardogs.ru/default.aspx?page=address" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="http://www.stardogs.ru/?page=address" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="brand:wikipedia" value="ru:Стардогс" />
         <key key="brand:wikidata" value="Q4439856" />
       </item>
@@ -1168,7 +1168,7 @@
         <key key="name" value="Теремок" />
         <key key="brand" value="Теремок" />
         <key key="name:ru" value="Теремок" />
-        <key key="contact:phone" value="+7 495 9562730" />
+        <combo key="contact:phone" text="Номер телефона" values="+7 495 9562730" />
         <key key="contact:website" value="http://www.teremok.ru" />
         <key key="contact:email" value="office@teremok.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/teremok" />
@@ -1268,13 +1268,14 @@
         <key key="name" value="Tele2" />
         <key key="name:en" value="Tele2" />
         <key key="brand" value="Tele2" />
-        <key key="contact:phone" value="+7 495 9797611" />
+        <combo key="contact:phone" text="Номер телефона" values="+7 495 9797611" />
         <key key="contact:website" value="https://tele2.ru" />
         <key key="contact:twitter" value="https://twitter.com/Tele2Russia" />
         <key key="contact:facebook" value="https://www.facebook.com/Tele2Russia" />
         <key key="contact:vk" value="https://vk.com/tele2" />
         <key key="contact:ok" value="https://ok.ru/tele2" />
         <key key="contact:youtube" value="https://www.youtube.com/user/AfishaTele2" />
+        <key key="contact:telegram" value="https://telegram.me/Tele2_bot" />
         <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00,Mo-Su 10:00-21:00" />
         <link href="https://msk.tele2.ru/offices" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="operator:wikipedia" value="ru:Tele2 Россия" />
@@ -2154,7 +2155,7 @@
         <key key="name" value="Горздрав" />
         <key key="brand" value="Горздрав" />
         <key key="name:ru" value="Горздрав" />
-        <key key="contact:phone" value="+7 499 6536277" />
+        <combo key="contact:phone" text="Номер телефона" values="+7 499 6536277,+7 812 4261584" default="+7 499 6536277" />
         <key key="contact:website" value="http://www.gorzdrav.org" />
         <key key="contact:email" value="info@gor-zdrav.ru" />
         <key key="contact:vk" value="https://vk.com/gorzdrav" />
