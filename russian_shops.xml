@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2017-11-14_4"
+  version="2.0_2017-11-16_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   shortdescription="Russian POIs"
   ru.shortdescription="Российские POI"
@@ -1180,7 +1180,7 @@
         <key key="diet:vegetarian" value="yes" />
         <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 08:00-23:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
         <reference ref="level_wheelchair_address_internetaccess_footer" />
-        <link href="http://www.teremok.ru/address/msk" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="http://www.teremok.ru/address" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="brand:wikipedia" value="ru:Теремок (сеть быстрого питания)" />
         <key key="brand:wikidata" value="Q4455593" />
       </item>
