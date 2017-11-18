@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2.0_2017-11-18_1"
+  version="2.0_2017-11-18_2"
   link="https://github.com/ruosm-presets/literan-moscow"
   shortdescription="Russian POIs"
   ru.shortdescription="Российские POI"
@@ -196,8 +196,11 @@
         <key key="drink:whisky" value="bottled" />
         <key key="drink:wine" value="bottled" />
         <combo key="contact:phone" text="Номер телефона" default="+7 495 7775190-xxxx" />
-        <key key="contact:website" value="http://amwine.ru" />
+        <key key="contact:website" value="https://amwine.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/amwine.ru" />
+        <key key="contact:instagram" value="https://www.instagram.com/amwine.ru" />
+        <key key="contact:twitter" value="https://twitter.com/amwineru" />
+        <key key="contact:vk" value="https://vk.com/amwineru" />
         <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Sa 09:30-22:30; Su 11:00-22:00" />
         <link href="http://amwine.ru/customers/shops" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address_footer" />
