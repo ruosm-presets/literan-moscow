@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2.0_2017-11-16_2"
+  version="2.0_2017-11-18_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   shortdescription="Russian POIs"
   ru.shortdescription="Российские POI"
@@ -187,14 +187,14 @@
         <key key="name" value="Ароматный мир" />
         <key key="brand" value="Ароматный мир" />
         <key key="name:ru" value="Ароматный мир" />
-        <key key="drink:beer" value="retail" />
-        <key key="drink:cider" value="retail" />
-        <key key="drink:cognac" value="retail" />
-        <key key="drink:soft_drink" value="retail" />
-        <key key="drink:sparkling_wine" value="retail" />
-        <key key="drink:vodka" value="retail" />
-        <key key="drink:whisky" value="retail" />
-        <key key="drink:wine" value="retail" />
+        <key key="drink:beer" value="bottled" />
+        <key key="drink:cider" value="bottled" />
+        <key key="drink:cognac" value="bottled" />
+        <key key="drink:soft_drink" value="bottled" />
+        <key key="drink:sparkling_wine" value="bottled" />
+        <key key="drink:vodka" value="bottled" />
+        <key key="drink:whisky" value="bottled" />
+        <key key="drink:wine" value="bottled" />
         <combo key="contact:phone" text="Номер телефона" default="+7 495 7775190-xxxx" />
         <key key="contact:website" value="http://amwine.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/amwine.ru" />
@@ -429,9 +429,9 @@
         <key key="name" value="Лит.Ра" />
         <key key="brand" value="Лит.Ра" />
         <key key="name:ru" value="Лит.Ра" />
-        <key key="drink:beer" value="retail" />
-        <key key="drink:cider" value="retail" />
-        <key key="drink:soft_drink" value="retail" />
+        <key key="drink:beer" value="bottled" />
+        <key key="drink:cider" value="bottled" />
+        <key key="drink:soft_drink" value="bottled" />
         <combo key="contact:phone" text="Номер телефона" values="+7 495 4413543,+7 812 3257052,+7 831 2161157" />
         <key key="contact:website" value="http://litra-beer.ru" />
         <key key="contact:vk" value="https://vk.com/litra_beer" />
@@ -572,13 +572,13 @@
         <key key="brand" value="Отдохни" />
         <key key="name:ru" value="Отдохни" />
         <key key="shop" value="alcohol" />
-        <key key="drink:beer" value="retail" />
-        <key key="drink:cognac" value="retail" />
-        <key key="drink:soft_drink" value="retail" />
-        <key key="drink:sparkling_wine" value="retail" />
-        <key key="drink:vodka" value="retail" />
-        <key key="drink:whisky" value="retail" />
-        <key key="drink:wine" value="retail" />
+        <key key="drink:beer" value="bottled" />
+        <key key="drink:cognac" value="bottled" />
+        <key key="drink:soft_drink" value="bottled" />
+        <key key="drink:sparkling_wine" value="bottled" />
+        <key key="drink:vodka" value="bottled" />
+        <key key="drink:whisky" value="bottled" />
+        <key key="drink:wine" value="bottled" />
         <combo key="contact:phone" text="Номер телефона" default="+7 495 4249515" />
         <key key="contact:website" value="https://www.somelie.ru" />
         <key key="contact:email" value="somelie@coolclever.ru" />
