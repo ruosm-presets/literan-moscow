@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2.0_2017-11-28_2"
+  version="2.0_2017-11-29_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   shortdescription="Russian POIs"
   ru.shortdescription="Российские POI"
@@ -116,7 +116,7 @@
     </checkgroup>
   </chunk>
   <chunk id="health20_specialities_footer">
-    <link text="Список медицинских специализаций" href="http://wiki.openstreetmap.org/wiki/RU:Proposed_features/Healthcare_2.0/Specialties" />
+    <link text="Список медицинских специализаций" href="https://wiki.openstreetmap.org/wiki/RU:Proposed_features/Healthcare_2.0/Specialties" />
     <preset_link preset_name="Physician's: Main field specialties" />
     <preset_link preset_name="Physician's: Subspecialties" />
     <preset_link preset_name="Physician's: Subsubspecialties" />
@@ -230,7 +230,7 @@
         <key key="name" value="Ароматный мир" />
         <key key="name:ru" value="Ароматный мир" />
         <key key="shop" value="alcohol" />
-        <link href="http://amwine.ru/customers/shops" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://amwine.ru/customers/shops" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="ATAC" ru.name="АТАК" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/5/56/Logo_atac.png/320px-Logo_atac.png">
@@ -436,7 +436,7 @@
         <key key="contact:instagram" value="https://www.facebook.com/lentacom" />
         <key key="contact:ok" value="https://ok.ru/group/53286834208943" />
         <key key="contact:vk" value="https://vk.com/lentacom" />
-        <key key="contact:website" value="http://www.lenta.com" />
+        <key key="contact:website" value="https://www.lenta.com" />
         <key key="name" value="Лента" />
         <key key="name:ru" value="Лента" />
         <key key="operator" value="ООО &quot;Лента&quot;" />
@@ -713,7 +713,7 @@
         <key key="contact:youtube" value="https://www.youtube.com/channel/UCR_y8Df9fQIBKi13sFHILvA" />
         <key key="delivery" value="yes" />
         <key key="delivery:contact:phone" value="+7 499 3993079" />
-        <key key="delivery:contact:website" value="http://edu-domoi.ru" />
+        <key key="delivery:contact:website" value="https://www.edu-domoi.ru/" />
         <key key="opening_hours" value="24/7" />
         <key key="operator" value="ЗАО &quot;АМАТУС&quot;" />
         <key key="shop" value="supermarket" />
@@ -1030,7 +1030,7 @@
         <key key="brand:wikipedia" value="ru:Пицца Хат" />
         <key key="contact:email" value="info@pizzahut.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/PizzaHutRussia" />
-        <key key="contact:instagram" value="http://www.instagram.com/pizzahutrussia" />
+        <key key="contact:instagram" value="https://www.instagram.com/pizzahutrussia" />
         <key key="contact:phone" value="+7 800 1001958" />
         <key key="contact:vk" value="https://vk.com/pizzahutrussia" />
         <key key="contact:website" value="https://www.pizzahut.ru" />
@@ -1073,14 +1073,14 @@
         <key key="contact:facebook" value="https://www.facebook.com/StarbucksRussia" />
         <key key="contact:instagram" value="https://www.instagram.com/starbucksrussia" />
         <key key="contact:twitter" value="https://twitter.com/StarbucksRussia" />
-        <key key="contact:website" value="http://starbuckscoffee.ru" />
+        <key key="contact:website" value="http://www.starbucks.ru" />
         <key key="cuisine" value="coffee_shop" />
         <key key="diet:vegetarian" value="no" />
         <key key="name" value="Старбакс" />
         <key key="name:en" value="Starbucks" />
         <key key="name:ru" value="Старбакс" />
         <key key="takeaway" value="yes" />
-        <link href="https://www.facebook.com/StarbucksRussia/app_419559581405349" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="http://www.starbucks.ru/store-locator/search/location/Moscow%2C%20Russia" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_internetaccess_footer" />
       </item>
       <item name="Stardog!s" ru.name="Стардог!s" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/ru/b/b5/Logo_stardog%21s.png">
@@ -1096,14 +1096,14 @@
         <key key="contact:ok" value="https://ok.ru/group/54434706620420" />
         <key key="contact:phone" value="+7 495 5405723" />
         <key key="contact:vk" value="https://vk.com/club16270501" />
-        <key key="contact:website" value="http://www.stardogs.ru" />
+        <key key="contact:website" value="https://www.stardogs.ru" />
         <key key="contact:youtube" value="https://www.youtube.com/channel/UCLdQnDS5HTzowfvz-Uhc24A" />
         <key key="cuisine" value="hotdog" />
         <key key="diet:vegetarian" value="no" />
         <key key="name" value="Стардог!s" />
         <key key="name:ru" value="Стардог!s" />
         <key key="takeaway" value="yes" />
-        <link href="http://www.stardogs.ru/?page=address" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://www.stardogs.ru/?page=address" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_internetaccess_footer" />
       </item>
       <item name="Teremok" ru.name="Теремок" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/commons/9/99/Teremok_logo.png">
@@ -1173,8 +1173,11 @@
         <key key="amenity" value="fast_food" />
         <key key="brand" value="Робин Сдобин" />
         <key key="contact:email" value="info@robinsdobin.ru" />
+        <key key="contact:instagram" value="https://www.instagram.com/robin_sdobin_vrn" />
         <key key="contact:phone" value="+7 800 5505560" />
+        <key key="contact:vk" value="https://vk.com/robinsdobin_vrn" />
         <key key="contact:website" value="http://sdobin.ru" />
+        <key key="contact:youtube" value="https://www.youtube.com/channel/UC0TSjQtGpRdS62yIv1Zd6ZQ" />
         <key key="name" value="Робин Сдобин" />
         <key key="name:ru" value="Робин Сдобин" />
         <link href="http://sdobin.ru" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
@@ -1189,13 +1192,13 @@
         <key key="contact:facebook" value="https://www.facebook.com/yakitoriyacafe" />
         <key key="contact:instagram" value="https://www.instagram.com/yakitoriyacafe" />
         <key key="contact:vk" value="https://vk.com/yakitoriyacafe" />
-        <key key="contact:website" value="http://www.yakitoriya.ru" />
+        <key key="contact:website" value="https://www.yakitoriya.ru" />
         <key key="cuisine" value="japanese" />
         <key key="delivery" value="yes" />
         <key key="diet:vegetarian" value="yes" />
         <key key="name" value="Якитория" />
         <key key="name:ru" value="Якитория" />
-        <link href="http://www.yakitoriya.ru/addr" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://www.yakitoriya.ru/addr" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_internetaccess_footer" />
       </item>
     </group>
@@ -1367,11 +1370,11 @@
         <key key="contact:google_plus" value="https://plus.google.com/+EyekraftRu" />
         <key key="contact:instagram" value="https://www.instagram.com/eyekraftoptica" />
         <key key="contact:vk" value="https://vk.com/eyekraftoptica" />
-        <key key="contact:website" value="http://www.eyekraft.ru" />
+        <key key="contact:website" value="https://www.eyekraft.ru" />
         <key key="name" value="Айкрафт" />
         <key key="name:ru" value="Айкрафт" />
         <key key="shop" value="optician" />
-        <link href="http://www.eyekraft.ru/page/address" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://www.eyekraft.ru/page/address" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_footer" />
       </item>
       <item name="Pandora" ru.name="Pandora" type="node,closedway,multipolygon" preset_name_label="true">
@@ -1438,7 +1441,7 @@
         <key key="contact:facebook" value="https://www.facebook.com/diana.dryclean" />
         <key key="contact:instagram" value="https://www.instagram.com/dryclean.ru" />
         <key key="contact:vk" value="https://vk.com/diana.dryclean" />
-        <key key="contact:website" value="http://dryclean.ru" />
+        <key key="contact:website" value="http://www.dryclean.ru" />
         <key key="name" value="Диана" />
         <key key="name:ru" value="Диана" />
         <key key="shop" value="dry_cleaning" />
@@ -1455,12 +1458,12 @@
         <key key="contact:instagram" value="https://www.instagram.com/iledebeaute_official" />
         <key key="contact:twitter" value="https://twitter.com/IDB_OFFICIAL" />
         <key key="contact:vk" value="https://vk.com/iledebeaute" />
-        <key key="contact:website" value="http://iledebeaute.ru" />
+        <key key="contact:website" value="https://iledebeaute.ru" />
         <key key="contact:youtube" value="https://www.youtube.com/user/idbshops" />
         <key key="name" value="Иль де Ботэ" />
         <key key="name:ru" value="Иль де Ботэ" />
         <key key="shop" value="cosmetics" />
-        <link href="http://iledebeaute.ru/company/shops" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://iledebeaute.ru/company/shops" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_footer" />
       </item>
       <item name="Korablik" ru.name="Кораблик" type="node,closedway,multipolygon" preset_name_label="true">
@@ -1560,11 +1563,11 @@
         <key key="contact:instagram" value="https://www.instagram.com/moshoztorg" />
         <key key="contact:ok" value="https://ok.ru/group/54890146037790" />
         <key key="contact:vk" value="https://vk.com/moshoztorg" />
-        <key key="contact:website" value="http://moshoztorg.ru" />
+        <key key="contact:website" value="https://moshoztorg.ru" />
         <key key="name" value="Мосхозторг" />
         <key key="name:ru" value="Мосхозторг" />
         <key key="shop" value="hardware" />
-        <link href="http://moshoztorg.ru/magaziny" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://moshoztorg.ru/magaziny" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Ochkarik" ru.name="Очкарик" type="node,closedway,multipolygon" preset_name_label="true">
@@ -1609,23 +1612,24 @@
         <key key="contact:instagram" value="https://www.instagram.com/podrygkashop" />
         <key key="contact:phone" value="+7 800 7074747" />
         <key key="contact:vk" value="https://vk.com/podrygkashop" />
-        <key key="contact:website" value="http://www.podrygka.ru" />
+        <key key="contact:website" value="https://www.podrygka.ru" />
         <key key="name" value="Подружка" />
         <key key="name:ru" value="Подружка" />
         <key key="operator" value="ООО «ТАБЕР ТРЕЙД»" />
         <key key="shop" value="cosmetics" />
-        <link href="http://www.podrygka.ru/shoplist" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://www.podrygka.ru/shoplist" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Smeshnie Tseni" ru.name="Смешные цены" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="opening_hours" text="Часы работы" />
         <key key="brand" value="Смешные цены" />
-        <key key="contact:website" value="http://smeshniyeceni.ru" />
+        <!-- <key key="contact:website" value="http://smeshnyeceny.ru" /> -->
+        <key key="contact:website" value="http://smeshnie-ceny.ru" />
         <key key="name" value="Смешные цены" />
         <key key="name:ru" value="Смешные цены" />
         <key key="shop" value="clothes" />
-        <link href="http://smeshniyeceni.ru" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="http://smeshnie-ceny.ru/adresa-magazinov-v-moskve.shtml" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_footer" />
       </item>
       <item name="Sportmaster" ru.name="Спортмастер" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Sportmaster_logo_icon_2017.png/240px-Sportmaster_logo_icon_2017.png">
@@ -1640,7 +1644,7 @@
         <key key="contact:phone" value="+7 800 7777771" />
         <key key="contact:twitter" value="https://twitter.com/ru_sportmaster" />
         <key key="contact:vk" value="https://vk.com/sportmaster" />
-        <key key="contact:website" value="http://www.sportmaster.ru" />
+        <key key="contact:website" value="https://www.sportmaster.ru" />
         <key key="contact:youtube" value="https://www.youtube.com/user/sportmasterRU" />
         <key key="name" value="Спортмастер" />
         <key key="name:en" value="Sportmaster" />
@@ -1649,7 +1653,7 @@
         <key key="operator:wikidata" value="Q4438176" />
         <key key="operator:wikipedia" value="ru:Спортмастер" />
         <key key="shop" value="sports" />
-        <link href="http://www.sportmaster.ru/stores/moscow" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://www.sportmaster.ru/stores/moscow" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_footer" />
       </item>
       <item name="Tsentrobuv" ru.name="ЦентрОбувь" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/ru/f/f2/%D0%A6%D0%B5%D0%BD%D1%82%D1%80%D0%9E%D0%B1%D1%83%D0%B2%D1%8C.png">
@@ -1706,12 +1710,12 @@
         <key key="contact:phone" value="+7 800 2502525" />
         <key key="contact:twitter" value="https://twitter.com/eldorado_stores" />
         <key key="contact:vk" value="https://vk.com/eldorado_stores" />
-        <key key="contact:website" value="http://www.eldorado.ru" />
+        <key key="contact:website" value="https://www.eldorado.ru" />
         <key key="contact:youtube" value="https://www.youtube.com/user/eldoradovideo" />
         <key key="name" value="Эльдорадо" />
         <key key="name:ru" value="Эльдорадо" />
         <key key="shop" value="electronics" />
-        <link href="http://www.eldorado.ru/info/shops/11324" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://www.eldorado.ru/info/shops/11324" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_footer" />
       </item>
       <item name="DNS" ru.name="ДНС" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/5/51/DNS_logo.png/320px-DNS_logo.png" >
@@ -1745,13 +1749,13 @@
         <key key="contact:ok" value="https://ok.ru/mvideo" />
         <key key="contact:twitter" value="https://twitter.com/mvideo" />
         <key key="contact:vk" value="https://vk.com/mvideo" />
-        <key key="contact:website" value="http://www.mvideo.ru" />
+        <key key="contact:website" value="https://www.mvideo.ru" />
         <key key="contact:youtube" value="https://www.youtube.com/mvideoru" />
         <key key="name" value="М.Видео" />
         <key key="name:ru" value="М.Видео" />
         <key key="operator" value="ООО &quot;М.Видео Менеджмент&quot;" />
         <key key="shop" value="electronics" />
-        <link href="http://www.mvideo.ru/shops/store-list" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://www.mvideo.ru/shops/store-list" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_footer" />
       </item>
       <item name="Ulmart outpost" ru.name="Юлмарт (ПВЗ)" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/ru/5/57/Logo_200x200.png">
@@ -1809,14 +1813,14 @@
         <key key="contact:phone" value="+7 800 2002326" />
         <key key="contact:twitter" value="https://twitter.com/VTB_BM" />
         <key key="contact:vk" value="https://vk.com/vtb_bm" />
-        <key key="contact:website" value="http://www.bm.ru" />
+        <key key="contact:website" value="https://www.bm.ru" />
         <key key="contact:youtube" value="https://www.youtube.com/vtbgroup" />
         <key key="name" value="ВТБ Банк Москвы" />
         <key key="name:en" value="VTB Bank of Moscow" />
         <key key="name:ru" value="ВТБ Банк Москвы" />
         <key key="operator:wikidata" value="Q767946" />
         <key key="operator:wikipedia" value="ru:Банк Москвы" />
-        <link href="http://www.bm.ru/ru/ofisy-banka/otdelenija" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://www.bm.ru/ru/ofisy-banka/otdelenija" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="bic_branch_ref_wheelchair_atm_address"/>
       </item>
       <item name="VTB24" ru.name="ВТБ24" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/c/cc/VTB24_Logo.svg/320px-VTB24_Logo.svg.png" preset_name_label="true">
@@ -2014,20 +2018,20 @@
         <key key="contact:phone" value="+7 495 2413081;+7 495 7872964" />
         <key key="contact:twitter" value="https://twitter.com/elecsnet" />
         <key key="contact:vk" value="https://vk.com/elecsnet" />
-        <key key="contact:website" value="http://elecsnet.ru" />
+        <key key="contact:website" value="https://elecsnet.ru" />
         <key key="contact:youtube" value="https://www.youtube.com/user/myelecsnet" />
         <key key="operator" value="АО «ЭЛЕКСНЕТ»" />
         <key key="payment:credit_cards" value="yes" />
         <key key="payment:debit_cards" value="yes" />
         <key key="payment:notes" value="yes" />
-        <link href="http://elecsnet.ru/terminals/addresses" text="Ссылка на сайт (часы работы, номера терминалов)" />
+        <link href="https://elecsnet.ru/terminals/addresses" text="Ссылка на сайт (часы работы, номера терминалов)" />
         <preset_link preset_name="Address" />
       </item>
     </group>
     <group name="Аптеки и медицинские услуги" en.name="Pharmacies and medical services" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Twemoji_1f48a.svg/240px-Twemoji_1f48a.svg.png">
       <item name="36,6" ru.name="36,6" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/0/08/Apteka_36_6.svg/242px-Apteka_36_6.svg.png">
         <space />
-        <combo key="contact:phone" text="Номер телефона" default="+7 495 7978686-xxxx" />
+        <combo key="contact:phone" text="Номер телефона" default="+7 495 7976336" />
         <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 09:00-21:00; Sa-Su 10:00-19:00" />
         <key key="amenity" value="pharmacy" />
         <key key="brand" value="36,6" />
@@ -2037,11 +2041,11 @@
         <key key="contact:instagram" value="https://www.instagram.com/apteka366" />
         <key key="contact:ok" value="https://ok.ru/group/57486618853421" />
         <key key="contact:vk" value="https://vk.com/apteka36i6" />
-        <key key="contact:website" value="http://www.366.ru" />
+        <key key="contact:website" value="https://366.ru" />
         <key key="healthcare" value="pharmacy" />
         <key key="name" value="36,6" />
         <key key="name:ru" value="36,6" />
-        <link href="http://www.366.ru/pharmacies.html" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://366.ru/apteki/map" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_dispencing_footer" />
       </item>
       <item name="A5" ru.name="А5" type="node,closedway,multipolygon" preset_name_label="true">
@@ -2065,12 +2069,14 @@
         <combo key="opening_hours" text="Часы работы" values="Mo-Su 09:00-22:00,Mo-Su 10:00-22:00" default="Mo-Su 10:00-22:00" />
         <key key="amenity" value="pharmacy" />
         <key key="brand" value="А-мега" />
-        <key key="contact:facebook" value="https://www.facebook.com/apteka.a.mega" />
-        <key key="contact:website" value="http://aptekamega.ru" />
+        <!-- <key key="contact:facebook" value="https://www.facebook.com/apteka.a.mega" /> сдохла страница -->
+        <key key="contact:ok" value="https://ok.ru/group/53709525483602" />
+        <key key="contact:vk" value="https://vk.com/apteka_mega" />
+        <key key="contact:website" value="https://www.aptekamega.ru" />
         <key key="healthcare" value="pharmacy" />
         <key key="name" value="А-мега" />
         <key key="name:ru" value="А-мега" />
-        <link href="http://aptekamega.ru/pharmacies" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://www.aptekamega.ru/pharmacies" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_dispencing_footer" />
       </item>
       <item name="Gorzdrav" ru.name="Горздрав" type="node,closedway,multipolygon" preset_name_label="true">
@@ -2136,14 +2142,14 @@
         <key key="contact:instagram" value="https://www.instagram.com/samsonpharma" />
         <key key="contact:twitter" value="https://twitter.com/samsonfarma" />
         <key key="contact:vk" value="https://vk.com/samson_f" />
-        <key key="contact:website" value="http://www.samson-f.ru" />
+        <key key="contact:website" value="https://samson-pharma.ru/" />
         <key key="contact:youtube" value="https://www.youtube.com/channel/UCPXq0ZxVRP8cth9_6Ht8j-w" />
         <key key="healthcare" value="pharmacy" />
         <key key="name" value="Самсон-Фарма" />
         <key key="name:ru" value="Самсон-Фарма" />
         <key key="operator:wikidata" value="Q19911073" />
         <key key="operator:wikipedia" value="ru:Самсон-Фарма" />
-        <link href="http://www.samson-f.ru/pharmacies" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://samson-pharma.ru/pharmacies" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_dispencing_footer" />
       </item>
       <item name="Stolichki" ru.name="Столички" type="node,closedway,multipolygon" preset_name_label="true">
@@ -2191,7 +2197,7 @@
         <key key="contact:ok" value="https://ok.ru/cmdonline" />
         <key key="contact:twitter" value="https://twitter.com/CMD_online" />
         <key key="contact:vk" value="https://vk.com/cmd.online" />
-        <key key="contact:website" value="http://www.cmd-online.ru" />
+        <key key="contact:website" value="https://www.cmd-online.ru" />
         <key key="contact:youtube" value="https://www.youtube.com/channel/UCJLzXIczpWCx7Gelbmc3sAw" />
         <key key="health_facility:type" value="laboratory" />
         <key key="health_specialty:microbiology" value="yes" />
@@ -2199,7 +2205,7 @@
         <key key="medical_system:western" value="yes" />
         <key key="name" value="CMD" />
         <key key="name:en" value="CMD" />
-        <link href="http://www.cmd-online.ru/patsientam/gde-sdat-analizy" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://www.cmd-online.ru/patsientam/gde-sdat-analizy" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_footer" />
       </item>
       <item name="Gemotest" ru.name="Гемотест" type="node,closedway,multipolygon" preset_name_label="true">
@@ -2356,7 +2362,7 @@
         <key key="operator:wikidata" value="Q1502763" />
         <key key="operator:wikipedia" value="ru:Почта России" />
         <link href="https://pochta.ru/offices" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <link href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=post_office" />
+        <link href="https://wiki.openstreetmap.org/wiki/RU:Tag:amenity=post_office" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Прокуратура" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Genprokuratura.png/219px-Genprokuratura.png" preset_name_label="true">
