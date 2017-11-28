@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2.0_2017-11-18_2"
+  version="2.0_2017-11-28_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   shortdescription="Russian POIs"
   ru.shortdescription="Российские POI"
@@ -410,17 +410,20 @@
       <item name="Lenta" ru.name="Лента" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/3/30/Lenta_logo.png">
         <label text="Магазин &quot;Лента&quot;" />
         <space />
-        <key key="name" value="Лента" />
         <key key="brand" value="Лента" />
+        <key key="name" value="Лента" />
         <key key="name:ru" value="Лента" />
         <key key="operator" value="ООО &quot;Лента&quot;" />
         <key key="shop" value="supermarket" />
-        <key key="contact:email" value="info@lenta.com" />
+        <key key="contact:email" value="pr@lenta.com" />
         <combo key="contact:phone" text="Номер телефона" default="+7 800 7004111" />
         <key key="contact:website" value="http://www.lenta.com" />
+        <key key="contact:vk" value="https://vk.com/lentacom" />
+        <key key="contact:ok" value="https://ok.ru/group/53286834208943" />
+        <key key="contact:instagram" value="https://www.facebook.com/lentacom" />
+        <key key="contact:facebook" value="https://www.instagram.com/lenta_com" />
         <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 08:00-23:00" />
-        <!-- <link href="http://www.lenta.com/magaziny" text="Ссылка на сайт (часы работы, координаты и т.п.)" /> -->
-        <link href="https://msk.lenta.com/page/1637" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://msk.lenta.com/all_stores" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="brand:wikipedia" value="ru:Лента (сеть магазинов)" />
         <key key="brand:wikidata" value="Q4258608" />
         <reference ref="wheelchair_address_footer" />
@@ -527,27 +530,6 @@
         <link href="https://www.myasnov.ru/magaziny_zdorovogo_pitaniya" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address_footer" />
       </item>
-      <item name="NASH" ru.name="НАШ" type="node,closedway,multipolygon">
-        <label text="Гипермаркет &quot;НАШ&quot;" />
-        <space />
-        <key key="name" value="НАШ" />
-        <key key="brand" value="НАШ" />
-        <key key="name:ru" value="НАШ" />
-        <key key="operator" value="ОАО «Седьмой Континент»" />
-        <!-- когда примут shop=hypermarket нужно будет здесь поменять https://wiki.openstreetmap.org/wiki/Proposed_features/hypermarket -->
-        <key key="shop" value="supermarket" />
-        <combo key="contact:phone" text="Номер телефона" default="+7 800 5007777" />
-        <key key="contact:website" value="http://www.7cont.ru" />
-        <key key="contact:email" value="offers@7cont.ru" />
-        <key key="contact:facebook" value="https://www.facebook.com/7contin" />
-        <key key="contact:ok" value="https://ok.ru/sedmoykon" />
-        <key key="contact:vk" value="https://vk.com/7contin" />
-        <key key="contact:twitter" value="https://twitter.com/7contin" />
-        <key key="contact:instagram" value="https://www.instagram.com/7cont" />
-        <combo key="opening_hours" text="Часы работы" values="Mo-Su 08:00-23:00,Mo-Su 09:00-23:00" default="Mo-Su 08:00-23:00" />
-        <link href="http://www.7cont.ru/customers/shops" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="wheelchair_address_footer" />
-      </item>
       <item name="OKEY" ru.name="О’КЕЙ" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/b/bd/Logo_ok.gif">
         <label text="Гипермаркет &quot;О’КЕЙ&quot;" />
         <space />
@@ -644,28 +626,6 @@
         <link href="https://5ka.ru/stores" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <key key="brand:wikipedia" value="ru:Пятёрочка" />
         <key key="brand:wikidata" value="Q1768969" />
-        <reference ref="wheelchair_address_footer" />
-      </item>
-      <item name="Sedmoy Kontinent" ru.name="Седьмой Континент" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/b/b3/Sedmoj_Continent.png">
-        <label text="Магазин &quot;Седьмой континент&quot;" />
-        <space />
-        <key key="name" value="Седьмой Континент" />
-        <key key="brand" value="Седьмой Континент" />
-        <key key="name:ru" value="Седьмой Континент" />
-        <key key="operator" value="ОАО «Седьмой Континент»" />
-        <combo key="shop" text="Тип магазина (с тележками - супермаркет)" values="supermarket,convenience" default="supermarket" />
-        <combo key="contact:phone" text="Номер телефона" default="+7 800 5007777" />
-        <key key="contact:website" value="http://www.7cont.ru" />
-        <key key="contact:email" value="offers@7cont.ru" />
-        <key key="contact:facebook" value="https://www.facebook.com/7contin" />
-        <key key="contact:ok" value="https://ok.ru/sedmoykon" />
-        <key key="contact:vk" value="https://vk.com/7contin" />
-        <key key="contact:twitter" value="https://twitter.com/7contin" />
-        <key key="contact:instagram" value="https://www.instagram.com/7cont" />
-        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 08:00-23:00" />
-        <link href="http://www.7cont.ru/customers/shops" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <key key="brand:wikipedia" value="ru:Седьмой континент" />
-        <key key="brand:wikidata" value="Q739720" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="SPAR" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/1/16/SPAR_logo.jpg">
@@ -1805,6 +1765,25 @@
         <key key="brand:wikidata" value="Q4531492" />
         <reference ref="level_wheelchair_address_footer" />
       </item>
+      <item name="DNS" ru.name="ДНС" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/5/51/DNS_logo.png/320px-DNS_logo.png" preset_name_label="true" >
+        <space />
+        <key key="shop" value="electronics" />
+        <!-- <key key="alt_name" value="Digital Network System" /> нигде в быту не используется -->
+        <key key="brand" value="DNS" />
+        <key key="name" value="DNS" />
+        <key key="name:en" value="DNS" />
+        <key key="contact:phone" value="+7 800 7707999" />
+        <key key="contact:facebook" value="https://www.facebook.com/dnsshop" />
+        <key key="contact:twitter" value="https://twitter.com/dnsshop" />
+        <key key="contact:vk" value="https://vk.com/dnsstore" />
+        <key key="contact:website" value="https://www.dns-shop.ru" />
+        <key key="contact:youtube" value="https://www.youtube.com/c/DNSSHOPvideo" />
+        <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 10:00-21:00,Mo-Su 09:00-22:00" />
+        <link href="https://www.dns-shop.ru/shops/moscow" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <key key="brand:wikipedia" value="DNS (сеть магазинов)" />
+        <key key="brand:wikidata" value="Q4036922" />
+        <reference ref="level_wheelchair_address_footer" />
+      </item>
       <item name="M.Video" ru.name="М.Видео" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/3/36/MVideo_2014.png/320px-MVideo_2014.png">
         <label text="Магазин &quot;М.Видео&quot;" />
         <space />
@@ -2529,14 +2508,13 @@
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Центр госуслуг (МФЦ, &quot;Мои документы&quot;)" type="node,closedway,multipolygon" preset_name_label="true">
-        <!-- МФЦ — это не только Москва и Санкт-Петербург, но и вся Россия. -->
         <space />
         <key key="amenity" value="public_service" />
-        <key key="office" value="government" />
         <key key="government" value="public_service" />
-        <combo key="name" text="Название" default="Центр госуслуг n-ского района" />
-        <combo key="official_name" text="Полное официальное название подразделения" default="Многофункциональный центр предоставления государственных и муниципальных услуг n-ского района" />
-        <key key="alt_name" value="Мои документы" />
+        <key key="office" value="government" />
+        <key key="brand" value="Мои документы" />
+        <key key="short_name" value="МФЦ" />
+        <combo key="name" text="Название" default="Многофункциональный центр предоставления государственных и муниципальных услуг [города N]" values="Многофункциональный центр предоставления государственных и муниципальных услуг [города N], Многофункциональный центр предоставления государственных услуг [города N]" />
         <combo key="contact:website" text="Сайт" values="https://md.mos.ru" />
         <combo key="contact:phone" text="Номер телефона"/>
         <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-13:00\,13:45-17:00; Fr 09:00-13:00\,13:45-15:45" />
@@ -3098,7 +3076,7 @@
         <space />
         <combo key="name" text="Название" values="Автостоянка №" />
         <combo key="branch" text="Отделение/ветка" values="Тимирязевский ТС,Кировский ТС,Басманный ТС,Первомайский ТС,Киреевский ТС,Гагаринское ТС" />
-        <!-- дополнить возможными значениями values -->
+        <!-- TODO: дополнить возможными значениями values -->
         <key key="operator" value="МГСА" />
         <text key="ref" text="Автостоянка №" />
         <key key="landuse" value="garages" />
@@ -3151,7 +3129,7 @@
         <reference ref="building_address_footer" />
       </item>
       <item name="Suburban train tickets vending machine" ru.name="Терминал продажи пригородных билетов (электрички)" type="node" preset_name_label="true">
-        <!-- Нужно определиться между использованием public_transport_tickets:suburban_train=yes или tickets:suburban_train=yes -->
+        <!-- TODO: Нужно определиться между использованием public_transport_tickets:suburban_train=yes или tickets:suburban_train=yes -->
         <!-- Пока что оставляю оба варианта. Правильней из них первый. Но второй распространенней -->
         <space />
         <key key="amenity" value="vending_machine" />
@@ -3219,7 +3197,6 @@
         <link href="https://wiki.openstreetmap.org/wiki/RU:Tag:amenity%3Dpost_box" />
       </item>
       <item name="Delivery terminal InPost " ru.name="Почтомат &quot;InPost&quot; (бывш. &quot;QIWI Post&quot;)" type="node" preset_name_label="true">
-        <!-- сайт https://inpost.ru дохлый-->
         <space />
         <key key="amenity" value="vending_machine" />
         <key key="vending" value="parcel_pickup" />
@@ -3229,10 +3206,10 @@
         <key key="payment:credit_cards" value="yes" />
         <key key="payment:debit_cards" value="yes" />
         <key key="contact:phone" value="+7 800 3335146" />
-        <key key="contact:website" value="https://inpost.ru" />
+        <!-- <key key="contact:website" value="https://inpost.ru" /> сайт дохлый -->
         <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00" />
         <text key="ref" text="Номер терминала" />
-        <link href="https://inpost.ru/ru/customers/nayti-blizhaishiy-terminal" text="Ссылка на сайт (часы работы, номера почтоматов)" />
+        <!-- <link href="https://inpost.ru/ru/customers/nayti-blizhaishiy-terminal" text="Ссылка на сайт (часы работы, номера почтоматов)" /> сайт дохлый -->
       </item>
       <item name="MGTS payphone" ru.name="Таксофон &quot;МГТС&quot;" type="node" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Twemoji_1f4de.svg/240px-Twemoji_1f4de.svg.png" preset_name_label="true">
         <space />
