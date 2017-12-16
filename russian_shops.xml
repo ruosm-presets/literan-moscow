@@ -1,17 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2.0_2017-12-06_1"
+  version="2.0_2017-12-16_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   shortdescription="Russian POIs"
   ru.shortdescription="Российские POI"
   description="Tagging preset for Russian shops and amenities"
   ru.description="Заготовки для добавления магазинов и иных заведений России">
 
-  <!-- Pics have been derived mostly from https://commons.wikimedia.org/wiki/Emoji and https://wikimedia.org/ -->
+  <!-- Pics have been derived mostly from https://commons.wikimedia.org/wiki/Emoji and https://wikimedia.org -->
 
-  <!-- NB: порядок следования комбо-полей (<combo>) следующий: shop/amenity, name, name:ru/:en, official_name, brand, contact:phone, opening_hours, operator
-       сделано для единообразия с встроенными заготовками JOSM -->
+  <!-- NB: порядок следования комбо-полей (<combo>) следующий:
+          shop/amenity,
+          name,
+          name:ru/:en,
+          official_name,
+          brand,
+          contact:website,
+          contact:phone,
+          opening_hours,
+          operator
+      сделано для единообразия с встроенными заготовками JOSM -->
 
   <!-- блок с шаблонами (chunks) -->
   <!-- wheelchair_address_footer используется в местах, куда можно зайти -->
@@ -44,22 +53,22 @@
     <preset_link preset_name="Address" />
     <preset_link preset_name="Building" />
   </chunk>
-  <!-- phone_website -->
-  <chunk id="phone_website">
-    <combo key="contact:phone" text="Номер телефона" />
+  <!-- website_phone -->
+  <chunk id="website_phone">
     <combo key="contact:website" text="Сайт" />
+    <combo key="contact:phone" text="Номер телефона" />
   </chunk>
-  <!-- name_phone_website_oh используется, по факту, в медицинских учреждениях-->
-  <chunk id="name_phone_website_oh">
+  <!-- name_website_phone_oh используется, по факту, в медицинских учреждениях-->
+  <chunk id="name_website_phone_oh">
     <text key="name" text="Название" />
-    <reference ref="phone_website"/>
+    <reference ref="website_phone"/>
     <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-22:00,Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
   </chunk>
-  <!-- name_ownership_phone_website используется только в учебных заведениях -->
-  <chunk id="name_ownership_phone_website">
+  <!-- name_ownership_website_phone используется только в учебных заведениях -->
+  <chunk id="name_ownership_website_phone">
     <text key="name" text="Название" />
     <combo key="ownership" text="Форма собственности" values="state,private" display_values="государственная,частная" />
-    <reference ref="phone_website"/>
+    <reference ref="website_phone"/>
   </chunk>
   <!-- bic_branch_ref_wheelchair_atm_address используется в банках -->
   <chunk id="bic_branch_ref_wheelchair_atm_address">
@@ -713,7 +722,7 @@
         <key key="contact:youtube" value="https://www.youtube.com/channel/UCR_y8Df9fQIBKi13sFHILvA" />
         <key key="delivery" value="yes" />
         <key key="delivery:contact:phone" value="+7 499 3993079" />
-        <key key="delivery:contact:website" value="https://www.edu-domoi.ru/" />
+        <key key="delivery:contact:website" value="https://www.edu-domoi.ru" />
         <key key="opening_hours" value="24/7" />
         <key key="operator" value="ЗАО &quot;АМАТУС&quot;" />
         <key key="shop" value="supermarket" />
@@ -2142,7 +2151,7 @@
         <key key="contact:instagram" value="https://www.instagram.com/samsonpharma" />
         <key key="contact:twitter" value="https://twitter.com/samsonfarma" />
         <key key="contact:vk" value="https://vk.com/samson_f" />
-        <key key="contact:website" value="https://samson-pharma.ru/" />
+        <key key="contact:website" value="https://samson-pharma.ru" />
         <key key="contact:youtube" value="https://www.youtube.com/channel/UCPXq0ZxVRP8cth9_6Ht8j-w" />
         <key key="healthcare" value="pharmacy" />
         <key key="name" value="Самсон-Фарма" />
@@ -2273,12 +2282,12 @@
         <space />
         <combo key="name" text="Название" default="N-ское управление ЗАГС" />
         <combo key="official_name" text="Полное официальное название подразделения" default="N-ское управление ЗАГС N-ской области" />
+        <reference ref="website_phone"/>
         <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-13:00\,13:45-17:00; Fr 09:00-13:00\,13:45-15:45" />
         <key key="government" value="register_office" />
         <key key="office" value="government" />
         <key key="operator:wikidata" value="Q254213" />
         <key key="operator:wikipedia" value="ru:ЗАГС" />
-        <reference ref="phone_website"/>
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Казначейство (инспекция ФНС)" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Roskazna.png/216px-Roskazna.png" preset_name_label="true">
@@ -2368,8 +2377,8 @@
       <item name="Прокуратура" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Genprokuratura.png/219px-Genprokuratura.png" preset_name_label="true">
         <space />
         <combo key="name" text="Название подразделения" default="Прокуратура n-ского района/области" />
-        <combo key="contact:phone" text="Номер телефона"/>
         <combo key="contact:website" text="Сайт" default="https://www.genproc.gov.ru" />
+        <combo key="contact:phone" text="Номер телефона"/>
         <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-12:30\,13:15-18:00; Fr 09:00-12:30\,13:15-17:00" />
         <key key="contact:facebook" value="https://www.facebook.com/genprocrf" />
         <key key="contact:instagram" value="https://www.instagram.com/genprocrf" />
@@ -2387,8 +2396,8 @@
       <item name="Следственный комитет" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Investigative_Committee_Russia_Emblem.png/202px-Investigative_Committee_Russia_Emblem.png" preset_name_label="true">
         <space />
         <combo key="name" text="Название подразделения" default="Следственный комитет n-ского района/области" />
-        <combo key="contact:phone" text="Номер телефона" />
         <combo key="contact:website" text="Сайт" default="https://sledcom.ru" />
+        <combo key="contact:phone" text="Номер телефона" />
         <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-12:30\,13:15-18:00; Fr 09:00-12:30\,13:15-17:00" />
         <key key="contact:facebook" value="https://ru-ru.facebook.com/sledcomru" />
         <key key="contact:instagram" value="https://www.instagram.com/sledcom_rf" />
@@ -2404,8 +2413,8 @@
       <item name="Служба государственной статистики" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Russian_Federal_State_Statistics_Service_Emblem.svg/205px-Russian_Federal_State_Statistics_Service_Emblem.svg.png" preset_name_label="true">
         <space />
         <combo key="name" text="Название подразделения" default="Отдел государственной статистики в N-ском районе" />
-        <combo key="contact:phone" text="Номер телефона" />
         <combo key="contact:website" text="Сайт" default="http://www.gks.ru" />
+        <combo key="contact:phone" text="Номер телефона" />
         <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-12:30\,13:15-18:00; Fr 09:00-12:30\,13:15-17:00" />
         <key key="contact:facebook" value="https://www.facebook.com/rosstatistika" />
         <key key="contact:livejournal" value="http://rosstatistika.livejournal.com" />
@@ -2420,8 +2429,8 @@
       <item name="Служба социальной защиты" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="name" text="Название подразделения" default="Отдел социальной защиты населения N-ского района" />
-        <combo key="contact:phone" text="Номер телефона"/>
         <combo key="contact:website" text="Сайт" default="http://www.dszn.ru" />
+        <combo key="contact:phone" text="Номер телефона"/>
         <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-12:30\,13:15-18:00; Fr 09:00-12:30\,13:15-17:00" />
         <key key="government" value="social_services" />
         <key key="office" value="government" />
@@ -2430,7 +2439,7 @@
       <item name="Управление образования" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="name" text="Название подразделения" default="Управление образования N-ского района" />
-        <reference ref="phone_website"/>
+        <reference ref="website_phone"/>
         <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-12:30\,13:15-18:00; Fr 09:00-12:30\,13:15-17:00" />
         <key key="government" value="education" />
         <key key="office" value="government" />
@@ -2440,17 +2449,17 @@
         <space />
         <combo key="name" text="Название" default="Центр гигиены и эпидемиологии по N-скому району" />
         <combo key="official_name" text="Полное официальное название подразделения" default="Федеральное бюджетное учреждение здравоохранения &quot;Центр гигиены и эпидемиологии по N-скому району&quot;" />
+        <reference ref="website_phone"/>
         <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-13:00\,13:45-17:00; Fr 09:00-13:00\,13:45-15:45" />
         <key key="government" value="healthcare" />
         <key key="office" value="government" />
-        <reference ref="phone_website"/>
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Центр госуслуг (МФЦ, &quot;Мои документы&quot;)" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="name" text="Название" default="Многофункциональный центр предоставления государственных и муниципальных услуг [города N]" values="Многофункциональный центр предоставления государственных и муниципальных услуг [города N], Многофункциональный центр предоставления государственных услуг [города N]" />
-        <combo key="contact:phone" text="Номер телефона"/>
         <combo key="contact:website" text="Сайт" values="https://md.mos.ru" />
+        <combo key="contact:phone" text="Номер телефона"/>
         <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-13:00\,13:45-17:00; Fr 09:00-13:00\,13:45-15:45" />
         <key key="amenity" value="public_service" />
         <key key="brand" value="Мои документы" />
@@ -2465,23 +2474,23 @@
         <space />
         <combo key="name" text="Название" default="Центр занятости населения" />
         <combo key="official_name" text="Полное официальное название подразделения" default="Государственное казенное учреждение &quot;...ский центр занятости населения&quot;" />
+        <reference ref="website_phone"/>
         <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-13:00\,13:45-17:00; Fr 09:00-13:00\,13:45-15:45" />
         <key key="government" value="recruitment" />
         <key key="office" value="government" />
         <key key="operator:wikidata" value="Q1690950" />
         <key key="operator:wikipedia" value="ru:Биржа труда" />
-        <reference ref="phone_website"/>
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Центр социального обслуживания (инвалидов, пожилых)" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="name" text="Название" default="Территориальный центр социального обслуживания &quot;...&quot;" />
         <combo key="official_name" text="Полное официальное название подразделения" default="Государственное бюджетное учреждение Территориальный центр социального обслуживания &quot;...&quot;" />
+        <reference ref="website_phone"/>
         <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-20:00; Fr 09:00-18:45; Sa 09:00-17:00" />
         <key key="amenity" value="social_facility" />
         <key key="social_facility" value="outreach" />
         <key key="social_facility:for" value="disabled;senior" />
-        <reference ref="phone_website"/>
         <reference ref="wheelchair_address_footer" />
       </item>
     </group>
@@ -2667,7 +2676,7 @@
         <key key="health_facility:type" value="hospital" />
         <key key="healthcare" value="hospital" />
         <key key="medical_system:western" value="yes" />
-        <reference ref="name_phone_website_oh"/>
+        <reference ref="name_website_phone_oh"/>
         <reference ref="wheelchair_address_footer" />
         <reference ref="health20_providedfor" />
         <space />
@@ -2680,7 +2689,7 @@
         <key key="amenity" value="clinic" />
         <key key="health_facility:type" value="clinic" />
         <key key="healthcare" value="clinic" />
-        <reference ref="name_phone_website_oh"/>
+        <reference ref="name_website_phone_oh"/>
         <reference ref="wheelchair_address_footer" />
         <reference ref="medicalsystem" />
         <reference ref="health20_providedfor" />
@@ -2694,7 +2703,7 @@
         <key key="amenity" value="doctors" />
         <key key="health_facility:type" value="office" />
         <key key="healthcare" value="doctor" />
-        <reference ref="name_phone_website_oh"/>
+        <reference ref="name_website_phone_oh"/>
         <reference ref="wheelchair_address_footer" />
         <reference ref="medicalsystem" />
         <reference ref="health20_providedfor" />
@@ -2711,7 +2720,7 @@
         <key key="healthcare" value="clinic" />
         <key key="medical_system:western" value="yes" />
         <key key="provided_for:female" value="yes" />
-        <reference ref="name_phone_website_oh"/>
+        <reference ref="name_website_phone_oh"/>
         <reference ref="wheelchair_address_footer" />
         <reference ref="health20_specialities_footer" />
       </item>
@@ -2722,7 +2731,7 @@
         <key key="health_specialty:microbiology" value="yes" />
         <key key="healthcare" value="doctor" />
         <key key="medical_system:western" value="yes" />
-        <reference ref="name_phone_website_oh"/>
+        <reference ref="name_website_phone_oh"/>
         <reference ref="level_wheelchair_address_footer" />
         <reference ref="health20_specialities_footer" />
       </item>
@@ -2732,7 +2741,7 @@
         <key key="health_facility:type" value="rehabilitation" />
         <key key="healthcare" value="rehabilitation" />
         <key key="medical_system:western" value="yes" />
-        <reference ref="name_phone_website_oh"/>
+        <reference ref="name_website_phone_oh"/>
         <reference ref="wheelchair_address_footer" />
         <space />
         <label text="Если реабилитационный центр специализированный (например, наркологический)," />
@@ -2747,7 +2756,7 @@
         <key key="healthcare" value="hospital" />
         <key key="medical_system:western" value="yes" />
         <key key="provided_for:female" value="yes" />
-        <reference ref="name_phone_website_oh"/>
+        <reference ref="name_website_phone_oh"/>
         <reference ref="wheelchair_address_footer" />
         <reference ref="health20_specialities_footer" />
       </item>
@@ -2758,7 +2767,7 @@
         <key key="leisure" value="resort" />
         <key key="medical_system:western" value="yes" />
         <key key="resort" value="sanatorium" />
-        <reference ref="name_phone_website_oh"/>
+        <reference ref="name_website_phone_oh"/>
         <reference ref="wheelchair_address_footer" />
         <reference ref="health20_providedfor" />
         <space />
@@ -2774,7 +2783,7 @@
         <key key="health_specialty:dentistry" value="yes" />
         <key key="healthcare" value="dentist" />
         <key key="medical_system:western" value="yes" />
-        <reference ref="name_phone_website_oh"/>
+        <reference ref="name_website_phone_oh"/>
         <reference ref="wheelchair_address_footer" />
         <reference ref="health20_providedfor" />
         <reference ref="health20_specialities_footer" />
@@ -2786,7 +2795,7 @@
         <key key="health_specialty:emergency_medicine" value="yes" />
         <key key="healthcare" value="yes" />
         <key key="medical_system:western" value="yes" />
-        <reference ref="name_phone_website_oh"/>
+        <reference ref="name_website_phone_oh"/>
         <reference ref="wheelchair_address_footer" />
         <reference ref="health20_specialities_footer" />
       </item>
@@ -2797,7 +2806,7 @@
         <key key="health_specialty:traumatology" value="yes" />
         <key key="healthcare" value="doctor" />
         <key key="medical_system:western" value="yes" />
-        <reference ref="name_phone_website_oh"/>
+        <reference ref="name_website_phone_oh"/>
         <reference ref="wheelchair_address_footer" />
         <reference ref="health20_providedfor" />
         <reference ref="health20_specialities_footer" />
@@ -2809,7 +2818,7 @@
         <key key="health_specialty:palliative_medicine" value="yes" />
         <key key="healthcare" value="hospital" />
         <key key="medical_system:western" value="yes" />
-        <reference ref="name_phone_website_oh"/>
+        <reference ref="name_website_phone_oh"/>
         <reference ref="wheelchair_address_footer" />
       </item>
     </group>
@@ -2821,7 +2830,7 @@
         <key key="education_level:preschool" value="yes" />
         <key key="education_profile:general" value="yes" />
         <key key="education_system:ru_standard" value="yes" />
-        <reference ref="name_ownership_phone_website" />
+        <reference ref="name_ownership_website_phone" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Primary school" ru.name="Начальная школа" type="node,closedway,multipolygon" preset_name_label="true">
@@ -2832,7 +2841,7 @@
         <key key="education_level:primary" value="yes" />
         <key key="education_profile:general" value="yes" />
         <key key="education_system:ru_standard" value="yes" />
-        <reference ref="name_ownership_phone_website" />
+        <reference ref="name_ownership_website_phone" />
         <reference ref="wheelchair_address_footer" />
       </item>
       <item name="School" ru.name="Общеобразовательная школа (лицей, гимназия)" type="node,closedway,multipolygon" preset_name_label="true">
@@ -2844,7 +2853,7 @@
         <key key="education_level:secondary" value="yes" />
         <key key="education_profile:general" value="yes" />
         <key key="education_system:ru_standard" value="yes" />
-        <reference ref="name_ownership_phone_website" />
+        <reference ref="name_ownership_website_phone" />
         <reference ref="wheelchair_address_footer" />
         <space />
         <label text="Школы с углублённым изучением:" />
@@ -2866,7 +2875,7 @@
         <key key="education_level:secondary" value="yes" />
         <key key="education_profile:professional" value="yes" />
         <key key="education_system:ru_standard" value="yes" />
-        <reference ref="name_ownership_phone_website" />
+        <reference ref="name_ownership_website_phone" />
         <reference ref="wheelchair_address_footer" />
         <reference ref="educationform" />
       </item>
@@ -2877,7 +2886,7 @@
         <key key="education_level:higher" value="yes" />
         <key key="education_profile:professional" value="yes" />
         <key key="education_system:ru_standard" value="yes" />
-        <reference ref="name_ownership_phone_website" />
+        <reference ref="name_ownership_website_phone" />
         <reference ref="wheelchair_address_footer" />
         <reference ref="educationform" />
       </item>
@@ -2891,7 +2900,7 @@
         <key key="education_profile:sport" value="yes" />
         <key key="education_system:ru_standard" value="yes" />
         <key key="training" value="sport" />
-        <reference ref="name_ownership_phone_website" />
+        <reference ref="name_ownership_website_phone" />
         <combo key="opening_hours" text="Часы работы" values="Mo-Su 09:00-20:00,Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
         <reference ref="wheelchair_address_footer" />
       </item>
@@ -2903,7 +2912,7 @@
         <key key="education_level:primary" value="yes" />
         <key key="education_profile:music" value="yes" />
         <key key="education_system:ru_standard" value="yes" />
-        <reference ref="name_ownership_phone_website" />
+        <reference ref="name_ownership_website_phone" />
         <combo key="opening_hours" text="Часы работы" values="Mo-Su 09:00-20:00,Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
         <reference ref="wheelchair_address_footer" />
       </item>
@@ -2916,7 +2925,7 @@
         <key key="education_profile:visual_art" value="yes" />
         <key key="education_system:ru_standard" value="yes" />
         <key key="training" value="art" />
-        <reference ref="name_ownership_phone_website" />
+        <reference ref="name_ownership_website_phone" />
         <combo key="opening_hours" text="Часы работы" values="Mo-Su 09:00-20:00,Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
         <reference ref="wheelchair_address_footer" />
       </item>
@@ -2928,7 +2937,7 @@
         <key key="education_level:primary" value="yes" />
         <key key="education_profile:driving" value="yes" />
         <key key="education_system:ru_standard" value="yes" />
-        <reference ref="name_ownership_phone_website" />
+        <reference ref="name_ownership_website_phone" />
         <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-22:00,Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
         <reference ref="wheelchair_address_footer" />
       </item>
@@ -2938,7 +2947,7 @@
         <key key="education" value="courses" />
         <key key="education_form:parttime" value="yes" />
         <key key="education_profile:languages" value="yes" />
-        <reference ref="name_ownership_phone_website" />
+        <reference ref="name_ownership_website_phone" />
         <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-22:00,Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
         <reference ref="wheelchair_address_footer" />
         <space />
