@@ -2503,65 +2503,65 @@
           <combo key="health_specialty:biochemistry" text="biochemistry" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:dentistry" text="dentistry" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:dermatology" text="dermatology" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:disaster_medicine" text="disaster_medicine" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:ear_nose_throat" text="ear_nose_throat" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:emergency_medicine" text="emergency_medicine" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:environmental_medicine" text="environmental_medicine" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:family_medicine" text="family_medicine" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:intensive_care_medicine" text="intensive_care_medicine" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:internal_medicine" text="internal_medicine" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:medical_genetics" text="medical_genetics" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:medical_microbiology" text="medical_microbiology" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:disaster_medicine" text="disaster medicine" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:ear_nose_throat" text="ear nose throat" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:emergency_medicine" text="emergency medicine" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:environmental_medicine" text="environmental medicine" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:family_medicine" text="family medicine" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:intensive_care_medicine" text="intensive care medicine" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:internal_medicine" text="internal medicine" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:medical_genetics" text="medical genetics" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:medical_microbiology" text="medical microbiology" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:neurology" text="neurology" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:nuclear_medicine" text="nuclear_medicine" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:occupational_medicine" text="occupational_medicine" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:nuclear_medicine" text="nuclear medicine" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:occupational_medicine" text="occupational medicine" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:ophthalmology" text="ophthalmology" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:optometry" text="optometry" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:paediatrics" text="paediatrics" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:pain_medicine" text="pain_medicine" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:palliative_medicine" text="palliative_medicine" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:pain_medicine" text="pain medicine" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:palliative_medicine" text="palliative medicine" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:pathology" text="pathology" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:pharmacology" text="pharmacology" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:physiatry" text="physiatry" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:physiology" text="physiology" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:psychiatry" text="psychiatry" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:public_health" text="public_health" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:public_health" text="public health" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:radiology" text="radiology" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:reproductive_medicine" text="reproductive_medicine" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:sleep_medicine" text="sleep_medicine" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:sports_medicine" text="sports_medicine" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:reproductive_medicine" text="reproductive medicine" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:sleep_medicine" text="sleep medicine" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:sports_medicine" text="sports medicine" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:surgery" text="surgery" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:transfusion_medicine" text="transfusion_medicine" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:transfusion_medicine" text="transfusion medicine" values="yes,main,additional,no,partial,trained" match="key" />
         </item>
         <item name="Physician's: Subspecialties" type="node,closedway,multipolygon" preset_name_label="true">
           <link href="https://wiki.openstreetmap.org/wiki/Proposed_features/Healthcare_2.0/Specialties#Subspecialties" />
-          <combo key="health_specialty:addiction_medicine" text="addiction_medicine" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:adult_psychiatry" text="adult_psychiatry" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:addiction_medicine" text="addiction medicine" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:adult_psychiatry" text="adult psychiatry" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:andrology" text="andrology" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:angiology" text="angiology" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:audiology" text="audiology" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:aviation_medicine" text="aviation_medicine" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:aviation_medicine" text="aviation medicine" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:cardiology" text="cardiology" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:cardiothoracic_surgery" text="cardiothoracic_surgery" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:child_psychiatry" text="child_psychiatry" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:clinical_pathology" text="clinical_pathology" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:clinical_pharmacology" text="clinical_pharmacology" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:colorectal_surgery" text="colorectal_surgery" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:diagnostic_radiology" text="diagnostic_radiology" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:cardiothoracic_surgery" text="cardiothoracic surgery" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:child_psychiatry" text="child psychiatry" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:clinical_pathology" text="clinical pathology" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:clinical_pharmacology" text="clinical pharmacology" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:colorectal_surgery" text="colorectal surgery" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:diagnostic_radiology" text="diagnostic radiology" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:endocrinology" text="endocrinology" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:endodontics" text="endodontics" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:epidemiology" text="epidemiology" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:forensic_pathology" text="forensic_pathology" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:forensic_psychiatry" text="forensic_psychiatry" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:forensic_pathology" text="forensic pathology" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:forensic_psychiatry" text="forensic psychiatry" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:gastroenterology" text="gastroenterology" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:general_surgery" text="general_surgery" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:general_surgery" text="general surgery" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:geriatrics" text="geriatrics" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:gynaecology" text="gynaecology" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:haematology" text="haematology" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:hand_surgery" text="hand_surgery" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:hand_surgery" text="hand surgery" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:immunology" text="immunology" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:infectiology" text="infectiology" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:maxillofacial_surgery" text="maxillofacial_surgery" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:maxillofacial_surgery" text="maxillofacial surgery" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:neonatology" text="neonatology" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:nephrology" text="nephrology" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:neuropathology" text="neuropathology" values="yes,main,additional,no,partial,trained" match="key" />
@@ -2570,103 +2570,103 @@
           <combo key="health_specialty:neurosurgery" text="neurosurgery" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:obstetrics" text="obstetrics" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:oncology" text="oncology" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:oral_surgery" text="oral_surgery" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:oral_surgery" text="oral surgery" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:orthodontics" text="orthodontics" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:orthopaedics" text="orthopaedics" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:paediatric_cardiology" text="paediatric_cardiology" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:paediatric_diabetology" text="paediatric_diabetology" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:paediatric_endocrinology" text="paediatric_endocrinology" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:paediatric_gastroenterology" text="paediatric_gastroenterology" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:paediatric_haematology" text="paediatric_haematology" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:paediatric_intensive_care_medicine" text="paediatric_intensive_care_medicine" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:paediatric_nephrology" text="paediatric_nephrology" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:paediatric_neurology" text="paediatric_neurology" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:paediatric_oncology" text="paediatric_oncology" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:paediatric_ophthalmology" text="paediatric_ophthalmology" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:paediatric_orthopaedics" text="paediatric_orthopaedics" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:paediatric_pulmonology" text="paediatric_pulmonology" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:paediatric_radiology" text="paediatric_radiology" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:paediatric_rheumatology" text="paediatric_rheumatology" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:paediatric_surgery" text="paediatric_surgery" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:paediatric_cardiology" text="paediatric cardiology" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:paediatric_diabetology" text="paediatric diabetology" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:paediatric_endocrinology" text="paediatric endocrinology" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:paediatric_gastroenterology" text="paediatric gastroenterology" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:paediatric_haematology" text="paediatric haematology" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:paediatric_intensive_care_medicine" text="paediatric intensive care medicine" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:paediatric_nephrology" text="paediatric nephrology" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:paediatric_neurology" text="paediatric neurology" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:paediatric_oncology" text="paediatric oncology" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:paediatric_ophthalmology" text="paediatric ophthalmology" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:paediatric_orthopaedics" text="paediatric orthopaedics" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:paediatric_pulmonology" text="paediatric pulmonology" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:paediatric_radiology" text="paediatric radiology" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:paediatric_rheumatology" text="paediatric rheumatology" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:paediatric_surgery" text="paediatric surgery" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:periodontology" text="periodontology" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:phoniatrics" text="phoniatrics" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:plastic_surgery" text="plastic_surgery" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:plastic_surgery" text="plastic surgery" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:podiatry" text="podiatry" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:prosthodontics" text="prosthodontics" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:psychosomatic_medicine" text="psychosomatic_medicine" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:psychosomatic_medicine" text="psychosomatic medicine" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:pulmonology" text="pulmonology" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:radiotherapy" text="radiotherapy" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:rheumatology" text="rheumatology" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:social_medicine" text="social_medicine" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:social_paediatrics" text="social_paediatrics" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:social_medicine" text="social medicine" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:social_paediatrics" text="social paediatrics" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:toxicology" text="toxicology" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:transplant_surgery" text="transplant_surgery" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:trauma_surgery" text="trauma_surgery" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:transplant_surgery" text="transplant surgery" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:trauma_surgery" text="trauma surgery" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:urology" text="urology" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:vascular_surgery" text="vascular_surgery" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:vascular_surgery" text="vascular surgery" values="yes,main,additional,no,partial,trained" match="key" />
         </item>
         <item name="Physician's: Subsubspecialties" type="node,closedway,multipolygon" preset_name_label="true">
           <link href="https://wiki.openstreetmap.org/wiki/Proposed_features/Healthcare_2.0/Specialties#Subsubspecialties" />
           <combo key="health_specialty:allergology" text="allergology" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:cardiovascular_surgery" text="cardiovascular_surgery" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:cardiovascular_surgery" text="cardiovascular surgery" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:diabetology" text="diabetology" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:hepatology" text="hepatology" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:phlebotomy" text="phlebotomy" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:thoracic_surgery" text="thoracic_surgery" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:tropical_medicine" text="tropical_medicine" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:thoracic_surgery" text="thoracic surgery" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:tropical_medicine" text="tropical medicine" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:urogynaecology" text="urogynaecology" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:venereology" text="venereology" values="yes,main,additional,no,partial,trained" match="key" />
         </item>
         <item name="Therapists and the alternative medicine: Main field specialties" type="node,closedway,multipolygon" preset_name_label="true">
           <link href="https://wiki.openstreetmap.org/wiki/Proposed_features/Healthcare_2.0/Specialties#Main_field_specialties_2" />
-          <combo key="health_specialty:alternative_medicine" text="alternative_medicine" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:alternative_medicine" text="alternative medicine" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:balneotherapy" text="balneotherapy" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:belief_based_therapy" text="belief_based_therapy" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:belief_based_therapy" text="belief based therapy" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:dietetics" text="dietetics" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:hydrotherapy" text="hydrotherapy" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:manual_therapy" text="manual_therapy" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:mind_body_intervention" text="mind_body_intervention" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:music_therapy" text="music_therapy" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:manual_therapy" text="manual therapy" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:mind_body_intervention" text="mind body intervention" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:music_therapy" text="music therapy" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:naturopathy" text="naturopathy" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:occupational_therapy" text="occupational_therapy" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:occupational_therapy" text="occupational therapy" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:physiotherapy" text="physiotherapy" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:phytotherapy" text="phytotherapy" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:podology" text="podology" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:psychotherapy" text="psychotherapy" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:speech_therapy" text="speech_therapy" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:traditional_medicine" text="traditional_medicine" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:speech_therapy" text="speech therapy" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:traditional_medicine" text="traditional medicine" values="yes,main,additional,no,partial,trained" match="key" />
         </item>
         <item name="Therapists and the alternative medicine: Subspecialties" type="node,closedway,multipolygon" preset_name_label="true">
           <link href="https://wiki.openstreetmap.org/wiki/Proposed_features/Healthcare_2.0/Specialties#Subspecialties_2" />
-          <combo key="health_specialty:anthroposophical_medicine" text="anthroposophical_medicine" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:art_therapy" text="art_therapy" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:autogenic_training" text="autogenic_training" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:anthroposophical_medicine" text="anthroposophical medicine" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:art_therapy" text="art therapy" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:autogenic_training" text="autogenic training" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:ayurveda" text="ayurveda" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:bach_flower_remedies" text="bach_flower_remedies" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:behavioural_psychotherapy" text="behavioural_psychotherapy" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:body_psychotherapy" text="body_psychotherapy" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:bach_flower_remedies" text="bach flower remedies" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:behavioural_psychotherapy" text="behavioural psychotherapy" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:body_psychotherapy" text="body psychotherapy" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:chiropractic" text="chiropractic" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:cognitive_behavioural_psychotherapy" text="cognitive_behavioural_psychotherapy" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:cognitive_psychotherapy" text="cognitive_psychotherapy" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:depth_psychology" text="depth_psychology" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:cognitive_behavioural_psychotherapy" text="cognitive behavioural psychotherapy" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:cognitive_psychotherapy" text="cognitive psychotherapy" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:depth_psychology" text="depth psychology" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:homoeopathy" text="homoeopathy" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:humanistic_psychotherapy" text="humanistic_psychotherapy" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:humanistic_psychotherapy" text="humanistic psychotherapy" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:kampo" text="kampo" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:massage_therapy" text="massage_therapy" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:massage_therapy" text="massage therapy" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:meditation" text="meditation" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:progressive_muscle_relaxation" text="progressive_muscle_relaxation" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:progressive_muscle_relaxation" text="progressive muscle relaxation" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:reiki" text="reiki" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:systemic_psychotherapy" text="systemic_psychotherapy" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:traditional_chinese_medicine" text="traditional_chinese_medicine" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:systemic_psychotherapy" text="systemic psychotherapy" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:traditional_chinese_medicine" text="traditional chinese medicine" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:unani" text="unani" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:yoga" text="yoga" values="yes,main,additional,no,partial,trained" match="key" />
         </item>
         <item name="Therapists and the alternative medicine: Subsubspecialties" type="node,closedway,multipolygon" preset_name_label="true">
           <link href="https://wiki.openstreetmap.org/wiki/Proposed_features/Healthcare_2.0/Specialties#Subsubspecialties_2" />
           <combo key="health_specialty:acupuncture" text="acupuncture" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:qi_gong" text="qi_gong" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:qi_gong" text="qi gong" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:shiatsu" text="shiatsu" values="yes,main,additional,no,partial,trained" match="key" />
-          <combo key="health_specialty:tui_na" text="tui_na" values="yes,main,additional,no,partial,trained" match="key" />
+          <combo key="health_specialty:tui_na" text="tui na" values="yes,main,additional,no,partial,trained" match="key" />
         </item>
       </group>
       <separator />
