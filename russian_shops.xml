@@ -594,7 +594,7 @@
         <text key="ref" text="Reference number" ru.text="Номер почтового ящика" />
         <combo key="collection_times" text="Collection times" ru.text="Время выемки писем" values="Mo-Su 05:00\,14:10,Mo-Fr 05:00\,14:10; Sa 09:15; Su 14:10" />
         <combo key="post_box:type" text="Type" ru.text="Тип" values="pillar,lamp,wall,meter" values_context="post_box" />
-        <combo key="post_box:design" text="Design ref" ru.text="Модель" values="ЯПВ-Н-П,ЯПВ-Н-С,ЯПВ-Т-П,ЯПВ-Т-С,ЯПНМ-I-С,ЯПНМ-II-С,ЯПНР-СМ,ЯПНР-II-С,ЯПНР-II-С-red,ЯПНР-II-С-yellow,gabled	,rounded_pillar,small_soviet,soviet" />
+        <combo key="post_box:design" text="Design ref" ru.text="Модель" values="ЯПВ-Н-П,ЯПВ-Н-С,ЯПВ-Т-П,ЯПВ-Т-С,ЯПНМ-I-С,ЯПНМ-II-С,ЯПНР-СМ,ЯПНР-II-С,ЯПНР-II-С-red,ЯПНР-II-С-yellow,gabled,rounded_pillar,small_soviet,soviet" />
         <check key="drive_through" text="Drive through" ru.text="Доступен, не выходя из автомобиля" />
         <key key="amenity" value="post_box" />
         <key key="operator" value="ФГУП «Почта России»" />
