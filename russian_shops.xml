@@ -19,6 +19,7 @@
           contact:website,
           contact:phone,
           opening_hours,
+          level,
           operator
       сделано для единообразия с встроенными заготовками JOSM -->
 
@@ -32,6 +33,12 @@
   <chunk id="wheelchair_address_footer">
     <combo key="wheelchair" text="Wheelchairs" ru.text="Инвалидные коляски" values="yes,limited,no" />
     <preset_link preset_name="Address" />
+  </chunk>
+  <!-- phone_oh_wheelchair_address_footer используется в государственных учреждениях -->
+  <chunk id="phone_oh_wheelchair_address_footer">
+    <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" />
+    <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-12:30\,13:15-18:00; Fr 09:00-12:30\,13:15-17:00,Mo-Th 09:00-13:00\,13:45-17:00; Fr 09:00-13:00\,13:45-15:45,Mo-Th 09:00-20:00; Fr 09:00-18:45; Sa 09:00-17:00" />
+    <reference ref="wheelchair_address_footer" />
   </chunk>
   <!-- level_wheelchair_address_footer используется в местах, куда можно зайти и которые часто не на 1 этажах (в ТЦ) -->
   <chunk id="level_wheelchair_address_footer">
@@ -48,10 +55,16 @@
       <check key="internet_access:fee" text="Internet access is fee-free" ru.text="Wi-Fi бесплатный" value_on="no" value_off="yes" />
     </checkgroup>
   </chunk>
-  <!-- level_wheelchair_address_dispencing_footer используется только в аптеках -->
-  <chunk id="level_wheelchair_address_dispencing_footer">
+  <!-- oh_level_wheelchair_address_dispencing_footer используется только в аптеках -->
+  <chunk id="oh_level_wheelchair_address_dispencing_footer">
+    <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Fr 08:00-20:00; Sa-Su 10:00-18:00,Mo-Fr 08:00-22:00; Sa-Su 09:00-21:00,Mo-Fr 09:00-20:00; Sa 10:00-20:00; Su 10:00-19:00,Mo-Fr 09:00-21:00; Sa-Su 10:00-19:00,Mo-Su 09:00-21:00,Mo-Su 09:00-22:00,Mo-Su 10:00-22:00" />
     <reference ref="level_wheelchair_address_footer" />
     <check key="dispensing" text="Dispensing" ru.text="Отпуск лекарств по рецептам" />
+  </chunk>
+  <!-- oh_level_wheelchair_address_footer используется только в медицинских лабораториях -->
+  <chunk id="oh_level_wheelchair_address_footer">
+    <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 09:00-22:00,Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
+    <reference ref="level_wheelchair_address_footer" />
   </chunk>
   <!-- name_ownership_website_phone_wheelchair_address_footer используется в учебных заведениях -->
   <chunk id="name_ownership_website_phone_wheelchair_address_footer">
@@ -155,7 +168,6 @@
       <item name="36,6" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/0/08/Apteka_36_6.svg/242px-Apteka_36_6.svg.png">
         <space />
         <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" default="+7 495 7976336" />
-        <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 09:00-21:00; Sa-Su 10:00-19:00" />
         <key key="amenity" value="pharmacy" />
         <key key="brand" value="36,6" />
         <key key="brand:wikidata" value="Q226889" />
@@ -169,12 +181,11 @@
         <key key="name" value="36,6" />
         <key key="name:ru" value="36,6" />
         <link href="https://366.ru/apteki/map" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="level_wheelchair_address_dispencing_footer" />
+        <reference ref="oh_level_wheelchair_address_dispencing_footer" />
       </item>
       <item name="A5" ru.name="А5" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" values="+7 495 1201285" default="+7 800 2006303"/>
-        <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 09:00-22:00,Mo-Fr 09:00-21:00; Sa-Su 10:00-19:00" />
         <key key="amenity" value="pharmacy" />
         <key key="brand" value="А5" />
         <key key="contact:facebook" value="https://www.facebook.com/apteka5" />
@@ -184,12 +195,11 @@
         <key key="name" value="А5" />
         <key key="name:ru" value="А5" />
         <link href="http://apteka5.ru/list_of_pharmacies" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="level_wheelchair_address_dispencing_footer" />
+        <reference ref="oh_level_wheelchair_address_dispencing_footer" />
       </item>
       <item name="A-mega" ru.name="А-мега" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" values="+7 495 7954477" />
-        <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="Mo-Su 09:00-22:00,Mo-Su 10:00-22:00" default="Mo-Su 10:00-22:00" />
         <key key="amenity" value="pharmacy" />
         <key key="brand" value="А-мега" />
         <!-- <key key="contact:facebook" value="https://www.facebook.com/apteka.a.mega" /> NB: сдохла страница -->
@@ -200,12 +210,11 @@
         <key key="name" value="А-мега" />
         <key key="name:ru" value="А-мега" />
         <link href="https://www.aptekamega.ru/pharmacies" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="level_wheelchair_address_dispencing_footer" />
+        <reference ref="oh_level_wheelchair_address_dispencing_footer" />
       </item>
       <item name="Gorzdrav" ru.name="Горздрав" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" values="+7 499 6536277,+7 812 4261584" default="+7 499 6536277" />
-        <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 09:00-22:00,Mo-Fr 09:00-21:00; Sa-Su 10:00-19:00" />
         <key key="amenity" value="pharmacy" />
         <key key="brand" value="Горздрав" />
         <key key="contact:email" value="info@gor-zdrav.ru" />
@@ -217,7 +226,7 @@
         <key key="name" value="Горздрав" />
         <key key="name:ru" value="Горздрав" />
         <link href="http://www.gorzdrav.org/apteka/items" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="level_wheelchair_address_dispencing_footer" />
+        <reference ref="oh_level_wheelchair_address_dispencing_footer" />
       </item>
       <item name="Orteka" ru.name="Ортека" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
@@ -238,7 +247,6 @@
       <item name="Rigla" ru.name="Ригла" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/ru/c/c0/Rigla_logo.png">
         <space />
         <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" values="+7 495 2311697-xxxx" default="+7 800 7770303" />
-        <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 09:00-22:00,Mo-Fr 08:00-22:00; Sa-Su 09:00-21:00" />
         <key key="amenity" value="pharmacy" />
         <key key="brand" value="Ригла" />
         <key key="brand:wikidata" value="Q4394431" />
@@ -253,12 +261,11 @@
         <key key="name" value="Ригла" />
         <key key="name:ru" value="Ригла" />
         <link href="http://www.rigla.ru/stores" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="level_wheelchair_address_dispencing_footer" />
+        <reference ref="oh_level_wheelchair_address_dispencing_footer" />
       </item>
       <item name="Samson-Pharma" ru.name="Самсон-Фарма" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/ru/c/cb/%D0%A1%D0%B0%D0%BC%D1%81%D0%BE%D0%BD-%D0%A4%D0%B0%D1%80%D0%BC%D0%B0.png">
         <space />
         <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" default="+7 800 2508800" />
-        <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 08:00-22:00; Sa-Su 09:00-21:00" />
         <key key="amenity" value="pharmacy" />
         <key key="brand" value="Самсон-Фарма" />
         <key key="contact:facebook" value="https://www.facebook.com/samsonpharma" />
@@ -273,12 +280,11 @@
         <key key="operator:wikidata" value="Q19911073" />
         <key key="operator:wikipedia" value="ru:Самсон-Фарма" />
         <link href="https://samson-pharma.ru/pharmacies" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="level_wheelchair_address_dispencing_footer" />
+        <reference ref="oh_level_wheelchair_address_dispencing_footer" />
       </item>
       <item name="Stolichki" ru.name="Столички" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" default="+7 800 5551115" />
-        <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 08:00-22:00; Sa-Su 09:00-21:00" />
         <key key="amenity" value="pharmacy" />
         <key key="brand" value="Столички" />
         <key key="contact:facebook" value="https://www.facebook.com/stolichki" />
@@ -290,12 +296,11 @@
         <key key="name:ru" value="Столички" />
         <key key="operator" value="ООО «НЕО-ФАРМ»" />
         <link href="http://stolichki.ru/stores/moscow_region" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="level_wheelchair_address_dispencing_footer" />
+        <reference ref="oh_level_wheelchair_address_dispencing_footer" />
       </item>
       <item name="Stolichnye Apteki" ru.name="Столичные аптеки" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" />
-        <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Fr 08:00-20:00; Sa-Su 10:00-18:00" />
         <key key="amenity" value="pharmacy" />
         <key key="brand" value="Столичные аптеки" />
         <key key="contact:email" value="citypharm@citypharm.ru" />
@@ -305,12 +310,11 @@
         <key key="name:ru" value="Столичные аптеки" />
         <key key="operator" value="АО «Столичные аптеки»" />
         <link href="http://www.citypharm.ru/pharmacy" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="level_wheelchair_address_dispencing_footer" />
+        <reference ref="oh_level_wheelchair_address_dispencing_footer" />
       </item>
       <item name="CMD" ru.name="CMD (Центр молекулярной диагностики)" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" values="+7 495 7880001" default="+7 800 7077881"/>
-        <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 09:00-22:00,Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
         <key key="alt_name" value="Центр молекулярной диагностики" />
         <key key="amenity" value="doctors" />
         <key key="brand" value="CMD" />
@@ -329,12 +333,11 @@
         <key key="name" value="CMD" />
         <key key="name:en" value="CMD" />
         <link href="https://www.cmd-online.ru/patsientam/gde-sdat-analizy" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="level_wheelchair_address_footer" />
+        <reference ref="oh_level_wheelchair_address_footer" />
       </item>
       <item name="Gemotest" ru.name="Гемотест" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" values="+7 495 5321313" default="+7 800 5501313"/>
-        <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 09:00-22:00,Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
         <key key="amenity" value="doctors" />
         <key key="brand" value="Гемотест" />
         <key key="contact:facebook" value="https://www.facebook.com/gemotestlab" />
@@ -348,12 +351,11 @@
         <key key="name" value="Гемотест" />
         <key key="name:ru" value="Гемотест" />
         <link href="https://www.gemotest.ru/address/select/maps.php" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="level_wheelchair_address_footer" />
+        <reference ref="oh_level_wheelchair_address_footer" />
       </item>
       <item name="Invitro" ru.name="Инвитро" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" values="+7 495 3630363" default="+7 800 2003630"/>
-        <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 09:00-22:00,Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
         <key key="amenity" value="doctors" />
         <key key="brand" value="Инвитро" />
         <key key="contact:email" value="info@invitro.ru" />
@@ -370,7 +372,7 @@
         <key key="operator:wikidata" value="Q4200546" />
         <key key="operator:wikipedia" value="ru:Медицинская компания Инвитро" />
         <link href="https://www.invitro.ru/offices/moscow" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="level_wheelchair_address_footer" />
+        <reference ref="oh_level_wheelchair_address_footer" />
       </item>
     </group>
     <group name="Urban units" ru.name="Городская инфраструктура" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Fxemoji_u1F3E2.svg/240px-Fxemoji_u1F3E2.svg.png">
@@ -692,9 +694,8 @@
       <item name="Военкомат" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="name" text="Name" ru.text="Название" default="N-ский военкомат" />
-        <combo key="official_name" text="Official name" ru.text="Полное официальное название подразделения" default="N-ский военный комиссариат N-ской области" />
-        <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона"/>
-        <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-13:00\,13:45-17:00; Fr 09:00-13:00\,13:45-15:45" />
+        <combo key="official_name" text="Official name" ru.text="Полное официальное название" default="N-ский военный комиссариат N-ской области" />
+        <reference ref="phone_oh_wheelchair_address_footer" />
         <key key="contact:facebook" value="https://www.facebook.com/mod.mil.rus" />
         <key key="contact:instagram" value="https://www.instagram.com/mil_ru" />
         <key key="contact:ok" value="https://ok.ru/mil" />
@@ -705,26 +706,23 @@
         <key key="military" value="office" />
         <key key="operator:wikidata" value="Q460254" />
         <key key="operator:wikipedia" value="ru:Военный комиссариат" />
-        <reference ref="wheelchair_address_footer" />
       </item>
       <item name="ЗАГС" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="name" text="Name" ru.text="Название" default="N-ское управление ЗАГС" />
-        <combo key="official_name" text="Official name" ru.text="Полное официальное название подразделения" default="N-ское управление ЗАГС N-ской области" />
-        <reference ref="website_phone"/>
-        <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-13:00\,13:45-17:00; Fr 09:00-13:00\,13:45-15:45" />
+        <combo key="official_name" text="Official name" ru.text="Полное официальное название" default="N-ское управление ЗАГС N-ской области" />
+        <combo key="contact:website" text="Website" ru.text="Сайт" />
+        <reference ref="phone_oh_wheelchair_address_footer" />
         <key key="government" value="register_office" />
         <key key="office" value="government" />
         <key key="operator:wikidata" value="Q254213" />
         <key key="operator:wikipedia" value="ru:ЗАГС" />
-        <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Казначейство (инспекция ФНС)" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Roskazna.png/216px-Roskazna.png" preset_name_label="true">
         <space />
-        <combo key="name" text="Name" ru.text="Название подразделения" default="Отдел № ... Управления Федерального казначейства" />
-        <combo key="official_name" text="Official name" ru.text="Полное официальное название подразделения" default="Отдел № ... Управления Федерального казначейства по ... ской области" />
-        <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона"/>
-        <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-12:30\,13:15-18:00; Fr 09:00-12:30\,13:15-17:00" />
+        <combo key="name" text="Name" ru.text="Название" default="Отдел № ... Управления Федерального казначейства" />
+        <combo key="official_name" text="Official name" ru.text="Полное официальное название" default="Отдел № ... Управления Федерального казначейства по ... ской области" />
+        <reference ref="phone_oh_wheelchair_address_footer" />
         <key key="contact:facebook" value="https://www.facebook.com/FederalTreasury" />
         <key key="contact:livejournal" value="http://roskazna.livejournal.com" />
         <key key="contact:twitter" value="https://twitter.com/FederalTreasury" />
@@ -733,14 +731,12 @@
         <key key="office" value="government" />
         <key key="operator:wikidata" value="Q4208422" />
         <key key="operator:wikipedia" value="ru:Казначейство России" />
-        <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Налоговая инспекция (ФНС)" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/c/cf/%D0%AD%D0%BC%D0%B1%D0%BB%D0%B5%D0%BC%D0%B0_%D0%A4%D0%9D%D0%A1_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8_%282014%29.jpg"  preset_name_label="true">
         <space />
-        <combo key="name" text="Name" ru.text="Название подразделения" default="ФНС России по г. ... ской области" />
-        <combo key="official_name" text="Official name" ru.text="Полное официальное название подразделения" default="Инспекция Федеральной налоговой службы России по г. ... ской области" />
-        <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона"/>
-        <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-12:30\,13:15-18:00; Fr 09:00-12:30\,13:15-17:00" />
+        <combo key="name" text="Name" ru.text="Название" default="ФНС России по г. ... ской области" />
+        <combo key="official_name" text="Official name" ru.text="Полное официальное название" default="Инспекция Федеральной налоговой службы России по г. ... ской области" />
+        <reference ref="phone_oh_wheelchair_address_footer" />
         <key key="contact:facebook" value="https://www.facebook.com/nalog.ru" />
         <key key="contact:twitter" value="https://twitter.com/nalog__ru" />
         <key key="contact:vk" value="https://vk.com/nalog__ru" />
@@ -749,14 +745,12 @@
         <key key="office" value="government" />
         <key key="operator:wikidata" value="Q4312669" />
         <key key="operator:wikipedia" value="ru:Налоговая инспекция Российской Федерации" />
-        <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Пенсионный фонд" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Logo_PFRF.JPG/235px-Logo_PFRF.JPG" preset_name_label="true">
         <space />
-        <combo key="name" text="Name" ru.text="Название подразделения" default="Главное управление ПФР №  по г. Москве и Московской области,Управление № " />
-        <combo key="official_name" text="Official name" ru.text="Полное официальное название подразделения" default="Главное управление Пенсионного фонда России №  по г. Москве и Московской области,Управление №" />
-        <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона"/>
-        <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-12:30\,13:15-18:00; Fr 09:00-12:30\,13:15-17:00" />
+        <combo key="name" text="Name" ru.text="Название" default="Главное управление ПФР №  по г. Москве и Московской области,Управление № " />
+        <combo key="official_name" text="Official name" ru.text="Полное официальное название" default="Главное управление Пенсионного фонда России №  по г. Москве и Московской области,Управление №" />
+        <reference ref="phone_oh_wheelchair_address_footer" />
         <key key="contact:facebook" value="https://www.facebook.com/PensionFondRF" />
         <key key="contact:livejournal" value="http://pensionnij-fond.livejournal.com" />
         <key key="contact:ok" value="https://ok.ru/pensionfond" />
@@ -768,7 +762,6 @@
         <key key="office" value="government" />
         <key key="operator:wikidata" value="Q2144353" />
         <key key="operator:wikipedia" value="ru:Пенсионный фонд Российской Федерации" />
-        <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Russian Post" ru.name="Почтовое отделение ФГУП &quot;Почта России&quot;" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Russian_Post.svg/298px-Russian_Post.svg.png" preset_name_label="true">
         <space />
@@ -793,10 +786,9 @@
       </item>
       <item name="Прокуратура" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Genprokuratura.png/219px-Genprokuratura.png" preset_name_label="true">
         <space />
-        <combo key="name" text="Name" ru.text="Название подразделения" default="Прокуратура n-ского района/области" />
+        <combo key="name" text="Name" ru.text="Название" default="Прокуратура n-ского района/области" />
         <combo key="contact:website" text="Website" ru.text="Сайт" default="https://www.genproc.gov.ru" />
-        <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона"/>
-        <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-12:30\,13:15-18:00; Fr 09:00-12:30\,13:15-17:00" />
+        <reference ref="phone_oh_wheelchair_address_footer" />
         <key key="contact:facebook" value="https://www.facebook.com/genprocrf" />
         <key key="contact:instagram" value="https://www.instagram.com/genprocrf" />
         <key key="contact:ok" value="https://ok.ru/genprocrf" />
@@ -808,14 +800,12 @@
         <key key="office" value="government" />
         <key key="operator:wikidata" value="Q2387440" />
         <key key="operator:wikipedia" value="ru:Прокуратура Российской Федерации" />
-        <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Следственный комитет" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Investigative_Committee_Russia_Emblem.png/202px-Investigative_Committee_Russia_Emblem.png" preset_name_label="true">
         <space />
-        <combo key="name" text="Name" ru.text="Название подразделения" default="Следственный комитет n-ского района/области" />
+        <combo key="name" text="Name" ru.text="Название" default="Следственный комитет n-ского района/области" />
         <combo key="contact:website" text="Website" ru.text="Сайт" default="https://sledcom.ru" />
-        <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" />
-        <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-12:30\,13:15-18:00; Fr 09:00-12:30\,13:15-17:00" />
+        <reference ref="phone_oh_wheelchair_address_footer" />
         <key key="contact:facebook" value="https://ru-ru.facebook.com/sledcomru" />
         <key key="contact:instagram" value="https://www.instagram.com/sledcom_rf" />
         <key key="contact:twitter" value="https://twitter.com/sledcom_rf" />
@@ -825,14 +815,12 @@
         <key key="office" value="government" />
         <key key="operator:wikidata" value="Q2577002" />
         <key key="operator:wikipedia" value="ru:Следственный комитет Российской Федерации" />
-        <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Служба государственной статистики" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Russian_Federal_State_Statistics_Service_Emblem.svg/205px-Russian_Federal_State_Statistics_Service_Emblem.svg.png" preset_name_label="true">
         <space />
-        <combo key="name" text="Name" ru.text="Название подразделения" default="Отдел государственной статистики в N-ском районе" />
+        <combo key="name" text="Name" ru.text="Название" default="Отдел государственной статистики в N-ском районе" />
         <combo key="contact:website" text="Website" ru.text="Сайт" default="http://www.gks.ru" />
-        <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" />
-        <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-12:30\,13:15-18:00; Fr 09:00-12:30\,13:15-17:00" />
+        <reference ref="phone_oh_wheelchair_address_footer" />
         <key key="contact:facebook" value="https://www.facebook.com/rosstatistika" />
         <key key="contact:livejournal" value="http://rosstatistika.livejournal.com" />
         <key key="contact:twitter" value="https://twitter.com/rosstatistika" />
@@ -841,48 +829,41 @@
         <key key="office" value="government" />
         <key key="operator:wikidata" value="Q2624680" />
         <key key="operator:wikipedia" value="ru:Федеральная служба государственной статистики" />
-        <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Служба социальной защиты" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
-        <combo key="name" text="Name" ru.text="Название подразделения" default="Отдел социальной защиты населения N-ского района" />
+        <combo key="name" text="Name" ru.text="Название" default="Отдел социальной защиты населения N-ского района" />
         <combo key="contact:website" text="Website" ru.text="Сайт" default="http://www.dszn.ru" />
-        <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона"/>
-        <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-12:30\,13:15-18:00; Fr 09:00-12:30\,13:15-17:00" />
+        <reference ref="phone_oh_wheelchair_address_footer" />
         <key key="government" value="social_services" />
         <key key="office" value="government" />
-        <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Управление образования" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
-        <combo key="name" text="Name" ru.text="Название подразделения" default="Управление образования N-ского района" />
-        <reference ref="website_phone"/>
-        <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-12:30\,13:15-18:00; Fr 09:00-12:30\,13:15-17:00" />
+        <combo key="name" text="Name" ru.text="Название" default="Управление образования N-ского района" />
+        <combo key="contact:website" text="Website" ru.text="Сайт" />
+        <reference ref="phone_oh_wheelchair_address_footer" />
         <key key="government" value="education" />
         <key key="office" value="government" />
-        <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Управление/отдел по вопросам миграции МВД" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
-        <combo key="name" text="Name" ru.text="Название подразделения" default="Отдел по вопросам миграции ГУ МВД России по г. n / n-скому району" />
-        <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона"/>
-        <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-12:30\,13:15-18:00; Fr 09:00-12:30\,13:15-17:00" />
+        <combo key="name" text="Name" ru.text="Название" default="Отдел по вопросам миграции ГУ МВД России по г. n / n-скому району" />
+        <reference ref="phone_oh_wheelchair_address_footer" />
         <key key="contact:website" value="https://guvm.mvd.ru" />
         <key key="government" value="migration" />
         <key key="office" value="government" />
         <key key="operator:wikidata" value="Q4346571" />
         <key key="operator:wikipedia" value="ru:Главное управление по вопросам миграции МВД РФ" />
-        <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Центр гигиены и эпидемиологии (б. СЭС)" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="name" text="Name" ru.text="Название" default="Центр гигиены и эпидемиологии по N-скому району" />
-        <combo key="official_name" text="Official name" ru.text="Полное официальное название подразделения" default="Федеральное бюджетное учреждение здравоохранения &quot;Центр гигиены и эпидемиологии по N-скому району&quot;" />
-        <reference ref="website_phone"/>
-        <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-13:00\,13:45-17:00; Fr 09:00-13:00\,13:45-15:45" />
+        <combo key="official_name" text="Official name" ru.text="Полное официальное название" default="Федеральное бюджетное учреждение здравоохранения &quot;Центр гигиены и эпидемиологии по N-скому району&quot;" />
+        <combo key="contact:website" text="Website" ru.text="Сайт" />
+        <reference ref="phone_oh_wheelchair_address_footer" />
         <key key="government" value="healthcare" />
         <key key="office" value="government" />
-        <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Центр госуслуг (МФЦ, &quot;Мои документы&quot;)" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
@@ -898,29 +879,28 @@
         <key key="operator:wikipedia" value="ru:Многофункциональный центр" />
         <key key="short_name" value="МФЦ" />
         <reference ref="level_wheelchair_address_internetaccess_footer" />
+        <!-- TODO: переделать на oh_... + internet_access -->
       </item>
       <item name="Центр занятости (фонд занятости, биржа труда)" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="name" text="Name" ru.text="Название" default="Центр занятости населения" />
-        <combo key="official_name" text="Official name" ru.text="Полное официальное название подразделения" default="Государственное казенное учреждение &quot;...ский центр занятости населения&quot;" />
-        <reference ref="website_phone"/>
-        <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-13:00\,13:45-17:00; Fr 09:00-13:00\,13:45-15:45" />
+        <combo key="official_name" text="Official name" ru.text="Полное официальное название" default="Государственное казенное учреждение &quot;...ский центр занятости населения&quot;" />
+        <combo key="contact:website" text="Website" ru.text="Сайт" />
+        <reference ref="phone_oh_wheelchair_address_footer" />
         <key key="government" value="recruitment" />
         <key key="office" value="government" />
         <key key="operator:wikidata" value="Q1690950" />
         <key key="operator:wikipedia" value="ru:Биржа труда" />
-        <reference ref="wheelchair_address_footer" />
       </item>
       <item name="Центр социального обслуживания (инвалидов, пожилых)" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="name" text="Name" ru.text="Название" default="Территориальный центр социального обслуживания &quot;...&quot;" />
-        <combo key="official_name" text="Official name" ru.text="Полное официальное название подразделения" default="Государственное бюджетное учреждение Территориальный центр социального обслуживания &quot;...&quot;" />
-        <reference ref="website_phone"/>
-        <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-20:00; Fr 09:00-18:45; Sa 09:00-17:00" />
+        <combo key="official_name" text="Official name" ru.text="Полное официальное название" default="Государственное бюджетное учреждение Территориальный центр социального обслуживания &quot;...&quot;" />
+        <combo key="contact:website" text="Website" ru.text="Сайт" />
+        <reference ref="phone_oh_wheelchair_address_footer" />
         <key key="amenity" value="social_facility" />
         <key key="social_facility" value="outreach" />
         <key key="social_facility:for" value="disabled;senior" />
-        <reference ref="wheelchair_address_footer" />
       </item>
     </group>
     <group name="Health facilities" ru.name="Медицинские учреждения" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Twemoji_1f489.svg/240px-Twemoji_1f489.svg.png">
