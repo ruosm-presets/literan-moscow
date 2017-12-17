@@ -192,7 +192,7 @@
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="Mo-Su 09:00-22:00,Mo-Su 10:00-22:00" default="Mo-Su 10:00-22:00" />
         <key key="amenity" value="pharmacy" />
         <key key="brand" value="А-мега" />
-        <!-- <key key="contact:facebook" value="https://www.facebook.com/apteka.a.mega" /> сдохла страница -->
+        <!-- <key key="contact:facebook" value="https://www.facebook.com/apteka.a.mega" /> NB: сдохла страница -->
         <key key="contact:ok" value="https://ok.ru/group/53709525483602" />
         <key key="contact:vk" value="https://vk.com/apteka_mega" />
         <key key="contact:website" value="https://www.aptekamega.ru" />
@@ -426,7 +426,7 @@
         <preset_link preset_name="Address" />
       </item>
       <item name="Gas substation" ru.name="Газорегуляторный пункт" type="node,closedway,multipolygon" preset_name_label="true">
-        <!-- добавить тэги здания и этажности? -->
+        <!-- NB: добавить тэги здания и этажности? -->
         <!-- нет, потому что часто это не здание -->
         <space />
         <combo key="operator" text="Operator" ru.text="Оператор" />
@@ -485,7 +485,7 @@
         <key key="toilets:position" value="seated" />
       </item>
       <item name="Sewage pumping station" ru.name="Канализационная насосная станция" type="node,closedway,multipolygon" preset_name_label="true">
-        <!-- добавить тэги здания и этажности? -->
+        <!-- NB: добавить тэги здания и этажности? -->
         <!-- нет, потому что часто это не здание -->
         <space />
         <combo key="operator" text="Operator" ru.text="Оператор" />
@@ -574,7 +574,7 @@
         <link href="http://parking.mos.ru" text="Official website (place locator)" ru.text="Ссылка на сайт (номера паркоматов)" />
       </item>
       <item name="Clothes dryer" ru.name="Площадка для сушки белья" type="node,closedway,multipolygon" icon="https://image.flaticon.com/icons/png/512/47/47421.png" preset_name_label="true">
-        <!-- https://d30y9cdsu7xlg0.cloudfront.net/png/174655-200.png -->
+        <!-- https://d30y9cdsu7xlg0.cloudfront.net/png/174655-200.png NB: второй вариант иконки -->
         <space />
         <key key="amenity" value="clothes_dryer" />
         <combo key="clothes_dryer" text="Clothes dryer" ru.text="Тип сушилки" values="pulley,rack,t-post,umbrella" ru.display_values="с роликом,стойка,столб,в виде зонта" default="rack" />
@@ -605,13 +605,13 @@
         <key key="amenity" value="vending_machine" />
         <key key="brand" value="InPost " />
         <key key="contact:phone" value="+7 800 3335146" />
-        <!-- <key key="contact:website" value="https://inpost.ru" /> сайт дохлый -->
+        <!-- <key key="contact:website" value="https://inpost.ru" /> NB: сайт дохлый -->
         <key key="operator" value="InPost" />
         <key key="payment:credit_cards" value="yes" />
         <key key="payment:debit_cards" value="yes" />
         <key key="payment:notes" value="yes" />
         <key key="vending" value="parcel_pickup" />
-        <!-- <link href="https://inpost.ru/ru/customers/nayti-blizhaishiy-terminal" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, номера почтоматов)" /> сайт дохлый -->
+        <!-- <link href="https://inpost.ru/ru/customers/nayti-blizhaishiy-terminal" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, номера почтоматов)" /> NB: сайт дохлый -->
       </item>
       <item name="Suburban train tickets shop" ru.name="Пригородная касса (электрички)" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
@@ -1431,7 +1431,7 @@
         <key key="contact:youtube" value="https://www.youtube.com/user/CoffeeHouseMan" />
         <key key="cuisine" value="coffee_shop" />
         <key key="diet:vegetarian" value="yes" />
-        <!-- во всех "Кофе Хаузах" заявлен бесплатный вай-фай-->
+        <!-- NB: во всех "Кофе Хаузах" заявлен бесплатный вай-фай-->
         <key key="internet_access" value="wlan" />
         <key key="internet_access:fee" value="no" />
         <key key="name" value="Кофе Хауз" />
@@ -1790,7 +1790,7 @@
       </item>
       <item name="AV Market" ru.name="АВ Маркет" type="node,closedway,multipolygon" preset_name_label="true" >
         <space />
-        <!-- когда примут shop=hypermarket нужно будет здесь поменять https://wiki.openstreetmap.org/wiki/Proposed_features/hypermarket -->
+        <!-- TODO: когда примут shop=hypermarket нужно будет здесь поменять https://wiki.openstreetmap.org/wiki/Proposed_features/hypermarket -->
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00" />
         <key key="brand" value="АВ Маркет" />
         <key key="brand:wikidata" value="Q4058209" />
@@ -1853,7 +1853,7 @@
       </item>
       <item name="Auchan" ru.name="Ашан" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/7/78/Auchan-logo.svg/320px-Auchan-logo.svg.png">
         <space />
-        <!-- когда примут shop=hypermarket нужно будет здесь поменять https://wiki.openstreetmap.org/wiki/Proposed_features/hypermarket -->
+        <!-- TODO: когда примут shop=hypermarket нужно будет здесь поменять https://wiki.openstreetmap.org/wiki/Proposed_features/hypermarket -->
         <combo key="name" text="Name" ru.text="Название" default="Ашан" values="Ашан,Ашан Сити" />
         <combo key="name:ru" text="Name (:ru)" ru.text="Название (:ru)" default="Ашан" values="Ашан,Ашан Сити" />
         <combo key="name:en" text="Name (:en)" ru.text="Название (:en)" default="Auchan" values="Auchan,Auchan City" />
@@ -2154,7 +2154,7 @@
         <key key="contact:youtube" value="https://www.youtube.com/user/marketokey" />
         <key key="name" value="О’КЕЙ" />
         <key key="name:ru" value="О’КЕЙ" />
-        <!-- когда примут shop=hypermarket нужно будет здесь поменять https://wiki.openstreetmap.org/wiki/Proposed_features/hypermarket -->
+        <!-- TODO: когда примут shop=hypermarket нужно будет здесь поменять https://wiki.openstreetmap.org/wiki/Proposed_features/hypermarket -->
         <key key="shop" value="supermarket" />
         <link href="http://www.okmarket.ru/stores" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address_footer" />
@@ -2434,7 +2434,7 @@
       <item name="DNS" ru.name="ДНС" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/5/51/DNS_logo.png/320px-DNS_logo.png" >
         <space />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 10:00-21:00,Mo-Su 09:00-22:00" />
-        <!-- <key key="alt_name" value="Digital Network System" /> нигде в быту не используется -->
+        <!-- <key key="alt_name" value="Digital Network System" /> NB: нигде в быту не используется -->
         <key key="brand" value="DNS" />
         <key key="brand:wikidata" value="Q4036922" />
         <key key="brand:wikipedia" value="DNS (сеть магазинов)" />
@@ -2615,7 +2615,7 @@
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 08:00-22:00; Sa-Su 09:00-21:00" />
         <key key="brand" value="Персона" />
         <!-- <key key="contact:facebook" value="https://www.facebook.com/ipersona" />
-        указан на официальном сайте, но в фб такой страницы нет -->
+        NB: указан на официальном сайте, но в фб такой страницы нет -->
         <key key="contact:twitter" value="https://twitter.com/Persona_PR" />
         <key key="contact:vk" value="https://vk.com/lab_persona" />
         <key key="contact:website" value="http://www.persona.ru" />
@@ -2647,7 +2647,7 @@
         <space />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" />
         <key key="brand" value="Смешные цены" />
-        <!-- <key key="contact:website" value="http://smeshnyeceny.ru" /> -->
+        <!-- <key key="contact:website" value="http://smeshnyeceny.ru" /> NB: старый сайт, но всё ещё рабочий -->
         <key key="contact:website" value="http://smeshnie-ceny.ru" />
         <key key="name" value="Смешные цены" />
         <key key="name:ru" value="Смешные цены" />
@@ -2902,13 +2902,14 @@
     <group name="Education facilities" ru.name="Образовательные учреждения" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Fxemoji_u1F393.svg/240px-Fxemoji_u1F393.svg.png">
       <item name="Driving school" ru.name="Автошкола" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
+        <reference ref="name_ownership_website_phone_oh_wheelchair_address_footer" />
+        <combo key="license_classes" text="License Classes" ru.text="Категории" values="A;A1;B;BE;C,A;A1;B;B1;C;C1;D;D1;BE;CE;C1E;DE;D1E" />
         <key key="amenity" value="driving_school" />
         <key key="education" value="courses" />
         <key key="education_form:parttime" value="yes" />
         <key key="education_level:primary" value="yes" />
         <key key="education_profile:driving" value="yes" />
         <key key="education_system:ru_standard" value="yes" />
-        <reference ref="name_ownership_website_phone_oh_wheelchair_address_footer" />
       </item>
       <item name="Kindergarten" ru.name="Детский сад" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
