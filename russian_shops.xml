@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2.0_2017-12-22_1"
+  version="2.0_2017-12-23_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   shortdescription="Russian POIs"
   ru.shortdescription="Российские POI"
@@ -24,86 +24,122 @@
   сделано для единообразия с встроенными заготовками JOSM -->
 
   <!-- блок с шаблонами (chunks) -->
-  <!-- website_phone -->
-  <chunk id="website_phone">
+  <chunk id="name">
+    <text key="name" text="Name" ru.text="Название" />
+  </chunk>
+  <chunk id="phone">
+    <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" />
+  </chunk>
+  <chunk id="website">
     <combo key="contact:website" text="Website" ru.text="Сайт" />
-    <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" />
   </chunk>
-  <!-- wheelchair_address используется в местах, куда можно зайти -->
-  <chunk id="wheelchair_address">
-    <combo key="wheelchair" text="Wheelchairs" ru.text="Инвалидные коляски" values="yes,limited,no" />
-    <preset_link preset_name="Address" />
+  <chunk id="operator">
+    <combo key="operator" text="Operator" ru.text="Оператор" />
   </chunk>
-  <!-- phone_oh_wheelchair_address используется в государственных учреждениях -->
-  <chunk id="phone_oh_wheelchair_address">
-    <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" />
-    <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-12:30\,13:15-18:00; Fr 09:00-12:30\,13:15-17:00,Mo-Th 09:00-13:00\,13:45-17:00; Fr 09:00-13:00\,13:45-15:45,Mo-Th 09:00-20:00; Fr 09:00-18:45; Sa 09:00-17:00" />
-    <reference ref="wheelchair_address" />
+  <chunk id="ref">
+    <text key="ref" text="Reference" ru.text="Номер" />
   </chunk>
-  <!-- level_wheelchair_address используется в местах, куда можно зайти и которые часто не на 1 этажах (в ТЦ) -->
-  <chunk id="level_wheelchair_address">
+  <chunk id="level">
     <text key="level" text="Level" ru.text="Этаж" />
-    <reference ref="wheelchair_address" />
   </chunk>
-  <!-- level_wheelchair_address_internetaccess используется в заведениях с wifi -->
-  <!-- NB: При использовании в местах, отличных от общественных жирален, переделать чекбокс internet_access на комбобокс или не использовать этот чанк! -->
-  <chunk id="level_wheelchair_address_internetaccess">
-    <reference ref="level_wheelchair_address" />
-    <space />
+  <chunk id="shop_type">
+    <combo key="shop" text="Convenience or supermarket" ru.text="Тип магазина (с тележками - супермаркет)" values="supermarket,convenience" default="supermarket" />
+  </chunk>
+  <chunk id="height">
+    <combo key="height" text="Height" ru.text="Высота (в метрах)" />
+  </chunk>
+  <chunk id="ownership">
+    <combo key="ownership" text="Ownership" ru.text="Форма собственности" values="state,private" ru.display_values="государственная,частная" />
+  </chunk>
+  <chunk id="wheelchair">
+    <combo key="wheelchair" text="Wheelchairs" ru.text="Инвалидные коляски" values="yes,limited,no" />
+  </chunk>
+  <chunk id="oh1">
+    <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 09:00-22:00,Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
+  </chunk>
+  <chunk id="oh2">
+    <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-12:30\,13:15-18:00; Fr 09:00-12:30\,13:15-17:00,Mo-Th 09:00-13:00\,13:45-17:00; Fr 09:00-13:00\,13:45-15:45,Mo-Th 09:00-20:00; Fr 09:00-18:45; Sa 09:00-17:00" />
+  </chunk>
+  <chunk id="oh3">
+    <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Fr 08:00-20:00; Sa-Su 10:00-18:00,Mo-Fr 08:00-22:00; Sa-Su 09:00-21:00,Mo-Fr 09:00-20:00; Sa 10:00-20:00; Su 10:00-19:00,Mo-Fr 09:00-21:00; Sa-Su 10:00-19:00,Mo-Su 09:00-21:00,Mo-Su 09:00-22:00,Mo-Su 10:00-22:00" />
+  </chunk>
+  <chunk id="sports_list">
+    <combo key="sport" text="Sport" ru.text="Вид спорта" values="multi,archery,athletics,american_football,australian_football,baseball,basketball,beachvolleyball,billiards,boules,bowls,canadian_football,canoe,climbing,cricket,croquet,cycling,dog_racing,equestrian,field_hockey,gaelic_games,golf,gymnastics,handball,horse_racing,ice_hockey,karting,model_aerodrome,motocross,motor,pelota,racquet,rc_car,rugby_league,rugby_union,running,safety_training,shooting,skateboard,ice_skating,roller_skating,soccer,swimming,table_tennis,tennis,volleyball,9pin,10pin" values_context="sport" />
+  </chunk>
+  <chunk id="wifi">
     <checkgroup columns="2">
       <check key="internet_access" text="Internet access" ru.text="Беспроводный интернет (Wi-Fi)" value_on="wlan" />
       <check key="internet_access:fee" text="Internet access is fee-free" ru.text="Wi-Fi бесплатный" value_on="no" value_off="yes" />
     </checkgroup>
-  </chunk>
-  <!-- oh_level_wheelchair_address_dispencing используется только в аптеках -->
-  <chunk id="oh_level_wheelchair_address_dispencing">
-    <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Fr 08:00-20:00; Sa-Su 10:00-18:00,Mo-Fr 08:00-22:00; Sa-Su 09:00-21:00,Mo-Fr 09:00-20:00; Sa 10:00-20:00; Su 10:00-19:00,Mo-Fr 09:00-21:00; Sa-Su 10:00-19:00,Mo-Su 09:00-21:00,Mo-Su 09:00-22:00,Mo-Su 10:00-22:00" />
+  </chunk> <!-- wifi заточен только под wifi, если нужны другие варианты доступа в интернет - то сделайте новый чанк -->
+  <chunk id="wheelchair_address">
+    <reference ref="wheelchair" />
+    <preset_link preset_name="Address" />
+  </chunk> <!-- wheelchair_address используется в местах, куда можно зайти -->
+  <chunk id="phone_oh2_wheelchair_address">
+    <reference ref="phone" />
+    <reference ref="oh2" />
+    <reference ref="wheelchair_address" />
+  </chunk> <!-- phone_oh2_wheelchair_address используется в государственных учреждениях -->
+  <chunk id="level_wheelchair_address">
+    <reference ref="level" />
+    <reference ref="wheelchair_address" />
+  </chunk> <!-- level_wheelchair_address используется в местах, куда можно зайти и которые часто не на 1 этажах (в ТЦ) -->
+  <chunk id="level_wheelchair_address_wifi_outdoorseating_drivethrough">
+    <reference ref="level_wheelchair_address" />
+    <space />
+    <checkgroup columns="2">
+      <check key="outdoor_seating" text="Outdoor seating" ru.text="Столики на улице" />
+      <check key="drive_through" text="Drive through" ru.text="Обслуживание в машине" />
+    </checkgroup>
+    <reference ref="wifi" />
+  </chunk> <!-- level_wheelchair_address_wifi_outdoorseating_drivethrough используется в заведениях общепита -->
+  <chunk id="oh3_level_wheelchair_address_dispencing">
+    <reference ref="oh3" />
     <reference ref="level_wheelchair_address" />
     <check key="dispensing" text="Dispensing" ru.text="Отпуск лекарств по рецептам" />
-  </chunk>
-  <!-- oh_level_wheelchair_address используется только в медицинских лабораториях -->
-  <chunk id="oh_level_wheelchair_address">
-    <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 09:00-22:00,Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
+  </chunk> <!-- oh3_level_wheelchair_address_dispencing используется только в аптеках -->
+  <chunk id="oh1_level_wheelchair_address">
+    <reference ref="oh1" />
     <reference ref="level_wheelchair_address" />
+  </chunk> <!-- oh1_level_wheelchair_address используется только в медицинских лабораториях -->
+  <chunk id="name_ownership_website_phone">
+    <reference ref="name" />
+    <reference ref="ownership" />
+    <reference ref="website" />
+    <reference ref="phone" />
   </chunk>
-  <!-- name_ownership_website_phone_wheelchair_address используется в учебных заведениях -->
+  <chunk id="name_website_phone">
+    <reference ref="name" />
+    <reference ref="website" />
+    <reference ref="phone" />
+  </chunk>
   <chunk id="name_ownership_website_phone_wheelchair_address">
-    <text key="name" text="Name" ru.text="Название" />
-    <combo key="ownership" text="Ownership" ru.text="Форма собственности" values="state,private" ru.display_values="государственная,частная" />
-    <reference ref="website_phone"/>
-    <reference ref="wheelchair_address"/>
-  </chunk>
-  <!-- name_ownership_website_phone_oh_wheelchair_address используется в учебных заведениях (+oh) -->
-  <chunk id="name_ownership_website_phone_oh_wheelchair_address">
-    <text key="name" text="Name" ru.text="Название" />
-    <combo key="ownership" text="Ownership" ru.text="Форма собственности" values="state,private" ru.display_values="государственная,частная" />
-    <reference ref="website_phone"/>
-    <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 09:00-22:00,Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
-    <reference ref="wheelchair_address"/>
-  </chunk>
-  <!-- name_website_phone_level_wheelchair_address используется в медицинских учреждениях-->
+    <reference ref="name_ownership_website_phone" />
+    <reference ref="wheelchair_address" />
+  </chunk> <!-- name_ownership_website_phone_wheelchair_address используется в учебных заведениях -->
+  <chunk id="name_ownership_website_phone_oh1_wheelchair_address">
+    <reference ref="name_ownership_website_phone" />
+    <reference ref="oh1" />
+    <reference ref="wheelchair_address" />
+  </chunk> <!-- name_ownership_website_phone_oh1_wheelchair_address используется в учебных заведениях (+oh) -->
   <chunk id="name_website_phone_level_wheelchair_address">
-    <text key="name" text="Name" ru.text="Название" />
-    <reference ref="website_phone"/>
-    <reference ref="level_wheelchair_address"/>
-  </chunk>
-  <!-- name_website_phone_oh_level_wheelchair_address используется в медицинских учреждениях (+oh)-->
-  <chunk id="name_website_phone_oh_level_wheelchair_address">
-    <text key="name" text="Name" ru.text="Название" />
-    <reference ref="website_phone"/>
-    <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 09:00-22:00,Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
-    <reference ref="level_wheelchair_address"/>
-  </chunk>
-  <!-- bic_branch_ref_wheelchair_atm_address используется в банках -->
+    <reference ref="name_website_phone" />
+    <reference ref="level_wheelchair_address" />
+  </chunk> <!-- name_website_phone_level_wheelchair_address используется в медицинских учреждениях-->
+  <chunk id="name_website_phone_oh1_level_wheelchair_address">
+    <reference ref="name_website_phone" />
+    <reference ref="oh1" />
+    <reference ref="level_wheelchair_address" />
+  </chunk> <!-- name_website_phone_oh1_level_wheelchair_address используется в медицинских учреждениях (+oh)-->
   <chunk id="bic_branch_ref_wheelchair_atm_address">
     <combo key="bic" text="BIC/SWIFT" ru.text="BIC/SWIFT-код (например UBSWUS33XXX)" />
     <combo key="branch" text="Branch" ru.text="Филиал (или отделение)" />
     <text key="ref" text="Reference number" ru.text="Номер отделения" />
-    <combo key="wheelchair" text="Wheelchairs" ru.text="Инвалидные коляски" values="yes,limited,no" />
+    <reference ref="wheelchair" />
     <check key="atm" text="Automated Teller Machine" ru.text="Банкомат (если 24/7, нанесите отдельной точкой)" />
     <preset_link preset_name="Address" />
-  </chunk>
-  <!-- education_form - форма обучения: дневная, вечерняя, заочная -->
+  </chunk> <!-- bic_branch_ref_wheelchair_atm_address используется в банках -->
   <chunk id="education_form">
     <space />
     <label text="Education form" ru.text="Форма обучения:" />
@@ -112,8 +148,7 @@
       <check key="education_form:parttime" text="part time" ru.text="вечерняя" disable_off="true" />
       <check key="education_form:external" text="external" ru.text="заочная" disable_off="true" />
     </checkgroup>
-  </chunk>
-  <!-- education_programme - изучаемые иностранные языки -->
+  </chunk> <!-- education_form - форма обучения: дневная, вечерняя, заочная -->
   <chunk id="education_programme">
     <checkgroup columns="3">
       <check key="education_programme:DE" text="german" ru.text="немецкий" disable_off="true" />
@@ -123,8 +158,7 @@
       <check key="education_programme:IT" text="italian" ru.text="итальянский" disable_off="true" />
       <check key="education_programme:ZH" text="chinese" ru.text="китайский" disable_off="true" />
     </checkgroup>
-  </chunk>
-  <!-- medical_system - медицинаская система -->
+  </chunk> <!-- education_programme - изучаемые иностранные языки -->
   <chunk id="medical_system">
     <space />
     <label text="Medical system" ru.text="Медицинская система:" />
@@ -135,8 +169,7 @@
       <check key="medical_system:tibetan" text="tibetan" ru.text="Тибетская традиционная" disable_off="true" />
       <check key="medical_system:western" text="western" ru.text="Cовременная западная" default="on" disable_off="true" />
     </checkgroup>
-  </chunk>
-  <!-- health20_provided_for — схема тегирования Healthcare 2.0: кому предоставляются услуги -->
+  </chunk> <!-- medical_system - медицинаская система -->
   <chunk id="health20_provided_for">
     <space />
     <label text="Provided for" ru.text="Категории лиц:" />
@@ -150,8 +183,7 @@
       <check key="provided_for:male" text="male (all ages)" ru.text="мужчины (всех возрастов)" disable_off="true" />
       <check key="provided_for:female" text="female (all ages)" ru.text="женщины (всех возрастов)" disable_off="true" />
     </checkgroup>
-  </chunk>
-  <!-- health20_specialities — схема тегирования Healthcare 2.0: все специальности/специализации -->
+  </chunk> <!-- health20_provided_for — схема тегирования Healthcare 2.0: кому предоставляются услуги -->
   <chunk id="health20_specialities">
     <link text="Healthcare_2.0 Specialties" ru.text="Список медицинских специализаций" href="https://wiki.openstreetmap.org/wiki/RU:Proposed_features/Healthcare_2.0/Specialties" />
     <preset_link preset_name="Physician's: Main field specialties" />
@@ -160,7 +192,7 @@
     <preset_link preset_name="Therapists and the alternative medicine: Main field specialties" />
     <preset_link preset_name="Therapists and the alternative medicine: Subspecialties" />
     <preset_link preset_name="Therapists and the alternative medicine: Subsubspecialties" />
-  </chunk>
+  </chunk> <!-- health20_specialities — схема тегирования Healthcare 2.0: все специальности/специализации -->
 
   <!-- тело пресета (groups) -->
   <group name="POI" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Twemoji_1f1f7-1f1fa.svg/240px-Twemoji_1f1f7-1f1fa.svg.png">
@@ -181,11 +213,11 @@
         <key key="name" value="36,6" />
         <key key="name:ru" value="36,6" />
         <link href="https://366.ru/apteki/map" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="oh_level_wheelchair_address_dispencing" />
+        <reference ref="oh3_level_wheelchair_address_dispencing" />
       </item>
       <item name="A5" ru.name="А5" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
-        <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" values="+7 495 1201285" default="+7 800 2006303"/>
+        <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" values="+7 495 1201285" default="+7 800 2006303" />
         <key key="amenity" value="pharmacy" />
         <key key="brand" value="А5" />
         <key key="contact:facebook" value="https://www.facebook.com/apteka5" />
@@ -195,7 +227,7 @@
         <key key="name" value="А5" />
         <key key="name:ru" value="А5" />
         <link href="http://apteka5.ru/list_of_pharmacies" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="oh_level_wheelchair_address_dispencing" />
+        <reference ref="oh3_level_wheelchair_address_dispencing" />
       </item>
       <item name="A-mega" ru.name="А-мега" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
@@ -210,7 +242,7 @@
         <key key="name" value="А-мега" />
         <key key="name:ru" value="А-мега" />
         <link href="https://www.aptekamega.ru/pharmacies" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="oh_level_wheelchair_address_dispencing" />
+        <reference ref="oh3_level_wheelchair_address_dispencing" />
       </item>
       <item name="Gorzdrav" ru.name="Горздрав" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
@@ -226,7 +258,7 @@
         <key key="name" value="Горздрав" />
         <key key="name:ru" value="Горздрав" />
         <link href="http://www.gorzdrav.org/apteka/items" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="oh_level_wheelchair_address_dispencing" />
+        <reference ref="oh3_level_wheelchair_address_dispencing" />
       </item>
       <item name="Orteka" ru.name="Ортека" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
@@ -261,7 +293,7 @@
         <key key="name" value="Ригла" />
         <key key="name:ru" value="Ригла" />
         <link href="http://www.rigla.ru/stores" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="oh_level_wheelchair_address_dispencing" />
+        <reference ref="oh3_level_wheelchair_address_dispencing" />
       </item>
       <item name="Samson-Pharma" ru.name="Самсон-Фарма" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/ru/c/cb/%D0%A1%D0%B0%D0%BC%D1%81%D0%BE%D0%BD-%D0%A4%D0%B0%D1%80%D0%BC%D0%B0.png">
         <space />
@@ -280,7 +312,7 @@
         <key key="operator:wikidata" value="Q19911073" />
         <key key="operator:wikipedia" value="ru:Самсон-Фарма" />
         <link href="https://samson-pharma.ru/pharmacies" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="oh_level_wheelchair_address_dispencing" />
+        <reference ref="oh3_level_wheelchair_address_dispencing" />
       </item>
       <item name="Stolichki" ru.name="Столички" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
@@ -296,11 +328,11 @@
         <key key="name:ru" value="Столички" />
         <key key="operator" value="ООО «НЕО-ФАРМ»" />
         <link href="http://stolichki.ru/stores/moscow_region" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="oh_level_wheelchair_address_dispencing" />
+        <reference ref="oh3_level_wheelchair_address_dispencing" />
       </item>
       <item name="Stolichnye Apteki" ru.name="Столичные аптеки" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
-        <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" />
+        <reference ref="phone" />
         <key key="amenity" value="pharmacy" />
         <key key="brand" value="Столичные аптеки" />
         <key key="contact:email" value="citypharm@citypharm.ru" />
@@ -310,11 +342,11 @@
         <key key="name:ru" value="Столичные аптеки" />
         <key key="operator" value="АО «Столичные аптеки»" />
         <link href="http://www.citypharm.ru/pharmacy" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="oh_level_wheelchair_address_dispencing" />
+        <reference ref="oh3_level_wheelchair_address_dispencing" />
       </item>
       <item name="CMD" ru.name="CMD (Центр молекулярной диагностики)" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
-        <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" values="+7 495 7880001" default="+7 800 7077881"/>
+        <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" values="+7 495 7880001" default="+7 800 7077881" />
         <key key="alt_name" value="Центр молекулярной диагностики" />
         <key key="amenity" value="doctors" />
         <key key="brand" value="CMD" />
@@ -333,11 +365,11 @@
         <key key="name" value="CMD" />
         <key key="name:en" value="CMD" />
         <link href="https://www.cmd-online.ru/patsientam/gde-sdat-analizy" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="oh_level_wheelchair_address" />
+        <reference ref="oh1_level_wheelchair_address" />
       </item>
       <item name="Gemotest" ru.name="Гемотест" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
-        <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" values="+7 495 5321313" default="+7 800 5501313"/>
+        <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" values="+7 495 5321313" default="+7 800 5501313" />
         <key key="amenity" value="doctors" />
         <key key="brand" value="Гемотест" />
         <key key="contact:facebook" value="https://www.facebook.com/gemotestlab" />
@@ -351,11 +383,11 @@
         <key key="name" value="Гемотест" />
         <key key="name:ru" value="Гемотест" />
         <link href="https://www.gemotest.ru/address/select/maps.php" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="oh_level_wheelchair_address" />
+        <reference ref="oh1_level_wheelchair_address" />
       </item>
       <item name="Invitro" ru.name="Инвитро" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
-        <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" values="+7 495 3630363" default="+7 800 2003630"/>
+        <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" values="+7 495 3630363" default="+7 800 2003630" />
         <key key="amenity" value="doctors" />
         <key key="brand" value="Инвитро" />
         <key key="contact:email" value="info@invitro.ru" />
@@ -372,7 +404,7 @@
         <key key="operator:wikidata" value="Q4200546" />
         <key key="operator:wikipedia" value="ru:Медицинская компания Инвитро" />
         <link href="https://www.invitro.ru/offices/moscow" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="oh_level_wheelchair_address" />
+        <reference ref="oh1_level_wheelchair_address" />
       </item>
     </group>
     <group name="Eatery" ru.name="Общепит" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Emojione_1F374.svg/64px-Emojione_1F374.svg.png">
@@ -393,11 +425,11 @@
         <key key="name:en" value="GlowSubs" />
         <key key="takeaway" value="yes" />
         <link href="http://glowsubs.ru/restaurants" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="level_wheelchair_address_internetaccess" />
+        <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
       <item name="IL Patio" ru.name="IL Патио" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
-        <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" />
+        <reference ref="phone" />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 08:00-23:00,Mo-Fr 07:00-23:00; Sa-Su 10:00-23:00" />
         <key key="amenity" value="restaurant" />
         <key key="brand" value="IL Патио" />
@@ -411,7 +443,7 @@
         <key key="name" value="IL Патио" />
         <key key="name:ru" value="IL Патио" />
         <link href="http://ilpatio.ru/restaurants" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="level_wheelchair_address_internetaccess" />
+        <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
       <item name="KFC" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/b/bf/KFC_logo.svg/240px-KFC_logo.svg.png">
         <space />
@@ -436,12 +468,11 @@
         <key key="name:en" value="KFC" />
         <key key="takeaway" value="yes" />
         <link href="https://www.kfc.ru/restaurants" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="level_wheelchair_address_internetaccess" />
-        <check key="drive_through" text="Drive through" ru.text="Обслуживание в машине" />
+        <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
-      <item name="Baskin-Robbins" ru.name="Баскин Роббинс" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Baskin-Robbins_logo.svg/206px-Baskin-Robbins_logo.svg.png" >
+      <item name="Baskin-Robbins" ru.name="Баскин Роббинс" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Baskin-Robbins_logo.svg/206px-Baskin-Robbins_logo.svg.png">
         <space />
-        <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" />
+        <reference ref="phone" />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 08:00-23:00,Mo-Fr 07:00-23:00; Sa-Su 10:00-23:00" />
         <key key="amenity" value="cafe" />
         <key key="brand" value="Баскин Роббинс" />
@@ -455,7 +486,7 @@
         <key key="name:en" value="Baskin-Robbins" />
         <key key="name:ru" value="Баскин Роббинс" />
         <link href="http://baskinrobbins.ru/?n=6" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="level_wheelchair_address_internetaccess" />
+        <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
       <item name="Burger King" ru.name="Бургер Кинг" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/3/3a/Burger_King_Logo.svg/145px-Burger_King_Logo.svg.png">
         <space />
@@ -476,12 +507,11 @@
         <key key="name:ru" value="Бургер Кинг" />
         <key key="takeaway" value="yes" />
         <link href="https://burgerking.ru/restaurants" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="level_wheelchair_address_internetaccess" />
-        <check key="drive_through" text="Drive through" ru.text="Обслуживание в машине" />
+        <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
-      <item name="Double B" ru.name="Даблби" type="node,closedway,multipolygon" preset_name_label="true" >
+      <item name="Double B" ru.name="Даблби" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
-        <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" />
+        <reference ref="phone" />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="Mo-Su 10:00-22:00,Mo-Su 08:00-23:00" />
         <key key="amenity" value="cafe" />
         <key key="brand" value="Даблби" />
@@ -497,11 +527,11 @@
         <key key="name:ru" value="Даблби" />
         <key key="takeaway" value="yes" />
         <link href="http://double-b.ru/#address" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="level_wheelchair_address_internetaccess" />
+        <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
       <item name="Dunkin' Donuts" ru.name="Данкин Донатс" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/c/ca/Dunkin_Donuts_Logo.svg/320px-Dunkin_Donuts_Logo.svg.png">
         <space />
-        <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" />
+        <reference ref="phone" />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="Mo-Su 10:00-22:00,Mo-Su 10:00-23:00" />
         <key key="amenity" value="cafe" />
         <key key="brand" value="Dunkin' Donuts" />
@@ -519,7 +549,7 @@
         <key key="name:ru" value="Данкин Донатс" />
         <key key="takeaway" value="yes" />
         <link href="http://dunkindonutsmoscow.ru/ru/stores" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="level_wheelchair_address_internetaccess" />
+        <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
       <item name="Domino’s Pizza" ru.name="Домино’c Пицца" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Dominos_pizza_logo.svg/240px-Dominos_pizza_logo.svg.png">
         <space />
@@ -540,11 +570,11 @@
         <key key="name:en" value="Domino’s Pizza" />
         <key key="name:ru" value="Домино’c Пицца" />
         <link href="https://dominospizza.ru/find_dominos" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="level_wheelchair_address_internetaccess" />
+        <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
       <item name="Coffee House" ru.name="Кофе Хауз" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/f/fb/Kofe_Hauz_Logo.png/248px-Kofe_Hauz_Logo.png">
         <space />
-        <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" />
+        <reference ref="phone" />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 07:00-23:00; Sa-Su 10:00-23:00" />
         <key key="amenity" value="cafe" />
         <key key="brand" value="Кофе Хауз" />
@@ -566,11 +596,11 @@
         <key key="name" value="Кофе Хауз" />
         <key key="name:ru" value="Кофе Хауз" />
         <link href="http://coffeehouse.ru/adress" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="level_wheelchair_address_internetaccess" />
+        <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
       <item name="Kroshka Kartoshka" ru.name="Крошка Картошка" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/ru/c/cc/%D0%9A%D1%80%D0%BE%D1%88%D0%BA%D0%B0-%D0%BA%D0%B0%D1%80%D1%82%D0%BE%D1%88%D0%BA%D0%B0.jpg">
         <space />
-        <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" />
+        <reference ref="phone" />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 08:00-23:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
         <key key="amenity" value="fast_food" />
         <key key="brand" value="Крошка Картошка" />
@@ -588,11 +618,11 @@
         <key key="name" value="Крошка Картошка" />
         <key key="name:ru" value="Крошка Картошка" />
         <link href="https://www.kartoshka.com/contacts" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="level_wheelchair_address_internetaccess" />
+        <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
       <item name="Kruzhka" ru.name="Кружка" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
-        <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" />
+        <reference ref="phone" />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 08:00-23:00,Mo-Fr 12:00-24:00; Sa-Su 00:00-04:00\,12:00-24:00" />
         <key key="amenity" value="pub" />
         <key key="brand" value="Кружка" />
@@ -607,11 +637,11 @@
         <key key="name" value="Кружка" />
         <key key="name:ru" value="Кружка" />
         <link href="http://kruzhka.ru/addresses/map" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="level_wheelchair_address_internetaccess" />
+        <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
       <item name="McDonald's" ru.name="Макдоналдс" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/McDonald%27s_Golden_Arches.svg/273px-McDonald%27s_Golden_Arches.svg.png">
         <space />
-        <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" default="+7 800 7074499"/>
+        <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" default="+7 800 7074499" />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 06:30-24:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
         <key key="amenity" value="fast_food" />
         <key key="brand" value="Макдоналдс" />
@@ -630,8 +660,7 @@
         <key key="name:ru" value="Макдоналдс" />
         <key key="takeaway" value="yes" />
         <link href="https://mcdonalds.ru/restaurant/map?lat=55.752609&amp;lng=37.61699" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="level_wheelchair_address_internetaccess" />
-        <check key="drive_through" text="Drive through" ru.text="Обслуживание в машине (МакАвто)" />
+        <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
       <item name="Mu-Mu" ru.name="Му-Му" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
@@ -654,11 +683,11 @@
         <key key="name" value="Му-Му" />
         <key key="name:ru" value="Му-Му" />
         <link href="https://www.cafemumu.ru/contacts" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="level_wheelchair_address_internetaccess" />
+        <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
       <item name="Papa John's" ru.name="Папа Джонс" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
-        <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" />
+        <reference ref="phone" />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 11:00-23:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
         <key key="amenity" value="cafe" />
         <key key="brand" value="Папа Джонс" />
@@ -673,7 +702,7 @@
         <key key="name:en" value="Papa John's" />
         <key key="name:ru" value="Папа Джонс" />
         <link href="https://www.papajohns.ru/adresa" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="level_wheelchair_address_internetaccess" />
+        <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
       <item name="Pizza Hut" ru.name="Пицца Хат" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/0/02/PizzaHut.svg/255px-PizzaHut.svg.png">
         <space />
@@ -694,7 +723,7 @@
         <key key="name" value="Pizza Hut" />
         <key key="name:en" value="Pizza Hut" />
         <link href="https://www.pizzahut.ru/restaurants" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="level_wheelchair_address_internetaccess" />
+        <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
       <item name="Robin Sdobin" ru.name="Робин Сдобин" type="node,closedway,multipolygon" preset_name_label="true">
         <!-- Воронежская, Московская, Смоленская, Владимирская и т.д.-->
@@ -711,13 +740,13 @@
         <key key="name" value="Робин Сдобин" />
         <key key="name:ru" value="Робин Сдобин" />
         <link href="http://sdobin.ru" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="level_wheelchair_address_internetaccess" />
+        <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
       <item name="Russian Appetite" ru.name="Русский Аппетит" type="node,closedway,multipolygon" preset_name_label="true">
         <!-- Воронежская, Курская, Белгородская, Саратовская, Тамбовская, Орловская области-->
         <space />
-        <combo key="amenity" text="Cafe or fast food" ru.text="Тип (кафе или киоск)" default="fast_food" values="fast_food,cafe" ru.display_values="киоск,кафе" />
-        <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" />
+        <combo key="amenity" text="Cafe or fast food" ru.text="Тип (кафе или киоск)" values="fast_food,cafe" ru.display_values="киоск,кафе" default="fast_food" />
+        <reference ref="phone" />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 08:00-23:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
         <key key="brand" value="Русский Аппетит" />
         <key key="contact:facebook" value="https://www.facebook.com/Русский-Аппетит-1502979646622576" />
@@ -730,11 +759,11 @@
         <key key="name" value="Русский Аппетит" />
         <key key="name:ru" value="Русский Аппетит" />
         <link href="http://xn--80a4abej.xn--p1ai/karta" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="level_wheelchair_address_internetaccess" />
+        <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
       <item name="Subway" ru.name="Сабвэй" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Subway_2016_logo.svg/320px-Subway_2016_logo.svg.png">
         <space />
-        <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" default="+7 800 5554449"/>
+        <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" default="+7 800 5554449" />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 08:00-23:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
         <key key="amenity" value="fast_food" />
         <key key="brand" value="Subway" />
@@ -749,11 +778,11 @@
         <key key="name:en" value="Subway" />
         <key key="takeaway" value="yes" />
         <link href="http://subway.ru/stores" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="level_wheelchair_address_internetaccess" />
+        <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
       <item name="Starbucks" ru.name="Старбакс" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/238px-Starbucks_Corporation_Logo_2011.svg.png">
         <space />
-        <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" default="+7 499 2704040"/>
+        <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" default="+7 499 2704040" />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 08:00-23:00,Mo-Fr 07:00-23:00; Sa-Su 10:00-23:00" />
         <key key="amenity" value="cafe" />
         <key key="brand" value="Старбакс" />
@@ -771,7 +800,7 @@
         <key key="name:ru" value="Старбакс" />
         <key key="takeaway" value="yes" />
         <link href="http://www.starbucks.ru/store-locator/search/location/Moscow%2C%20Russia" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="level_wheelchair_address_internetaccess" />
+        <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
       <item name="Stardog!s" ru.name="Стардог!s" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Stardog%21s_logo.svg/320px-Stardog%21s_logo.svg.png">
         <space />
@@ -794,7 +823,7 @@
         <key key="name:ru" value="Стардог!s" />
         <key key="takeaway" value="yes" />
         <link href="https://www.stardogs.ru/?page=address" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="level_wheelchair_address_internetaccess" />
+        <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
       <item name="Teremok" ru.name="Теремок" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/commons/9/99/Teremok_logo.png">
         <space />
@@ -816,11 +845,11 @@
         <key key="name" value="Теремок" />
         <key key="name:ru" value="Теремок" />
         <link href="http://www.teremok.ru/address" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="level_wheelchair_address_internetaccess" />
+        <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
       <item name="Shokoladnitsa" ru.name="Шоколадница" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
-        <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" default="+7 800 1003360"/>
+        <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" default="+7 800 1003360" />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 08:00-23:00,Mo-Fr 07:00-23:00; Sa-Su 10:00-23:00" />
         <key key="amenity" value="cafe" />
         <key key="brand" value="Шоколадница" />
@@ -835,11 +864,11 @@
         <key key="name" value="Шоколадница" />
         <key key="name:ru" value="Шоколадница" />
         <link href="http://shoko.ru/moskva/adresa_kofeen" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="level_wheelchair_address_internetaccess" />
+        <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
       <item name="Yakitoriya" ru.name="Якитория" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
-        <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" />
+        <reference ref="phone" />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 10:00-06:00,Mo-Su 10:00-05:00; Mo-Su 11:00-06:00" />
         <key key="amenity" value="restaurant" />
         <key key="brand" value="Якитория" />
@@ -853,11 +882,11 @@
         <key key="name" value="Якитория" />
         <key key="name:ru" value="Якитория" />
         <link href="https://www.yakitoriya.ru/addr" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="level_wheelchair_address_internetaccess" />
+        <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
     </group>
     <group name="Food shops" ru.name="Продукты" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Emoji_u1f347.svg/240px-Emoji_u1f347.svg.png">
-      <item name="Azbuka Vkusa" ru.name="Азбука Вкуса" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/b/b6/Azbuka_Vkusa.svg/256px-Azbuka_Vkusa.svg.png" >
+      <item name="Azbuka Vkusa" ru.name="Азбука Вкуса" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/b/b6/Azbuka_Vkusa.svg/256px-Azbuka_Vkusa.svg.png">
         <space />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00" />
         <key key="brand" value="Азбука Вкуса" />
@@ -897,7 +926,7 @@
         <link href="https://av.ru/shops/#msk_av-daily" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="AV Enoteca" ru.name="АВ Энотека" type="node,closedway,multipolygon" preset_name_label="true" >
+      <item name="AV Enoteca" ru.name="АВ Энотека" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00" />
         <key key="brand" value="АВ Энотека" />
@@ -917,7 +946,7 @@
         <link href="https://av.ru/shops/#msk_av-enoteca" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="AV Market" ru.name="АВ Маркет" type="node,closedway,multipolygon" preset_name_label="true" >
+      <item name="AV Market" ru.name="АВ Маркет" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <!-- TODO: когда примут shop=hypermarket нужно будет здесь поменять https://wiki.openstreetmap.org/wiki/Proposed_features/hypermarket -->
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00" />
@@ -964,8 +993,8 @@
       </item>
       <item name="ATAC" ru.name="АТАК" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/5/56/Logo_atac.png/320px-Logo_atac.png">
         <space />
-        <combo key="shop" text="Convenience or supermarket" ru.text="Тип магазина (с тележками - супермаркет)" values="supermarket,convenience" default="supermarket" />
-        <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" />
+        <reference ref="shop_type" />
+        <reference ref="phone" />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 08:00-23:00,Mo-Su 09:00-22:00" />
         <key key="brand" value="АТАК" />
         <key key="brand:wikidata" value="Q2868738" />
@@ -983,10 +1012,10 @@
       <item name="Auchan" ru.name="Ашан" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/7/78/Auchan-logo.svg/320px-Auchan-logo.svg.png">
         <space />
         <!-- TODO: когда примут shop=hypermarket нужно будет здесь поменять https://wiki.openstreetmap.org/wiki/Proposed_features/hypermarket -->
-        <combo key="name" text="Name" ru.text="Название" default="Ашан" values="Ашан,Ашан Сити" />
-        <combo key="name:ru" text="Name (:ru)" ru.text="Название (:ru)" default="Ашан" values="Ашан,Ашан Сити" />
-        <combo key="name:en" text="Name (:en)" ru.text="Название (:en)" default="Auchan" values="Auchan,Auchan City" />
-        <combo key="brand" text="Brand" ru.text="Бренд" default="Ашан" values="Ашан,Ашан Сити" />
+        <combo key="name" text="Name" ru.text="Название" values="Ашан,Ашан Сити" default="Ашан" />
+        <combo key="name:ru" text="Name (:ru)" ru.text="Название (:ru)" values="Ашан,Ашан Сити" default="Ашан" />
+        <combo key="name:en" text="Name (:en)" ru.text="Название (:en)" values="Auchan,Auchan City" default="Auchan" />
+        <combo key="brand" text="Brand" ru.text="Бренд" values="Ашан,Ашан Сити" default="Ашан" />
         <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" default="+7 800 7005800" />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 08:00-23:00,Mo-Su 09:00-22:00" />
         <key key="brand:wikidata" value="Q758603" />
@@ -1003,7 +1032,7 @@
       </item>
       <item name="Avoska" ru.name="Авоська" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
-        <combo key="shop" text="Convenience or supermarket" ru.text="Тип магазина (с тележками - супермаркет)" values="supermarket,convenience" default="supermarket" />
+        <reference ref="shop_type" />
         <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" values="+7 495 6567022;+7 495 7254154,+7 831 2716000" />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="Mo-Sa 09:00-23:00; Su 09:00-22:00" />
         <key key="brand" value="Авоська" />
@@ -1038,9 +1067,9 @@
         <link href="http://www.billa.ru/%D0%9A%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D1%8B/%D0%90%D0%B4%D1%80%D0%B5%D1%81%D0%B0_%D1%81%D1%83%D0%BF%D0%B5%D1%80%D0%BC%D0%B0%D1%80%D0%BA%D0%B5%D1%82%D0%BE%D0%B2_%D0%91%D0%98%D0%9B%D0%9B%D0%90/%D0%90%D0%B4%D1%80%D0%B5%D1%81%D0%B0_%D1%81%D1%83%D0%BF%D0%B5%D1%80%D0%BC%D0%B0%D1%80%D0%BA%D0%B5%D1%82%D0%BE%D0%B2_%D0%91%D0%98%D0%9B%D0%9B%D0%90/dd_bi_subpage.aspx" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="Verniy" ru.name="Верный" type="node,closedway,multipolygon" preset_name_label="true" >
+      <item name="Verniy" ru.name="Верный" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
-        <combo key="shop" text="Convenience or supermarket" ru.text="Тип магазина (с тележками - супермаркет)" values="supermarket,convenience" default="supermarket" />
+        <reference ref="shop_type" />
         <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" values="+7 499 7550070,+7 812 60101000,+7 343 2372246,+7 843 5247545" default="+7 499 7550070" />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 08:00-23:00,Mo-Su 09:00-22:00" />
         <key key="brand" value="Верный" />
@@ -1087,7 +1116,7 @@
       </item>
       <item name="Dixy" ru.name="Дикси" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/ru/d/de/Dixi-logo.gif">
         <space />
-        <combo key="shop" text="Convenience or supermarket" ru.text="Тип магазина (с тележками - супермаркет)" values="supermarket,convenience" default="supermarket" />
+        <reference ref="shop_type" />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00" />
         <key key="brand" value="Дикси" />
         <key key="brand:wikidata" value="Q4161561" />
@@ -1191,7 +1220,7 @@
       </item>
       <item name="Magnit" ru.name="Магнит" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/commons/b/b7/Magnit_Logo.gif">
         <space />
-        <combo key="shop" text="Convenience or supermarket" ru.text="Тип магазина (с тележками - супермаркет)" values="supermarket,convenience" default="supermarket" />
+        <reference ref="shop_type" />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Su 09:30-22:00" />
         <key key="brand" value="Магнит" />
         <key key="brand:wikidata" value="Q940518" />
@@ -1209,8 +1238,8 @@
       </item>
       <item name="Magnoliya" ru.name="Магнолия" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
-        <combo key="shop" text="Convenience or supermarket" ru.text="Тип магазина (с тележками - супермаркет)" values="supermarket,convenience" default="supermarket" />
-        <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" />
+        <reference ref="shop_type" />
+        <reference ref="phone" />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00" />
         <key key="brand" value="Магнолия" />
         <key key="contact:email" value="magnolia@tcfoods.ru" />
@@ -1222,7 +1251,7 @@
       </item>
       <item name="Monetka" ru.name="Монетка" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/ru/e/e0/%D0%9C%D0%BE%D0%BD%D0%B5%D1%82%D0%BA%D0%B0_%D0%BB%D0%BE%D0%B3%D0%BE.gif">
         <space />
-        <combo key="shop" text="Convenience or supermarket" ru.text="Тип магазина (с тележками - супермаркет)" values="supermarket,convenience" default="supermarket" />
+        <reference ref="shop_type" />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 08:00-24:00,Mo-Su 09:00-22:00,Mo-Su 09:00-23:00" />
         <key key="brand" value="Монетка" />
         <key key="brand:wikidata" value="Q4301704" />
@@ -1334,7 +1363,7 @@
       </item>
       <item name="Perekryostok Express" ru.name="Перекресток Экспресс" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
-        <combo key="shop" text="Convenience or supermarket" ru.text="Тип магазина (с тележками - супермаркет)" values="supermarket,convenience" default="supermarket" />
+        <reference ref="shop_type" />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 08:00-23:00,Mo-Sa 09:00-20:00; Su 10:00-19:00" />
         <key key="alt_name" value="Перекрёсток Экспресс" />
         <key key="brand" value="Перекресток Экспресс" />
@@ -1345,7 +1374,7 @@
       </item>
       <item name="Pyatyorochka" ru.name="Пятёрочка" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/ru/4/4d/5ka_logo.png">
         <space />
-        <combo key="shop" text="Convenience or supermarket" ru.text="Тип магазина (с тележками - супермаркет)" values="supermarket,convenience" default="supermarket" />
+        <reference ref="shop_type" />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 08:00-23:00,Mo-Sa 09:00-20:00; Su 10:00-19:00" />
         <key key="alt_name" value="Пятерочка" />
         <key key="brand" value="Пятёрочка" />
@@ -1364,7 +1393,7 @@
       </item>
       <item name="SPAR" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/ru/1/16/SPAR_logo.jpg">
         <space />
-        <combo key="shop" text="Convenience or supermarket" ru.text="Тип магазина (с тележками - супермаркет)" values="supermarket,convenience" default="supermarket" />
+        <reference ref="shop_type" />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 08:00-23:00" />
         <key key="brand" value="SPAR" />
         <key key="brand:wikidata" value="Q610492" />
@@ -1381,7 +1410,7 @@
       <item name="Sushi Wok" ru.name="Суши Wok" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" default="+7 499 7544444" />
-        <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" default="Mo-Su 10:00-23:00" values="24/7,Mo-Su 10:00-23:00,Mo-Sa 09:00-20:00; Su 10:00-19:00" />
+        <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 10:00-23:00,Mo-Sa 09:00-20:00; Su 10:00-19:00" default="Mo-Su 10:00-23:00" />
         <key key="brand" value="Суши Wok" />
         <key key="contact:facebook" value="https://www.facebook.com/sushiwokofficial" />
         <key key="contact:instagram" value="https://www.instagram.com/sushi_wok" />
@@ -1606,7 +1635,7 @@
         <key key="operator:wikidata" value="Q1377835" />
         <key key="operator:wikipedia" value="ru:Альфа-банк" />
         <link href="https://alfabank.ru/office/moscow/map/?kind=retail" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="bic_branch_ref_wheelchair_atm_address"/>
+        <reference ref="bic_branch_ref_wheelchair_atm_address" />
       </item>
       <item name="VTB Bank of Moscow" ru.name="ВТБ Банк Москвы" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/5/5b/Bank_moskvy_logo.png" preset_name_label="true">
         <space />
@@ -1627,7 +1656,7 @@
         <key key="operator:wikidata" value="Q767946" />
         <key key="operator:wikipedia" value="ru:Банк Москвы" />
         <link href="https://www.bm.ru/ru/ofisy-banka/otdelenija" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="bic_branch_ref_wheelchair_atm_address"/>
+        <reference ref="bic_branch_ref_wheelchair_atm_address" />
       </item>
       <item name="VTB24" ru.name="ВТБ24" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/c/cc/VTB24_Logo.svg/320px-VTB24_Logo.svg.png" preset_name_label="true">
         <space />
@@ -1646,7 +1675,7 @@
         <key key="operator:wikidata" value="Q4102033" />
         <key key="operator:wikipedia" value="ru:ВТБ 24" />
         <link href="https://www.vtb24.ru/pages/officesearch.aspx" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="bic_branch_ref_wheelchair_atm_address"/>
+        <reference ref="bic_branch_ref_wheelchair_atm_address" />
       </item>
       <item name="Zaim-Express" ru.name="Займ-Экспресс" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
@@ -1693,7 +1722,7 @@
       </item>
       <item name="Payment terminal MKB" ru.name="Платежный терминал &quot;МКБ&quot; (Московский кредитный банк)" type="node" icon="https://upload.wikimedia.org/wikipedia/ru/3/38/Mkb_logo.gif" preset_name_label="true">
         <space />
-        <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" values="+7 495 7774888" default="+7 800 1004888"/>
+        <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" values="+7 495 7774888" default="+7 800 1004888" />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00" />
         <text key="ref" text="Reference" ru.text="Номер терминала" />
         <key key="amenity" value="payment_terminal" />
@@ -1757,11 +1786,11 @@
         <key key="operator:wikidata" value="Q24930461" />
         <key key="operator:wikipedia" value="ru:Почта Банк" />
         <link href="https://www.pochtabank.ru/map" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="bic_branch_ref_wheelchair_atm_address"/>
+        <reference ref="bic_branch_ref_wheelchair_atm_address" />
       </item>
       <item name="Raiffeisen" ru.name="Райффайзен" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/c/cf/Reiffe_logo_rus.gif" preset_name_label="true">
         <space />
-        <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" values="+7 495 7219100" default="+7 800 7009100"/>
+        <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" values="+7 495 7219100" default="+7 800 7009100" />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 10:00-20:00; Sa 10:00-17:00" />
         <key key="amenity" value="bank" />
         <key key="bic" value="RZBMRUMM" />
@@ -1778,7 +1807,7 @@
         <key key="operator:wikidata" value="Q4389244" />
         <key key="operator:wikipedia" value="ru:Райффайзенбанк" />
         <link href="https://www.raiffeisen.ru/offices" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="bic_branch_ref_wheelchair_atm_address"/>
+        <reference ref="bic_branch_ref_wheelchair_atm_address" />
       </item>
       <item name="Rosbank" ru.name="Росбанк" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/a/a2/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D0%A0%D0%BE%D1%81%D0%B1%D0%B0%D0%BD%D0%BA.svg/310px-%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D0%A0%D0%BE%D1%81%D0%B1%D0%B0%D0%BD%D0%BA.svg.png"  preset_name_label="true">
         <space />
@@ -1796,7 +1825,7 @@
         <key key="operator:wikidata" value="Q1119857" />
         <key key="operator:wikipedia" value="ru:Росбанк" />
         <link href="https://www.rosbank.ru/ru/offices" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="bic_branch_ref_wheelchair_atm_address"/>
+        <reference ref="bic_branch_ref_wheelchair_atm_address" />
       </item>
       <item name="Sberbank" ru.name="Сбербанк" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/d/d6/Sberbank.svg/200px-Sberbank.svg.png" preset_name_label="true">
         <space />
@@ -1817,7 +1846,7 @@
         <key key="operator:wikidata" value="Q205012" />
         <key key="operator:wikipedia" value="ru:Сбербанк России" />
         <link href="https://www.sberbank.ru/ru/about/today/oib" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="bic_branch_ref_wheelchair_atm_address"/>
+        <reference ref="bic_branch_ref_wheelchair_atm_address" />
       </item>
       <item name="InfoPayment terminal Mosinfo" ru.name="Справочно-платежный терминал &quot;Мосинфо&quot;" type="node" preset_name_label="true">
         <space />
@@ -1837,7 +1866,7 @@
     <group name="Etc" ru.name="Прочие магазины/салоны" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Twemoji_1f45c.svg/240px-Twemoji_1f45c.svg.png">
       <item name="Pandora" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
-        <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" values="+7 495 2878838-xxx" default="+7 800 7008338"/>
+        <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" values="+7 495 2878838-xxx" default="+7 800 7008338" />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-22:00" />
         <key key="brand" value="Pandora" />
         <key key="contact:email" value="info@pandora-rus.ru" />
@@ -1889,7 +1918,7 @@
         <link href="https://www.adamas.ru/buy/moscow" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="Eyekraft" ru.name="Айкрафт" type="node,closedway,multipolygon" preset_name_label="true" >
+      <item name="Eyekraft" ru.name="Айкрафт" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" valuse="+7 800 7755554,+7 495 7755554" default="+7 800 7755554" />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="Mo-Su 10:00-21:00,Mo-Su 10:00-21:00,Mo-Su 09:00-22:00" />
@@ -1944,7 +1973,7 @@
         <link href="http://www.dryclean.ru/priemnye_punkty" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
-      <item name="DNS" ru.name="ДНС" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/5/51/DNS_logo.png/320px-DNS_logo.png" >
+      <item name="DNS" ru.name="ДНС" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/5/51/DNS_logo.png/320px-DNS_logo.png">
         <space />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 10:00-21:00,Mo-Su 09:00-22:00" />
         <!-- <key key="alt_name" value="Digital Network System" /> NB: нигде в быту не используется -->
@@ -1983,7 +2012,7 @@
       </item>
       <item name="Korablik" ru.name="Кораблик" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
-        <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" values="+7 495 6630343" default="+7 800 7750343"/>
+        <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" values="+7 495 6630343" default="+7 800 7750343" />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 08:00-23:00" />
         <key key="brand" value="Кораблик" />
         <key key="contact:email" value="shop@korablik.ru" />
@@ -2124,7 +2153,7 @@
       </item>
       <item name="Persona" ru.name="Персона" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
-        <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" />
+        <reference ref="phone" />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 08:00-22:00; Sa-Su 09:00-21:00" />
         <key key="brand" value="Персона" />
         <!-- <key key="contact:facebook" value="https://www.facebook.com/ipersona" />
@@ -2158,7 +2187,6 @@
       </item>
       <item name="Smeshnie Tseni" ru.name="Смешные цены" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
-        <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" />
         <key key="brand" value="Смешные цены" />
         <!-- <key key="contact:website" value="http://smeshnyeceny.ru" /> NB: старый сайт, но всё ещё рабочий -->
         <key key="contact:website" value="http://smeshnie-ceny.ru" />
@@ -2166,7 +2194,7 @@
         <key key="name:ru" value="Смешные цены" />
         <key key="shop" value="clothes" />
         <link href="http://smeshnie-ceny.ru/adresa-magazinov-v-moskve.shtml" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="level_wheelchair_address" />
+        <reference ref="oh1_level_wheelchair_address" />
       </item>
       <item name="Sportmaster" ru.name="Спортмастер" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Sportmaster_logo_icon_2017.png/240px-Sportmaster_logo_icon_2017.png">
         <space />
@@ -2282,7 +2310,7 @@
         <space />
         <combo key="name" text="Name" ru.text="Название" default="N-ский военкомат" />
         <combo key="official_name" text="Official name" ru.text="Полное официальное название" default="N-ский военный комиссариат N-ской области" />
-        <reference ref="phone_oh_wheelchair_address" />
+        <reference ref="phone_oh2_wheelchair_address" />
         <key key="contact:facebook" value="https://www.facebook.com/mod.mil.rus" />
         <key key="contact:instagram" value="https://www.instagram.com/mil_ru" />
         <key key="contact:ok" value="https://ok.ru/mil" />
@@ -2298,8 +2326,8 @@
         <space />
         <combo key="name" text="Name" ru.text="Название" default="N-ское управление ЗАГС" />
         <combo key="official_name" text="Official name" ru.text="Полное официальное название" default="N-ское управление ЗАГС N-ской области" />
-        <combo key="contact:website" text="Website" ru.text="Сайт" />
-        <reference ref="phone_oh_wheelchair_address" />
+        <reference ref="website" />
+        <reference ref="phone_oh2_wheelchair_address" />
         <key key="government" value="register_office" />
         <key key="office" value="government" />
         <key key="operator:wikidata" value="Q254213" />
@@ -2309,7 +2337,7 @@
         <space />
         <combo key="name" text="Name" ru.text="Название" default="Отдел № ... Управления Федерального казначейства" />
         <combo key="official_name" text="Official name" ru.text="Полное официальное название" default="Отдел № ... Управления Федерального казначейства по ... ской области" />
-        <reference ref="phone_oh_wheelchair_address" />
+        <reference ref="phone_oh2_wheelchair_address" />
         <key key="contact:facebook" value="https://www.facebook.com/FederalTreasury" />
         <key key="contact:livejournal" value="http://roskazna.livejournal.com" />
         <key key="contact:twitter" value="https://twitter.com/FederalTreasury" />
@@ -2323,7 +2351,7 @@
         <space />
         <combo key="name" text="Name" ru.text="Название" default="ФНС России по г. ... ской области" />
         <combo key="official_name" text="Official name" ru.text="Полное официальное название" default="Инспекция Федеральной налоговой службы России по г. ... ской области" />
-        <reference ref="phone_oh_wheelchair_address" />
+        <reference ref="phone_oh2_wheelchair_address" />
         <key key="contact:facebook" value="https://www.facebook.com/nalog.ru" />
         <key key="contact:twitter" value="https://twitter.com/nalog__ru" />
         <key key="contact:vk" value="https://vk.com/nalog__ru" />
@@ -2337,7 +2365,7 @@
         <space />
         <combo key="name" text="Name" ru.text="Название" default="Главное управление ПФР №  по г. Москве и Московской области,Управление № " />
         <combo key="official_name" text="Official name" ru.text="Полное официальное название" default="Главное управление Пенсионного фонда России №  по г. Москве и Московской области,Управление №" />
-        <reference ref="phone_oh_wheelchair_address" />
+        <reference ref="phone_oh2_wheelchair_address" />
         <key key="contact:facebook" value="https://www.facebook.com/PensionFondRF" />
         <key key="contact:livejournal" value="http://pensionnij-fond.livejournal.com" />
         <key key="contact:ok" value="https://ok.ru/pensionfond" />
@@ -2375,7 +2403,7 @@
         <space />
         <combo key="name" text="Name" ru.text="Название" default="Прокуратура n-ского района/области" />
         <combo key="contact:website" text="Website" ru.text="Сайт" default="https://www.genproc.gov.ru" />
-        <reference ref="phone_oh_wheelchair_address" />
+        <reference ref="phone_oh2_wheelchair_address" />
         <key key="contact:facebook" value="https://www.facebook.com/genprocrf" />
         <key key="contact:instagram" value="https://www.instagram.com/genprocrf" />
         <key key="contact:ok" value="https://ok.ru/genprocrf" />
@@ -2392,7 +2420,7 @@
         <space />
         <combo key="name" text="Name" ru.text="Название" default="Следственный комитет n-ского района/области" />
         <combo key="contact:website" text="Website" ru.text="Сайт" default="https://sledcom.ru" />
-        <reference ref="phone_oh_wheelchair_address" />
+        <reference ref="phone_oh2_wheelchair_address" />
         <key key="contact:facebook" value="https://ru-ru.facebook.com/sledcomru" />
         <key key="contact:instagram" value="https://www.instagram.com/sledcom_rf" />
         <key key="contact:twitter" value="https://twitter.com/sledcom_rf" />
@@ -2407,7 +2435,7 @@
         <space />
         <combo key="name" text="Name" ru.text="Название" default="Отдел государственной статистики в N-ском районе" />
         <combo key="contact:website" text="Website" ru.text="Сайт" default="http://www.gks.ru" />
-        <reference ref="phone_oh_wheelchair_address" />
+        <reference ref="phone_oh2_wheelchair_address" />
         <key key="contact:facebook" value="https://www.facebook.com/rosstatistika" />
         <key key="contact:livejournal" value="http://rosstatistika.livejournal.com" />
         <key key="contact:twitter" value="https://twitter.com/rosstatistika" />
@@ -2421,22 +2449,22 @@
         <space />
         <combo key="name" text="Name" ru.text="Название" default="Отдел социальной защиты населения N-ского района" />
         <combo key="contact:website" text="Website" ru.text="Сайт" default="http://www.dszn.ru" />
-        <reference ref="phone_oh_wheelchair_address" />
+        <reference ref="phone_oh2_wheelchair_address" />
         <key key="government" value="social_services" />
         <key key="office" value="government" />
       </item>
       <item name="Управление образования" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="name" text="Name" ru.text="Название" default="Управление образования N-ского района" />
-        <combo key="contact:website" text="Website" ru.text="Сайт" />
-        <reference ref="phone_oh_wheelchair_address" />
+        <reference ref="website" />
+        <reference ref="phone_oh2_wheelchair_address" />
         <key key="government" value="education" />
         <key key="office" value="government" />
       </item>
       <item name="Управление/отдел по вопросам миграции МВД" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="name" text="Name" ru.text="Название" default="Отдел по вопросам миграции ГУ МВД России по г. n / n-скому району" />
-        <reference ref="phone_oh_wheelchair_address" />
+        <reference ref="phone_oh2_wheelchair_address" />
         <key key="contact:website" value="https://guvm.mvd.ru" />
         <key key="government" value="migration" />
         <key key="office" value="government" />
@@ -2447,16 +2475,16 @@
         <space />
         <combo key="name" text="Name" ru.text="Название" default="Центр гигиены и эпидемиологии по N-скому району" />
         <combo key="official_name" text="Official name" ru.text="Полное официальное название" default="Федеральное бюджетное учреждение здравоохранения &quot;Центр гигиены и эпидемиологии по N-скому району&quot;" />
-        <combo key="contact:website" text="Website" ru.text="Сайт" />
-        <reference ref="phone_oh_wheelchair_address" />
+        <reference ref="website" />
+        <reference ref="phone_oh2_wheelchair_address" />
         <key key="government" value="healthcare" />
         <key key="office" value="government" />
       </item>
       <item name="Центр госуслуг (МФЦ, &quot;Мои документы&quot;)" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
-        <combo key="name" text="Name" ru.text="Название" default="Многофункциональный центр предоставления государственных и муниципальных услуг [города N]" values="Многофункциональный центр предоставления государственных и муниципальных услуг [города N], Многофункциональный центр предоставления государственных услуг [города N]" />
+        <combo key="name" text="Name" ru.text="Название" values="Многофункциональный центр предоставления государственных и муниципальных услуг [города N], Многофункциональный центр предоставления государственных услуг [города N]" default="Многофункциональный центр предоставления государственных и муниципальных услуг [города N]" />
         <combo key="contact:website" text="Website" ru.text="Сайт" values="https://md.mos.ru" />
-        <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона"/>
+        <reference ref="phone" />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-13:00\,13:45-17:00; Fr 09:00-13:00\,13:45-15:45" />
         <key key="amenity" value="public_service" />
         <key key="brand" value="Мои документы" />
@@ -2465,15 +2493,16 @@
         <key key="operator:wikidata" value="Q1021033" />
         <key key="operator:wikipedia" value="ru:Многофункциональный центр" />
         <key key="short_name" value="МФЦ" />
-        <reference ref="level_wheelchair_address_internetaccess" />
-        <!-- TODO: переделать на oh_... + internet_access -->
+        <reference ref="level_wheelchair_address" />
+        <space />
+        <reference ref="wifi" />
       </item>
       <item name="Центр занятости (фонд занятости, биржа труда)" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="name" text="Name" ru.text="Название" default="Центр занятости населения" />
         <combo key="official_name" text="Official name" ru.text="Полное официальное название" default="Государственное казенное учреждение &quot;...ский центр занятости населения&quot;" />
-        <combo key="contact:website" text="Website" ru.text="Сайт" />
-        <reference ref="phone_oh_wheelchair_address" />
+        <reference ref="website" />
+        <reference ref="phone_oh2_wheelchair_address" />
         <key key="government" value="recruitment" />
         <key key="office" value="government" />
         <key key="operator:wikidata" value="Q1690950" />
@@ -2483,8 +2512,8 @@
         <space />
         <combo key="name" text="Name" ru.text="Название" default="Территориальный центр социального обслуживания &quot;...&quot;" />
         <combo key="official_name" text="Official name" ru.text="Полное официальное название" default="Государственное бюджетное учреждение Территориальный центр социального обслуживания &quot;...&quot;" />
-        <combo key="contact:website" text="Website" ru.text="Сайт" />
-        <reference ref="phone_oh_wheelchair_address" />
+        <reference ref="website" />
+        <reference ref="phone_oh2_wheelchair_address" />
         <key key="amenity" value="social_facility" />
         <key key="social_facility" value="outreach" />
         <key key="social_facility:for" value="disabled;senior" />
@@ -2680,7 +2709,7 @@
         <key key="healthcare" value="clinic" />
         <key key="medical_system:western" value="yes" />
         <key key="provided_for:female" value="yes" />
-        <reference ref="name_website_phone_oh_level_wheelchair_address"/>
+        <reference ref="name_website_phone_oh1_level_wheelchair_address" />
         <reference ref="health20_specialities" />
       </item>
       <item name="Doctors" ru.name="Кабинет врача, медцентр, амбулатория, ФАП (&lt;10 врачей)" type="node,closedway,multipolygon" preset_name_label="true">
@@ -2688,7 +2717,7 @@
         <key key="amenity" value="doctors" />
         <key key="health_facility:type" value="office" />
         <key key="healthcare" value="doctor" />
-        <reference ref="name_website_phone_oh_level_wheelchair_address"/>
+        <reference ref="name_website_phone_oh1_level_wheelchair_address" />
         <reference ref="medical_system" />
         <reference ref="health20_provided_for" />
         <space />
@@ -2703,7 +2732,7 @@
         <key key="health_specialty:microbiology" value="yes" />
         <key key="healthcare" value="doctor" />
         <key key="medical_system:western" value="yes" />
-        <reference ref="name_website_phone_oh_level_wheelchair_address"/>
+        <reference ref="name_website_phone_oh1_level_wheelchair_address" />
         <reference ref="health20_specialities" />
       </item>
       <item name="Clinic" ru.name="Поликлиника, клиника, медцентр, диспансер (&gt;10 врачей)" type="node,closedway,multipolygon" preset_name_label="true">
@@ -2711,7 +2740,7 @@
         <key key="amenity" value="clinic" />
         <key key="health_facility:type" value="clinic" />
         <key key="healthcare" value="clinic" />
-        <reference ref="name_website_phone_oh_level_wheelchair_address"/>
+        <reference ref="name_website_phone_oh1_level_wheelchair_address" />
         <reference ref="medical_system" />
         <reference ref="health20_provided_for" />
         <space />
@@ -2725,7 +2754,7 @@
         <key key="health_facility:type" value="rehabilitation" />
         <key key="healthcare" value="rehabilitation" />
         <key key="medical_system:western" value="yes" />
-        <reference ref="name_website_phone_oh_level_wheelchair_address"/>
+        <reference ref="name_website_phone_oh1_level_wheelchair_address" />
         <space />
         <label text="If amenity has a specialization (for example, addiction medicine)" ru.text="Если реабилитационный центр специализированный (например, наркологический)," />
         <label text="then add health_specialty:addiction_medicine=main tag." ru.text="укажите специализацию (для наркологии health_specialty:addiction_medicine=main)" />
@@ -2739,7 +2768,7 @@
         <key key="healthcare" value="hospital" />
         <key key="medical_system:western" value="yes" />
         <key key="provided_for:female" value="yes" />
-        <reference ref="name_website_phone_level_wheelchair_address"/>
+        <reference ref="name_website_phone_level_wheelchair_address" />
         <reference ref="health20_specialities" />
       </item>
       <item name="Sanatorium" ru.name="Санаторий (с лечебной специализацией)" type="node,closedway,multipolygon" preset_name_label="true">
@@ -2749,7 +2778,7 @@
         <key key="leisure" value="resort" />
         <key key="medical_system:western" value="yes" />
         <key key="resort" value="sanatorium" />
-        <reference ref="name_website_phone_level_wheelchair_address"/>
+        <reference ref="name_website_phone_level_wheelchair_address" />
         <reference ref="health20_provided_for" />
         <space />
         <label text="If leisure has a specialization (for example, cardiology)" ru.text="Если санаторий специализированный (например, кардиологический)," />
@@ -2763,7 +2792,7 @@
         <key key="health_specialty:emergency_medicine" value="yes" />
         <key key="healthcare" value="yes" />
         <key key="medical_system:western" value="yes" />
-        <reference ref="name_website_phone_level_wheelchair_address"/>
+        <reference ref="name_website_phone_level_wheelchair_address" />
         <reference ref="health20_specialities" />
       </item>
       <item name="Hospital" ru.name="Стационар (больница, госпиталь)" type="node,closedway,multipolygon" preset_name_label="true">
@@ -2772,7 +2801,7 @@
         <key key="health_facility:type" value="hospital" />
         <key key="healthcare" value="hospital" />
         <key key="medical_system:western" value="yes" />
-        <reference ref="name_website_phone_level_wheelchair_address"/>
+        <reference ref="name_website_phone_level_wheelchair_address" />
         <reference ref="health20_provided_for" />
         <space />
         <label text="If leisure has a specialization (for example, ophthalmology)" ru.text="Если больница специализированная (например, глазная)," />
@@ -2787,7 +2816,7 @@
         <key key="health_specialty:dentistry" value="yes" />
         <key key="healthcare" value="dentist" />
         <key key="medical_system:western" value="yes" />
-        <reference ref="name_website_phone_oh_level_wheelchair_address"/>
+        <reference ref="name_website_phone_oh1_level_wheelchair_address" />
         <reference ref="health20_provided_for" />
         <reference ref="health20_specialities" />
       </item>
@@ -2798,7 +2827,7 @@
         <key key="health_specialty:traumatology" value="yes" />
         <key key="healthcare" value="doctor" />
         <key key="medical_system:western" value="yes" />
-        <reference ref="name_website_phone_oh_level_wheelchair_address"/>
+        <reference ref="name_website_phone_oh1_level_wheelchair_address" />
         <reference ref="health20_provided_for" />
         <reference ref="health20_specialities" />
       </item>
@@ -2809,14 +2838,14 @@
         <key key="health_specialty:palliative_medicine" value="yes" />
         <key key="healthcare" value="hospital" />
         <key key="medical_system:western" value="yes" />
-        <reference ref="name_website_phone_level_wheelchair_address"/>
+        <reference ref="name_website_phone_level_wheelchair_address" />
         <reference ref="health20_provided_for" />
       </item>
     </group>
     <group name="Education facilities" ru.name="Образовательные учреждения" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Fxemoji_u1F393.svg/240px-Fxemoji_u1F393.svg.png">
       <item name="Driving school" ru.name="Автошкола" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
-        <reference ref="name_ownership_website_phone_oh_wheelchair_address" />
+        <reference ref="name_ownership_website_phone_oh1_wheelchair_address" />
         <combo key="license_classes" text="License Classes" ru.text="Категории" values="A;A1;B;BE;C,A;A1;B;B1;C;C1;D;D1;BE;CE;C1E;DE;D1E" />
         <key key="amenity" value="driving_school" />
         <key key="education" value="courses" />
@@ -2860,7 +2889,7 @@
         <key key="education" value="courses" />
         <key key="education_form:parttime" value="yes" />
         <key key="education_profile:languages" value="yes" />
-        <reference ref="name_ownership_website_phone_oh_wheelchair_address" />
+        <reference ref="name_ownership_website_phone_oh1_wheelchair_address" />
         <space />
         <label text="Languages" ru.text="Языки:" />
         <reference ref="education_programme" />
@@ -2897,7 +2926,7 @@
         <reference ref="name_ownership_website_phone_wheelchair_address" />
         <space />
         <label text="Education profile" ru.text="Школы с углублённым изучением:" />
-        <checkgroup columns="3" >
+        <checkgroup columns="3">
           <check key="education_profile:biology" text="biology" ru.text="биологии" disable_off="true" />
           <check key="education_profile:chemistry" text="chemistry" ru.text="химии" disable_off="true" />
           <check key="education_profile:languages" text="languages" ru.text="языков" disable_off="true" />
@@ -2910,7 +2939,6 @@
       </item>
       <item name="Sport school" ru.name="Спортивная школа (ДЮСШ, ДЮСШОР)" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
-        <combo key="sport" text="Sport" ru.text="Вид спорта" values="multi,archery,athletics,american_football,australian_football,baseball,basketball,beachvolleyball,billiards,boules,bowls,canadian_football,canoe,climbing,cricket,croquet,cycling,dog_racing,equestrian,field_hockey,gaelic_games,golf,gymnastics,handball,horse_racing,ice_hockey,karting,model_aerodrome,motocross,motor,pelota,racquet,rc_car,rugby_league,rugby_union,running,safety_training,shooting,skateboard,ice_skating,roller_skating,soccer,swimming,table_tennis,tennis,volleyball,9pin,10pin" values_context="sport" />
         <key key="amenity" value="training" />
         <key key="education" value="facultative_school" />
         <key key="education_form:parttime" value="yes" />
@@ -2918,6 +2946,7 @@
         <key key="education_profile:sport" value="yes" />
         <key key="education_system:ru_standard" value="yes" />
         <key key="training" value="sport" />
+        <reference ref="sports_list" />
         <reference ref="name_ownership_website_phone_wheelchair_address" />
       </item>
       <item name="Art school" ru.name="Художественная школа (школа искусств)" type="node,closedway,multipolygon" preset_name_label="true">
@@ -2936,7 +2965,7 @@
     <group name="Urban units" ru.name="Городская инфраструктура" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Fxemoji_u1F3E2.svg/240px-Fxemoji_u1F3E2.svg.png">
       <item name="Mobile phone antenna (roof)" ru.name="Антенна сотовой связи (на крышах домов)" type="node" preset_name_label="true">
         <space />
-        <combo key="operator" text="Operator" ru.text="Оператор" />
+        <reference ref="operator" />
         <key key="communication:mobile_phone" value="yes" />
         <link href="https://wiki.openstreetmap.org/wiki/Proposed_features/Telecommunications_tower" text="Proposed features/Telecommunications tower" />
       </item>
@@ -2945,8 +2974,8 @@
         <label text="Typically situated in the rural area. Is taller than masts." ru.text="Распространены в сельской местности. Выше мачт." />
         <label text="Are the buildings. In addition to ladders, they have platforms." ru.text="Являются строениями. Помимо лестниц оснащены платформами." />
         <space />
-        <combo key="operator" text="Operator" ru.text="Оператор" />
-        <combo key="height" text="Height" ru.text="Высота (в метрах)" />
+        <reference ref="operator" />
+        <reference ref="height" />
         <key key="communication:mobile_phone" value="yes" />
         <key key="man_made" value="tower" />
         <key key="tower:type" value="communication" />
@@ -2958,7 +2987,7 @@
       <item name="Bicycle parking stands" ru.name="Велопарковка (стойки)" type="node,closedway,multipolygon" preset_name_label="true">
         <!-- NB: всё то же самое прекрасно делается через пункт дефолтного пресета -->
         <space />
-        <combo key="capacity" text="Capacity" ru.text="Вместимость (1 стойка = 2 велика)" />
+        <text key="capacity" text="Capacity" ru.text="Вместимость (1 стойка = 2 велика)" length="3" />
         <key key="amenity" value="bicycle_parking" />
         <key key="bicycle_parking" value="stands" />
         <key key="covered" value="no" />
@@ -2968,8 +2997,8 @@
       </item>
       <item name="Subway ventilation kiosk" ru.name="Вентиляционная шахта (киоск) метрополитена" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
-        <text key="name" text="Name" ru.text="Название" />
-        <text key="ref" text="Reference" ru.text="Номер" />
+        <reference ref="name" />
+        <reference ref="ref" />
         <key key="building" value="service" />
         <key key="building:levels" value="1" />
         <key key="railway" value="ventilation_shaft" />
@@ -2989,8 +3018,8 @@
         <!-- NB: добавить тэги здания и этажности? -->
         <!-- нет, потому что часто это не здание -->
         <space />
-        <combo key="operator" text="Operator" ru.text="Оператор" />
-        <text key="ref" text="Reference" ru.text="Номер" />
+        <reference ref="operator" />
+        <reference ref="ref" />
         <key key="pipeline" value="substation" />
         <key key="substance" value="gas" />
         <key key="substation" value="distribution" />
@@ -3048,8 +3077,8 @@
         <!-- NB: добавить тэги здания и этажности? -->
         <!-- нет, потому что часто это не здание -->
         <space />
-        <combo key="operator" text="Operator" ru.text="Оператор" />
-        <text key="ref" text="Reference" ru.text="Номер" />
+        <reference ref="operator" />
+        <reference ref="ref" />
         <key key="man_made" value="pumping_station" />
         <key key="pumping_station" value="sewage" />
         <preset_link preset_name="Address" />
@@ -3081,14 +3110,14 @@
       </item>
       <item name="Boat rental" ru.name="Лодочная станция (прокат плавсредств)" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Twemoji_26f5.svg/240px-Twemoji_26f5.svg.png" preset_name_label="true">
         <space />
-        <text key="name" text="Name" ru.text="Название" />
-        <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 09:00-22:00,Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
+        <reference ref="name" />
+        <reference ref="oh1" />
         <text key="capacity" text="Capacity" ru.text="Количество плавсредств" length="4" />
-        <text key="operator" text="Operator" ru.text="Оператор" />
+        <reference ref="operator" />
         <key key="amenity" value="boat_rental" />
         <space />
         <label text="Boat types" ru.text="Виды плавсредств" />
-        <checkgroup columns="2" >
+        <checkgroup columns="2">
           <check key="canoe_rental" text="canoes" ru.text="каноэ" />
           <check key="dinghy_rental" text="rowing boats" ru.text="шлюпка (вёсла, моторчик и т.д.)" />
           <check key="houseboat_rental" text="houseboat" ru.text="домик на воде" />
@@ -3107,8 +3136,8 @@
         <label text="Typically situated in the urban area. Is relatively short." ru.text="Распространены в городах. Сравнительно невысокие." />
         <label text="Is not a building. Has only ladders, but not platforms." ru.text="Оснащены лишь лестницей, по которой можно взобраться для обслуживания." />
         <space />
-        <combo key="operator" text="Operator" ru.text="Оператор" />
-        <combo key="height" text="Height" ru.text="Высота (в метрах)" />
+        <reference ref="operator" />
+        <reference ref="height" />
         <key key="communication:mobile_phone" value="yes" />
         <key key="man_made" value="mast" />
         <key key="mast:type" value="communication" />
@@ -3225,8 +3254,8 @@
       </item>
       <item name="Local heat substation" ru.name="Центральный/индивидуальный тепловой пункт" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Emojione_1F3ED.svg/64px-Emojione_1F3ED.svg.png" preset_name_label="true">
         <space />
-        <combo key="operator" text="Operator" ru.text="Оператор" />
-        <text key="ref" text="Reference" ru.text="Номер" />
+        <reference ref="operator" />
+        <reference ref="ref" />
         <key key="building" value="service" />
         <key key="building:levels" value="1" />
         <key key="location" value="indoor" />
@@ -3238,9 +3267,9 @@
       </item>
       <item name="Local power substation" ru.name="Электроподстанция (локальная)" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Emoji_u26a1.svg/240px-Emoji_u26a1.svg.png" preset_name_label="true">
         <space />
-        <combo key="location" text="Location" ru.text="Расположение (будка, в здании)" values="indoor,kiosk" ru.display_values="в здании,будка"/>
-        <combo key="operator" text="Operator" ru.text="Оператор" />
-        <text key="ref" text="Reference" ru.text="Номер" />
+        <combo key="location" text="Location" ru.text="Расположение (будка, в здании)" values="indoor,kiosk" ru.display_values="в здании,будка" />
+        <reference ref="operator" />
+        <reference ref="ref" />
         <key key="building" value="service" />
         <key key="building:levels" value="1" />
         <key key="power" value="substation" />
