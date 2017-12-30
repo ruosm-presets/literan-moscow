@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2.0_2017-12-23_1"
+  version="2.0_2017-12-30_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   shortdescription="Russian POIs"
   ru.shortdescription="Российские POI"
@@ -1896,6 +1896,23 @@
         <key key="shop" value="ticket" />
         <key key="tickets:theatre" value="yes" />
         <link href="https://www.ticketland.ru/kassa" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <reference ref="wheelchair_address" />
+      </item>
+      <item name="TOPGUN" type="node,closedway,multipolygon" preset_name_label="true">
+        <space />
+        <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" default="+7 800 2004420" />
+        <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" default="Mo-Su 10:00-22:00" />
+        <combo key="contact:facebook" text="facebook" default="https://www.facebook.com/topgunbarbershopmoscow" />
+        <combo key="contact:instagram" text="instagram" default="https://www.instagram.com/topgun_barbershop" />
+        <combo key="contact:vk" text="vk" default="https://vk.com/topgunmoscow" />
+        <key key="brand" value="TOPGUN" />
+        <key key="contact:website" value="http://topgunbarbershop.ru" />
+        <key key="contact:youtube" value="https://www.youtube.com/user/lokoncev" />
+        <key key="male" value="yes" />
+        <key key="name" value="TOPGUN" />
+        <key key="name:en" value="TOPGUN" />
+        <key key="shop" value="hairdresser" />
+        <link href="http://topgunbarbershop.ru/barbershop" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
       <item name="Adamas" ru.name="Адамас" type="node,closedway,multipolygon" preset_name_label="true">
