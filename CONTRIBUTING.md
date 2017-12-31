@@ -63,6 +63,7 @@
 1. `text`/`name`
 1. `ru.text`/`ru.name`
 1. `values`/`value`
+1. `ru.display_values`
 1. `default`
 1. `type`
 1. `preset_name_label`
