@@ -1,5 +1,5 @@
 # literan-moscow
-Заготовка для JOSM с магазинами, кафе, медицинскими, образовательными и государственными учреждениями от [literan](https://goo.gl/TJzpyT)
+Заготовка для JOSM с магазинами, кафе, медицинскими, образовательными и государственными учреждениями от [literan](https://goo.gl/TJzpyT).
 
 ![That's how menu looks like](/pics/screenshot-menu.png "Воспользуйся мной! Установи!")
 
