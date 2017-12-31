@@ -1,7 +1,7 @@
 # literan-moscow
 Заготовка для JOSM с магазинами, кафе, медицинскими, образовательными и государственными учреждениями от [literan](https://goo.gl/TJzpyT).
 
-![That's how menu looks like](/pics/screenshot-menu.png "Воспользуйся мной! Установи!")
+![That's how menu looks like](/pics/screenshot-menu.png "Установи меня! Используй!")
 
 ## Установка
 Пресет можно добавить из списка `Доступные заготовки`. Альтернативно можно указать путь до файла:
