@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2.0_2017-12-30_1"
+  version="2.0_2017-12-31_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   shortdescription="Russian POIs"
   ru.shortdescription="Российские POI"
@@ -470,6 +470,46 @@
         <link href="https://www.kfc.ru/restaurants" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
+      <item name="Pizza Hut" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/0/02/PizzaHut.svg/255px-PizzaHut.svg.png">
+        <space />
+        <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="Mo-Su 10:00-23:00,Mo-Su 10:00-22:00,Mo-Su 11:00-23:00,Mo-Su 09:00-23:00" default="Mo-Su 10:00-23:00" />
+        <key key="amenity" value="fast_food" />
+        <key key="brand" value="Pizza Hut" />
+        <key key="brand:wikidata" value="Q191615" />
+        <key key="brand:wikipedia" value="ru:Пицца Хат" />
+        <key key="contact:email" value="info@pizzahut.ru" />
+        <key key="contact:facebook" value="https://www.facebook.com/PizzaHutRussia" />
+        <key key="contact:instagram" value="https://www.instagram.com/pizzahutrussia" />
+        <key key="contact:phone" value="+7 800 1001958" />
+        <key key="contact:vk" value="https://vk.com/pizzahutrussia" />
+        <key key="contact:website" value="https://www.pizzahut.ru" />
+        <key key="cuisine" value="pizza" />
+        <key key="delivery" value="yes" />
+        <key key="diet:vegetarian" value="no" />
+        <key key="name" value="Pizza Hut" />
+        <key key="name:en" value="Pizza Hut" />
+        <link href="https://www.pizzahut.ru/restaurants" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
+      </item>
+      <item name="Subway" ru.name="Subway" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Subway_2016_logo.svg/320px-Subway_2016_logo.svg.png"> <!-- ru.name нужен из-за i18n, иначе в меню подставится перевод "метрополитен" -->
+        <space />
+        <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" default="+7 800 5554449" />
+        <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 08:00-23:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
+        <key key="amenity" value="fast_food" />
+        <key key="brand" value="Subway" />
+        <key key="brand:wikidata" value="Q244457" />
+        <key key="brand:wikipedia" value="ru:Subway (сеть ресторанов)" />
+        <key key="contact:email" value="subway@subway.ru" />
+        <key key="contact:vk" value="https://vk.com/subwayrussia" />
+        <key key="contact:website" value="http://subway.ru" />
+        <key key="cuisine" value="sandwich" />
+        <key key="diet:vegetarian" value="no" />
+        <key key="name" value="Subway" />
+        <key key="name:en" value="Subway" />
+        <key key="takeaway" value="yes" />
+        <link href="http://subway.ru/stores" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
+      </item>
       <item name="Baskin-Robbins" ru.name="Баскин Роббинс" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Baskin-Robbins_logo.svg/206px-Baskin-Robbins_logo.svg.png">
         <space />
         <reference ref="phone" />
@@ -704,27 +744,6 @@
         <link href="https://www.papajohns.ru/adresa" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
-      <item name="Pizza Hut" ru.name="Пицца Хат" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/0/02/PizzaHut.svg/255px-PizzaHut.svg.png">
-        <space />
-        <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="Mo-Su 10:00-23:00,Mo-Su 10:00-22:00,Mo-Su 11:00-23:00,Mo-Su 09:00-23:00" default="Mo-Su 10:00-23:00" />
-        <key key="amenity" value="fast_food" />
-        <key key="brand" value="Pizza Hut" />
-        <key key="brand:wikidata" value="Q191615" />
-        <key key="brand:wikipedia" value="ru:Пицца Хат" />
-        <key key="contact:email" value="info@pizzahut.ru" />
-        <key key="contact:facebook" value="https://www.facebook.com/PizzaHutRussia" />
-        <key key="contact:instagram" value="https://www.instagram.com/pizzahutrussia" />
-        <key key="contact:phone" value="+7 800 1001958" />
-        <key key="contact:vk" value="https://vk.com/pizzahutrussia" />
-        <key key="contact:website" value="https://www.pizzahut.ru" />
-        <key key="cuisine" value="pizza" />
-        <key key="delivery" value="yes" />
-        <key key="diet:vegetarian" value="no" />
-        <key key="name" value="Pizza Hut" />
-        <key key="name:en" value="Pizza Hut" />
-        <link href="https://www.pizzahut.ru/restaurants" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
-      </item>
       <item name="Robin Sdobin" ru.name="Робин Сдобин" type="node,closedway,multipolygon" preset_name_label="true">
         <!-- Воронежская, Московская, Смоленская, Владимирская и т.д.-->
         <space />
@@ -759,25 +778,6 @@
         <key key="name" value="Русский Аппетит" />
         <key key="name:ru" value="Русский Аппетит" />
         <link href="http://xn--80a4abej.xn--p1ai/karta" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
-      </item>
-      <item name="Subway" ru.name="Сабвэй" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Subway_2016_logo.svg/320px-Subway_2016_logo.svg.png">
-        <space />
-        <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" default="+7 800 5554449" />
-        <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 08:00-23:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
-        <key key="amenity" value="fast_food" />
-        <key key="brand" value="Subway" />
-        <key key="brand:wikidata" value="Q244457" />
-        <key key="brand:wikipedia" value="ru:Subway (сеть ресторанов)" />
-        <key key="contact:email" value="subway@subway.ru" />
-        <key key="contact:vk" value="https://vk.com/subwayrussia" />
-        <key key="contact:website" value="http://subway.ru" />
-        <key key="cuisine" value="sandwich" />
-        <key key="diet:vegetarian" value="no" />
-        <key key="name" value="Subway" />
-        <key key="name:en" value="Subway" />
-        <key key="takeaway" value="yes" />
-        <link href="http://subway.ru/stores" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
       <item name="Starbucks" ru.name="Старбакс" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/238px-Starbucks_Corporation_Logo_2011.svg.png">
@@ -886,6 +886,42 @@
       </item>
     </group>
     <group name="Food shops" ru.name="Продукты" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Emoji_u1f347.svg/240px-Emoji_u1f347.svg.png">
+      <item name="Fix price" type="node,closedway,multipolygon" preset_name_label="true">
+        <space />
+        <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Sa 09:00-20:00; Su 10:00-19:00" />
+        <key key="brand" value="Fix price" />
+        <key key="brand:wikidata" value="Q4038791" />
+        <key key="brand:wikipedia" value="ru:Fix Price (сеть магазинов)" />
+        <key key="contact:facebook" value="https://www.facebook.com/fixprice36" />
+        <key key="contact:instagram" value="https://www.instagram.com/fixprice_official" />
+        <key key="contact:ok" value="https://ok.ru/fixprice" />
+        <key key="contact:phone" value="+7 800 7753515" />
+        <key key="contact:twitter" value="https://twitter.com/fix_price" />
+        <key key="contact:vk" value="https://vk.com/fix_price" />
+        <key key="contact:website" value="https://www.fix-price.ru" />
+        <key key="contact:youtube" value="https://www.youtube.com/user/fixprice36" />
+        <key key="name" value="Fix price" />
+        <key key="name:en" value="Fix price" />
+        <key key="shop" value="variety_store" />
+        <link href="https://www.fix-price.ru/buyers/shops" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <reference ref="level_wheelchair_address" />
+      </item>
+      <item name="SPAR" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/ru/1/16/SPAR_logo.jpg">
+        <space />
+        <reference ref="shop_type" />
+        <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 08:00-23:00" />
+        <key key="brand" value="SPAR" />
+        <key key="brand:wikidata" value="Q610492" />
+        <key key="brand:wikipedia" value="ru:Spar" />
+        <key key="contact:email" value="info@spar.ru" />
+        <key key="contact:facebook" value="https://www.facebook.com/spar" />
+        <key key="contact:twitter" value="https://twitter.com/SPARInt" />
+        <key key="contact:website" value="http://www.spar.ru" />
+        <key key="name" value="SPAR" />
+        <key key="name:en" value="SPAR" />
+        <link href="http://www.spar.ru/stores" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <reference ref="wheelchair_address" />
+      </item>
       <item name="Azbuka Vkusa" ru.name="Азбука Вкуса" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/b/b6/Azbuka_Vkusa.svg/256px-Azbuka_Vkusa.svg.png">
         <space />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00" />
@@ -1391,22 +1427,6 @@
         <link href="https://5ka.ru/stores" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="SPAR" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/ru/1/16/SPAR_logo.jpg">
-        <space />
-        <reference ref="shop_type" />
-        <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 08:00-23:00" />
-        <key key="brand" value="SPAR" />
-        <key key="brand:wikidata" value="Q610492" />
-        <key key="brand:wikipedia" value="ru:Spar" />
-        <key key="contact:email" value="info@spar.ru" />
-        <key key="contact:facebook" value="https://www.facebook.com/spar" />
-        <key key="contact:twitter" value="https://twitter.com/SPARInt" />
-        <key key="contact:website" value="http://www.spar.ru" />
-        <key key="name" value="SPAR" />
-        <key key="name:en" value="SPAR" />
-        <link href="http://www.spar.ru/stores" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="wheelchair_address" />
-      </item>
       <item name="Sushi Wok" ru.name="Суши Wok" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" default="+7 499 7544444" />
@@ -1438,26 +1458,6 @@
         <link href="http://www.palich.ru/shops" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="Fix price" ru.name="Фикс прайс" type="node,closedway,multipolygon" preset_name_label="true">
-        <space />
-        <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Sa 09:00-20:00; Su 10:00-19:00" />
-        <key key="brand" value="Fix price" />
-        <key key="brand:wikidata" value="Q4038791" />
-        <key key="brand:wikipedia" value="ru:Fix Price (сеть магазинов)" />
-        <key key="contact:facebook" value="https://www.facebook.com/fixprice36" />
-        <key key="contact:instagram" value="https://www.instagram.com/fixprice_official" />
-        <key key="contact:ok" value="https://ok.ru/fixprice" />
-        <key key="contact:phone" value="+7 800 7753515" />
-        <key key="contact:twitter" value="https://twitter.com/fix_price" />
-        <key key="contact:vk" value="https://vk.com/fix_price" />
-        <key key="contact:website" value="https://www.fix-price.ru" />
-        <key key="contact:youtube" value="https://www.youtube.com/user/fixprice36" />
-        <key key="name" value="Fix price" />
-        <key key="name:en" value="Fix price" />
-        <key key="shop" value="variety_store" />
-        <link href="https://www.fix-price.ru/buyers/shops" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="level_wheelchair_address" />
-      </item>
       <item name="Ya Lyubimy" ru.name="Я Любимый" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="name" text="Name" ru.text="Название" values="Я Любимый,Я Любимый Перекресток" default="Я Любимый" />
@@ -1480,6 +1480,27 @@
       </item>
     </group>
     <group name="Mobile phone shops" ru.name="Сотовая связь" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Twemoji_1f4f1.svg/240px-Twemoji_1f4f1.svg.png">
+      <item name="Tele2" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Tele2_logo.svg/320px-Tele2_logo.svg.png">
+        <space />
+        <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" values="+7 495 9797611" />
+        <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00,Mo-Su 10:00-21:00" />
+        <key key="brand" value="Tele2" />
+        <key key="contact:facebook" value="https://www.facebook.com/Tele2Russia" />
+        <key key="contact:ok" value="https://ok.ru/tele2" />
+        <key key="contact:telegram" value="https://telegram.me/Tele2_bot" />
+        <key key="contact:twitter" value="https://twitter.com/Tele2Russia" />
+        <key key="contact:vk" value="https://vk.com/tele2" />
+        <key key="contact:website" value="https://tele2.ru" />
+        <key key="contact:youtube" value="https://www.youtube.com/user/AfishaTele2" />
+        <key key="name" value="Tele2" />
+        <key key="name:en" value="Tele2" />
+        <key key="office" value="telecommunication" />
+        <key key="operator:wikidata" value="Q4050799" />
+        <key key="operator:wikipedia" value="ru:Tele2 Россия" />
+        <key key="shop" value="mobile_phone" />
+        <link href="https://msk.tele2.ru/offices" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <reference ref="level_wheelchair_address" />
+      </item>
       <item name="Beeline" ru.name="Билайн" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/commons/4/4a/%D0%91%D0%B8%D0%BB%D0%B0%D0%B9%D0%BD_2.jpg">
         <space />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00,Mo-Su 09:00-21:00" />
@@ -1591,27 +1612,6 @@
         <key key="operator:wikipedia" value="ru:Связной (компания)" />
         <key key="shop" value="mobile_phone" />
         <link href="https://www.svyaznoy.ru/address_shops" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="level_wheelchair_address" />
-      </item>
-      <item name="Tele2" ru.name="Теле2" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Tele2_logo.svg/320px-Tele2_logo.svg.png">
-        <space />
-        <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" values="+7 495 9797611" />
-        <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00,Mo-Su 10:00-21:00" />
-        <key key="brand" value="Tele2" />
-        <key key="contact:facebook" value="https://www.facebook.com/Tele2Russia" />
-        <key key="contact:ok" value="https://ok.ru/tele2" />
-        <key key="contact:telegram" value="https://telegram.me/Tele2_bot" />
-        <key key="contact:twitter" value="https://twitter.com/Tele2Russia" />
-        <key key="contact:vk" value="https://vk.com/tele2" />
-        <key key="contact:website" value="https://tele2.ru" />
-        <key key="contact:youtube" value="https://www.youtube.com/user/AfishaTele2" />
-        <key key="name" value="Tele2" />
-        <key key="name:en" value="Tele2" />
-        <key key="office" value="telecommunication" />
-        <key key="operator:wikidata" value="Q4050799" />
-        <key key="operator:wikipedia" value="ru:Tele2 Россия" />
-        <key key="shop" value="mobile_phone" />
-        <link href="https://msk.tele2.ru/offices" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
     </group>
@@ -1864,6 +1864,25 @@
       </item>
     </group>
     <group name="Etc" ru.name="Прочие магазины/салоны" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Twemoji_1f45c.svg/240px-Twemoji_1f45c.svg.png">
+      <item name="DNS" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/5/51/DNS_logo.png/320px-DNS_logo.png">
+        <space />
+        <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 10:00-21:00,Mo-Su 09:00-22:00" />
+        <!-- <key key="alt_name" value="Digital Network System" /> NB: нигде в быту не используется -->
+        <key key="brand" value="DNS" />
+        <key key="brand:wikidata" value="Q4036922" />
+        <key key="brand:wikipedia" value="DNS (сеть магазинов)" />
+        <key key="contact:facebook" value="https://www.facebook.com/dnsshop" />
+        <key key="contact:phone" value="+7 800 7707999" />
+        <key key="contact:twitter" value="https://twitter.com/dnsshop" />
+        <key key="contact:vk" value="https://vk.com/dnsstore" />
+        <key key="contact:website" value="https://www.dns-shop.ru" />
+        <key key="contact:youtube" value="https://www.youtube.com/c/DNSSHOPvideo" />
+        <key key="name" value="DNS" />
+        <key key="name:en" value="DNS" />
+        <key key="shop" value="electronics" />
+        <link href="https://www.dns-shop.ru/shops/moscow" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <reference ref="level_wheelchair_address" />
+      </item>
       <item name="Pandora" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" values="+7 495 2878838-xxx" default="+7 800 7008338" />
@@ -1900,13 +1919,13 @@
       </item>
       <item name="TOPGUN" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
+        <combo key="contact:website" text="Website" ru.text="Сайт" default="http://topgunbarbershop.ru" />
         <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" default="+7 800 2004420" />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" default="Mo-Su 10:00-22:00" />
         <combo key="contact:facebook" text="facebook" default="https://www.facebook.com/topgunbarbershopmoscow" />
         <combo key="contact:instagram" text="instagram" default="https://www.instagram.com/topgun_barbershop" />
         <combo key="contact:vk" text="vk" default="https://vk.com/topgunmoscow" />
         <key key="brand" value="TOPGUN" />
-        <key key="contact:website" value="http://topgunbarbershop.ru" />
         <key key="contact:youtube" value="https://www.youtube.com/user/lokoncev" />
         <key key="male" value="yes" />
         <key key="name" value="TOPGUN" />
@@ -1988,25 +2007,6 @@
         <key key="name:ru" value="Диана" />
         <key key="shop" value="dry_cleaning" />
         <link href="http://www.dryclean.ru/priemnye_punkty" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="level_wheelchair_address" />
-      </item>
-      <item name="DNS" ru.name="ДНС" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/5/51/DNS_logo.png/320px-DNS_logo.png">
-        <space />
-        <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 10:00-21:00,Mo-Su 09:00-22:00" />
-        <!-- <key key="alt_name" value="Digital Network System" /> NB: нигде в быту не используется -->
-        <key key="brand" value="DNS" />
-        <key key="brand:wikidata" value="Q4036922" />
-        <key key="brand:wikipedia" value="DNS (сеть магазинов)" />
-        <key key="contact:facebook" value="https://www.facebook.com/dnsshop" />
-        <key key="contact:phone" value="+7 800 7707999" />
-        <key key="contact:twitter" value="https://twitter.com/dnsshop" />
-        <key key="contact:vk" value="https://vk.com/dnsstore" />
-        <key key="contact:website" value="https://www.dns-shop.ru" />
-        <key key="contact:youtube" value="https://www.youtube.com/c/DNSSHOPvideo" />
-        <key key="name" value="DNS" />
-        <key key="name:en" value="DNS" />
-        <key key="shop" value="electronics" />
-        <link href="https://www.dns-shop.ru/shops/moscow" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
       <item name="Ile de Beaute" ru.name="Иль де Ботэ" type="node,closedway,multipolygon" preset_name_label="true">
