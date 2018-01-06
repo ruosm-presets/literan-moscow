@@ -46,7 +46,7 @@
     <combo key="shop" text="Convenience or supermarket" ru.text="Тип магазина (с тележками - супермаркет)" values="supermarket,convenience" default="supermarket" />
   </chunk>
   <chunk id="height">
-    <combo key="height" text="Height" ru.text="Высота (в метрах)" />
+    <combo key="height" text="Height" ru.text="Высота (в метрах)" /> <!-- TODO: убрать `(в метрах)`? -->
   </chunk>
   <chunk id="ownership">
     <combo key="ownership" text="Ownership" ru.text="Форма собственности" values="state,private" ru.display_values="государственная,частная" />
@@ -71,20 +71,20 @@
       <check key="internet_access" text="Internet access" ru.text="Беспроводный интернет (Wi-Fi)" value_on="wlan" />
       <check key="internet_access:fee" text="Internet access is fee-free" ru.text="Wi-Fi бесплатный" value_on="no" value_off="yes" />
     </checkgroup>
-  </chunk> <!-- wifi заточен только под wifi, если нужны другие варианты доступа в интернет - то сделайте новый чанк -->
+  </chunk> <!-- wifi. заточен только под wifi, если нужны другие варианты доступа в интернет, то сделайте новый чанк -->
   <chunk id="wheelchair_address">
     <reference ref="wheelchair" />
     <preset_link preset_name="Address" />
-  </chunk> <!-- wheelchair_address используется в местах, куда можно зайти -->
+  </chunk> <!-- wheelchair_address. используется в местах, куда можно зайти -->
   <chunk id="phone_oh2_wheelchair_address">
     <reference ref="phone" />
     <reference ref="oh2" />
     <reference ref="wheelchair_address" />
-  </chunk> <!-- phone_oh2_wheelchair_address используется в государственных учреждениях -->
+  </chunk> <!-- phone_oh2_wheelchair_address. используется в государственных учреждениях -->
   <chunk id="level_wheelchair_address">
     <reference ref="level" />
     <reference ref="wheelchair_address" />
-  </chunk> <!-- level_wheelchair_address используется в местах, куда можно зайти и которые часто не на 1 этажах (в ТЦ) -->
+  </chunk> <!-- level_wheelchair_address. используется в местах, куда можно зайти и которые часто не на 1 этажах (в ТЦ) -->
   <chunk id="level_wheelchair_address_wifi_outdoorseating_drivethrough">
     <reference ref="level_wheelchair_address" />
     <space />
@@ -93,16 +93,16 @@
       <check key="drive_through" text="Drive through" ru.text="Обслуживание в машине" />
     </checkgroup>
     <reference ref="wifi" />
-  </chunk> <!-- level_wheelchair_address_wifi_outdoorseating_drivethrough используется в заведениях общепита -->
+  </chunk> <!-- level_wheelchair_address_wifi_outdoorseating_drivethrough. используется в заведениях общепита -->
   <chunk id="oh3_level_wheelchair_address_dispencing">
     <reference ref="oh3" />
     <reference ref="level_wheelchair_address" />
     <check key="dispensing" text="Dispensing" ru.text="Отпуск лекарств по рецептам" />
-  </chunk> <!-- oh3_level_wheelchair_address_dispencing используется только в аптеках -->
+  </chunk> <!-- oh3_level_wheelchair_address_dispencing. используется только в аптеках -->
   <chunk id="oh1_level_wheelchair_address">
     <reference ref="oh1" />
     <reference ref="level_wheelchair_address" />
-  </chunk> <!-- oh1_level_wheelchair_address используется только в медицинских лабораториях -->
+  </chunk> <!-- oh1_level_wheelchair_address используется. только в медицинских лабораториях -->
   <chunk id="name_ownership_website_phone">
     <reference ref="name" />
     <reference ref="ownership" />
@@ -117,21 +117,21 @@
   <chunk id="name_ownership_website_phone_wheelchair_address">
     <reference ref="name_ownership_website_phone" />
     <reference ref="wheelchair_address" />
-  </chunk> <!-- name_ownership_website_phone_wheelchair_address используется в учебных заведениях -->
+  </chunk> <!-- name_ownership_website_phone_wheelchair_address. используется в учебных заведениях -->
   <chunk id="name_ownership_website_phone_oh1_wheelchair_address">
     <reference ref="name_ownership_website_phone" />
     <reference ref="oh1" />
     <reference ref="wheelchair_address" />
-  </chunk> <!-- name_ownership_website_phone_oh1_wheelchair_address используется в учебных заведениях (+oh) -->
+  </chunk> <!-- name_ownership_website_phone_oh1_wheelchair_address. используется в учебных заведениях (+oh) -->
   <chunk id="name_website_phone_level_wheelchair_address">
     <reference ref="name_website_phone" />
     <reference ref="level_wheelchair_address" />
-  </chunk> <!-- name_website_phone_level_wheelchair_address используется в медицинских учреждениях-->
+  </chunk> <!-- name_website_phone_level_wheelchair_address. используется в медицинских учреждениях -->
   <chunk id="name_website_phone_oh1_level_wheelchair_address">
     <reference ref="name_website_phone" />
     <reference ref="oh1" />
     <reference ref="level_wheelchair_address" />
-  </chunk> <!-- name_website_phone_oh1_level_wheelchair_address используется в медицинских учреждениях (+oh)-->
+  </chunk> <!-- name_website_phone_oh1_level_wheelchair_address. используется в медицинских учреждениях (+oh) -->
   <chunk id="bic_branch_ref_wheelchair_atm_address">
     <combo key="bic" text="BIC/SWIFT" ru.text="BIC/SWIFT-код (например UBSWUS33XXX)" />
     <combo key="branch" text="Branch" ru.text="Филиал (или отделение)" />
@@ -139,7 +139,7 @@
     <reference ref="wheelchair" />
     <check key="atm" text="Automated Teller Machine" ru.text="Банкомат (если 24/7, нанесите отдельной точкой)" />
     <preset_link preset_name="Address" />
-  </chunk> <!-- bic_branch_ref_wheelchair_atm_address используется в банках -->
+  </chunk> <!-- bic_branch_ref_wheelchair_atm_address. используется в банках -->
   <chunk id="education_form">
     <space />
     <label text="Education form" ru.text="Форма обучения:" />
@@ -148,7 +148,7 @@
       <check key="education_form:parttime" text="part time" ru.text="вечерняя" disable_off="true" />
       <check key="education_form:external" text="external" ru.text="заочная" disable_off="true" />
     </checkgroup>
-  </chunk> <!-- education_form - форма обучения: дневная, вечерняя, заочная -->
+  </chunk> <!-- education_form. форма обучения: дневная, вечерняя, заочная -->
   <chunk id="education_programme">
     <checkgroup columns="3">
       <check key="education_programme:DE" text="german" ru.text="немецкий" disable_off="true" />
@@ -158,7 +158,7 @@
       <check key="education_programme:IT" text="italian" ru.text="итальянский" disable_off="true" />
       <check key="education_programme:ZH" text="chinese" ru.text="китайский" disable_off="true" />
     </checkgroup>
-  </chunk> <!-- education_programme - изучаемые иностранные языки -->
+  </chunk> <!-- education_programme. изучаемые иностранные языки -->
   <chunk id="medical_system">
     <space />
     <label text="Medical system" ru.text="Медицинская система:" />
@@ -169,7 +169,7 @@
       <check key="medical_system:tibetan" text="tibetan" ru.text="Тибетская традиционная" disable_off="true" />
       <check key="medical_system:western" text="western" ru.text="Cовременная западная" default="on" disable_off="true" />
     </checkgroup>
-  </chunk> <!-- medical_system - медицинаская система -->
+  </chunk> <!-- medical_system. медицинаская система -->
   <chunk id="health20_provided_for">
     <space />
     <label text="Provided for" ru.text="Категории лиц:" />
@@ -183,7 +183,7 @@
       <check key="provided_for:male" text="male (all ages)" ru.text="мужчины (всех возрастов)" disable_off="true" />
       <check key="provided_for:female" text="female (all ages)" ru.text="женщины (всех возрастов)" disable_off="true" />
     </checkgroup>
-  </chunk> <!-- health20_provided_for — схема тегирования Healthcare 2.0: кому предоставляются услуги -->
+  </chunk> <!-- health20_provided_for. схема тегирования Healthcare 2.0: кому предоставляются услуги -->
   <chunk id="health20_specialities">
     <link text="Healthcare_2.0 Specialties" ru.text="Список медицинских специализаций" href="https://wiki.openstreetmap.org/wiki/RU:Proposed_features/Healthcare_2.0/Specialties" />
     <preset_link preset_name="Physician's: Main field specialties" />
@@ -192,7 +192,7 @@
     <preset_link preset_name="Therapists and the alternative medicine: Main field specialties" />
     <preset_link preset_name="Therapists and the alternative medicine: Subspecialties" />
     <preset_link preset_name="Therapists and the alternative medicine: Subsubspecialties" />
-  </chunk> <!-- health20_specialities — схема тегирования Healthcare 2.0: все специальности/специализации -->
+  </chunk> <!-- health20_specialities. схема тегирования Healthcare 2.0: все специальности/специализации -->
 
   <!-- тело пресета (groups) -->
   <group name="POI" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Twemoji_1f1f7-1f1fa.svg/240px-Twemoji_1f1f7-1f1fa.svg.png">
@@ -491,7 +491,7 @@
         <link href="https://www.pizzahut.ru/restaurants" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
-      <item name="Subway" ru.name="Subway" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Subway_2016_logo.svg/320px-Subway_2016_logo.svg.png"> <!-- ru.name нужен из-за i18n, иначе в меню подставится перевод "метрополитен" -->
+      <item name="Subway" type="node,closedway,multipolygon" preset_name_label="true" name_context="fast_food" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Subway_2016_logo.svg/320px-Subway_2016_logo.svg.png">
         <space />
         <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" default="+7 800 5554449" />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 08:00-23:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
@@ -630,9 +630,8 @@
         <key key="contact:youtube" value="https://www.youtube.com/user/CoffeeHouseMan" />
         <key key="cuisine" value="coffee_shop" />
         <key key="diet:vegetarian" value="yes" />
-        <!-- NB: во всех "Кофе Хаузах" заявлен бесплатный вай-фай-->
-        <key key="internet_access" value="wlan" />
-        <key key="internet_access:fee" value="no" />
+        <key key="internet_access" value="wlan" /> <!-- NB: во всех "Кофе Хаузах" заявлен бесплатный вай-фай -->
+        <key key="internet_access:fee" value="no" /> <!-- NB: во всех "Кофе Хаузах" заявлен бесплатный вай-фай -->
         <key key="name" value="Кофе Хауз" />
         <key key="name:ru" value="Кофе Хауз" />
         <link href="http://coffeehouse.ru/adress" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
@@ -745,7 +744,7 @@
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
       <item name="Robin Sdobin" ru.name="Робин Сдобин" type="node,closedway,multipolygon" preset_name_label="true">
-        <!-- Воронежская, Московская, Смоленская, Владимирская и т.д.-->
+        <!-- Воронежская, Московская, Смоленская, Владимирская и т.д. -->
         <space />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 08:00-23:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
         <key key="amenity" value="fast_food" />
@@ -762,7 +761,7 @@
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
       <item name="Russian Appetite" ru.name="Русский Аппетит" type="node,closedway,multipolygon" preset_name_label="true">
-        <!-- Воронежская, Курская, Белгородская, Саратовская, Тамбовская, Орловская области-->
+        <!-- Воронежская, Курская, Белгородская, Саратовская, Тамбовская, Орловская области -->
         <space />
         <combo key="amenity" text="Cafe or fast food" ru.text="Тип (кафе или киоск)" values="fast_food,cafe" ru.display_values="киоск,кафе" default="fast_food" />
         <reference ref="phone" />
@@ -984,7 +983,6 @@
       </item>
       <item name="AV Market" ru.name="АВ Маркет" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
-        <!-- TODO: когда примут shop=hypermarket нужно будет здесь поменять https://wiki.openstreetmap.org/wiki/Proposed_features/hypermarket -->
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00" />
         <key key="brand" value="АВ Маркет" />
         <key key="brand:wikidata" value="Q4058209" />
@@ -999,7 +997,7 @@
         <key key="contact:youtube" value="https://www.youtube.com/user/azbukav" />
         <key key="name" value="АВ Маркет" />
         <key key="name:ru" value="АВ Маркет" />
-        <key key="shop" value="supermarket" />
+        <key key="shop" value="supermarket" /> <!-- TODO: когда примут shop=hypermarket нужно будет здесь поменять https://wiki.openstreetmap.org/wiki/Proposed_features/hypermarket -->
         <link href="https://av.ru/shops/#msk_av-market" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
@@ -1047,7 +1045,6 @@
       </item>
       <item name="Auchan" ru.name="Ашан" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/7/78/Auchan-logo.svg/320px-Auchan-logo.svg.png">
         <space />
-        <!-- TODO: когда примут shop=hypermarket нужно будет здесь поменять https://wiki.openstreetmap.org/wiki/Proposed_features/hypermarket -->
         <combo key="name" text="Name" ru.text="Название" values="Ашан,Ашан Сити" default="Ашан" />
         <combo key="name:ru" text="Name (:ru)" ru.text="Название (:ru)" values="Ашан,Ашан Сити" default="Ашан" />
         <combo key="name:en" text="Name (:en)" ru.text="Название (:en)" values="Auchan,Auchan City" default="Auchan" />
@@ -1062,7 +1059,7 @@
         <key key="contact:vk" value="https://vk.com/auchan" />
         <key key="contact:website" value="https://www.auchan.ru" />
         <key key="contact:youtube" value="https://www.youtube.com/channel/UCoPpvvMHzIpZ7EcNZBEWhFg" />
-        <key key="shop" value="supermarket" />
+        <key key="shop" value="supermarket" /> <!-- TODO: когда примут shop=hypermarket нужно будет здесь поменять https://wiki.openstreetmap.org/wiki/Proposed_features/hypermarket -->
         <link href="https://www.auchan.ru/ru/shops" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
@@ -1348,8 +1345,7 @@
         <key key="contact:youtube" value="https://www.youtube.com/user/marketokey" />
         <key key="name" value="О’КЕЙ" />
         <key key="name:ru" value="О’КЕЙ" />
-        <!-- TODO: когда примут shop=hypermarket нужно будет здесь поменять https://wiki.openstreetmap.org/wiki/Proposed_features/hypermarket -->
-        <key key="shop" value="supermarket" />
+        <key key="shop" value="supermarket" /> <!-- TODO: когда примут shop=hypermarket нужно будет здесь поменять https://wiki.openstreetmap.org/wiki/Proposed_features/hypermarket -->
         <link href="http://www.okmarket.ru/stores" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
@@ -2173,8 +2169,7 @@
         <reference ref="phone" />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 08:00-22:00; Sa-Su 09:00-21:00" />
         <key key="brand" value="Персона" />
-        <!-- <key key="contact:facebook" value="https://www.facebook.com/ipersona" />
-        NB: указан на официальном сайте, но в фб такой страницы нет -->
+        <!-- <key key="contact:facebook" value="https://www.facebook.com/ipersona" /> NB: указан на официальном сайте, но в фб такой страницы нет -->
         <key key="contact:twitter" value="https://twitter.com/Persona_PR" />
         <key key="contact:vk" value="https://vk.com/lab_persona" />
         <key key="contact:website" value="http://www.persona.ru" />
@@ -2980,7 +2975,6 @@
         <link href="https://www.google.ru/maps/@55.8245367,36.9184932,3a,75y,263.57h,116.88t/data=!3m6!1e1!3m4!1smAWF8VNFYQHed3GZ0W0SYA!2e0!7i13312!8i6656" text="Photo" ru.text="Фотография-пример" />
       </item>
       <item name="Bicycle parking stands" ru.name="Велопарковка (стойки)" type="node,closedway,multipolygon" preset_name_label="true">
-        <!-- NB: всё то же самое прекрасно делается через пункт дефолтного пресета -->
         <space />
         <text key="capacity" text="Capacity" ru.text="Вместимость (1 стойка = 2 велика)" length="3" />
         <key key="amenity" value="bicycle_parking" />
@@ -2989,7 +2983,7 @@
         <key key="fee" value="no" />
         <key key="opening_hours" value="24/7" />
         <key key="supervised" value="no" />
-      </item>
+      </item> <!-- NB: всё то же самое прекрасно делается через пункт дефолтного пресета -->
       <item name="Subway ventilation kiosk" ru.name="Вентиляционная шахта (киоск) метрополитена" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <reference ref="name" />
@@ -3010,8 +3004,8 @@
         <preset_link preset_name="Address" />
       </item>
       <item name="Gas substation" ru.name="Газорегуляторный пункт" type="node,closedway,multipolygon" preset_name_label="true">
-        <!-- NB: добавить тэги здания и этажности? -->
-        <!-- нет, потому что часто это не здание -->
+        <!-- NB: добавить тэги здания и этажности?
+            нет, потому что часто это не здание -->
         <space />
         <reference ref="operator" />
         <reference ref="ref" />
@@ -3069,8 +3063,8 @@
         <key key="toilets:position" value="seated" />
       </item>
       <item name="Sewage pumping station" ru.name="Канализационная насосная станция" type="node,closedway,multipolygon" preset_name_label="true">
-        <!-- NB: добавить тэги здания и этажности? -->
-        <!-- нет, потому что часто это не здание -->
+        <!-- NB: добавить тэги здания и этажности?
+            нет, потому что часто это не здание -->
         <space />
         <reference ref="operator" />
         <reference ref="ref" />
@@ -3157,8 +3151,7 @@
         <key key="vending" value="parking_tickets" />
         <link href="http://parking.mos.ru" text="Official website (place locator)" ru.text="Ссылка на сайт (номера паркоматов)" />
       </item>
-      <item name="Clothes dryer" ru.name="Площадка для сушки белья" type="node,closedway,multipolygon" icon="https://image.flaticon.com/icons/png/512/47/47421.png" preset_name_label="true">
-        <!-- https://d30y9cdsu7xlg0.cloudfront.net/png/174655-200.png NB: второй вариант иконки -->
+      <item name="Clothes dryer" ru.name="Площадка для сушки белья" type="node,closedway,multipolygon" icon="https://image.flaticon.com/icons/png/512/47/47421.png" preset_name_label="true"> <!-- https://d30y9cdsu7xlg0.cloudfront.net/png/174655-200.png NB: второй вариант иконки -->
         <space />
         <key key="amenity" value="clothes_dryer" />
         <combo key="clothes_dryer" text="Clothes dryer" ru.text="Тип сушилки" values="pulley,rack,t-post,umbrella" ru.display_values="с роликом,стойка,столб,в виде зонта" default="rack" />
@@ -3229,8 +3222,8 @@
         <key key="payment:telephone_cards" value="yes" />
       </item>
       <item name="Suburban train tickets vending machine" ru.name="Терминал продажи пригородных билетов (электрички)" type="node" preset_name_label="true">
-        <!-- TODO: Нужно определиться между использованием public_transport_tickets:suburban_train=yes или tickets:suburban_train=yes -->
-        <!-- Пока что оставляю оба варианта. Правильней из них первый. Но второй распространенней -->
+        <!-- TODO: Нужно определиться между использованием public_transport_tickets:suburban_train=yes или tickets:suburban_train=yes
+        Пока что оставляю оба варианта. Правильней из них первый. Но второй распространенней -->
         <space />
         <key key="amenity" value="vending_machine" />
         <key key="public_transport_tickets:suburban_train" value="yes" />
