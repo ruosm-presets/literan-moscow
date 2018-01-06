@@ -2336,8 +2336,6 @@
         <key key="contact:website" value="http://mil.ru" />
         <key key="contact:youtube" value="https://www.youtube.com/channel/UCQGqX5Ndpm4snE0NTjyOJnA" />
         <key key="military" value="office" />
-        <key key="operator:wikidata" value="Q460254" />
-        <key key="operator:wikipedia" value="ru:Военный комиссариат" />
       </item>
       <item name="ЗАГС" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
@@ -2347,8 +2345,6 @@
         <reference ref="phone_oh2_wheelchair_address" />
         <key key="government" value="register_office" />
         <key key="office" value="government" />
-        <key key="operator:wikidata" value="Q254213" />
-        <key key="operator:wikipedia" value="ru:ЗАГС" />
       </item>
       <item name="Казначейство (инспекция ФНС)" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Roskazna.png/216px-Roskazna.png" preset_name_label="true">
         <space />
@@ -2375,8 +2371,6 @@
         <key key="contact:website" value="https://www.nalog.ru" />
         <key key="government" value="tax" />
         <key key="office" value="government" />
-        <key key="operator:wikidata" value="Q4312669" />
-        <key key="operator:wikipedia" value="ru:Налоговая инспекция Российской Федерации" />
       </item>
       <item name="Пенсионный фонд" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Logo_PFRF.JPG/235px-Logo_PFRF.JPG" preset_name_label="true">
         <space />
@@ -2522,8 +2516,6 @@
         <reference ref="phone_oh2_wheelchair_address" />
         <key key="government" value="recruitment" />
         <key key="office" value="government" />
-        <key key="operator:wikidata" value="Q1690950" />
-        <key key="operator:wikipedia" value="ru:Биржа труда" />
       </item>
       <item name="Центр социального обслуживания (инвалидов, пожилых)" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
