@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2.0_2018-01-06_1"
+  version="2.0_2018-01-06_2"
   link="https://github.com/ruosm-presets/literan-moscow"
   shortdescription="Russian POIs"
   ru.shortdescription="Российские POI"
@@ -2331,8 +2331,6 @@
         <key key="contact:website" value="http://mil.ru" />
         <key key="contact:youtube" value="https://www.youtube.com/channel/UCQGqX5Ndpm4snE0NTjyOJnA" />
         <key key="military" value="office" />
-        <key key="operator:wikidata" value="Q460254" />
-        <key key="operator:wikipedia" value="ru:Военный комиссариат" />
       </item>
       <item name="ЗАГС" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
@@ -2342,8 +2340,6 @@
         <reference ref="phone_oh2_wheelchair_address" />
         <key key="government" value="register_office" />
         <key key="office" value="government" />
-        <key key="operator:wikidata" value="Q254213" />
-        <key key="operator:wikipedia" value="ru:ЗАГС" />
       </item>
       <item name="Казначейство (инспекция ФНС)" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Roskazna.png/216px-Roskazna.png" preset_name_label="true">
         <space />
@@ -2356,8 +2352,6 @@
         <key key="contact:website" value="http://roskazna.ru" />
         <key key="government" value="treasury" />
         <key key="office" value="government" />
-        <key key="operator:wikidata" value="Q4208422" />
-        <key key="operator:wikipedia" value="ru:Казначейство России" />
       </item>
       <item name="Налоговая инспекция (ФНС)" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/c/cf/%D0%AD%D0%BC%D0%B1%D0%BB%D0%B5%D0%BC%D0%B0_%D0%A4%D0%9D%D0%A1_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8_%282014%29.jpg"  preset_name_label="true">
         <space />
@@ -2370,8 +2364,6 @@
         <key key="contact:website" value="https://www.nalog.ru" />
         <key key="government" value="tax" />
         <key key="office" value="government" />
-        <key key="operator:wikidata" value="Q4312669" />
-        <key key="operator:wikipedia" value="ru:Налоговая инспекция Российской Федерации" />
       </item>
       <item name="Пенсионный фонд" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Logo_PFRF.JPG/235px-Logo_PFRF.JPG" preset_name_label="true">
         <space />
@@ -2387,8 +2379,6 @@
         <key key="contact:youtube" value="https://www.youtube.com/user/pensionnijfond" />
         <key key="government" value="pension_fund" />
         <key key="office" value="government" />
-        <key key="operator:wikidata" value="Q2144353" />
-        <key key="operator:wikipedia" value="ru:Пенсионный фонд Российской Федерации" />
       </item>
       <item name="Russian Post" ru.name="Почтовое отделение ФГУП &quot;Почта России&quot;" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Russian_Post.svg/298px-Russian_Post.svg.png" preset_name_label="true">
         <space />
@@ -2425,8 +2415,6 @@
         <key key="contact:youtube" value="https://www.youtube.com/user/genprocrf" />
         <key key="government" value="prosecutor" />
         <key key="office" value="government" />
-        <key key="operator:wikidata" value="Q2387440" />
-        <key key="operator:wikipedia" value="ru:Прокуратура Российской Федерации" />
       </item>
       <item name="Следственный комитет" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Investigative_Committee_Russia_Emblem.png/202px-Investigative_Committee_Russia_Emblem.png" preset_name_label="true">
         <space />
@@ -2440,8 +2428,6 @@
         <key key="contact:youtube" value="https://www.youtube.com/channel/UCOiAwKQuFMdJuK7wwDIoKpA" />
         <key key="government" value="investigation" />
         <key key="office" value="government" />
-        <key key="operator:wikidata" value="Q2577002" />
-        <key key="operator:wikipedia" value="ru:Следственный комитет Российской Федерации" />
       </item>
       <item name="Служба государственной статистики" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Russian_Federal_State_Statistics_Service_Emblem.svg/205px-Russian_Federal_State_Statistics_Service_Emblem.svg.png" preset_name_label="true">
         <space />
@@ -2454,8 +2440,6 @@
         <key key="contact:vk" value="https://vk.com/rosstatistika" />
         <key key="government" value="statistics" />
         <key key="office" value="government" />
-        <key key="operator:wikidata" value="Q2624680" />
-        <key key="operator:wikipedia" value="ru:Федеральная служба государственной статистики" />
       </item>
       <item name="Служба социальной защиты" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
@@ -2480,8 +2464,6 @@
         <key key="contact:website" value="https://guvm.mvd.ru" />
         <key key="government" value="migration" />
         <key key="office" value="government" />
-        <key key="operator:wikidata" value="Q4346571" />
-        <key key="operator:wikipedia" value="ru:Главное управление по вопросам миграции МВД РФ" />
       </item>
       <item name="Центр гигиены и эпидемиологии (б. СЭС)" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
@@ -2502,8 +2484,6 @@
         <key key="brand" value="Мои документы" />
         <key key="government" value="public_service" />
         <key key="office" value="government" />
-        <key key="operator:wikidata" value="Q1021033" />
-        <key key="operator:wikipedia" value="ru:Многофункциональный центр" />
         <key key="short_name" value="МФЦ" />
         <reference ref="level_wheelchair_address" />
         <space />
@@ -2517,8 +2497,6 @@
         <reference ref="phone_oh2_wheelchair_address" />
         <key key="government" value="recruitment" />
         <key key="office" value="government" />
-        <key key="operator:wikidata" value="Q1690950" />
-        <key key="operator:wikipedia" value="ru:Биржа труда" />
       </item>
       <item name="Центр социального обслуживания (инвалидов, пожилых)" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
