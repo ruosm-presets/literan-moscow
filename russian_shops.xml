@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2.0_2018-01-08_1"
+  version="2.0_2018-01-08_2"
   link="https://github.com/ruosm-presets/literan-moscow"
   shortdescription="Russian POIs"
   ru.shortdescription="Российские POI"
@@ -1783,10 +1783,11 @@
         <key key="contact:ok" value="https://ok.ru/pochtabank" />
         <key key="contact:phone" value="+7 800 5500770" />
         <key key="contact:twitter" value="https://twitter.com/pochtabank" />
-        <key key="contact:vk" value="https://vk.com/pochtabank_official" />
+        <key key="contact:vk" value="https://vk.com/pochtabank" />
         <key key="contact:website" value="https://www.pochtabank.ru" />
         <key key="contact:youtube" value="https://www.youtube.com/channel/UCs2NW4p10fwTar-zqw7mUIw" />
         <key key="name" value="Почта Банк" />
+        <key key="name:en" value="Post Bank" />
         <key key="name:ru" value="Почта Банк" />
         <link href="https://www.pochtabank.ru/map" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="bic_branch_ref_wheelchair_atm_address" />
