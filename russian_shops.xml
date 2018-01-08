@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2.0_2018-01-06_2"
+  version="2.0_2018-01-08_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   shortdescription="Russian POIs"
   ru.shortdescription="Российские POI"
@@ -300,6 +300,8 @@
         <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" default="+7 800 2508800" />
         <key key="amenity" value="pharmacy" />
         <key key="brand" value="Самсон-Фарма" />
+        <key key="brand:wikidata" value="Q19911073" />
+        <key key="brand:wikipedia" value="ru:Самсон-Фарма" />
         <key key="contact:facebook" value="https://www.facebook.com/samsonpharma" />
         <key key="contact:instagram" value="https://www.instagram.com/samsonpharma" />
         <key key="contact:twitter" value="https://twitter.com/samsonfarma" />
@@ -309,8 +311,6 @@
         <key key="healthcare" value="pharmacy" />
         <key key="name" value="Самсон-Фарма" />
         <key key="name:ru" value="Самсон-Фарма" />
-        <key key="operator:wikidata" value="Q19911073" />
-        <key key="operator:wikipedia" value="ru:Самсон-Фарма" />
         <link href="https://samson-pharma.ru/pharmacies" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="oh3_level_wheelchair_address_dispencing" />
       </item>
@@ -390,6 +390,8 @@
         <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" values="+7 495 3630363" default="+7 800 2003630" />
         <key key="amenity" value="doctors" />
         <key key="brand" value="Инвитро" />
+        <key key="brand:wikidata" value="Q4200546" />
+        <key key="brand:wikipedia" value="ru:Медицинская компания Инвитро" />
         <key key="contact:email" value="info@invitro.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/invitro.ru" />
         <key key="contact:instagram" value="https://www.instagram.com/invitro.ru" />
@@ -401,8 +403,6 @@
         <key key="medical_system:western" value="yes" />
         <key key="name" value="Инвитро" />
         <key key="name:ru" value="Инвитро" />
-        <key key="operator:wikidata" value="Q4200546" />
-        <key key="operator:wikipedia" value="ru:Медицинская компания Инвитро" />
         <link href="https://www.invitro.ru/offices/moscow" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="oh1_level_wheelchair_address" />
       </item>
@@ -1481,6 +1481,8 @@
         <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" values="+7 495 9797611" />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00,Mo-Su 10:00-21:00" />
         <key key="brand" value="Tele2" />
+        <key key="brand:wikidata" value="Q4050799" />
+        <key key="brand:wikipedia" value="ru:Tele2 Россия" />
         <key key="contact:facebook" value="https://www.facebook.com/Tele2Russia" />
         <key key="contact:ok" value="https://ok.ru/tele2" />
         <key key="contact:telegram" value="https://telegram.me/Tele2_bot" />
@@ -1491,8 +1493,6 @@
         <key key="name" value="Tele2" />
         <key key="name:en" value="Tele2" />
         <key key="office" value="telecommunication" />
-        <key key="operator:wikidata" value="Q4050799" />
-        <key key="operator:wikipedia" value="ru:Tele2 Россия" />
         <key key="shop" value="mobile_phone" />
         <link href="https://msk.tele2.ru/offices" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
@@ -1544,6 +1544,8 @@
         <space />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
         <key key="brand" value="МегаФон" />
+        <key key="brand:wikidata" value="Q1720713" />
+        <key key="brand:wikipedia" value="ru:Мегафон (компания)" />
         <key key="contact:facebook" value="https://www.facebook.com/MegaFon.ru" />
         <key key="contact:habrahabr" value="https://habrahabr.ru/company/megafon" />
         <key key="contact:ok" value="https://ok.ru/megafon" />
@@ -1556,8 +1558,6 @@
         <key key="name:en" value="MegaFon" />
         <key key="name:ru" value="МегаФон" />
         <key key="office" value="telecommunication" />
-        <key key="operator:wikidata" value="Q1720713" />
-        <key key="operator:wikipedia" value="ru:Мегафон (компания)" />
         <key key="shop" value="mobile_phone" />
         <link href="https://megafon.ru/help/offices/#offices" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
@@ -1578,6 +1578,8 @@
         <space />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 09:00-22:00,Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00" />
         <key key="brand" value="МТС" />
+        <key key="brand:wikidata" value="Q1368919" />
+        <key key="brand:wikipedia" value="ru:МТС (компания)" />
         <key key="contact:facebook" value="https://www.facebook.com/mts" />
         <key key="contact:ok" value="https://ok.ru/mts" />
         <key key="contact:phone" value="+7 800 2500890" />
@@ -1588,8 +1590,6 @@
         <key key="name:en" value="MTS" />
         <key key="name:ru" value="МТС" />
         <key key="office" value="telecommunication" />
-        <key key="operator:wikidata" value="Q1368919" />
-        <key key="operator:wikipedia" value="ru:МТС (компания)" />
         <key key="shop" value="mobile_phone" />
         <link href="http://www.mts.ru/mobil_inet_and_tv/help/mts/offices" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
@@ -1598,14 +1598,14 @@
         <space />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
         <key key="brand" value="Связной" />
+        <key key="brand:wikidata" value="Q65371" />
+        <key key="brand:wikipedia" value="ru:Связной (компания)" />
         <key key="contact:facebook" value="https://www.facebook.com/svyaznoy.ru" />
         <key key="contact:phone" value="+7 800 7005000" />
         <key key="contact:vk" value="https://vk.com/club11445015" />
         <key key="contact:website" value="https://www.svyaznoy.ru" />
         <key key="name" value="Связной" />
         <key key="name:ru" value="Связной" />
-        <key key="operator:wikidata" value="Q65371" />
-        <key key="operator:wikipedia" value="ru:Связной (компания)" />
         <key key="shop" value="mobile_phone" />
         <link href="https://www.svyaznoy.ru/address_shops" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
@@ -1618,6 +1618,9 @@
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 09:00-21:00; Sa 10:00-19:00" />
         <key key="amenity" value="bank" />
         <key key="bic" value="ALFARUMM" />
+        <key key="brand" value="Альфа-Банк" />
+        <key key="brand:wikidata" value="Q1377835" />
+        <key key="brand:wikipedia" value="ru:Альфа-банк" />
         <key key="contact:email" value="mail@alfabank.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/alfabank" />
         <key key="contact:ok" value="https://ok.ru/alfabank" />
@@ -1628,8 +1631,6 @@
         <key key="name" value="Альфа-Банк" />
         <key key="name:en" value="Alfa-Bank" />
         <key key="name:ru" value="Альфа-Банк" />
-        <key key="operator:wikidata" value="Q1377835" />
-        <key key="operator:wikipedia" value="ru:Альфа-банк" />
         <link href="https://alfabank.ru/office/moscow/map/?kind=retail" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="bic_branch_ref_wheelchair_atm_address" />
       </item>
@@ -1638,6 +1639,9 @@
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 09:00-20:00; Sa 10:00-17:00" />
         <key key="amenity" value="bank" />
         <key key="bic" value="VTBRRUMM" />
+        <key key="brand" value="ВТБ Банк Москвы" />
+        <key key="brand:wikidata" value="Q767946" />
+        <key key="brand:wikipedia" value="ru:Банк Москвы" />
         <key key="contact:facebook" value="https://www.facebook.com/VTB.BankofMoscow" />
         <key key="contact:instagram" value="https://www.instagram.com/bankvtb" />
         <key key="contact:ok" value="https://ok.ru/vtb" />
@@ -1649,8 +1653,6 @@
         <key key="name" value="ВТБ Банк Москвы" />
         <key key="name:en" value="VTB Bank of Moscow" />
         <key key="name:ru" value="ВТБ Банк Москвы" />
-        <key key="operator:wikidata" value="Q767946" />
-        <key key="operator:wikipedia" value="ru:Банк Москвы" />
         <link href="https://www.bm.ru/ru/ofisy-banka/otdelenija" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="bic_branch_ref_wheelchair_atm_address" />
       </item>
@@ -1768,6 +1770,9 @@
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Fr 10:00-19:00,Mo-Su 10:00-22:00,Mo-Fr 10:00-20:00; Sa 10:00-17:00" />
         <key key="amenity" value="bank" />
         <key key="bic" value="POSBRUMM" />
+        <key key="brand" value="Почта Банк" />
+        <key key="brand:wikidata" value="Q24930461" />
+        <key key="brand:wikipedia" value="ru:Почта Банк" />
         <key key="contact:email" value="welcome@pochtabank.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/pochtabank" />
         <key key="contact:instagram" value="https://www.instagram.com/pochtabank" />
@@ -1779,8 +1784,6 @@
         <key key="contact:youtube" value="https://www.youtube.com/channel/UCs2NW4p10fwTar-zqw7mUIw" />
         <key key="name" value="Почта Банк" />
         <key key="name:ru" value="Почта Банк" />
-        <key key="operator:wikidata" value="Q24930461" />
-        <key key="operator:wikipedia" value="ru:Почта Банк" />
         <link href="https://www.pochtabank.ru/map" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="bic_branch_ref_wheelchair_atm_address" />
       </item>
@@ -1790,6 +1793,9 @@
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 10:00-20:00; Sa 10:00-17:00" />
         <key key="amenity" value="bank" />
         <key key="bic" value="RZBMRUMM" />
+        <key key="brand" value="Райффайзен" />
+        <key key="brand:wikidata" value="Q4389244" />
+        <key key="brand:wikipedia" value="ru:Райффайзенбанк" />
         <key key="contact:email" value="info@raiffeisen.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/raiffeisenbankrus" />
         <key key="contact:instagram" value="https://www.instagram.com/raiffeisenbank_rus" />
@@ -1800,8 +1806,6 @@
         <key key="name" value="Райффайзен" />
         <key key="name:en" value="Raiffeisen" />
         <key key="name:ru" value="Райффайзен" />
-        <key key="operator:wikidata" value="Q4389244" />
-        <key key="operator:wikipedia" value="ru:Райффайзенбанк" />
         <link href="https://www.raiffeisen.ru/offices" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="bic_branch_ref_wheelchair_atm_address" />
       </item>
@@ -1810,6 +1814,9 @@
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 09:00-20:00; Sa 09:00-17:00" />
         <key key="amenity" value="bank" />
         <key key="bic" value="RSBNRUMM" />
+        <key key="brand" value="Росбанк" />
+        <key key="brand:wikidata" value="Q1119857" />
+        <key key="brand:wikipedia" value="ru:Росбанк" />
         <key key="contact:facebook" value="https://www.facebook.com/Rosbank-598134936938972" />
         <key key="contact:phone" value="+7 800 2005434" />
         <key key="contact:twitter" value="https://twitter.com/Rosbank_Info" />
@@ -1818,8 +1825,6 @@
         <key key="name" value="Росбанк" />
         <key key="name:en" value="Rosbank" />
         <key key="name:ru" value="Росбанк" />
-        <key key="operator:wikidata" value="Q1119857" />
-        <key key="operator:wikipedia" value="ru:Росбанк" />
         <link href="https://www.rosbank.ru/ru/offices" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="bic_branch_ref_wheelchair_atm_address" />
       </item>
@@ -1828,6 +1833,9 @@
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 09:30-20:00; Sa 10:00-18:00" />
         <key key="amenity" value="bank" />
         <key key="bic" value="SABRRUMM" />
+        <key key="brand" value="Сбербанк" />
+        <key key="brand:wikidata" value="Q205012" />
+        <key key="brand:wikipedia" value="ru:Сбербанк России" />
         <key key="contact:facebook" value="https://www.facebook.com/sberbank" />
         <key key="contact:instagram" value="https://www.instagram.com/sberbank" />
         <key key="contact:ok" value="https://ok.ru/sberbank" />
@@ -1839,8 +1847,6 @@
         <key key="name" value="Сбербанк" />
         <key key="name:en" value="Sberbank" />
         <key key="name:ru" value="Сбербанк" />
-        <key key="operator:wikidata" value="Q205012" />
-        <key key="operator:wikipedia" value="ru:Сбербанк России" />
         <link href="https://www.sberbank.ru/ru/about/today/oib" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="bic_branch_ref_wheelchair_atm_address" />
       </item>
@@ -1884,6 +1890,8 @@
         <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" values="+7 495 2878838-xxx" default="+7 800 7008338" />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-22:00" />
         <key key="brand" value="Pandora" />
+        <key key="brand:wikidata" value="Q2241604" />
+        <key key="brand:wikipedia" value="ru:Pandora (ювелирный дом)" />
         <key key="contact:email" value="info@pandora-rus.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/PandoraRussia" />
         <key key="contact:instagram" value="https://www.instagram.com/theofficialpandora" />
@@ -1892,8 +1900,6 @@
         <key key="contact:youtube" value="https://www.youtube.com/user/TheOfficialPandora" />
         <key key="name" value="Pandora" />
         <key key="name:en" value="Pandora" />
-        <key key="operator:wikidata" value="Q2241604" />
-        <key key="operator:wikipedia" value="ru:Pandora (ювелирный дом)" />
         <key key="shop" value="jewelry" />
         <link href="https://www.pandora.net/ru-ru/stores" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
@@ -1935,6 +1941,8 @@
         <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" values="+7 800 2503344-xxxx" default="+7 800 2503344" />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="Mo-Su 10:00-22:00,Mo-Su 09:00-21:00" />
         <key key="brand" value="Адамас" />
+        <key key="brand:wikidata" value="Q15924718" />
+        <key key="brand:wikipedia" value="ru:Адамас (компания)" />
         <key key="contact:email" value="office@adamas.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/adamas.club" />
         <key key="contact:instagram" value="https://www.instagram.com/adamas_ru" />
@@ -1944,8 +1952,6 @@
         <key key="contact:youtube" value="https://www.youtube.com/channel/UCnOC4pLMguhoKxOonAQRdHQ" />
         <key key="name" value="Адамас" />
         <key key="name:ru" value="Адамас" />
-        <key key="operator:wikidata" value="Q15924718" />
-        <key key="operator:wikipedia" value="ru:Адамас (компания)" />
         <key key="shop" value="jewelry" />
         <link href="https://www.adamas.ru/buy/moscow" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
@@ -2098,6 +2104,7 @@
         <space />
         <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" default="+7 800 2007775" />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Su 10:00-23:00" />
+        <key key="brand" value="М.Видео" />
         <key key="brand:wikidata" value="Q6558800" />
         <key key="brand:wikipedia" value="ru:М.Видео" />
         <key key="contact:email" value="24@mvideo.ru" />
@@ -2277,6 +2284,7 @@
       <item name="Eldorado" ru.name="Эльдорадо" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/2/24/Eldorado_Logo.svg/320px-Eldorado_Logo.svg.png">
         <space />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 10:00-21:00,Mo-Fr 08:00-22:00; Sa-Su 09:00-21:00" />
+        <key key="brand" value="Эльдорадо" />
         <key key="brand:wikidata" value="Q4531492" />
         <key key="brand:wikipedia" value="ru:Эльдорадо (сеть магазинов)" />
         <key key="contact:facebook" value="https://www.facebook.com/Eldorado.Stores" />
