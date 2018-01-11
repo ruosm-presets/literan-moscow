@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2.0_2018-01-08_2"
+  version="2.0_2018-01-11_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   shortdescription="Russian POIs"
   ru.shortdescription="Российские POI"
@@ -2220,7 +2220,7 @@
         <link href="http://smeshnie-ceny.ru/adresa-magazinov-v-moskve.shtml" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="oh1_level_wheelchair_address" />
       </item>
-      <item name="Sportmaster" ru.name="Спортмастер" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Sportmaster_logo_icon_2017.png/240px-Sportmaster_logo_icon_2017.png">
+      <item name="Sportmaster" ru.name="Спортмастер" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Su 10:00-20:00" />
         <key key="brand" value="Спортмастер" />
