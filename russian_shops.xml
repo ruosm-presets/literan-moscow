@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2.0_2018-01-11_1"
+  version="2.0_2018-01-13_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   shortdescription="Russian POIs"
   ru.shortdescription="Российские POI"
@@ -3111,6 +3111,26 @@
         <key key="tickets:public_transport" value="yes" />
         <preset_link preset_name="Address" />
       </item>
+      <item name="Minor power substation (building)" ru.name="Комплектная трансформаторная подстанция (КТП; здание)" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Emoji_u26a1.svg/240px-Emoji_u26a1.svg.png" preset_name_label="true">
+        <space />
+        <reference ref="operator" />
+        <reference ref="ref" />
+        <key key="building" value="service" />
+        <key key="building:levels" value="1" />
+        <key key="location" value="indoor" />
+        <key key="power" value="substation" />
+        <key key="substation" value="minor_distribution" />
+        <preset_link preset_name="Address" />
+      </item>
+      <item name="Minor power substation (street cabinet)" ru.name="Комплектная трансформаторная подстанция (КТП; шкаф)" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Emoji_u26a1.svg/240px-Emoji_u26a1.svg.png" preset_name_label="true">
+        <space />
+        <reference ref="operator" />
+        <reference ref="ref" />
+        <key key="man_made" value="street_cabinet" />
+        <key key="power" value="substation" />
+        <key key="street_cabinet" value="power" />
+        <key key="substation" value="minor_distribution" />
+      </item>
       <item name="Boat rental" ru.name="Лодочная станция (прокат плавсредств)" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Twemoji_26f5.svg/240px-Twemoji_26f5.svg.png" preset_name_label="true">
         <space />
         <reference ref="name" />
@@ -3268,17 +3288,6 @@
         <key key="pipeline" value="substation" />
         <key key="substance" value="heat" />
         <key key="substation" value="distribution" />
-        <preset_link preset_name="Address" />
-      </item>
-      <item name="Local power substation" ru.name="Электроподстанция (локальная)" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Emoji_u26a1.svg/240px-Emoji_u26a1.svg.png" preset_name_label="true">
-        <space />
-        <combo key="location" text="Location" ru.text="Расположение (будка, в здании)" values="indoor,kiosk" ru.display_values="в здании,будка" />
-        <reference ref="operator" />
-        <reference ref="ref" />
-        <key key="building" value="service" />
-        <key key="building:levels" value="1" />
-        <key key="power" value="substation" />
-        <key key="substation" value="minor_distribution" />
         <preset_link preset_name="Address" />
       </item>
     </group>
