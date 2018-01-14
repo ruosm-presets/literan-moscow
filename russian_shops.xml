@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2.0_2018-01-13_1"
+  version="2.0_2018-01-14_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   shortdescription="Russian POIs"
   ru.shortdescription="Российские POI"
@@ -185,7 +185,7 @@
     </checkgroup>
   </chunk> <!-- health20_provided_for. схема тегирования Healthcare 2.0: кому предоставляются услуги -->
   <chunk id="health20_specialities">
-    <link text="Healthcare_2.0 Specialties" ru.text="Список медицинских специализаций" href="https://wiki.openstreetmap.org/wiki/RU:Proposed_features/Healthcare_2.0/Specialties" />
+    <link text="Healthcare 2.0 Specialties" ru.text="Список медицинских специализаций" href="https://wiki.openstreetmap.org/wiki/RU:Proposed_features/Healthcare_2.0/Specialties" />
     <preset_link preset_name="Physician's: Main field specialties" />
     <preset_link preset_name="Physician's: Subspecialties" />
     <preset_link preset_name="Physician's: Subsubspecialties" />
@@ -2209,6 +2209,22 @@
         <link href="https://www.podrygka.ru/shoplist" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
+      <item name="CDEK" ru.name="СДЭК" type="node,closedway,multipolygon" preset_name_label="true">
+        <space />
+        <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" default="+7 800 2501405;+7 800 2500405" />
+        <key key="amenity" value="post_office" />
+        <key key="brand" value="СДЭК" />
+        <key key="brand:wikidata" value="Q28665980" />
+        <key key="brand:wikipedia" value="ru:СДЭК" />
+        <key key="contact:facebook" value="https://www.facebook.com/edostavka" />
+        <key key="contact:instagram" value="https://www.instagram.com/cdek_official" />
+        <key key="contact:vk" value="https://vk.com/cdek_express" />
+        <key key="contact:website" value="https://www.cdek.ru" />
+        <key key="name" value="СДЭК" />
+        <key key="name:ru" value="СДЭК" />
+        <link href="https://www.cdek.ru/contacts.html" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <reference ref="oh1_level_wheelchair_address" />
+      </item> <!-- TODO: вынести в отдельную группу про курьерские/почтовые службы -->
       <item name="Smeshnie Tseni" ru.name="Смешные цены" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <key key="brand" value="Смешные цены" />
@@ -3111,7 +3127,7 @@
         <key key="tickets:public_transport" value="yes" />
         <preset_link preset_name="Address" />
       </item>
-      <item name="Minor power substation (building)" ru.name="Комплектная трансформаторная подстанция (КТП; здание)" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Emoji_u26a1.svg/240px-Emoji_u26a1.svg.png" preset_name_label="true">
+      <item name="Minor power substation (building)" ru.name="Трансформаторная подстанция (ТП, потребительская; здание)" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Emoji_u26a1.svg/240px-Emoji_u26a1.svg.png" preset_name_label="true">
         <space />
         <reference ref="operator" />
         <reference ref="ref" />
@@ -3122,7 +3138,7 @@
         <key key="substation" value="minor_distribution" />
         <preset_link preset_name="Address" />
       </item>
-      <item name="Minor power substation (street cabinet)" ru.name="Комплектная трансформаторная подстанция (КТП; шкаф)" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Emoji_u26a1.svg/240px-Emoji_u26a1.svg.png" preset_name_label="true">
+      <item name="Minor power substation (street cabinet)" ru.name="Трансформаторная подстанция (ТП, потребительская; шкаф)" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Emoji_u26a1.svg/240px-Emoji_u26a1.svg.png" preset_name_label="true">
         <space />
         <reference ref="operator" />
         <reference ref="ref" />
