@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2.0_2018-01-14_1"
+  version="2.0_2018-02-09_1"
   link="https://github.com/ruosm-presets/literan-moscow"
+  icon="https://upload.wikimedia.org/wikipedia/commons/d/db/Twemoji_1f1f7-1f1fa.svg"
   shortdescription="Russian POIs"
   ru.shortdescription="Российские POI"
   description="Tagging preset for Russian shops and amenities"
@@ -220,8 +221,8 @@
         <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" values="+7 495 1201285" default="+7 800 2006303" />
         <key key="amenity" value="pharmacy" />
         <key key="brand" value="А5" />
-        <key key="contact:facebook" value="https://www.facebook.com/apteka5" />
-        <key key="contact:vk" value="https://vk.com/apteka_a5" />
+        <!-- <key key="contact:facebook" value="https://www.facebook.com/apteka5" /> на странице красуется Горздрав -->
+        <!-- <key key="contact:vk" value="https://vk.com/apteka_a5" /> группа закрыта -->
         <key key="contact:website" value="http://apteka5.ru" />
         <key key="healthcare" value="pharmacy" />
         <key key="name" value="А5" />
@@ -304,6 +305,7 @@
         <key key="brand:wikipedia" value="ru:Самсон-Фарма" />
         <key key="contact:facebook" value="https://www.facebook.com/samsonpharma" />
         <key key="contact:instagram" value="https://www.instagram.com/samsonpharma" />
+        <key key="contact:telegram" value="https://telegram.me/SamsonPharmaBot" />
         <key key="contact:twitter" value="https://twitter.com/samsonfarma" />
         <key key="contact:vk" value="https://vk.com/samson_f" />
         <key key="contact:website" value="https://samson-pharma.ru" />
@@ -372,8 +374,10 @@
         <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" values="+7 495 5321313" default="+7 800 5501313" />
         <key key="amenity" value="doctors" />
         <key key="brand" value="Гемотест" />
+        <key key="contact:email" value="client@gemotest.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/gemotestlab" />
         <key key="contact:ok" value="https://ok.ru/gemotest" />
+        <key key="contact:skype" value="vrachgemotest" />
         <key key="contact:vk" value="https://vk.com/gemotestlab" />
         <key key="contact:website" value="https://www.gemotest.ru" />
         <key key="health_facility:type" value="laboratory" />
@@ -2370,7 +2374,7 @@
         <key key="government" value="register_office" />
         <key key="office" value="government" />
       </item>
-      <item name="Казначейство (инспекция ФНС)" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Roskazna.png/216px-Roskazna.png" preset_name_label="true">
+      <item name="Казначейство" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Roskazna.png/216px-Roskazna.png" preset_name_label="true">
         <space />
         <combo key="name" text="Name" ru.text="Название" default="Отдел № ... Управления Федерального казначейства" />
         <combo key="official_name" text="Official name" ru.text="Полное официальное название" default="Отдел № ... Управления Федерального казначейства по ... ской области" />
@@ -3091,6 +3095,15 @@
         <key key="payment:debit_cards" value="yes" />
         <key key="toilets:disposal" value="flush" />
         <key key="toilets:position" value="seated" />
+      </item>
+      <item name="Information totem (map)" ru.name="Информационная стела/колонна (карта)" type="node" preset_name_label="true">
+        <space />
+        <check key="luminous" text="Luminous (lightbox)" ru.text="Светящийся (лайтбокс)" default="on" />
+        <key key="information" value="map" />
+        <key key="map_size" value="local" />
+        <key key="map_type" value="street" />
+        <key key="tourism" value="information" />
+        <reference ref="wifi" />
       </item>
       <item name="Sewage pumping station" ru.name="Канализационная насосная станция" type="node,closedway,multipolygon" preset_name_label="true">
         <!-- NB: добавить тэги здания и этажности?
