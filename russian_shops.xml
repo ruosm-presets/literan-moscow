@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2.0_2018-02-09_1"
+  version="2.0_2018-03-04_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   icon="https://upload.wikimedia.org/wikipedia/commons/d/db/Twemoji_1f1f7-1f1fa.svg"
   shortdescription="Russian POIs"
@@ -3086,7 +3086,6 @@
         <key key="building:levels" value="1" />
         <key key="fee" value="yes" />
         <key key="name" value="Городской туалет" />
-        <key key="name:en" value="City toilet" />
         <key key="name:ru" value="Городской туалет" />
         <key key="opening_hours" value="24/7" />
         <key key="operator" value="ООО «Комхоз-Сервис»" />
@@ -3133,9 +3132,6 @@
         <combo key="operator" text="Operator" ru.text="Оператор" default="ГУП «Мосгортранс»" />
         <key key="building" value="kiosk" />
         <key key="building:levels" value="1" />
-        <key key="name" value="Проездные билеты" />
-        <key key="name:en" value="Public transport tickets" />
-        <key key="name:ru" value="Проездные билеты" />
         <key key="shop" value="ticket" />
         <key key="tickets:public_transport" value="yes" />
         <preset_link preset_name="Address" />
@@ -3259,9 +3255,6 @@
         <combo key="contact:website" text="Website" ru.text="Сайт" values="http://www.central-ppk.ru" />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-13:00\,13:45-17:00; Fr 09:00-13:00\,13:45-15:45" />
         <combo key="operator" text="Operator" ru.text="Оператор" values="ОАО «ЦЕНТРАЛЬНАЯ ППК»" />
-        <key key="name" value="Пригородная касса" />
-        <key key="name:en" value="Suburban train tickets" />
-        <key key="name:ru" value="Пригородная касса" />
         <key key="shop" value="ticket" />
         <key key="tickets:suburban_train" value="yes" />
         <preset_link preset_name="Address" />
@@ -3300,9 +3293,6 @@
       <item name="Public transport tickets vending machine" ru.name="Терминал &quot;Проездные билеты&quot; (общественный транспорт)" type="node" preset_name_label="true">
         <space />
         <key key="amenity" value="vending_machine" />
-        <key key="name" value="Проездные билеты" />
-        <key key="name:en" value="Public transport tickets" />
-        <key key="name:ru" value="Проездные билеты" />
         <key key="vending" value="public_transport_tickets" />
         <preset_link preset_name="Payment Methods" />
       </item>
