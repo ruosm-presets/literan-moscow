@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2.0_2018-03-04_1"
+  version="2.0_2018-03-15_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   icon="https://upload.wikimedia.org/wikipedia/commons/d/db/Twemoji_1f1f7-1f1fa.svg"
   shortdescription="Russian POIs"
@@ -444,8 +444,8 @@
         <key key="contact:website" value="http://ilpatio.ru" />
         <key key="cuisine" value="italian" />
         <key key="diet:vegetarian" value="yes" />
-        <key key="name" value="IL Патио" />
-        <key key="name:ru" value="IL Патио" />
+        <key key="name" value="Il Патио" />
+        <key key="name:ru" value="Il Патио" />
         <link href="http://ilpatio.ru/restaurants" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
@@ -920,8 +920,8 @@
         <key key="contact:facebook" value="https://www.facebook.com/spar" />
         <key key="contact:twitter" value="https://twitter.com/SPARInt" />
         <key key="contact:website" value="http://www.spar.ru" />
-        <key key="name" value="SPAR" />
-        <key key="name:en" value="SPAR" />
+        <key key="name" value="Spar" />
+        <key key="name:en" value="Spar" />
         <link href="http://www.spar.ru/stores" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
@@ -1041,9 +1041,9 @@
         <key key="contact:twitter" value="https://twitter.com/ATAK_Super_PR" />
         <key key="contact:vk" value="https://vk.com/atak" />
         <key key="contact:website" value="http://www.ataksupermarket.ru" />
-        <key key="name" value="АТАК" />
-        <key key="name:en" value="ATAC" />
-        <key key="name:ru" value="АТАК" />
+        <key key="name" value="Атак" />
+        <key key="name:en" value="Atac" />
+        <key key="name:ru" value="Атак" />
         <link href="http://www.ataksupermarket.ru/shops" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
@@ -1347,8 +1347,8 @@
         <key key="contact:vk" value="https://vk.com/okmarketru" />
         <key key="contact:website" value="http://www.okmarket.ru" />
         <key key="contact:youtube" value="https://www.youtube.com/user/marketokey" />
-        <key key="name" value="О’КЕЙ" />
-        <key key="name:ru" value="О’КЕЙ" />
+        <key key="name" value="О’кей" />
+        <key key="name:ru" value="О’кей" />
         <key key="shop" value="supermarket" /> <!-- TODO: когда примут shop=hypermarket нужно будет здесь поменять https://wiki.openstreetmap.org/wiki/Proposed_features/hypermarket -->
         <link href="http://www.okmarket.ru/stores" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
@@ -1645,10 +1645,12 @@
         <key key="bic" value="VTBRRUMM" />
         <key key="brand" value="ВТБ" />
         <key key="contact:email" value="info@vtb.ru" />
-        <key key="contact:facebook" value="https://www.facebook.com/vtbgroup" />
-        <key key="contact:phone" value="+7 800 2007799" />
-        <key key="contact:twitter" value="https://twitter.com/vtb" />
-        <key key="contact:vk" value="https://vk.com/vtb24" /> <!-- NB: на официальном сайте ссылки на группу нет, но группа жива -->
+        <key key="contact:facebook" value="https://www.facebook.com/vtbrussia" />
+        <key key="contact:instagram" value="https://www.instagram.com/bankvtb" />
+        <key key="contact:ok" value="https://ok.ru/vtb" />
+        <key key="contact:phone" value="+7 800 1002424" />
+        <key key="contact:twitter" value="https://twitter.com/VTB" />
+        <key key="contact:vk" value="https://vk.com/vtb" />
         <key key="contact:website" value="https://www.vtb.ru" />
         <key key="contact:youtube" value="https://www.youtube.com/user/vtbgroup" />
         <key key="name" value="ВТБ" />
@@ -1939,8 +1941,8 @@
         <key key="brand" value="TOPGUN" />
         <key key="contact:youtube" value="https://www.youtube.com/user/lokoncev" />
         <key key="male" value="yes" />
-        <key key="name" value="TOPGUN" />
-        <key key="name:en" value="TOPGUN" />
+        <key key="name" value="TopGun" />
+        <key key="name:en" value="TopGun" />
         <key key="shop" value="hairdresser" />
         <link href="http://topgunbarbershop.ru/barbershop" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
@@ -2268,7 +2270,7 @@
         <space />
         <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" default="+7 800 5555696" />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="Mo-Su 10:00-22:00,Mo-Su 10:00-23:00,Mo-Su 09:00-21:00,Mo-Su 09:00-22:00" />
-        <key key="alt_name" value="ТВОЕ" />
+        <key key="alt_name" value="Твое" />
         <key key="brand" value="ТВОЁ" />
         <key key="contact:email" value="help@tvoe.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/odezda.tvoe" />
@@ -2279,8 +2281,8 @@
         <key key="contact:vk" value="https://vk.com/tvoe" />
         <key key="contact:website" value="https://tvoe.ru" />
         <key key="contact:youtube" value="https://www.youtube.com/user/TvoeOfficial" />
-        <key key="name" value="ТВОЁ" />
-        <key key="name:ru" value="ТВОЁ" />
+        <key key="name" value="Твоё" />
+        <key key="name:ru" value="Твоё" />
         <key key="operator" value="ООО «ТВОЕ»" />
         <key key="shop" value="clothes" />
         <link href="https://tvoe.ru/shops" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
