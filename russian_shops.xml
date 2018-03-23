@@ -1589,13 +1589,13 @@
         <key key="contact:phone" value="+7 800 2500890" />
         <key key="contact:twitter" value="https://twitter.com/ru_mts" />
         <key key="contact:vk" value="https://vk.com/mts" />
-        <key key="contact:website" value="http://www.mts.ru" />
+        <key key="contact:website" value="https://shop.mts.ru" />
         <key key="name" value="МТС" />
         <key key="name:en" value="MTS" />
         <key key="name:ru" value="МТС" />
         <key key="office" value="telecommunication" />
         <key key="shop" value="mobile_phone" />
-        <link href="http://www.mts.ru/mobil_inet_and_tv/help/mts/offices" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://shop.mts.ru/stores/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
       <item name="Svyaznoy" ru.name="Связной" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/ru/f/fa/SvyaznoyLogo.png">
