@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2.0_2018-03-23_1"
+  version="2.0_2018-03-30_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   icon="https://upload.wikimedia.org/wikipedia/commons/d/db/Twemoji_1f1f7-1f1fa.svg"
   shortdescription="Russian POIs"
@@ -47,7 +47,7 @@
     <combo key="shop" text="Convenience or supermarket" ru.text="Тип магазина (с тележками - супермаркет)" values="supermarket,convenience" default="supermarket" />
   </chunk>
   <chunk id="height">
-    <combo key="height" text="Height" ru.text="Высота (в метрах)" /> <!-- TODO: убрать `(в метрах)`? -->
+    <combo key="height" text="Height" ru.text="Высота (в метрах)" /> <!-- QUESTION: убрать `(в метрах)`? -->
   </chunk>
   <chunk id="ownership">
     <combo key="ownership" text="Ownership" ru.text="Форма собственности" values="state,private" ru.display_values="государственная,частная" />
@@ -235,7 +235,7 @@
         <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" values="+7 495 7954477" />
         <key key="amenity" value="pharmacy" />
         <key key="brand" value="А-мега" />
-        <!-- <key key="contact:facebook" value="https://www.facebook.com/apteka.a.mega" /> NB: сдохла страница -->
+        <!-- <key key="contact:facebook" value="https://www.facebook.com/apteka.a.mega" /> NOTE: сдохла страница -->
         <key key="contact:ok" value="https://ok.ru/group/53709525483602" />
         <key key="contact:vk" value="https://vk.com/apteka_mega" />
         <key key="contact:website" value="https://www.aptekamega.ru" />
@@ -1001,7 +1001,7 @@
         <key key="contact:youtube" value="https://www.youtube.com/user/azbukav" />
         <key key="name" value="АВ Маркет" />
         <key key="name:ru" value="АВ Маркет" />
-        <key key="shop" value="supermarket" /> <!-- TODO: когда примут shop=hypermarket нужно будет здесь поменять https://wiki.openstreetmap.org/wiki/Proposed_features/hypermarket -->
+        <key key="shop" value="supermarket" /> <!-- FIXME:NOTE: когда примут shop=hypermarket нужно будет здесь поменять https://wiki.openstreetmap.org/wiki/Proposed_features/hypermarket -->
         <link href="https://av.ru/shops/#msk_av-market" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
@@ -1063,7 +1063,7 @@
         <key key="contact:vk" value="https://vk.com/auchan" />
         <key key="contact:website" value="https://www.auchan.ru" />
         <key key="contact:youtube" value="https://www.youtube.com/channel/UCoPpvvMHzIpZ7EcNZBEWhFg" />
-        <key key="shop" value="supermarket" /> <!-- TODO: когда примут shop=hypermarket нужно будет здесь поменять https://wiki.openstreetmap.org/wiki/Proposed_features/hypermarket -->
+        <key key="shop" value="supermarket" /> <!-- FIXME:NOTE: когда примут shop=hypermarket нужно будет здесь поменять https://wiki.openstreetmap.org/wiki/Proposed_features/hypermarket -->
         <link href="https://www.auchan.ru/ru/shops" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
@@ -1349,7 +1349,7 @@
         <key key="contact:youtube" value="https://www.youtube.com/user/marketokey" />
         <key key="name" value="О’кей" />
         <key key="name:ru" value="О’кей" />
-        <key key="shop" value="supermarket" /> <!-- TODO: когда примут shop=hypermarket нужно будет здесь поменять https://wiki.openstreetmap.org/wiki/Proposed_features/hypermarket -->
+        <key key="shop" value="supermarket" /> <!-- FIXME:NOTE: когда примут shop=hypermarket нужно будет здесь поменять https://wiki.openstreetmap.org/wiki/Proposed_features/hypermarket -->
         <link href="http://www.okmarket.ru/stores" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
@@ -1659,7 +1659,7 @@
         <key key="operator" value="Банк ВТБ (публичное акционерное общество)" />
         <key key="operator:wikidata" value="Q1549389" />
         <key key="operator:wikipedia" value="ru:Банк ВТБ" />
-        <link href="https://www.vtb.ru/geography/russia/moscow" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://www.vtb.ru/o-banke/kontakty/otdeleniya" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="bic_branch_ref_wheelchair_atm_address" />
       </item>
       <item name="VTB Bank of Moscow" ru.name="ВТБ Банк Москвы" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/ru/5/5b/Bank_moskvy_logo.png" preset_name_label="true">
@@ -1681,7 +1681,7 @@
         <key key="name" value="ВТБ Банк Москвы" />
         <key key="name:en" value="VTB Bank of Moscow" />
         <key key="name:ru" value="ВТБ Банк Москвы" />
-        <link href="https://www.bm.ru/ru/ofisy-banka/otdelenija" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://www.vtb.ru/o-banke/kontakty/otdeleniya" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="bic_branch_ref_wheelchair_atm_address" />
       </item>
       <item name="Zaim-Express" ru.name="Займ-Экспресс" type="node,closedway,multipolygon" preset_name_label="true">
@@ -1880,7 +1880,7 @@
       <item name="DNS" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/ru/thumb/5/51/DNS_logo.png/320px-DNS_logo.png">
         <space />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 10:00-21:00,Mo-Su 09:00-22:00" />
-        <!-- <key key="alt_name" value="Digital Network System" /> NB: нигде в быту не используется -->
+        <!-- <key key="alt_name" value="Digital Network System" /> NOTE: нигде в быту не используется -->
         <key key="brand" value="DNS" />
         <key key="brand:wikidata" value="Q4036922" />
         <key key="brand:wikipedia" value="DNS (сеть магазинов)" />
@@ -2234,7 +2234,7 @@
       <item name="Smeshnie Tseni" ru.name="Смешные цены" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <key key="brand" value="Смешные цены" />
-        <!-- <key key="contact:website" value="http://smeshnyeceny.ru" /> NB: старый сайт, но всё ещё рабочий -->
+        <!-- <key key="contact:website" value="http://smeshnyeceny.ru" /> NOTE: старый сайт, но всё ещё рабочий -->
         <key key="contact:website" value="http://smeshnie-ceny.ru" />
         <key key="name" value="Смешные цены" />
         <key key="name:ru" value="Смешные цены" />
@@ -3019,7 +3019,7 @@
         <key key="fee" value="no" />
         <key key="opening_hours" value="24/7" />
         <key key="supervised" value="no" />
-      </item> <!-- NB: всё то же самое прекрасно делается через пункт дефолтного пресета -->
+      </item> <!-- NOTE: всё то же самое прекрасно делается через пункт дефолтного пресета -->
       <item name="Subway ventilation kiosk" ru.name="Вентиляционная шахта (киоск) метрополитена" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <reference ref="name" />
@@ -3040,7 +3040,7 @@
         <preset_link preset_name="Address" />
       </item>
       <item name="Gas substation" ru.name="Газорегуляторный пункт" type="node,closedway,multipolygon" preset_name_label="true">
-        <!-- NB: добавить тэги здания и этажности?
+        <!-- QUESTION:NB: добавить тэги здания и этажности?
             нет, потому что часто это не здание -->
         <space />
         <reference ref="operator" />
@@ -3107,7 +3107,7 @@
         <reference ref="wifi" />
       </item>
       <item name="Sewage pumping station" ru.name="Канализационная насосная станция" type="node,closedway,multipolygon" preset_name_label="true">
-        <!-- NB: добавить тэги здания и этажности?
+        <!-- QUESTION:NB: добавить тэги здания и этажности?
             нет, потому что часто это не здание -->
         <space />
         <reference ref="operator" />
@@ -3212,7 +3212,7 @@
         <key key="vending" value="parking_tickets" />
         <link href="http://parking.mos.ru" text="Official website (place locator)" ru.text="Ссылка на сайт (номера паркоматов)" />
       </item>
-      <item name="Clothes dryer" ru.name="Площадка для сушки белья" type="node,closedway,multipolygon" icon="https://image.flaticon.com/icons/png/512/47/47421.png" preset_name_label="true"> <!-- https://d30y9cdsu7xlg0.cloudfront.net/png/174655-200.png NB: второй вариант иконки -->
+      <item name="Clothes dryer" ru.name="Площадка для сушки белья" type="node,closedway,multipolygon" icon="https://image.flaticon.com/icons/png/512/47/47421.png" preset_name_label="true"> <!-- https://d30y9cdsu7xlg0.cloudfront.net/png/174655-200.png NOTE: второй вариант иконки -->
         <space />
         <key key="amenity" value="clothes_dryer" />
         <combo key="clothes_dryer" text="Clothes dryer" ru.text="Тип сушилки" values="pulley,rack,t-post,umbrella" ru.display_values="с роликом,стойка,столб,в виде зонта" default="rack" />
@@ -3244,13 +3244,13 @@
         <key key="amenity" value="vending_machine" />
         <key key="brand" value="InPost " />
         <key key="contact:phone" value="+7 800 3335146" />
-        <!-- <key key="contact:website" value="https://inpost.ru" /> NB: сайт дохлый -->
+        <!-- <key key="contact:website" value="https://inpost.ru" /> NOTE: сайт дохлый -->
         <key key="operator" value="InPost" />
         <key key="payment:credit_cards" value="yes" />
         <key key="payment:debit_cards" value="yes" />
         <key key="payment:notes" value="yes" />
         <key key="vending" value="parcel_pickup" />
-        <!-- <link href="https://inpost.ru/ru/customers/nayti-blizhaishiy-terminal" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, номера почтоматов)" /> NB: сайт дохлый -->
+        <!-- <link href="https://inpost.ru/ru/customers/nayti-blizhaishiy-terminal" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, номера почтоматов)" /> NOTE: сайт дохлый -->
       </item>
       <item name="Suburban train tickets shop" ru.name="Пригородная касса (электрички)" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
@@ -3271,7 +3271,7 @@
         <key key="operator" value="ПАО «Московская городская телефонная сеть»" />
         <key key="payment:cash" value="no" />
         <key key="payment:telephone_cards" value="yes" />
-      </item> <!-- TODO: есть мысль удалить этот пункт. Судя по https://data.mos.ru/opendata/841/data/map?versionNumber=3&releaseNumber=4 эти таксофоны в основном в помещениях (и туда ограничен доступ). Например, в школах. -->
+      </item> <!-- IDEA: есть мысль удалить этот пункт. Судя по https://data.mos.ru/opendata/841/data/map?versionNumber=3&releaseNumber=4 эти таксофоны в основном в помещениях (и туда ограничен доступ). Например, в школах. -->
       <item name="Rostelecom payphone" ru.name="Таксофон &quot;Ростелеком&quot;" type="node" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Twemoji_1f4de.svg/240px-Twemoji_1f4de.svg.png" preset_name_label="true">
         <space />
         <key key="amenity" value="telephone" />
