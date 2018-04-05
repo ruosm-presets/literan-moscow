@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2.0_2018-03-30_1"
+  version="2.0_2018-04-06_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   icon="https://upload.wikimedia.org/wikipedia/commons/d/db/Twemoji_1f1f7-1f1fa.svg"
   shortdescription="Russian POIs"
@@ -1420,7 +1420,7 @@
         <key key="contact:facebook" value="https://www.facebook.com/pyaterochka" />
         <key key="contact:ok" value="https://ok.ru/x5pyaterka" />
         <key key="contact:phone" value="+7 800 5555505" />
-        <key key="contact:vk" value="https://vk.com/club19098821" />
+        <key key="contact:vk" value="https://vk.com/pyaterochka_shop" />
         <key key="contact:website" value="https://5ka.ru" />
         <key key="name" value="Пятёрочка" />
         <key key="name:ru" value="Пятёрочка" />
