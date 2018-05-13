@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2.0_2018-04-27_1"
+  version="2.0_2018-05-14_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   icon="https://upload.wikimedia.org/wikipedia/commons/d/db/Twemoji_1f1f7-1f1fa.svg"
   shortdescription="Russian POIs"
@@ -2329,7 +2329,7 @@
         <link href="https://www.eldorado.ru/info/shops/11324" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
-      <item name="Ulmart outpost" ru.name="Юлмарт (ПВЗ)" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/ru/5/57/Logo_200x200.png">
+      <item name="Ulmart outpost" ru.name="Юлмарт (ПВЗ)" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/commons/b/ba/Ulmart_Logo.png">
         <space />
         <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" values="+7 495 2874241" />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Su 10:00-21:00" />
