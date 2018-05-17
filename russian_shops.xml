@@ -1962,7 +1962,7 @@
         <key key="name" value="Адамас" />
         <key key="name:ru" value="Адамас" />
         <key key="shop" value="jewelry" />
-        <link href="https://www.adamas.ru/buy/moscow" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://www.adamas.ru/buy/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
       <item name="Eyekraft" ru.name="Айкрафт" type="node,closedway,multipolygon" preset_name_label="true">
