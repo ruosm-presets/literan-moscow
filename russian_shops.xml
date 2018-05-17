@@ -1952,8 +1952,6 @@
         <combo key="contact:phone" text="Phone Number" ru.text="Номер телефона" values="+7 800 2503344-xxxx" default="+7 800 2503344" />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="Mo-Su 10:00-22:00,Mo-Su 09:00-21:00" />
         <key key="brand" value="Адамас" />
-        <key key="brand:wikidata" value="Q15924718" />
-        <key key="brand:wikipedia" value="ru:Адамас (компания)" />
         <key key="contact:email" value="office@adamas.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/adamas.club" />
         <key key="contact:instagram" value="https://www.instagram.com/adamas_ru" />
