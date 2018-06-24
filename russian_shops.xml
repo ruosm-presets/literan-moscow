@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2.0_2018-05-17_1"
+  version="2.0_2018-06-24_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   icon="https://upload.wikimedia.org/wikipedia/commons/d/db/Twemoji_1f1f7-1f1fa.svg"
   shortdescription="Russian POIs"
@@ -412,6 +412,27 @@
       </item>
     </group>
     <group name="Eatery" ru.name="Общепит" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Emojione_1F374.svg/64px-Emojione_1F374.svg.png">
+      <item name="Cofix" type="node,closedway,multipolygon" preset_name_label="true">
+        <space />
+        <reference ref="phone" />
+        <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="Mo-Su 08:00-22:00,Mo-Th 10:00-22:00; Fr-Su 10:00-23:00" />
+        <key key="amenity" value="fast_food" />
+        <key key="brand" value="Cofix" />
+        <key key="brand:wikidata" value="Q16132717" />
+        <key key="brand:wikipedia" value="en:Cofix" />
+        <key key="contact:email" value="info@cofix.ru" />
+        <key key="contact:facebook" value="https://www.facebook.com/cofixrussia" />
+        <key key="contact:instagram" value="https://www.instagram.com/cofixrussia" />
+        <key key="contact:vk" value="https://vk.com/cofixrussia" />
+        <key key="contact:website" value="http://www.cofix.ru" />
+        <key key="cuisine" value="coffee_shop" />
+        <key key="delivery" value="no" />
+        <key key="name" value="Cofix" />
+        <key key="name:en" value="Cofix" />
+        <key key="takeaway" value="yes" />
+        <link href="http://www.cofix.ru/cafe" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
+      </item>
       <item name="GlowSubs" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
@@ -1595,7 +1616,7 @@
         <key key="name:ru" value="МТС" />
         <key key="office" value="telecommunication" />
         <key key="shop" value="mobile_phone" />
-        <link href="https://shop.mts.ru/stores/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://shop.mts.ru/stores" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
       <item name="Svyaznoy" ru.name="Связной" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/ru/f/fa/SvyaznoyLogo.png">
@@ -1962,7 +1983,7 @@
         <key key="name" value="Адамас" />
         <key key="name:ru" value="Адамас" />
         <key key="shop" value="jewelry" />
-        <link href="https://www.adamas.ru/buy/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://www.adamas.ru/buy" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
       <item name="Eyekraft" ru.name="Айкрафт" type="node,closedway,multipolygon" preset_name_label="true">
