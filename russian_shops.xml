@@ -526,13 +526,13 @@
         <key key="brand:wikipedia" value="ru:Subway (сеть ресторанов)" />
         <key key="contact:email" value="subway@subway.ru" />
         <key key="contact:vk" value="https://vk.com/subwayrussia" />
-        <key key="contact:website" value="http://subway.ru" />
+        <key key="contact:website" value="https://subway.ru" />
         <key key="cuisine" value="sandwich" />
         <key key="diet:vegetarian" value="no" />
         <key key="name" value="Subway" />
         <key key="name:en" value="Subway" />
         <key key="takeaway" value="yes" />
-        <link href="http://subway.ru/stores" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://subway.ru/stores" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
       <item name="Baskin-Robbins" ru.name="Баскин Роббинс" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/commons/d/d8/Baskin-Robbins_logo.svg">
