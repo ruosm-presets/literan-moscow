@@ -863,12 +863,12 @@
         <key key="contact:line" value="http://line.me/ti/p/%40teremok" />
         <key key="contact:twitter" value="https://twitter.com/teremok_ru" />
         <key key="contact:vk" value="https://vk.com/teremok" />
-        <key key="contact:website" value="http://www.teremok.ru" />
+        <key key="contact:website" value="https://teremok.ru" />
         <key key="cuisine" value="crepe" />
         <key key="diet:vegetarian" value="yes" />
         <key key="name" value="Теремок" />
         <key key="name:ru" value="Теремок" />
-        <link href="http://www.teremok.ru/address" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://teremok.ru/places" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
       <item name="Shokoladnitsa" ru.name="Шоколадница" type="node,closedway,multipolygon" preset_name_label="true">
