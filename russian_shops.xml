@@ -1155,7 +1155,7 @@
         <link href="http://vkusvill.ru/shops" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="Viktoriya" ru.name="Виктория" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/ru/2/20/Victoria_logo.png">
+      <item name="Victoria" ru.name="Виктория" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="contact:phone" text="Phone number" ru.text="Номер телефона" default="+7 800 2004454" />
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 08:00-24:00,Mo-Su 08:00-01:00,Mo-Su 08:00-23:00,Mo-Su 06:00-02:00" default="24/7" />
