@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2.0_2019-06-21_1"
+  version="2.0_2019-09-05_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   icon="https://upload.wikimedia.org/wikipedia/commons/d/db/Twemoji_1f1f7-1f1fa.svg"
   shortdescription="Russian POIs"
@@ -186,7 +186,7 @@
     </checkgroup>
   </chunk> <!-- health20_provided_for. схема тегирования Healthcare 2.0: кому предоставляются услуги -->
   <chunk id="health20_specialities">
-    <link text="Healthcare 2.0 Specialties" ru.text="Список медицинских специализаций" href="https://wiki.openstreetmap.org/wiki/RU:Proposed_features/Healthcare_2.0/Specialties" />
+    <link text="Healthcare 2.0 Specialties" ru.text="Список медицинских специализаций" wiki="Proposed_features/Healthcare_2.0/Specialties" />
     <preset_link preset_name="Physician's: Main field specialties" />
     <preset_link preset_name="Physician's: Subspecialties" />
     <preset_link preset_name="Physician's: Subsubspecialties" />
@@ -2485,7 +2485,7 @@
         <key key="operator:wikidata" value="Q1502763" />
         <key key="operator:wikipedia" value="ru:Почта России" />
         <link href="https://pochta.ru/offices" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <link href="https://wiki.openstreetmap.org/wiki/RU:Tag:amenity=post_office" />
+        <link wiki="Tag:amenity=post_office" />
         <reference ref="wheelchair_address" />
       </item>
       <item name="Прокуратура" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Genprokuratura.png/219px-Genprokuratura.png" preset_name_label="true">
@@ -2599,7 +2599,7 @@
     <group name="Health facilities" ru.name="Медицинские учреждения" icon="https://upload.wikimedia.org/wikipedia/commons/c/c8/Twemoji_1f489.svg">
       <group name="Healthcare 2.0: Specialties">
         <item name="Physician's: Main field specialties" type="node,closedway,multipolygon" preset_name_label="true">
-          <link href="https://wiki.openstreetmap.org/wiki/Proposed_features/Healthcare_2.0/Specialties#Main_field_specialties" />
+          <link wiki="Proposed_features/Healthcare_2.0/Specialties#Main_field_specialties" />
           <space />
           <combo key="health_specialty:anaesthesiology" text="anaesthesiology" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:anatomy" text="anatomy" values="yes,main,additional,no,partial,trained" match="key" />
@@ -2637,7 +2637,7 @@
           <combo key="health_specialty:transfusion_medicine" text="transfusion medicine" values="yes,main,additional,no,partial,trained" match="key" />
         </item>
         <item name="Physician's: Subspecialties" type="node,closedway,multipolygon" preset_name_label="true">
-          <link href="https://wiki.openstreetmap.org/wiki/Proposed_features/Healthcare_2.0/Specialties#Subspecialties" />
+          <link wiki="Proposed_features/Healthcare_2.0/Specialties#Subspecialties" />
           <space />
           <combo key="health_specialty:addiction_medicine" text="addiction medicine" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:adult_psychiatry" text="adult psychiatry" values="yes,main,additional,no,partial,trained" match="key" />
@@ -2710,7 +2710,7 @@
           <combo key="health_specialty:vascular_surgery" text="vascular surgery" values="yes,main,additional,no,partial,trained" match="key" />
         </item>
         <item name="Physician's: Subsubspecialties" type="node,closedway,multipolygon" preset_name_label="true">
-          <link href="https://wiki.openstreetmap.org/wiki/Proposed_features/Healthcare_2.0/Specialties#Subsubspecialties" />
+          <link wiki="Proposed_features/Healthcare_2.0/Specialties#Subsubspecialties" />
           <space />
           <combo key="health_specialty:allergology" text="allergology" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:cardiovascular_surgery" text="cardiovascular surgery" values="yes,main,additional,no,partial,trained" match="key" />
@@ -2723,7 +2723,7 @@
           <combo key="health_specialty:venereology" text="venereology" values="yes,main,additional,no,partial,trained" match="key" />
         </item>
         <item name="Therapists and the alternative medicine: Main field specialties" type="node,closedway,multipolygon" preset_name_label="true">
-          <link href="https://wiki.openstreetmap.org/wiki/Proposed_features/Healthcare_2.0/Specialties#Main_field_specialties_2" />
+          <link wiki="Proposed_features/Healthcare_2.0/Specialties#Main_field_specialties_2" />
           <space />
           <combo key="health_specialty:alternative_medicine" text="alternative medicine" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:balneotherapy" text="balneotherapy" values="yes,main,additional,no,partial,trained" match="key" />
@@ -2743,7 +2743,7 @@
           <combo key="health_specialty:traditional_medicine" text="traditional medicine" values="yes,main,additional,no,partial,trained" match="key" />
         </item>
         <item name="Therapists and the alternative medicine: Subspecialties" type="node,closedway,multipolygon" preset_name_label="true">
-          <link href="https://wiki.openstreetmap.org/wiki/Proposed_features/Healthcare_2.0/Specialties#Subspecialties_2" />
+          <link wiki="Proposed_features/Healthcare_2.0/Specialties#Subspecialties_2" />
           <space />
           <combo key="health_specialty:anthroposophical_medicine" text="anthroposophical medicine" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:art_therapy" text="art therapy" values="yes,main,additional,no,partial,trained" match="key" />
@@ -2769,7 +2769,7 @@
           <combo key="health_specialty:yoga" text="yoga" values="yes,main,additional,no,partial,trained" match="key" />
         </item>
         <item name="Therapists and the alternative medicine: Subsubspecialties" type="node,closedway,multipolygon" preset_name_label="true">
-          <link href="https://wiki.openstreetmap.org/wiki/Proposed_features/Healthcare_2.0/Specialties#Subsubspecialties_2" />
+          <link wiki="Proposed_features/Healthcare_2.0/Specialties#Subsubspecialties_2" />
           <space />
           <combo key="health_specialty:acupuncture" text="acupuncture" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:qi_gong" text="qi gong" values="yes,main,additional,no,partial,trained" match="key" />
@@ -3044,7 +3044,7 @@
         <space />
         <reference ref="operator" />
         <key key="telecom" value="central_office" />
-        <link href="https://wiki.openstreetmap.org/wiki/WikiProject_Telecoms" />
+        <link wiki="WikiProject_Telecoms" />
         <preset_link preset_name="Address" />
         <preset_link preset_name="Building" />
       </item>
@@ -3052,7 +3052,7 @@
         <space />
         <reference ref="operator" />
         <key key="communication:mobile_phone" value="yes" />
-        <link href="https://wiki.openstreetmap.org/wiki/Proposed_features/Telecommunications_tower" text="Proposed features/Telecommunications tower" />
+        <link wiki="Proposed_features/Telecommunications_tower" text="Proposed features/Telecommunications tower" />
       </item>
       <item name="Communication tower" ru.name="Башня сотовой связи" type="node" preset_name_label="true">
         <space />
@@ -3064,9 +3064,8 @@
         <key key="communication:mobile_phone" value="yes" />
         <key key="man_made" value="tower" />
         <key key="tower:type" value="communication" />
-        <link href="https://wiki.openstreetmap.org/wiki/Proposed_features/Telecommunications_tower" text="Proposed features/Telecommunications tower" />
-        <link href="https://wiki.openstreetmap.org/wiki/Tag:man_made%3Dtower"
-           ru.href="https://wiki.openstreetmap.org/wiki/RU:Tag:man_made%3Dtower" />
+        <link wiki="Proposed_features/Telecommunications_tower" text="Proposed features/Telecommunications tower" />
+        <link wiki="Tag:man_made%3Dtower" />
         <link href="https://www.google.ru/maps/@55.8245367,36.9184932,3a,75y,263.57h,116.88t/data=!3m6!1e1!3m4!1smAWF8VNFYQHed3GZ0W0SYA!2e0!7i13312!8i6656" text="Photo" ru.text="Фотография-пример" />
       </item>
       <item name="Bicycle parking stands" ru.name="Велопарковка (стойки)" type="node,closedway,multipolygon" preset_name_label="true">
@@ -3236,7 +3235,7 @@
           <check key="pedalboat_rental" text="pedalboat" ru.text="катамаран" />
           <check key="sailboat_rental" text="sailing boats" ru.text="парусная лодка" />
         </checkgroup>
-        <link href="https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dboat_rental" />
+        <link wiki="Tag:amenity%3Dboat_rental" />
         <preset_link preset_name="Address" />
         <preset_link preset_name="Contact (Schema with 'contact:*' Prefix)" />
       </item>
@@ -3250,9 +3249,8 @@
         <key key="communication:mobile_phone" value="yes" />
         <key key="man_made" value="mast" />
         <key key="mast:type" value="communication" />
-        <link href="https://wiki.openstreetmap.org/wiki/Proposed_features/Telecommunications_tower" text="Proposed features/Telecommunications tower" />
-        <link href="https://wiki.openstreetmap.org/wiki/Tag:man_made%3Dmast"
-          ru.href="https://wiki.openstreetmap.org/wiki/RU:Tag:man_made%3Dmast" />
+        <link wiki="Proposed_features/Telecommunications_tower" text="Proposed features/Telecommunications tower" />
+        <link wiki="Tag:man_made%3Dmast" />
       </item>
       <item name="Moscow parking meter" ru.name="Паркомат (Москва)" type="node" preset_name_label="true">
         <space />
@@ -3283,8 +3281,7 @@
           <check key="clothes_dryer:portable" text="Portable" ru.text="Переносная" />
           <check key="indoor" text="Indoor" ru.text="В помещении" />
         </checkgroup>
-        <link href="https://wiki.openstreetmap.org/wiki/RU:Tag:amenity%3Dclothes_dryer"
-          ru.href="https://wiki.openstreetmap.org/wiki/RU:Tag:amenity%3Dclothes_dryer" />
+        <link wiki="Tag:amenity%3Dclothes_dryer" />
       </item>
       <item name="Postbox (Russian Post)" ru.name="Почтовый ящик (Почта России)" type="node" icon="https://upload.wikimedia.org/wikipedia/commons/8/82/Twemoji_1f4ee.svg" preset_name_label="true">
         <space />
@@ -3296,7 +3293,7 @@
         <key key="amenity" value="post_box" />
         <key key="brand" value="Почта России" />
         <key key="operator" value="ФГУП «Почта России»" />
-        <link href="https://wiki.openstreetmap.org/wiki/RU:Tag:amenity%3Dpost_box" />
+        <link wiki="Tag:amenity%3Dpost_box" />
       </item>
       <item name="Suburban train tickets shop" ru.name="Пригородная касса (электрички)" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
