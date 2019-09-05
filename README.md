@@ -8,7 +8,7 @@
 ### Персоналии
 - [literan](https://goo.gl/TJzpyT) — автор идеи и начинатель :v:
 - [контрибутеры](https://github.com/ruosm-presets/literan-moscow/graphs/contributors)
-- [alexander-ii](https://github.com/alexander-ii) — мейнтейнер
+- ~~[alexander-ii](https://github.com/alexander-ii)~~ — в прошлом мейнтейнер
 
 ## Установка
 Заготовку можно добавить из списка `Доступные заготовки`.
