@@ -289,11 +289,11 @@
         <key key="contact:instagram" value="https://www.instagram.com/rigla.ru" />
         <key key="contact:ok" value="https://ok.ru/rigla.ru" />
         <key key="contact:vk" value="https://vk.com/rigla_ru" />
-        <key key="contact:website" value="http://www.rigla.ru" />
+        <key key="contact:website" value="https://www.rigla.ru" />
         <key key="healthcare" value="pharmacy" />
         <key key="name" value="Ригла" />
         <key key="name:ru" value="Ригла" />
-        <link href="http://www.rigla.ru/stores" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://www.rigla.ru/pharmacies" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="oh3_level_wheelchair_address_dispencing" />
       </item>
       <item name="Samson-Pharma" ru.name="Самсон-Фарма" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/ru/c/cb/%D0%A1%D0%B0%D0%BC%D1%81%D0%BE%D0%BD-%D0%A4%D0%B0%D1%80%D0%BC%D0%B0.png">
@@ -424,13 +424,13 @@
         <key key="contact:facebook" value="https://www.facebook.com/cofixrussia" />
         <key key="contact:instagram" value="https://www.instagram.com/cofixrussia" />
         <key key="contact:vk" value="https://vk.com/cofixrussia" />
-        <key key="contact:website" value="http://www.cofix.ru" />
+        <key key="contact:website" value="https://www.cofix.ru" />
         <key key="cuisine" value="coffee_shop" />
         <key key="delivery" value="no" />
         <key key="name" value="Cofix" />
         <key key="name:en" value="Cofix" />
         <key key="takeaway" value="yes" />
-        <link href="http://www.cofix.ru/cafe" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://www.cofix.ru/cafe" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
       <item name="GlowSubs" type="node,closedway,multipolygon" preset_name_label="true">
@@ -860,7 +860,7 @@
         <key key="contact:email" value="office@teremok.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/teremok" />
         <key key="contact:instagram" value="https://www.instagram.com/teremok_ru" />
-        <key key="contact:line" value="http://line.me/ti/p/%40teremok" />
+        <!-- <key key="contact:line" value="http://line.me/ti/p/%40teremok" /> убрали с сайта, но через TOR доступно -->
         <key key="contact:twitter" value="https://twitter.com/teremok_ru" />
         <key key="contact:vk" value="https://vk.com/teremok" />
         <key key="contact:website" value="https://teremok.ru" />
@@ -940,10 +940,10 @@
         <key key="contact:email" value="info@spar.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/spar" />
         <key key="contact:twitter" value="https://twitter.com/SPARInt" />
-        <key key="contact:website" value="http://www.spar.ru" />
+        <key key="contact:website" value="https://spar.ru" />
         <key key="name" value="Spar" />
         <key key="name:en" value="Spar" />
-        <link href="http://www.spar.ru/stores" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://spar.ru/stores" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
       <item name="Azbuka Vkusa" ru.name="Азбука Вкуса" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/ru/b/b6/Azbuka_Vkusa.svg">
@@ -1095,11 +1095,11 @@
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="Mo-Sa 09:00-23:00; Su 09:00-22:00" />
         <key key="brand" value="Авоська" />
         <key key="contact:email" value="info@avoska.ru" />
-        <key key="contact:website" value="http://www.avoska.ru" />
+        <key key="contact:website" value="https://avoska.ru" />
         <key key="name" value="Авоська" />
         <key key="name:ru" value="Авоська" />
         <key key="operator" value="ООО &quot;Торговый дом &quot;Провиант&quot;" />
-        <link href="http://www.avoska.ru/address" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://avoska.ru/shops" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
       <item name="Billa" ru.name="Билла" type="node,closedway,multipolygon" preset_name_label="true" icon="https://upload.wikimedia.org/wikipedia/commons/d/d8/Billa-Logo.svg">
@@ -1148,11 +1148,11 @@
         <key key="contact:phone" value="+7 495 6638602" />
         <key key="contact:telegram" value="https://telegram.me/vkusvillbot" />
         <key key="contact:vk" value="https://vk.com/izbenka" />
-        <key key="contact:website" value="http://vkusvill.ru" />
+        <key key="contact:website" value="https://vkusvill.ru" />
         <key key="name" value="ВкусВилл" />
         <key key="name:ru" value="ВкусВилл" />
         <key key="shop" value="convenience" />
-        <link href="http://vkusvill.ru/shops" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://vkusvill.ru/shops" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
       <item name="Victoria" ru.name="Виктория" type="node,closedway,multipolygon" preset_name_label="true">
@@ -1424,7 +1424,7 @@
         <combo key="opening_hours" text="Opening Hours" ru.text="Часы работы" values="24/7,Mo-Su 08:00-23:00,Mo-Sa 09:00-20:00; Su 10:00-19:00" />
         <key key="alt_name" value="Перекрёсток Экспресс" />
         <key key="brand" value="Перекресток Экспресс" />
-        <key key="contact:website" value="http://x5-express.ru" />
+        <!-- <key key="contact:website" value="http://x5-express.ru" /> сайт мёртв -->
         <key key="name" value="Перекресток Экспресс" />
         <key key="name:ru" value="Перекресток Экспресс" />
         <reference ref="wheelchair_address" />
@@ -2432,7 +2432,7 @@
         <key key="contact:facebook" value="https://www.facebook.com/FederalTreasury" />
         <key key="contact:livejournal" value="https://roskazna.livejournal.com" />
         <key key="contact:twitter" value="https://twitter.com/FederalTreasury" />
-        <key key="contact:website" value="http://roskazna.ru" />
+        <key key="contact:website" value="https://roskazna.ru" />
         <key key="government" value="treasury" />
         <key key="office" value="government" />
       </item>
@@ -2519,7 +2519,7 @@
       <item name="Служба государственной статистики" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/8/8f/Russian_Federal_State_Statistics_Service_Emblem.svg" preset_name_label="true">
         <space />
         <combo key="name" text="Name" ru.text="Название" default="Отдел государственной статистики в N-ском районе" />
-        <combo key="contact:website" text="Website" ru.text="Сайт" default="http://www.gks.ru" />
+        <combo key="contact:website" text="Website" ru.text="Сайт" default="https://www.gks.ru" />
         <reference ref="phone_oh2_wheelchair_address" />
         <key key="contact:facebook" value="https://www.facebook.com/rosstatistika" />
         <key key="contact:livejournal" value="https://rosstatistika.livejournal.com" />
@@ -2531,7 +2531,7 @@
       <item name="Служба социальной защиты" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="name" text="Name" ru.text="Название" default="Отдел социальной защиты населения N-ского района" />
-        <combo key="contact:website" text="Website" ru.text="Сайт" default="http://www.dszn.ru" />
+        <combo key="contact:website" text="Website" ru.text="Сайт" default="https://dszn.ru" />
         <reference ref="phone_oh2_wheelchair_address" />
         <key key="government" value="social_services" />
         <key key="office" value="government" />
