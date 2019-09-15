@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2.0_2019-09-14_2"
+  version="2.0_2019-09-15_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   icon="https://upload.wikimedia.org/wikipedia/commons/d/db/Twemoji_1f1f7-1f1fa.svg"
   shortdescription="Russian POIs"
@@ -2974,7 +2974,7 @@
         <key key="railway" value="ventilation_shaft" />
         <key key="service" value="ventilation" />
       </item>
-      <item name="Newsagent shop" ru.name="Газетный киоск (Пресса, Печать)" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Newsagent shop" ru.name="Газетный киоск (Пресса, Печать)" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/9/95/Fxemoji_u1F4F0.svg" preset_name_label="true">
         <space />
         <combo key="inscription" text="Inscription" ru.text="Вывеска на киоске" values="Пресса,Газеты,Союзпечать,Печать,Печатная продукция,Газеты и журналы,Роспечать,Пресса.рф,Вечерняя Москва,Центропечать,Пресс-Лайн,Первая полоса,Красногорские вести" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-13:00\,13:45-17:00; Fr 09:00-13:00\,13:45-15:45" />
@@ -3025,7 +3025,7 @@
         <key key="roof:shape" value="round" />
         <preset_link preset_name="Address" />
       </item>
-      <item name="Moscow WC booth" ru.name="Городской туалет (Москва)" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Moscow WC booth" ru.name="Городской туалет (Москва)" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/3/3f/Emojione_1F6BE.svg" preset_name_label="true">
         <space />
         <label text="It has two doors and orange colour." ru.text="Рыжие кабинки. Две двери." />
         <key key="amenity" value="toilets" />
