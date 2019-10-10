@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2.0_2019-09-15_1"
+  version="2.0_2019-10-10_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   icon="https://upload.wikimedia.org/wikipedia/commons/d/db/Twemoji_1f1f7-1f1fa.svg"
   shortdescription="Russian POIs"
@@ -836,7 +836,7 @@
         <key key="contact:vk" value="https://vk.com/club16270501" />
         <key key="contact:website" value="https://www.stardogs.ru" />
         <key key="contact:youtube" value="https://www.youtube.com/channel/UCLdQnDS5HTzowfvz-Uhc24A" />
-        <key key="cuisine" value="hotdog" />
+        <key key="cuisine" value="hot_dog" />
         <key key="diet:vegetarian" value="no" />
         <key key="name" value="Стардог!s" />
         <key key="name:ru" value="Стардог!s" />
