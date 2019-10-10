@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2.0_2019-09-15_1"
+  version="2.0_2019-10-10_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   icon="https://upload.wikimedia.org/wikipedia/commons/d/db/Twemoji_1f1f7-1f1fa.svg"
   shortdescription="Russian POIs"
@@ -213,7 +213,7 @@
         <key key="healthcare" value="pharmacy" />
         <key key="name" value="36,6" />
         <key key="name:ru" value="36,6" />
-        <link href="https://apteka366.ru/apteki/map" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://apteka366.ru/apteki/map/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="oh3_level_wheelchair_address_dispencing" />
       </item>
       <item name="A5" ru.name="А5" type="node,closedway,multipolygon" preset_name_label="true">
@@ -225,7 +225,7 @@
         <key key="healthcare" value="pharmacy" />
         <key key="name" value="А5" />
         <key key="name:ru" value="А5" />
-        <link href="https://apteka366.ru/apteki/map" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://apteka366.ru/apteki/map/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="oh3_level_wheelchair_address_dispencing" />
       </item>
       <item name="A-mega" ru.name="А-мега" type="node,closedway,multipolygon" preset_name_label="true">
@@ -240,7 +240,7 @@
         <key key="healthcare" value="pharmacy" />
         <key key="name" value="А-мега" />
         <key key="name:ru" value="А-мега" />
-        <link href="https://www.aptekamega.ru/pharmacies" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://www.aptekamega.ru/pharmacies/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="oh3_level_wheelchair_address_dispencing" />
       </item>
       <item name="Gorzdrav" ru.name="Горздрав" type="node,closedway,multipolygon" preset_name_label="true">
@@ -253,10 +253,10 @@
         <key key="contact:instagram" value="https://www.instagram.com/gorzdrav" />
         <key key="contact:ok" value="https://ok.ru/group/57486617870381" />
         <key key="contact:vk" value="https://vk.com/gorzdrav" />
-        <key key="contact:website" value="https://www.gorzdrav.org" />
+        <key key="contact:website" value="https://gorzdrav.org" />
         <key key="name" value="Горздрав" />
         <key key="name:ru" value="Горздрав" />
-        <link href="https://www.gorzdrav.org/apteka/items" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://gorzdrav.org/apteki/map/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="oh3_level_wheelchair_address_dispencing" />
       </item>
       <item name="Orteka" ru.name="Ортека" type="node,closedway,multipolygon" preset_name_label="true">
@@ -267,12 +267,12 @@
         <key key="contact:facebook" value="https://www.facebook.com/orteka.rus" />
         <key key="contact:instagram" value="https://www.instagram.com/orteka_rus" />
         <key key="contact:vk" value="https://vk.com/orteka_ru" />
-        <key key="contact:website" value="https://www.orteka.ru" />
+        <key key="contact:website" value="https://orteka.ru" />
         <key key="name" value="Ортека" />
         <key key="name:ru" value="Ортека" />
         <key key="operator" value="ООО «НИКАМЕД»" />
         <key key="shop" value="medical_supply" />
-        <link href="https://www.orteka.ru/salon" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://orteka.ru/salons/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
       <item name="Rigla" ru.name="Ригла" type="node,closedway,multipolygon" preset_name_label="true">
@@ -364,7 +364,7 @@
         <key key="medical_system:western" value="yes" />
         <key key="name" value="CMD" />
         <key key="name:en" value="CMD" />
-        <link href="https://www.cmd-online.ru/patsientam/gde-sdat-analizy" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://www.cmd-online.ru/patsientam/gde-sdat-analizy/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="oh1_level_wheelchair_address" />
       </item>
       <item name="Gemotest" ru.name="Гемотест" type="node,closedway,multipolygon" preset_name_label="true">
@@ -384,7 +384,7 @@
         <key key="medical_system:western" value="yes" />
         <key key="name" value="Гемотест" />
         <key key="name:ru" value="Гемотест" />
-        <link href="https://www.gemotest.ru/address/moskva" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://www.gemotest.ru/address/moskva/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="oh1_level_wheelchair_address" />
       </item>
       <item name="Invitro" ru.name="Инвитро" type="node,closedway,multipolygon" preset_name_label="true">
@@ -405,7 +405,7 @@
         <key key="medical_system:western" value="yes" />
         <key key="name" value="Инвитро" />
         <key key="name:ru" value="Инвитро" />
-        <link href="https://www.invitro.ru/offices/moscow" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://www.invitro.ru/offices/moscow/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="oh1_level_wheelchair_address" />
       </item>
     </group>
@@ -428,7 +428,7 @@
         <key key="name" value="Cofix" />
         <key key="name:en" value="Cofix" />
         <key key="takeaway" value="yes" />
-        <link href="https://www.cofix.ru/cafe" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://www.cofix.ru/cafe/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
       <item name="GlowSubs" type="node,closedway,multipolygon" preset_name_label="true">
@@ -447,7 +447,7 @@
         <key key="name" value="GlowSubs" />
         <key key="name:en" value="GlowSubs" />
         <key key="takeaway" value="yes" />
-        <link href="http://glowsubs.ru/restaurants" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="http://glowsubs.ru/restaurants/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
       <item name="IL Patio" ru.name="IL Патио" type="node,closedway,multipolygon" preset_name_label="true">
@@ -465,7 +465,7 @@
         <key key="diet:vegetarian" value="yes" />
         <key key="name" value="Il Патио" />
         <key key="name:ru" value="Il Патио" />
-        <link href="http://ilpatio.ru/restaurants" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="http://ilpatio.ru/restaurants/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
       <item name="KFC" type="node,closedway,multipolygon" preset_name_label="true">
@@ -505,13 +505,13 @@
         <key key="contact:instagram" value="https://www.instagram.com/pizzahutrussia" />
         <key key="contact:phone" value="+7 800 1001958" />
         <key key="contact:vk" value="https://vk.com/pizzahutrussia" />
-        <key key="contact:website" value="https://www.pizzahut.ru" />
+        <key key="contact:website" value="https://pizzahut.ru" />
         <key key="cuisine" value="pizza" />
         <key key="delivery" value="yes" />
         <key key="diet:vegetarian" value="no" />
         <key key="name" value="Pizza Hut" />
         <key key="name:en" value="Pizza Hut" />
-        <link href="https://www.pizzahut.ru/restaurants" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://pizzahut.ru/#!/contacts" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
       <item name="Subway" type="node,closedway,multipolygon" preset_name_label="true" name_context="fast_food">
@@ -530,7 +530,7 @@
         <key key="name" value="Subway" />
         <key key="name:en" value="Subway" />
         <key key="takeaway" value="yes" />
-        <link href="https://subway.ru/stores" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://subway.ru/stores/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
       <item name="Baskin-Robbins" ru.name="Баскин Роббинс" type="node,closedway,multipolygon" preset_name_label="true">
@@ -677,7 +677,7 @@
         <key key="diet:vegetarian" value="yes" />
         <key key="name" value="Крошка Картошка" />
         <key key="name:ru" value="Крошка Картошка" />
-        <link href="https://www.kartoshka.com/map" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://www.kartoshka.com/map/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
       <item name="Kruzhka" ru.name="Кружка" type="node,closedway,multipolygon" preset_name_label="true">
@@ -696,7 +696,7 @@
         <key key="diet:vegetarian" value="no" />
         <key key="name" value="Кружка" />
         <key key="name:ru" value="Кружка" />
-        <link href="http://kruzhka.ru/addresses/map" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="http://kruzhka.ru/adresa/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
       <item name="McDonald's" ru.name="Макдоналдс" type="node,closedway,multipolygon" preset_name_label="true">
@@ -719,7 +719,7 @@
         <key key="name:en" value="McDonald's" />
         <key key="name:ru" value="Макдоналдс" />
         <key key="takeaway" value="yes" />
-        <link href="https://mcdonalds.ru/restaurant/map?lat=55.752609&amp;lng=37.61699" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://mcdonalds.ru/restaurants/map" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
       <item name="Mu-Mu" ru.name="Му-Му" type="node,closedway,multipolygon" preset_name_label="true">
@@ -742,7 +742,7 @@
         <key key="diet:vegetarian" value="yes" />
         <key key="name" value="Му-Му" />
         <key key="name:ru" value="Му-Му" />
-        <link href="https://www.cafemumu.ru/cafe" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://www.cafemumu.ru/cafe/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
       <item name="Papa John's" ru.name="Папа Джонс" type="node,closedway,multipolygon" preset_name_label="true">
@@ -796,7 +796,7 @@
         <key key="diet:vegetarian" value="no" />
         <key key="name" value="Русский Аппетит" />
         <key key="name:ru" value="Русский Аппетит" />
-        <link href="http://xn--80a4abej.xn--p1ai/karta" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="http://xn--80a4abej.xn--p1ai/karta/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
       <item name="Starbucks" ru.name="Старбакс" type="node,closedway,multipolygon" preset_name_label="true">
@@ -836,7 +836,7 @@
         <key key="contact:vk" value="https://vk.com/club16270501" />
         <key key="contact:website" value="https://www.stardogs.ru" />
         <key key="contact:youtube" value="https://www.youtube.com/channel/UCLdQnDS5HTzowfvz-Uhc24A" />
-        <key key="cuisine" value="hotdog" />
+        <key key="cuisine" value="hot_dog" />
         <key key="diet:vegetarian" value="no" />
         <key key="name" value="Стардог!s" />
         <key key="name:ru" value="Стардог!s" />
@@ -863,7 +863,7 @@
         <key key="diet:vegetarian" value="yes" />
         <key key="name" value="Теремок" />
         <key key="name:ru" value="Теремок" />
-        <link href="https://teremok.ru/places" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://teremok.ru/places/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
       <item name="Shokoladnitsa" ru.name="Шоколадница" type="node,closedway,multipolygon" preset_name_label="true">
@@ -882,7 +882,7 @@
         <key key="diet:vegetarian" value="no" />
         <key key="name" value="Шоколадница" />
         <key key="name:ru" value="Шоколадница" />
-        <link href="https://shoko.ru/addresses" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://shoko.ru/addresses/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
       <item name="Yakitoriya" ru.name="Якитория" type="node,closedway,multipolygon" preset_name_label="true">
@@ -900,7 +900,7 @@
         <key key="diet:vegetarian" value="yes" />
         <key key="name" value="Якитория" />
         <key key="name:ru" value="Якитория" />
-        <link href="https://www.yakitoriya.ru/restaurants" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://www.yakitoriya.ru/restaurants/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
     </group>
@@ -922,7 +922,7 @@
         <key key="name" value="Fix price" />
         <key key="name:en" value="Fix price" />
         <key key="shop" value="variety_store" />
-        <link href="https://fix-price.ru/stores" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://fix-price.ru/stores/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
       <item name="SPAR" type="node,closedway,multipolygon" preset_name_label="true">
@@ -1042,7 +1042,7 @@
         <key key="name" value="Ароматный мир" />
         <key key="name:ru" value="Ароматный мир" />
         <key key="shop" value="alcohol" />
-        <link href="https://amwine.ru/customers/shops" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://amwine.ru/customers/shops/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
       <item name="Auchan" ru.name="Ашан" type="node,closedway,multipolygon" preset_name_label="true">
@@ -1076,7 +1076,7 @@
         <key key="name" value="Авоська" />
         <key key="name:ru" value="Авоська" />
         <key key="operator" value="ООО &quot;Торговый дом &quot;Провиант&quot;" />
-        <link href="https://avoska.ru/shops" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://avoska.ru/shops/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
       <item name="Billa" ru.name="Билла" type="node,closedway,multipolygon" preset_name_label="true">
@@ -1129,7 +1129,7 @@
         <key key="name" value="ВкусВилл" />
         <key key="name:ru" value="ВкусВилл" />
         <key key="shop" value="convenience" />
-        <link href="https://vkusvill.ru/shops" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://vkusvill.ru/shops/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
       <item name="Victoria" ru.name="Виктория" type="node,closedway,multipolygon" preset_name_label="true">
@@ -1146,7 +1146,7 @@
         <key key="name" value="Виктория" />
         <key key="name:ru" value="Виктория" />
         <key key="shop" value="supermarket" />
-        <link href="https://victoria-group.ru/company/shops/moskva-i-moskovskaya-oblast" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://victoria-group.ru/company/shops/moskva-i-moskovskaya-oblast/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
       <item name="Dixy" ru.name="Дикси" type="node,closedway,multipolygon" preset_name_label="true">
@@ -1191,12 +1191,12 @@
         <key key="contact:telegram" value="+7 922 7033000" />
         <key key="contact:viber" value="+7 922 7033000" />
         <key key="contact:vk" value="https://vk.com/krasnoebeloe" />
-        <key key="contact:website" value="https://www.krasnoeibeloe.ru" />
+        <key key="contact:website" value="https://krasnoeibeloe.ru" />
         <key key="contact:whatsapp" value="+7 922 7033000" />
         <key key="name" value="Красное&amp;Белое" />
         <key key="name:ru" value="Красное&amp;Белое" />
         <key key="shop" value="alcohol" />
-        <link href="https://www.krasnoeibeloe.ru/address" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://krasnoeibeloe.ru/address/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
       <item name="Lenta" ru.name="Лента" type="node,closedway,multipolygon" preset_name_label="true">
@@ -1225,14 +1225,14 @@
         <combo key="opening_hours" text="Opening Hours" values="Mo-Su 11:00-23:00,Mo-Su 11:00-22:00" default="Mo-Su 11:00-23:00" />
         <key key="brand" value="Лит.Ра" />
         <key key="contact:vk" value="https://vk.com/litra_beer" />
-        <key key="contact:website" value="http://litra-beer.ru" />
+        <key key="contact:website" value="https://litra-beer.ru" />
         <key key="drink:beer" value="bottled" />
         <key key="drink:cider" value="bottled" />
         <key key="drink:soft_drink" value="bottled" />
         <key key="name" value="Лит.Ра" />
         <key key="name:ru" value="Лит.Ра" />
         <key key="shop" value="alcohol" />
-        <link href="http://litra-beer.ru/magazini" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://litra-beer.ru/magazini/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
       <item name="Magnit" ru.name="Магнит" type="node,closedway,multipolygon" preset_name_label="true">
@@ -1245,12 +1245,12 @@
         <key key="contact:email" value="info@magnit.ru" />
         <key key="contact:phone" value="+7 800 2009002" />
         <key key="contact:twitter" value="https://twitter.com/magnit_info" />
-        <key key="contact:website" value="http://magnit-info.ru" />
+        <key key="contact:website" value="https://magnit-info.ru" />
         <key key="name" value="Магнит" />
         <key key="name:en" value="Magnit" />
         <key key="name:ru" value="Магнит" />
         <key key="operator" value="АО &quot;Тандер&quot;" />
-        <link href="http://magnit-info.ru/#findShop" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://magnit-info.ru/#findShop" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
       <item name="Magnoliya" ru.name="Магнолия" type="node,closedway,multipolygon" preset_name_label="true">
@@ -1263,7 +1263,7 @@
         <key key="contact:website" value="http://www.mgnl.ru" />
         <key key="name" value="Магнолия" />
         <key key="name:ru" value="Магнолия" />
-        <link href="http://www.mgnl.ru/shops" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="http://www.mgnl.ru/shops/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
       <item name="Monetka" ru.name="Монетка" type="node,closedway,multipolygon" preset_name_label="true">
@@ -1291,11 +1291,11 @@
         <key key="contact:facebook" value="https://www.facebook.com/kolbasaMR" />
         <key key="contact:phone" value="+7 495 9811719" />
         <key key="contact:vk" value="https://vk.com/kolbasamr" />
-        <key key="contact:website" value="http://www.kolbasa.ru" />
+        <key key="contact:website" value="http://kolbasa.ru" />
         <key key="name" value="Мясницкий ряд" />
         <key key="name:ru" value="Мясницкий ряд" />
         <key key="shop" value="butcher" />
-        <link href="http://www.kolbasa.ru/where" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="http://kolbasa.ru/where/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
       <item name="Myasnov" ru.name="МясновЪ" type="node,closedway,multipolygon" preset_name_label="true">
@@ -1311,7 +1311,7 @@
         <key key="name" value="МясновЪ" />
         <key key="name:ru" value="МясновЪ" />
         <key key="shop" value="convenience" />
-        <link href="https://www.myasnov.ru/magaziny_zdorovogo_pitaniya" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://www.myasnov.ru/magaziny_zdorovogo_pitaniya/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
         <text key="ref" text="Reference" ru.text="Номер магазина" />
       </item>
@@ -1330,7 +1330,7 @@
         <key key="name" value="О’кей" />
         <key key="name:ru" value="О’кей" />
         <key key="shop" value="supermarket" /> <!-- FIXME:NOTE: когда примут shop=hypermarket нужно будет здесь поменять https://wiki.openstreetmap.org/wiki/Proposed_features/hypermarket -->
-        <link href="https://www.okmarket.ru/stores" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://www.okmarket.ru/stores/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
       <item name="Otdohni" ru.name="Отдохни" type="node,closedway,multipolygon" preset_name_label="true">
@@ -1353,7 +1353,7 @@
         <key key="name" value="Отдохни" />
         <key key="name:ru" value="Отдохни" />
         <key key="shop" value="alcohol" />
-        <link href="https://www.somelie.ru/map" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://www.somelie.ru/map/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
       <item name="Perekryostok" ru.name="Перекресток" type="node,closedway,multipolygon" preset_name_label="true">
@@ -1411,7 +1411,7 @@
         <key key="name" value="Суши Wok" />
         <key key="name:ru" value="Суши Wok" />
         <key key="shop" value="convenience" />
-        <link href="https://sushiwok.ru/msk/addresses" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://sushiwok.ru/msk/addresses/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
       <item name="U Palycha" ru.name="У Палыча" type="node,closedway,multipolygon" preset_name_label="true">
@@ -1424,7 +1424,7 @@
         <key key="name" value="У Палыча" />
         <key key="name:ru" value="У Палыча" />
         <key key="shop" value="convenience" />
-        <link href="https://palich.ru/shops" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://palich.ru/shops/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
     </group>
@@ -1469,7 +1469,7 @@
         <key key="name:ru" value="Билайн" />
         <key key="office" value="telecommunication" />
         <key key="shop" value="mobile_phone" />
-        <link href="https://moskva.beeline.ru/customers/beeline-map" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://moskva.beeline.ru/customers/beeline-map/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
       <item name="Euroset" ru.name="Евросеть" type="node,closedway,multipolygon" preset_name_label="true">
@@ -1512,7 +1512,7 @@
         <key key="name:ru" value="МегаФон" />
         <key key="office" value="telecommunication" />
         <key key="shop" value="mobile_phone" />
-        <link href="https://megafon.ru/help/offices/#offices" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://moscow.megafon.ru/help/offices/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
       <item name="MTS" ru.name="МТС" type="node,closedway,multipolygon" preset_name_label="true">
@@ -1532,7 +1532,7 @@
         <key key="name:ru" value="МТС" />
         <key key="office" value="telecommunication" />
         <key key="shop" value="mobile_phone" />
-        <link href="https://shop.mts.ru/stores" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://shop.mts.ru/stores/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
       <item name="Svyaznoy" ru.name="Связной" type="node,closedway,multipolygon" preset_name_label="true">
@@ -1596,7 +1596,7 @@
         <key key="operator" value="Банк ВТБ (публичное акционерное общество)" />
         <key key="operator:wikidata" value="Q1549389" />
         <key key="operator:wikipedia" value="ru:Банк ВТБ" />
-        <link href="https://www.vtb.ru/o-banke/kontakty/otdeleniya" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://www.vtb.ru/o-banke/kontakty/otdeleniya/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="bic_branch_ref_wheelchair_atm_address" />
       </item>
       <item name="Zaim-Express" ru.name="Займ-Экспресс" type="node,closedway,multipolygon" preset_name_label="true">
@@ -1730,7 +1730,7 @@
         <key key="name" value="Райффайзен" />
         <key key="name:en" value="Raiffeisen" />
         <key key="name:ru" value="Райффайзен" />
-        <link href="https://www.raiffeisen.ru/offices" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://www.raiffeisen.ru/offices/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="bic_branch_ref_wheelchair_atm_address" />
       </item>
       <item name="Rosbank" ru.name="Росбанк" type="node,closedway,multipolygon" preset_name_label="true">
@@ -1749,7 +1749,7 @@
         <key key="name" value="Росбанк" />
         <key key="name:en" value="Rosbank" />
         <key key="name:ru" value="Росбанк" />
-        <link href="https://www.rosbank.ru/ru/offices" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://www.rosbank.ru/otdeleniya/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="bic_branch_ref_wheelchair_atm_address" />
       </item>
       <item name="Sberbank" ru.name="Сбербанк" type="node,closedway,multipolygon" preset_name_label="true">
@@ -1806,7 +1806,7 @@
         <key key="name" value="DNS" />
         <key key="name:en" value="DNS" />
         <key key="shop" value="electronics" />
-        <link href="https://www.dns-shop.ru/shops/moscow" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://www.dns-shop.ru/shops/moscow/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
       <item name="Pandora" type="node,closedway,multipolygon" preset_name_label="true">
@@ -1857,7 +1857,7 @@
         <key key="name" value="TopGun" />
         <key key="name:en" value="TopGun" />
         <key key="shop" value="hairdresser" />
-        <link href="https://topgunbarbershop.ru/barbershop" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://topgunbarbershop.ru/barbershop/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
       <item name="Wildberries" type="node,closedway,multipolygon" preset_name_label="true">
@@ -1903,7 +1903,7 @@
         <key key="name" value="Адамас" />
         <key key="name:ru" value="Адамас" />
         <key key="shop" value="jewelry" />
-        <link href="https://www.adamas.ru/buy" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://www.adamas.ru/buy/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
       <item name="Eyekraft" ru.name="Айкрафт" type="node,closedway,multipolygon" preset_name_label="true">
@@ -1941,7 +1941,7 @@
         <key key="name:ru" value="Детский мир" />
         <key key="operator" value="ПАО &quot;Детский мир&quot;" />
         <key key="shop" value="toys" />
-        <link href="https://www.detmir.ru/shops" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://www.detmir.ru/shops/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
       <item name="Diana" ru.name="Диана (химчистка)" type="node,closedway,multipolygon" preset_name_label="true">
@@ -1953,11 +1953,11 @@
         <key key="contact:facebook" value="https://www.facebook.com/diana.dryclean" />
         <key key="contact:instagram" value="https://www.instagram.com/dryclean.ru" />
         <key key="contact:vk" value="https://vk.com/diana.dryclean" />
-        <key key="contact:website" value="https://www.dryclean.ru" />
+        <key key="contact:website" value="https://dryclean.ru" />
         <key key="name" value="Диана" />
         <key key="name:ru" value="Диана" />
         <key key="shop" value="dry_cleaning" />
-        <link href="https://www.dryclean.ru/priemnye_punkty" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://dryclean.ru/priemnye_punkty/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
       <item name="Ile de Beaute" ru.name="Иль де Ботэ" type="node,closedway,multipolygon" preset_name_label="true">
@@ -1975,7 +1975,7 @@
         <key key="name" value="Иль де Ботэ" />
         <key key="name:ru" value="Иль де Ботэ" />
         <key key="shop" value="cosmetics" />
-        <link href="https://iledebeaute.ru/company/shops" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://iledebeaute.ru/company/shops/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
       <item name="Korablik" ru.name="Кораблик" type="node,closedway,multipolygon" preset_name_label="true">
@@ -2011,7 +2011,7 @@
         <key key="name" value="Линзмастер" />
         <key key="name:ru" value="Линзмастер" />
         <key key="shop" value="optician" />
-        <link href="https://www.lensmaster.ru/saloni-optiki" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://www.lensmaster.ru/saloni-optiki/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
       <item name="L'etoile" ru.name="Л'Этуаль" type="node,closedway,multipolygon" preset_name_label="true">
@@ -2027,11 +2027,11 @@
         <key key="contact:ok" value="https://ok.ru/letoileru" />
         <key key="contact:twitter" value="https://twitter.com/letoile_ru" />
         <key key="contact:vk" value="https://vk.com/letoile_official" />
-        <key key="contact:website" value="https://www.letoile.ru" />
+        <key key="contact:website" value="https://www.letu.ru" />
         <key key="name" value="Л'Этуаль" />
         <key key="name:ru" value="Л'Этуаль" />
         <key key="shop" value="cosmetics" />
-        <link href="https://www.letoile.ru/retail/?city=156&amp;map=yes" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://www.letu.ru/stores" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
       <item name="Magnit Cosmetic" ru.name="Магнит Косметик" type="node,closedway,multipolygon" preset_name_label="true">
@@ -2046,7 +2046,7 @@
         <key key="name:ru" value="Магнит Косметик" />
         <key key="operator" value="АО &quot;Тандер&quot;" />
         <key key="shop" value="chemist" />
-        <link href="https://magnitcosmetic.ru/shops" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://magnitcosmetic.ru/shops/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
       <item name="M.Video" ru.name="М.Видео" type="node,closedway,multipolygon" preset_name_label="true">
@@ -2081,11 +2081,11 @@
         <key key="contact:ok" value="https://ok.ru/miuz.ru" />
         <key key="contact:phone" value="+7 800 1001920" />
         <key key="contact:vk" value="https://vk.com/miuz_ru" />
-        <key key="contact:website" value="https://www.miuz.ru" />
+        <key key="contact:website" value="https://miuz.ru" />
         <key key="name" value="Московский ювелирный завод" />
         <key key="name:ru" value="Московский ювелирный завод" />
         <key key="shop" value="jewelry" />
-        <link href="https://www.miuz.ru/stores" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://miuz.ru/stores/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
       <item name="Moshoztorg" ru.name="Мосхозторг" type="node,closedway,multipolygon" preset_name_label="true">
@@ -2101,7 +2101,7 @@
         <key key="name" value="Мосхозторг" />
         <key key="name:ru" value="Мосхозторг" />
         <key key="shop" value="hardware" />
-        <link href="https://moshoztorg.ru/magaziny" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://moshoztorg.ru/magaziny/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
       <item name="Ochkarik" ru.name="Очкарик" type="node,closedway,multipolygon" preset_name_label="true">
@@ -2117,7 +2117,7 @@
         <key key="name:ru" value="Очкарик" />
         <key key="operator" value="ООО «ОПТИК-ВИЖН»" />
         <key key="shop" value="optician" />
-        <link href="https://ochkarik.ru/salony-optiki" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://ochkarik.ru/salony-optiki/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
       <item name="Persona" ru.name="Персона" type="node,closedway,multipolygon" preset_name_label="true">
@@ -2133,7 +2133,7 @@
         <key key="name" value="Персона" />
         <key key="name:ru" value="Персона" />
         <key key="shop" value="hairdresser" />
-        <link href="https://persona.ru/contacts" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://persona.ru/contacts/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
       <item name="Podruzhka" ru.name="Подружка" type="node,closedway,multipolygon" preset_name_label="true">
@@ -2150,7 +2150,7 @@
         <key key="name:ru" value="Подружка" />
         <key key="operator" value="ООО «ТАБЕР ТРЕЙД»" />
         <key key="shop" value="cosmetics" />
-        <link href="https://www.podrygka.ru/shoplist" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://www.podrygka.ru/shoplist/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
       <item name="CDEK" ru.name="СДЭК" type="node,closedway,multipolygon" preset_name_label="true">
@@ -2177,7 +2177,7 @@
         <key key="name" value="Смешные цены" />
         <key key="name:ru" value="Смешные цены" />
         <key key="shop" value="clothes" />
-        <link href="https://smeshnie-ceny.ru/adresa-magazinov-v-moskve.shtml" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://smeshnie-ceny.ru/adresa-magazinov-v-moskve/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="oh1_level_wheelchair_address" />
       </item>
       <item name="Sportmaster" ru.name="Спортмастер" type="node,closedway,multipolygon" preset_name_label="true">
@@ -2200,7 +2200,7 @@
         <key key="operator:wikidata" value="Q4438176" />
         <key key="operator:wikipedia" value="ru:Спортмастер" />
         <key key="shop" value="sports" />
-        <link href="https://www.sportmaster.ru/stores/moscow" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://www.sportmaster.ru/stores/moscow/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
       <item name="TVOE" ru.name="ТВОЁ" type="node,closedway,multipolygon" preset_name_label="true">
@@ -2221,7 +2221,7 @@
         <key key="name:ru" value="Твоё" />
         <key key="operator" value="ООО «ТВОЕ»" />
         <key key="shop" value="clothes" />
-        <link href="https://tvoe.ru/shops" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://tvoe.ru/shops/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
       <item name="Tsentrobuv" ru.name="ЦентрОбувь" type="node,closedway,multipolygon" preset_name_label="true">
@@ -2261,7 +2261,7 @@
         <key key="name" value="Эльдорадо" />
         <key key="name:ru" value="Эльдорадо" />
         <key key="shop" value="electronics" />
-        <link href="https://www.eldorado.ru/info/shops/11324" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://www.eldorado.ru/info/shops/11324/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
       <item name="Ulmart outpost" ru.name="Юлмарт (ПВЗ)" type="node,closedway,multipolygon" preset_name_label="true">
@@ -2371,7 +2371,7 @@
         <key key="operator" value="ФГУП «Почта России»" />
         <key key="operator:wikidata" value="Q1502763" />
         <key key="operator:wikipedia" value="ru:Почта России" />
-        <link href="https://pochta.ru/offices" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://www.pochta.ru/offices" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <link wiki="Tag:amenity=post_office" />
         <reference ref="wheelchair_address" />
       </item>
@@ -3168,7 +3168,7 @@
           <check key="clothes_dryer:portable" text="Portable" ru.text="Переносная" />
           <check key="indoor" text="Indoor" />
         </checkgroup>
-        <link wiki="Tag:amenity%3Dclothes_dryer" />
+        <link wiki="RU:Tag:amenity%3Dclothes_dryer" />
       </item>
       <item name="Postbox (Russian Post)" ru.name="Почтовый ящик (Почта России)" type="node" icon="https://upload.wikimedia.org/wikipedia/commons/8/82/Twemoji_1f4ee.svg" preset_name_label="true">
         <space />
