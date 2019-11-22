@@ -311,7 +311,7 @@
         <key key="healthcare" value="pharmacy" />
         <key key="name" value="Самсон-Фарма" />
         <key key="name:ru" value="Самсон-Фарма" />
-        <link href="https://samson-pharma.ru/pharmacies" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://samson-pharma.ru/contacts/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="oh3_level_wheelchair_address_dispencing" />
       </item>
       <item name="Stolichki" ru.name="Столички" type="node,closedway,multipolygon" preset_name_label="true">
@@ -696,7 +696,7 @@
         <key key="diet:vegetarian" value="no" />
         <key key="name" value="Кружка" />
         <key key="name:ru" value="Кружка" />
-        <link href="http://kruzhka.ru/adresa/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://kruzhka.ru/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
       <item name="McDonald's" ru.name="Макдоналдс" type="node,closedway,multipolygon" preset_name_label="true">
@@ -818,7 +818,7 @@
         <key key="name:en" value="Starbucks" />
         <key key="name:ru" value="Старбакс" />
         <key key="takeaway" value="yes" />
-        <link href="http://www.starbucks.ru/store-locator/search/location/Moscow%2C%20Russia" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://www.starbucks.ru/store-locator/search/location/Moscow%2C%20Russia" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
       <item name="Stardog!s" ru.name="Стардог!s" type="node,closedway,multipolygon" preset_name_label="true">
@@ -1295,7 +1295,7 @@
         <key key="name" value="Мясницкий ряд" />
         <key key="name:ru" value="Мясницкий ряд" />
         <key key="shop" value="butcher" />
-        <link href="http://kolbasa.ru/where/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://kolbasa.ru/where/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
       <item name="Myasnov" ru.name="МясновЪ" type="node,closedway,multipolygon" preset_name_label="true">
@@ -1840,7 +1840,7 @@
         <key key="operator" value="ООО «МДТЗК»" />
         <key key="shop" value="ticket" />
         <key key="tickets:theatre" value="yes" />
-        <link href="https://www.ticketland.ru/kassa" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://www.ticketland.ru/kassa/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
       <item name="TOPGUN" type="node,closedway,multipolygon" preset_name_label="true">
