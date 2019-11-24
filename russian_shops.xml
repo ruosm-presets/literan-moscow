@@ -656,7 +656,7 @@
         <key key="internet_access:fee" value="no" /> <!-- NB: во всех "Кофе Хаузах" заявлен бесплатный вай-фай -->
         <key key="name" value="Кофе Хауз" />
         <key key="name:ru" value="Кофе Хауз" />
-        <link href="https://coffeehouse.ru/#map" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://www.coffeehouse.ru/#map" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
       <item name="Kroshka Kartoshka" ru.name="Крошка Картошка" type="node,closedway,multipolygon" preset_name_label="true">
