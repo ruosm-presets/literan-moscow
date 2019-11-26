@@ -900,7 +900,7 @@
         <key key="diet:vegetarian" value="yes" />
         <key key="name" value="Якитория" />
         <key key="name:ru" value="Якитория" />
-        <link href="https://www.yakitoriya.ru/restaurants/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://yakitoriya.ru/en/restaurants/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
     </group>
