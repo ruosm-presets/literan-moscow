@@ -588,7 +588,7 @@
         <key key="name:en" value="Double B" />
         <key key="name:ru" value="Даблби" />
         <key key="takeaway" value="yes" />
-        <link href="https://double-b.ru/addresses" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://double-b.ru/addresses/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
       <item name="Dunkin' Donuts" ru.name="Данкин Донатс" type="node,closedway,multipolygon" preset_name_label="true">
