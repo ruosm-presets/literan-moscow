@@ -1992,7 +1992,7 @@
         <key key="name:ru" value="Кораблик" />
         <key key="operator" value="ООО &quot;Кораблик-Р&quot;" />
         <key key="shop" value="toys" />
-        <link href="https://www.korablik.ru/shops" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://www.korablik.ru/shops/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
       <item name="Lensmaster" ru.name="Линзмастер" type="node,closedway,multipolygon" preset_name_label="true">
