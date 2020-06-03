@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2.0_2020-05-12_1"
+  version="2.0_2020-06-03_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   icon="https://upload.wikimedia.org/wikipedia/commons/d/db/Twemoji_1f1f7-1f1fa.svg"
   shortdescription="Russian POIs"
@@ -329,6 +329,7 @@
         <link href="https://www.citypharm.ru/apteki/map" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="oh3_level_wheelchair_address_dispencing" />
       </item>
+      <separator />
       <item name="CMD" ru.name="CMD (Центр молекулярной диагностики)" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="contact:phone" text="Phone number" values="+7 495 7880001" default="+7 800 7077881" />
@@ -1416,6 +1417,21 @@
         <link href="https://palich.ru/shops/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
+      <item name="Yarche" ru.name="Ярче!" type="node,closedway,multipolygon" preset_name_label="true">
+        <space />
+        <reference ref="phone" />
+        <key key="brand" value="Ярче!" />
+        <key key="contact:email" value="feedback@ya-retail.ru" />
+        <key key="contact:facebook" value="https://www.facebook.com/Yarche.supermarket/" />
+        <key key="contact:instagram" value="https://www.instagram.com/supermarket_yarche" />
+        <key key="contact:vk" value="https://vk.com/supermarket_yarche" />
+        <key key="contact:website" value="https://ярче.рф" />
+        <key key="name" value="Ярче!" />
+        <key key="name:ru" value="Ярче!" />
+        <key key="shop" value="convenience" />
+        <link href="https://ярче.рф" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <reference ref="wheelchair_address" />
+      </item>
     </group>
     <group name="Mobile phone shops" ru.name="Сотовая связь" icon="https://upload.wikimedia.org/wikipedia/commons/d/d5/Twemoji_1f4f1.svg">
       <item name="Tele2" type="node,closedway,multipolygon" preset_name_label="true">
@@ -2077,22 +2093,6 @@
         <link href="https://miuz.ru/stores/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="Moshoztorg" ru.name="Мосхозторг" type="node,closedway,multipolygon" preset_name_label="true">
-        <space />
-        <combo key="contact:phone" text="Phone number" default="+7 800 5504747" />
-        <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 08:00-22:00; Sa-Su 09:00-21:00" />
-        <key key="brand" value="Мосхозторг" />
-        <key key="contact:facebook" value="https://www.facebook.com/MosHozTorg" />
-        <key key="contact:instagram" value="https://www.instagram.com/moshoztorg" />
-        <key key="contact:ok" value="https://ok.ru/group/54890146037790" />
-        <key key="contact:vk" value="https://vk.com/moshoztorg" />
-        <key key="contact:website" value="https://moshoztorg.ru" />
-        <key key="name" value="Мосхозторг" />
-        <key key="name:ru" value="Мосхозторг" />
-        <key key="shop" value="hardware" />
-        <link href="https://moshoztorg.ru/magaziny/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="wheelchair_address" />
-      </item>
       <item name="Ochkarik" ru.name="Очкарик" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="contact:phone" text="Phone number" default="+7 800 7002126" />
@@ -2213,25 +2213,19 @@
         <link href="https://tvoe.ru/shops/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
-      <item name="Tsentrobuv" ru.name="ЦентрОбувь" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Ulybka Radugi" ru.name="Улыбка радуги" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
-        <combo key="contact:phone" text="Phone number" default="+7 495 7820011" />
-        <combo key="opening_hours" text="Opening Hours" values="Mo-Su 10:00-21:00,Mo-Su 10:00-20:00,Mo-Su 09:00-20:00,Mo-Su 09:00-19:00" />
-        <key key="brand" value="ЦентрОбувь" />
-        <key key="contact:email" value="office@out.centroshop.ru" />
-        <key key="contact:facebook" value="https://www.facebook.com/Centrobuv" />
-        <key key="contact:ok" value="https:/ok.ru/centrobuv" />
-        <key key="contact:vk" value="https://vk.com/centrobuv" />
-        <key key="contact:website" value="http://center-obuv.ru" />
-        <key key="name" value="ЦентрОбувь" />
-        <key key="name:ru" value="ЦентрОбувь" />
-        <key key="operator" value="АО &quot;Торговый дом &quot;Центробувь&quot;" />
-        <key key="operator:wikidata" value="Q4504072" />
-        <key key="operator:wikipedia" value="ru:ЦентрОбувь" />
-        <key key="shoes" value="men;women;children" />
-        <key key="shop" value="shoes" />
-        <link href="http://center-obuv.ru/shops/moskva" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="wheelchair_address" />
+        <combo key="contact:phone" text="Phone number" default="+7 800 3336600" />
+        <combo key="opening_hours" text="Opening Hours" values="Mo-Su 10:00-20:00,Mo-Su 10:00-22:00,Mo-Su 09:00-20:00,Mo-Su 09:00-21:00" />
+        <key key="brand" value="Улыбка радуги" />
+        <key key="contact:instagram" value="https://www.instagram.com/ulybkaradugi" />
+        <key key="contact:vk" value="https://vk.com/ulybka_radugi" />
+        <key key="contact:website" value="https://www.r-ulybka.ru" />
+        <key key="name" value="Улыбка радуги" />
+        <key key="name:ru" value="Улыбка радуги" />
+        <key key="shop" value="chemist" />
+        <link href="https://www.r-ulybka.ru/stores" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <reference ref="level_wheelchair_address" />
       </item>
       <item name="Eldorado" ru.name="Эльдорадо" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
