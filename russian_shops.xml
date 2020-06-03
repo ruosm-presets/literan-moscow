@@ -1417,7 +1417,7 @@
         <link href="https://palich.ru/shops/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="Yarche" ru.name=Ярче!" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Yarche" ru.name="Ярче!" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <reference ref="phone" />
         <key key="brand" value="Ярче!" />
