@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2.0_2020-06-03_1"
+  version="2.0_2020-06-16_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   icon="https://upload.wikimedia.org/wikipedia/commons/d/db/Twemoji_1f1f7-1f1fa.svg"
   shortdescription="Russian POIs"
@@ -66,6 +66,9 @@
   </chunk>
   <chunk id="sports_list">
     <combo key="sport" text="Sport" ru.text="Вид спорта" values="multi,archery,athletics,american_football,australian_football,baseball,basketball,beachvolleyball,billiards,boules,bowls,canadian_football,canoe,climbing,cricket,croquet,cycling,dog_racing,equestrian,field_hockey,gaelic_games,golf,gymnastics,handball,horse_racing,ice_hockey,karting,model_aerodrome,motocross,motor,pelota,racquet,rc_car,rugby_league,rugby_union,running,safety_training,shooting,skateboard,ice_skating,roller_skating,soccer,swimming,table_tennis,tennis,volleyball,9pin,10pin" values_context="sport" />
+  </chunk>
+  <chunk id="fitting_room">
+    <check key="fitting_room" text="Fitting room" ru.text="Примерочная" value_on="yes" value_off="no" />
   </chunk>
   <chunk id="wifi">
     <checkgroup columns="2">
@@ -1557,6 +1560,144 @@
         <reference ref="level_wheelchair_address" />
       </item>
     </group>
+    <group name="Distance retail" ru.name="Дистанционная торговля">
+      <item name="Boxberry" ru.name="Boxberry" type="node,closedway,multipolygon" preset_name_label="true">
+        <space />
+        <reference ref="oh3" />
+        <combo key="contact:phone" text="Phone number" values="+7 800 2228000" />
+        <key key="brand" value="Boxberry" />
+        <key key="contact:facebook" value="https://www.facebook.com/boxberry.ru" />
+        <key key="contact:instagram" value="https://www.instagram.com/boxberryclub" />
+        <key key="contact:vk" value="https://vk.com/club80315656" />
+        <key key="contact:website" value="https://boxberry.ru" />
+        <key key="name" value="Boxberry" />
+        <key key="shop" value="outpost" />
+        <link href="https://boxberry.ru/find_an_office/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <reference ref="fitting_room" />
+        <reference ref="level_wheelchair_address" />
+      </item> 
+      <item name="Ozon" ru.name="Ozon" type="node,closedway,multipolygon" preset_name_label="true">
+        <space />
+        <reference ref="oh3" />
+        <key key="brand" value="Ozon" />
+        <key key="brand:wikidata" value="Q2365235" />
+        <key key="brand:wikipedia" value="ru:Ozon.ru" />
+        <key key="contact:facebook" value="https://www.facebook.com/ozon.ru" />
+        <key key="contact:phone" value="+7 800 7758181" />
+        <key key="contact:instagram" value="https://www.instagram.com/ozonru" />
+        <key key="contact:vk" value="https://vk.com/ozon" />
+        <key key="contact:website" value="https://www.ozon.ru/" />
+        <key key="name" value="Ozon" />
+        <key key="shop" value="outpost" />
+        <link href="https://www.ozon.ru/geo/moskva/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <reference ref="fitting_room" />
+        <reference ref="level_wheelchair_address" />
+      </item>
+      <item name="PickPoint" ru.name="PickPoint" type="node,closedway,multipolygon" preset_name_label="true">
+        <space />
+        <reference ref="oh3" />
+        <key key="brand" value="PickPoint" />
+        <key key="contact:facebook" value="https://www.facebook.com/PickPoint" />
+        <key key="contact:phone" value="+7 800 7007909 " />
+        <key key="contact:instagram" value="https://www.instagram.com/pickpoint_rus" />
+        <key key="contact:vk" value="https://vk.com/pickpoint_rus" />
+        <key key="contact:website" value="https://pickpoint.ru" />
+        <key key="name" value="PickPoint" />
+        <key key="shop" value="outpost" />
+        <link href="https://pickpoint.ru/postamats/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <reference ref="fitting_room" />
+        <reference ref="level_wheelchair_address" />
+      </item>
+      <item name="Wildberries" type="node,closedway,multipolygon" preset_name_label="true">
+        <space />
+        <combo key="contact:phone" text="Phone number" values="+7 800 1007505,+7 495 7755505" default="+7 800 1007505" />
+        <reference ref="oh3" />
+        <key key="brand" value="Wildberries" />
+        <key key="brand:wikidata" value="Q24933714" />
+        <key key="brand:wikipedia" value="ru:Wildberries" />
+        <key key="contact:email" value="sales@wildberries.ru" />
+        <!-- <key key="contact:facebook" value="https://www.facebook.com/wildberries.ru" /> группа магазина -->
+        <key key="contact:facebook" value="https://www.facebook.com/wbbot" />
+        <key key="contact:instagram" value="https://www.instagram.com/wildberriesru" />
+        <key key="contact:ok" value="https://ok.ru/wildberries" />
+        <!-- <key key="contact:skype" value="wildberries.wb" /> -->
+        <key key="contact:skype" value="Wildberries_ru" />
+        <key key="contact:telegram" value="wbshop_bot" />
+        <key key="contact:twitter" value="https://twitter.com/wildberries_ru" />
+        <key key="contact:viber" value="wildberries" />
+        <!-- <key key="contact:vk" value="https://vk.com/club9695053" /> группа магазина -->
+        <key key="contact:vk" value="https://vk.com/wbbot" />
+        <key key="contact:website" value="https://www.wildberries.ru" />
+        <key key="contact:whatsapp" value="+7 926 5373137" />
+        <key key="contact:youtube" value="https://www.youtube.com/user/Wildberriesshop" />
+        <key key="name" value="Wildberries" />
+        <key key="name:en" value="Wildberries" />
+        <key key="shop" value="outpost" />
+        <link href="https://www.wildberries.ru/services/besplatnaya-dostavka#pickupPoints" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <reference ref="fitting_room" />
+        <reference ref="level_wheelchair_address" />
+      </item>      
+      <item name="CDEK" ru.name="СДЭК" type="node,closedway,multipolygon" preset_name_label="true">
+        <space />
+        <combo key="contact:phone" text="Phone number" default="+7 800 2501405;+7 800 2500405" />
+        <reference ref="oh3" />
+        <key key="amenity" value="post_office" />
+        <key key="brand" value="СДЭК" />
+        <key key="brand:wikidata" value="Q28665980" />
+        <key key="brand:wikipedia" value="ru:СДЭК" />
+        <key key="contact:facebook" value="https://www.facebook.com/edostavka" />
+        <key key="contact:instagram" value="https://www.instagram.com/cdek_official" />
+        <key key="contact:vk" value="https://vk.com/cdek_express" />
+        <key key="contact:website" value="https://www.cdek.ru" />
+        <key key="name" value="СДЭК" />
+        <key key="name:ru" value="СДЭК" />
+        <link href="https://cdek.ru/offices/map/moscow" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <reference ref="fitting_room" />
+        <reference ref="level_wheelchair_address" />
+      </item>
+      <separator />      
+      <item name="Ozon box" ru.name="Постамат Ozon box" type="node" preset_name_label="true">
+        <space />
+        <reference ref="oh3" />
+        <text key="ref" text="Reference" ru.text="Номер постамата" />
+        <key key="brand" value="Ozon box" />
+        <key key="brand:wikidata" value="Q2365235" />
+        <key key="brand:wikipedia" value="ru:Ozon.ru" />
+        <key key="contact:phone" value="+7 800 7758181" />
+        <key key="contact:website" value="https://www.ozon.ru/" />
+        <key key="name" value="Ozon box" />
+        <key key="amenity" value="vending_machine" />
+        <key key="vending" value="parcel_pickup" />
+        <link href="https://www.ozon.ru/geo/moskva/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <reference ref="level_wheelchair_address" />
+      </item>
+      <item name="PickPoint box" ru.name="Постамат PickPoint" type="node" preset_name_label="true">
+        <space />
+        <reference ref="oh3" />
+        <text key="ref" text="Reference" ru.text="Номер постамата" />
+        <key key="brand" value="PickPoint" />
+        <key key="contact:phone" value="+7 800 7007909" />
+        <key key="contact:website" value="https://pickpoint.ru" />
+        <key key="name" value="PickPoint" />
+        <key key="amenity" value="vending_machine" />
+        <key key="vending" value="parcel_pickup" />
+        <link href="https://pickpoint.ru/postamats/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <reference ref="level_wheelchair_address" />
+      </item>
+      <item name="Halva box" ru.name="Постамат Халва" type="node" preset_name_label="true">
+        <space />
+        <reference ref="oh3" />
+        <text key="ref" text="Reference" ru.text="Номер постамата" />
+        <key key="brand" value="Халва" />
+        <key key="contact:phone" value="+7 800 5119263" />
+        <key key="contact:website" value="https://pochtomat.ru" />
+        <key key="name" value="Халва" />
+        <key key="amenity" value="vending_machine" />
+        <key key="vending" value="parcel_pickup" />
+        <link href="https://pochtomat.ru/map/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <reference ref="level_wheelchair_address" />
+      </item>      
+    </group>
     <group name="Finance" ru.name="Финансы" icon="https://upload.wikimedia.org/wikipedia/commons/6/64/Emoji_u1f4b0.svg">
       <item name="Alfa-Bank" ru.name="Альфа-Банк" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
@@ -1865,34 +2006,6 @@
         <link href="https://topgunbarbershop.ru/barbershop/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="Wildberries" type="node,closedway,multipolygon" preset_name_label="true">
-        <space />
-        <combo key="contact:phone" text="Phone number" values="+7 800 1007505,+7 495 7755505" default="+7 800 1007505" />
-        <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-20:00,Mo-Su 10:00-21:00" />
-        <key key="brand" value="Wildberries" />
-        <key key="brand:wikidata" value="Q24933714" />
-        <key key="brand:wikipedia" value="ru:Wildberries" />
-        <key key="contact:email" value="sales@wildberries.ru" />
-        <!-- <key key="contact:facebook" value="https://www.facebook.com/wildberries.ru" /> группа магазина -->
-        <key key="contact:facebook" value="https://www.facebook.com/wbbot" />
-        <key key="contact:instagram" value="https://www.instagram.com/wildberriesru" />
-        <key key="contact:ok" value="https://ok.ru/wildberries" />
-        <!-- <key key="contact:skype" value="wildberries.wb" /> -->
-        <key key="contact:skype" value="Wildberries_ru" />
-        <key key="contact:telegram" value="wbshop_bot" />
-        <key key="contact:twitter" value="https://twitter.com/wildberries_ru" />
-        <key key="contact:viber" value="wildberries" />
-        <!-- <key key="contact:vk" value="https://vk.com/club9695053" /> группа магазина -->
-        <key key="contact:vk" value="https://vk.com/wbbot" />
-        <key key="contact:website" value="https://www.wildberries.ru" />
-        <key key="contact:whatsapp" value="+7 926 5373137" />
-        <key key="contact:youtube" value="https://www.youtube.com/user/Wildberriesshop" />
-        <key key="name" value="Wildberries" />
-        <key key="name:en" value="Wildberries" />
-        <key key="shop" value="outpost" />
-        <link href="https://www.wildberries.ru/services/besplatnaya-dostavka#pickupPoints" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="level_wheelchair_address" />
-      </item>
       <item name="Adamas" ru.name="Адамас" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="contact:phone" text="Phone number" values="+7 800 2503344-xxxx" default="+7 800 2503344" />
@@ -2142,22 +2255,6 @@
         <link href="https://www.podrygka.ru/shoplist/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="CDEK" ru.name="СДЭК" type="node,closedway,multipolygon" preset_name_label="true">
-        <space />
-        <combo key="contact:phone" text="Phone number" default="+7 800 2501405;+7 800 2500405" />
-        <key key="amenity" value="post_office" />
-        <key key="brand" value="СДЭК" />
-        <key key="brand:wikidata" value="Q28665980" />
-        <key key="brand:wikipedia" value="ru:СДЭК" />
-        <key key="contact:facebook" value="https://www.facebook.com/edostavka" />
-        <key key="contact:instagram" value="https://www.instagram.com/cdek_official" />
-        <key key="contact:vk" value="https://vk.com/cdek_express" />
-        <key key="contact:website" value="https://www.cdek.ru" />
-        <key key="name" value="СДЭК" />
-        <key key="name:ru" value="СДЭК" />
-        <link href="https://cdek.ru/offices/map/moscow" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="oh1_level_wheelchair_address" />
-      </item> <!-- TODO: вынести в отдельную группу про курьерские/почтовые службы -->
       <item name="Smeshnie Tseni" ru.name="Смешные цены" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <key key="brand" value="Смешные цены" />
