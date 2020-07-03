@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2.0_2020-06-23_1"
+  version="2.0_2020-07-03_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   icon="https://upload.wikimedia.org/wikipedia/commons/d/db/Twemoji_1f1f7-1f1fa.svg"
   shortdescription="Russian POIs"
@@ -3250,6 +3250,34 @@
         <key key="tickets:suburban_train" value="yes" />
         <preset_link preset_name="Address" />
         <preset_link preset_name="Building" />
+      </item>
+           
+      <item name="Velobike bicycle rental point" ru.name="Пункт проката велосипедов Velobike" type="node" preset_name_label="true">
+        <space />
+        <reference ref="ref" />
+        <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-13:00\,13:45-17:00; Fr 09:00-13:00\,13:45-15:45" default="24/7" />
+        <combo key="capacity" text="Вместимость (количество мест для велосипедов)" />
+        <combo key="capacity:electric" text="Вместимость (количество мест для электрических велосипедов)" />
+        <key key="amenity" value="bicycle_rental" />
+        <key key="contact:email" value="info@velobike.ru" />
+        <key key="contact:phone" value="+7 495 9664669" />
+        <key key="contact:website" value="https://velobike.ru/" />
+        <key key="fee" value="yes" />
+        <key key="network" value="Велобайк" />
+        <key key="operator" value="АО «СитиБайк»" />
+        <key key="seasonal" value="spring;summer;autumn" />
+      </item>
+      <item name="Samocat kick-scooter rental point" ru.name="Пункт проката электросамокатов Samokat" type="node" preset_name_label="true">
+        <space />
+        <reference ref="ref" />
+        <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-13:00\,13:45-17:00; Fr 09:00-13:00\,13:45-15:45" default="24/7" />
+        <combo key="capacity" text="Вместимость (количество мест для самокатов)" />
+        <key key="amenity" value="kick-scooter_rental" />
+        <key key="contact:phone" value="+7 800 3010184" />
+        <key key="contact:website" value="https://samocat.net" />
+        <key key="fee" value="yes" />
+        <key key="network" value="Samokat" />
+        <key key="seasonal" value="spring;summer;autumn" />
       </item>
       <item name="MGTS payphone" ru.name="Таксофон &quot;МГТС&quot;" type="node" icon="https://upload.wikimedia.org/wikipedia/commons/a/a0/Twemoji_1f4de.svg" preset_name_label="true">
         <space />
