@@ -3254,7 +3254,7 @@
            
       <item name="Velobike bicycle rental point" ru.name="Пункт проката велосипедов Velobike" type="node" preset_name_label="true">
         <space />
-        <combo key="ref" text="Ref" />
+        <reference ref="ref" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-13:00\,13:45-17:00; Fr 09:00-13:00\,13:45-15:45" default="24/7" />
         <combo key="capacity" text="Вместимость (количество мест для велосипедов)" />
         <combo key="capacity:electric" text="Вместимость (количество мест для электрических велосипедов)" />
@@ -3269,7 +3269,7 @@
       </item>
       <item name="Samocat kick-scooter rental point" ru.name="Пункт проката электросамокатов Samokat" type="node" preset_name_label="true">
         <space />
-        <combo key="ref" text="Ref" />
+        <reference ref="ref" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-13:00\,13:45-17:00; Fr 09:00-13:00\,13:45-15:45" default="24/7" />
         <combo key="capacity" text="Вместимость (количество мест для самокатов)" />
         <key key="amenity" value="kick-scooter_rental" />
