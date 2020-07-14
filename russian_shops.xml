@@ -2156,8 +2156,13 @@
         <space />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-22:00,Mo-Su 09:30-22:00" />
         <key key="brand" value="Магнит Косметик" />
+        <key key="brand:wikidata" value="Q62592348" />
+        <key key="brand:wikipedia" value="ru:Магнит косметик" />
         <key key="contact:email" value="info@magnit.ru" />
+        <key key="contact:instagram" value="https://www.instagram.com/magnitcosmetic" />
+        <key key="contact:ok" value="https://ok.ru/magnitcosmetic" />
         <key key="contact:phone" value="+7 800 2009002" />
+        <key key="contact:vk" value="https://vk.com/magnitcosmetic" />
         <key key="contact:website" value="https://magnitcosmetic.ru" />
         <key key="name" value="Магнит Косметик" />
         <key key="name:en" value="Magnit Cosmetic" />
