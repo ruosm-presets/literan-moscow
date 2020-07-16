@@ -3201,6 +3201,8 @@
         <key key="communication:mobile_phone" value="yes" />
         <key key="man_made" value="mast" />
         <key key="tower:type" value="communication" />
+        <key key="material" value="steel" />
+        <key key="tower:construction" value="freestanding" />
         <link wiki="Proposed_features/Telecommunications_tower" text="Proposed features/Telecommunications tower" />
         <link wiki="Tag:man_made%3Dmast" />
       </item>
