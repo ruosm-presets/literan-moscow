@@ -585,7 +585,7 @@
       </item>
       <item name="Dodo Pizza" ru.name="Додо Пицца" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
-        <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-23:00,Mo-Fr 09:00-23:00; Sa-Su 10:00-22:00" />
+        <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-23:00,Mo-Su 10:00-23:00,Mo-Su 10:00-22:00" />
         <key key="amenity" value="fast_food" />
         <key key="brand" value="Додо Пицца" />
         <key key="contact:email" value="feedback@dodopizza.com" />
