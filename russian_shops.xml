@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2.0_2020-07-14_1"
+  version="2.0_2020-07-16_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   icon="https://upload.wikimedia.org/wikipedia/commons/d/db/Twemoji_1f1f7-1f1fa.svg"
   shortdescription="Russian POIs"
@@ -420,25 +420,6 @@
         <link href="https://www.cofix.ru/cafe/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
-      <item name="GlowSubs" type="node,closedway,multipolygon" preset_name_label="true">
-        <space />
-        <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
-        <key key="amenity" value="fast_food" />
-        <key key="brand" value="GlowSubs" />
-        <key key="contact:email" value="info@glowsubs.ru" />
-        <key key="contact:facebook" value="https://www.facebook.com/glowsubs" />
-        <key key="contact:instagram" value="https://www.instagram.com/glowsubs" />
-        <key key="contact:phone" value="+7 495 2120520" />
-        <key key="contact:vk" value="https://vk.com/glowsubs" />
-        <key key="contact:website" value="http://glowsubs.ru" />
-        <key key="cuisine" value="sandwich" />
-        <key key="diet:vegetarian" value="no" />
-        <key key="name" value="GlowSubs" />
-        <key key="name:en" value="GlowSubs" />
-        <key key="takeaway" value="yes" />
-        <link href="http://glowsubs.ru/restaurants/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
-      </item>
       <item name="IL Patio" ru.name="IL Патио" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <reference ref="phone" />
@@ -600,6 +581,26 @@
         <key key="name:ru" value="Данкин Донатс" />
         <key key="takeaway" value="yes" />
         <link href="http://dunkindonutsmoscow.ru/ru/stores" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
+      </item>
+      <item name="Dodo Pizza" ru.name="Додо Пицца" type="node,closedway,multipolygon" preset_name_label="true">
+        <space />
+        <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-23:00,Mo-Fr 09:00-23:00; Sa-Su 10:00-22:00" />
+        <key key="amenity" value="fast_food" />
+        <key key="brand" value="Додо Пицца" />
+        <key key="contact:email" value="feedback@dodopizza.com" />
+        <key key="contact:facebook" value="https://www.facebook.com/dodopizza/" />
+        <key key="contact:instagram" value="https://www.instagram.com/dodopizza" />
+        <key key="contact:phone" value="+7 800 3020060" />
+        <key key="contact:vk" value="https://vk.com/dodo" />
+        <key key="contact:website" value="https://dodopizza.ru" />
+        <key key="cuisine" value="pizza" />
+        <key key="diet:vegetarian" value="yes" />
+        <key key="name" value="Додо Пицца" />
+        <key key="name:en" value="Dodo Pizza" />
+        <key key="takeaway" value="yes" />
+        <key key="delivery" value="yes" />
+        <link href="https://dodopizza.ru/moscow/contacts" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
       <item name="Domino’s Pizza" ru.name="Домино’c Пицца" type="node,closedway,multipolygon" preset_name_label="true">
