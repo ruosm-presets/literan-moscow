@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2.0_2020-07-16_1"
+  version="2.0_2020-08-07_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   icon="https://upload.wikimedia.org/wikipedia/commons/d/db/Twemoji_1f1f7-1f1fa.svg"
   shortdescription="Russian POIs"
@@ -1129,8 +1129,9 @@
         <key key="brand" value="ВкусВилл" />
         <key key="contact:email" value="info@izbenka.msk.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/vkusvill.ru" />
-        <key key="contact:instagram" value="https://www.instagram.com/izbenka_vkusvill" />
+        <key key="contact:instagram" value="https://www.instagram.com/vkusvill_ru" />
         <key key="contact:telegram" value="https://telegram.me/vkusvillbot" />
+        <key key="contact:twitter" value="https://twitter.com/we_are_vkusvill" />
         <key key="contact:vk" value="https://vk.com/vkusvill_ru" />
         <key key="contact:website" value="https://vkusvill.ru" />
         <key key="name" value="ВкусВилл" />
