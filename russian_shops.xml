@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2.0_2020-08-07_1"
+  version="2.0_2020-08-27_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   icon="https://upload.wikimedia.org/wikipedia/commons/d/db/Twemoji_1f1f7-1f1fa.svg"
   shortdescription="Russian POIs"
@@ -1591,7 +1591,7 @@
         <key key="contact:website" value="https://www.ozon.ru/" />
         <key key="name" value="Ozon" />
         <key key="shop" value="outpost" />
-        <link href="https://www.ozon.ru/geo/moskva/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://www.ozon.ru/geo/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="fitting_room" />
         <reference ref="level_wheelchair_address" />
       </item>
