@@ -1151,13 +1151,16 @@
         <key key="brand" value="Дикси" />
         <key key="brand:wikidata" value="Q4161561" />
         <key key="brand:wikipedia" value="ru:Дикси (сеть магазинов)" />
+        <key key="contact:facebook" value="https://www.facebook.com/Dixyclub" />
+        <key key="contact:instagram" value="https://www.instagram.com/dixy.channel" />
+        <key key="contact:ok" value="https://ok.ru/dixyclub" />
         <key key="contact:phone" value="+7 800 3330201" />
         <key key="contact:vk" value="https://vk.com/dixyclub" />
         <key key="contact:website" value="https://dixy.ru" />
         <key key="contact:youtube" value="https://www.youtube.com/user/DixyChannel" />
         <key key="name" value="Дикси" />
         <key key="name:ru" value="Дикси" />
-        <link href="https://dixy.ru/nearest-shop/?region=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0&amp;city=&amp;street=&amp;op.x=39&amp;op.y=15&amp;form_build_id=form-MGrIV8_EYK6C5zSMV3QI1192m6i_XP6QI9Y_b5I477c&amp;form_id=dixy_shops_block_form" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://dixy.ru/nearest-shop/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
       <item name="Krasnaya Ikra" ru.name="Красная Икра" type="node,closedway,multipolygon" preset_name_label="true">
