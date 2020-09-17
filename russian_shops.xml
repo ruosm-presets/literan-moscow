@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2.0_2020-08-27_1"
+  version="2.0_2020-09-17_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   icon="https://upload.wikimedia.org/wikipedia/commons/d/db/Twemoji_1f1f7-1f1fa.svg"
   shortdescription="Russian POIs"
@@ -493,8 +493,12 @@
         <key key="brand:wikidata" value="Q244457" />
         <key key="brand:wikipedia" value="ru:Subway (сеть ресторанов)" />
         <key key="contact:email" value="subway@subway.ru" />
+        <key key="contact:facebook" value="https://www.facebook.com/subwayrussiaofficial" />
+        <key key="contact:instagram" value="https://www.instagram.com/subwayrussia_official" />
+        <key key="contact:ok" value="https://ok.ru/subwayrussia" />
         <key key="contact:vk" value="https://vk.com/subwayrussia" />
         <key key="contact:website" value="https://subway.ru" />
+        <key key="contact:youtube" value="https://www.youtube.com/c/SubwayRussia" />
         <key key="cuisine" value="sandwich" />
         <key key="diet:vegetarian" value="no" />
         <key key="name" value="Subway" />
