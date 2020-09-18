@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2.0_2020-08-27_1"
+  version="2.0_2020-09-17_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   icon="https://upload.wikimedia.org/wikipedia/commons/d/db/Twemoji_1f1f7-1f1fa.svg"
   shortdescription="Russian POIs"
@@ -493,8 +493,12 @@
         <key key="brand:wikidata" value="Q244457" />
         <key key="brand:wikipedia" value="ru:Subway (сеть ресторанов)" />
         <key key="contact:email" value="subway@subway.ru" />
+        <key key="contact:facebook" value="https://www.facebook.com/subwayrussiaofficial" />
+        <key key="contact:instagram" value="https://www.instagram.com/subwayrussia_official" />
+        <key key="contact:ok" value="https://ok.ru/subwayrussia" />
         <key key="contact:vk" value="https://vk.com/subwayrussia" />
         <key key="contact:website" value="https://subway.ru" />
+        <key key="contact:youtube" value="https://www.youtube.com/c/SubwayRussia" />
         <key key="cuisine" value="sandwich" />
         <key key="diet:vegetarian" value="no" />
         <key key="name" value="Subway" />
@@ -1147,13 +1151,16 @@
         <key key="brand" value="Дикси" />
         <key key="brand:wikidata" value="Q4161561" />
         <key key="brand:wikipedia" value="ru:Дикси (сеть магазинов)" />
+        <key key="contact:facebook" value="https://www.facebook.com/Dixyclub" />
+        <key key="contact:instagram" value="https://www.instagram.com/dixy.channel" />
+        <key key="contact:ok" value="https://ok.ru/dixyclub" />
         <key key="contact:phone" value="+7 800 3330201" />
         <key key="contact:vk" value="https://vk.com/dixyclub" />
         <key key="contact:website" value="https://dixy.ru" />
         <key key="contact:youtube" value="https://www.youtube.com/user/DixyChannel" />
         <key key="name" value="Дикси" />
         <key key="name:ru" value="Дикси" />
-        <link href="https://dixy.ru/nearest-shop/?region=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0&amp;city=&amp;street=&amp;op.x=39&amp;op.y=15&amp;form_build_id=form-MGrIV8_EYK6C5zSMV3QI1192m6i_XP6QI9Y_b5I477c&amp;form_id=dixy_shops_block_form" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://dixy.ru/nearest-shop/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
       <item name="Krasnaya Ikra" ru.name="Красная Икра" type="node,closedway,multipolygon" preset_name_label="true">
