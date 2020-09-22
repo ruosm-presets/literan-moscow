@@ -332,6 +332,23 @@
         <link href="https://www.citypharm.ru/apteki/map" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="oh3_level_wheelchair_address_dispencing" />
       </item>
+      <item name="zhivika" ru.name="Живика" type="node,closedway,multipolygon" preset_name_label="true">
+        <space />
+        <key key="amenity" value="pharmacy" />
+        <key key="brand" value="Живика" />
+        <key key="contact:email" value="info@aptekazhivika.ru" />
+        <key key="contact:website" value="http://zhivika.ru" />
+        <key key="contact:youtube" value="https://www.youtube.com/channel/UCwHJ0HXTvIjJxFkGtXU7SYw" />
+        <key key="contact:ok" value="https://ok.ru/aptekazhivika" />
+        <key key="contact:vk" value="http://vk.com/zhivika_ekb" />
+        <key key="healthcare" value="pharmacy" />
+        <key key="name" value="Живика" />
+        <key key="name:ru" value="Живика" />
+        <key key="operator" value="ООО «Живика Центр»" />
+        <link href="https://www.aptekazhivika.ru/store" text="Official website (place locator)" ru.text="Ссылка на сайт московской обл (часы работы, координаты и т.п.)" />
+        <link href="http://zhivika.ru/adresa_aptek/" text="Official website ural (place locator)" ru.text="Ссылка на сайт уральского региона (часы работы, координаты и т.п.)" />
+        <reference ref="phone_oh2_wheelchair_address" />
+      </item>
       <separator />
       <item name="CMD" ru.name="CMD (Центр молекулярной диагностики)" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
