@@ -1180,6 +1180,22 @@
         <link href="https://dixy.ru/nearest-shop/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
+	  <item name="Ermolino" ru.name="Ермолино" type="node,closedway,multipolygon" preset_name_label="true">
+        <space />
+        <combo key="contact:phone" text="Phone number" />
+        <key key="shop" value="convenience" />
+        <key key="brand" value="Ермолино" />
+        <key key="contact:facebook" value="https://www.facebook.com/1595543600748291/" />
+        <key key="contact:vk" value="https://vk.com/club130758324" />
+        <key key="contact:ok" value="http://ok.ru/group/53342079549623" />
+        <key key="contact:instagram" value="https://www.instagram.com/produktyermolino/" />
+        <key key="contact:youtube" value="https://www.youtube.com/channel/UCD-dmrfYF1inL9e8MaRFotw" />
+        <key key="contact:website" value="https://www.ermolino-produkty.ru" />
+        <key key="name" value="Ермолино" />
+        <key key="name:ru" value="Ермолино" />
+        <link href="https://www.ermolino-produkty.ru/magaziny" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <reference ref="wheelchair_address" />
+      </item>
       <item name="Krasnaya Ikra" ru.name="Красная Икра" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="contact:phone" text="Phone number" default="+7 495 4379029" />
