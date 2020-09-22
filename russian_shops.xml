@@ -339,7 +339,7 @@
         <key key="contact:email" value="info@aptekazhivika.ru" />
         <key key="contact:website" value="http://zhivika.ru" />
         <key key="contact:youtube" value="https://www.youtube.com/channel/UCwHJ0HXTvIjJxFkGtXU7SYw" />
-        <key key="contact:ok" value="https://ok.ru/aptekazhivika" />
+        <key key="contact:ok" value="https://ok.ru/rigla.ru" />
         <key key="contact:vk" value="http://vk.com/zhivika_ekb" />
         <key key="healthcare" value="pharmacy" />
         <key key="name" value="Живика" />
@@ -2066,6 +2066,23 @@
         <key key="name:ru" value="Айкрафт" />
         <key key="shop" value="optician" />
         <link href="https://eyekraft.ru/saloni-optiki" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <reference ref="level_wheelchair_address" />
+      </item>
+      <item name="Galamart" ru.name="Галамарт" type="node,closedway,multipolygon" preset_name_label="true">
+        <space />
+        <combo key="contact:phone" text="Phone number" default="+7 800 2500025" />
+        <key key="shop" value="hardware" />
+        <key key="brand" value="Галамарт" />
+        <key key="contact:email" value="info@galamart.ru" />
+        <key key="contact:website" value="https://galamart.ru/" />
+        <key key="contact:youtube" value="https://www.youtube.com/channel/UCUypd9qxKCCh2h7DeJfRXvQ" />
+        <key key="contact:ok" value="https://ok.ru/galamartofficial" />
+        <key key="contact:vk" value="https://vk.com/galamart_official" />
+        <key key="contact:instagram" value="https://www.instagram.com/galamartofficial/" />
+        <key key="contact:facebook" value="https://www.facebook.com/galamartofficial/" />
+        <key key="name" value="Галамарт" />
+        <key key="name:ru" value="Галамарт" />
+        <link href="https://galamart.ru/shops/" text="Official website (place locator)" ru.text="Адреса и телефоны магазинов (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
       <item name="Detskiy Mir" ru.name="Детский мир" type="node,closedway,multipolygon" preset_name_label="true">
