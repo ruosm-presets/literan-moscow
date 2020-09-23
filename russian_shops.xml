@@ -332,6 +332,23 @@
         <link href="https://www.citypharm.ru/apteki/map" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="oh3_level_wheelchair_address_dispencing" />
       </item>
+      <item name="zhivika" ru.name="Живика" type="node,closedway,multipolygon" preset_name_label="true">
+        <space />
+        <key key="amenity" value="pharmacy" />
+        <key key="brand" value="Живика" />
+        <key key="contact:email" value="info@aptekazhivika.ru" />
+        <key key="contact:website" value="http://zhivika.ru" />
+        <key key="contact:youtube" value="https://www.youtube.com/channel/UCwHJ0HXTvIjJxFkGtXU7SYw" />
+        <key key="contact:ok" value="https://ok.ru/aptekazhivika" />
+        <key key="contact:vk" value="http://vk.com/zhivika_ekb" />
+        <key key="healthcare" value="pharmacy" />
+        <key key="name" value="Живика" />
+        <key key="name:ru" value="Живика" />
+        <key key="operator" value="ООО «Живика Центр»" />
+        <link href="https://www.aptekazhivika.ru/store" text="Official website (place locator)" ru.text="Ссылка на сайт московской обл (часы работы, координаты и т.п.)" />
+        <link href="http://zhivika.ru/adresa_aptek/" text="Official website ural (place locator)" ru.text="Ссылка на сайт уральского региона (часы работы, координаты и т.п.)" />
+        <reference ref="phone_oh2_wheelchair_address" />
+      </item>
       <separator />
       <item name="CMD" ru.name="CMD (Центр молекулярной диагностики)" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
@@ -1161,6 +1178,22 @@
         <key key="name" value="Дикси" />
         <key key="name:ru" value="Дикси" />
         <link href="https://dixy.ru/nearest-shop/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <reference ref="wheelchair_address" />
+      </item>
+	  <item name="Ermolino" ru.name="Ермолино" type="node,closedway,multipolygon" preset_name_label="true">
+        <space />
+        <combo key="contact:phone" text="Phone number" />
+        <key key="shop" value="convenience" />
+        <key key="brand" value="Ермолино" />
+        <key key="contact:facebook" value="https://www.facebook.com/1595543600748291/" />
+        <key key="contact:vk" value="https://vk.com/produkty.ermolino" />
+        <key key="contact:ok" value="http://ok.ru/group/53342079549623" />
+        <key key="contact:instagram" value="https://www.instagram.com/produktyermolino/" />
+        <key key="contact:youtube" value="https://www.youtube.com/channel/UCD-dmrfYF1inL9e8MaRFotw" />
+        <key key="contact:website" value="https://www.ermolino-produkty.ru" />
+        <key key="name" value="Ермолино" />
+        <key key="name:ru" value="Ермолино" />
+        <link href="https://www.ermolino-produkty.ru/magaziny" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
       <item name="Krasnaya Ikra" ru.name="Красная Икра" type="node,closedway,multipolygon" preset_name_label="true">
@@ -2049,6 +2082,23 @@
         <key key="name:ru" value="Айкрафт" />
         <key key="shop" value="optician" />
         <link href="https://eyekraft.ru/saloni-optiki" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <reference ref="level_wheelchair_address" />
+      </item>
+      <item name="Galamart" ru.name="Галамарт" type="node,closedway,multipolygon" preset_name_label="true">
+        <space />
+        <combo key="contact:phone" text="Phone number" default="+7 800 2500025" />
+        <key key="shop" value="hardware" />
+        <key key="brand" value="Галамарт" />
+        <key key="contact:email" value="info@galamart.ru" />
+        <key key="contact:website" value="https://galamart.ru/" />
+        <key key="contact:youtube" value="https://www.youtube.com/channel/UCUypd9qxKCCh2h7DeJfRXvQ" />
+        <key key="contact:ok" value="https://ok.ru/galamartofficial" />
+        <key key="contact:vk" value="https://vk.com/galamart_official" />
+        <key key="contact:instagram" value="https://www.instagram.com/galamartofficial/" />
+        <key key="contact:facebook" value="https://www.facebook.com/galamartofficial/" />
+        <key key="name" value="Галамарт" />
+        <key key="name:ru" value="Галамарт" />
+        <link href="https://galamart.ru/shops/" text="Official website (place locator)" ru.text="Адреса и телефоны магазинов (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
       <item name="Detskiy Mir" ru.name="Детский мир" type="node,closedway,multipolygon" preset_name_label="true">
