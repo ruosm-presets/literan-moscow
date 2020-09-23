@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2.0_2020-09-17_1"
+  version="2.0_2020-09-23_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   icon="https://upload.wikimedia.org/wikipedia/commons/d/db/Twemoji_1f1f7-1f1fa.svg"
   shortdescription="Russian POIs"
@@ -1039,6 +1039,7 @@
         <key key="brand" value="Ароматный мир" />
         <key key="contact:facebook" value="https://www.facebook.com/amwine.ru" />
         <key key="contact:instagram" value="https://www.instagram.com/amwine.ru" />
+        <key key="contact:telegram" value="https://t.me/amwineru" />
         <key key="contact:twitter" value="https://twitter.com/amwineru" />
         <key key="contact:vk" value="https://vk.com/amwineru" />
         <key key="contact:website" value="https://amwine.ru" />
