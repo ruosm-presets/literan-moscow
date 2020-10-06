@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2.0_2020-09-23_1"
+  version="2.0_2020-10-06_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   icon="https://upload.wikimedia.org/wikipedia/commons/d/db/Twemoji_1f1f7-1f1fa.svg"
   shortdescription="Russian POIs"
@@ -270,12 +270,13 @@
         <key key="brand" value="Ригла" />
         <key key="brand:wikidata" value="Q4394431" />
         <key key="brand:wikipedia" value="ru:Ригла" />
-        <key key="contact:email" value="msk@rigla.ru" />
+        <key key="contact:email" value="info@rigla.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/rigla.ru" />
         <key key="contact:instagram" value="https://www.instagram.com/rigla.ru" />
         <key key="contact:ok" value="https://ok.ru/rigla.ru" />
         <key key="contact:vk" value="https://vk.com/rigla_ru" />
         <key key="contact:website" value="https://www.rigla.ru" />
+        <key key="contact:youtube" value="https://www.youtube.com/user/RiglaVideo" />
         <key key="healthcare" value="pharmacy" />
         <key key="name" value="Ригла" />
         <key key="name:ru" value="Ригла" />
