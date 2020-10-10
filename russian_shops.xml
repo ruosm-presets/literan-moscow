@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2.0_2020-10-06_1"
+  version="2.0_2020-10-10_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   icon="https://upload.wikimedia.org/wikipedia/commons/d/db/Twemoji_1f1f7-1f1fa.svg"
   shortdescription="Russian POIs"
@@ -216,18 +216,6 @@
         <key key="healthcare" value="pharmacy" />
         <key key="name" value="36,6" />
         <key key="name:ru" value="36,6" />
-        <link href="https://apteka366.ru/apteki/map/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="oh3_level_wheelchair_address_dispencing" />
-      </item>
-      <item name="A5" ru.name="А5" type="node,closedway,multipolygon" preset_name_label="true">
-        <space />
-        <combo key="contact:phone" text="Phone number" default="+7 495 7976336" />
-        <key key="amenity" value="pharmacy" />
-        <key key="brand" value="А5" />
-        <key key="contact:website" value="https://apteka366.ru" />
-        <key key="healthcare" value="pharmacy" />
-        <key key="name" value="А5" />
-        <key key="name:ru" value="А5" />
         <link href="https://apteka366.ru/apteki/map/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="oh3_level_wheelchair_address_dispencing" />
       </item>
@@ -580,7 +568,7 @@
         <key key="name:en" value="Double B" />
         <key key="name:ru" value="Даблби" />
         <key key="takeaway" value="yes" />
-        <link href="https://double-b.ru/addresses/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://double-b.ru/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
       <item name="Dunkin' Donuts" ru.name="Данкин Донатс" type="node,closedway,multipolygon" preset_name_label="true">
@@ -1727,6 +1715,19 @@
         <key key="amenity" value="vending_machine" />
         <key key="vending" value="parcel_pickup" />
         <link href="https://pickpoint.ru/postamats/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <reference ref="level_wheelchair_address" />
+      </item>	    
+      <item name="Utkonos box" ru.name="Постамат Утконос" type="node" preset_name_label="true">
+        <space />
+        <reference ref="oh3" />
+        <text key="ref" text="Reference" ru.text="Номер постамата" />
+        <key key="brand" value="Утконос" />
+        <key key="contact:phone" value="+7 495 7775444" />
+        <key key="contact:website" value="https://www.utkonos.ru" />
+        <key key="name" value="Утконос" />
+        <key key="amenity" value="vending_machine" />
+        <key key="vending" value="parcel_pickup" />
+        <link href="https://www.utkonos.ru/landing/foodbox" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
       <item name="Halva box" ru.name="Постамат Халва" type="node" preset_name_label="true">
@@ -3335,6 +3336,7 @@
         <key key="network" value="Велобайк" />
         <key key="operator" value="АО «СитиБайк»" />
         <key key="seasonal" value="spring;summer;autumn" />
+	<link href="https://velobike.ru/parkings/" text="Official website (place locator)" ru.text="Ссылка на сайт (места расположения станций проката)" />
       </item>
       <item name="Samocat kick-scooter rental point" ru.name="Пункт проката электросамокатов Samokat" type="node" preset_name_label="true">
         <space />
