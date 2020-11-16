@@ -62,7 +62,7 @@
     <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-12:30\,13:15-18:00; Fr 09:00-12:30\,13:15-17:00,Mo-Th 09:00-13:00\,13:45-17:00; Fr 09:00-13:00\,13:45-15:45,Mo-Th 09:00-20:00; Fr 09:00-18:45; Sa 09:00-17:00" />
   </chunk>
   <chunk id="oh3">
-    <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Fr 08:00-20:00; Sa-Su 10:00-18:00,Mo-Fr 08:00-22:00; Sa-Su 09:00-21:00,Mo-Fr 09:00-20:00; Sa 10:00-20:00; Su 10:00-19:00,Mo-Fr 09:00-21:00; Sa-Su 10:00-19:00,Mo-Su 09:00-21:00,Mo-Su 09:00-22:00,Mo-Su 10:00-22:00" />
+    <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Fr 08:00-20:00; Sa-Su 10:00-18:00,Mo-Fr 08:00-22:00; Sa-Su 09:00-21:00,Mo-Fr 09:00-20:00; Sa 10:00-20:00; Su 10:00-19:00,Mo-Fr 09:00-21:00; Sa-Su 10:00-19:00,Mo-Su 09:00-21:00,Mo-Su 09:00-22:00,Mo-Su 10:00-22:00,Mo-Su 09:00-23:00,Mo-Su 10:00-23:00" />
   </chunk>
   <chunk id="sports_list">
     <combo key="sport" text="Sport" ru.text="Вид спорта" values="multi,archery,athletics,american_football,australian_football,baseball,basketball,beachvolleyball,billiards,boules,bowls,canadian_football,canoe,climbing,cricket,croquet,cycling,dog_racing,equestrian,field_hockey,gaelic_games,golf,gymnastics,handball,horse_racing,ice_hockey,karting,model_aerodrome,motocross,motor,pelota,racquet,rc_car,rugby_league,rugby_union,running,safety_training,shooting,skateboard,ice_skating,roller_skating,soccer,swimming,table_tennis,tennis,volleyball,9pin,10pin" values_context="sport" />
@@ -652,6 +652,9 @@
         <key key="contact:youtube" value="https://www.youtube.com/user/CoffeeHouseMan" />
         <key key="cuisine" value="coffee_shop" />
         <key key="diet:vegetarian" value="yes" />
+        <key key="drink:coffee" value="yes" />
+        <key key="drink:tea" value="yes" />
+        <key key="drink:water" value="yes" />
         <key key="internet_access" value="wlan" /> <!-- NB: во всех "Кофе Хаузах" заявлен бесплатный вай-фай -->
         <key key="internet_access:fee" value="no" /> <!-- NB: во всех "Кофе Хаузах" заявлен бесплатный вай-фай -->
         <key key="name" value="Кофе Хауз" />
@@ -678,25 +681,6 @@
         <key key="name" value="Крошка Картошка" />
         <key key="name:ru" value="Крошка Картошка" />
         <link href="https://www.kartoshka.com/map/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
-      </item>
-      <item name="Kruzhka" ru.name="Кружка" type="node,closedway,multipolygon" preset_name_label="true">
-        <space />
-        <reference ref="phone" />
-        <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 08:00-23:00,Mo-Fr 12:00-24:00; Sa-Su 00:00-04:00\,12:00-24:00" />
-        <key key="amenity" value="pub" />
-        <key key="brand" value="Кружка" />
-        <key key="brand:wikidata" value="Q6439558" />
-        <key key="brand:wikipedia" value="ru:Кружка (сеть ресторанов)" />
-        <key key="contact:facebook" value="https://www.facebook.com/KRUZHKA.MOSCOW" />
-        <key key="contact:instagram" value="https://www.instagram.com/kruzhkaru" />
-        <key key="contact:twitter" value="https://twitter.com/Kruzhkaru" />
-        <key key="contact:website" value="http://www.kruzhka.ru" />
-        <key key="craft_beer" value="yes" />
-        <key key="diet:vegetarian" value="no" />
-        <key key="name" value="Кружка" />
-        <key key="name:ru" value="Кружка" />
-        <link href="https://kruzhka.ru/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
       <item name="McDonald's" ru.name="Макдоналдс" type="node,closedway,multipolygon" preset_name_label="true">
@@ -764,6 +748,27 @@
         <link href="https://www.papajohns.ru/contacts" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
+      <item name="Pravda Coffee" ru.name="Правда Кофе" type="node,closedway,multipolygon" preset_name_label="true">
+        <space />
+        <combo key="contact:phone" text="Phone number" default="+7 800 5557862" />
+        <reference ref="oh3" />
+        <key key="amenity" value="fast_food" />
+        <key key="brand" value="Правда Кофе" />
+        <key key="contact:facebook" value="https://www.facebook.com/pravdacoffee" />
+        <key key="contact:instagram" value="https://www.instagram.com/pravda_coffee" />
+        <key key="contact:vk" value="https://vk.com/pravda_coffee" />
+        <key key="contact:website" value="https://pravda-coffee.ru/" />
+        <key key="cuisine" value="coffee_shop" />
+        <key key="drink:coffee" value="yes" />
+        <key key="drink:hot_chocolate" value="yes" />
+        <key key="drink:tea" value="yes" />
+        <key key="drink:water" value="yes" />
+        <key key="diet:vegetarian" value="no" />
+        <key key="name" value="Правда Кофе" />
+        <key key="name:ru" value="Правда Кофе" />
+        <key key="takeaway" value="yes" />
+        <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
+      </item>	    
       <item name="Robin Sdobin" ru.name="Робин Сдобин" type="node,closedway,multipolygon" preset_name_label="true">
         <!-- Воронежская, Московская, Смоленская, Владимирская и т.д. -->
         <space />
@@ -814,6 +819,7 @@
         <key key="contact:website" value="http://www.starbucks.ru" />
         <key key="cuisine" value="coffee_shop" />
         <key key="diet:vegetarian" value="no" />
+        <key key="drink:coffee" value="yes" />
         <key key="name" value="Старбакс" />
         <key key="name:en" value="Starbucks" />
         <key key="name:ru" value="Старбакс" />
@@ -880,6 +886,9 @@
         <key key="contact:website" value="https://shoko.ru" />
         <key key="cuisine" value="coffee_shop" />
         <key key="diet:vegetarian" value="no" />
+        <key key="drink:coffee" value="yes" />
+        <key key="drink:tea" value="yes" />
+        <key key="drink:water" value="yes" />
         <key key="name" value="Шоколадница" />
         <key key="name:ru" value="Шоколадница" />
         <link href="https://shoko.ru/addresses/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
@@ -981,26 +990,6 @@
         <link href="https://av.ru/shops/#msk_av-daily" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="AV Enoteca" ru.name="АВ Энотека" type="node,closedway,multipolygon" preset_name_label="true">
-        <space />
-        <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00" />
-        <key key="brand" value="АВ Энотека" />
-        <key key="brand:wikidata" value="Q4058209" />
-        <key key="brand:wikipedia" value="ru:Азбука вкуса" />
-        <key key="contact:email" value="welcome@azbukavkusa.ru" />
-        <key key="contact:facebook" value="https://www.facebook.com/AzbukaVkusa" />
-        <key key="contact:instagram" value="https://www.instagram.com/azbukavkusa" />
-        <key key="contact:phone" value="+7 800 7003487" />
-        <key key="contact:twitter" value="https://twitter.com/azbukavkusa" />
-        <key key="contact:vk" value="https://vk.com/azbukavkusa" />
-        <key key="contact:website" value="https://av.ru" />
-        <key key="contact:youtube" value="https://www.youtube.com/user/azbukav" />
-        <key key="name" value="АВ Энотека" />
-        <key key="name:ru" value="АВ Энотека" />
-        <key key="shop" value="wine" />
-        <link href="https://av.ru/shops/#msk_av-enoteca" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="wheelchair_address" />
-      </item>
       <item name="AV Market" ru.name="АВ Маркет" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00" />
@@ -1019,31 +1008,6 @@
         <key key="name:ru" value="АВ Маркет" />
         <key key="shop" value="supermarket" /> <!-- FIXME:NOTE: когда примут shop=hypermarket нужно будет здесь поменять https://wiki.openstreetmap.org/wiki/Proposed_features/hypermarket -->
         <link href="https://av.ru/shops/#msk_av-market" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="wheelchair_address" />
-      </item>
-      <item name="Aromatny Mir" ru.name="Ароматный мир" type="node,closedway,multipolygon" preset_name_label="true">
-        <space />
-        <combo key="contact:phone" text="Phone number" default="+7 495 7775190-xxxx" />
-        <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-22:00,Mo-Sa 09:30-22:30; Su 11:00-22:00" />
-        <key key="brand" value="Ароматный мир" />
-        <key key="contact:facebook" value="https://www.facebook.com/amwine.ru" />
-        <key key="contact:instagram" value="https://www.instagram.com/amwine.ru" />
-        <key key="contact:telegram" value="https://t.me/amwineru" />
-        <key key="contact:twitter" value="https://twitter.com/amwineru" />
-        <key key="contact:vk" value="https://vk.com/amwineru" />
-        <key key="contact:website" value="https://amwine.ru" />
-        <key key="drink:beer" value="bottled" />
-        <key key="drink:cider" value="bottled" />
-        <key key="drink:cognac" value="bottled" />
-        <key key="drink:soft_drink" value="bottled" />
-        <key key="drink:sparkling_wine" value="bottled" />
-        <key key="drink:vodka" value="bottled" />
-        <key key="drink:whisky" value="bottled" />
-        <key key="drink:wine" value="bottled" />
-        <key key="name" value="Ароматный мир" />
-        <key key="name:ru" value="Ароматный мир" />
-        <key key="shop" value="alcohol" />
-        <link href="https://amwine.ru/customers/shops/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
       <item name="Auchan" ru.name="Ашан" type="node,closedway,multipolygon" preset_name_label="true">
@@ -1200,26 +1164,6 @@
         <link href="http://www.borisik.ru/addresses" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="Krasnoye&amp;Beloye" ru.name="Красное&amp;Белое" type="node,closedway,multipolygon" preset_name_label="true">
-        <space />
-        <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-22:05,Mo-Sa 09:30-22:30; Su 11:00-22:00" />
-        <key key="brand" value="Красное&amp;Белое" />
-        <key key="brand:wikidata" value="Q24933790" />
-        <key key="brand:wikipedia" value="ru:Красное &amp; Белое" />
-        <key key="contact:facebook" value="https://www.facebook.com/krasnoe.beloe" />
-        <key key="contact:instagram" value="https://www.instagram.com/krasnoebeloe" />
-        <key key="contact:ok" value="https://ok.ru/krasnoebeloe" />
-        <key key="contact:telegram" value="+7 922 7033000" />
-        <key key="contact:viber" value="+7 922 7033000" />
-        <key key="contact:vk" value="https://vk.com/krasnoebeloe" />
-        <key key="contact:website" value="https://krasnoeibeloe.ru" />
-        <key key="contact:whatsapp" value="+7 922 7033000" />
-        <key key="name" value="Красное&amp;Белое" />
-        <key key="name:ru" value="Красное&amp;Белое" />
-        <key key="shop" value="alcohol" />
-        <link href="https://krasnoeibeloe.ru/address/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="wheelchair_address" />
-      </item>
       <item name="Lenta" ru.name="Лента" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="contact:phone" text="Phone number" default="+7 800 7004111" />
@@ -1238,22 +1182,6 @@
         <key key="operator" value="ООО &quot;Лента&quot;" />
         <key key="shop" value="supermarket" />
         <link href="https://msk.lenta.com/all_stores" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="wheelchair_address" />
-      </item>
-      <item name="Lit.ra" ru.name="Лит.Ра" type="node,closedway,multipolygon" preset_name_label="true">
-        <space />
-        <combo key="contact:phone" text="Phone number" values="+7 495 4413543,+7 812 3257052,+7 831 2161157" />
-        <combo key="opening_hours" text="Opening Hours" values="Mo-Su 11:00-23:00,Mo-Su 11:00-22:00" default="Mo-Su 11:00-23:00" />
-        <key key="brand" value="Лит.Ра" />
-        <key key="contact:vk" value="https://vk.com/litra_beer" />
-        <key key="contact:website" value="https://litra-beer.ru" />
-        <key key="drink:beer" value="bottled" />
-        <key key="drink:cider" value="bottled" />
-        <key key="drink:soft_drink" value="bottled" />
-        <key key="name" value="Лит.Ра" />
-        <key key="name:ru" value="Лит.Ра" />
-        <key key="shop" value="alcohol" />
-        <link href="https://litra-beer.ru/magazini/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
       <item name="Magnit" ru.name="Магнит" type="node,closedway,multipolygon" preset_name_label="true">
@@ -1358,29 +1286,6 @@
         <link href="https://www.okmarket.ru/stores/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="Otdohni" ru.name="Отдохни" type="node,closedway,multipolygon" preset_name_label="true">
-        <space />
-        <combo key="contact:phone" text="Phone number" default="+7 495 4249515" />
-        <combo key="opening_hours" text="Opening Hours" values="Mo-Su 08:00-23:00" />
-        <key key="brand" value="Отдохни" />
-        <key key="contact:email" value="somelie@coolclever.ru" />
-        <key key="contact:facebook" value="https://www.facebook.com/somelie.community" />
-        <key key="contact:instagram" value="https://www.instagram.com/somelie__community" />
-        <key key="contact:vk" value="https://vk.com/somelie.community" />
-        <key key="contact:website" value="https://www.somelie.ru" />
-        <key key="drink:beer" value="bottled" />
-        <key key="drink:cognac" value="bottled" />
-        <key key="drink:soft_drink" value="bottled" />
-        <key key="drink:sparkling_wine" value="bottled" />
-        <key key="drink:vodka" value="bottled" />
-        <key key="drink:whisky" value="bottled" />
-        <key key="drink:wine" value="bottled" />
-        <key key="name" value="Отдохни" />
-        <key key="name:ru" value="Отдохни" />
-        <key key="shop" value="alcohol" />
-        <link href="https://www.somelie.ru/map/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="wheelchair_address" />
-      </item>
       <item name="Perekryostok" ru.name="Перекресток" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="contact:phone" text="Phone number" default="+7 800 2009555" />
@@ -1468,6 +1373,164 @@
         <reference ref="wheelchair_address" />
       </item>
     </group>
+    <group name="Alcohol drinks" ru.name="Алкоголь" icon="https://upload.wikimedia.org/wikipedia/commons/7/76/Emblem-windows.svg">	  
+      <item name="AV Enoteca" ru.name="АВ Энотека" type="node,closedway,multipolygon" preset_name_label="true">
+        <space />
+	<reference ref="oh3" />  
+        <key key="brand" value="АВ Энотека" />
+        <key key="brand:wikidata" value="Q4058209" />
+        <key key="brand:wikipedia" value="ru:Азбука вкуса" />
+        <key key="contact:email" value="welcome@azbukavkusa.ru" />
+        <key key="contact:facebook" value="https://www.facebook.com/AzbukaVkusa" />
+        <key key="contact:instagram" value="https://www.instagram.com/azbukavkusa" />
+        <key key="contact:phone" value="+7 800 7003487" />
+        <key key="contact:twitter" value="https://twitter.com/azbukavkusa" />
+        <key key="contact:vk" value="https://vk.com/azbukavkusa" />
+        <key key="contact:website" value="https://av.ru" />
+        <key key="contact:youtube" value="https://www.youtube.com/user/azbukav" />
+        <key key="name" value="АВ Энотека" />
+        <key key="name:ru" value="АВ Энотека" />
+        <key key="shop" value="wine" />
+        <link href="https://av.ru/shops/#msk_av-enoteca" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+	<reference ref="level" />  
+        <reference ref="wheelchair_address" />
+      </item>
+      <item name="Aromatny Mir" ru.name="Ароматный мир" type="node,closedway,multipolygon" preset_name_label="true">
+        <space />
+        <combo key="contact:phone" text="Phone number" default="+7 495 7775190-xxxx" />
+	<reference ref="oh3" />  
+        <key key="brand" value="Ароматный мир" />
+        <key key="contact:facebook" value="https://www.facebook.com/amwine.ru" />
+        <key key="contact:instagram" value="https://www.instagram.com/amwine.ru" />
+        <key key="contact:telegram" value="https://t.me/amwineru" />
+        <key key="contact:twitter" value="https://twitter.com/amwineru" />
+        <key key="contact:vk" value="https://vk.com/amwineru" />
+        <key key="contact:website" value="https://amwine.ru" />
+        <key key="drink:beer" value="bottled" />
+        <key key="drink:cider" value="bottled" />
+        <key key="drink:cognac" value="bottled" />
+        <key key="drink:soft_drink" value="bottled" />
+        <key key="drink:sparkling_wine" value="bottled" />
+        <key key="drink:vodka" value="bottled" />
+        <key key="drink:whisky" value="bottled" />
+        <key key="drink:wine" value="bottled" />
+        <key key="name" value="Ароматный мир" />
+        <key key="name:ru" value="Ароматный мир" />
+        <key key="shop" value="alcohol" />
+        <link href="https://amwine.ru/customers/shops/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+	<reference ref="level" />  
+        <reference ref="wheelchair_address" />
+      </item>	    
+      <item name="Bristol" ru.name="Бристоль" type="node,closedway,multipolygon" preset_name_label="true">
+        <space />
+        <combo key="contact:phone" text="Phone number" default="+7 800 7071555" />
+	<reference ref="oh3" />  
+        <key key="brand" value="Бристоль" />
+        <key key="contact:facebook" value="https://www.facebook.com/bristolretail" />
+        <key key="contact:instagram" value="https://www.instagram.com/bristol_retail" />
+        <key key="contact:vk" value="https://vk.com/bristol_retail" />
+        <key key="contact:website" value="https://bristol.ru" />
+        <key key="drink:beer" value="bottled" />
+        <key key="drink:cider" value="bottled" />
+        <key key="drink:cognac" value="bottled" />
+        <key key="drink:soft_drink" value="bottled" />
+        <key key="drink:sparkling_wine" value="bottled" />
+        <key key="drink:vodka" value="bottled" />
+        <key key="drink:whisky" value="bottled" />
+        <key key="drink:wine" value="bottled" />
+        <key key="name" value="Бристоль" />
+        <key key="name:ru" value="Бристоль" />
+        <key key="shop" value="alcohol" />
+        <link href="https://bristol.ru/about/shops/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+	<reference ref="level" />  
+        <reference ref="wheelchair_address" />
+      </item>	    
+      <item name="Winelab" ru.name="Винлаб" type="node,closedway,multipolygon" preset_name_label="true">
+        <space />
+        <combo key="contact:phone" text="Phone number" default="+7 800 3017755" />
+	<reference ref="oh3" />  
+        <key key="brand" value="Винлаб" />
+        <key key="contact:facebook" value="https://www.facebook.com/winelabru" />
+        <key key="contact:instagram" value="https://www.instagram.com/winelab.ru" />
+        <key key="contact:website" value="https://www.winelab.ru" />
+        <key key="drink:beer" value="bottled" />
+        <key key="drink:cider" value="bottled" />
+        <key key="drink:cognac" value="bottled" />
+        <key key="drink:soft_drink" value="bottled" />
+        <key key="drink:sparkling_wine" value="bottled" />
+        <key key="drink:vodka" value="bottled" />
+        <key key="drink:whisky" value="bottled" />
+        <key key="drink:wine" value="bottled" />
+        <key key="name" value="Винлаб" />
+        <key key="name:ru" value="Винлаб" />
+        <key key="shop" value="alcohol" />
+        <link href="https://www.winelab.ru/store-finder/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+	<reference ref="level" />  
+        <reference ref="wheelchair_address" />
+      </item>		
+      <item name="Krasnoye&amp;Beloye" ru.name="Красное&amp;Белое" type="node,closedway,multipolygon" preset_name_label="true">
+        <space />
+        <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-22:05,Mo-Sa 09:30-22:30; Su 11:00-22:00" />
+        <key key="brand" value="Красное&amp;Белое" />
+        <key key="brand:wikidata" value="Q24933790" />
+        <key key="brand:wikipedia" value="ru:Красное &amp; Белое" />
+        <key key="contact:facebook" value="https://www.facebook.com/krasnoe.beloe" />
+        <key key="contact:instagram" value="https://www.instagram.com/krasnoebeloe" />
+        <key key="contact:ok" value="https://ok.ru/krasnoebeloe" />
+        <key key="contact:telegram" value="+7 922 7033000" />
+        <key key="contact:viber" value="+7 922 7033000" />
+        <key key="contact:vk" value="https://vk.com/krasnoebeloe" />
+        <key key="contact:website" value="https://krasnoeibeloe.ru" />
+        <key key="contact:whatsapp" value="+7 922 7033000" />
+        <key key="name" value="Красное&amp;Белое" />
+        <key key="name:ru" value="Красное&amp;Белое" />
+        <key key="shop" value="alcohol" />
+        <link href="https://krasnoeibeloe.ru/address/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+	<reference ref="level" />  
+        <reference ref="wheelchair_address" />
+      </item>
+      <item name="Lit.ra" ru.name="Лит.Ра" type="node,closedway,multipolygon" preset_name_label="true">
+        <space />
+        <combo key="contact:phone" text="Phone number" values="+7 495 4413543,+7 812 3257052,+7 831 2161157" />
+	<reference ref="oh3" />  
+        <key key="brand" value="Лит.Ра" />
+        <key key="contact:vk" value="https://vk.com/litra_beer" />
+        <key key="contact:website" value="https://litra-beer.ru" />
+        <key key="drink:beer" value="bottled" />
+        <key key="drink:cider" value="bottled" />
+        <key key="drink:soft_drink" value="bottled" />
+        <key key="name" value="Лит.Ра" />
+        <key key="name:ru" value="Лит.Ра" />
+        <key key="shop" value="alcohol" />
+        <link href="https://litra-beer.ru/magazini/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+	<reference ref="level" />  
+        <reference ref="wheelchair_address" />
+      </item>
+      <item name="Otdohni" ru.name="Отдохни" type="node,closedway,multipolygon" preset_name_label="true">
+        <space />
+        <combo key="contact:phone" text="Phone number" default="+7 495 4249515" />
+	<reference ref="oh3" />  
+        <key key="brand" value="Отдохни" />
+        <key key="contact:email" value="somelie@coolclever.ru" />
+        <key key="contact:facebook" value="https://www.facebook.com/somelie.community" />
+        <key key="contact:instagram" value="https://www.instagram.com/somelie__community" />
+        <key key="contact:vk" value="https://vk.com/somelie.community" />
+        <key key="contact:website" value="https://www.somelie.ru" />
+        <key key="drink:beer" value="bottled" />
+        <key key="drink:cognac" value="bottled" />
+        <key key="drink:soft_drink" value="bottled" />
+        <key key="drink:sparkling_wine" value="bottled" />
+        <key key="drink:vodka" value="bottled" />
+        <key key="drink:whisky" value="bottled" />
+        <key key="drink:wine" value="bottled" />
+        <key key="name" value="Отдохни" />
+        <key key="name:ru" value="Отдохни" />
+        <key key="shop" value="alcohol" />
+        <link href="https://www.somelie.ru/map/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+	<reference ref="level" />  
+        <reference ref="wheelchair_address" />
+      </item>		
+    </group>	  
     <group name="Mobile phone shops" ru.name="Сотовая связь" icon="https://upload.wikimedia.org/wikipedia/commons/d/d5/Twemoji_1f4f1.svg">
       <item name="Tele2" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
