@@ -1655,7 +1655,7 @@
         <reference ref="level_wheelchair_address" />
       </item>
     </group>
-    <group name="Distance retail" ru.name="Дистанционная торговля">
+    <group name="Distance retail" ru.name="Дистанционная торговля" icon="https://upload.wikimedia.org/wikipedia/commons/3/3a/Messenger.svg">
       <item name="Boxberry" ru.name="Boxberry" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <reference ref="oh3" />
