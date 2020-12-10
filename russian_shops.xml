@@ -885,7 +885,7 @@
         <key key="contact:vk" value="https://vk.com/shokoru" />
         <key key="contact:website" value="https://shoko.ru" />
         <key key="cuisine" value="coffee_shop" />
-        <key key="diet:vegetarian" value="no" />
+        <key key="diet:vegetarian" value="yes" />
         <key key="drink:coffee" value="yes" />
         <key key="drink:tea" value="yes" />
         <key key="drink:water" value="yes" />
