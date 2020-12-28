@@ -1225,7 +1225,7 @@
         <reference ref="oh3" />
         <key key="brand" value="Мария-Ра" />
         <key key="contact:email" value="ura@maria-ra.ru" />
-	<key key="contact:facebook="https://www.facebook.com/mariarashop/" />
+	<key key="contact:facebook" value="https://www.facebook.com/mariarashop/" />
         <key key="contact:instagram" value="https://www.instagram.com/mariarashop/" />
 	<key key="contact:phone" value="+7 800 1000810" />
         <key key="contact:website" value="https://www.maria-ra.ru/" />
