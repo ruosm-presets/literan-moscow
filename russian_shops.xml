@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2.0_2020-12-28_1"
+  version="2.0_2021-05-09_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   icon="https://upload.wikimedia.org/wikipedia/commons/d/db/Twemoji_1f1f7-1f1fa.svg"
   shortdescription="Russian POIs"
@@ -1134,7 +1134,20 @@
         <link href="https://dixy.ru/nearest-shop/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
-	  <item name="Ermolino" ru.name="Ермолино" type="node,closedway,multipolygon" preset_name_label="true">
+        <item name="Dobrotsen" ru.name="Доброцен" type="node,closedway,multipolygon" preset_name_label="true">
+        <space />
+        <reference ref="shop_type" />
+        <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00" />
+        <key key="brand" value="Доброцен" />
+        <key key="contact:instagram" value="https://www.instagram.com/dobrotsen.ru/" />
+        <key key="contact:vk" value="https://vk.com/dobrotcensklad" />
+        <key key="contact:website" value="https://доброцен.рф/" />
+        <key key="name" value="Доброцен" />
+        <key key="name:ru" value="Доброцен" />
+        <link href="http://dobrotsen.ru/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <reference ref="wheelchair_address" />
+      </item>
+      <item name="Ermolino" ru.name="Ермолино" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="contact:phone" text="Phone number" />
         <key key="shop" value="convenience" />
