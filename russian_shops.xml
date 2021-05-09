@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2.0_2021-05-09_1"
+  version="2.0_2021-05-09_2"
   link="https://github.com/ruosm-presets/literan-moscow"
   icon="https://upload.wikimedia.org/wikipedia/commons/d/db/Twemoji_1f1f7-1f1fa.svg"
   shortdescription="Russian POIs"
@@ -1134,7 +1134,7 @@
         <link href="https://dixy.ru/nearest-shop/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
-        <item name="Dobrotsen" ru.name="Доброцен" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Dobrotsen" ru.name="Доброцен" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <reference ref="shop_type" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00" />
@@ -2412,6 +2412,40 @@
         <key key="operator" value="ООО «ТАБЕР ТРЕЙД»" />
         <key key="shop" value="cosmetics" />
         <link href="https://www.podrygka.ru/shoplist/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <reference ref="wheelchair_address" />
+      </item>
+      <item name="Positronica" ru.name="Позитроника" type="node,closedway,multipolygon" preset_name_label="true">
+        <space />
+        <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 09:00-20:00; Sa-Su 10:00-20:00" default="Mo-Fr 09:00-20:00; Sa-Su 10:00-20:00" />
+        <key key="brand" value="Позитроника" />
+        <key key="contact:instagram" value="https://www.instagram.com/positronica_ru/" />
+        <key key="contact:phone" value="+7 800 3330333" />
+        <key key="contact:vk" value="https://vk.com/club25319996" />
+        <key key="contact:website" value="https://positronica.ru" />
+        <key key="name" value="Позитроника" />
+        <key key="name:ru" value="Позитроника" />
+	<key key="name:en" value="Positronica" />
+        <key key="shop" value="electronics" />
+        <link href="https://positronica.ru/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <reference ref="wheelchair_address" />
+      </item>
+      <item name="Citilink" ru.name="Ситилинк" type="node,closedway,multipolygon" preset_name_label="true">
+        <space />
+	<reference ref="phone" />
+        <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 09:00-20:00; Sa-Su 10:00-20:00" default="Mo-Su 09:00-21:00" />
+        <key key="brand" value="Ситилинк" />
+        <key key="contact:instagram" value="https://www.instagram.com/citilink_ru/" />
+        <key key="contact:vk" value="https://vk.com/citilink_ru" />
+	<key key="contact:facebook" value="https://www.facebook.com/citilink.ru" />
+        <key key="contact:ok" value="https://ok.ru/citilink.ru" />
+        <key key="contact:youtube" value="https://www.youtube.com/user/CitilinkTV" />
+        <key key="contact:website" value="https://www.citilink.ru/" />
+        <key key="name" value="Ситилинк" />
+        <key key="name:ru" value="Ситилинк" />
+	<key key="name:en" value="Citilink" />
+	<key key="operator" value="ООО «Ситилинк»" />
+        <key key="shop" value="electronics" />
+        <link href="https://www.citilink.ru/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
       <item name="Smeshnie Tseni" ru.name="Смешные цены" type="node,closedway,multipolygon" preset_name_label="true">
