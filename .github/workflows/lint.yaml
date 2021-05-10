@@ -1,0 +1,17 @@
+name: Lint
+
+on: [push, pull_request]
+
+jobs:
+  xml-linters:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+    - name: Download schema
+      run: wget https://josm.openstreetmap.de/export/17878/josm/trunk/resources/data/tagging-preset.xsd
+    - name: Lint russian_shops.xml
+      uses: ChristophWurst/xmllint-action@v1
+      with:
+        xml-file: ./russian_shops.xml
+        xml-schema-file: ./tagging-preset.xsd
