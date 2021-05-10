@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2.0_2021-05-09_2"
+  version="2.0_2021-05-10_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   icon="https://upload.wikimedia.org/wikipedia/commons/d/db/Twemoji_1f1f7-1f1fa.svg"
   shortdescription="Russian POIs"
@@ -1137,6 +1137,7 @@
       <item name="Dobrotsen" ru.name="Доброцен" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <reference ref="shop_type" />
+        <combo key="contact:phone" text="Phone number" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00" />
         <key key="brand" value="Доброцен" />
         <key key="contact:instagram" value="https://www.instagram.com/dobrotsen.ru/" />
@@ -1352,6 +1353,19 @@
         <key key="name" value="Пятёрочка" />
         <key key="name:ru" value="Пятёрочка" />
         <link href="https://5ka.ru/stores/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <reference ref="wheelchair_address" />
+      </item>
+      <item name="Svetofor" ru.name="Светофор" type="node,closedway,multipolygon" preset_name_label="true">
+        <space />
+        <reference ref="shop_type" />
+        <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 08:00-23:00,Mo-Sa 09:00-20:00; Su 10:00-19:00" default="Mo-Su 09:00-21:00" />
+        <key key="brand" value="Светофор" />
+        <combo key="contact:phone" text="Phone number" />
+        <key key="contact:vk" value="https://vk.com/svetofor.market" />
+        <key key="contact:website" value="https://svetofor-nsk.ru/" />
+        <key key="name" value="Светофор" />
+        <key key="name:ru" value="Светофор" />
+        <link href="https://svetofor-nsk.ru/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
       <item name="Sushi Wok" ru.name="Суши Wok" type="node,closedway,multipolygon" preset_name_label="true">
