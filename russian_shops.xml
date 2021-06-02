@@ -67,6 +67,10 @@
   <chunk id="sports_list">
     <combo key="sport" text="Sport" ru.text="Вид спорта" values="multi,archery,athletics,american_football,australian_football,baseball,basketball,beachvolleyball,billiards,boules,bowls,canadian_football,canoe,climbing,cricket,croquet,cycling,dog_racing,equestrian,field_hockey,gaelic_games,golf,gymnastics,handball,horse_racing,ice_hockey,karting,model_aerodrome,motocross,motor,pelota,racquet,rc_car,rugby_league,rugby_union,running,safety_training,shooting,skateboard,ice_skating,roller_skating,soccer,swimming,table_tennis,tennis,volleyball,9pin,10pin" values_context="sport" />
   </chunk>
+  <chunk id="clothes_list">
+    <multiselect key="clothes" text="Clothes" ru.text="Одежда" values="babies,children,costumes,denim,fashion,fur,hats,leather,maternity,men,motorcycle,oversize,schoolwear,sports,suits,swimwear,traditional,underwear,unisex,wedding,women,workwear" display_values="для новорожденных,детская,костюиы (корновальные и т.п.),джинсовая,модная,меховая,головные уборы,кожаная,для беременных,мужская,мотоциклетные костюиы,больших размеров,школьная форма,спортивная,мужские костюмы,для купания,национальная одежда,нижнее бельё,унисекс,свадебная,женская,спецодежда" default="hats;men;women;children;underwear" />
+    <preset_link preset_name="Address" />
+  </chunk> <!-- clothes_list. используется в магазинах одежды -->
   <chunk id="fitting_room">
     <check key="fitting_room" text="Fitting room" ru.text="Примерочная" value_on="yes" value_off="no" />
   </chunk>
@@ -2049,6 +2053,28 @@
         <link href="https://www.rosbank.ru/otdeleniya/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="bic_branch_ref_wheelchair_atm_address" />
       </item>
+      <item name="Rosselkhozbank" ru.name="Россельхозбанк" type="node,closedway,multipolygon" preset_name_label="true">
+        <space />
+        <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 09:30-20:00; Sa 10:00-18:00" />
+        <key key="amenity" value="bank" />
+        <key key="bic" value="SABRRUMM" />
+        <key key="brand" value="Россельхозбанк" />
+        <key key="brand:wikidata" value="Q3920226" />
+        <key key="brand:wikipedia" value="ru:Россельхозбанк" />
+        <key key="contact:facebook" value="https://www.facebook.com/rshb.ru/" />
+        <key key="contact:instagram" value="https://www.instagram.com/rshb_official/" />
+        <key key="contact:phone" value="8 800 1007870,8 800 1000100,+7 495 7877787" />
+        <key key="contact:email" value="office@rshb.ru" />
+        <key key="contact:twitter" value="https://twitter.com/RSHBmedia" />
+        <key key="contact:vk" value="https://vk.com/rshbru" />
+        <key key="contact:ok" value="https://www.ok.ru/group/52665958400202" />
+        <key key="contact:website" value="https://www.rshb.ru/" />
+        <key key="name" value="Россельхозбанк" />
+        <key key="name:en" value="Rosselkhozbank" />
+        <key key="name:ru" value="Россельхозбанк" />
+        <link href="https://www.rshb.ru/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <reference ref="bic_branch_ref_wheelchair_atm_address" />
+      </item>
       <item name="Sberbank" ru.name="Сбербанк" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 09:30-20:00; Sa 10:00-18:00" />
@@ -2085,6 +2111,27 @@
         <link href="https://prv1.lori-images.net/0007456673-middle.jpg" text="Photo" ru.text="Фотография-пример" />
         <preset_link preset_name="Address" />
       </item>
+      <item name="Uralsib" ru.name="Уралсиб" type="node,closedway,multipolygon" preset_name_label="true">
+        <space />
+        <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 09:30-20:00; Sa 10:00-18:00" />
+        <key key="amenity" value="bank" />
+        <key key="bic" value="SABRRUMM" />
+        <key key="brand" value="Уралсиб" />
+        <key key="brand:wikidata" value="Q4476693" />
+        <key key="brand:wikipedia" value="ru:Уралсиб (банк)" />
+        <key key="contact:facebook" value="https://www.facebook.com/bankuralsib" />
+        <key key="contact:instagram" value="https://www.instagram.com/bank_uralsib/" />
+        <key key="contact:phone" value="+7 800 2505757" />
+        <key key="contact:email" value="pr@uralsib.ru" />
+        <key key="contact:twitter" value="https://twitter.com/BankUralsib" />
+        <key key="contact:vk" value="https://vk.com/bankuralsib" />
+        <key key="contact:website" value="https://www.uralsib.ru/" />
+        <key key="name" value="Уралсиб" />
+        <key key="name:en" value="Uralsib" />
+        <key key="name:ru" value="Уралсиб" />
+        <link href="https://www.uralsib.ru/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <reference ref="bic_branch_ref_wheelchair_atm_address" />
+      </item>
     </group>
     <group name="Etc" ru.name="Прочие магазины/салоны" icon="https://upload.wikimedia.org/wikipedia/commons/b/b6/Twemoji_1f45c.svg">
       <item name="DNS" type="node,closedway,multipolygon" preset_name_label="true">
@@ -2104,6 +2151,17 @@
         <key key="name:en" value="DNS" />
         <key key="shop" value="electronics" />
         <link href="https://www.dns-shop.ru/shops/moscow/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <reference ref="level_wheelchair_address" />
+      </item>
+      <item name="Milomart" type="node" preset_name_label="true">
+        <space />
+        <key key="shop" value="clothes" />
+        <combo key="opening_hours" text="Opening Hours" values="24/7,09:00-19:00,Mo-Su 09:00-19:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-22:00" default="09:00-19:00" />
+        <key key="brand" value="Milomart" />
+        <key key="name" value="Milomart" />
+        <key key="name:ru" value="Миломарт" />
+        <key key="name:en" value="Milomart" />
+        <reference ref="clothes_list" />
         <reference ref="level_wheelchair_address" />
       </item>
       <item name="Pandora" type="node,closedway,multipolygon" preset_name_label="true">
@@ -2177,7 +2235,7 @@
       </item>
       <item name="Eyekraft" ru.name="Айкрафт" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
-        <combo key="contact:phone" text="Phone number" valuse="+7 800 7755554,+7 495 7755554" default="+7 800 7755554" />
+        <combo key="contact:phone" text="Phone number" values="+7 800 7755554,+7 495 7755554" default="+7 800 7755554" />
         <combo key="opening_hours" text="Opening Hours" values="Mo-Su 10:00-21:00,Mo-Su 10:00-21:00,Mo-Su 09:00-22:00" />
         <key key="alt_name" value="Eyekraft" />
         <key key="brand" value="Айкрафт" />
