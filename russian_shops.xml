@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2.0_2021-05-10_1"
+  version="2.0_2021-08-13_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   icon="https://upload.wikimedia.org/wikipedia/commons/d/db/Twemoji_1f1f7-1f1fa.svg"
   shortdescription="Russian POIs"
@@ -1543,6 +1543,7 @@
         <key key="contact:vk" value="https://vk.com/litra_beer" />
         <key key="contact:website" value="https://litra-beer.ru" />
         <key key="drink:beer" value="bottled" />
+        <key key="drink:beer" value="draught" />
         <key key="drink:cider" value="bottled" />
         <key key="drink:soft_drink" value="bottled" />
         <key key="name" value="Лит.Ра" />
@@ -1717,6 +1718,22 @@
         <reference ref="fitting_room" />
         <reference ref="level_wheelchair_address" />
       </item> 
+      <item name="Lamoda" ru.name="Lamoda" type="node,closedway,multipolygon" preset_name_label="true">
+        <space />
+        <reference ref="oh3" />
+        <key key="brand" value="Lamoda" />
+        <key key="brand:wikidata" value="Q97658635" />
+        <key key="brand:wikipedia" value="ru:Lamoda" />
+        <key key="contact:facebook" value="https://www.facebook.com/Lamoda.ru" />
+        <key key="contact:instagram" value="https://www.instagram.com/lamodaru" />
+        <key key="contact:vk" value="https://vk.com/lamodaru" />
+        <key key="contact:website" value="https://www.lamoda.ru" />
+        <key key="name" value="Lamoda" />
+        <key key="shop" value="outpost" />
+        <link href="https://www.lamoda.ru/delivery" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <reference ref="fitting_room" />
+        <reference ref="level_wheelchair_address" />
+      </item>	    
       <item name="Ozon" ru.name="Ozon" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <reference ref="oh3" />
@@ -1740,7 +1757,7 @@
         <reference ref="oh3" />
         <key key="brand" value="PickPoint" />
         <key key="contact:facebook" value="https://www.facebook.com/PickPoint" />
-        <key key="contact:phone" value="+7 800 7007909 " />
+        <key key="contact:phone" value="+7 800 7007909" />
         <key key="contact:instagram" value="https://www.instagram.com/pickpoint_rus" />
         <key key="contact:vk" value="https://vk.com/pickpoint_rus" />
         <key key="contact:website" value="https://pickpoint.ru" />
@@ -1900,95 +1917,6 @@
         <link href="https://www.vtb.ru/o-banke/kontakty/otdeleniya/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="bic_branch_ref_wheelchair_atm_address" />
       </item>
-      <item name="Zaim-Express" ru.name="Займ-Экспресс" type="node,closedway,multipolygon" preset_name_label="true">
-        <space />
-        <combo key="opening_hours" text="Opening Hours" default="Mo-Fr 09:00-21:00; Sa-Su 10:00-20:00" />
-        <text key="ref" text="Reference" ru.text="Номер офиса займа" />
-        <key key="brand" value="Займ-Экспресс" />
-        <key key="contact:facebook" value="https://www.facebook.com/moscowzaimexpress" />
-        <key key="contact:instagram" value="https://www.instagram.com/zaimexpress" />
-        <key key="contact:ok" value="https://ok.ru/zaim.express" />
-        <key key="contact:phone" value="+7 800 3330202" />
-        <key key="contact:twitter" value="https://twitter.com/zaimexpres" />
-        <key key="contact:vk" value="https://vk.com/z_express" />
-        <key key="contact:website" value="https://www.zaim-express.ru" />
-        <key key="name" value="Займ-Экспресс" />
-        <key key="name:ru" value="Займ-Экспресс" />
-        <key key="operator" value="ООО Займ-Экспресс" />
-        <key key="shop" value="money_lender" />
-        <link href="https://www.zaim-express.ru/karta_ofisov_microzaimov.html" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="wheelchair_address" />
-      </item>
-      <item name="Payment terminal QIWI" ru.name="Платежный терминал &quot;QIWI&quot;" type="node" preset_name_label="true">
-        <space />
-        <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00" />
-        <text key="ref" text="Reference" ru.text="Номер терминала" />
-        <key key="amenity" value="payment_terminal" />
-        <key key="brand" value="QIWI" />
-        <key key="brand:wikidata" value="Q4047736" />
-        <key key="brand:wikipedia" value="ru:Qiwi" />
-        <key key="contact:facebook" value="https://www.facebook.com/QiwiRussia" />
-        <key key="contact:instagram" value="https://www.instagram.com/qiwi_russia" />
-        <key key="contact:ok" value="https://ok.ru/qiwirussia" />
-        <key key="contact:phone" value="+7 800 7077759" />
-        <key key="contact:twitter" value="https://twitter.com/qiwirussia" />
-        <key key="contact:vk" value="https://vk.com/qiwirussia" />
-        <key key="contact:website" value="https://qiwi.com" />
-        <key key="contact:youtube" value="https://www.youtube.com/user/QiwiRussia" />
-        <key key="operator" value="КИВИ Банк (АО)" />
-        <key key="payment:credit_cards" value="yes" />
-        <key key="payment:debit_cards" value="yes" />
-        <key key="payment:notes" value="yes" />
-        <link href="https://qiwi.com/replenish/terminals" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, номера терминалов)" />
-        <preset_link preset_name="Address" />
-      </item>
-      <item name="Payment terminal MKB" ru.name="Платежный терминал &quot;МКБ&quot; (Московский кредитный банк)" type="node" preset_name_label="true">
-        <space />
-        <combo key="contact:phone" text="Phone number" values="+7 495 7774888" default="+7 800 1004888" />
-        <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00" />
-        <text key="ref" text="Reference" ru.text="Номер терминала" />
-        <key key="amenity" value="payment_terminal" />
-        <key key="brand" value="Московский кредитный банк" />
-        <key key="contact:facebook" value="https://www.facebook.com/mkb.ru" />
-        <key key="contact:instagram" value="https://www.instagram.com/bankmkb" />
-        <key key="contact:twitter" value="https://twitter.com/bankmkb" />
-        <key key="contact:vk" value="https://vk.com/mkb_official" />
-        <key key="contact:website" value="https://mkb.ru" />
-        <key key="operator" value="ПАО «Московский кредитный банк»" />
-        <key key="operator:wikidata" value="Q4304175" />
-        <key key="operator:wikipedia" value="ru:Московский кредитный банк" />
-        <key key="payment:credit_cards" value="yes" />
-        <key key="payment:debit_cards" value="yes" />
-        <key key="payment:notes" value="yes" />
-        <link href="https://old.mkb.ru/images/facility/private_person/payment_outgoing/terminal_right.png" text="Photo" ru.text="Фотография-пример" />
-        <link href="https://mkb.ru/about/address/terminal" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, номера терминалов)" />
-        <preset_link preset_name="Address" />
-      </item>
-      <item name="Payment terminal Elecsnet" ru.name="Платежный терминал &quot;Элекснет&quot;" type="node" preset_name_label="true">
-        <space />
-        <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-21:00; Mo-Su 10:00-20:00" default="24/7" />
-        <text key="ref" text="Reference" ru.text="Номер терминала" />
-        <key key="amenity" value="payment_terminal" />
-        <key key="brand" value="Элекснет" />
-        <key key="brand:wikidata" value="Q4530795" />
-        <key key="brand:wikipedia" value="ru:Элекснет" />
-        <key key="contact:email" value="info@elecsnet.ru" />
-        <key key="contact:facebook" value="https://www.facebook.com/elecsnet" />
-        <key key="contact:fax" value="+7 495 2872959" />
-        <key key="contact:livejournal" value="https://elecsnet.livejournal.com" />
-        <key key="contact:ok" value="https://ok.ru/elecsnet" />
-        <key key="contact:phone" value="+7 495 2413081;+7 495 7872964" />
-        <key key="contact:twitter" value="https://twitter.com/elecsnet" />
-        <key key="contact:vk" value="https://vk.com/elecsnet" />
-        <key key="contact:website" value="https://elecsnet.ru" />
-        <key key="contact:youtube" value="https://www.youtube.com/user/myelecsnet" />
-        <key key="operator" value="АО «ЭЛЕКСНЕТ»" />
-        <key key="payment:credit_cards" value="yes" />
-        <key key="payment:debit_cards" value="yes" />
-        <key key="payment:notes" value="yes" />
-        <link href="https://elecsnet.ru/terminals/addresses" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, номера терминалов)" />
-        <preset_link preset_name="Address" />
-      </item>
       <item name="Post Bank" ru.name="Почта Банк" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Fr 10:00-19:00,Mo-Su 10:00-22:00,Mo-Fr 10:00-20:00; Sa 10:00-17:00" />
@@ -2097,20 +2025,6 @@
         <link href="https://www.sberbank.ru/ru/about/today/oib" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="bic_branch_ref_wheelchair_atm_address" />
       </item>
-      <item name="InfoPayment terminal Mosinfo" ru.name="Справочно-платежный терминал &quot;Мосинфо&quot;" type="node" preset_name_label="true">
-        <space />
-        <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00" />
-        <text key="ref" text="Reference" ru.text="Номер терминала" />
-        <key key="amenity" value="payment_terminal" />
-        <key key="brand" value="Мосинфо" />
-        <key key="contact:phone" value="+7 495 7774888" />
-        <key key="information" value="terminal" />
-        <key key="operator" value="ОАО «Городская информационно-справочная служба»" />
-        <key key="payment:notes" value="yes" />
-        <key key="tourism" value="information" />
-        <link href="https://prv1.lori-images.net/0007456673-middle.jpg" text="Photo" ru.text="Фотография-пример" />
-        <preset_link preset_name="Address" />
-      </item>
       <item name="Uralsib" ru.name="Уралсиб" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 09:30-20:00; Sa 10:00-18:00" />
@@ -2132,6 +2046,110 @@
         <link href="https://www.uralsib.ru/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="bic_branch_ref_wheelchair_atm_address" />
       </item>
+      <separator />
+      <item name="Zaim-Express" ru.name="Займ-Экспресс" type="node,closedway,multipolygon" preset_name_label="true">
+        <space />
+        <combo key="opening_hours" text="Opening Hours" default="Mo-Fr 09:00-21:00; Sa-Su 10:00-20:00" />
+        <text key="ref" text="Reference" ru.text="Номер офиса займа" />
+        <key key="brand" value="Займ-Экспресс" />
+        <key key="contact:facebook" value="https://www.facebook.com/moscowzaimexpress" />
+        <key key="contact:instagram" value="https://www.instagram.com/zaimexpress" />
+        <key key="contact:ok" value="https://ok.ru/zaim.express" />
+        <key key="contact:phone" value="+7 800 3330202" />
+        <key key="contact:twitter" value="https://twitter.com/zaimexpres" />
+        <key key="contact:vk" value="https://vk.com/z_express" />
+        <key key="contact:website" value="https://www.zaim-express.ru" />
+        <key key="name" value="Займ-Экспресс" />
+        <key key="name:ru" value="Займ-Экспресс" />
+        <key key="operator" value="ООО Займ-Экспресс" />
+        <key key="shop" value="money_lender" />
+        <link href="https://www.zaim-express.ru/karta_ofisov_microzaimov.html" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <reference ref="wheelchair_address" />
+      </item>
+      <item name="Payment terminal QIWI" ru.name="Платежный терминал &quot;QIWI&quot;" type="node" preset_name_label="true">
+        <space />
+        <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00" />
+        <text key="ref" text="Reference" ru.text="Номер терминала" />
+        <key key="amenity" value="payment_terminal" />
+        <key key="brand" value="QIWI" />
+        <key key="brand:wikidata" value="Q4047736" />
+        <key key="brand:wikipedia" value="ru:Qiwi" />
+        <key key="contact:facebook" value="https://www.facebook.com/QiwiRussia" />
+        <key key="contact:instagram" value="https://www.instagram.com/qiwi_russia" />
+        <key key="contact:ok" value="https://ok.ru/qiwirussia" />
+        <key key="contact:phone" value="+7 800 7077759" />
+        <key key="contact:twitter" value="https://twitter.com/qiwirussia" />
+        <key key="contact:vk" value="https://vk.com/qiwirussia" />
+        <key key="contact:website" value="https://qiwi.com" />
+        <key key="contact:youtube" value="https://www.youtube.com/user/QiwiRussia" />
+        <key key="operator" value="КИВИ Банк (АО)" />
+        <key key="payment:credit_cards" value="yes" />
+        <key key="payment:debit_cards" value="yes" />
+        <key key="payment:notes" value="yes" />
+        <link href="https://qiwi.com/replenish/terminals" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, номера терминалов)" />
+        <preset_link preset_name="Address" />
+      </item>
+      <item name="Payment terminal MKB" ru.name="Платежный терминал &quot;МКБ&quot; (Московский кредитный банк)" type="node" preset_name_label="true">
+        <space />
+        <combo key="contact:phone" text="Phone number" values="+7 495 7774888" default="+7 800 1004888" />
+        <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00" />
+        <text key="ref" text="Reference" ru.text="Номер терминала" />
+        <key key="amenity" value="payment_terminal" />
+        <key key="brand" value="Московский кредитный банк" />
+        <key key="contact:facebook" value="https://www.facebook.com/mkb.ru" />
+        <key key="contact:instagram" value="https://www.instagram.com/bankmkb" />
+        <key key="contact:twitter" value="https://twitter.com/bankmkb" />
+        <key key="contact:vk" value="https://vk.com/mkb_official" />
+        <key key="contact:website" value="https://mkb.ru" />
+        <key key="operator" value="ПАО «Московский кредитный банк»" />
+        <key key="operator:wikidata" value="Q4304175" />
+        <key key="operator:wikipedia" value="ru:Московский кредитный банк" />
+        <key key="payment:credit_cards" value="yes" />
+        <key key="payment:debit_cards" value="yes" />
+        <key key="payment:notes" value="yes" />
+        <link href="https://old.mkb.ru/images/facility/private_person/payment_outgoing/terminal_right.png" text="Photo" ru.text="Фотография-пример" />
+        <link href="https://mkb.ru/about/address/terminal" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, номера терминалов)" />
+        <preset_link preset_name="Address" />
+      </item>
+      <item name="Payment terminal Elecsnet" ru.name="Платежный терминал &quot;Элекснет&quot;" type="node" preset_name_label="true">
+        <space />
+        <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-21:00; Mo-Su 10:00-20:00" default="24/7" />
+        <text key="ref" text="Reference" ru.text="Номер терминала" />
+        <key key="amenity" value="payment_terminal" />
+        <key key="brand" value="Элекснет" />
+        <key key="brand:wikidata" value="Q4530795" />
+        <key key="brand:wikipedia" value="ru:Элекснет" />
+        <key key="contact:email" value="info@elecsnet.ru" />
+        <key key="contact:facebook" value="https://www.facebook.com/elecsnet" />
+        <key key="contact:fax" value="+7 495 2872959" />
+        <key key="contact:livejournal" value="https://elecsnet.livejournal.com" />
+        <key key="contact:ok" value="https://ok.ru/elecsnet" />
+        <key key="contact:phone" value="+7 495 2413081;+7 495 7872964" />
+        <key key="contact:twitter" value="https://twitter.com/elecsnet" />
+        <key key="contact:vk" value="https://vk.com/elecsnet" />
+        <key key="contact:website" value="https://elecsnet.ru" />
+        <key key="contact:youtube" value="https://www.youtube.com/user/myelecsnet" />
+        <key key="operator" value="АО «ЭЛЕКСНЕТ»" />
+        <key key="payment:credit_cards" value="yes" />
+        <key key="payment:debit_cards" value="yes" />
+        <key key="payment:notes" value="yes" />
+        <link href="https://elecsnet.ru/terminals/addresses" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, номера терминалов)" />
+        <preset_link preset_name="Address" />
+      </item>
+      <item name="InfoPayment terminal Mosinfo" ru.name="Справочно-платежный терминал &quot;Мосинфо&quot;" type="node" preset_name_label="true">
+        <space />
+        <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00" />
+        <text key="ref" text="Reference" ru.text="Номер терминала" />
+        <key key="amenity" value="payment_terminal" />
+        <key key="brand" value="Мосинфо" />
+        <key key="contact:phone" value="+7 495 7774888" />
+        <key key="information" value="terminal" />
+        <key key="operator" value="ОАО «Городская информационно-справочная служба»" />
+        <key key="payment:notes" value="yes" />
+        <key key="tourism" value="information" />
+        <link href="https://prv1.lori-images.net/0007456673-middle.jpg" text="Photo" ru.text="Фотография-пример" />
+        <preset_link preset_name="Address" />
+      </item>	    
     </group>
     <group name="Etc" ru.name="Прочие магазины/салоны" icon="https://upload.wikimedia.org/wikipedia/commons/b/b6/Twemoji_1f45c.svg">
       <item name="DNS" type="node,closedway,multipolygon" preset_name_label="true">
@@ -2140,7 +2158,7 @@
         <!-- <key key="alt_name" value="Digital Network System" /> NOTE: нигде в быту не используется -->
         <key key="brand" value="DNS" />
         <key key="brand:wikidata" value="Q4036922" />
-        <key key="brand:wikipedia" value="DNS (сеть магазинов)" />
+        <key key="brand:wikipedia" value="ru:DNS (компания)" />
         <key key="contact:facebook" value="https://www.facebook.com/dnsshop" />
         <key key="contact:phone" value="+7 800 7707999" />
         <key key="contact:twitter" value="https://twitter.com/dnsshop" />
