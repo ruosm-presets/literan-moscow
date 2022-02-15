@@ -517,6 +517,22 @@
         <link href="https://subway.ru/stores/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
+      <item name="Surf Coffee" type="node,closedway,multipolygon" preset_name_label="true">
+        <space />
+        <reference ref="phone" />
+        <combo key="opening_hours" text="Opening Hours" values="Mo-Su 08:00-22:00,Mo-Th 10:00-22:00; Fr-Su 10:00-23:00" />
+        <key key="amenity" value="cafe" />
+        <key key="brand" value="Surf Coffee" />
+        <key key="contact:email" value="team@surfcoffee.ru" />
+        <key key="contact:instagram" value="https://www.instagram.com/surfcoffee.msk/" />
+        <key key="contact:website" value="https://www.surfcoffee.ru/" />
+        <key key="cuisine" value="coffee_shop" />
+        <key key="name" value="Surf Coffee" />
+        <key key="name:en" value="Surf Coffee" />
+        <key key="takeaway" value="yes" />
+        <link href="https://www.surfcoffee.ru/surf-coffee-stores" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
+      </item>
       <item name="Baskin-Robbins" ru.name="Баскин Роббинс" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <reference ref="phone" />
