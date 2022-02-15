@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2.0_2022-01-10_1"
+  version="2.0_2022-02-15_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   icon="https://upload.wikimedia.org/wikipedia/commons/d/db/Twemoji_1f1f7-1f1fa.svg"
   shortdescription="Russian POIs"
@@ -515,6 +515,22 @@
         <key key="name:en" value="Subway" />
         <key key="takeaway" value="yes" />
         <link href="https://subway.ru/stores/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
+      </item>
+      <item name="Surf Coffee" type="node,closedway,multipolygon" preset_name_label="true">
+        <space />
+        <reference ref="phone" />
+        <combo key="opening_hours" text="Opening Hours" values="Mo-Su 08:00-22:00,Mo-Th 10:00-22:00; Fr-Su 10:00-23:00" />
+        <key key="amenity" value="cafe" />
+        <key key="brand" value="Surf Coffee" />
+        <key key="contact:email" value="team@surfcoffee.ru" />
+        <key key="contact:instagram" value="https://www.instagram.com/surfcoffee.msk/" />
+        <key key="contact:website" value="https://www.surfcoffee.ru/" />
+        <key key="cuisine" value="coffee_shop" />
+        <key key="name" value="Surf Coffee" />
+        <key key="name:en" value="Surf Coffee" />
+        <key key="takeaway" value="yes" />
+        <link href="https://www.surfcoffee.ru/surf-coffee-stores" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
       <item name="Baskin-Robbins" ru.name="Баскин Роббинс" type="node,closedway,multipolygon" preset_name_label="true">
@@ -1578,7 +1594,7 @@
         <reference ref="wheelchair_address" />
       </item>		
     </group>	  
-    <group name="Mobile phone shops" ru.name="Сотовая связь" icon="https://upload.wikimedia.org/wikipedia/commons/d/d5/Twemoji_1f4f1.svg">
+    <group name="Electronics shops" ru.name="Электроника" icon="https://upload.wikimedia.org/wikipedia/commons/d/d5/Twemoji_1f4f1.svg">
       <item name="Tele2" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="contact:phone" text="Phone number" values="+7 495 9797611" />
@@ -1621,28 +1637,7 @@
         <key key="shop" value="mobile_phone" />
         <link href="https://moskva.beeline.ru/customers/beeline-map/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
-      </item>
-      <item name="Euroset" ru.name="Евросеть" type="node,closedway,multipolygon" preset_name_label="true">
-        <space />
-        <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
-        <key key="brand" value="Евросеть" />
-        <key key="brand:wikidata" value="Q65310" />
-        <key key="brand:wikipedia" value="ru:Евросеть" />
-        <key key="contact:email" value="shop@euroset.ru" />
-        <key key="contact:facebook" value="https://www.facebook.com/euroset" />
-        <key key="contact:instagram" value="https://www.instagram.com/EUROSET_RU" />
-        <key key="contact:ok" value="https://ok.ru/euroset.ru" />
-        <key key="contact:phone" value="+7 800 7000010" />
-        <key key="contact:twitter" value="https://twitter.com/euroset_company" />
-        <key key="contact:vk" value="https://vk.com/euroset_club" />
-        <key key="contact:website" value="https://euroset.ru" />
-        <key key="contact:youtube" value="https://www.youtube.com/user/EurosetCompany" />
-        <key key="name" value="Евросеть" />
-        <key key="name:ru" value="Евросеть" />
-        <key key="shop" value="mobile_phone" />
-        <link href="https://euroset.ru/shops" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="level_wheelchair_address" />
-      </item>
+	</item>	    	    
       <item name="MegaFon" ru.name="МегаФон" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
@@ -1701,6 +1696,102 @@
         <link href="https://www.svyaznoy.ru/address_shops" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
+      <separator />
+      <item name="DNS" type="node,closedway,multipolygon" preset_name_label="true">
+        <space />
+        <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-21:00,Mo-Su 09:00-22:00" />
+        <!-- <key key="alt_name" value="Digital Network System" /> NOTE: нигде в быту не используется -->
+        <key key="brand" value="DNS" />
+        <key key="brand:wikidata" value="Q4036922" />
+        <key key="brand:wikipedia" value="ru:DNS (компания)" />
+        <key key="contact:facebook" value="https://www.facebook.com/dnsshop" />
+        <key key="contact:phone" value="+7 800 7707999" />
+        <key key="contact:twitter" value="https://twitter.com/dnsshop" />
+        <key key="contact:vk" value="https://vk.com/dnsstore" />
+        <key key="contact:website" value="https://www.dns-shop.ru" />
+        <key key="contact:youtube" value="https://www.youtube.com/c/DNSSHOPvideo" />
+        <key key="name" value="DNS" />
+        <key key="name:en" value="DNS" />
+        <key key="shop" value="electronics" />
+        <link href="https://www.dns-shop.ru/shops/moscow/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <reference ref="level_wheelchair_address" />
+      </item>
+      <item name="M.Video" ru.name="М.Видео" type="node,closedway,multipolygon" preset_name_label="true">
+        <space />
+        <combo key="contact:phone" text="Phone number" default="+7 800 2007775" />
+        <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-22:00,Mo-Su 10:00-23:00" />
+        <key key="brand" value="М.Видео" />
+        <key key="brand:wikidata" value="Q6558800" />
+        <key key="brand:wikipedia" value="ru:М.Видео" />
+        <key key="contact:email" value="24@mvideo.ru" />
+        <key key="contact:facebook" value="https://www.facebook.com/mvideo.ru" />
+        <key key="contact:instagram" value="https://www.instagram.com/mvideo_ru" />
+        <key key="contact:ok" value="https://ok.ru/mvideo" />
+        <key key="contact:twitter" value="https://twitter.com/mvideo" />
+        <key key="contact:vk" value="https://vk.com/mvideo" />
+        <key key="contact:website" value="https://www.mvideo.ru" />
+        <key key="contact:youtube" value="https://www.youtube.com/mvideoru" />
+        <key key="name" value="М.Видео" />
+        <key key="name:ru" value="М.Видео" />
+        <key key="operator" value="ООО &quot;М.Видео Менеджмент&quot;" />
+        <key key="shop" value="electronics" />
+        <link href="https://www.mvideo.ru/shops/store-list" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <reference ref="level_wheelchair_address" />
+      </item>
+      <item name="Positronica" ru.name="Позитроника" type="node,closedway,multipolygon" preset_name_label="true">
+        <space />
+        <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 09:00-20:00; Sa-Su 10:00-20:00" default="Mo-Fr 09:00-20:00; Sa-Su 10:00-20:00" />
+        <key key="brand" value="Позитроника" />
+        <key key="contact:instagram" value="https://www.instagram.com/positronica_ru/" />
+        <key key="contact:phone" value="+7 800 3330333" />
+        <key key="contact:vk" value="https://vk.com/club25319996" />
+        <key key="contact:website" value="https://positronica.ru" />
+        <key key="name" value="Позитроника" />
+        <key key="name:ru" value="Позитроника" />
+	<key key="name:en" value="Positronica" />
+        <key key="shop" value="electronics" />
+        <link href="https://positronica.ru/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <reference ref="wheelchair_address" />
+      </item>
+      <item name="Citilink" ru.name="Ситилинк" type="node,closedway,multipolygon" preset_name_label="true">
+        <space />
+	<reference ref="phone" />
+        <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 09:00-20:00; Sa-Su 10:00-20:00" default="Mo-Su 09:00-21:00" />
+        <key key="brand" value="Ситилинк" />
+        <key key="contact:instagram" value="https://www.instagram.com/citilink_ru/" />
+        <key key="contact:vk" value="https://vk.com/citilink_ru" />
+	<key key="contact:facebook" value="https://www.facebook.com/citilink.ru" />
+        <key key="contact:ok" value="https://ok.ru/citilink.ru" />
+        <key key="contact:youtube" value="https://www.youtube.com/user/CitilinkTV" />
+        <key key="contact:website" value="https://www.citilink.ru/" />
+        <key key="name" value="Ситилинк" />
+        <key key="name:ru" value="Ситилинк" />
+	<key key="name:en" value="Citilink" />
+	<key key="operator" value="ООО «Ситилинк»" />
+        <key key="shop" value="electronics" />
+        <link href="https://www.citilink.ru/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <reference ref="wheelchair_address" />
+      </item>
+      <item name="Eldorado" ru.name="Эльдорадо" type="node,closedway,multipolygon" preset_name_label="true">
+        <space />
+        <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-21:00,Mo-Fr 08:00-22:00; Sa-Su 09:00-21:00" />
+        <key key="brand" value="Эльдорадо" />
+        <key key="brand:wikidata" value="Q4531492" />
+        <key key="brand:wikipedia" value="ru:Эльдорадо (сеть магазинов)" />
+        <key key="contact:facebook" value="https://www.facebook.com/Eldorado.Stores" />
+        <key key="contact:instagram" value="https://www.instagram.com/eldorado_stores" />
+        <key key="contact:ok" value="https://ok.ru/eldorado_stores" />
+        <key key="contact:phone" value="+7 800 2502525" />
+        <key key="contact:twitter" value="https://twitter.com/eldorado_stores" />
+        <key key="contact:vk" value="https://vk.com/eldorado_stores" />
+        <key key="contact:website" value="https://www.eldorado.ru" />
+        <key key="contact:youtube" value="https://www.youtube.com/user/eldoradovideo" />
+        <key key="name" value="Эльдорадо" />
+        <key key="name:ru" value="Эльдорадо" />
+        <key key="shop" value="electronics" />
+        <link href="https://www.eldorado.ru/info/shops/11324/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <reference ref="level_wheelchair_address" />
+      </item>	  
     </group>
     <group name="Distance retail" ru.name="Дистанционная торговля" icon="https://upload.wikimedia.org/wikipedia/commons/9/97/PICOL_icon_Mailbox.svg">
       <item name="Boxberry" ru.name="Boxberry" type="node,closedway,multipolygon" preset_name_label="true">
@@ -1814,7 +1905,19 @@
         <reference ref="fitting_room" />
         <reference ref="level_wheelchair_address" />
       </item>
-      <separator />      
+      <separator />     
+      <item name="5post" ru.name="Постамат 5post" type="node" preset_name_label="true">
+        <space />
+        <reference ref="oh3" />
+        <text key="ref" text="Reference" ru.text="Номер постамата" />
+        <key key="brand" value="5post" />
+        <key key="contact:phone" value="+7 800 5118800" />
+        <key key="contact:website" value="https://fivepost.ru/point-map" />
+        <key key="name" value="5post" />
+        <key key="amenity" value="parcel_locker" />
+        <link href="https://fivepost.ru/point-map" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <reference ref="level_wheelchair_address" />
+      </item>	   
       <item name="Ozon box" ru.name="Постамат Ozon box" type="node" preset_name_label="true">
         <space />
         <reference ref="oh3" />
@@ -1823,7 +1926,7 @@
         <key key="brand:wikidata" value="Q2365235" />
         <key key="brand:wikipedia" value="ru:Ozon.ru" />
         <key key="contact:phone" value="+7 800 7758181" />
-        <key key="contact:website" value="https://www.ozon.ru/" />
+        <key key="contact:website" value="https://www.ozon.ru" />
         <key key="name" value="Ozon box" />
         <key key="amenity" value="parcel_locker" />
         <link href="https://www.ozon.ru/geo/moskva/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
@@ -1840,7 +1943,42 @@
         <key key="amenity" value="parcel_locker" />
         <link href="https://pickpoint.ru/postamats/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
-      </item>	    
+      </item>    
+      <item name="Omni" ru.name="Постамат ОмниСДЭК" type="node" preset_name_label="true">
+        <space />
+        <reference ref="oh3" />
+        <text key="ref" text="Reference" ru.text="Номер постамата" />
+        <key key="brand" value="ОмниСДЭК" />
+        <key key="contact:phone" value="+7 800 7753553" />
+        <key key="contact:website" value="https://omnicdek.ru" />
+        <key key="name" value="ОмниСДЭК" />
+        <key key="amenity" value="parcel_locker" />
+        <link href="https://omnicdek.ru/#map" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <reference ref="level_wheelchair_address" />
+      </item>   
+      <item name="Pochta Rus" ru.name="Постамат Почта России" type="node" preset_name_label="true">
+        <space />
+        <reference ref="oh3" />
+        <text key="ref" text="Reference" ru.text="Номер постамата" />
+        <key key="brand" value="Почта России" />
+        <key key="contact:website" value="https://www.pochta.ru" />
+        <key key="name" value="Почта России" />
+        <key key="amenity" value="parcel_locker" />
+        <link href="https://www.pochta.ru/offices?filters%5B%5D=POCHTOMAT" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <reference ref="level_wheelchair_address" />
+      </item>	
+      <item name="SberLogistika" ru.name="Постамат СберЛогистика" type="node" preset_name_label="true">
+        <space />
+        <reference ref="oh3" />
+        <text key="ref" text="Reference" ru.text="Номер постамата" />
+        <key key="brand" value="СберЛогистика" />
+        <key key="contact:phone" value="+7 800 1007269" />
+        <key key="contact:website" value="https://sberlogistics.ru/" />
+        <key key="name" value="СберЛогистика" />
+        <key key="amenity" value="parcel_locker" />
+        <link href="https://sberlogistics.ru/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <reference ref="level_wheelchair_address" />
+      </item>        
       <item name="Utkonos box" ru.name="Постамат Утконос" type="node" preset_name_label="true">
         <space />
         <reference ref="oh3" />
@@ -1864,7 +2002,19 @@
         <key key="amenity" value="parcel_locker" />
         <link href="https://pochtomat.ru/map/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
-      </item>      
+      </item>       
+      <item name="Yandex.market" ru.name="Постамат Яндекс.Маркет" type="node" preset_name_label="true">
+        <space />
+        <reference ref="oh3" />
+        <text key="ref" text="Reference" ru.text="Номер постамата" />
+        <key key="brand" value="Яндекс.Маркет" />
+        <key key="contact:phone" value="+7 495 4143000" />
+        <key key="contact:website" value="https://market.yandex.ru" />
+        <key key="name" value="Яндекс.Маркет" />
+        <key key="amenity" value="parcel_locker" />
+        <link href="https://yandex.ru/maps/213/moscow/chain/postamaty_yandeks_marketa/237923876496" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <reference ref="level_wheelchair_address" />
+      </item>   
     </group>
     <group name="Finance" ru.name="Финансы" icon="https://upload.wikimedia.org/wikipedia/commons/6/64/Emoji_u1f4b0.svg">
       <item name="Alfa-Bank" ru.name="Альфа-Банк" type="node,closedway,multipolygon" preset_name_label="true">
@@ -2148,25 +2298,6 @@
       </item>	    
     </group>
     <group name="Etc" ru.name="Прочие магазины/салоны" icon="https://upload.wikimedia.org/wikipedia/commons/b/b6/Twemoji_1f45c.svg">
-      <item name="DNS" type="node,closedway,multipolygon" preset_name_label="true">
-        <space />
-        <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-21:00,Mo-Su 09:00-22:00" />
-        <!-- <key key="alt_name" value="Digital Network System" /> NOTE: нигде в быту не используется -->
-        <key key="brand" value="DNS" />
-        <key key="brand:wikidata" value="Q4036922" />
-        <key key="brand:wikipedia" value="ru:DNS (компания)" />
-        <key key="contact:facebook" value="https://www.facebook.com/dnsshop" />
-        <key key="contact:phone" value="+7 800 7707999" />
-        <key key="contact:twitter" value="https://twitter.com/dnsshop" />
-        <key key="contact:vk" value="https://vk.com/dnsstore" />
-        <key key="contact:website" value="https://www.dns-shop.ru" />
-        <key key="contact:youtube" value="https://www.youtube.com/c/DNSSHOPvideo" />
-        <key key="name" value="DNS" />
-        <key key="name:en" value="DNS" />
-        <key key="shop" value="electronics" />
-        <link href="https://www.dns-shop.ru/shops/moscow/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="level_wheelchair_address" />
-      </item>
       <item name="Milomart" type="node" preset_name_label="true">
         <space />
         <key key="shop" value="clothes" />
@@ -2318,22 +2449,18 @@
         <link href="https://dryclean.ru/priemnye_punkty/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
-      <item name="Ile de Beaute" ru.name="Иль де Ботэ" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Sephora" ru.name="Sephora" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
-        <combo key="contact:phone" text="Phone number" default="+7 800 2001700" />
+        <combo key="contact:phone" text="Phone number" default="+7 495 7830051" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 08:00-22:00; Sa-Su 09:00-21:00" />
-        <key key="brand" value="Иль де Ботэ" />
-        <key key="contact:email" value="info@ldb.ru" />
-        <key key="contact:facebook" value="https://www.facebook.com/idbshops" />
-        <key key="contact:instagram" value="https://www.instagram.com/iledebeaute_official" />
-        <key key="contact:twitter" value="https://twitter.com/IDB_OFFICIAL" />
-        <key key="contact:vk" value="https://vk.com/iledebeaute" />
-        <key key="contact:website" value="https://iledebeaute.ru" />
-        <key key="contact:youtube" value="https://www.youtube.com/user/idbshops" />
-        <key key="name" value="Иль де Ботэ" />
-        <key key="name:ru" value="Иль де Ботэ" />
+        <key key="brand" value="Sephora" />
+        <key key="contact:facebook" value="https://www.facebook.com/SephoraRussia" />
+        <key key="contact:instagram" value="https://www.instagram.com/sephora_russia" />
+        <key key="contact:website" value="https://sephora.ru/" />
+        <key key="name" value="Sephora" />
+        <key key="name:ru" value="Сефора" />
         <key key="shop" value="cosmetics" />
-        <link href="https://iledebeaute.ru/company/shops/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://sephora.ru/company/shops/moscow/map/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
       <item name="Korablik" ru.name="Кораблик" type="node,closedway,multipolygon" preset_name_label="true">
@@ -2412,28 +2539,6 @@
         <link href="https://magnitcosmetic.ru/shops/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="M.Video" ru.name="М.Видео" type="node,closedway,multipolygon" preset_name_label="true">
-        <space />
-        <combo key="contact:phone" text="Phone number" default="+7 800 2007775" />
-        <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-22:00,Mo-Su 10:00-23:00" />
-        <key key="brand" value="М.Видео" />
-        <key key="brand:wikidata" value="Q6558800" />
-        <key key="brand:wikipedia" value="ru:М.Видео" />
-        <key key="contact:email" value="24@mvideo.ru" />
-        <key key="contact:facebook" value="https://www.facebook.com/mvideo.ru" />
-        <key key="contact:instagram" value="https://www.instagram.com/mvideo_ru" />
-        <key key="contact:ok" value="https://ok.ru/mvideo" />
-        <key key="contact:twitter" value="https://twitter.com/mvideo" />
-        <key key="contact:vk" value="https://vk.com/mvideo" />
-        <key key="contact:website" value="https://www.mvideo.ru" />
-        <key key="contact:youtube" value="https://www.youtube.com/mvideoru" />
-        <key key="name" value="М.Видео" />
-        <key key="name:ru" value="М.Видео" />
-        <key key="operator" value="ООО &quot;М.Видео Менеджмент&quot;" />
-        <key key="shop" value="electronics" />
-        <link href="https://www.mvideo.ru/shops/store-list" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="level_wheelchair_address" />
-      </item>
       <item name="Moscow Jewelry Factory" ru.name="Московский ювелирный завод" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 08:00-22:00; Sa-Su 09:00-21:00" />
@@ -2498,40 +2603,6 @@
         <key key="operator" value="ООО «ТАБЕР ТРЕЙД»" />
         <key key="shop" value="cosmetics" />
         <link href="https://www.podrygka.ru/shoplist/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="wheelchair_address" />
-      </item>
-      <item name="Positronica" ru.name="Позитроника" type="node,closedway,multipolygon" preset_name_label="true">
-        <space />
-        <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 09:00-20:00; Sa-Su 10:00-20:00" default="Mo-Fr 09:00-20:00; Sa-Su 10:00-20:00" />
-        <key key="brand" value="Позитроника" />
-        <key key="contact:instagram" value="https://www.instagram.com/positronica_ru/" />
-        <key key="contact:phone" value="+7 800 3330333" />
-        <key key="contact:vk" value="https://vk.com/club25319996" />
-        <key key="contact:website" value="https://positronica.ru" />
-        <key key="name" value="Позитроника" />
-        <key key="name:ru" value="Позитроника" />
-	<key key="name:en" value="Positronica" />
-        <key key="shop" value="electronics" />
-        <link href="https://positronica.ru/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="wheelchair_address" />
-      </item>
-      <item name="Citilink" ru.name="Ситилинк" type="node,closedway,multipolygon" preset_name_label="true">
-        <space />
-	<reference ref="phone" />
-        <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 09:00-20:00; Sa-Su 10:00-20:00" default="Mo-Su 09:00-21:00" />
-        <key key="brand" value="Ситилинк" />
-        <key key="contact:instagram" value="https://www.instagram.com/citilink_ru/" />
-        <key key="contact:vk" value="https://vk.com/citilink_ru" />
-	<key key="contact:facebook" value="https://www.facebook.com/citilink.ru" />
-        <key key="contact:ok" value="https://ok.ru/citilink.ru" />
-        <key key="contact:youtube" value="https://www.youtube.com/user/CitilinkTV" />
-        <key key="contact:website" value="https://www.citilink.ru/" />
-        <key key="name" value="Ситилинк" />
-        <key key="name:ru" value="Ситилинк" />
-	<key key="name:en" value="Citilink" />
-	<key key="operator" value="ООО «Ситилинк»" />
-        <key key="shop" value="electronics" />
-        <link href="https://www.citilink.ru/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
       <item name="Smeshnie Tseni" ru.name="Смешные цены" type="node,closedway,multipolygon" preset_name_label="true">
@@ -2601,26 +2672,6 @@
         <key key="name:ru" value="Улыбка радуги" />
         <key key="shop" value="chemist" />
         <link href="https://www.r-ulybka.ru/stores" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="level_wheelchair_address" />
-      </item>
-      <item name="Eldorado" ru.name="Эльдорадо" type="node,closedway,multipolygon" preset_name_label="true">
-        <space />
-        <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-21:00,Mo-Fr 08:00-22:00; Sa-Su 09:00-21:00" />
-        <key key="brand" value="Эльдорадо" />
-        <key key="brand:wikidata" value="Q4531492" />
-        <key key="brand:wikipedia" value="ru:Эльдорадо (сеть магазинов)" />
-        <key key="contact:facebook" value="https://www.facebook.com/Eldorado.Stores" />
-        <key key="contact:instagram" value="https://www.instagram.com/eldorado_stores" />
-        <key key="contact:ok" value="https://ok.ru/eldorado_stores" />
-        <key key="contact:phone" value="+7 800 2502525" />
-        <key key="contact:twitter" value="https://twitter.com/eldorado_stores" />
-        <key key="contact:vk" value="https://vk.com/eldorado_stores" />
-        <key key="contact:website" value="https://www.eldorado.ru" />
-        <key key="contact:youtube" value="https://www.youtube.com/user/eldoradovideo" />
-        <key key="name" value="Эльдорадо" />
-        <key key="name:ru" value="Эльдорадо" />
-        <key key="shop" value="electronics" />
-        <link href="https://www.eldorado.ru/info/shops/11324/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
     </group>
@@ -3540,6 +3591,7 @@
         <combo key="capacity" text="Вместимость (количество мест для велосипедов)" />
         <combo key="capacity:electric" text="Вместимость (количество мест для электрических велосипедов)" />
         <key key="amenity" value="bicycle_rental" />
+        <key key="bicycle_rental" value="docking_station" />
         <key key="contact:email" value="info@velobike.ru" />
         <key key="contact:phone" value="+7 495 9664669" />
         <key key="contact:website" value="https://velobike.ru/" />
