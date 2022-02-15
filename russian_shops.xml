@@ -1637,7 +1637,8 @@
         <key key="shop" value="mobile_phone" />
         <link href="https://moskva.beeline.ru/customers/beeline-map/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
-      </item>
+      </item>	    
+      <item name="MegaFon" ru.name="МегаФон" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
         <key key="brand" value="МегаФон" />
