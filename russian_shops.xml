@@ -2432,22 +2432,18 @@
         <link href="https://dryclean.ru/priemnye_punkty/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
-      <item name="Ile de Beaute" ru.name="Иль де Ботэ" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Sephora" ru.name="Sephora" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
-        <combo key="contact:phone" text="Phone number" default="+7 800 2001700" />
+        <combo key="contact:phone" text="Phone number" default="+7 495 7830051" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 08:00-22:00; Sa-Su 09:00-21:00" />
-        <key key="brand" value="Иль де Ботэ" />
-        <key key="contact:email" value="info@ldb.ru" />
-        <key key="contact:facebook" value="https://www.facebook.com/idbshops" />
-        <key key="contact:instagram" value="https://www.instagram.com/iledebeaute_official" />
-        <key key="contact:twitter" value="https://twitter.com/IDB_OFFICIAL" />
-        <key key="contact:vk" value="https://vk.com/iledebeaute" />
-        <key key="contact:website" value="https://iledebeaute.ru" />
-        <key key="contact:youtube" value="https://www.youtube.com/user/idbshops" />
-        <key key="name" value="Иль де Ботэ" />
-        <key key="name:ru" value="Иль де Ботэ" />
+        <key key="brand" value="Sephora" />
+        <key key="contact:facebook" value="https://www.facebook.com/SephoraRussia" />
+        <key key="contact:instagram" value="https://www.instagram.com/sephora_russia" />
+        <key key="contact:website" value="https://sephora.ru/" />
+        <key key="name" value="Sephora" />
+        <key key="name:ru" value="Сефора" />
         <key key="shop" value="cosmetics" />
-        <link href="https://iledebeaute.ru/company/shops/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://sephora.ru/company/shops/moscow/map/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
       <item name="Korablik" ru.name="Кораблик" type="node,closedway,multipolygon" preset_name_label="true">
