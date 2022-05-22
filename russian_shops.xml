@@ -3658,7 +3658,7 @@
         <key key="location" value="indoor" />
         <key key="man_made" value="heat_exchange_station" />
         <key key="pipeline" value="substation" />
-        <key key="substance" value="heat" />
+        <key key="substance" value="hot_water" />
         <key key="substation" value="distribution" />
         <preset_link preset_name="Address" />
       </item>
