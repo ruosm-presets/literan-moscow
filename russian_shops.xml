@@ -1914,7 +1914,7 @@
         <text key="ref" text="Reference" ru.text="Номер постамата" />
         <key key="brand" value="5post" />
         <key key="contact:phone" value="+7 800 5118800" />
-        <key key="contact:website" value="https://fivepost.ru/point-map" />
+        <key key="contact:website" value="https://fivepost.ru />
         <key key="name" value="5post" />
         <key key="amenity" value="parcel_locker" />
         <link href="https://fivepost.ru/point-map" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
