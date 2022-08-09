@@ -934,10 +934,10 @@
       </item>
     </group>
     <group name="Food shops" ru.name="Продукты" icon="https://upload.wikimedia.org/wikipedia/commons/7/71/Emoji_u1f347.svg">
-      <item name="Fix price" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Fix Price" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-22:00,Mo-Sa 09:00-20:00; Su 10:00-19:00" />
-        <key key="brand" value="Fix price" />
+        <key key="brand" value="Fix Price" />
         <key key="brand:wikidata" value="Q4038791" />
         <key key="brand:wikipedia" value="ru:Fix Price (сеть магазинов)" />
         <key key="contact:facebook" value="https://www.facebook.com/fixprice.russia" />
@@ -948,8 +948,8 @@
         <key key="contact:vk" value="https://vk.com/fix_price" />
         <key key="contact:website" value="https://www.fix-price.ru" />
         <key key="contact:youtube" value="https://www.youtube.com/user/fixprice36" />
-        <key key="name" value="Fix price" />
-        <key key="name:en" value="Fix price" />
+        <key key="name" value="Fix Price" />
+        <key key="name:en" value="Fix Price" />
         <key key="shop" value="variety_store" />
         <link href="https://fix-price.ru/stores/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
