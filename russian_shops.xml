@@ -703,27 +703,23 @@
         <link href="https://www.kartoshka.com/map/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
-      <item name="McDonald's" ru.name="Макдоналдс" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Vkusno - i tochka" ru.name="Вкусно — и точка" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
-        <combo key="contact:phone" text="Phone number" default="+7 800 7074499" />
+        <combo key="contact:phone" text="Phone number" default="+7 495 2680035" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 06:30-24:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
         <key key="amenity" value="fast_food" />
-        <key key="brand" value="Макдоналдс" />
-        <key key="brand:wikidata" value="Q38076" />
-        <key key="brand:wikipedia" value="ru:McDonald’s" />
-        <key key="contact:email" value="info@ru.mcd.com" />
-        <key key="contact:facebook" value="https://www.facebook.com/mcdonaldsrussia" />
-        <key key="contact:instagram" value="https://www.instagram.com/mcdonalds_rus" />
-        <key key="contact:vk" value="https://vk.com/mcdonaldsrussia" />
-        <key key="contact:website" value="https://mcdonalds.ru" />
-        <key key="contact:youtube" value="https://www.youtube.com/user/McDonaldsRussia" />
+        <key key="brand" value="Вкусно — и точка" />
+        <key key="brand:wikidata" value="Q112406961" />
+        <key key="brand:wikipedia" value="ru:Вкусно — и точка" />
+        <key key="contact:email" value="info@qsrsystem.ru" />
+        <key key="contact:vk" value="https://vk.com/vkusno_itochka" />
+        <key key="contact:website" value="https://vkusnoitochka.ru" />
         <key key="cuisine" value="burger" />
         <key key="diet:vegetarian" value="no" />
-        <key key="name" value="Макдоналдс" />
-        <key key="name:en" value="McDonald's" />
-        <key key="name:ru" value="Макдоналдс" />
+        <key key="name" value="Вкусно — и точка" />
+        <key key="name:ru" value="Вкусно — и точка" />
         <key key="takeaway" value="yes" />
-        <link href="https://mcdonalds.ru/restaurants/map" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://vkusnoitochka.ru/restaurants/map" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
       <item name="Mu-Mu" ru.name="Му-Му" type="node,closedway,multipolygon" preset_name_label="true">
