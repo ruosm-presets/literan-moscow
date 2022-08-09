@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2.0_2022-02-15_1"
+  version="2.0_2022-08-09_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   icon="https://upload.wikimedia.org/wikipedia/commons/d/db/Twemoji_1f1f7-1f1fa.svg"
   shortdescription="Russian POIs"
@@ -1094,6 +1094,7 @@
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 08:00-23:00,Mo-Su 09:00-22:00" />
         <key key="brand" value="Верный" />
         <key key="contact:email" value="info@ivoin.ru" />
+        <key key="contact:phone" value="+7 800 2506648" />
         <key key="contact:website" value="https://www.verno-info.ru" />
         <key key="name" value="Верный" />
         <key key="name:ru" value="Верный" />
