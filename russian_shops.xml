@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2.0_2022-08-09_2"
+  version="2.0_2022-08-12_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   icon="https://upload.wikimedia.org/wikipedia/commons/d/db/Twemoji_1f1f7-1f1fa.svg"
   shortdescription="Russian POIs"
@@ -633,12 +633,12 @@
         <link href="https://dodopizza.ru/moscow/contacts" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
-      <item name="Domino’s Pizza" ru.name="Домино’c Пицца" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Domino’s" ru.name="Домино’c" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="contact:phone" text="Phone number" values="+7 495 47888xx,+7 495 24083xx,+7 495 24084xx" />
         <combo key="opening_hours" text="Opening Hours" values="Mo-Su 10:00-23:00,Mo-Su 09:00-23:00" default="Mo-Su 10:00-23:00" />
         <key key="amenity" value="fast_food" />
-        <key key="brand" value="Домино’c Пицца" />
+        <key key="brand" value="Домино’c" />
         <key key="brand:wikidata" value="Q839466" />
         <key key="brand:wikipedia" value="ru:Domino’s Pizza" />
         <key key="contact:facebook" value="https://www.facebook.com/dominospizzarussia" />
@@ -648,9 +648,9 @@
         <key key="cuisine" value="pizza" />
         <key key="delivery" value="yes" />
         <key key="diet:vegetarian" value="no" />
-        <key key="name" value="Домино’c Пицца" />
-        <key key="name:en" value="Domino’s Pizza" />
-        <key key="name:ru" value="Домино’c Пицца" />
+        <key key="name" value="Домино’c" />
+        <key key="name:en" value="Domino’s" />
+        <key key="name:ru" value="Домино’c" />
         <link href="https://dominospizza.ru/find_dominos" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
