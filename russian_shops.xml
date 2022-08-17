@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2.0_2022-08-12_1"
+  version="2.0_2022-08-17_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   icon="https://upload.wikimedia.org/wikipedia/commons/d/db/Twemoji_1f1f7-1f1fa.svg"
   shortdescription="Russian POIs"
@@ -405,6 +405,25 @@
         <key key="name" value="Инвитро" />
         <key key="name:ru" value="Инвитро" />
         <link href="https://www.invitro.ru/offices/moscow/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <reference ref="oh1_level_wheelchair_address" />
+      </item>
+      <item name="Labquest" ru.name="ЛабКвест" type="node,closedway,multipolygon" preset_name_label="true">
+        <space />
+        <combo key="contact:phone" text="Phone number" default="+7 495 1533788" />
+        <key key="amenity" value="doctors" />
+        <key key="brand" value="LabQuest" />
+        <key key="contact:email" value="info@labquest.ru" />
+        <key key="contact:ok" value="https://ok.ru/group/54165730361422" />
+        <key key="contact:telegram" value="https://t.me/labquest_ru" />
+        <key key="contact:vk" value="https://vk.com/labquest_ru" />
+        <key key="contact:website" value="https://www.labquest.ru" />
+        <key key="health_facility:type" value="laboratory" />
+        <key key="health_specialty:microbiology" value="yes" />
+        <key key="healthcare" value="laboratory" />
+        <key key="medical_system:western" value="yes" />
+        <key key="name" value="LabQuest" />
+        <key key="name:ru" value="ЛабКвест" />
+        <link href="https://www.labquest.ru/adresa-i-vremya-raboty/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="oh1_level_wheelchair_address" />
       </item>
     </group>
