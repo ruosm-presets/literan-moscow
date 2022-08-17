@@ -2829,6 +2829,16 @@
         <key key="government" value="social_services" />
         <key key="office" value="government" />
       </item>
+      <item name="Служба судебных приставов" type="node,closedway,multipolygon" preset_name_label="true">
+        <space />
+        <combo key="name" text="Name" default="Отдел судебных приставов по N-скому району" />
+        <combo key="contact:website" text="Website" default="https://fssp.gov.ru" />
+        <reference ref="phone_oh2_wheelchair_address" />	      
+        <key key="contact:telegram" value="https://t.me/fssp_gov" />
+        <key key="contact:vk" value="https://vk.com/fssp_gov" />
+        <key key="government" value="bailiff" />
+        <key key="office" value="government" />
+      </item>
       <item name="Управление образования" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="name" text="Name" default="Управление образования N-ского района" />
