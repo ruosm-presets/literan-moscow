@@ -3652,14 +3652,14 @@
         <key key="network" value="Samokat" />
         <key key="seasonal" value="spring;summer;autumn" />
       </item>
-      <item name="Platon gantry" ru.name="Рамка оплаты системы "Платон"" type="node" preset_name_label="true">
+      <item name="Platon gantry" ru.name="Рамка оплаты системы &quot;Платон&quot;" type="node" preset_name_label="true">
         <space />
         <reference ref="ref" />
         <key key="highway" value="toll_gantry" />
         <key key="contact:phone" value="+7 495 5400202" />
         <key key="contact:website" value="http://platon.ru" />
         <key key="network" value="Платон" />
-        <key key="operator" value="ООО «РТ-Инвест Транспортные Системы»" />
+        <key key="operator" value="ООО &quot;РТ-Инвест Транспортные Системы&quot;" />
         <key key="toll:hgv_articulated" value="yes" />
       </item>
       <item name="MGTS payphone" ru.name="Таксофон &quot;МГТС&quot;" type="node" icon="https://upload.wikimedia.org/wikipedia/commons/a/a0/Twemoji_1f4de.svg" preset_name_label="true">
