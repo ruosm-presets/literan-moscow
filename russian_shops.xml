@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2.0_2022-09-26_1"
+  version="2.0_2022-10-07_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   icon="https://upload.wikimedia.org/wikipedia/commons/d/db/Twemoji_1f1f7-1f1fa.svg"
   shortdescription="Russian POIs"
@@ -1933,7 +1933,20 @@
         <key key="amenity" value="parcel_locker" />
         <link href="https://fivepost.ru/point-map" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
-      </item>	   
+      </item>	    	   
+      <item name="Cainiao" ru.name="Постамат Cainiao" type="node" preset_name_label="true">
+        <space />
+        <reference ref="oh3" />
+        <text key="ref" text="Reference" ru.text="Номер постамата" />
+        <key key="brand" value="Cainiao" />
+        <key key="brand:wikidata" value="Q16947973" />
+        <key key="brand:wikipedia" value="ru:Cainiao" />
+        <key key="contact:website" value="https://global.cainiao.com" />
+        <key key="name" value="Cainiao" />
+        <key key="name:ru" value="Цайняо" />
+        <key key="amenity" value="parcel_locker" />
+        <reference ref="level_wheelchair_address" />
+      </item>
       <item name="Ozon box" ru.name="Постамат Ozon box" type="node" preset_name_label="true">
         <space />
         <reference ref="oh3" />
@@ -3638,6 +3651,16 @@
         <key key="fee" value="yes" />
         <key key="network" value="Samokat" />
         <key key="seasonal" value="spring;summer;autumn" />
+      </item>
+      <item name="Platon gantry" ru.name="Рамка оплаты системы &quot;Платон&quot;" type="node" preset_name_label="true">
+        <space />
+        <reference ref="ref" />
+        <key key="highway" value="toll_gantry" />
+        <key key="contact:phone" value="+7 495 5400202" />
+        <key key="contact:website" value="http://platon.ru" />
+        <key key="network" value="Платон" />
+        <key key="operator" value="ООО &quot;РТ-Инвест Транспортные Системы&quot;" />
+        <key key="toll:hgv_articulated" value="yes" />
       </item>
       <item name="MGTS payphone" ru.name="Таксофон &quot;МГТС&quot;" type="node" icon="https://upload.wikimedia.org/wikipedia/commons/a/a0/Twemoji_1f4de.svg" preset_name_label="true">
         <space />
