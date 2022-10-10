@@ -2282,7 +2282,7 @@
         <key key="payment:credit_cards" value="yes" />
         <key key="payment:debit_cards" value="yes" />
         <key key="payment:notes" value="yes" />
-        <link href="https://old.mkb.ru/images/facility/private_a/payment_outgoing/terminal_right.png" text="Photo" ru.text="Фотография-пример" />
+        <link href="https://old.mkb.ru/images/facility/private_person/payment_outgoing/terminal_right.png" text="Photo" ru.text="Фотография-пример" />
         <link href="https://mkb.ru/about/address/terminal" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, номера терминалов)" />
         <preset_link preset_name="Address" />
       </item>
