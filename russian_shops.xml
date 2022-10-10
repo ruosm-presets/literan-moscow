@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="literan and others"
-  version="2.0_2022-10-07_1"
+  version="2.0_2022-10-10_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   icon="https://upload.wikimedia.org/wikipedia/commons/d/db/Twemoji_1f1f7-1f1fa.svg"
   shortdescription="Russian POIs"
@@ -2282,7 +2282,7 @@
         <key key="payment:credit_cards" value="yes" />
         <key key="payment:debit_cards" value="yes" />
         <key key="payment:notes" value="yes" />
-        <link href="https://old.mkb.ru/images/facility/private_person/payment_outgoing/terminal_right.png" text="Photo" ru.text="Фотография-пример" />
+        <link href="https://old.mkb.ru/images/facility/private_a/payment_outgoing/terminal_right.png" text="Photo" ru.text="Фотография-пример" />
         <link href="https://mkb.ru/about/address/terminal" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, номера терминалов)" />
         <preset_link preset_name="Address" />
       </item>
@@ -2613,7 +2613,7 @@
         <key key="contact:youtube" value="https://www.youtube.com/watch?v=qxudzLtUYZM" />
         <key key="name" value="Персона" />
         <key key="name:ru" value="Персона" />
-        <key key="shop" value="hairdresser" />
+        <key key="shop" value="beauty" />
         <link href="https://persona.ru/contacts/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
