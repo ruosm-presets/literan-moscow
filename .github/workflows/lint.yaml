@@ -9,7 +9,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@master
     - name: Download schema
-      run: wget https://raw.githubusercontent.com/JOSM/josm/master/resources/data/tagging-preset.xsd
+      run: wget http://josm.openstreetmap.de/tagging-preset-1.0
     - name: Lint russian_shops.xml
       uses: ChristophWurst/xmllint-action@v1
       with:

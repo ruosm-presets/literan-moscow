@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://josm.openstreetmap.de/tagging-preset-1.0 tagging-preset.xsd"
   author="literan and others"
-  version="2.0_2022-10-10_1"
+  version="2.0_2022-12-04_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   icon="https://upload.wikimedia.org/wikipedia/commons/d/db/Twemoji_1f1f7-1f1fa.svg"
   shortdescription="Russian POIs"
@@ -23,7 +25,6 @@
     level,
     operator
   сделано для единообразия с встроенными заготовками JOSM -->
-
   <!-- блок с шаблонами (chunks) -->
   <chunk id="name">
     <text key="name" text="Name" />
@@ -803,7 +804,7 @@
         <key key="name:ru" value="Правда Кофе" />
         <key key="takeaway" value="yes" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
-      </item>	    
+      </item>
       <item name="Robin Sdobin" ru.name="Робин Сдобин" type="node,closedway,multipolygon" preset_name_label="true">
         <!-- Воронежская, Московская, Смоленская, Владимирская и т.д. -->
         <space />
@@ -1268,22 +1269,22 @@
         <key key="name:ru" value="Магнолия" />
         <link href="https://shop.mgnl.ru/contacts/stores/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
-      </item>	    
+      </item>
       <item name="Maria-Ra" ru.name="Мария-Ра" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <reference ref="shop_type" />
         <reference ref="oh3" />
         <key key="brand" value="Мария-Ра" />
         <key key="contact:email" value="ura@maria-ra.ru" />
-	<key key="contact:facebook" value="https://www.facebook.com/mariarashop/" />
+        <key key="contact:facebook" value="https://www.facebook.com/mariarashop/" />
         <key key="contact:instagram" value="https://www.instagram.com/mariarashop/" />
-	<key key="contact:phone" value="+7 800 1000810" />
+        <key key="contact:phone" value="+7 800 1000810" />
         <key key="contact:website" value="https://www.maria-ra.ru/" />
         <key key="name" value="Мария-Ра" />
         <key key="name:ru" value="Мария-Ра" />
         <link href="https://www.maria-ra.ru/o-nas/karta-seti/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
-      </item>	    
+      </item>
       <item name="Monetka" ru.name="Монетка" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <reference ref="shop_type" />
@@ -1451,10 +1452,10 @@
         <reference ref="wheelchair_address" />
       </item>
     </group>
-    <group name="Alcohol drinks" ru.name="Алкоголь" icon="https://upload.wikimedia.org/wikipedia/commons/7/76/Emblem-windows.svg">	  
+    <group name="Alcohol drinks" ru.name="Алкоголь" icon="https://upload.wikimedia.org/wikipedia/commons/7/76/Emblem-windows.svg">
       <item name="AV Enoteca" ru.name="АВ Энотека" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
-	<reference ref="oh3" />  
+        <reference ref="oh3" />
         <key key="brand" value="АВ Энотека" />
         <key key="brand:wikidata" value="Q4058209" />
         <key key="brand:wikipedia" value="ru:Азбука вкуса" />
@@ -1470,13 +1471,13 @@
         <key key="name:ru" value="АВ Энотека" />
         <key key="shop" value="wine" />
         <link href="https://av.ru/shops/#msk_av-enoteca" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-	<reference ref="level" />  
+        <reference ref="level" />
         <reference ref="wheelchair_address" />
       </item>
       <item name="Aromatny Mir" ru.name="Ароматный мир" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="contact:phone" text="Phone number" default="+7 495 7775190-xxxx" />
-	<reference ref="oh3" />  
+        <reference ref="oh3" />
         <key key="brand" value="Ароматный мир" />
         <key key="contact:facebook" value="https://www.facebook.com/amwine.ru" />
         <key key="contact:instagram" value="https://www.instagram.com/amwine.ru" />
@@ -1496,13 +1497,13 @@
         <key key="name:ru" value="Ароматный мир" />
         <key key="shop" value="alcohol" />
         <link href="https://amwine.ru/customers/shops/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-	<reference ref="level" />  
+        <reference ref="level" />
         <reference ref="wheelchair_address" />
-      </item>	    
+      </item>
       <item name="Bristol" ru.name="Бристоль" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="contact:phone" text="Phone number" default="+7 800 7071555" />
-	<reference ref="oh3" />  
+        <reference ref="oh3" />
         <key key="brand" value="Бристоль" />
         <key key="contact:facebook" value="https://www.facebook.com/bristolretail" />
         <key key="contact:instagram" value="https://www.instagram.com/bristol_retail" />
@@ -1520,13 +1521,13 @@
         <key key="name:ru" value="Бристоль" />
         <key key="shop" value="alcohol" />
         <link href="https://bristol.ru/about/shops/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-	<reference ref="level" />  
+        <reference ref="level" />
         <reference ref="wheelchair_address" />
-      </item>	    
+      </item>
       <item name="Winelab" ru.name="Винлаб" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="contact:phone" text="Phone number" default="+7 800 3017755" />
-	<reference ref="oh3" />  
+        <reference ref="oh3" />
         <key key="brand" value="Винлаб" />
         <key key="contact:facebook" value="https://www.facebook.com/winelabru" />
         <key key="contact:instagram" value="https://www.instagram.com/winelab.ru" />
@@ -1543,9 +1544,9 @@
         <key key="name:ru" value="Винлаб" />
         <key key="shop" value="alcohol" />
         <link href="https://www.winelab.ru/store-finder/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-	<reference ref="level" />  
+        <reference ref="level" />
         <reference ref="wheelchair_address" />
-      </item>		
+      </item>
       <item name="Krasnoye&amp;Beloye" ru.name="Красное&amp;Белое" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-22:05,Mo-Sa 09:30-22:30; Su 11:00-22:00" />
@@ -1564,13 +1565,13 @@
         <key key="name:ru" value="Красное&amp;Белое" />
         <key key="shop" value="alcohol" />
         <link href="https://krasnoeibeloe.ru/address/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-	<reference ref="level" />  
+        <reference ref="level" />
         <reference ref="wheelchair_address" />
       </item>
       <item name="Lit.ra" ru.name="Лит.Ра" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="contact:phone" text="Phone number" values="+7 495 4413543,+7 812 3257052,+7 831 2161157" />
-	<reference ref="oh3" />  
+        <reference ref="oh3" />
         <key key="brand" value="Лит.Ра" />
         <key key="contact:vk" value="https://vk.com/litra_beer" />
         <key key="contact:website" value="https://litra-beer.ru" />
@@ -1582,13 +1583,13 @@
         <key key="name:ru" value="Лит.Ра" />
         <key key="shop" value="alcohol" />
         <link href="https://litra-beer.ru/magazini/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-	<reference ref="level" />  
+        <reference ref="level" />
         <reference ref="wheelchair_address" />
       </item>
       <item name="Otdohni" ru.name="Отдохни" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="contact:phone" text="Phone number" default="+7 495 4249515" />
-	<reference ref="oh3" />  
+        <reference ref="oh3" />
         <key key="brand" value="Отдохни" />
         <key key="contact:email" value="somelie@coolclever.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/somelie.community" />
@@ -1606,10 +1607,10 @@
         <key key="name:ru" value="Отдохни" />
         <key key="shop" value="alcohol" />
         <link href="https://www.somelie.ru/map/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-	<reference ref="level" />  
+        <reference ref="level" />
         <reference ref="wheelchair_address" />
-      </item>		
-    </group>	  
+      </item>
+    </group>
     <group name="Electronics shops" ru.name="Электроника" icon="https://upload.wikimedia.org/wikipedia/commons/d/d5/Twemoji_1f4f1.svg">
       <item name="Tele2" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
@@ -1653,7 +1654,7 @@
         <key key="shop" value="mobile_phone" />
         <link href="https://moskva.beeline.ru/customers/beeline-map/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
-	</item>	    	    
+      </item>
       <item name="MegaFon" ru.name="МегаФон" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
@@ -1764,26 +1765,26 @@
         <key key="contact:website" value="https://positronica.ru" />
         <key key="name" value="Позитроника" />
         <key key="name:ru" value="Позитроника" />
-	<key key="name:en" value="Positronica" />
+        <key key="name:en" value="Positronica" />
         <key key="shop" value="electronics" />
         <link href="https://positronica.ru/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
       <item name="Citilink" ru.name="Ситилинк" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
-	<reference ref="phone" />
+        <reference ref="phone" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 09:00-20:00; Sa-Su 10:00-20:00" default="Mo-Su 09:00-21:00" />
         <key key="brand" value="Ситилинк" />
         <key key="contact:instagram" value="https://www.instagram.com/citilink_ru/" />
         <key key="contact:vk" value="https://vk.com/citilink_ru" />
-	<key key="contact:facebook" value="https://www.facebook.com/citilink.ru" />
+        <key key="contact:facebook" value="https://www.facebook.com/citilink.ru" />
         <key key="contact:ok" value="https://ok.ru/citilink.ru" />
         <key key="contact:youtube" value="https://www.youtube.com/user/CitilinkTV" />
         <key key="contact:website" value="https://www.citilink.ru/" />
         <key key="name" value="Ситилинк" />
         <key key="name:ru" value="Ситилинк" />
-	<key key="name:en" value="Citilink" />
-	<key key="operator" value="ООО «Ситилинк»" />
+        <key key="name:en" value="Citilink" />
+        <key key="operator" value="ООО «Ситилинк»" />
         <key key="shop" value="electronics" />
         <link href="https://www.citilink.ru/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
@@ -1807,7 +1808,7 @@
         <key key="shop" value="electronics" />
         <link href="https://www.eldorado.ru/info/shops/11324/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
-      </item>	  
+      </item>
     </group>
     <group name="Distance retail" ru.name="Дистанционная торговля" icon="https://upload.wikimedia.org/wikipedia/commons/9/97/PICOL_icon_Mailbox.svg">
       <item name="Boxberry" ru.name="Boxberry" type="node,closedway,multipolygon" preset_name_label="true">
@@ -1824,7 +1825,7 @@
         <link href="https://boxberry.ru/find_an_office/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="fitting_room" />
         <reference ref="level_wheelchair_address" />
-      </item> 
+      </item>
       <item name="Lamoda" ru.name="Lamoda" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <reference ref="oh3" />
@@ -1840,7 +1841,7 @@
         <link href="https://www.lamoda.ru/delivery" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="fitting_room" />
         <reference ref="level_wheelchair_address" />
-      </item>	    
+      </item>
       <item name="Ozon" ru.name="Ozon" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <reference ref="oh3" />
@@ -1902,7 +1903,7 @@
         <link href="https://www.wildberries.ru/services/besplatnaya-dostavka#pickupPoints" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="fitting_room" />
         <reference ref="level_wheelchair_address" />
-      </item>      
+      </item>
       <item name="CDEK" ru.name="СДЭК" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="contact:phone" text="Phone number" default="+7 800 2501405;+7 800 2500405" />
@@ -1921,7 +1922,7 @@
         <reference ref="fitting_room" />
         <reference ref="level_wheelchair_address" />
       </item>
-      <separator />     
+      <separator />
       <item name="5post" ru.name="Постамат 5post" type="node" preset_name_label="true">
         <space />
         <reference ref="oh3" />
@@ -1933,7 +1934,7 @@
         <key key="amenity" value="parcel_locker" />
         <link href="https://fivepost.ru/point-map" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
-      </item>	    	   
+      </item>
       <item name="Cainiao" ru.name="Постамат Cainiao" type="node" preset_name_label="true">
         <space />
         <reference ref="oh3" />
@@ -1972,7 +1973,7 @@
         <key key="amenity" value="parcel_locker" />
         <link href="https://pickpoint.ru/postamats/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
-      </item>    
+      </item>
       <item name="Omni" ru.name="Постамат ОмниСДЭК" type="node" preset_name_label="true">
         <space />
         <reference ref="oh3" />
@@ -1984,7 +1985,7 @@
         <key key="amenity" value="parcel_locker" />
         <link href="https://omnicdek.ru/#map" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
-      </item>   
+      </item>
       <item name="Pochta Rus" ru.name="Постамат Почта России" type="node" preset_name_label="true">
         <space />
         <reference ref="oh3" />
@@ -1995,7 +1996,7 @@
         <key key="amenity" value="parcel_locker" />
         <link href="https://www.pochta.ru/offices?filters%5B%5D=POCHTOMAT" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
-      </item>	
+      </item>
       <item name="SberLogistika" ru.name="Постамат СберЛогистика" type="node" preset_name_label="true">
         <space />
         <reference ref="oh3" />
@@ -2007,7 +2008,7 @@
         <key key="amenity" value="parcel_locker" />
         <link href="https://sberlogistics.ru/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
-      </item>        
+      </item>
       <item name="Utkonos box" ru.name="Постамат Утконос" type="node" preset_name_label="true">
         <space />
         <reference ref="oh3" />
@@ -2031,7 +2032,7 @@
         <key key="amenity" value="parcel_locker" />
         <link href="https://pochtomat.ru/map/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
-      </item>       
+      </item>
       <item name="Yandex.market" ru.name="Постамат Яндекс.Маркет" type="node" preset_name_label="true">
         <space />
         <reference ref="oh3" />
@@ -2043,7 +2044,7 @@
         <key key="amenity" value="parcel_locker" />
         <link href="https://yandex.ru/maps/213/moscow/chain/postamaty_yandeks_marketa/237923876496" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
-      </item>   
+      </item>
     </group>
     <group name="Finance" ru.name="Финансы" icon="https://upload.wikimedia.org/wikipedia/commons/6/64/Emoji_u1f4b0.svg">
       <item name="Alfa-Bank" ru.name="Альфа-Банк" type="node,closedway,multipolygon" preset_name_label="true">
@@ -2324,7 +2325,7 @@
         <key key="tourism" value="information" />
         <link href="https://prv1.lori-images.net/0007456673-middle.jpg" text="Photo" ru.text="Фотография-пример" />
         <preset_link preset_name="Address" />
-      </item>	    
+      </item>
     </group>
     <group name="Etc" ru.name="Прочие магазины/салоны" icon="https://upload.wikimedia.org/wikipedia/commons/b/b6/Twemoji_1f45c.svg">
       <item name="Milomart" type="node" preset_name_label="true">
@@ -2845,7 +2846,7 @@
         <space />
         <combo key="name" text="Name" default="Отдел судебных приставов по N-скому району" />
         <combo key="contact:website" text="Website" default="https://fssp.gov.ru" />
-        <reference ref="phone_oh2_wheelchair_address" />	      
+        <reference ref="phone_oh2_wheelchair_address" />
         <key key="contact:telegram" value="https://t.me/fssp_gov" />
         <key key="contact:vk" value="https://vk.com/fssp_gov" />
         <key key="government" value="bailiff" />
@@ -3586,7 +3587,8 @@
         <key key="vending" value="parking_tickets" />
         <link href="http://parking.mos.ru" text="Official website (place locator)" ru.text="Ссылка на сайт (номера паркоматов)" />
       </item>
-      <item name="Clothes dryer" ru.name="Площадка для сушки белья" type="node,closedway,multipolygon" icon="https://image.flaticon.com/icons/png/512/47/47421.png" preset_name_label="true"> <!-- https://d30y9cdsu7xlg0.cloudfront.net/png/174655-200.png NOTE: второй вариант иконки -->
+      <item name="Clothes dryer" ru.name="Площадка для сушки белья" type="node,closedway,multipolygon" icon="https://image.flaticon.com/icons/png/512/47/47421.png" preset_name_label="true">
+        <!-- https://d30y9cdsu7xlg0.cloudfront.net/png/174655-200.png NOTE: второй вариант иконки -->
         <space />
         <key key="amenity" value="clothes_dryer" />
         <combo key="clothes_dryer" text="Clothes dryer" ru.text="Тип сушилки" values="pulley,rack,t-post,umbrella" ru.display_values="с роликом,стойка,столб,в виде зонта" default="rack" />
@@ -3622,7 +3624,7 @@
         <preset_link preset_name="Address" />
         <preset_link preset_name="Building" />
       </item>
-           
+
       <item name="Velobike bicycle rental point" ru.name="Пункт проката велосипедов Velobike" type="node" preset_name_label="true">
         <space />
         <reference ref="ref" />
@@ -3638,7 +3640,7 @@
         <key key="network" value="Велобайк" />
         <key key="operator" value="АО «СитиБайк»" />
         <key key="seasonal" value="spring;summer;autumn" />
-	<link href="https://velobike.ru/parkings/" text="Official website (place locator)" ru.text="Ссылка на сайт (места расположения станций проката)" />
+        <link href="https://velobike.ru/parkings/" text="Official website (place locator)" ru.text="Ссылка на сайт (места расположения станций проката)" />
       </item>
       <item name="Samocat kick-scooter rental point" ru.name="Пункт проката электросамокатов Samokat" type="node" preset_name_label="true">
         <space />
