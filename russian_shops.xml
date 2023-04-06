@@ -611,28 +611,6 @@
         <link href="https://double-b.ru/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
-      <item name="Dunkin' Donuts" ru.name="Данкин Донатс" type="node,closedway,multipolygon" preset_name_label="true">
-        <space />
-        <reference ref="phone" />
-        <combo key="opening_hours" text="Opening Hours" values="Mo-Su 10:00-22:00,Mo-Su 10:00-23:00" />
-        <key key="amenity" value="cafe" />
-        <key key="brand" value="Dunkin' Donuts" />
-        <key key="brand:wikidata" value="Q847743" />
-        <key key="brand:wikipedia" value="ru:Dunkin’ Donuts" />
-        <key key="contact:facebook" value="https://www.facebook.com/DunkinDonutsRussia" />
-        <key key="contact:instagram" value="https://www.instagram.com/dunkindonutsrussia" />
-        <key key="contact:vk" value="https://vk.com/dunkindonuts_ru" />
-        <key key="contact:website" value="http://dunkindonutsmoscow.ru" />
-        <key key="cuisine" value="donut" />
-        <key key="delivery" value="yes" />
-        <key key="diet:vegetarian" value="no" />
-        <key key="name" value="Dunkin' Donuts" />
-        <key key="name:en" value="Dunkin' Donuts" />
-        <key key="name:ru" value="Данкин Донатс" />
-        <key key="takeaway" value="yes" />
-        <link href="http://dunkindonutsmoscow.ru/ru/stores" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
-      </item>
       <item name="Dodo Pizza" ru.name="Додо Пицца" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-23:00,Mo-Su 10:00-23:00,Mo-Su 10:00-22:00" />
@@ -1072,29 +1050,6 @@
         <key key="name:ru" value="Авоська" />
         <key key="operator" value="ООО &quot;Торговый дом &quot;Провиант&quot;" />
         <link href="https://avoska.ru/shops/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="wheelchair_address" />
-      </item>
-      <item name="Billa" ru.name="Билла" type="node,closedway,multipolygon" preset_name_label="true">
-        <space />
-        <combo key="contact:phone" text="Phone number" values="+7 800 3337500,+7 495 7857500" default="+7 800 3337500" />
-        <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 08:00-23:00,Mo-Su 09:00-22:00" />
-        <key key="brand" value="Billa" />
-        <key key="brand:wikidata" value="Q537781" />
-        <key key="brand:wikipedia" value="ru:Billa" />
-        <key key="contact:email" value="mail@billa.ru" />
-        <key key="contact:facebook" value="https://www.facebook.com/billa.ru" />
-        <key key="contact:fax" value="+7 495 7857501" />
-        <key key="contact:instagram" value="https://www.instagram.com/billarussia" />
-        <key key="contact:ok" value="https://ok.ru/group/53124549640396" />
-        <key key="contact:vk" value="https://vk.com/billarussia" />
-        <key key="contact:website" value="https://www.billa.ru" />
-        <key key="contact:youtube" value="https://www.youtube.com/channel/UCSx84zsrpnikJX2PDnOYbMA" />
-        <key key="name" value="Billa" />
-        <key key="name:en" value="Billa" />
-        <key key="name:ru" value="Билла" />
-        <key key="operator" value="ООО &quot;Билла&quot;" />
-        <key key="shop" value="supermarket" />
-        <link href="https://www.billa.ru/magaziny" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
       <item name="Verniy" ru.name="Верный" type="node,closedway,multipolygon" preset_name_label="true">
