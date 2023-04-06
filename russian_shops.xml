@@ -3,7 +3,7 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://josm.openstreetmap.de/tagging-preset-1.0 tagging-preset.xsd"
   author="literan and others"
-  version="2.0_2022-12-04_1"
+  version="2.0_2023-04-06_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   icon="https://upload.wikimedia.org/wikipedia/commons/d/db/Twemoji_1f1f7-1f1fa.svg"
   shortdescription="Russian POIs"
@@ -611,28 +611,6 @@
         <link href="https://double-b.ru/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
-      <item name="Dunkin' Donuts" ru.name="Данкин Донатс" type="node,closedway,multipolygon" preset_name_label="true">
-        <space />
-        <reference ref="phone" />
-        <combo key="opening_hours" text="Opening Hours" values="Mo-Su 10:00-22:00,Mo-Su 10:00-23:00" />
-        <key key="amenity" value="cafe" />
-        <key key="brand" value="Dunkin' Donuts" />
-        <key key="brand:wikidata" value="Q847743" />
-        <key key="brand:wikipedia" value="ru:Dunkin’ Donuts" />
-        <key key="contact:facebook" value="https://www.facebook.com/DunkinDonutsRussia" />
-        <key key="contact:instagram" value="https://www.instagram.com/dunkindonutsrussia" />
-        <key key="contact:vk" value="https://vk.com/dunkindonuts_ru" />
-        <key key="contact:website" value="http://dunkindonutsmoscow.ru" />
-        <key key="cuisine" value="donut" />
-        <key key="delivery" value="yes" />
-        <key key="diet:vegetarian" value="no" />
-        <key key="name" value="Dunkin' Donuts" />
-        <key key="name:en" value="Dunkin' Donuts" />
-        <key key="name:ru" value="Данкин Донатс" />
-        <key key="takeaway" value="yes" />
-        <link href="http://dunkindonutsmoscow.ru/ru/stores" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
-      </item>
       <item name="Dodo Pizza" ru.name="Додо Пицца" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-23:00,Mo-Su 10:00-23:00,Mo-Su 10:00-22:00" />
@@ -840,27 +818,22 @@
         <link href="http://xn--80a4abej.xn--p1ai/karta/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
-      <item name="Starbucks" ru.name="Старбакс" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Stars Coffee" ru.name="Старс Кофе" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
-        <combo key="contact:phone" text="Phone number" default="+7 499 2704040" />
+        <combo key="contact:phone" text="Phone number" default="+7 991 5555222" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 08:00-23:00,Mo-Fr 07:00-23:00; Sa-Su 10:00-23:00" />
         <key key="amenity" value="cafe" />
-        <key key="brand" value="Старбакс" />
-        <key key="brand:wikidata" value="Q37158" />
-        <key key="brand:wikipedia" value="ru:Starbucks" />
-        <key key="contact:email" value="csd@starbuckscoffee.ru" />
-        <key key="contact:facebook" value="https://www.facebook.com/StarbucksRussia" />
-        <key key="contact:instagram" value="https://www.instagram.com/starbucksrussia" />
-        <key key="contact:twitter" value="https://twitter.com/StarbucksRussia" />
-        <key key="contact:website" value="http://www.starbucks.ru" />
+        <key key="brand" value="Stars Coffee" />
+        <key key="contact:email" value="info@stars-coffee.ru" />
+        <key key="contact:instagram" value="https://www.instagram.com/starscoffee_official" />
+        <key key="contact:vk" value="https://vk.com/starscoffee_official" />
+        <key key="contact:website" value="https://stars-coffee.ru/" />
         <key key="cuisine" value="coffee_shop" />
         <key key="diet:vegetarian" value="no" />
         <key key="drink:coffee" value="yes" />
-        <key key="name" value="Старбакс" />
-        <key key="name:en" value="Starbucks" />
-        <key key="name:ru" value="Старбакс" />
+        <key key="name" value="Stars Coffee" />
+        <key key="name:en" value="Stars Coffee" />
         <key key="takeaway" value="yes" />
-        <link href="https://www.starbucks.ru/store-locator/search/location/Moscow%2C%20Russia" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
       <item name="Stardogs" ru.name="Стардогs" type="node,closedway,multipolygon" preset_name_label="true">
@@ -1077,29 +1050,6 @@
         <key key="name:ru" value="Авоська" />
         <key key="operator" value="ООО &quot;Торговый дом &quot;Провиант&quot;" />
         <link href="https://avoska.ru/shops/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="wheelchair_address" />
-      </item>
-      <item name="Billa" ru.name="Билла" type="node,closedway,multipolygon" preset_name_label="true">
-        <space />
-        <combo key="contact:phone" text="Phone number" values="+7 800 3337500,+7 495 7857500" default="+7 800 3337500" />
-        <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 08:00-23:00,Mo-Su 09:00-22:00" />
-        <key key="brand" value="Billa" />
-        <key key="brand:wikidata" value="Q537781" />
-        <key key="brand:wikipedia" value="ru:Billa" />
-        <key key="contact:email" value="mail@billa.ru" />
-        <key key="contact:facebook" value="https://www.facebook.com/billa.ru" />
-        <key key="contact:fax" value="+7 495 7857501" />
-        <key key="contact:instagram" value="https://www.instagram.com/billarussia" />
-        <key key="contact:ok" value="https://ok.ru/group/53124549640396" />
-        <key key="contact:vk" value="https://vk.com/billarussia" />
-        <key key="contact:website" value="https://www.billa.ru" />
-        <key key="contact:youtube" value="https://www.youtube.com/channel/UCSx84zsrpnikJX2PDnOYbMA" />
-        <key key="name" value="Billa" />
-        <key key="name:en" value="Billa" />
-        <key key="name:ru" value="Билла" />
-        <key key="operator" value="ООО &quot;Билла&quot;" />
-        <key key="shop" value="supermarket" />
-        <link href="https://www.billa.ru/magaziny" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
       <item name="Verniy" ru.name="Верный" type="node,closedway,multipolygon" preset_name_label="true">
@@ -1434,6 +1384,20 @@
         <key key="name:ru" value="У Палыча" />
         <key key="shop" value="convenience" />
         <link href="https://palich.ru/shops/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <reference ref="wheelchair_address" />
+      </item>
+      <item name="Chizhik" ru.name="Чижик" type="node,closedway,multipolygon" preset_name_label="true">
+        <space />
+        <reference ref="shop_type" />
+        <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-21:00,Mo-Su 10:00-22:00,Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00" />
+        <key key="brand" value="Чижик" />
+        <key key="contact:ok" value="https://ok.ru/group/59102867030124" />
+        <key key="contact:vk" value="https://vk.com/chizhik.club" />
+        <key key="contact:website" value="https://chizhik.club/" />
+        <key key="contact:telegram" value="https://t.me/chizhikmagazin" />
+        <key key="name" value="Чижик" />
+        <key key="name:ru" value="Чижик" />
+        <link href="https://chizhik.club/shops" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
       <item name="Yarche" ru.name="Ярче!" type="node,closedway,multipolygon" preset_name_label="true">
@@ -2712,10 +2676,7 @@
         <combo key="name" text="Name" default="N-ский военкомат" />
         <combo key="official_name" text="Official name" ru.text="Полное официальное название" default="N-ский военный комиссариат N-ской области" />
         <reference ref="phone_oh2_wheelchair_address" />
-        <key key="contact:facebook" value="https://www.facebook.com/mod.mil.rus" />
-        <key key="contact:instagram" value="https://www.instagram.com/mil_ru" />
         <key key="contact:ok" value="https://ok.ru/mil" />
-        <key key="contact:twitter" value="https://twitter.com/mod_russia" />
         <key key="contact:vk" value="https://vk.com/mil" />
         <key key="contact:website" value="http://mil.ru" />
         <key key="contact:youtube" value="https://www.youtube.com/channel/UCQGqX5Ndpm4snE0NTjyOJnA" />
@@ -2735,9 +2696,8 @@
         <combo key="name" text="Name" default="Отдел № ... Управления Федерального казначейства" />
         <combo key="official_name" text="Official name" ru.text="Полное официальное название" default="Отдел № ... Управления Федерального казначейства по ... ской области" />
         <reference ref="phone_oh2_wheelchair_address" />
-        <key key="contact:facebook" value="https://www.facebook.com/FederalTreasury" />
-        <key key="contact:livejournal" value="https://roskazna.livejournal.com" />
-        <key key="contact:twitter" value="https://twitter.com/FederalTreasury" />
+        <key key="contact:telegram" value="https://t.me/TreasuryofRussia" />
+        <key key="contact:vk" value="https://vk.com/treasuryofrussia" />
         <key key="contact:website" value="https://roskazna.ru" />
         <key key="government" value="treasury" />
         <key key="office" value="government" />
@@ -2747,27 +2707,23 @@
         <combo key="name" text="Name" default="ФНС России по г. ... ской области" />
         <combo key="official_name" text="Official name" ru.text="Полное официальное название" default="Инспекция Федеральной налоговой службы России по г. ... ской области" />
         <reference ref="phone_oh2_wheelchair_address" />
-        <key key="contact:facebook" value="https://www.facebook.com/nalog.ru" />
-        <key key="contact:twitter" value="https://twitter.com/nalog__ru" />
+        <key key="contact:telegram" value="https://t.me/nalog_gov_ru" />
         <key key="contact:vk" value="https://vk.com/nalog__ru" />
         <key key="contact:website" value="https://www.nalog.ru" />
         <key key="government" value="tax" />
         <key key="office" value="government" />
       </item>
-      <item name="Пенсионный фонд" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Социальный фонд России" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
-        <combo key="name" text="Name" default="Главное управление ПФР № по г. Москве и Московской области. Управление № " />
-        <combo key="official_name" text="Official name" ru.text="Полное официальное название" default="Главное управление Пенсионного фонда России № по г. Москве и Московской области. Управление №" />
+        <combo key="name" text="Name" default="Социальный фонд России" />
         <reference ref="phone_oh2_wheelchair_address" />
-        <key key="contact:facebook" value="https://www.facebook.com/PensionFondRF" />
-        <key key="contact:livejournal" value="https://pensionnij-fond.livejournal.com" />
-        <key key="contact:ok" value="https://ok.ru/pensionfond" />
-        <key key="contact:twitter" value="https://twitter.com/pension_fond" />
-        <key key="contact:vk" value="https://vk.com/pension_fond" />
-        <key key="contact:website" value="https://www.pfrf.ru" />
-        <key key="contact:youtube" value="https://www.youtube.com/user/pensionnijfond" />
+        <key key="contact:ok" value="https://ok.ru/fssrussia" />
+        <key key="contact:telegram" value="https://t.me/FSSinfo" />
+        <key key="contact:vk" value="https://vk.com/fssrussia" />
+        <key key="contact:website" value="https://sfr.gov.ru/" />
         <key key="government" value="pension_fund" />
         <key key="office" value="government" />
+        <combo key="opening_hours" text="Opening Hours" values="Mo-Th 09:00-18:00; Fr 09:00-16:45,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-12:30\,13:15-18:00; Fr 09:00-12:30\,13:15-17:00" />
       </item>
       <item name="Russian Post" ru.name="Почтовое отделение АО &quot;Почта России&quot;" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/Russian_Post.svg">
         <space />
@@ -2777,14 +2733,12 @@
         <text key="ref" text="Postal code/Reference" ru.text="Индекс/номер отделения" />
         <combo key="name" text="Name" ru.text="Название отделения" values="Москва 127000" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-12:30\,13:15-18:00; Fr 09:00-12:30\,13:15-17:00" />
-        <combo key="contact:phone" text="Phone number" values="+7 800 1000000" default="+7 800 1000000" />
+        <combo key="contact:phone" text="Phone number" values="+7 800 1000001" default="+7 800 1000001" />
         <key key="amenity" value="post_office" />
         <key key="brand" value="Почта России" />
         <key key="contact:email" value="client@russianpost.ru" />
-        <key key="contact:facebook" value="https://www.facebook.com/ruspost" />
-        <key key="contact:instagram" value="https://www.instagram.com/ruspostofficial" />
         <key key="contact:ok" value="https://ok.ru/ruspostofficial" />
-        <key key="contact:twitter" value="https://twitter.com/ruspostofficial" />
+        <key key="contact:telegram" value="https://t.me/napochte" />
         <key key="contact:vk" value="https://vk.com/russianpost" />
         <key key="contact:website" value="https://www.pochta.ru" />
         <key key="operator" value="АО «Почта России»" />
@@ -2799,11 +2753,8 @@
         <combo key="name" text="Name" default="Прокуратура n-ского района/области" />
         <combo key="contact:website" text="Website" default="https://www.genproc.gov.ru" />
         <reference ref="phone_oh2_wheelchair_address" />
-        <key key="contact:facebook" value="https://www.facebook.com/genprocrf" />
-        <key key="contact:instagram" value="https://www.instagram.com/genprocrf" />
         <key key="contact:ok" value="https://ok.ru/genprocrf" />
         <key key="contact:telegram" value="https://telegram.me/genprocrf" />
-        <key key="contact:twitter" value="https://twitter.com/Genproc" />
         <key key="contact:vk" value="https://vk.com/genprocrf" />
         <key key="contact:youtube" value="https://www.youtube.com/user/genprocrf" />
         <key key="government" value="prosecutor" />
@@ -2814,9 +2765,6 @@
         <combo key="name" text="Name" default="Следственный комитет n-ского района/области" />
         <combo key="contact:website" text="Website" default="https://sledcom.ru" />
         <reference ref="phone_oh2_wheelchair_address" />
-        <key key="contact:facebook" value="https://ru-ru.facebook.com/sledcomru" />
-        <key key="contact:instagram" value="https://www.instagram.com/sledcom_rf" />
-        <key key="contact:twitter" value="https://twitter.com/sledcom_rf" />
         <key key="contact:vk" value="https://vk.com/sledcomru" />
         <key key="contact:youtube" value="https://www.youtube.com/channel/UCOiAwKQuFMdJuK7wwDIoKpA" />
         <key key="government" value="investigation" />
@@ -2827,9 +2775,6 @@
         <combo key="name" text="Name" default="Отдел государственной статистики в N-ском районе" />
         <combo key="contact:website" text="Website" default="https://www.gks.ru" />
         <reference ref="phone_oh2_wheelchair_address" />
-        <key key="contact:facebook" value="https://www.facebook.com/rosstatistika" />
-        <key key="contact:livejournal" value="https://rosstatistika.livejournal.com" />
-        <key key="contact:twitter" value="https://twitter.com/rosstatistika" />
         <key key="contact:vk" value="https://vk.com/rosstatistika" />
         <key key="government" value="statistics" />
         <key key="office" value="government" />
@@ -2864,7 +2809,7 @@
         <space />
         <combo key="name" text="Name" default="Отдел по вопросам миграции ГУ МВД России по г. n / n-скому району" />
         <reference ref="phone_oh2_wheelchair_address" />
-        <key key="contact:website" value="https://guvm.mvd.ru" />
+        <key key="contact:website" value="https://xn--b1agjhrfhd.xn--b1ab2a0a.xn--b1aew.xn--p1ai/" />
         <key key="government" value="migration" />
         <key key="office" value="government" />
       </item>
@@ -3158,7 +3103,7 @@
         <key key="amenity" value="hospital" />
         <key key="health_facility:type" value="hospital" />
         <key key="health_specialty:gynaecology" value="main" />
-        <key key="healthcare" value="hospital" />
+        <key key="healthcare" value="birthing_centre" />
         <key key="medical_system:western" value="yes" />
         <key key="provided_for:female" value="yes" />
         <reference ref="name_website_phone_level_wheelchair_address" />
