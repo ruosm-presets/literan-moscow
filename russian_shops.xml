@@ -3,7 +3,7 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://josm.openstreetmap.de/tagging-preset-1.0 tagging-preset.xsd"
   author="literan and others"
-  version="2.0_2022-12-04_1"
+  version="2.0_2023-04-06_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   icon="https://upload.wikimedia.org/wikipedia/commons/d/db/Twemoji_1f1f7-1f1fa.svg"
   shortdescription="Russian POIs"
@@ -840,27 +840,22 @@
         <link href="http://xn--80a4abej.xn--p1ai/karta/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
-      <item name="Starbucks" ru.name="Старбакс" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Stars Coffee" ru.name="Старс Кофе" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
-        <combo key="contact:phone" text="Phone number" default="+7 499 2704040" />
+        <combo key="contact:phone" text="Phone number" default="+7 991 5555222" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 08:00-23:00,Mo-Fr 07:00-23:00; Sa-Su 10:00-23:00" />
         <key key="amenity" value="cafe" />
-        <key key="brand" value="Старбакс" />
-        <key key="brand:wikidata" value="Q37158" />
-        <key key="brand:wikipedia" value="ru:Starbucks" />
-        <key key="contact:email" value="csd@starbuckscoffee.ru" />
-        <key key="contact:facebook" value="https://www.facebook.com/StarbucksRussia" />
-        <key key="contact:instagram" value="https://www.instagram.com/starbucksrussia" />
-        <key key="contact:twitter" value="https://twitter.com/StarbucksRussia" />
-        <key key="contact:website" value="http://www.starbucks.ru" />
+        <key key="brand" value="Stars Coffee" />
+        <key key="contact:email" value="info@stars-coffee.ru" />
+        <key key="contact:instagram" value="https://www.instagram.com/starscoffee_official" />
+        <key key="contact:vk" value="https://vk.com/starscoffee_official" />
+        <key key="contact:website" value="https://stars-coffee.ru/" />
         <key key="cuisine" value="coffee_shop" />
         <key key="diet:vegetarian" value="no" />
         <key key="drink:coffee" value="yes" />
-        <key key="name" value="Старбакс" />
-        <key key="name:en" value="Starbucks" />
-        <key key="name:ru" value="Старбакс" />
+        <key key="name" value="Stars Coffee" />
+        <key key="name:en" value="Stars Coffee" />
         <key key="takeaway" value="yes" />
-        <link href="https://www.starbucks.ru/store-locator/search/location/Moscow%2C%20Russia" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
       <item name="Stardogs" ru.name="Стардогs" type="node,closedway,multipolygon" preset_name_label="true">
