@@ -3153,7 +3153,7 @@
         <key key="amenity" value="hospital" />
         <key key="health_facility:type" value="hospital" />
         <key key="health_specialty:gynaecology" value="main" />
-        <key key="healthcare" value="hospital" />
+        <key key="healthcare" value="birthing_centre" />
         <key key="medical_system:western" value="yes" />
         <key key="provided_for:female" value="yes" />
         <reference ref="name_website_phone_level_wheelchair_address" />
