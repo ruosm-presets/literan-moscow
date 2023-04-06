@@ -1431,6 +1431,20 @@
         <link href="https://palich.ru/shops/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
+      <item name="Chizhik" ru.name="Чижик" type="node,closedway,multipolygon" preset_name_label="true">
+        <space />
+        <reference ref="shop_type" />
+        <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-21:00,Mo-Su 10:00-22:00,Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00" />
+        <key key="brand" value="Чижик" />
+        <key key="contact:ok" value="https://ok.ru/group/59102867030124" />
+        <key key="contact:vk" value="https://vk.com/chizhik.club" />
+        <key key="contact:website" value="https://chizhik.club/" />
+        <key key="contact:telegram" value="https://t.me/chizhikmagazin" />
+        <key key="name" value="Чижик" />
+        <key key="name:ru" value="Чижик" />
+        <link href="https://chizhik.club/shops" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <reference ref="wheelchair_address" />
+      </item>
       <item name="Yarche" ru.name="Ярче!" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <reference ref="phone" />
