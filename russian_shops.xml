@@ -2676,10 +2676,7 @@
         <combo key="name" text="Name" default="N-ский военкомат" />
         <combo key="official_name" text="Official name" ru.text="Полное официальное название" default="N-ский военный комиссариат N-ской области" />
         <reference ref="phone_oh2_wheelchair_address" />
-        <key key="contact:facebook" value="https://www.facebook.com/mod.mil.rus" />
-        <key key="contact:instagram" value="https://www.instagram.com/mil_ru" />
         <key key="contact:ok" value="https://ok.ru/mil" />
-        <key key="contact:twitter" value="https://twitter.com/mod_russia" />
         <key key="contact:vk" value="https://vk.com/mil" />
         <key key="contact:website" value="http://mil.ru" />
         <key key="contact:youtube" value="https://www.youtube.com/channel/UCQGqX5Ndpm4snE0NTjyOJnA" />
@@ -2699,9 +2696,8 @@
         <combo key="name" text="Name" default="Отдел № ... Управления Федерального казначейства" />
         <combo key="official_name" text="Official name" ru.text="Полное официальное название" default="Отдел № ... Управления Федерального казначейства по ... ской области" />
         <reference ref="phone_oh2_wheelchair_address" />
-        <key key="contact:facebook" value="https://www.facebook.com/FederalTreasury" />
-        <key key="contact:livejournal" value="https://roskazna.livejournal.com" />
-        <key key="contact:twitter" value="https://twitter.com/FederalTreasury" />
+        <key key="contact:telegram" value="https://t.me/TreasuryofRussia" />
+        <key key="contact:vk" value="https://vk.com/treasuryofrussia" />
         <key key="contact:website" value="https://roskazna.ru" />
         <key key="government" value="treasury" />
         <key key="office" value="government" />
@@ -2711,8 +2707,7 @@
         <combo key="name" text="Name" default="ФНС России по г. ... ской области" />
         <combo key="official_name" text="Official name" ru.text="Полное официальное название" default="Инспекция Федеральной налоговой службы России по г. ... ской области" />
         <reference ref="phone_oh2_wheelchair_address" />
-        <key key="contact:facebook" value="https://www.facebook.com/nalog.ru" />
-        <key key="contact:twitter" value="https://twitter.com/nalog__ru" />
+        <key key="contact:telegram" value="https://t.me/nalog_gov_ru" />
         <key key="contact:vk" value="https://vk.com/nalog__ru" />
         <key key="contact:website" value="https://www.nalog.ru" />
         <key key="government" value="tax" />
@@ -2742,10 +2737,8 @@
         <key key="amenity" value="post_office" />
         <key key="brand" value="Почта России" />
         <key key="contact:email" value="client@russianpost.ru" />
-        <key key="contact:facebook" value="https://www.facebook.com/ruspost" />
-        <key key="contact:instagram" value="https://www.instagram.com/ruspostofficial" />
         <key key="contact:ok" value="https://ok.ru/ruspostofficial" />
-        <key key="contact:twitter" value="https://twitter.com/ruspostofficial" />
+        <key key="contact:telegram" value="https://t.me/napochte" />
         <key key="contact:vk" value="https://vk.com/russianpost" />
         <key key="contact:website" value="https://www.pochta.ru" />
         <key key="operator" value="АО «Почта России»" />
@@ -2760,11 +2753,8 @@
         <combo key="name" text="Name" default="Прокуратура n-ского района/области" />
         <combo key="contact:website" text="Website" default="https://www.genproc.gov.ru" />
         <reference ref="phone_oh2_wheelchair_address" />
-        <key key="contact:facebook" value="https://www.facebook.com/genprocrf" />
-        <key key="contact:instagram" value="https://www.instagram.com/genprocrf" />
         <key key="contact:ok" value="https://ok.ru/genprocrf" />
         <key key="contact:telegram" value="https://telegram.me/genprocrf" />
-        <key key="contact:twitter" value="https://twitter.com/Genproc" />
         <key key="contact:vk" value="https://vk.com/genprocrf" />
         <key key="contact:youtube" value="https://www.youtube.com/user/genprocrf" />
         <key key="government" value="prosecutor" />
@@ -2775,9 +2765,6 @@
         <combo key="name" text="Name" default="Следственный комитет n-ского района/области" />
         <combo key="contact:website" text="Website" default="https://sledcom.ru" />
         <reference ref="phone_oh2_wheelchair_address" />
-        <key key="contact:facebook" value="https://ru-ru.facebook.com/sledcomru" />
-        <key key="contact:instagram" value="https://www.instagram.com/sledcom_rf" />
-        <key key="contact:twitter" value="https://twitter.com/sledcom_rf" />
         <key key="contact:vk" value="https://vk.com/sledcomru" />
         <key key="contact:youtube" value="https://www.youtube.com/channel/UCOiAwKQuFMdJuK7wwDIoKpA" />
         <key key="government" value="investigation" />
@@ -2788,9 +2775,6 @@
         <combo key="name" text="Name" default="Отдел государственной статистики в N-ском районе" />
         <combo key="contact:website" text="Website" default="https://www.gks.ru" />
         <reference ref="phone_oh2_wheelchair_address" />
-        <key key="contact:facebook" value="https://www.facebook.com/rosstatistika" />
-        <key key="contact:livejournal" value="https://rosstatistika.livejournal.com" />
-        <key key="contact:twitter" value="https://twitter.com/rosstatistika" />
         <key key="contact:vk" value="https://vk.com/rosstatistika" />
         <key key="government" value="statistics" />
         <key key="office" value="government" />
@@ -2825,7 +2809,7 @@
         <space />
         <combo key="name" text="Name" default="Отдел по вопросам миграции ГУ МВД России по г. n / n-скому району" />
         <reference ref="phone_oh2_wheelchair_address" />
-        <key key="contact:website" value="https://guvm.mvd.ru" />
+        <key key="contact:website" value="https://xn--b1agjhrfhd.xn--b1ab2a0a.xn--b1aew.xn--p1ai/" />
         <key key="government" value="migration" />
         <key key="office" value="government" />
       </item>
