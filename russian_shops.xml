@@ -2718,20 +2718,17 @@
         <key key="government" value="tax" />
         <key key="office" value="government" />
       </item>
-      <item name="Пенсионный фонд" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Социальный фонд России" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
-        <combo key="name" text="Name" default="Главное управление ПФР № по г. Москве и Московской области. Управление № " />
-        <combo key="official_name" text="Official name" ru.text="Полное официальное название" default="Главное управление Пенсионного фонда России № по г. Москве и Московской области. Управление №" />
+        <combo key="name" text="Name" default="Социальный фонд России" />
         <reference ref="phone_oh2_wheelchair_address" />
-        <key key="contact:facebook" value="https://www.facebook.com/PensionFondRF" />
-        <key key="contact:livejournal" value="https://pensionnij-fond.livejournal.com" />
-        <key key="contact:ok" value="https://ok.ru/pensionfond" />
-        <key key="contact:twitter" value="https://twitter.com/pension_fond" />
-        <key key="contact:vk" value="https://vk.com/pension_fond" />
-        <key key="contact:website" value="https://www.pfrf.ru" />
-        <key key="contact:youtube" value="https://www.youtube.com/user/pensionnijfond" />
+        <key key="contact:ok" value="https://ok.ru/fssrussia" />
+        <key key="contact:telegram" value="https://t.me/FSSinfo" />
+        <key key="contact:vk" value="https://vk.com/fssrussia" />
+        <key key="contact:website" value="https://sfr.gov.ru/" />
         <key key="government" value="pension_fund" />
         <key key="office" value="government" />
+        <combo key="opening_hours" text="Opening Hours" values="Mo-Th 09:00-18:00; Fr 09:00-16:45,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-12:30\,13:15-18:00; Fr 09:00-12:30\,13:15-17:00" />
       </item>
       <item name="Russian Post" ru.name="Почтовое отделение АО &quot;Почта России&quot;" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/Russian_Post.svg">
         <space />
@@ -2741,7 +2738,7 @@
         <text key="ref" text="Postal code/Reference" ru.text="Индекс/номер отделения" />
         <combo key="name" text="Name" ru.text="Название отделения" values="Москва 127000" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-12:30\,13:15-18:00; Fr 09:00-12:30\,13:15-17:00" />
-        <combo key="contact:phone" text="Phone number" values="+7 800 1000000" default="+7 800 1000000" />
+        <combo key="contact:phone" text="Phone number" values="+7 800 1000001" default="+7 800 1000001" />
         <key key="amenity" value="post_office" />
         <key key="brand" value="Почта России" />
         <key key="contact:email" value="client@russianpost.ru" />
