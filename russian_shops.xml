@@ -1886,6 +1886,23 @@
         <reference ref="fitting_room" />
         <reference ref="level_wheelchair_address" />
       </item>
+      <item name="Yandex.market" ru.name="Яндекс.Маркет" type="node,closedway,multipolygon" preset_name_label="true">
+        <space />
+        <reference ref="oh3" />
+        <key key="brand" value="Яндекс.Маркет" />
+        <key key="brand:wikidata" value="Q4537982" />
+        <key key="brand:wikipedia" value="ru:Яндекс_Маркет" />
+        <key key="contact:telegram" value="yndx_market" />
+        <key key="contact:phone" value="+7 495 4143000" />
+        <key key="contact:vk" value="https://vk.com/yandex.market" />
+        <key key="contact:website" value="https://market.yandex.ru" />
+        <key key="name" value="Яндекс.Маркет" />
+        <key key="name:en" value="Yandex.market" />
+        <key key="name:ru" value="Яндекс.Маркет" />
+        <key key="shop" value="outpost" />
+        <reference ref="fitting_room" />
+        <reference ref="level_wheelchair_address" />
+      </item>
       <separator />
       <item name="5post" ru.name="Постамат 5post" type="node" preset_name_label="true">
         <space />
@@ -1997,7 +2014,7 @@
         <link href="https://pochtomat.ru/map/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
-      <item name="Yandex.market" ru.name="Постамат Яндекс.Маркет" type="node" preset_name_label="true">
+      <item name="Yandex.market postamat" ru.name="Постамат Яндекс.Маркет" type="node" preset_name_label="true">
         <space />
         <reference ref="oh3" />
         <text key="ref" text="Reference" ru.text="Номер постамата" />
