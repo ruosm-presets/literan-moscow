@@ -1891,7 +1891,7 @@
         <reference ref="oh3" />
         <key key="brand" value="Яндекс.Маркет" />
         <key key="brand:wikidata" value="Q4537982" />
-        <key key="brand:wikipedia" value="ru:Яндекс_Маркет" />
+        <key key="brand:wikipedia" value="ru:Яндекс Маркет" />
         <key key="contact:telegram" value="yndx_market" />
         <key key="contact:phone" value="+7 495 4143000" />
         <key key="contact:vk" value="https://vk.com/yandex.market" />
@@ -2019,6 +2019,8 @@
         <reference ref="oh3" />
         <text key="ref" text="Reference" ru.text="Номер постамата" />
         <key key="brand" value="Яндекс.Маркет" />
+        <key key="brand:wikidata" value="Q4537982" />
+        <key key="brand:wikipedia" value="ru:Яндекс Маркет" />
         <key key="contact:phone" value="+7 495 4143000" />
         <key key="contact:website" value="https://market.yandex.ru" />
         <key key="name" value="Яндекс.Маркет" />
