@@ -3551,7 +3551,7 @@
         <key key="vending" value="parking_tickets" />
         <link href="http://parking.mos.ru" text="Official website (place locator)" ru.text="Ссылка на сайт (номера паркоматов)" />
       </item>
-      <item name="Clothes dryer" ru.name="Площадка для сушки белья" type="node,closedway,multipolygon" icon="https://image.flaticon.com/icons/png/512/47/47421.png" preset_name_label="true">
+      <item name="Clothes dryer" ru.name="Площадка для сушки белья" type="node,closedway,multipolygon" preset_name_label="true">
         <!-- https://d30y9cdsu7xlg0.cloudfront.net/png/174655-200.png NOTE: второй вариант иконки -->
         <space />
         <key key="amenity" value="clothes_dryer" />
