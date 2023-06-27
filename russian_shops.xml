@@ -3,7 +3,7 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://josm.openstreetmap.de/tagging-preset-1.0 tagging-preset.xsd"
   author="literan and others"
-  version="2.0_2023-04-06_1"
+  version="2.0_2023-06-27_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   icon="https://upload.wikimedia.org/wikipedia/commons/d/db/Twemoji_1f1f7-1f1fa.svg"
   shortdescription="Russian POIs"
@@ -441,7 +441,7 @@
         <key key="contact:facebook" value="https://www.facebook.com/cofixrussia" />
         <key key="contact:instagram" value="https://www.instagram.com/cofixrussia" />
         <key key="contact:vk" value="https://vk.com/cofixrussia" />
-        <key key="contact:website" value="https://www.cofix.ru" />
+        <key key="contact:website" value="https://www.cofix.global" />
         <key key="cuisine" value="coffee_shop" />
         <key key="delivery" value="no" />
         <key key="name" value="Cofix" />
