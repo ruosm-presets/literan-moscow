@@ -3323,6 +3323,130 @@
     </group>
     <separator />
     <group name="Urban units" ru.name="Городская инфраструктура" icon="https://upload.wikimedia.org/wikipedia/commons/c/ce/Fxemoji_u1F3E2.svg">
+      <item name="Public transport tickets shop" ru.name="Киоск &quot;Проездные билеты&quot; (общественный транспорт)" type="node,closedway,multipolygon" preset_name_label="true">
+        <space />
+        <combo key="contact:website" text="Website" default="http://www.mosgortrans.ru" />
+        <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-13:00\,13:45-17:00; Fr 09:00-13:00\,13:45-15:45" />
+        <combo key="operator" text="Operator" default="ГУП «Мосгортранс»" />
+        <key key="building" value="kiosk" />
+        <key key="building:levels" value="1" />
+        <key key="shop" value="ticket" />
+        <key key="tickets:public_transport" value="yes" />
+        <preset_link preset_name="Address" />
+      </item>
+      <item name="Boat rental" ru.name="Лодочная станция (прокат плавсредств)" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/4/48/Twemoji_26f5.svg" preset_name_label="true">
+        <space />
+        <reference ref="name" />
+        <reference ref="oh1" />
+        <text key="capacity" text="Capacity" ru.text="Количество плавсредств" length="4" />
+        <reference ref="operator" />
+        <key key="amenity" value="boat_rental" />
+        <space />
+        <label text="Boat types" ru.text="Виды плавсредств" />
+        <checkgroup columns="2">
+          <check key="canoe_rental" text="canoes" ru.text="каноэ" />
+          <check key="dinghy_rental" text="rowing boats" ru.text="шлюпка (вёсла, моторчик и т.д.)" />
+          <check key="houseboat_rental" text="houseboat" ru.text="домик на воде" />
+          <check key="jetski_rental" text="jetski" ru.text="водный мотоцикл" />
+          <check key="kayak_rental" text="kayaks" ru.text="каяк" />
+          <check key="motorboat_rental" text="motorboat" ru.text="моторные лодки" />
+          <check key="pedalboat_rental" text="pedalboat" ru.text="катамаран" />
+          <check key="sailboat_rental" text="sailing boats" ru.text="парусная лодка" />
+        </checkgroup>
+        <link wiki="Tag:amenity%3Dboat_rental" />
+        <preset_link preset_name="Address" />
+        <preset_link preset_name="Contact (Schema with 'contact:*' Prefix)" />
+      </item>
+      <item name="Bicycle parking stands" ru.name="Парковка для велосипедов (стойки)" type="node,closedway,multipolygon" preset_name_label="true">
+        <space />
+        <text key="capacity" text="Capacity" ru.text="Вместимость (1 стойка = 2 велика)" length="3" />
+        <key key="amenity" value="bicycle_parking" />
+        <key key="bicycle_parking" value="stands" />
+        <key key="covered" value="no" />
+        <key key="fee" value="no" />
+        <key key="opening_hours" value="24/7" />
+        <key key="supervised" value="no" />
+      </item> <!-- NOTE: всё то же самое прекрасно делается через пункт дефолтного пресета -->      
+      <item name="Kick-scooter parking stands" ru.name="Парковка для самокатов (стойки)" type="node,closedway,multipolygon" preset_name_label="true">
+        <space />
+        <text key="capacity" text="Capacity" ru.text="Вместимость" length="3" />
+        <key key="amenity" value="kick-scooter_parking" />
+        <key key="covered" value="no" />
+        <key key="fee" value="no" />
+        <key key="opening_hours" value="24/7" />
+        <key key="supervised" value="no" />
+      </item>      
+      <item name="Moscow parking meter" ru.name="Паркомат (Москва)" type="node" preset_name_label="true">
+        <space />
+        <text key="ref" text="Reference number" ru.text="Номер паркомата" />
+        <key key="amenity" value="vending_machine" />
+        <key key="contact:facebook" value="https://www.facebook.com/parking.mos.ru" />
+        <key key="contact:phone" value="+7 495 5395454" />
+        <key key="contact:twitter" value="https://twitter.com/parking_mos_ru" />
+        <key key="contact:vk" value="https://vk.com/transportmos" />
+        <key key="contact:website" value="http://parking.mos.ru" />
+        <key key="opening_hours" value="24/7" />
+        <key key="operator" value="ГКУ «Администратор Московского парковочного пространства»" />
+        <key key="payment:cash" value="no" />
+        <key key="payment:credit_cards" value="yes" />
+        <key key="payment:debit_cards" value="yes" />
+        <key key="vending" value="parking_tickets" />
+        <link href="http://parking.mos.ru" text="Official website (place locator)" ru.text="Ссылка на сайт (номера паркоматов)" />
+      </item>
+      <item name="Suburban train tickets shop" ru.name="Пригородная касса (электрички)" type="node,closedway,multipolygon" preset_name_label="true">
+        <space />
+        <combo key="contact:website" text="Website" values="http://www.central-ppk.ru" />
+        <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-13:00\,13:45-17:00; Fr 09:00-13:00\,13:45-15:45" />
+        <combo key="operator" text="Operator" values="ОАО «ЦЕНТРАЛЬНАЯ ППК»" />
+        <key key="shop" value="ticket" />
+        <key key="tickets:suburban_train" value="yes" />
+        <preset_link preset_name="Address" />
+        <preset_link preset_name="Building" />
+      </item>
+      <item name="Velobike bicycle rental point" ru.name="Пункт проката велосипедов Velobike" type="node" preset_name_label="true">
+        <space />
+        <reference ref="ref" />
+        <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-13:00\,13:45-17:00; Fr 09:00-13:00\,13:45-15:45" default="24/7" />
+        <combo key="capacity" text="Вместимость (количество мест для велосипедов)" />
+        <combo key="capacity:electric" text="Вместимость (количество мест для электрических велосипедов)" />
+        <key key="amenity" value="bicycle_rental" />
+        <key key="bicycle_rental" value="docking_station" />
+        <key key="contact:email" value="info@velobike.ru" />
+        <key key="contact:phone" value="+7 495 9664669" />
+        <key key="contact:website" value="https://velobike.ru/" />
+        <key key="fee" value="yes" />
+        <key key="network" value="Велобайк" />
+        <key key="operator" value="АО «СитиБайк»" />
+        <key key="seasonal" value="spring;summer;autumn" />
+        <link href="https://velobike.ru/parkings/" text="Official website (place locator)" ru.text="Ссылка на сайт (места расположения станций проката)" />
+      </item>
+      <item name="Platon gantry" ru.name="Рамка оплаты системы &quot;Платон&quot;" type="node" preset_name_label="true">
+        <space />
+        <reference ref="ref" />
+        <key key="highway" value="toll_gantry" />
+        <key key="contact:phone" value="+7 495 5400202" />
+        <key key="contact:website" value="http://platon.ru" />
+        <key key="network" value="Платон" />
+        <key key="operator" value="ООО &quot;РТ-Инвест Транспортные Системы&quot;" />
+        <key key="toll:hgv_articulated" value="yes" />
+      </item>
+      <item name="Suburban train tickets vending machine" ru.name="Терминал продажи пригородных билетов (электрички)" type="node" preset_name_label="true">
+        <!-- TODO: Нужно определиться между использованием public_transport_tickets:suburban_train=yes или tickets:suburban_train=yes
+        Пока что оставляю оба варианта. Правильней из них первый. Но второй распространенней -->
+        <space />
+        <key key="amenity" value="vending_machine" />
+        <key key="public_transport_tickets:suburban_train" value="yes" />
+        <key key="tickets:suburban_train" value="yes" />
+        <key key="vending" value="public_transport_tickets" />
+        <preset_link preset_name="Payment Methods" />
+      </item>
+      <item name="Public transport tickets vending machine" ru.name="Терминал &quot;Проездные билеты&quot; (общественный транспорт)" type="node" preset_name_label="true">
+        <space />
+        <key key="amenity" value="vending_machine" />
+        <key key="vending" value="public_transport_tickets" />
+        <preset_link preset_name="Payment Methods" />
+      </item>      
+      <separator />
       <item name="Telephone Exchanges" ru.name="Автоматическая телефонная станция (АТС)" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/7/79/Noto_Emoji_KitKat_1f3e2.svg" preset_name_label="true">
         <space />
         <reference ref="operator" />
@@ -3351,16 +3475,6 @@
         <link wiki="Tag:man_made%3Dtower" />
         <link href="https://www.google.ru/maps/@55.8245367,36.9184932,3a,75y,263.57h,116.88t/data=!3m6!1e1!3m4!1smAWF8VNFYQHed3GZ0W0SYA!2e0!7i13312!8i6656" text="Photo" ru.text="Фотография-пример" />
       </item>
-      <item name="Bicycle parking stands" ru.name="Велопарковка (стойки)" type="node,closedway,multipolygon" preset_name_label="true">
-        <space />
-        <text key="capacity" text="Capacity" ru.text="Вместимость (1 стойка = 2 велика)" length="3" />
-        <key key="amenity" value="bicycle_parking" />
-        <key key="bicycle_parking" value="stands" />
-        <key key="covered" value="no" />
-        <key key="fee" value="no" />
-        <key key="opening_hours" value="24/7" />
-        <key key="supervised" value="no" />
-      </item> <!-- NOTE: всё то же самое прекрасно делается через пункт дефолтного пресета -->
       <item name="Subway ventilation kiosk" ru.name="Вентиляционная шахта (киоск) метрополитена" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <reference ref="name" />
@@ -3468,17 +3582,6 @@
         <key key="amenity" value="ice_cream" />
         <preset_link preset_name="Address" />
       </item>
-      <item name="Public transport tickets shop" ru.name="Киоск &quot;Проездные билеты&quot; (общественный транспорт)" type="node,closedway,multipolygon" preset_name_label="true">
-        <space />
-        <combo key="contact:website" text="Website" default="http://www.mosgortrans.ru" />
-        <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-13:00\,13:45-17:00; Fr 09:00-13:00\,13:45-15:45" />
-        <combo key="operator" text="Operator" default="ГУП «Мосгортранс»" />
-        <key key="building" value="kiosk" />
-        <key key="building:levels" value="1" />
-        <key key="shop" value="ticket" />
-        <key key="tickets:public_transport" value="yes" />
-        <preset_link preset_name="Address" />
-      </item>
       <item name="Minor power substation (building)" ru.name="Трансформаторная подстанция (ТП, потребительская; здание)" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/d/d0/Emoji_u26a1.svg" preset_name_label="true">
         <space />
         <reference ref="operator" />
@@ -3499,29 +3602,6 @@
         <key key="street_cabinet" value="power" />
         <key key="substation" value="minor_distribution" />
       </item>
-      <item name="Boat rental" ru.name="Лодочная станция (прокат плавсредств)" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/4/48/Twemoji_26f5.svg" preset_name_label="true">
-        <space />
-        <reference ref="name" />
-        <reference ref="oh1" />
-        <text key="capacity" text="Capacity" ru.text="Количество плавсредств" length="4" />
-        <reference ref="operator" />
-        <key key="amenity" value="boat_rental" />
-        <space />
-        <label text="Boat types" ru.text="Виды плавсредств" />
-        <checkgroup columns="2">
-          <check key="canoe_rental" text="canoes" ru.text="каноэ" />
-          <check key="dinghy_rental" text="rowing boats" ru.text="шлюпка (вёсла, моторчик и т.д.)" />
-          <check key="houseboat_rental" text="houseboat" ru.text="домик на воде" />
-          <check key="jetski_rental" text="jetski" ru.text="водный мотоцикл" />
-          <check key="kayak_rental" text="kayaks" ru.text="каяк" />
-          <check key="motorboat_rental" text="motorboat" ru.text="моторные лодки" />
-          <check key="pedalboat_rental" text="pedalboat" ru.text="катамаран" />
-          <check key="sailboat_rental" text="sailing boats" ru.text="парусная лодка" />
-        </checkgroup>
-        <link wiki="Tag:amenity%3Dboat_rental" />
-        <preset_link preset_name="Address" />
-        <preset_link preset_name="Contact (Schema with 'contact:*' Prefix)" />
-      </item>
       <item name="Communication mast" ru.name="Мачта сотовой связи" type="node" preset_name_label="true">
         <space />
         <label text="Typically situated in the urban area. Is relatively short." ru.text="Распространены в городах. Сравнительно невысокие." />
@@ -3536,23 +3616,6 @@
         <key key="tower:construction" value="freestanding" />
         <link wiki="Proposed_features/Telecommunications_tower" text="Proposed features/Telecommunications tower" />
         <link wiki="Tag:man_made%3Dmast" />
-      </item>
-      <item name="Moscow parking meter" ru.name="Паркомат (Москва)" type="node" preset_name_label="true">
-        <space />
-        <text key="ref" text="Reference number" ru.text="Номер паркомата" />
-        <key key="amenity" value="vending_machine" />
-        <key key="contact:facebook" value="https://www.facebook.com/parking.mos.ru" />
-        <key key="contact:phone" value="+7 495 5395454" />
-        <key key="contact:twitter" value="https://twitter.com/parking_mos_ru" />
-        <key key="contact:vk" value="https://vk.com/transportmos" />
-        <key key="contact:website" value="http://parking.mos.ru" />
-        <key key="opening_hours" value="24/7" />
-        <key key="operator" value="ГКУ «Администратор Московского парковочного пространства»" />
-        <key key="payment:cash" value="no" />
-        <key key="payment:credit_cards" value="yes" />
-        <key key="payment:debit_cards" value="yes" />
-        <key key="vending" value="parking_tickets" />
-        <link href="http://parking.mos.ru" text="Official website (place locator)" ru.text="Ссылка на сайт (номера паркоматов)" />
       </item>
       <item name="Clothes dryer" ru.name="Площадка для сушки белья" type="node,closedway,multipolygon" preset_name_label="true">
         <!-- https://d30y9cdsu7xlg0.cloudfront.net/png/174655-200.png NOTE: второй вариант иконки -->
@@ -3581,56 +3644,6 @@
         <key key="operator" value="АО «Почта России»" />
         <link wiki="Tag:amenity%3Dpost_box" />
       </item>
-      <item name="Suburban train tickets shop" ru.name="Пригородная касса (электрички)" type="node,closedway,multipolygon" preset_name_label="true">
-        <space />
-        <combo key="contact:website" text="Website" values="http://www.central-ppk.ru" />
-        <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-13:00\,13:45-17:00; Fr 09:00-13:00\,13:45-15:45" />
-        <combo key="operator" text="Operator" values="ОАО «ЦЕНТРАЛЬНАЯ ППК»" />
-        <key key="shop" value="ticket" />
-        <key key="tickets:suburban_train" value="yes" />
-        <preset_link preset_name="Address" />
-        <preset_link preset_name="Building" />
-      </item>
-
-      <item name="Velobike bicycle rental point" ru.name="Пункт проката велосипедов Velobike" type="node" preset_name_label="true">
-        <space />
-        <reference ref="ref" />
-        <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-13:00\,13:45-17:00; Fr 09:00-13:00\,13:45-15:45" default="24/7" />
-        <combo key="capacity" text="Вместимость (количество мест для велосипедов)" />
-        <combo key="capacity:electric" text="Вместимость (количество мест для электрических велосипедов)" />
-        <key key="amenity" value="bicycle_rental" />
-        <key key="bicycle_rental" value="docking_station" />
-        <key key="contact:email" value="info@velobike.ru" />
-        <key key="contact:phone" value="+7 495 9664669" />
-        <key key="contact:website" value="https://velobike.ru/" />
-        <key key="fee" value="yes" />
-        <key key="network" value="Велобайк" />
-        <key key="operator" value="АО «СитиБайк»" />
-        <key key="seasonal" value="spring;summer;autumn" />
-        <link href="https://velobike.ru/parkings/" text="Official website (place locator)" ru.text="Ссылка на сайт (места расположения станций проката)" />
-      </item>
-      <item name="Samocat kick-scooter rental point" ru.name="Пункт проката электросамокатов Samokat" type="node" preset_name_label="true">
-        <space />
-        <reference ref="ref" />
-        <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-13:00\,13:45-17:00; Fr 09:00-13:00\,13:45-15:45" default="24/7" />
-        <combo key="capacity" text="Вместимость (количество мест для самокатов)" />
-        <key key="amenity" value="kick-scooter_rental" />
-        <key key="contact:phone" value="+7 800 3010184" />
-        <key key="contact:website" value="https://samocat.net" />
-        <key key="fee" value="yes" />
-        <key key="network" value="Samokat" />
-        <key key="seasonal" value="spring;summer;autumn" />
-      </item>
-      <item name="Platon gantry" ru.name="Рамка оплаты системы &quot;Платон&quot;" type="node" preset_name_label="true">
-        <space />
-        <reference ref="ref" />
-        <key key="highway" value="toll_gantry" />
-        <key key="contact:phone" value="+7 495 5400202" />
-        <key key="contact:website" value="http://platon.ru" />
-        <key key="network" value="Платон" />
-        <key key="operator" value="ООО &quot;РТ-Инвест Транспортные Системы&quot;" />
-        <key key="toll:hgv_articulated" value="yes" />
-      </item>
       <item name="MGTS payphone" ru.name="Таксофон &quot;МГТС&quot;" type="node" icon="https://upload.wikimedia.org/wikipedia/commons/a/a0/Twemoji_1f4de.svg" preset_name_label="true">
         <space />
         <key key="amenity" value="telephone" />
@@ -3650,22 +3663,6 @@
         <key key="operator" value="ПАО «Ростелеком»" />
         <key key="payment:cash" value="no" />
         <key key="payment:telephone_cards" value="yes" />
-      </item>
-      <item name="Suburban train tickets vending machine" ru.name="Терминал продажи пригородных билетов (электрички)" type="node" preset_name_label="true">
-        <!-- TODO: Нужно определиться между использованием public_transport_tickets:suburban_train=yes или tickets:suburban_train=yes
-        Пока что оставляю оба варианта. Правильней из них первый. Но второй распространенней -->
-        <space />
-        <key key="amenity" value="vending_machine" />
-        <key key="public_transport_tickets:suburban_train" value="yes" />
-        <key key="tickets:suburban_train" value="yes" />
-        <key key="vending" value="public_transport_tickets" />
-        <preset_link preset_name="Payment Methods" />
-      </item>
-      <item name="Public transport tickets vending machine" ru.name="Терминал &quot;Проездные билеты&quot; (общественный транспорт)" type="node" preset_name_label="true">
-        <space />
-        <key key="amenity" value="vending_machine" />
-        <key key="vending" value="public_transport_tickets" />
-        <preset_link preset_name="Payment Methods" />
       </item>
       <item name="Local heat substation" ru.name="Центральный/индивидуальный тепловой пункт" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/c/cb/Emojione_1F3ED.svg" preset_name_label="true">
         <space />
