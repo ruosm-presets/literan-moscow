@@ -429,6 +429,21 @@
       </item>
     </group>
     <group name="Eatery" ru.name="Общепит" icon="https://upload.wikimedia.org/wikipedia/commons/1/1d/Emojione_1F374.svg">
+      <item name="BRandICE" type="node,closedway,multipolygon" preset_name_label="true">
+        <space />
+        <reference ref="phone" />
+        <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 08:00-23:00,Mo-Fr 07:00-23:00; Sa-Su 10:00-23:00" />
+        <key key="amenity" value="cafe" />
+        <key key="brand" value="BRandICE" />
+        <key key="contact:phone" value="+7 495 9673701" />
+        <key key="contact:vk" value="https://vk.com/brandice" />
+        <key key="contact:website" value="https://brand-ice.ru" />
+        <key key="cuisine" value="ice_cream" />
+        <key key="diet:vegetarian" value="only" />
+        <key key="name" value="BRandICE" />
+        <key key="name:en" value="BRandICE" />
+        <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
+      </item>
       <item name="Cofix" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <reference ref="phone" />
@@ -551,21 +566,6 @@
         <key key="name:en" value="Surf Coffee" />
         <key key="takeaway" value="yes" />
         <link href="https://www.surfcoffee.ru/surf-coffee-stores" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
-      </item>
-      <item name="BRandICE" ru.name="БрендАйс" type="node,closedway,multipolygon" preset_name_label="true">
-        <space />
-        <reference ref="phone" />
-        <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 08:00-23:00,Mo-Fr 07:00-23:00; Sa-Su 10:00-23:00" />
-        <key key="amenity" value="cafe" />
-        <key key="brand" value="BRandICE" />
-        <key key="contact:phone" value="+7 495 9673701" />
-        <key key="contact:vk" value="https://vk.com/brandice" />
-        <key key="contact:website" value="https://brand-ice.ru" />
-        <key key="cuisine" value="ice_cream" />
-        <key key="diet:vegetarian" value="only" />
-        <key key="name" value="BRandICE" />
-        <key key="name:en" value="BRandICE" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
       <item name="Burger King" ru.name="Бургер Кинг" type="node,closedway,multipolygon" preset_name_label="true">
