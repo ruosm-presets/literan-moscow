@@ -3,7 +3,7 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://josm.openstreetmap.de/tagging-preset-1.0 tagging-preset.xsd"
   author="literan and others"
-  version="2.0_2023-07-27_1"
+  version="2.0_2023-02-11_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   icon="https://upload.wikimedia.org/wikipedia/commons/d/db/Twemoji_1f1f7-1f1fa.svg"
   shortdescription="Russian POIs"
@@ -1300,12 +1300,12 @@
         <link href="https://www.okmarket.ru/stores/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="Perekryostok" ru.name="Перекресток" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Perekryostok" ru.name="Перекрёсток" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="contact:phone" text="Phone number" default="+7 800 2009555" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 08:00-23:00,Mo-Sa 09:00-20:00; Su 10:00-19:00" />
-        <key key="alt_name" value="Перекрёсток" />
-        <key key="brand" value="Перекресток" />
+        <key key="alt_name" value="Перекресток" />
+        <key key="brand" value="Перекрёсток" />
         <key key="brand:wikidata" value="Q1684639" />
         <key key="brand:wikipedia" value="ru:Перекрёсток (сеть магазинов)" />
         <key key="contact:facebook" value="https://www.facebook.com/perekrestok" />
@@ -1315,8 +1315,8 @@
         <key key="contact:vk" value="https://vk.com/perekrestok_shop" />
         <key key="contact:website" value="https://www.perekrestok.ru" />
         <key key="contact:youtube" value="https://www.youtube.com/channel/UCY9Nwfy_8drHqif0iryQ7Vw" />
-        <key key="name" value="Перекресток" />
-        <key key="name:ru" value="Перекресток" />
+        <key key="name" value="Перекрёсток" />
+        <key key="name:ru" value="Перекрёсток" />
         <key key="shop" value="supermarket" />
         <link href="https://www.perekrestok.ru/shops" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
