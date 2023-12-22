@@ -3,7 +3,7 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://josm.openstreetmap.de/tagging-preset-1.0 tagging-preset.xsd"
   author="literan and others"
-  version="2.0_2023-02-11_1"
+  version="2.0_2023-12-22_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   icon="https://upload.wikimedia.org/wikipedia/commons/d/db/Twemoji_1f1f7-1f1fa.svg"
   shortdescription="Russian POIs"
@@ -1874,7 +1874,6 @@
         <key key="brand" value="СДЭК" />
         <key key="brand:wikidata" value="Q28665980" />
         <key key="brand:wikipedia" value="ru:СДЭК" />
-        <key key="contact:facebook" value="https://www.facebook.com/edostavka" />
         <key key="contact:instagram" value="https://www.instagram.com/cdek_official" />
         <key key="contact:vk" value="https://vk.com/cdek_express" />
         <key key="contact:website" value="https://www.cdek.ru" />
