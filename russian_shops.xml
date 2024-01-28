@@ -3,7 +3,7 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://josm.openstreetmap.de/tagging-preset-1.0 tagging-preset.xsd"
   author="literan and others"
-  version="2.0_2024-01-07_1"
+  version="2.0_2024-01-28_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   icon="https://upload.wikimedia.org/wikipedia/commons/d/db/Twemoji_1f1f7-1f1fa.svg"
   shortdescription="Russian POIs"
@@ -279,6 +279,19 @@
         <key key="operator" value="ООО «Живика Центр»" />
         <link href="https://www.aptekazhivika.ru/store" text="Official website (place locator)" ru.text="Ссылка на сайт московской обл (часы работы, координаты и т.п.)" />
         <link href="http://zhivika.ru/adresa_aptek/" text="Official website ural (place locator)" ru.text="Ссылка на сайт уральского региона (часы работы, координаты и т.п.)" />
+        <reference ref="phone_oh2_wheelchair_address" />
+      </item>
+      <item name="magnit-apteka" ru.name="Магнит Аптека" type="node,closedway,multipolygon" preset_name_label="true">
+        <space />
+        <key key="amenity" value="pharmacy" />
+        <key key="brand" value="Магнит Аптека" />
+        <combo key="contact:phone" text="Phone number" default="+7 800 2007803" />
+        <key key="contact:website" value="https://apteka.magnit.ru/" />
+        <key key="healthcare" value="pharmacy" />
+        <key key="name" value="Магнит Аптека" />
+        <key key="name:ru" value="Магнит Аптека" />
+        <key key="operator" value="АО «Тандер»" />
+        <link href="https://apteka.magnit.ru/locations?view=map" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="phone_oh2_wheelchair_address" />
       </item>
       <item name="Neopharm" ru.name="Неофарм" type="node,closedway,multipolygon" preset_name_label="true">
