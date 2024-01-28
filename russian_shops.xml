@@ -291,7 +291,7 @@
         <key key="name" value="Магнит Аптека" />
         <key key="name:ru" value="Магнит Аптека" />
         <key key="operator" value="АО «Тандер»" />
-        <link href="https://apteka.magnit.ru/locations?view=map" ru.text=""Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://apteka.magnit.ru/locations?view=map" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="phone_oh2_wheelchair_address" />
       </item>
       <item name="Neopharm" ru.name="Неофарм" type="node,closedway,multipolygon" preset_name_label="true">
