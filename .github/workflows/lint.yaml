@@ -16,4 +16,4 @@ jobs:
       uses: ChristophWurst/xmllint-action@v1
       with:
         xml-file: ./russian_shops.xml
-        xml-schema-file: ./tagging-preset.xsd
+        xml-schema-file: ./appinfo/tagging-preset.xsd
