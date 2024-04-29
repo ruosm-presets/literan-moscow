@@ -3469,7 +3469,6 @@
         <key key="network" value="Велобайк" />
         <key key="operator" value="АО «СитиБайк»" />
         <key key="seasonal" value="spring;summer;autumn" />
-        <link href="https://velobike.ru/parkings/" text="Official website (place locator)" ru.text="Ссылка на сайт (места расположения станций проката)" />
       </item>
       <item name="Platon gantry" ru.name="Рамка оплаты системы &quot;Платон&quot;" type="node" preset_name_label="true">
         <space />
