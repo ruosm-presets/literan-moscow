@@ -594,7 +594,7 @@
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
         <key key="amenity" value="fast_food" />
         <key key="brand" value="Rostiс's" />
-        <key key="contact:vk" value="https://vk.com/kfcrussia" />
+        <key key="contact:vk" value="https://vk.com/rostics_official" />
         <key key="contact:website" value="https://rostics.ru" />
         <key key="cuisine" value="chicken" />
         <key key="diet:vegetarian" value="no" />
