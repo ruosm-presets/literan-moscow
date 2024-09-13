@@ -1606,8 +1606,7 @@
         <key key="brand" value="Лит.Ра" />
         <key key="contact:vk" value="https://vk.com/litra_beer" />
         <key key="contact:website" value="https://litra-beer.ru" />
-        <key key="drink:beer" value="bottled" />
-        <key key="drink:beer" value="draught" />
+        <key key="drink:beer" value="bottled;draught" />
         <key key="drink:cider" value="bottled" />
         <key key="drink:soft_drink" value="bottled" />
         <key key="name" value="Лит.Ра" />
@@ -3263,7 +3262,7 @@
         <key key="amenity" value="hospital" />
         <key key="health_facility:type" value="nursing_home" />
         <key key="health_specialty:palliative_medicine" value="yes" />
-        <key key="healthcare" value="hospital" />
+        <key key="healthcare" value="hospice" />
         <key key="medical_system:western" value="yes" />
         <reference ref="name_website_phone_level_wheelchair_address" />
         <reference ref="health20_provided_for" />
