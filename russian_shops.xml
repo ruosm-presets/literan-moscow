@@ -270,7 +270,6 @@
         <key key="brand" value="Живика" />
         <key key="contact:email" value="info@aptekazhivika.ru" />
         <key key="contact:website" value="http://zhivika.ru" />
-        <key key="contact:youtube" value="https://www.youtube.com/channel/UCwHJ0HXTvIjJxFkGtXU7SYw" />
         <key key="contact:ok" value="https://ok.ru/aptekazhivika" />
         <key key="contact:vk" value="http://vk.com/zhivika_ekb" />
         <key key="healthcare" value="pharmacy" />
@@ -349,7 +348,6 @@
         <key key="contact:ok" value="https://ok.ru/rigla.ru" />
         <key key="contact:vk" value="https://vk.com/rigla_ru" />
         <key key="contact:website" value="https://www.rigla.ru" />
-        <key key="contact:youtube" value="https://www.youtube.com/user/RiglaVideo" />
         <key key="healthcare" value="pharmacy" />
         <key key="name" value="Ригла" />
         <key key="name:ru" value="Ригла" />
@@ -369,7 +367,6 @@
         <key key="contact:twitter" value="https://twitter.com/samsonfarma" />
         <key key="contact:vk" value="https://vk.com/samson_f" />
         <key key="contact:website" value="https://samson-pharma.ru" />
-        <key key="contact:youtube" value="https://www.youtube.com/channel/UCPXq0ZxVRP8cth9_6Ht8j-w" />
         <key key="healthcare" value="pharmacy" />
         <key key="name" value="Самсон-Фарма" />
         <key key="name:ru" value="Самсон-Фарма" />
@@ -740,7 +737,6 @@
         <key key="contact:twitter" value="https://twitter.com/ru_coffeehouse" />
         <key key="contact:vk" value="https://vk.com/ru_coffeehouse" />
         <key key="contact:website" value="https://www.coffeehouse.ru" />
-        <key key="contact:youtube" value="https://www.youtube.com/user/CoffeeHouseMan" />
         <key key="cuisine" value="coffee_shop" />
         <key key="diet:vegetarian" value="yes" />
         <key key="drink:coffee" value="yes" />
@@ -867,7 +863,6 @@
         <key key="contact:phone" value="+7 800 5505560" />
         <key key="contact:vk" value="https://vk.com/robinsdobin_vrn" />
         <key key="contact:website" value="https://sdobin.ru" />
-        <key key="contact:youtube" value="https://www.youtube.com/channel/UC0TSjQtGpRdS62yIv1Zd6ZQ" />
         <key key="name" value="Робин Сдобин" />
         <key key="name:ru" value="Робин Сдобин" />
         <link href="https://sdobin.ru" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
@@ -922,7 +917,6 @@
         <key key="contact:phone" value="+7 495 5405723" />
         <key key="contact:vk" value="https://vk.com/club16270501" />
         <key key="contact:website" value="https://www.stardogs.ru" />
-        <key key="contact:youtube" value="https://www.youtube.com/channel/UCLdQnDS5HTzowfvz-Uhc24A" />
         <key key="cuisine" value="hot_dog" />
         <key key="diet:vegetarian" value="no" />
         <key key="name" value="Stardogs" />
@@ -1926,7 +1920,6 @@
         <key key="contact:vk" value="https://vk.com/wbbot" />
         <key key="contact:website" value="https://www.wildberries.ru" />
         <key key="contact:whatsapp" value="+7 926 5373137" />
-        <key key="contact:youtube" value="https://www.youtube.com/user/Wildberriesshop" />
         <key key="name" value="Wildberries" />
         <key key="name:en" value="Wildberries" />
         <key key="shop" value="outpost" />
@@ -2110,7 +2103,6 @@
         <key key="contact:twitter" value="https://twitter.com/alfabank" />
         <key key="contact:vk" value="https://vk.com/alfabank" />
         <key key="contact:website" value="https://alfabank.ru" />
-        <key key="contact:youtube" value="https://www.youtube.com/user/alfabankru" />
         <key key="name" value="Альфа-Банк" />
         <key key="name:en" value="Alfa-Bank" />
         <key key="name:ru" value="Альфа-Банк" />
@@ -2131,7 +2123,6 @@
         <key key="contact:twitter" value="https://twitter.com/VTB" />
         <key key="contact:vk" value="https://vk.com/vtb" />
         <key key="contact:website" value="https://www.vtb.ru" />
-        <key key="contact:youtube" value="https://www.youtube.com/user/vtbgroup" />
         <key key="name" value="ВТБ" />
         <key key="name:en" value="VTB" />
         <key key="name:ru" value="ВТБ" />
@@ -2157,7 +2148,6 @@
         <key key="contact:twitter" value="https://twitter.com/pochtabank" />
         <key key="contact:vk" value="https://vk.com/pochtabank" />
         <key key="contact:website" value="https://www.pochtabank.ru" />
-        <key key="contact:youtube" value="https://www.youtube.com/channel/UCs2NW4p10fwTar-zqw7mUIw" />
         <key key="name" value="Почта Банк" />
         <key key="name:en" value="Post Bank" />
         <key key="name:ru" value="Почта Банк" />
@@ -2242,7 +2232,6 @@
         <key key="contact:twitter" value="https://twitter.com/sberbank" />
         <key key="contact:vk" value="https://vk.com/sberbank" />
         <key key="contact:website" value="https://www.sberbank.ru" />
-        <key key="contact:youtube" value="https://www.youtube.com/sberbank" />
         <key key="name" value="Сбербанк" />
         <key key="name:en" value="Sberbank" />
         <key key="name:ru" value="Сбербанк" />
@@ -2305,7 +2294,6 @@
         <key key="contact:twitter" value="https://twitter.com/qiwirussia" />
         <key key="contact:vk" value="https://vk.com/qiwirussia" />
         <key key="contact:website" value="https://qiwi.com" />
-        <key key="contact:youtube" value="https://www.youtube.com/user/QiwiRussia" />
         <key key="operator" value="КИВИ Банк (АО)" />
         <key key="payment:credit_cards" value="yes" />
         <key key="payment:debit_cards" value="yes" />
@@ -2352,7 +2340,6 @@
         <key key="contact:twitter" value="https://twitter.com/elecsnet" />
         <key key="contact:vk" value="https://vk.com/elecsnet" />
         <key key="contact:website" value="https://elecsnet.ru" />
-        <key key="contact:youtube" value="https://www.youtube.com/user/myelecsnet" />
         <key key="operator" value="АО «ЭЛЕКСНЕТ»" />
         <key key="payment:credit_cards" value="yes" />
         <key key="payment:debit_cards" value="yes" />
@@ -2449,7 +2436,6 @@
         <key key="contact:ok" value="https://ok.ru/#/group/51689238692070" />
         <key key="contact:vk" value="https://vk.com/adamas.club" />
         <key key="contact:website" value="https://www.adamas.ru" />
-        <key key="contact:youtube" value="https://www.youtube.com/channel/UCnOC4pLMguhoKxOonAQRdHQ" />
         <key key="name" value="Адамас" />
         <key key="name:ru" value="Адамас" />
         <key key="shop" value="jewelry" />
@@ -2663,7 +2649,6 @@
         <key key="contact:twitter" value="https://twitter.com/Persona_PR" />
         <key key="contact:vk" value="https://vk.com/lab_persona" />
         <key key="contact:website" value="https://persona.ru" />
-        <key key="contact:youtube" value="https://www.youtube.com/watch?v=qxudzLtUYZM" />
         <key key="name" value="Персона" />
         <key key="name:ru" value="Персона" />
         <key key="shop" value="beauty" />
@@ -2734,7 +2719,6 @@
         <key key="contact:twitter" value="https://twitter.com/_TBOE_" />
         <key key="contact:vk" value="https://vk.com/tvoe" />
         <key key="contact:website" value="https://tvoe.ru" />
-        <key key="contact:youtube" value="https://www.youtube.com/user/TvoeOfficial" />
         <key key="name" value="Твоё" />
         <key key="name:ru" value="Твоё" />
         <key key="operator" value="ООО «ТВОЕ»" />
@@ -2767,7 +2751,6 @@
         <key key="contact:ok" value="https://ok.ru/mil" />
         <key key="contact:vk" value="https://vk.com/mil" />
         <key key="contact:website" value="http://mil.ru" />
-        <key key="contact:youtube" value="https://www.youtube.com/channel/UCQGqX5Ndpm4snE0NTjyOJnA" />
         <key key="military" value="office" />
       </item>
       <item name="ЗАГС" type="node,closedway,multipolygon" preset_name_label="true">
@@ -2844,7 +2827,6 @@
         <key key="contact:ok" value="https://ok.ru/genprocrf" />
         <key key="contact:telegram" value="https://telegram.me/genprocrf" />
         <key key="contact:vk" value="https://vk.com/genprocrf" />
-        <key key="contact:youtube" value="https://www.youtube.com/user/genprocrf" />
         <key key="government" value="prosecutor" />
         <key key="office" value="government" />
       </item>
