@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
     - name: Download schema
       run: wget -O tagging-preset.xsd http://josm.openstreetmap.de/tagging-preset-1.0
     - name: Enable annotations for validation errors and warnings
