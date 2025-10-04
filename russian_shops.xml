@@ -1556,6 +1556,9 @@
         <key key="brand" value="Винлаб" />
         <key key="contact:facebook" value="https://www.facebook.com/winelabru" />
         <key key="contact:instagram" value="https://www.instagram.com/winelab.ru" />
+        <key key="contact:phone" value="+7 800 3017755" />
+        <key key="contact:telegram" value="https://t.me/winelab_ru" />
+        <key key="contact:vk" value="https://vk.com/winelabru" />
         <key key="contact:website" value="https://www.winelab.ru" />
         <key key="drink:beer" value="bottled" />
         <key key="drink:cider" value="bottled" />
