@@ -1494,7 +1494,6 @@
         <space />
         <combo key="opening_hours" text="Opening Hours" values="24/7" />
         <key key="brand" value="Около" />
-        <key key="brand:wikidata" value="Q1684639" />
         <key key="contact:email" value="info@okolo.market" />
         <key key="contact:phone" value="+7 800 301-47-33" />
         <key key="contact:website" value="https://okolo.market" />
