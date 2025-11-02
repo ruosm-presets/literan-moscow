@@ -1490,6 +1490,22 @@
         <link href="https://ярче.рф" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
+      <item name="Okolo" ru.name="Около" type="node,closedway,multipolygon" preset_name_label="true">
+        <space />
+        <combo key="opening_hours" text="Opening Hours" values="24/7" />
+        <key key="brand" value="Около" />
+        <key key="brand:wikidata" value="Q1684639" />
+        <key key="contact:email" value="info@okolo.market" />
+        <key key="contact:phone" value="+7 800 301-47-33" />
+        <key key="contact:website" value="https://okolo.market" />
+        <key key="contact:whatsapp" value="https://wa.me/79255358078" />
+        <key key="name" value="Около" />
+        <key key="name:ru" value="Около" />
+        <key key="name:en" value="Okolo" />
+        <key key="shop" value="convenience" />
+        <link href="https://okolo.market" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <reference ref="wheelchair_address" />
+      </item>
     </group>
     <group name="Alcohol drinks" ru.name="Алкоголь" icon="https://upload.wikimedia.org/wikipedia/commons/7/76/Emblem-windows.svg">
       <item name="AV Enoteca" ru.name="АВ Энотека" type="node,closedway,multipolygon" preset_name_label="true">
