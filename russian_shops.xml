@@ -2384,25 +2384,6 @@
         <reference ref="clothes_list" />
         <reference ref="level_wheelchair_address" />
       </item>
-      <item name="Pandora" type="node,closedway,multipolygon" preset_name_label="true">
-        <space />
-        <combo key="contact:phone" text="Phone number" values="+7 495 2878838-xxx" default="+7 800 7008338" />
-        <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-22:00" />
-        <key key="brand" value="Pandora" />
-        <key key="brand:wikidata" value="Q2241604" />
-        <key key="brand:wikipedia" value="ru:Pandora (ювелирный дом)" />
-        <key key="contact:email" value="info@pandora-rus.ru" />
-        <key key="contact:facebook" value="https://www.facebook.com/PandoraRussia" />
-        <key key="contact:instagram" value="https://www.instagram.com/theofficialpandora" />
-        <key key="contact:pinterest" value="https://pinterest.com/officialpandora" />
-        <key key="contact:website" value="https://www.pandora.net/ru-ru" />
-        <key key="contact:youtube" value="https://www.youtube.com/user/TheOfficialPandora" />
-        <key key="name" value="Pandora" />
-        <key key="name:en" value="Pandora" />
-        <key key="shop" value="jewelry" />
-        <link href="https://www.pandora.net/ru-ru/stores" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="level_wheelchair_address" />
-      </item>
       <item name="Ticketland.ru" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="contact:phone" text="Phone number" default="+7 800 7700007" />
