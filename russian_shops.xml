@@ -1668,25 +1668,23 @@
       </item>
     </group>
     <group name="Electronics shops" ru.name="Электроника" icon="https://upload.wikimedia.org/wikipedia/commons/d/d5/Twemoji_1f4f1.svg">
-      <item name="Tele2" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="T2" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="contact:phone" text="Phone number" values="+7 495 9797611" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00,Mo-Su 10:00-21:00" />
-        <key key="brand" value="Tele2" />
+        <key key="brand" value="T2" />
         <key key="brand:wikidata" value="Q4050799" />
-        <key key="brand:wikipedia" value="ru:Tele2 Россия" />
-        <key key="contact:facebook" value="https://www.facebook.com/Tele2Russia" />
-        <key key="contact:ok" value="https://ok.ru/tele2" />
-        <key key="contact:telegram" value="https://telegram.me/Tele2_bot" />
-        <key key="contact:twitter" value="https://twitter.com/Tele2Russia" />
-        <key key="contact:vk" value="https://vk.com/tele2" />
-        <key key="contact:website" value="https://tele2.ru" />
-        <key key="contact:youtube" value="https://www.youtube.com/user/AfishaTele2" />
-        <key key="name" value="Tele2" />
-        <key key="name:en" value="Tele2" />
+        <key key="brand:wikipedia" value="ru:T2 (оператор сотовой связи)" />
+        <key key="contact:ok" value="https://ok.ru/group/54092282068992" />
+        <key key="contact:telegram" value="https://t.me/t2russia" />
+        <key key="contact:vk" value="https://vk.com/t2russia" />
+        <key key="contact:website" value="https://t2.ru" />
+        <key key="contact:youtube" value="https://www.youtube.com/channel/UCTmVNtOoQAmgIGIL6pULmgA" />
+        <key key="name" value="T2" />
+        <key key="name:en" value="T2" />
         <key key="office" value="telecommunication" />
         <key key="shop" value="mobile_phone" />
-        <link href="https://msk.tele2.ru/offices" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://msk.t2.ru/offices" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
       <item name="Beeline" ru.name="Билайн" type="node,closedway,multipolygon" preset_name_label="true">
