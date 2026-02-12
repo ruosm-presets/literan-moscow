@@ -1192,7 +1192,7 @@
         <key key="contact:youtube" value="https://www.youtube.com/user/DixyChannel" />
         <key key="name" value="Дикси" />
         <key key="name:ru" value="Дикси" />
-        <link href="https://dixy.ru/nearest-shop/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://dixy.ru/shop-map/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
       <item name="Dobrotsen" ru.name="Доброцен" type="node,closedway,multipolygon" preset_name_label="true">
