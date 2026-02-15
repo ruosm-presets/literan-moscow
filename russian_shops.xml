@@ -3484,7 +3484,7 @@
         <preset_link preset_name="Payment Methods" />
       </item>      
       <separator />
-        <item name="Drinking water vending machine" ru.name="Водомат &quot;Живая вода&quot;" type="node" preset_name_label="true">
+        <item name="Vending machine Alive water" ru.name="Водомат &quot;Живая вода&quot;" type="node" preset_name_label="true">
         <space />
         <combo key="contact:phone" text="Phone" default="+7 951 4773663" />
         <combo key="contact:vk" text="Vk" default="https://vk.com/lifewatermi" />
@@ -3495,6 +3495,19 @@
         <key key="contact:website" value="https://alivewater.ru/" />
         <key key="opening_hours" value="24/7" />
         <key key="name" value="Живая вода" />
+        <preset_link preset_name="Payment Methods" />
+      </item>
+      <item name="Vending machine Third water tap" ru.name="Водомат &quot;Третий кран&quot;" type="node" preset_name_label="true">
+        <space />
+        <combo key="contact:phone" text="Phone" default="+7 919 1131122" />
+        <combo key="contact:vk" text="Vk" default="" />
+        <combo key="operator" text="Operator" default="ООО «Теплоэнергомонтаж»" />
+        <key key="amenity" value="vending_machine" />
+        <key key="vending" value="water" />
+        <key key="brand" value="Третий кран" />
+        <key key="contact:website" value="https://3kran.ru/" />
+        <key key="opening_hours" value="24/7" />
+        <key key="name" value="Третий кран" />
         <preset_link preset_name="Payment Methods" />
       </item>
       <item name="Telephone Exchanges" ru.name="Автоматическая телефонная станция (АТС)" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/7/79/Noto_Emoji_KitKat_1f3e2.svg" preset_name_label="true">
