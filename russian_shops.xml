@@ -743,7 +743,7 @@
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 08:00-23:00,Mo-Fr 07:00-23:00; Sa-Su 10:00-23:00" />
         <key key="amenity" value="cafe" />
         <key key="brand" value="Дринкит" />
-        <key key="contact:instagram" value=" 	https://www.instagram.com/drinkitcafe" />
+        <key key="contact:instagram" value="https://www.instagram.com/drinkitcafe" />
         <key key="contact:telegram" value="https://t.me/drinkit_business" />
         <key key="contact:website" value="https://drinkit.ru" />
         <key key="cuisine" value="coffee_shop" />
