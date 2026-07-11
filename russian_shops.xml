@@ -445,7 +445,6 @@
         <key key="contact:email" value="client@gemotest.ru" />
         <key key="contact:facebook" value="https://www.facebook.com/gemotestlab" />
         <key key="contact:ok" value="https://ok.ru/gemotest" />
-        <key key="contact:skype" value="vrachgemotest" />
         <key key="contact:vk" value="https://vk.com/gemotestlab" />
         <key key="contact:website" value="https://www.gemotest.ru" />
         <key key="health_facility:type" value="laboratory" />
@@ -1975,8 +1974,6 @@
         <key key="contact:facebook" value="https://www.facebook.com/wbbot" />
         <key key="contact:instagram" value="https://www.instagram.com/wildberriesru" />
         <key key="contact:ok" value="https://ok.ru/wildberries" />
-        <!-- <key key="contact:skype" value="wildberries.wb" /> -->
-        <key key="contact:skype" value="Wildberries_ru" />
         <key key="contact:telegram" value="wbshop_bot" />
         <key key="contact:twitter" value="https://twitter.com/wildberries_ru" />
         <key key="contact:viber" value="wildberries" />
