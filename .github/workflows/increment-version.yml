@@ -69,7 +69,7 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add preset.xml
+          git add russian_shops.xml
           
           # [skip ci] prevents this commit from triggering another infinite workflow loop
           git commit -m "chore: increment version to YYYY.MM.DD_FIX [skip ci]" || echo "No changes to commit"
