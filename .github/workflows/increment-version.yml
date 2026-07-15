@@ -3,9 +3,9 @@ name: Auto Increment XML Version
 on:
   push:
     branches:
-      - master
+      - master # Triggers on the master branch
     paths:
-      - 'russian_shops.xml'
+      - 'russian_shops.xml' # Triggers only when your specific file changes
 
 jobs:
   update-version:
@@ -22,55 +22,57 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Calculate and Update XML Version
+      - name: Update Version String via Regex (Preserves Comments)
         run: |
           python -c "
-          import xml.etree.ElementTree as ET
+          import re
           from datetime import datetime
-          import os
 
-          xml_file = 'russian_shops.xml' # Ensure this matches your file name
-          
-          # Preserve namespaces dynamically so tags don't break
-          ET.register_namespace('', 'http://josm.openstreetmap.de/tagging-preset-1.0')
-          ET.register_namespace('xsi', 'http://www.w3.org/2001/XMLSchema-instance')
+          xml_file = 'russian_shops.xml'
 
-          tree = ET.parse(xml_file)
-          root = tree.getroot()
+          # 1. Read the raw text of the file exactly as it is
+          with open(xml_file, 'r', encoding='utf-8') as f:
+              content = f.read()
 
-          # 1. Fetch current date in YYYY.MM.DD format
+          # 2. Get today's date in YYYY.MM.DD format
           today_str = datetime.now().strftime('%Y.%m.%d')
-          
-          # 2. Extract existing version attribute from the root node
-          current_version = root.attrib.get('version', '')
-          
-          # 3. Determine the incremental FIX counter
-          # If existing version already matches today's date prefix, increment it
-          if current_version.startswith(f'{today_str}_'):
-              try:
-                  last_fix = int(current_version.split('_')[-1])
-                  next_fix = last_fix + 1
-              except ValueError:
+
+          # 3. Find the version attribute using a regular expression
+          match = re.search(r'version=\"([^\"]+)\"', content)
+
+          if match:
+              current_version = match.group(1)
+              
+              # Check if the existing version already starts with today's date
+              if current_version.startswith(f'{today_str}_'):
+                  try:
+                      last_fix = int(current_version.split('_')[-1])
+                      next_fix = last_fix + 1
+                  except ValueError:
+                      next_fix = 1
+              else:
+                  # It's a new day or legacy format
                   next_fix = 1
+
+              new_version = f'{today_str}_{next_fix}'
+              
+              # 4. Swap only the version string, leaving all comments untouched
+              updated_content = content.replace(f'version=\"{current_version}\"', f'version=\"{new_version}\"')
+              
+              with open(xml_file, 'w', encoding='utf-8') as f:
+                  f.write(updated_content)
+                  
+              print(f'Successfully updated version from {current_version} to {new_version}')
           else:
-              # It is a brand new day or a legacy format like '2.0_2024-04-24_1'
-              next_fix = 1
-
-          # 4. Apply the new version string
-          new_version = f'{today_str}_{next_fix}'
-          root.attrib['version'] = new_version
-          print(f'Updating version from {current_version} to {new_version}')
-
-          # 5. Overwrite the file and preserve the original encoding declaration
-          tree.write(xml_file, encoding='utf-8', xml_declaration=True)
+              print('Warning: version attribute not found in the XML file!')
           "
 
       - name: Commit and Push Changes
         run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.email "github-actions[bot]@://github.com"
           git config --local user.name "github-actions[bot]"
           git add russian_shops.xml
           
-          # [skip ci] prevents this commit from triggering another infinite workflow loop
+          # [skip ci] stops git from running this action again in a loop
           git commit -m "chore: increment version to YYYY.MM.DD_FIX [skip ci]" || echo "No changes to commit"
-          git push
+          git push origin master
