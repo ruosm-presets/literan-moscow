@@ -37,11 +37,11 @@ jobs:
           # 2. Get today's date in YYYY.MM.DD format
           today_str = datetime.now().strftime('%Y.%m.%d')
 
-          # 3. Find the version attribute using a regular expression
-          match = re.search(r'version=\"([^\"]+)\"', content)
+          # 3. Find the version attribute on the <presets> element (not the <?xml?> declaration)
+          match = re.search(r'(<presets\b[^>]*?\bversion=\")([^\"]+)(\")', content, re.DOTALL)
 
           if match:
-              current_version = match.group(1)
+              current_version = match.group(2)
               
               # Check if the existing version already starts with today's date
               if current_version.startswith(f'{today_str}_'):
@@ -56,15 +56,15 @@ jobs:
 
               new_version = f'{today_str}_{next_fix}'
               
-              # 4. Swap only the version string, leaving all comments untouched
-              updated_content = content.replace(f'version=\"{current_version}\"', f'version=\"{new_version}\"')
+              # 4. Swap only the presets version string, leaving everything else untouched
+              updated_content = content[:match.start(2)] + new_version + content[match.end(2):]
               
               with open(xml_file, 'w', encoding='utf-8') as f:
                   f.write(updated_content)
                   
               print(f'Successfully updated version from {current_version} to {new_version}')
           else:
-              print('Warning: version attribute not found in the XML file!')
+              print('Warning: version attribute not found on the <presets> element!')
           "
 
       - name: Commit and Push Changes
