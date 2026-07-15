@@ -3,7 +3,7 @@ name: Auto Increment XML Version
 on:
   push:
     branches:
-      - main
+      - master
     paths:
       - 'russian_shops.xml'
 
