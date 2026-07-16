@@ -25,7 +25,6 @@
     level,
     operator
   сделано для единообразия с встроенными заготовками JOSM -->
-
   <!-- блок с шаблонами (chunks) -->
   <chunk id="name">
     <text key="name" text="Name" />
