@@ -3,7 +3,7 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://josm.openstreetmap.de/tagging-preset-1.0 tagging-preset.xsd"
   author="literan and others"
-  version="2026.08.27_1"
+  version="2026.09.04_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   icon="https://upload.wikimedia.org/wikipedia/commons/d/db/Twemoji_1f1f7-1f1fa.svg"
   shortdescription="Russian POIs"
@@ -589,25 +589,23 @@
         <link href="https://www.kfc.ru/restaurants" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
-      <item name="Pizza Hut" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Pizza Heart" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="opening_hours" text="Opening Hours" values="Mo-Su 10:00-23:00,Mo-Su 10:00-22:00,Mo-Su 11:00-23:00,Mo-Su 09:00-23:00" default="Mo-Su 10:00-23:00" />
         <key key="amenity" value="fast_food" />
-        <key key="brand" value="Pizza Hut" />
-        <key key="brand:wikidata" value="Q191615" />
-        <key key="brand:wikipedia" value="ru:Пицца Хат" />
-        <key key="contact:email" value="info@pizzahut.ru" />
+        <key key="brand" value="Pizza Heart" />        
         <key key="contact:facebook" value="https://www.facebook.com/PizzaHutRussia" />
         <key key="contact:instagram" value="https://www.instagram.com/pizzahutrussia" />
-        <key key="contact:phone" value="+7 800 1001958" />
+        <key key="contact:phone" value="+7 800 2225509" />
         <key key="contact:vk" value="https://vk.com/pizzahutrussia" />
-        <key key="contact:website" value="https://pizzahut.ru" />
+        <key key="contact:website" value="https://pizzahut.ru" />        
         <key key="cuisine" value="pizza" />
         <key key="delivery" value="yes" />
         <key key="diet:vegetarian" value="no" />
-        <key key="name" value="Pizza Hut" />
-        <key key="name:en" value="Pizza Hut" />
-        <link href="https://pizzahut.ru/#!/contacts" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <key key="name" value="Pizza Heart" />
+        <key key="name:en" value="Pizza Heart" />
+        <key key="name:ru" value="Пицца Харт" />
+        <link href="https://pizzahut.ru/information/zony" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
       <item name="Rostic's" type="node,closedway,multipolygon" preset_name_label="true">
@@ -1186,24 +1184,7 @@
         <link href="https://www.verno-info.ru/shops" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="Victoria" ru.name="Виктория" type="node,closedway,multipolygon" preset_name_label="true">
-        <space />
-        <combo key="contact:phone" text="Phone number" default="+7 800 2004454" />
-        <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 08:00-24:00,Mo-Su 08:00-01:00,Mo-Su 08:00-23:00,Mo-Su 06:00-02:00" />
-        <key key="brand" value="Виктория" />
-        <key key="brand:wikidata" value="Q4111046" />
-        <key key="brand:wikipedia" value="ru:Виктория (сеть магазинов)" />
-        <key key="contact:facebook" value="https://www.facebook.com/SupermarketVictoria" />
-        <key key="contact:instagram" value="https://www.instagram.com/my_victoria24" />
-        <key key="contact:vk" value="https://vk.com/supermarket_victoria" />
-        <key key="contact:website" value="https://victoria-group.ru" />
-        <key key="name" value="Виктория" />
-        <key key="name:ru" value="Виктория" />
-        <key key="shop" value="supermarket" />
-        <link href="https://victoria-group.ru/company/shops/moskva-i-moskovskaya-oblast/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="wheelchair_address" />
-      </item>
-      <item name="VkusWill" ru.name="ВкусВилл" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Vkusvill" ru.name="ВкусВилл" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
         <combo key="contact:phone" text="Phone number" default="+7 495 6638602" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00" />
@@ -2601,24 +2582,6 @@
         <key key="shop" value="cosmetics" />
         <link href="https://iledebeaute.ru/company/shops/moscow/map/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
-      </item>
-      <item name="Korablik" ru.name="Кораблик" type="node,closedway,multipolygon" preset_name_label="true">
-        <space />
-        <combo key="contact:phone" text="Phone number" values="+7 495 6630343" default="+7 800 7750343" />
-        <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 08:00-23:00" />
-        <key key="brand" value="Кораблик" />
-        <key key="brand:wikidata" value="Q57653416" />
-        <key key="contact:email" value="shop@korablik.ru" />
-        <key key="contact:facebook" value="https://www.facebook.com/korablik.ru" />
-        <key key="contact:instagram" value="https://www.instagram.com/korablik.shop" />
-        <key key="contact:vk" value="https://vk.com/korablik.shops" />
-        <key key="contact:website" value="https://www.korablik.ru" />
-        <key key="name" value="Кораблик" />
-        <key key="name:ru" value="Кораблик" />
-        <key key="operator" value="ООО &quot;Кораблик-Р&quot;" />
-        <key key="shop" value="toys" />
-        <link href="https://www.korablik.ru/shops/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="wheelchair_address" />
       </item>
       <item name="Lensmaster" ru.name="Линзмастер" type="node,closedway,multipolygon" preset_name_label="true">
         <space />
