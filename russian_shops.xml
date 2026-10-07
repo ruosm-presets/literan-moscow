@@ -1456,13 +1456,13 @@
       </item>
       <item name="Prodsib" ru.name="Продсиб" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/shopping_basket.svg">
         <space />
+        <reference ref="shop_type" />
         <key key="brand" value="Продсиб" />
         <key key="contact:email" value="info@prodsib.com" />
         <key key="contact:website" value="https://prodsib.com" />
         <key key="name" value="Продсиб" />
         <key key="name:en" value="Prodsib" />
         <key key="name:ru" value="Продсиб" />
-        <key key="shop" value="convenience" />
         <link href="https://prodsib.com/?page_id=167" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
