@@ -3,7 +3,7 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://josm.openstreetmap.de/tagging-preset-1.0 tagging-preset.xsd"
   author="literan and others"
-  version="2026.09.04_2"
+  version="2026.10.07_1"
   link="https://github.com/ruosm-presets/literan-moscow"
   icon="https://upload.wikimedia.org/wikipedia/commons/d/db/Twemoji_1f1f7-1f1fa.svg"
   shortdescription="Russian POIs"
@@ -3721,7 +3721,7 @@
         <reference ref="ref" />
         <key key="man_made" value="street_cabinet" />
         <key key="power" value="substation" />
-        <key key="street_cabinet" value="power" />
+        <key key="utility" value="power" />
         <key key="substation" value="minor_distribution" />
       </item>
       <item name="Communication mast" ru.name="Мачта сотовой связи" type="node" preset_name_label="true">
