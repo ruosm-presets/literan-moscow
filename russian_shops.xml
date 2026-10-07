@@ -628,27 +628,22 @@
         <link href="https://rostics.ru/restaurants" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
-      <item name="Subway" type="node,closedway,multipolygon" preset_name_label="true" name_context="fast_food" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/sandwich.svg">
+      <item name="SUBJOY" type="node,closedway,multipolygon" preset_name_label="true" name_context="fast_food" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/sandwich.svg">
         <space />
-        <combo key="contact:phone" text="Phone number" default="+7 800 5554449" />
+        <combo key="contact:phone" text="Phone number" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 08:00-23:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
         <key key="amenity" value="fast_food" />
-        <key key="brand" value="Subway" />
-        <key key="brand:wikidata" value="Q244457" />
-        <key key="brand:wikipedia" value="ru:Subway (сеть ресторанов)" />
-        <key key="contact:email" value="subway@subway.ru" />
-        <key key="contact:facebook" value="https://www.facebook.com/subwayrussiaofficial" />
-        <key key="contact:instagram" value="https://www.instagram.com/subwayrussia_official" />
-        <key key="contact:ok" value="https://ok.ru/subwayrussia" />
-        <key key="contact:vk" value="https://vk.com/subwayrussia" />
-        <key key="contact:website" value="https://subway.ru" />
-        <key key="contact:youtube" value="https://www.youtube.com/c/SubwayRussia" />
+        <key key="brand" value="SUBJOY" />
+        <key key="contact:ok" value="https://ok.ru/subjoyrussia" />
+        <key key="contact:telegram" value="https://t.me/sandwichrussia" />
+        <key key="contact:vk" value="https://vk.com/subjoyrussia" />
+        <key key="contact:website" value="https://subjoy.ru" />
         <key key="cuisine" value="sandwich" />
         <key key="diet:vegetarian" value="no" />
-        <key key="name" value="Subway" />
-        <key key="name:en" value="Subway" />
+        <key key="name" value="SUBJOY" />
+        <key key="name:en" value="SUBJOY" />
         <key key="takeaway" value="yes" />
-        <link href="https://subway.ru/stores/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://subjoy.ru/restaurants" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
       <item name="Surf Coffee" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/coffee.svg">
@@ -1041,7 +1036,7 @@
         <key key="diet:vegetarian" value="yes" />
         <key key="name" value="Якитория" />
         <key key="name:ru" value="Якитория" />
-        <link href="https://yakitoriya.ru/en/restaurants/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://yakitoriya.ru/restaurants/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
     </group>
@@ -1283,7 +1278,7 @@
         <key key="name:ru" value="Красная Икра" />
         <key key="operator" value="Сахалин Рыба (ИП Борисик)" />
         <key key="shop" value="seafood" />
-        <link href="http://www.borisik.ru/addresses" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://www.borisik.ru/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
       <item name="Lenta" ru.name="Лента" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/department_store.svg">
@@ -1357,7 +1352,7 @@
         <key key="contact:website" value="https://www.maria-ra.ru/" />
         <key key="name" value="Мария-Ра" />
         <key key="name:ru" value="Мария-Ра" />
-        <link href="https://www.maria-ra.ru/o-nas/karta-seti/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://www.maria-ra.ru/o-kompanii/karta-seti/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
       <item name="Monetka" ru.name="Монетка" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/coin.svg">
@@ -1392,23 +1387,6 @@
         <key key="shop" value="butcher" />
         <link href="https://kolbasa.ru/where/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
-      </item>
-      <item name="Myasnov" ru.name="МясновЪ" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/meat_bone.svg">
-        <space />
-        <combo key="contact:phone" text="Phone number" default="+7 495 4249515" />
-        <combo key="opening_hours" text="Opening Hours" values="Mo-Su 08:00-23:00" />
-        <key key="brand" value="МясновЪ" />
-        <key key="contact:email" value="info@coolclever.ru" />
-        <key key="contact:facebook" value="https://www.facebook.com/myasnov.russia" />
-        <key key="contact:instagram" value="https://www.instagram.com/myasnov.russia" />
-        <key key="contact:vk" value="https://vk.com/myasnov.russia" />
-        <key key="contact:website" value="https://www.myasnov.ru" />
-        <key key="name" value="МясновЪ" />
-        <key key="name:ru" value="МясновЪ" />
-        <key key="shop" value="convenience" />
-        <link href="https://www.myasnov.ru/magaziny_zdorovogo_pitaniya/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="wheelchair_address" />
-        <text key="ref" text="Reference" ru.text="Номер магазина" />
       </item>
       <item name="OKEY" ru.name="О’КЕЙ" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/shopping_cart.svg">
         <space />
@@ -1475,10 +1453,10 @@
         <key key="brand:wikipedia" value="ru:Светофор (торговая сеть)" />
         <combo key="contact:phone" text="Phone number" />
         <key key="contact:vk" value="https://vk.com/svetofor.market" />
-        <key key="contact:website" value="https://svetofor-nsk.ru/" />
+        <key key="contact:website" value="https://svetoforonline.ru/" />
         <key key="name" value="Светофор" />
         <key key="name:ru" value="Светофор" />
-        <link href="https://svetofor-nsk.ru/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://svetoforonline.ru/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
       <item name="Sushi Wok" ru.name="Суши Wok" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/sushi.svg">
@@ -1511,7 +1489,7 @@
         <key key="name" value="У Палыча" />
         <key key="name:ru" value="У Палыча" />
         <key key="shop" value="convenience" />
-        <link href="https://palich.ru/shops/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://palich.ru/about/shops/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
       <item name="Chizhik" ru.name="Чижик" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/bird.svg">
@@ -1703,30 +1681,6 @@
         <reference ref="level" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="Otdohni" ru.name="Отдохни" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/champagne.svg">
-        <space />
-        <combo key="contact:phone" text="Phone number" default="+7 495 4249515" />
-        <reference ref="oh3" />
-        <key key="brand" value="Отдохни" />
-        <key key="contact:email" value="somelie@coolclever.ru" />
-        <key key="contact:facebook" value="https://www.facebook.com/somelie.community" />
-        <key key="contact:instagram" value="https://www.instagram.com/somelie__community" />
-        <key key="contact:vk" value="https://vk.com/somelie.community" />
-        <key key="contact:website" value="https://www.somelie.ru" />
-        <key key="drink:beer" value="bottled" />
-        <key key="drink:cognac" value="bottled" />
-        <key key="drink:soft_drink" value="bottled" />
-        <key key="drink:sparkling_wine" value="bottled" />
-        <key key="drink:vodka" value="bottled" />
-        <key key="drink:whisky" value="bottled" />
-        <key key="drink:wine" value="bottled" />
-        <key key="name" value="Отдохни" />
-        <key key="name:ru" value="Отдохни" />
-        <key key="shop" value="alcohol" />
-        <link href="https://www.somelie.ru/map/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="level" />
-        <reference ref="wheelchair_address" />
-      </item>
     </group>
     <group name="Electronics shops" ru.name="Электроника" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/mobile_phone.svg">
       <item name="T2" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/signal.svg">
@@ -1810,22 +1764,6 @@
         <key key="office" value="telecommunication" />
         <key key="shop" value="mobile_phone" />
         <link href="https://shop.mts.ru/stores/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-        <reference ref="level_wheelchair_address" />
-      </item>
-      <item name="Svyaznoy" ru.name="Связной" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/mobile_phone.svg">
-        <space />
-        <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
-        <key key="brand" value="Связной" />
-        <key key="brand:wikidata" value="Q65371" />
-        <key key="brand:wikipedia" value="ru:Связной (компания)" />
-        <key key="contact:facebook" value="https://www.facebook.com/svyaznoy.ru" />
-        <key key="contact:phone" value="+7 800 7005000" />
-        <key key="contact:vk" value="https://vk.com/svyaznoy" />
-        <key key="contact:website" value="https://www.svyaznoy.ru" />
-        <key key="name" value="Связной" />
-        <key key="name:ru" value="Связной" />
-        <key key="shop" value="mobile_phone" />
-        <link href="https://www.svyaznoy.ru/address_shops" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
       <separator />
@@ -2416,7 +2354,7 @@
         <key key="payment:credit_cards" value="yes" />
         <key key="payment:debit_cards" value="yes" />
         <key key="payment:notes" value="yes" />
-        <link href="https://elecsnet.ru/terminals/addresses" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, номера терминалов)" />
+        <link href="https://elecsnet.ru/terminals/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, номера терминалов)" />
         <preset_link preset_name="Address" />
       </item>
       <item name="InfoPayment terminal Mosinfo" ru.name="Справочно-платежный терминал &quot;Мосинфо&quot;" type="node" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/receipt.svg">
@@ -2463,7 +2401,7 @@
       </item>
       <item name="TOPGUN" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/barber.svg">
         <space />
-        <combo key="contact:website" text="Website" default="https://topgunbarber.ru" />
+        <combo key="contact:website" text="Website" default="https://топган.рф" />
         <combo key="contact:phone" text="Phone number" default="+7 800 2004420" />
         <combo key="opening_hours" text="Opening Hours" default="Mo-Su 10:00-22:00" />
         <combo key="contact:facebook" text="facebook" default="https://www.facebook.com/topgunbarbershopmoscow" />
@@ -2475,7 +2413,7 @@
         <key key="name" value="TopGun" />
         <key key="name:en" value="TopGun" />
         <key key="shop" value="hairdresser" />
-        <link href="https://topgunbarber.ru/barbershop/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://топган.рф/главная" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
       <item name="Adamas" ru.name="Адамас" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/diamond.svg">
