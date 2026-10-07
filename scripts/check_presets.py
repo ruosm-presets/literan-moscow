@@ -70,16 +70,17 @@ def split_keep(value: str) -> list[str]:
 
 
 def idn_url(url: str) -> str:
-    """Re-encode a URL with an IDN (non-ASCII) hostname for urllib."""
+    """Re-encode a URL with an IDN (non-ASCII) hostname and/or path for urllib."""
     import urllib.parse
 
     parts = urllib.parse.urlsplit(url)
     try:
         host = parts.hostname.encode("idna").decode("ascii") if parts.hostname else ""
     except UnicodeError:
-        return url
+        host = parts.hostname or ""
     netloc = host if not parts.port else f"{host}:{parts.port}"
-    return urllib.parse.urlunsplit((parts.scheme, netloc, parts.path, parts.query, parts.fragment))
+    path = urllib.parse.quote(parts.path, safe="/%:=&?+#@,;$~*!'()[]")
+    return urllib.parse.urlunsplit((parts.scheme, netloc, path, parts.query, parts.fragment))
 
 
 def check_structure(root: ET.Element, rep: Report, xml_path: Path) -> list[str]:
