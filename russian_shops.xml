@@ -5,13 +5,15 @@
   author="literan and others"
   version="2026.10.07_2"
   link="https://github.com/ruosm-presets/literan-moscow"
-  icon="https://upload.wikimedia.org/wikipedia/commons/d/db/Twemoji_1f1f7-1f1fa.svg"
+  icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/ru_flag.svg"
   shortdescription="Russian POIs"
   ru.shortdescription="Российские POI"
   description="Tagging preset for Russian shops and amenities"
   ru.description="Заготовки для добавления магазинов и иных заведений России">
 
-  <!-- Pics have been derived mostly from https://commons.wikimedia.org/wiki/Emoji and https://wikimedia.org -->
+  <!-- Icons live in pics/icons/ and are served via GitHub Pages (see scripts/check_presets.py).
+    Sources: Twemoji https://github.com/jdecked/twemoji (CC-BY 4.0),
+    Emojione/Fxemoji/Noto Emoji/PICOL via https://commons.wikimedia.org -->
 
   <!-- NB: порядок следования комбо-полей (<combo>) следующий:
     shop/amenity,
@@ -60,16 +62,16 @@
     <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-22:00,Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
   </chunk>
   <chunk id="oh2">
-    <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-12:30\,13:15-18:00; Fr 09:00-12:30\,13:15-17:00,Mo-Th 09:00-13:00\,13:45-17:00; Fr 09:00-13:00\,13:45-15:45,Mo-Th 09:00-20:00; Fr 09:00-18:45; Sa 09:00-17:00" />
+    <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-12:30\,13:15-18:00; Fr 09:00-12:30\,13:15-17:00,Mo-Th 09:00-13:00\,13:45-17:00; Fr 09:00-13:00\,13:45-15:45,Mo-Th 09:00-20:00; Fr 09:00-18:45; Sa 09:00-17:00" values_searchable="true" />
   </chunk>
   <chunk id="oh3">
-    <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Fr 08:00-20:00; Sa-Su 10:00-18:00,Mo-Fr 08:00-22:00; Sa-Su 09:00-21:00,Mo-Fr 09:00-20:00; Sa 10:00-20:00; Su 10:00-19:00,Mo-Fr 09:00-21:00; Sa-Su 10:00-19:00,Mo-Su 09:00-21:00,Mo-Su 09:00-22:00,Mo-Su 10:00-22:00,Mo-Su 09:00-23:00,Mo-Su 10:00-23:00" />
+    <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Fr 08:00-20:00; Sa-Su 10:00-18:00,Mo-Fr 08:00-22:00; Sa-Su 09:00-21:00,Mo-Fr 09:00-20:00; Sa 10:00-20:00; Su 10:00-19:00,Mo-Fr 09:00-21:00; Sa-Su 10:00-19:00,Mo-Su 09:00-21:00,Mo-Su 09:00-22:00,Mo-Su 10:00-22:00,Mo-Su 09:00-23:00,Mo-Su 10:00-23:00" values_searchable="true" />
   </chunk>
   <chunk id="sports_list">
-    <combo key="sport" text="Sport" ru.text="Вид спорта" values="multi,archery,athletics,american_football,australian_football,baseball,basketball,beachvolleyball,billiards,boules,bowls,canadian_football,canoe,climbing,cricket,croquet,cycling,dog_racing,equestrian,field_hockey,gaelic_games,golf,gymnastics,handball,horse_racing,ice_hockey,karting,model_aerodrome,motocross,motor,pelota,racquet,rc_car,rugby_league,rugby_union,running,safety_training,shooting,skateboard,ice_skating,roller_skating,soccer,swimming,table_tennis,tennis,volleyball,9pin,10pin" values_context="sport" />
+    <combo key="sport" text="Sport" ru.text="Вид спорта" values="multi,archery,athletics,american_football,australian_football,baseball,basketball,beachvolleyball,billiards,boules,bowls,canadian_football,canoe,climbing,cricket,croquet,cycling,dog_racing,equestrian,field_hockey,gaelic_games,golf,gymnastics,handball,horse_racing,ice_hockey,karting,model_aerodrome,motocross,motor,pelota,racquet,rc_car,rugby_league,rugby_union,running,safety_training,shooting,skateboard,ice_skating,roller_skating,soccer,swimming,table_tennis,tennis,volleyball,9pin,10pin" values_context="sport" values_searchable="true" />
   </chunk>
   <chunk id="clothes_list">
-    <multiselect key="clothes" text="Clothes" ru.text="Одежда" values="babies,children,costumes,denim,fashion,fur,hats,leather,maternity,men,motorcycle,oversize,schoolwear,sports,suits,swimwear,traditional,underwear,unisex,wedding,women,workwear" display_values="для новорожденных,детская,костюиы (корновальные и т.п.),джинсовая,модная,меховая,головные уборы,кожаная,для беременных,мужская,мотоциклетные костюиы,больших размеров,школьная форма,спортивная,мужские костюмы,для купания,национальная одежда,нижнее бельё,унисекс,свадебная,женская,спецодежда" default="hats;men;women;children;underwear" />
+    <multiselect key="clothes" text="Clothes" ru.text="Одежда" values="babies,children,costumes,denim,fashion,fur,hats,leather,maternity,men,motorcycle,oversize,schoolwear,sports,suits,swimwear,traditional,underwear,unisex,wedding,women,workwear" display_values="для новорожденных,детская,костюмы (карнавальные и т.п.),джинсовая,модная,меховая,головные уборы,кожаная,для беременных,мужская,мотоциклетные костюмы,больших размеров,школьная форма,спортивная,мужские костюмы,для купания,национальная одежда,нижнее бельё,унисекс,свадебная,женская,спецодежда" default="hats;men;women;children;underwear" values_searchable="true" />
     <preset_link preset_name="Address" />
   </chunk> <!-- clothes_list. используется в магазинах одежды -->
   <chunk id="fitting_room">
@@ -204,9 +206,9 @@
   </chunk> <!-- health20_specialities. схема тегирования Healthcare 2.0: все специальности/специализации -->
 
   <!-- тело пресета (groups) -->
-  <group name="POI" icon="https://upload.wikimedia.org/wikipedia/commons/d/db/Twemoji_1f1f7-1f1fa.svg">
-    <group name="Pharmacies and medical services" ru.name="Аптеки и медицинские услуги" icon="https://upload.wikimedia.org/wikipedia/commons/e/e7/Twemoji_1f48a.svg">
-      <item name="36,6" type="node,closedway,multipolygon" preset_name_label="true">
+  <group name="POI" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/ru_flag.svg">
+    <group name="Pharmacies and medical services" ru.name="Аптеки и медицинские услуги" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/pill.svg">
+      <item name="36,6" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/thermometer.svg">
         <space />
         <combo key="contact:phone" text="Phone number" default="+7 495 7976336" />
         <key key="amenity" value="pharmacy" />
@@ -222,7 +224,7 @@
         <link href="https://366.ru/apteki/map" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="oh3_level_wheelchair_address_dispencing" />
       </item>
-      <item name="Vita" ru.name="Вита" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Vita" ru.name="Вита" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/pill.svg">
         <space />
         <combo key="contact:phone" text="Phone number" default="+7 800 7550003" />
         <key key="amenity" value="pharmacy" />
@@ -237,7 +239,7 @@
         <link href="https://vitaexpress.ru/search-apt/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="oh3_level_wheelchair_address_dispencing" />
       </item>
-      <item name="Gorzdrav" ru.name="Горздрав" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Gorzdrav" ru.name="Горздрав" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/stethoscope.svg">
         <space />
         <combo key="contact:phone" text="Phone number" values="+7 499 6536277,+7 812 4261584" default="+7 499 6536277" />
         <key key="amenity" value="pharmacy" />
@@ -252,7 +254,7 @@
         <link href="https://gorzdrav.org/apteki/map/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="oh3_level_wheelchair_address_dispencing" />
       </item>
-      <item name="Eapteka" ru.name="Еаптека" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Eapteka" ru.name="Еаптека" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/pill.svg">
         <space />
         <combo key="contact:phone" text="Phone number" default="+7 495 7907711" />
         <key key="amenity" value="pharmacy" />
@@ -268,7 +270,7 @@
         <link href="https://www.eapteka.ru/company/pickup" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="oh3_level_wheelchair_address_dispencing" />
       </item>
-      <item name="zhivika" ru.name="Живика" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="zhivika" ru.name="Живика" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/pill.svg">
         <space />
         <key key="amenity" value="pharmacy" />
         <key key="brand" value="Живика" />
@@ -285,7 +287,7 @@
         <link href="http://zhivika.ru/adresa_aptek/" text="Official website ural (place locator)" ru.text="Ссылка на сайт уральского региона (часы работы, координаты и т.п.)" />
         <reference ref="phone_oh2_wheelchair_address" />
       </item>
-      <item name="Zdravcity" ru.name="Здравсити" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Zdravcity" ru.name="Здравсити" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/pill.svg">
     <space />
     <combo key="contact:phone" text="Phone number" default="+7 800 500 92 62" />
     <key key="amenity" value="pharmacy" />
@@ -300,7 +302,7 @@
     <link href="https://zdravcity.ru/pharmacies/" text="Official website (branch map)" ru.text="Карта и список филиалов на сайте сети" />
     <reference ref="oh3_level_wheelchair_address_dispencing" />
 </item>
-      <item name="magnit-apteka" ru.name="Магнит Аптека" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="magnit-apteka" ru.name="Магнит Аптека" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/pill.svg">
         <space />
         <key key="amenity" value="pharmacy" />
         <key key="brand" value="Магнит Аптека" />
@@ -314,7 +316,7 @@
         <link href="https://apteka.magnit.ru/locations?view=map" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="phone_oh2_wheelchair_address" />
       </item>
-      <item name="Neopharm" ru.name="Неофарм" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Neopharm" ru.name="Неофарм" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/pill.svg">
         <space />
         <combo key="contact:phone" text="Phone number" default="+7 495 5855515" />
         <key key="amenity" value="pharmacy" />
@@ -328,7 +330,7 @@
         <link href="https://neopharm.ru/stores" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="oh3_level_wheelchair_address_dispencing" />
       </item>
-      <item name="Orteka" ru.name="Ортека" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Orteka" ru.name="Ортека" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/foot.svg">
         <space />
         <combo key="contact:phone" text="Phone number" values="+7 495 7755000" default="+7 800 3333112" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-22:00,Mo-Fr 09:00-21:00; Sa-Su 10:00-19:00,Mo-Fr 09:00-20:00; Sa 10:00-20:00; Su 10:00-19:00" />
@@ -345,7 +347,7 @@
         <link href="https://orteka.ru/salons/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="Planeta" ru.name="Планета здоровья" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Planeta" ru.name="Планета здоровья" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/pill.svg">
         <space />
         <combo key="contact:phone" text="Phone number" default="+7 495 3693300" />
         <key key="amenity" value="pharmacy" />
@@ -360,7 +362,7 @@
         <link href="https://planetazdorovo.ru/pharmacies/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="oh3_level_wheelchair_address_dispencing" />
       </item>
-      <item name="Rigla" ru.name="Ригла" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Rigla" ru.name="Ригла" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/pill.svg">
         <space />
         <combo key="contact:phone" text="Phone number" values="+7 495 2311697-xxxx" default="+7 800 7770303" />
         <key key="amenity" value="pharmacy" />
@@ -377,7 +379,7 @@
         <link href="https://www.rigla.ru/pharmacies" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="oh3_level_wheelchair_address_dispencing" />
       </item>
-      <item name="Samson-Pharma" ru.name="Самсон-Фарма" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Samson-Pharma" ru.name="Самсон-Фарма" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/pill.svg">
         <space />
         <combo key="contact:phone" text="Phone number" default="+7 800 2508800" />
         <key key="amenity" value="pharmacy" />
@@ -396,7 +398,7 @@
         <link href="https://samson-pharma.ru/contacts/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="oh3_level_wheelchair_address_dispencing" />
       </item>
-      <item name="Stolichki" ru.name="Столички" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Stolichki" ru.name="Столички" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/pill.svg">
         <space />
         <combo key="contact:phone" text="Phone number" default="+7 800 5551115" />
         <key key="amenity" value="pharmacy" />
@@ -410,7 +412,7 @@
         <link href="https://stolichki.ru/apteki" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="oh3_level_wheelchair_address_dispencing" />
       </item>
-      <item name="Stolichnye Apteki" ru.name="Столичные аптеки" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Stolichnye Apteki" ru.name="Столичные аптеки" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/pill.svg">
         <space />
         <reference ref="phone" />
         <key key="amenity" value="pharmacy" />
@@ -425,7 +427,7 @@
         <reference ref="oh3_level_wheelchair_address_dispencing" />
       </item>
       <separator />
-      <item name="CMD" ru.name="CMD (Центр молекулярной диагностики)" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="CMD" ru.name="CMD (Центр молекулярной диагностики)" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/test_tube.svg">
         <space />
         <combo key="contact:phone" text="Phone number" values="+7 495 7880001" default="+7 800 7077881" />
         <key key="alt_name" value="Центр молекулярной диагностики" />
@@ -448,7 +450,7 @@
         <link href="https://www.cmd-online.ru/patsientam/gde-sdat-analizy/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="oh1_level_wheelchair_address" />
       </item>
-      <item name="Gemotest" ru.name="Гемотест" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Gemotest" ru.name="Гемотест" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/test_tube.svg">
         <space />
         <combo key="contact:phone" text="Phone number" values="+7 495 5321313" default="+7 800 5501313" />
         <key key="amenity" value="doctors" />
@@ -468,7 +470,7 @@
         <link href="https://www.gemotest.ru/address/moskva/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="oh1_level_wheelchair_address" />
       </item>
-      <item name="Invitro" ru.name="Инвитро" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Invitro" ru.name="Инвитро" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/blood_drop.svg">
         <space />
         <combo key="contact:phone" text="Phone number" values="+7 495 3630363" default="+7 800 2003630" />
         <key key="amenity" value="doctors" />
@@ -489,7 +491,7 @@
         <link href="https://www.invitro.ru/offices/moscow/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="oh1_level_wheelchair_address" />
       </item>
-      <item name="Labquest" ru.name="ЛабКвест" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Labquest" ru.name="ЛабКвест" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/microscope.svg">
         <space />
         <combo key="contact:phone" text="Phone number" default="+7 495 1533788" />
         <key key="amenity" value="doctors" />
@@ -509,8 +511,8 @@
         <reference ref="oh1_level_wheelchair_address" />
       </item>
     </group>
-    <group name="Eatery" ru.name="Общепит" icon="https://upload.wikimedia.org/wikipedia/commons/1/1d/Emojione_1F374.svg">
-      <item name="BRandICE" type="node,closedway,multipolygon" preset_name_label="true">
+    <group name="Eatery" ru.name="Общепит" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/restaurant.svg">
+      <item name="BRandICE" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/ice_cream.svg">
         <space />
         <reference ref="phone" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 08:00-23:00,Mo-Fr 07:00-23:00; Sa-Su 10:00-23:00" />
@@ -525,7 +527,7 @@
         <key key="name:en" value="BRandICE" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
-      <item name="Cofix" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Cofix" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/coffee.svg">
         <space />
         <reference ref="phone" />
         <combo key="opening_hours" text="Opening Hours" values="Mo-Su 08:00-22:00,Mo-Th 10:00-22:00; Fr-Su 10:00-23:00" />
@@ -546,7 +548,7 @@
         <link href="https://www.cofix.ru/cafe/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
-      <item name="IL Patio" ru.name="IL Патио" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="IL Patio" ru.name="IL Патио" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/pasta.svg">
         <space />
         <reference ref="phone" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 08:00-23:00,Mo-Fr 07:00-23:00; Sa-Su 10:00-23:00" />
@@ -564,7 +566,7 @@
         <link href="http://ilpatio.ru/restaurants/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
-      <item name="KFC" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="KFC" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/chicken_leg.svg">
         <space />
         <combo key="contact:phone" text="Phone number" default="+7 800 5558333" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
@@ -589,7 +591,7 @@
         <link href="https://www.kfc.ru/restaurants" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
-      <item name="Pizza Heart" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Pizza Heart" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/pizza.svg">
         <space />
         <combo key="opening_hours" text="Opening Hours" values="Mo-Su 10:00-23:00,Mo-Su 10:00-22:00,Mo-Su 11:00-23:00,Mo-Su 09:00-23:00" default="Mo-Su 10:00-23:00" />
         <key key="amenity" value="fast_food" />
@@ -608,7 +610,7 @@
         <link href="https://pizzahut.ru/information/zony" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
-      <item name="Rostic's" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Rostic's" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/chicken_leg.svg">
         <space />
         <combo key="contact:phone" text="Phone number" default="+7 800 7075477" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
@@ -626,7 +628,7 @@
         <link href="https://rostics.ru/restaurants" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
-      <item name="Subway" type="node,closedway,multipolygon" preset_name_label="true" name_context="fast_food">
+      <item name="Subway" type="node,closedway,multipolygon" preset_name_label="true" name_context="fast_food" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/sandwich.svg">
         <space />
         <combo key="contact:phone" text="Phone number" default="+7 800 5554449" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 08:00-23:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
@@ -649,7 +651,7 @@
         <link href="https://subway.ru/stores/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
-      <item name="Surf Coffee" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Surf Coffee" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/coffee.svg">
         <space />
         <reference ref="phone" />
         <combo key="opening_hours" text="Opening Hours" values="Mo-Su 08:00-22:00,Mo-Th 10:00-22:00; Fr-Su 10:00-23:00" />
@@ -666,7 +668,7 @@
         <link href="https://www.surfcoffee.ru/surf-coffee-stores" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
-      <item name="Burger King" ru.name="Бургер Кинг" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Burger King" ru.name="Бургер Кинг" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/burger.svg">
         <space />
         <combo key="contact:phone" text="Phone number" values="+7 495 5445000-xxxx" default="+7 800 5504545 " />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
@@ -687,7 +689,7 @@
         <link href="https://burgerking.ru/restaurants" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
-      <item name="Double B" ru.name="Даблби" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Double B" ru.name="Даблби" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/coffee.svg">
         <space />
         <reference ref="phone" />
         <combo key="opening_hours" text="Opening Hours" values="Mo-Su 10:00-22:00,Mo-Su 08:00-23:00" />
@@ -708,7 +710,7 @@
         <link href="https://double-b.ru/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
-      <item name="Dodo Pizza" ru.name="Додо Пицца" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Dodo Pizza" ru.name="Додо Пицца" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/pizza.svg">
         <space />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-23:00,Mo-Su 10:00-23:00,Mo-Su 10:00-22:00" />
         <key key="amenity" value="fast_food" />
@@ -730,7 +732,7 @@
         <link href="https://dodopizza.ru/moscow/contacts" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
-      <item name="Domino’s" ru.name="Домино’c" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Domino’s" ru.name="Домино’c" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/pizza.svg">
         <space />
         <combo key="contact:phone" text="Phone number" values="+7 495 47888xx,+7 495 24083xx,+7 495 24084xx" />
         <combo key="opening_hours" text="Opening Hours" values="Mo-Su 10:00-23:00,Mo-Su 09:00-23:00" default="Mo-Su 10:00-23:00" />
@@ -752,7 +754,7 @@
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
 
-<item name="Drinkit" ru.name="Дринкит" type="node,closedway,multipolygon" preset_name_label="true">
+<item name="Drinkit" ru.name="Дринкит" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/bubble_tea.svg">
         <space />
         <combo key="contact:phone" text="Phone number" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 08:00-23:00,Mo-Fr 07:00-23:00; Sa-Su 10:00-23:00" />
@@ -770,7 +772,7 @@
   <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
       
-      <item name="Coffee House" ru.name="Кофе Хауз" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Coffee House" ru.name="Кофе Хауз" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/coffee.svg">
         <space />
         <reference ref="phone" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 07:00-23:00; Sa-Su 10:00-23:00" />
@@ -797,7 +799,7 @@
         <link href="https://www.coffeehouse.ru/#map" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
-      <item name="Kroshka Kartoshka" ru.name="Крошка Картошка" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Kroshka Kartoshka" ru.name="Крошка Картошка" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/potato.svg">
         <space />
         <reference ref="phone" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 08:00-23:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
@@ -818,7 +820,7 @@
         <link href="https://www.kartoshka.com/map/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
-      <item name="Vkusno - i tochka" ru.name="Вкусно — и точка" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Vkusno - i tochka" ru.name="Вкусно — и точка" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/burger.svg">
         <space />
         <combo key="contact:phone" text="Phone number" default="+7 495 2680035" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 06:30-24:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
@@ -837,7 +839,7 @@
         <link href="https://vkusnoitochka.ru/restaurants/map" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
-      <item name="Mu-Mu" ru.name="Му-Му" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Mu-Mu" ru.name="Му-Му" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/cow.svg">
         <space />
         <combo key="contact:phone" text="Phone number" values="+7 499 67840xx" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-23:00,Mo-Su 09:00-23:00" />
@@ -860,7 +862,7 @@
         <link href="https://www.cafemumu.ru/cafe/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
-      <item name="Papa John's" ru.name="Папа Джонс" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Papa John's" ru.name="Папа Джонс" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/pizza.svg">
         <space />
         <reference ref="phone" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 11:00-23:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
@@ -879,7 +881,7 @@
         <link href="https://www.papajohns.ru/contacts" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
-      <item name="Pravda Coffee" ru.name="Правда Кофе" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Pravda Coffee" ru.name="Правда Кофе" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/coffee.svg">
         <space />
         <combo key="contact:phone" text="Phone number" default="+7 800 5557862" />
         <reference ref="oh3" />
@@ -901,7 +903,7 @@
         <key key="takeaway" value="yes" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
-      <item name="Robin Sdobin" ru.name="Робин Сдобин" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Robin Sdobin" ru.name="Робин Сдобин" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/croissant.svg">
         <!-- Воронежская, Московская, Смоленская, Владимирская и т.д. -->
         <space />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 08:00-23:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
@@ -918,7 +920,7 @@
         <link href="https://robinok.ru" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
-      <item name="Russian Appetite" ru.name="Русский Аппетит" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Russian Appetite" ru.name="Русский Аппетит" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/restaurant.svg">
         <!-- Воронежская, Курская, Белгородская, Саратовская, Тамбовская, Орловская области -->
         <space />
         <combo key="amenity" text="Cafe or fast food" ru.text="Тип (кафе или киоск)" values="fast_food,cafe" ru.display_values="киоск,кафе" default="fast_food" />
@@ -937,7 +939,7 @@
         <link href="https://rusapp.ru" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
-      <item name="Stars Coffee" ru.name="Старс Кофе" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Stars Coffee" ru.name="Старс Кофе" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/coffee.svg">
         <space />
         <combo key="contact:phone" text="Phone number" default="+7 991 5555222" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 08:00-23:00,Mo-Fr 07:00-23:00; Sa-Su 10:00-23:00" />
@@ -956,7 +958,7 @@
         <key key="takeaway" value="yes" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
-      <item name="Stardogs" ru.name="Стардогs" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Stardogs" ru.name="Стардогs" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/hot_dog.svg">
         <space />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 08:00-23:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
         <key key="amenity" value="fast_food" />
@@ -977,7 +979,7 @@
         <link href="https://www.stardogs.ru/address" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
-      <item name="Teremok" ru.name="Теремок" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Teremok" ru.name="Теремок" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/pancakes.svg">
         <space />
         <combo key="contact:phone" text="Phone number" values="+7 495 9562730" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 08:00-23:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
@@ -999,7 +1001,7 @@
         <link href="https://teremok.ru/places/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
-      <item name="Shokoladnitsa" ru.name="Шоколадница" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Shokoladnitsa" ru.name="Шоколадница" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/chocolate.svg">
         <space />
         <combo key="contact:phone" text="Phone number" default="+7 800 1003360" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 08:00-23:00,Mo-Fr 07:00-23:00; Sa-Su 10:00-23:00" />
@@ -1023,7 +1025,7 @@
         <link href="https://shoko.ru/addresses/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
-      <item name="Yakitoriya" ru.name="Якитория" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Yakitoriya" ru.name="Якитория" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/skewer.svg">
         <space />
         <reference ref="phone" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-06:00,Mo-Su 10:00-05:00; Mo-Su 11:00-06:00" />
@@ -1043,8 +1045,8 @@
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
     </group>
-    <group name="Food shops" ru.name="Продукты" icon="https://upload.wikimedia.org/wikipedia/commons/7/71/Emoji_u1f347.svg">
-      <item name="Fix Price" type="node,closedway,multipolygon" preset_name_label="true">
+    <group name="Food shops" ru.name="Продукты" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/grapes.svg">
+      <item name="Fix Price" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/price_tag.svg">
         <space />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-22:00,Mo-Sa 09:00-20:00; Su 10:00-19:00" />
         <key key="brand" value="Fix Price" />
@@ -1064,7 +1066,7 @@
         <link href="https://fix-price.ru/stores/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
-      <item name="SPAR" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="SPAR" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/evergreen.svg">
         <space />
         <reference ref="shop_type" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 08:00-23:00" />
@@ -1080,7 +1082,7 @@
         <link href="https://spar.ru/stores" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="Azbuka Vkusa" ru.name="Азбука Вкуса" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Azbuka Vkusa" ru.name="Азбука Вкуса" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/shopping_cart.svg">
         <space />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00" />
         <key key="brand" value="Азбука Вкуса" />
@@ -1098,7 +1100,7 @@
         <link href="https://av.ru/shops/#msk_azbuka" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="Azbuka Daily" ru.name="Азбука daily" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Azbuka Daily" ru.name="Азбука daily" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/shopping_cart.svg">
         <space />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00" />
         <key key="brand" value="Азбука daily" />
@@ -1114,7 +1116,7 @@
         <link href="https://av.ru/shops/#msk_av-daily" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="AV Market" ru.name="АВ Маркет" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="AV Market" ru.name="АВ Маркет" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/shopping_cart.svg">
         <space />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00" />
         <key key="brand" value="АВ Маркет" />
@@ -1134,7 +1136,7 @@
         <link href="https://av.ru/shops/#msk_av-market" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="Auchan" ru.name="Ашан" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Auchan" ru.name="Ашан" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/department_store.svg">
         <space />
         <combo key="name" text="Name" values="Ашан,Ашан Сити" default="Ашан" />
         <combo key="name:ru" text="Name (:ru)" ru.text="Название (:ru)" values="Ашан,Ашан Сити" default="Ашан" />
@@ -1154,7 +1156,7 @@
         <link href="https://www.auchan.ru/ru/shops" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="Avoska" ru.name="Авоська" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Avoska" ru.name="Авоська" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/shopping_basket.svg">
         <space />
         <reference ref="shop_type" />
         <combo key="contact:phone" text="Phone number" values="+7 495 6567022;+7 495 7254154,+7 831 2716000" />
@@ -1168,7 +1170,7 @@
         <link href="https://avoska.ru/shops/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="Verniy" ru.name="Верный" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Verniy" ru.name="Верный" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/shopping_bags.svg">
         <space />
         <reference ref="shop_type" />
         <combo key="contact:phone" text="Phone number" values="+7 499 7550070,+7 812 60101000,+7 343 2372246,+7 843 5247545" default="+7 499 7550070" />
@@ -1184,7 +1186,7 @@
         <link href="https://www.verno-info.ru/shops" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="Vkusvill" ru.name="ВкусВилл" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Vkusvill" ru.name="ВкусВилл" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/salad.svg">
         <space />
         <combo key="contact:phone" text="Phone number" default="+7 495 6638602" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00" />
@@ -1204,7 +1206,7 @@
         <link href="https://vkusvill.ru/shops/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
-<item name="Da" ru.name="Да!" type="node,closedway,multipolygon" preset_name_label="true">
+<item name="Da" ru.name="Да!" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/shopping_basket.svg">
         <space />
         <reference ref="shop_type" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 08:00-22:00,Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00" />
@@ -1220,7 +1222,7 @@
         <link href="https://market-da.ru/shops.html" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
-        <item name="Dixy" ru.name="Дикси" type="node,closedway,multipolygon" preset_name_label="true">
+        <item name="Dixy" ru.name="Дикси" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/shopping_basket.svg">
         <space />
         <reference ref="shop_type" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00" />
@@ -1239,7 +1241,7 @@
         <link href="https://dixy.ru/shop-map/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="Dobrotsen" ru.name="Доброцен" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Dobrotsen" ru.name="Доброцен" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/nuts.svg">
         <space />
         <reference ref="shop_type" />
         <combo key="contact:phone" text="Phone number" />
@@ -1254,7 +1256,7 @@
         <link href="http://dobrotsen.ru/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="Ermolino" ru.name="Ермолино" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Ermolino" ru.name="Ермолино" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/ice_cube.svg">
         <space />
         <combo key="contact:phone" text="Phone number" />
         <key key="shop" value="frozen_food" />
@@ -1270,7 +1272,7 @@
         <link href="https://www.ermolino-produkty.ru/magaziny" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="Krasnaya Ikra" ru.name="Красная Икра" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Krasnaya Ikra" ru.name="Красная Икра" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/fish.svg">
         <space />
         <combo key="contact:phone" text="Phone number" default="+7 495 4379029" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-22:00" default="Mo-Su 09:00-22:00" />
@@ -1284,7 +1286,7 @@
         <link href="http://www.borisik.ru/addresses" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="Lenta" ru.name="Лента" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Lenta" ru.name="Лента" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/department_store.svg">
         <space />
         <combo key="contact:phone" text="Phone number" default="+7 800 7004111" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 08:00-23:00" />
@@ -1305,7 +1307,7 @@
         <link href="https://lenta.com/allmarkets/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="Magnit" ru.name="Магнит" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Magnit" ru.name="Магнит" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/shopping_cart.svg">
         <space />
         <reference ref="shop_type" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-22:00,Mo-Su 09:30-22:00" />
@@ -1327,7 +1329,7 @@
         <link href="https://magnit.ru/shops/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="Magnoliya" ru.name="Магнолия" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Magnoliya" ru.name="Магнолия" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/blossom.svg">
         <space />
         <reference ref="shop_type" />
         <reference ref="phone" />
@@ -1341,7 +1343,7 @@
         <link href="https://shop.mgnl.ru/contacts/stores/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="Maria-Ra" ru.name="Мария-Ра" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Maria-Ra" ru.name="Мария-Ра" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/shopping_basket.svg">
         <space />
         <reference ref="shop_type" />
         <reference ref="oh3" />
@@ -1358,7 +1360,7 @@
         <link href="https://www.maria-ra.ru/o-nas/karta-seti/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="Monetka" ru.name="Монетка" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Monetka" ru.name="Монетка" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/coin.svg">
         <space />
         <reference ref="shop_type" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 08:00-24:00,Mo-Su 09:00-22:00,Mo-Su 09:00-23:00" />
@@ -1375,7 +1377,7 @@
         <link href="http://www.monetka.ru/urfo/shops_map" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="Myasnitsky Ryad" ru.name="Мясницкий ряд" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Myasnitsky Ryad" ru.name="Мясницкий ряд" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/meat.svg">
         <space />
         <combo key="opening_hours" text="Opening Hours" values="Mo-Sa 09:00-21:00; Su 09:00-20:00" />
         <key key="brand" value="Мясницкий ряд" />
@@ -1391,7 +1393,7 @@
         <link href="https://kolbasa.ru/where/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="Myasnov" ru.name="МясновЪ" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Myasnov" ru.name="МясновЪ" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/meat_bone.svg">
         <space />
         <combo key="contact:phone" text="Phone number" default="+7 495 4249515" />
         <combo key="opening_hours" text="Opening Hours" values="Mo-Su 08:00-23:00" />
@@ -1408,7 +1410,7 @@
         <reference ref="wheelchair_address" />
         <text key="ref" text="Reference" ru.text="Номер магазина" />
       </item>
-      <item name="OKEY" ru.name="О’КЕЙ" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="OKEY" ru.name="О’КЕЙ" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/shopping_cart.svg">
         <space />
         <combo key="contact:phone" text="Phone number" default="+7 800 2500008" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 08:00-23:00,Mo-Su 08:00-24:00" />
@@ -1426,7 +1428,7 @@
         <link href="https://www.okmarket.ru/stores/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="Perekryostok" ru.name="Перекрёсток" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Perekryostok" ru.name="Перекрёсток" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/shopping_cart.svg">
         <space />
         <combo key="contact:phone" text="Phone number" default="+7 800 2009555" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 08:00-23:00,Mo-Sa 09:00-20:00; Su 10:00-19:00" />
@@ -1445,7 +1447,7 @@
         <link href="https://www.perekrestok.ru/shops" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="Pyatyorochka" ru.name="Пятёрочка" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Pyatyorochka" ru.name="Пятёрочка" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/five.svg">
         <space />
         <reference ref="shop_type" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 08:00-23:00,Mo-Sa 09:00-20:00; Su 10:00-19:00" />
@@ -1464,7 +1466,7 @@
         <link href="https://5ka.ru/stores/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="Svetofor" ru.name="Светофор" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Svetofor" ru.name="Светофор" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/traffic_light.svg">
         <space />
         <reference ref="shop_type" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 08:00-23:00,Mo-Sa 09:00-20:00; Su 10:00-19:00" default="Mo-Su 09:00-21:00" />
@@ -1479,7 +1481,7 @@
         <link href="https://svetofor-nsk.ru/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="Sushi Wok" ru.name="Суши Wok" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Sushi Wok" ru.name="Суши Wok" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/sushi.svg">
         <space />
         <combo key="contact:phone" text="Phone number" default="+7 499 7544444" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-23:00,Mo-Sa 09:00-20:00; Su 10:00-19:00" default="Mo-Su 10:00-23:00" />
@@ -1499,7 +1501,7 @@
         <link href="https://sushiwok.ru/msk/addresses/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="U Palycha" ru.name="У Палыча" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="U Palycha" ru.name="У Палыча" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/pie.svg">
         <space />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-21:00,Mo-Sa 09:00-20:00; Su 10:00-19:00" />
         <key key="brand" value="У Палыча" />
@@ -1512,7 +1514,7 @@
         <link href="https://palich.ru/shops/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="Chizhik" ru.name="Чижик" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Chizhik" ru.name="Чижик" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/bird.svg">
         <space />
         <reference ref="shop_type" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-21:00,Mo-Su 10:00-22:00,Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00" />
@@ -1527,7 +1529,7 @@
         <link href="https://chizhik.club/shops" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="Yarche" ru.name="Ярче!" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Yarche" ru.name="Ярче!" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/sun.svg">
         <space />
         <reference ref="phone" />
         <key key="brand" value="Ярче!" />
@@ -1543,7 +1545,7 @@
         <link href="https://ярче.рф" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="Okolo" ru.name="Около" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Okolo" ru.name="Около" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/shopping_basket.svg">
         <space />
         <combo key="opening_hours" text="Opening Hours" values="24/7" />
         <key key="brand" value="Около" />
@@ -1560,8 +1562,8 @@
         <reference ref="wheelchair_address" />
       </item>
     </group>
-    <group name="Alcohol drinks" ru.name="Алкоголь" icon="https://upload.wikimedia.org/wikipedia/commons/7/76/Emblem-windows.svg">
-      <item name="AV Enoteca" ru.name="АВ Энотека" type="node,closedway,multipolygon" preset_name_label="true">
+    <group name="Alcohol drinks" ru.name="Алкоголь" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/wine.svg">
+      <item name="AV Enoteca" ru.name="АВ Энотека" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/wine.svg">
         <space />
         <reference ref="oh3" />
         <key key="brand" value="АВ Энотека" />
@@ -1582,7 +1584,7 @@
         <reference ref="level" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="Aromatny Mir" ru.name="Ароматный мир" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Aromatny Mir" ru.name="Ароматный мир" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/champagne.svg">
         <space />
         <combo key="contact:phone" text="Phone number" default="+7 495 7775190-xxxx" />
         <reference ref="oh3" />
@@ -1609,7 +1611,7 @@
         <reference ref="level" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="Bristol" ru.name="Бристоль" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Bristol" ru.name="Бристоль" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/beer.svg">
         <space />
         <combo key="contact:phone" text="Phone number" default="+7 800 7071555" />
         <reference ref="oh3" />
@@ -1635,7 +1637,7 @@
         <reference ref="level" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="Winelab" ru.name="Винлаб" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Winelab" ru.name="Винлаб" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/wine.svg">
         <space />
         <combo key="contact:phone" text="Phone number" default="+7 800 3017755" />
         <reference ref="oh3" />
@@ -1662,7 +1664,7 @@
         <reference ref="level" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="Krasnoye&amp;Beloye" ru.name="Красное&amp;Белое" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Krasnoye&amp;Beloye" ru.name="Красное&amp;Белое" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/cocktail.svg">
         <space />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-22:05,Mo-Sa 09:30-22:30; Su 11:00-22:00" />
         <key key="brand" value="Красное&amp;Белое" />
@@ -1684,7 +1686,7 @@
         <reference ref="level" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="Lit.ra" ru.name="Лит.Ра" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Lit.ra" ru.name="Лит.Ра" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/beer_mugs.svg">
         <space />
         <combo key="contact:phone" text="Phone number" values="+7 495 4413543,+7 812 3257052,+7 831 2161157" />
         <reference ref="oh3" />
@@ -1701,7 +1703,7 @@
         <reference ref="level" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="Otdohni" ru.name="Отдохни" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Otdohni" ru.name="Отдохни" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/champagne.svg">
         <space />
         <combo key="contact:phone" text="Phone number" default="+7 495 4249515" />
         <reference ref="oh3" />
@@ -1726,8 +1728,8 @@
         <reference ref="wheelchair_address" />
       </item>
     </group>
-    <group name="Electronics shops" ru.name="Электроника" icon="https://upload.wikimedia.org/wikipedia/commons/d/d5/Twemoji_1f4f1.svg">
-      <item name="T2" type="node,closedway,multipolygon" preset_name_label="true">
+    <group name="Electronics shops" ru.name="Электроника" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/mobile_phone.svg">
+      <item name="T2" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/signal.svg">
         <space />
         <combo key="contact:phone" text="Phone number" values="+7 495 9797611" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00,Mo-Su 10:00-21:00" />
@@ -1746,7 +1748,7 @@
         <link href="https://msk.t2.ru/offices" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
-      <item name="Beeline" ru.name="Билайн" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Beeline" ru.name="Билайн" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/signal.svg">
         <space />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00,Mo-Su 09:00-21:00" />
         <key key="brand" value="Билайн" />
@@ -1768,7 +1770,7 @@
         <link href="https://moskva.beeline.ru/customers/beeline-map/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
-      <item name="MegaFon" ru.name="МегаФон" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="MegaFon" ru.name="МегаФон" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/signal.svg">
         <space />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
         <key key="brand" value="МегаФон" />
@@ -1790,7 +1792,7 @@
         <link href="https://moscow.megafon.ru/help/offices/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
-      <item name="MTS" ru.name="МТС" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="MTS" ru.name="МТС" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/signal.svg">
         <space />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-22:00,Mo-Fr 09:00-22:00; Sa-Su 10:00-21:00" />
         <key key="brand" value="МТС" />
@@ -1810,7 +1812,7 @@
         <link href="https://shop.mts.ru/stores/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
-      <item name="Svyaznoy" ru.name="Связной" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Svyaznoy" ru.name="Связной" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/mobile_phone.svg">
         <space />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 08:00-23:00; Sa-Su 09:00-21:00" />
         <key key="brand" value="Связной" />
@@ -1827,7 +1829,7 @@
         <reference ref="level_wheelchair_address" />
       </item>
       <separator />
-      <item name="DNS" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="DNS" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/computer.svg">
         <space />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-21:00,Mo-Su 09:00-22:00" />
         <!-- <key key="alt_name" value="Digital Network System" /> NOTE: нигде в быту не используется -->
@@ -1846,7 +1848,7 @@
         <link href="https://www.dns-shop.ru/shops/moscow/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
-      <item name="M.Video" ru.name="М.Видео" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="M.Video" ru.name="М.Видео" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/tv.svg">
         <space />
         <combo key="contact:phone" text="Phone number" default="+7 800 2007775" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-22:00,Mo-Su 10:00-23:00" />
@@ -1868,7 +1870,7 @@
         <link href="https://www.mvideo.ru/shops/store-list" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
-      <item name="Positronica" ru.name="Позитроника" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Positronica" ru.name="Позитроника" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/computer.svg">
         <space />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 09:00-20:00; Sa-Su 10:00-20:00" default="Mo-Fr 09:00-20:00; Sa-Su 10:00-20:00" />
         <key key="brand" value="Позитроника" />
@@ -1883,7 +1885,7 @@
         <link href="https://positronica.ru/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="Citilink" ru.name="Ситилинк" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Citilink" ru.name="Ситилинк" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/keyboard.svg">
         <space />
         <reference ref="phone" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 09:00-20:00; Sa-Su 10:00-20:00" default="Mo-Su 09:00-21:00" />
@@ -1904,7 +1906,7 @@
         <link href="https://www.citilink.ru/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="Eldorado" ru.name="Эльдорадо" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Eldorado" ru.name="Эльдорадо" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/plug.svg">
         <space />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-21:00,Mo-Fr 08:00-22:00; Sa-Su 09:00-21:00" />
         <key key="brand" value="Эльдорадо" />
@@ -1925,8 +1927,8 @@
         <reference ref="level_wheelchair_address" />
       </item>
     </group>
-    <group name="Distance retail" ru.name="Дистанционная торговля" icon="https://upload.wikimedia.org/wikipedia/commons/9/97/PICOL_icon_Mailbox.svg">
-      <item name="Boxberry" ru.name="Boxberry" type="node,closedway,multipolygon" preset_name_label="true">
+    <group name="Distance retail" ru.name="Дистанционная торговля" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/parcel.svg">
+      <item name="Boxberry" ru.name="Boxberry" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/parcel.svg">
         <space />
         <reference ref="oh3" />
         <combo key="contact:phone" text="Phone number" values="+7 800 2228000" />
@@ -1942,7 +1944,7 @@
         <reference ref="fitting_room" />
         <reference ref="level_wheelchair_address" />
       </item>
-      <item name="Lamoda" ru.name="Lamoda" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Lamoda" ru.name="Lamoda" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/dress.svg">
         <space />
         <reference ref="oh3" />
         <key key="brand" value="Lamoda" />
@@ -1958,7 +1960,7 @@
         <reference ref="fitting_room" />
         <reference ref="level_wheelchair_address" />
       </item>
-      <item name="Ozon" ru.name="Ozon" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Ozon" ru.name="Ozon" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/parcel.svg">
         <space />
         <reference ref="oh3" />
         <key key="brand" value="Ozon" />
@@ -1976,7 +1978,7 @@
         <reference ref="fitting_room" />
         <reference ref="level_wheelchair_address" />
       </item>
-      <item name="PickPoint" ru.name="PickPoint" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="PickPoint" ru.name="PickPoint" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/parcel.svg">
         <space />
         <reference ref="oh3" />
         <key key="brand" value="PickPoint" />
@@ -1991,7 +1993,7 @@
         <reference ref="fitting_room" />
         <reference ref="level_wheelchair_address" />
       </item>
-      <item name="Wildberries" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Wildberries" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/parcel.svg">
         <space />
         <combo key="contact:phone" text="Phone number" values="+7 800 1007505,+7 495 7755505" default="+7 800 1007505" />
         <reference ref="oh3" />
@@ -2017,7 +2019,7 @@
         <reference ref="fitting_room" />
         <reference ref="level_wheelchair_address" />
       </item>
-      <item name="CDEK" ru.name="СДЭК" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="CDEK" ru.name="СДЭК" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/parcel.svg">
         <space />
         <combo key="contact:phone" text="Phone number" default="+7 800 2501405;+7 800 2500405" />
         <reference ref="oh3" />
@@ -2034,7 +2036,7 @@
         <reference ref="fitting_room" />
         <reference ref="level_wheelchair_address" />
       </item>
-      <item name="Yandex.market" ru.name="Яндекс.Маркет" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Yandex.market" ru.name="Яндекс.Маркет" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/shopping_bags.svg">
         <space />
         <reference ref="oh3" />
         <key key="brand" value="Яндекс.Маркет" />
@@ -2052,7 +2054,7 @@
         <reference ref="level_wheelchair_address" />
       </item>
       <separator />
-      <item name="5post" ru.name="Постамат 5post" type="node" preset_name_label="true">
+      <item name="5post" ru.name="Постамат 5post" type="node" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/envelope.svg">
         <space />
         <reference ref="oh3" />
         <text key="ref" text="Reference" ru.text="Номер постамата" />
@@ -2064,7 +2066,7 @@
         <link href="https://fivepost.ru/point-map" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
-      <item name="Cainiao" ru.name="Постамат Cainiao" type="node" preset_name_label="true">
+      <item name="Cainiao" ru.name="Постамат Cainiao" type="node" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/china_flag.svg">
         <space />
         <reference ref="oh3" />
         <text key="ref" text="Reference" ru.text="Номер постамата" />
@@ -2077,7 +2079,7 @@
         <key key="amenity" value="parcel_locker" />
         <reference ref="level_wheelchair_address" />
       </item>
-      <item name="Ozon box" ru.name="Постамат Ozon box" type="node" preset_name_label="true">
+      <item name="Ozon box" ru.name="Постамат Ozon box" type="node" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/post_box.svg">
         <space />
         <reference ref="oh3" />
         <text key="ref" text="Reference" ru.text="Номер постамата" />
@@ -2091,7 +2093,7 @@
         <link href="https://www.ozon.ru/geo/moskva/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
-      <item name="PickPoint box" ru.name="Постамат PickPoint" type="node" preset_name_label="true">
+      <item name="PickPoint box" ru.name="Постамат PickPoint" type="node" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/post_box.svg">
         <space />
         <reference ref="oh3" />
         <text key="ref" text="Reference" ru.text="Номер постамата" />
@@ -2103,7 +2105,7 @@
         <link href="https://pickpoint.ru/postamats/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
-      <item name="Omni" ru.name="Постамат ОмниСДЭК" type="node" preset_name_label="true">
+      <item name="Omni" ru.name="Постамат ОмниСДЭК" type="node" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/parcel.svg">
         <space />
         <reference ref="oh3" />
         <text key="ref" text="Reference" ru.text="Номер постамата" />
@@ -2115,7 +2117,7 @@
         <link href="https://omnicdek.ru/#map" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
-      <item name="Pochta Rus" ru.name="Постамат Почта России" type="node" preset_name_label="true">
+      <item name="Pochta Rus" ru.name="Постамат Почта России" type="node" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/Russian_Post.svg">
         <space />
         <reference ref="oh3" />
         <text key="ref" text="Reference" ru.text="Номер постамата" />
@@ -2126,7 +2128,7 @@
         <link href="https://www.pochta.ru/offices?filters%5B%5D=POCHTOMAT" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
-      <item name="SberLogistika" ru.name="Постамат СберЛогистика" type="node" preset_name_label="true">
+      <item name="SberLogistika" ru.name="Постамат СберЛогистика" type="node" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/truck.svg">
         <space />
         <reference ref="oh3" />
         <text key="ref" text="Reference" ru.text="Номер постамата" />
@@ -2138,7 +2140,7 @@
         <link href="https://sberlogistics.ru/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
-      <item name="Utkonos box" ru.name="Постамат Утконос" type="node" preset_name_label="true">
+      <item name="Utkonos box" ru.name="Постамат Утконос" type="node" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/duck.svg">
         <space />
         <reference ref="oh3" />
         <text key="ref" text="Reference" ru.text="Номер постамата" />
@@ -2152,7 +2154,7 @@
         <link href="https://www.utkonos.ru/landing/foodbox" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
-      <item name="Halva box" ru.name="Постамат Халва" type="node" preset_name_label="true">
+      <item name="Halva box" ru.name="Постамат Халва" type="node" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/credit_card.svg">
         <space />
         <reference ref="oh3" />
         <text key="ref" text="Reference" ru.text="Номер постамата" />
@@ -2164,7 +2166,7 @@
         <link href="https://pochtomat.ru/map/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
-      <item name="Yandex.market postamat" ru.name="Постамат Яндекс.Маркет" type="node" preset_name_label="true">
+      <item name="Yandex.market postamat" ru.name="Постамат Яндекс.Маркет" type="node" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/post_box.svg">
         <space />
         <reference ref="oh3" />
         <text key="ref" text="Reference" ru.text="Номер постамата" />
@@ -2179,8 +2181,8 @@
         <reference ref="level_wheelchair_address" />
       </item>
     </group>
-    <group name="Finance" ru.name="Финансы" icon="https://upload.wikimedia.org/wikipedia/commons/6/64/Emoji_u1f4b0.svg">
-      <item name="Alfa-Bank" ru.name="Альфа-Банк" type="node,closedway,multipolygon" preset_name_label="true">
+    <group name="Finance" ru.name="Финансы" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/money_bag.svg">
+      <item name="Alfa-Bank" ru.name="Альфа-Банк" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/bank.svg">
         <space />
         <combo key="contact:phone" text="Phone number" values="+7 495 7888878" default="+7 800 2000000" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 09:00-21:00; Sa 10:00-19:00" />
@@ -2201,7 +2203,7 @@
         <link href="https://alfabank.ru/office/moscow/map/?kind=retail" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="bic_branch_ref_wheelchair_atm_address" />
       </item>
-      <item name="VTB" ru.name="ВТБ" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="VTB" ru.name="ВТБ" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/bank.svg">
         <space />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 09:00-20:00; Sa 10:00-17:00" />
         <key key="amenity" value="bank" />
@@ -2224,7 +2226,7 @@
         <link href="https://www.vtb.ru/o-banke/kontakty/otdeleniya/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="bic_branch_ref_wheelchair_atm_address" />
       </item>
-      <item name="Post Bank" ru.name="Почта Банк" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Post Bank" ru.name="Почта Банк" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/bank.svg">
         <space />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Fr 10:00-19:00,Mo-Su 10:00-22:00,Mo-Fr 10:00-20:00; Sa 10:00-17:00" />
         <key key="amenity" value="bank" />
@@ -2246,7 +2248,7 @@
         <link href="https://www.pochtabank.ru/map" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="bic_branch_ref_wheelchair_atm_address" />
       </item>
-      <item name="Raiffeisen" ru.name="Райффайзен" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Raiffeisen" ru.name="Райффайзен" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/bank.svg">
         <space />
         <combo key="contact:phone" text="Phone number" values="+7 495 7219100" default="+7 800 7009100" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 10:00-20:00; Sa 10:00-17:00" />
@@ -2268,7 +2270,7 @@
         <link href="https://www.raiffeisen.ru/offices/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="bic_branch_ref_wheelchair_atm_address" />
       </item>
-      <item name="Rosbank" ru.name="Росбанк" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Rosbank" ru.name="Росбанк" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/bank.svg">
         <space />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 09:00-20:00; Sa 09:00-17:00" />
         <key key="amenity" value="bank" />
@@ -2287,7 +2289,7 @@
         <link href="https://www.rosbank.ru/otdeleniya/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="bic_branch_ref_wheelchair_atm_address" />
       </item>
-      <item name="Rosselkhozbank" ru.name="Россельхозбанк" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Rosselkhozbank" ru.name="Россельхозбанк" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/harvest.svg">
         <space />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 09:30-20:00; Sa 10:00-18:00" />
         <key key="amenity" value="bank" />
@@ -2309,7 +2311,7 @@
         <link href="https://www.rshb.ru/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="bic_branch_ref_wheelchair_atm_address" />
       </item>
-      <item name="Sberbank" ru.name="Сбербанк" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Sberbank" ru.name="Сбербанк" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/bank.svg">
         <space />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 09:30-20:00; Sa 10:00-18:00" />
         <key key="amenity" value="bank" />
@@ -2330,7 +2332,7 @@
         <link href="https://www.sberbank.ru/ru/about/today/oib" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="bic_branch_ref_wheelchair_atm_address" />
       </item>
-      <item name="Uralsib" ru.name="Уралсиб" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Uralsib" ru.name="Уралсиб" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/bank.svg">
         <space />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 09:30-20:00; Sa 10:00-18:00" />
         <key key="amenity" value="bank" />
@@ -2352,7 +2354,7 @@
         <reference ref="bic_branch_ref_wheelchair_atm_address" />
       </item>
       <separator />
-      <item name="Zaim-Express" ru.name="Займ-Экспресс" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Zaim-Express" ru.name="Займ-Экспресс" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/money_wings.svg">
         <space />
         <combo key="opening_hours" text="Opening Hours" default="Mo-Fr 09:00-21:00; Sa-Su 10:00-20:00" />
         <text key="ref" text="Reference" ru.text="Номер офиса займа" />
@@ -2371,7 +2373,7 @@
         <link href="https://www.zaim-express.ru/karta_ofisov_microzaimov.html" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="Payment terminal MKB" ru.name="Платежный терминал &quot;МКБ&quot; (Московский кредитный банк)" type="node" preset_name_label="true">
+      <item name="Payment terminal MKB" ru.name="Платежный терминал &quot;МКБ&quot; (Московский кредитный банк)" type="node" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/credit_card.svg">
         <space />
         <combo key="contact:phone" text="Phone number" values="+7 495 7774888" default="+7 800 1004888" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00" />
@@ -2393,7 +2395,7 @@
         <link href="https://mkb.ru/about/address/terminal" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, номера терминалов)" />
         <preset_link preset_name="Address" />
       </item>
-      <item name="Payment terminal Elecsnet" ru.name="Платежный терминал &quot;Элекснет&quot;" type="node" preset_name_label="true">
+      <item name="Payment terminal Elecsnet" ru.name="Платежный терминал &quot;Элекснет&quot;" type="node" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/credit_card.svg">
         <space />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-21:00; Mo-Su 10:00-20:00" default="24/7" />
         <text key="ref" text="Reference" ru.text="Номер терминала" />
@@ -2417,7 +2419,7 @@
         <link href="https://elecsnet.ru/terminals/addresses" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, номера терминалов)" />
         <preset_link preset_name="Address" />
       </item>
-      <item name="InfoPayment terminal Mosinfo" ru.name="Справочно-платежный терминал &quot;Мосинфо&quot;" type="node" preset_name_label="true">
+      <item name="InfoPayment terminal Mosinfo" ru.name="Справочно-платежный терминал &quot;Мосинфо&quot;" type="node" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/receipt.svg">
         <space />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00" />
         <text key="ref" text="Reference" ru.text="Номер терминала" />
@@ -2432,8 +2434,8 @@
         <preset_link preset_name="Address" />
       </item>
     </group>
-    <group name="Etc" ru.name="Прочие магазины/салоны" icon="https://upload.wikimedia.org/wikipedia/commons/b/b6/Twemoji_1f45c.svg">
-      <item name="Milomart" type="node" preset_name_label="true">
+    <group name="Etc" ru.name="Прочие магазины/салоны" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/handbag.svg">
+      <item name="Milomart" type="node" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/tshirt.svg">
         <space />
         <key key="shop" value="clothes" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,09:00-19:00,Mo-Su 09:00-19:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-22:00" default="09:00-19:00" />
@@ -2444,7 +2446,7 @@
         <reference ref="clothes_list" />
         <reference ref="level_wheelchair_address" />
       </item>
-      <item name="Ticketland.ru" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Ticketland.ru" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/tickets.svg">
         <space />
         <combo key="contact:phone" text="Phone number" default="+7 800 7700007" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00" />
@@ -2459,7 +2461,7 @@
         <link href="https://www.ticketland.ru/kassa/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="TOPGUN" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="TOPGUN" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/barber.svg">
         <space />
         <combo key="contact:website" text="Website" default="https://topgunbarber.ru" />
         <combo key="contact:phone" text="Phone number" default="+7 800 2004420" />
@@ -2476,7 +2478,7 @@
         <link href="https://topgunbarber.ru/barbershop/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="Adamas" ru.name="Адамас" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Adamas" ru.name="Адамас" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/diamond.svg">
         <space />
         <combo key="contact:phone" text="Phone number" values="+7 800 2503344-xxxx" default="+7 800 2503344" />
         <combo key="opening_hours" text="Opening Hours" values="Mo-Su 10:00-22:00,Mo-Su 09:00-21:00" />
@@ -2494,7 +2496,7 @@
         <link href="https://www.adamas.ru/buy/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="Eyekraft" ru.name="Айкрафт" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Eyekraft" ru.name="Айкрафт" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/glasses.svg">
         <space />
         <combo key="contact:phone" text="Phone number" values="+7 800 7755554,+7 495 7755554" default="+7 800 7755554" />
         <combo key="opening_hours" text="Opening Hours" values="Mo-Su 10:00-21:00,Mo-Su 10:00-21:00,Mo-Su 09:00-22:00" />
@@ -2511,7 +2513,7 @@
         <link href="https://eyekraft.ru/saloni-optiki" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
-      <item name="Galamart" ru.name="Галамарт" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Galamart" ru.name="Галамарт" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/wrench.svg">
         <space />
         <combo key="contact:phone" text="Phone number" default="+7 800 2500025" />
         <key key="shop" value="hardware" />
@@ -2529,7 +2531,7 @@
         <link href="https://galamart.ru/shops/" text="Official website (place locator)" ru.text="Адреса и телефоны магазинов (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
-      <item name="Detskiy Mir" ru.name="Детский мир" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Detskiy Mir" ru.name="Детский мир" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/teddy_bear.svg">
         <space />
         <combo key="contact:phone" text="Phone number" default="+7 800 2500000" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-22:00,Mo-Su 09:00-23:00,Mo-Su 10:00-22:00,Mo-Su 11:00-21:00" />
@@ -2550,7 +2552,7 @@
         <link href="https://www.detmir.ru/shops/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
-      <item name="Diana" ru.name="Диана (химчистка)" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Diana" ru.name="Диана (химчистка)" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/laundry_basket.svg">
         <space />
         <combo key="contact:phone" text="Phone number" default="+7 800 2008227" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 10:00-20:00; Sa-Su 10:00-18:00" />
@@ -2567,7 +2569,7 @@
         <link href="https://dryclean.ru/priemnye_punkty/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
-      <item name="Ile de Beaute" ru.name="Иль де Ботэ" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Ile de Beaute" ru.name="Иль де Ботэ" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/lipstick.svg">
         <space />
         <combo key="contact:phone" text="Phone number" default="+7 800 1000005" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 08:00-22:00; Sa-Su 09:00-21:00" />
@@ -2583,7 +2585,7 @@
         <link href="https://iledebeaute.ru/company/shops/moscow/map/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
-      <item name="Lensmaster" ru.name="Линзмастер" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Lensmaster" ru.name="Линзмастер" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/eye.svg">
         <space />
         <combo key="contact:phone" text="Phone number" default="+7 800 7707567" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-22:00,Mo-Sa 10:00-21:00; Su 11:00-20:00" />
@@ -2602,7 +2604,7 @@
         <link href="https://www.lensmaster.ru/saloni-optiki/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
-      <item name="L'etoile" ru.name="Л'Этуаль" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="L'etoile" ru.name="Л'Этуаль" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/perfume.svg">
         <space />
         <combo key="contact:phone" text="Phone number" default="+7 800 3337711-xxxx" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 08:00-22:00; Sa-Su 09:00-21:00" />
@@ -2625,7 +2627,7 @@
         <link href="https://www.letu.ru/stores" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
-      <item name="Magnit Cosmetic" ru.name="Магнит Косметик" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Magnit Cosmetic" ru.name="Магнит Косметик" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/lipstick.svg">
         <space />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-22:00,Mo-Su 09:30-22:00" />
         <key key="brand" value="Магнит Косметик" />
@@ -2645,7 +2647,7 @@
         <link href="https://magnitcosmetic.ru/shops/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="Moscow Jewelry Factory" ru.name="Московский ювелирный завод" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Moscow Jewelry Factory" ru.name="Московский ювелирный завод" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/ring.svg">
         <space />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 08:00-22:00; Sa-Su 09:00-21:00" />
         <key key="brand" value="Московский ювелирный завод" />
@@ -2664,7 +2666,7 @@
         <link href="https://miuz.ru/stores/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="Ochkarik" ru.name="Очкарик" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Ochkarik" ru.name="Очкарик" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/glasses.svg">
         <space />
         <combo key="contact:phone" text="Phone number" default="+7 800 7002126" />
         <combo key="opening_hours" text="Opening Hours" values="Mo-Su 10:00-22:00,Mo-Su 09:00-21:00" />
@@ -2680,7 +2682,7 @@
         <link href="https://ochkarik.ru/salony-optiki/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
-      <item name="Persona" ru.name="Персона" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Persona" ru.name="Персона" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/haircut.svg">
         <space />
         <reference ref="phone" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-22:00,Mo-Fr 08:00-22:00; Sa-Su 09:00-21:00" />
@@ -2697,7 +2699,7 @@
         <link href="https://persona.ru/contacts/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="Podruzhka" ru.name="Подружка" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Podruzhka" ru.name="Подружка" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/nail_polish.svg">
         <space />
         <combo key="opening_hours" text="Opening Hours" values="Mo-Su 10:00-22:00,Mo-Su 09:00-21:00" default="Mo-Su 09:00-21:00" />
         <key key="brand" value="Подружка" />
@@ -2715,7 +2717,7 @@
         <link href="https://www.podrygka.ru/shoplist/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="Smeshnie Tseni" ru.name="Смешные цены" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Smeshnie Tseni" ru.name="Смешные цены" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/soap.svg">
         <space />
         <key key="brand" value="Смешные цены" />
         <key key="contact:website" value="https://smeshnie-ceny.ru" />
@@ -2725,7 +2727,7 @@
         <link href="https://smeshnie-ceny.ru/adresa-magazinov-v-moskve/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="oh1_level_wheelchair_address" />
       </item>
-      <item name="Sportmaster" ru.name="Спортмастер" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Sportmaster" ru.name="Спортмастер" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/weightlifting.svg">
         <space />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 10:00-22:00,Mo-Su 10:00-20:00" />
         <key key="brand" value="Спортмастер" />
@@ -2750,7 +2752,7 @@
         <link href="https://www.sportmaster.ru/stores/moscow/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
-      <item name="TVOE" ru.name="ТВОЁ" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="TVOE" ru.name="ТВОЁ" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/jeans.svg">
         <space />
         <combo key="contact:phone" text="Phone number" default="+7 800 5555696" />
         <combo key="opening_hours" text="Opening Hours" values="Mo-Su 10:00-22:00,Mo-Su 10:00-23:00,Mo-Su 09:00-21:00,Mo-Su 09:00-22:00" />
@@ -2771,7 +2773,7 @@
         <link href="https://tvoe.ru/shops/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
-      <item name="Ulybka Radugi" ru.name="Улыбка радуги" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Ulybka Radugi" ru.name="Улыбка радуги" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/rainbow.svg">
         <space />
         <combo key="contact:phone" text="Phone number" default="+7 800 3336600" />
         <combo key="opening_hours" text="Opening Hours" values="Mo-Su 10:00-20:00,Mo-Su 10:00-22:00,Mo-Su 09:00-20:00,Mo-Su 09:00-21:00" />
@@ -2788,8 +2790,8 @@
       </item>
     </group>
     <separator />
-    <group name="Government services" ru.name="Государственные органы" icon="https://upload.wikimedia.org/wikipedia/commons/d/dd/Emoji_u1f46e.svg">
-      <item name="Военкомат" type="node,closedway,multipolygon" preset_name_label="true">
+    <group name="Government services" ru.name="Государственные органы" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/police.svg">
+      <item name="Военкомат" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/military_medal.svg">
         <space />
         <combo key="name" text="Name" default="N-ский военкомат" />
         <combo key="official_name" text="Official name" ru.text="Полное официальное название" default="N-ский военный комиссариат N-ской области" />
@@ -2799,7 +2801,7 @@
         <key key="contact:website" value="http://mil.ru" />
         <key key="military" value="office" />
       </item>
-      <item name="ЗАГС" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="ЗАГС" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/ring.svg">
         <space />
         <combo key="name" text="Name" default="N-ское управление ЗАГС" />
         <combo key="official_name" text="Official name" ru.text="Полное официальное название" default="N-ское управление ЗАГС N-ской области" />
@@ -2808,7 +2810,7 @@
         <key key="government" value="register_office" />
         <key key="office" value="government" />
       </item>
-      <item name="Казначейство" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Казначейство" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/government_building.svg">
         <space />
         <combo key="name" text="Name" default="Отдел № ... Управления Федерального казначейства" />
         <combo key="official_name" text="Official name" ru.text="Полное официальное название" default="Отдел № ... Управления Федерального казначейства по ... ской области" />
@@ -2819,7 +2821,7 @@
         <key key="government" value="treasury" />
         <key key="office" value="government" />
       </item>
-      <item name="Налоговая инспекция (ФНС)" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Налоговая инспекция (ФНС)" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/receipt.svg">
         <space />
         <combo key="name" text="Name" default="ФНС России по г. ... ской области" />
         <combo key="official_name" text="Official name" ru.text="Полное официальное название" default="Инспекция Федеральной налоговой службы России по г. ... ской области" />
@@ -2830,7 +2832,7 @@
         <key key="government" value="tax" />
         <key key="office" value="government" />
       </item>
-      <item name="Социальный фонд России" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Социальный фонд России" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/handshake.svg">
         <space />
         <combo key="name" text="Name" default="Социальный фонд России" />
         <reference ref="phone_oh2_wheelchair_address" />
@@ -2865,7 +2867,7 @@
         <link wiki="Tag:amenity=post_office" />
         <reference ref="wheelchair_address" />
       </item>
-      <item name="Прокуратура" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Прокуратура" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/justice.svg">
         <space />
         <combo key="name" text="Name" default="Прокуратура n-ского района/области" />
         <combo key="contact:website" text="Website" default="https://www.genproc.gov.ru" />
@@ -2876,7 +2878,7 @@
         <key key="government" value="prosecutor" />
         <key key="office" value="government" />
       </item>
-      <item name="Следственный комитет" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Следственный комитет" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/magnifier.svg">
         <space />
         <combo key="name" text="Name" default="Следственный комитет n-ского района/области" />
         <combo key="contact:website" text="Website" default="https://sledcom.ru" />
@@ -2886,7 +2888,7 @@
         <key key="government" value="investigation" />
         <key key="office" value="government" />
       </item>
-      <item name="Служба государственной статистики" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Служба государственной статистики" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/statistics.svg">
         <space />
         <combo key="name" text="Name" default="Отдел государственной статистики в N-ском районе" />
         <combo key="contact:website" text="Website" default="https://www.gks.ru" />
@@ -2895,7 +2897,7 @@
         <key key="government" value="statistics" />
         <key key="office" value="government" />
       </item>
-      <item name="Служба социальной защиты" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Служба социальной защиты" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/senior.svg">
         <space />
         <combo key="name" text="Name" default="Отдел социальной защиты населения N-ского района" />
         <combo key="contact:website" text="Website" default="https://dszn.ru" />
@@ -2903,7 +2905,7 @@
         <key key="government" value="social_services" />
         <key key="office" value="government" />
       </item>
-      <item name="Служба судебных приставов" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Служба судебных приставов" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/document.svg">
         <space />
         <combo key="name" text="Name" default="Отдел судебных приставов по N-скому району" />
         <combo key="contact:website" text="Website" default="https://fssp.gov.ru" />
@@ -2913,7 +2915,7 @@
         <key key="government" value="bailiff" />
         <key key="office" value="government" />
       </item>
-      <item name="Управление образования" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Управление образования" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/graduation_cap.svg">
         <space />
         <combo key="name" text="Name" default="Управление образования N-ского района" />
         <reference ref="website" />
@@ -2921,7 +2923,7 @@
         <key key="government" value="education" />
         <key key="office" value="government" />
       </item>
-      <item name="Управление/отдел по вопросам миграции МВД" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Управление/отдел по вопросам миграции МВД" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/passport_control.svg">
         <space />
         <combo key="name" text="Name" default="Отдел по вопросам миграции ГУ МВД России по г. n / n-скому району" />
         <reference ref="phone_oh2_wheelchair_address" />
@@ -2929,7 +2931,7 @@
         <key key="government" value="migration" />
         <key key="office" value="government" />
       </item>
-      <item name="Центр гигиены и эпидемиологии (б. СЭС)" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Центр гигиены и эпидемиологии (б. СЭС)" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/microbe.svg">
         <space />
         <combo key="name" text="Name" default="Центр гигиены и эпидемиологии по N-скому району" />
         <combo key="official_name" text="Official name" ru.text="Полное официальное название" default="Федеральное бюджетное учреждение здравоохранения &quot;Центр гигиены и эпидемиологии по N-скому району&quot;" />
@@ -2938,7 +2940,7 @@
         <key key="government" value="healthcare" />
         <key key="office" value="government" />
       </item>
-      <item name="Центр госуслуг (МФЦ, &quot;Мои документы&quot;)" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Центр госуслуг (МФЦ, &quot;Мои документы&quot;)" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/document.svg">
         <space />
         <combo key="name" text="Name" values="Многофункциональный центр предоставления государственных и муниципальных услуг [города N], Многофункциональный центр предоставления государственных услуг [города N]" default="Многофункциональный центр предоставления государственных и муниципальных услуг [города N]" />
         <combo key="contact:website" text="Website" values="https://md.mos.ru" />
@@ -2954,7 +2956,7 @@
         <space />
         <reference ref="wifi" />
       </item>
-      <item name="Центр занятости (фонд занятости, биржа труда)" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Центр занятости (фонд занятости, биржа труда)" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/briefcase.svg">
         <space />
         <combo key="name" text="Name" default="Центр занятости населения" />
         <combo key="official_name" text="Official name" ru.text="Полное официальное название" default="Государственное казенное учреждение &quot;...ский центр занятости населения&quot;" />
@@ -2963,7 +2965,7 @@
         <key key="government" value="recruitment" />
         <key key="office" value="government" />
       </item>
-      <item name="Центр социального обслуживания (инвалидов, пожилых)" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Центр социального обслуживания (инвалидов, пожилых)" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/senior.svg">
         <space />
         <combo key="name" text="Name" default="Территориальный центр социального обслуживания &quot;...&quot;" />
         <combo key="official_name" text="Official name" ru.text="Полное официальное название" default="Государственное бюджетное учреждение Территориальный центр социального обслуживания &quot;...&quot;" />
@@ -2974,9 +2976,9 @@
         <key key="social_facility:for" value="disabled;senior" />
       </item>
     </group>
-    <group name="Health facilities" ru.name="Медицинские учреждения" icon="https://upload.wikimedia.org/wikipedia/commons/c/c8/Twemoji_1f489.svg">
-      <group name="Healthcare 2.0: Specialties">
-        <item name="Physician's: Main field specialties" type="node,closedway,multipolygon" preset_name_label="true">
+    <group name="Health facilities" ru.name="Медицинские учреждения" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/syringe.svg">
+      <group name="Healthcare 2.0: Specialties" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/stethoscope.svg">
+        <item name="Physician's: Main field specialties" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/doctor.svg">
           <link wiki="Proposed_features/Healthcare_2.0/Specialties#Main_field_specialties" />
           <space />
           <combo key="health_specialty:anaesthesiology" text="anaesthesiology" values="yes,main,additional,no,partial,trained" match="key" />
@@ -3014,7 +3016,7 @@
           <combo key="health_specialty:surgery" text="surgery" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:transfusion_medicine" text="transfusion medicine" values="yes,main,additional,no,partial,trained" match="key" />
         </item>
-        <item name="Physician's: Subspecialties" type="node,closedway,multipolygon" preset_name_label="true">
+        <item name="Physician's: Subspecialties" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/stethoscope.svg">
           <link wiki="Proposed_features/Healthcare_2.0/Specialties#Subspecialties" />
           <space />
           <combo key="health_specialty:addiction_medicine" text="addiction medicine" values="yes,main,additional,no,partial,trained" match="key" />
@@ -3087,7 +3089,7 @@
           <combo key="health_specialty:urology" text="urology" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:vascular_surgery" text="vascular surgery" values="yes,main,additional,no,partial,trained" match="key" />
         </item>
-        <item name="Physician's: Subsubspecialties" type="node,closedway,multipolygon" preset_name_label="true">
+        <item name="Physician's: Subsubspecialties" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/heart_anatomy.svg">
           <link wiki="Proposed_features/Healthcare_2.0/Specialties#Subsubspecialties" />
           <space />
           <combo key="health_specialty:allergology" text="allergology" values="yes,main,additional,no,partial,trained" match="key" />
@@ -3100,7 +3102,7 @@
           <combo key="health_specialty:urogynaecology" text="urogynaecology" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:venereology" text="venereology" values="yes,main,additional,no,partial,trained" match="key" />
         </item>
-        <item name="Therapists and the alternative medicine: Main field specialties" type="node,closedway,multipolygon" preset_name_label="true">
+        <item name="Therapists and the alternative medicine: Main field specialties" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/herb.svg">
           <link wiki="Proposed_features/Healthcare_2.0/Specialties#Main_field_specialties_2" />
           <space />
           <combo key="health_specialty:alternative_medicine" text="alternative medicine" values="yes,main,additional,no,partial,trained" match="key" />
@@ -3120,7 +3122,7 @@
           <combo key="health_specialty:speech_therapy" text="speech therapy" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:traditional_medicine" text="traditional medicine" values="yes,main,additional,no,partial,trained" match="key" />
         </item>
-        <item name="Therapists and the alternative medicine: Subspecialties" type="node,closedway,multipolygon" preset_name_label="true">
+        <item name="Therapists and the alternative medicine: Subspecialties" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/meditation.svg">
           <link wiki="Proposed_features/Healthcare_2.0/Specialties#Subspecialties_2" />
           <space />
           <combo key="health_specialty:anthroposophical_medicine" text="anthroposophical medicine" values="yes,main,additional,no,partial,trained" match="key" />
@@ -3146,7 +3148,7 @@
           <combo key="health_specialty:unani" text="unani" values="yes,main,additional,no,partial,trained" match="key" />
           <combo key="health_specialty:yoga" text="yoga" values="yes,main,additional,no,partial,trained" match="key" />
         </item>
-        <item name="Therapists and the alternative medicine: Subsubspecialties" type="node,closedway,multipolygon" preset_name_label="true">
+        <item name="Therapists and the alternative medicine: Subsubspecialties" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/needle.svg">
           <link wiki="Proposed_features/Healthcare_2.0/Specialties#Subsubspecialties_2" />
           <space />
           <combo key="health_specialty:acupuncture" text="acupuncture" values="yes,main,additional,no,partial,trained" match="key" />
@@ -3156,7 +3158,7 @@
         </item>
       </group>
       <separator />
-      <item name="Gynaecology clinic" ru.name="Женская консультация" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Gynaecology clinic" ru.name="Женская консультация" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/pregnancy.svg">
         <space />
         <key key="amenity" value="clinic" />
         <key key="health_facility:type" value="clinic" />
@@ -3167,7 +3169,7 @@
         <reference ref="name_website_phone_oh1_level_wheelchair_address" />
         <reference ref="health20_specialities" />
       </item>
-      <item name="Doctors" ru.name="Кабинет врача, медцентр, амбулатория, ФАП (&lt;10 врачей)" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Doctors" ru.name="Кабинет врача, медцентр, амбулатория, ФАП (&lt;10 врачей)" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/doctor.svg">
         <space />
         <key key="amenity" value="doctors" />
         <key key="health_facility:type" value="office" />
@@ -3180,7 +3182,7 @@
         <label text="then add health_specialty:gastroenterology=main tag." ru.text="укажите специализацию (для гастроэнтерологии health_specialty:gastroenterology=main)" />
         <reference ref="health20_specialities" />
       </item>
-      <item name="Laboratory" ru.name="Лаборатория (анализы, диагностика)" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Laboratory" ru.name="Лаборатория (анализы, диагностика)" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/test_tube.svg">
         <space />
         <key key="amenity" value="doctors" />
         <key key="health_facility:type" value="laboratory" />
@@ -3190,7 +3192,7 @@
         <reference ref="name_website_phone_oh1_level_wheelchair_address" />
         <reference ref="health20_specialities" />
       </item>
-      <item name="Clinic" ru.name="Поликлиника, клиника, медцентр, диспансер (&gt;10 врачей)" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Clinic" ru.name="Поликлиника, клиника, медцентр, диспансер (&gt;10 врачей)" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/hospital.svg">
         <space />
         <key key="amenity" value="clinic" />
         <key key="health_facility:type" value="clinic" />
@@ -3203,7 +3205,7 @@
         <label text="then add health_specialty:oncology=main tag." ru.text="укажите специализацию (для онкологической health_specialty:oncology=main)" />
         <reference ref="health20_specialities" />
       </item>
-      <item name="Rehab" ru.name="Реабилитационный центр" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Rehab" ru.name="Реабилитационный центр" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/meditation.svg">
         <space />
         <key key="amenity" value="clinic" />
         <key key="health_facility:type" value="rehabilitation" />
@@ -3215,7 +3217,7 @@
         <label text="then add health_specialty:addiction_medicine=main tag." ru.text="укажите специализацию (для наркологии health_specialty:addiction_medicine=main)" />
         <reference ref="health20_specialities" />
       </item>
-      <item name="Perinatal center" ru.name="Роддом (перинатальный центр)" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Perinatal center" ru.name="Роддом (перинатальный центр)" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/baby.svg">
         <space />
         <key key="amenity" value="hospital" />
         <key key="health_facility:type" value="hospital" />
@@ -3226,7 +3228,7 @@
         <reference ref="name_website_phone_level_wheelchair_address" />
         <reference ref="health20_specialities" />
       </item>
-      <item name="Sanatorium" ru.name="Санаторий (с лечебной специализацией)" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Sanatorium" ru.name="Санаторий (с лечебной специализацией)" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/beach_umbrella.svg">
         <space />
         <key key="health_facility:type" value="therapy" />
         <key key="healthcare" value="yes" />
@@ -3240,7 +3242,7 @@
         <label text="then add health_specialty:cardiology=main tag." ru.text="укажите специализацию (для кардиологии health_specialty:cardiology=main)" />
         <reference ref="health20_specialities" />
       </item>
-      <item name="Ambulance station" ru.name="Станция скорой помощи" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Ambulance station" ru.name="Станция скорой помощи" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/ambulance.svg">
         <space />
         <key key="emergency" value="ambulance_station" />
         <key key="health_facility:type" value="first_aid" />
@@ -3250,7 +3252,7 @@
         <reference ref="name_website_phone_level_wheelchair_address" />
         <reference ref="health20_specialities" />
       </item>
-      <item name="Hospital" ru.name="Стационар (больница, госпиталь)" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Hospital" ru.name="Стационар (больница, госпиталь)" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/hospital.svg">
         <space />
         <key key="amenity" value="hospital" />
         <key key="health_facility:type" value="hospital" />
@@ -3263,7 +3265,7 @@
         <label text="then add health_specialty:ophthalmology=main tag." ru.text="укажите специализацию (для глазной health_specialty:ophthalmology=main)" />
         <reference ref="health20_specialities" />
       </item>
-      <item name="Dentist" ru.name="Стоматология (клиника, кабинет)" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Dentist" ru.name="Стоматология (клиника, кабинет)" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/tooth.svg">
         <space />
         <combo key="health_facility:type" text="Doctors or clinic" ru.text="Клиника или кабинет стоматолога" values="clinic,doctors" />
         <key key="amenity" value="dentist" />
@@ -3275,7 +3277,7 @@
         <reference ref="health20_provided_for" />
         <reference ref="health20_specialities" />
       </item>
-      <item name="First-aid center" ru.name="Травмпункт" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="First-aid center" ru.name="Травмпункт" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/bandage.svg">
         <space />
         <key key="amenity" value="doctors" />
         <key key="health_facility:type" value="first_aid" />
@@ -3286,7 +3288,7 @@
         <reference ref="health20_provided_for" />
         <reference ref="health20_specialities" />
       </item>
-      <item name="Hospice" ru.name="Хоспис" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Hospice" ru.name="Хоспис" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/dove.svg">
         <space />
         <key key="amenity" value="hospital" />
         <key key="health_facility:type" value="nursing_home" />
@@ -3297,8 +3299,8 @@
         <reference ref="health20_provided_for" />
       </item>
     </group>
-    <group name="Education facilities" ru.name="Образовательные учреждения" icon="https://upload.wikimedia.org/wikipedia/commons/7/76/Fxemoji_u1F393.svg">
-      <item name="Driving school" ru.name="Автошкола" type="node,closedway,multipolygon" preset_name_label="true">
+    <group name="Education facilities" ru.name="Образовательные учреждения" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/graduation_cap.svg">
+      <item name="Driving school" ru.name="Автошкола" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/car.svg">
         <space />
         <reference ref="name_ownership_website_phone_oh1_wheelchair_address" />
         <combo key="license_classes" text="License Classes" values="A;A1;B;BE;C,A;A1;B;B1;C;C1;D;D1;BE;CE;C1E;DE;D1E" />
@@ -3309,7 +3311,7 @@
         <key key="education_profile:driving" value="yes" />
         <key key="education_system:ru_standard" value="yes" />
       </item>
-      <item name="Kindergarten" ru.name="Детский сад" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Kindergarten" ru.name="Детский сад" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/child.svg">
         <space />
         <key key="amenity" value="kindergarten" />
         <key key="education" value="kindergarten" />
@@ -3318,7 +3320,7 @@
         <key key="education_system:ru_standard" value="yes" />
         <reference ref="name_ownership_website_phone_wheelchair_address" />
       </item>
-      <item name="University" ru.name="ВУЗ (университет, институт, академия)" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="University" ru.name="ВУЗ (университет, институт, академия)" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/graduation_cap.svg">
         <space />
         <key key="amenity" value="university" />
         <key key="education" value="university" />
@@ -3328,7 +3330,7 @@
         <reference ref="name_ownership_website_phone_wheelchair_address" />
         <reference ref="education_form" />
       </item>
-      <item name="College" ru.name="Колледж, ПТУ, техникум" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="College" ru.name="Колледж, ПТУ, техникум" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/books.svg">
         <space />
         <key key="amenity" value="college" />
         <key key="education" value="college" />
@@ -3338,7 +3340,7 @@
         <reference ref="name_ownership_website_phone_wheelchair_address" />
         <reference ref="education_form" />
       </item>
-      <item name="Language school" ru.name="Курсы/школа иностранного языка" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Language school" ru.name="Курсы/школа иностранного языка" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/speech.svg">
         <space />
         <key key="amenity" value="language_school" />
         <key key="education" value="courses" />
@@ -3349,7 +3351,7 @@
         <label text="Languages" ru.text="Языки:" />
         <reference ref="education_programme" />
       </item>
-      <item name="Music school" ru.name="Музыкальная школа" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Music school" ru.name="Музыкальная школа" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/music_note.svg">
         <space />
         <key key="amenity" value="music_school" />
         <key key="education" value="facultative_school" />
@@ -3359,7 +3361,7 @@
         <key key="education_system:ru_standard" value="yes" />
         <reference ref="name_ownership_website_phone_wheelchair_address" />
       </item>
-      <item name="Primary school" ru.name="Начальная школа" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Primary school" ru.name="Начальная школа" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/pencil.svg">
         <space />
         <key key="amenity" value="school" />
         <key key="education" value="school" />
@@ -3369,7 +3371,7 @@
         <key key="education_system:ru_standard" value="yes" />
         <reference ref="name_ownership_website_phone_wheelchair_address" />
       </item>
-      <item name="School" ru.name="Общеобразовательная школа (лицей, гимназия)" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="School" ru.name="Общеобразовательная школа (лицей, гимназия)" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/school.svg">
         <space />
         <key key="amenity" value="school" />
         <key key="education" value="school" />
@@ -3392,7 +3394,7 @@
         <label text="If school of foreign languages please add education_programme:EN/ES/DE/FR...=yes tag" ru.text="Для языковых спецшкол добавьте тег education_programme:EN/ES/DE/FR...=yes" />
         <reference ref="education_programme" />
       </item>
-      <item name="Sport school" ru.name="Спортивная школа (ДЮСШ, ДЮСШОР)" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Sport school" ru.name="Спортивная школа (ДЮСШ, ДЮСШОР)" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/soccer.svg">
         <space />
         <key key="amenity" value="training" />
         <key key="education" value="facultative_school" />
@@ -3404,7 +3406,7 @@
         <reference ref="sports_list" />
         <reference ref="name_ownership_website_phone_wheelchair_address" />
       </item>
-      <item name="Art school" ru.name="Художественная школа (школа искусств)" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Art school" ru.name="Художественная школа (школа искусств)" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/palette.svg">
         <space />
         <key key="amenity" value="training" />
         <key key="education" value="facultative_school" />
@@ -3417,8 +3419,8 @@
       </item>
     </group>
     <separator />
-    <group name="Urban units" ru.name="Городская инфраструктура" icon="https://upload.wikimedia.org/wikipedia/commons/c/ce/Fxemoji_u1F3E2.svg">
-      <item name="Public transport tickets shop" ru.name="Киоск &quot;Проездные билеты&quot; (общественный транспорт)" type="node,closedway,multipolygon" preset_name_label="true">
+    <group name="Urban units" ru.name="Городская инфраструктура" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/office_building.svg">
+      <item name="Public transport tickets shop" ru.name="Киоск &quot;Проездные билеты&quot; (общественный транспорт)" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/ticket.svg">
         <space />
         <combo key="contact:website" text="Website" default="http://www.mosgortrans.ru" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-13:00\,13:45-17:00; Fr 09:00-13:00\,13:45-15:45" />
@@ -3429,7 +3431,7 @@
         <key key="tickets:public_transport" value="yes" />
         <preset_link preset_name="Address" />
       </item>
-      <item name="Boat rental" ru.name="Лодочная станция (прокат плавсредств)" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/4/48/Twemoji_26f5.svg" preset_name_label="true">
+      <item name="Boat rental" ru.name="Лодочная станция (прокат плавсредств)" type="node,closedway,multipolygon" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/sailboat.svg" preset_name_label="true">
         <space />
         <reference ref="name" />
         <reference ref="oh1" />
@@ -3452,7 +3454,7 @@
         <preset_link preset_name="Address" />
         <preset_link preset_name="Contact (Schema with 'contact:*' Prefix)" />
       </item>
-      <item name="Bicycle parking stands" ru.name="Парковка для велосипедов (стойки)" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Bicycle parking stands" ru.name="Парковка для велосипедов (стойки)" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/bicycle.svg">
         <space />
         <text key="capacity" text="Capacity" ru.text="Вместимость (1 стойка = 2 велика)" length="3" />
         <key key="amenity" value="bicycle_parking" />
@@ -3462,7 +3464,7 @@
         <key key="opening_hours" value="24/7" />
         <key key="supervised" value="no" />
       </item> <!-- NOTE: всё то же самое прекрасно делается через пункт дефолтного пресета -->      
-      <item name="Kick-scooter parking stands" ru.name="Парковка для самокатов (стойки)" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Kick-scooter parking stands" ru.name="Парковка для самокатов (стойки)" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/kick_scooter.svg">
         <space />
         <text key="capacity" text="Capacity" ru.text="Вместимость" length="3" />
         <key key="amenity" value="kick-scooter_parking" />
@@ -3471,7 +3473,7 @@
         <key key="opening_hours" value="24/7" />
         <key key="supervised" value="no" />
       </item>      
-      <item name="Moscow parking meter" ru.name="Паркомат (Москва)" type="node" preset_name_label="true">
+      <item name="Moscow parking meter" ru.name="Паркомат (Москва)" type="node" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/parking.svg">
         <space />
         <text key="ref" text="Reference number" ru.text="Номер паркомата" />
         <key key="amenity" value="vending_machine" />
@@ -3488,7 +3490,7 @@
         <key key="vending" value="parking_tickets" />
         <link href="http://parking.mos.ru" text="Official website (place locator)" ru.text="Ссылка на сайт (номера паркоматов)" />
       </item>
-      <item name="Suburban train tickets shop" ru.name="Пригородная касса (электрички)" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Suburban train tickets shop" ru.name="Пригородная касса (электрички)" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/train.svg">
         <space />
         <combo key="contact:website" text="Website" values="http://www.central-ppk.ru" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-13:00\,13:45-17:00; Fr 09:00-13:00\,13:45-15:45" />
@@ -3498,7 +3500,7 @@
         <preset_link preset_name="Address" />
         <preset_link preset_name="Building" />
       </item>
-      <item name="Velobike bicycle rental point" ru.name="Пункт проката велосипедов Velobike" type="node" preset_name_label="true">
+      <item name="Velobike bicycle rental point" ru.name="Пункт проката велосипедов Velobike" type="node" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/bicycle.svg">
         <space />
         <reference ref="ref" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-13:00\,13:45-17:00; Fr 09:00-13:00\,13:45-15:45" default="24/7" />
@@ -3514,7 +3516,7 @@
         <key key="operator" value="АО «СитиБайк»" />
         <key key="seasonal" value="spring;summer;autumn" />
       </item>
-      <item name="Platon gantry" ru.name="Рамка оплаты системы &quot;Платон&quot;" type="node" preset_name_label="true">
+      <item name="Platon gantry" ru.name="Рамка оплаты системы &quot;Платон&quot;" type="node" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/truck.svg">
         <space />
         <reference ref="ref" />
         <key key="highway" value="toll_gantry" />
@@ -3524,7 +3526,7 @@
         <key key="operator" value="ООО &quot;РТ-Инвест Транспортные Системы&quot;" />
         <key key="toll:hgv_articulated" value="yes" />
       </item>
-      <item name="Suburban train tickets vending machine" ru.name="Терминал продажи пригородных билетов (электрички)" type="node" preset_name_label="true">
+      <item name="Suburban train tickets vending machine" ru.name="Терминал продажи пригородных билетов (электрички)" type="node" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/tickets.svg">
         <!-- TODO: Нужно определиться между использованием public_transport_tickets:suburban_train=yes или tickets:suburban_train=yes
         Пока что оставляю оба варианта. Правильней из них первый. Но второй распространенней -->
         <space />
@@ -3534,14 +3536,14 @@
         <key key="vending" value="public_transport_tickets" />
         <preset_link preset_name="Payment Methods" />
       </item>
-      <item name="Public transport tickets vending machine" ru.name="Терминал &quot;Проездные билеты&quot; (общественный транспорт)" type="node" preset_name_label="true">
+      <item name="Public transport tickets vending machine" ru.name="Терминал &quot;Проездные билеты&quot; (общественный транспорт)" type="node" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/ticket.svg">
         <space />
         <key key="amenity" value="vending_machine" />
         <key key="vending" value="public_transport_tickets" />
         <preset_link preset_name="Payment Methods" />
       </item>      
       <separator />
-        <item name="Vending machine Alive water" ru.name="Водомат &quot;Живая вода&quot;" type="node" preset_name_label="true">
+        <item name="Vending machine Alive water" ru.name="Водомат &quot;Живая вода&quot;" type="node" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/droplet.svg">
         <space />
         <combo key="contact:phone" text="Phone" default="+7 951 4773663,+7 950 7261704" />
         <combo key="contact:vk" text="Vk" default="https://vk.com/lifewatermi" />
@@ -3555,7 +3557,7 @@
         <key key="name" value="Живая вода" />
         <preset_link preset_name="Payment Methods" />
       </item>
-      <item name="Vending machine Third water tap" ru.name="Водомат &quot;Третий кран&quot;" type="node" preset_name_label="true">
+      <item name="Vending machine Third water tap" ru.name="Водомат &quot;Третий кран&quot;" type="node" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/tap_water.svg">
         <space />
         <combo key="contact:phone" text="Phone" default="+7 919 1131122" />
         <combo key="contact:vk" text="Vk" default="" />
@@ -3568,7 +3570,7 @@
         <key key="name" value="Третий кран" />
         <preset_link preset_name="Payment Methods" />
       </item>
-      <item name="Telephone Exchanges" ru.name="Автоматическая телефонная станция (АТС)" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/7/79/Noto_Emoji_KitKat_1f3e2.svg" preset_name_label="true">
+      <item name="Telephone Exchanges" ru.name="Автоматическая телефонная станция (АТС)" type="node,closedway,multipolygon" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/telephone_exchange.svg" preset_name_label="true">
         <space />
         <reference ref="operator" />
         <key key="telecom" value="central_office" />
@@ -3576,13 +3578,13 @@
         <preset_link preset_name="Address" />
         <preset_link preset_name="Building" />
       </item>
-      <item name="Mobile phone antenna (roof)" ru.name="Антенна сотовой связи (на крышах домов)" type="node" preset_name_label="true">
+      <item name="Mobile phone antenna (roof)" ru.name="Антенна сотовой связи (на крышах домов)" type="node" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/signal.svg">
         <space />
         <reference ref="operator" />
         <key key="communication:mobile_phone" value="yes" />
         <link wiki="Proposed_features/Telecommunications_tower" text="Proposed features/Telecommunications tower" />
       </item>
-      <item name="Communication tower" ru.name="Башня сотовой связи" type="node" preset_name_label="true">
+      <item name="Communication tower" ru.name="Башня сотовой связи" type="node" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/tower.svg">
         <space />
         <label text="Typically situated in the rural area. Is taller than masts." ru.text="Распространены в сельской местности. Выше мачт." />
         <label text="Are the buildings. In addition to ladders, they have platforms." ru.text="Являются строениями. Помимо лестниц оснащены платформами." />
@@ -3596,7 +3598,7 @@
         <link wiki="Tag:man_made%3Dtower" />
         <link href="https://www.google.ru/maps/@55.8245367,36.9184932,3a,75y,263.57h,116.88t/data=!3m6!1e1!3m4!1smAWF8VNFYQHed3GZ0W0SYA!2e0!7i13312!8i6656" text="Photo" ru.text="Фотография-пример" />
       </item>
-      <item name="Subway ventilation kiosk" ru.name="Вентиляционная шахта (киоск) метрополитена" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Subway ventilation kiosk" ru.name="Вентиляционная шахта (киоск) метрополитена" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/wind.svg">
         <space />
         <reference ref="name" />
         <reference ref="ref" />
@@ -3605,9 +3607,9 @@
         <key key="railway" value="ventilation_shaft" />
         <key key="service" value="ventilation" />
       </item>
-      <item name="Newsagent shop" ru.name="Газетный киоск (Пресса, Печать)" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/9/95/Fxemoji_u1F4F0.svg" preset_name_label="true">
+      <item name="Newsagent shop" ru.name="Газетный киоск (Пресса, Печать)" type="node,closedway,multipolygon" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/newspaper.svg" preset_name_label="true">
         <space />
-        <combo key="inscription" text="Inscription" ru.text="Вывеска на киоске" values="Пресса,Газеты,Союзпечать,Печать,Печатная продукция,Газеты и журналы,Роспечать,Пресса.рф,Вечерняя Москва,Центропечать,Пресс-Лайн,Первая полоса,Красногорские вести" />
+        <combo key="inscription" text="Inscription" ru.text="Вывеска на киоске" values="Пресса,Газеты,Союзпечать,Печать,Печатная продукция,Газеты и журналы,Роспечать,Пресса.рф,Вечерняя Москва,Центропечать,Пресс-Лайн,Первая полоса,Красногорские вести" values_searchable="true" />
         <combo key="opening_hours" text="Opening Hours" values="24/7,Mo-Su 09:00-21:00,Mo-Fr 10:00-21:00; Sa-Su 10:00-20:00,Mo-Th 09:00-13:00\,13:45-17:00; Fr 09:00-13:00\,13:45-15:45" />
         <text key="ref" text="Reference" ru.text="Номер киоска" />
         <key key="building" value="kiosk" />
@@ -3615,7 +3617,7 @@
         <key key="shop" value="newsagent" />
         <preset_link preset_name="Address" />
       </item>
-      <item name="Gas substation" ru.name="Газорегуляторный пункт" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Gas substation" ru.name="Газорегуляторный пункт" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/fire.svg">
         <!-- QUESTION:NB: добавить тэги здания и этажности?
             нет, потому что часто это не здание -->
         <space />
@@ -3628,7 +3630,7 @@
         <preset_link preset_name="Address" />
         <preset_link preset_name="Building" />
       </item>
-      <item name="MGSA garages" ru.name="Гаражи МГСА (территория)" type="closedway,multipolygon" preset_name_label="true">
+      <item name="MGSA garages" ru.name="Гаражи МГСА (территория)" type="closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/car.svg">
         <space />
         <label text="An inscription on a plate looks like: МГСА Тимирязевский ТС Автостоянка № 72/3" ru.text="Пример надписи на табличке: МГСА Тимирязевский ТС Автостоянка № 72/3" />
         <label text="Use for lands, not buildings." ru.text="Использовать для территории гаражей, а не самих зданий." />
@@ -3640,7 +3642,7 @@
         <key key="operator" value="МГСА" />
         <preset_link preset_name="Address" />
       </item>
-      <item name="City garage" ru.name="Городской гараж (зелёный поликарбонат)" type="closedway,multipolygon" preset_name_label="true">
+      <item name="City garage" ru.name="Городской гараж (зелёный поликарбонат)" type="closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/house.svg">
         <space />
         <label text="Is situated in residential areas. Walls and roof are made of green polycarbonate." ru.text="Расположен в дворах жилых домов. Стены и крыша из зелёного поликарбоната." />
         <space />
@@ -3656,7 +3658,7 @@
         <key key="roof:shape" value="round" />
         <preset_link preset_name="Address" />
       </item>
-      <item name="Moscow WC booth" ru.name="Городской туалет (Москва)" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/3/3f/Emojione_1F6BE.svg" preset_name_label="true">
+      <item name="Moscow WC booth" ru.name="Городской туалет (Москва)" type="node,closedway,multipolygon" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/toilet.svg" preset_name_label="true">
         <space />
         <label text="It has two doors and orange colour." ru.text="Рыжие кабинки. Две двери." />
         <key key="amenity" value="toilets" />
@@ -3673,7 +3675,7 @@
         <key key="toilets:disposal" value="flush" />
         <key key="toilets:position" value="seated" />
       </item>
-      <item name="Information totem (map)" ru.name="Информационная стела/колонна (карта)" type="node" preset_name_label="true">
+      <item name="Information totem (map)" ru.name="Информационная стела/колонна (карта)" type="node" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/map.svg">
         <space />
         <check key="luminous" text="Luminous (lightbox)" ru.text="Светящийся (лайтбокс)" default="on" />
         <key key="information" value="map" />
@@ -3682,7 +3684,7 @@
         <key key="tourism" value="information" />
         <reference ref="wifi" />
       </item>
-      <item name="Sewage pumping station" ru.name="Канализационная насосная станция" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Sewage pumping station" ru.name="Канализационная насосная станция" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/toilet.svg">
         <!-- QUESTION:NB: добавить тэги здания и этажности?
             нет, потому что часто это не здание -->
         <space />
@@ -3693,7 +3695,7 @@
         <preset_link preset_name="Address" />
         <preset_link preset_name="Building" />
       </item>
-      <item name="Ice cream shop" ru.name="Киоск &quot;Мороженое&quot;" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/5/5c/Emojione_1F366.svg" preset_name_label="true">
+      <item name="Ice cream shop" ru.name="Киоск &quot;Мороженое&quot;" type="node,closedway,multipolygon" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/ice_cream.svg" preset_name_label="true">
         <space />
         <combo key="inscription" text="Inscription" ru.text="Вывеска на киоске" values="Мороженое" />
         <combo key="brand" text="Brand" values="Айсберри" />
@@ -3703,7 +3705,7 @@
         <key key="amenity" value="ice_cream" />
         <preset_link preset_name="Address" />
       </item>
-      <item name="Minor power substation (building)" ru.name="Трансформаторная подстанция (ТП, потребительская; здание)" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/d/d0/Emoji_u26a1.svg" preset_name_label="true">
+      <item name="Minor power substation (building)" ru.name="Трансформаторная подстанция (ТП, потребительская; здание)" type="node,closedway,multipolygon" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/high_voltage.svg" preset_name_label="true">
         <space />
         <reference ref="operator" />
         <reference ref="ref" />
@@ -3715,7 +3717,7 @@
         <key key="utility" value="power" />
         <preset_link preset_name="Address" />
       </item>
-      <item name="Minor power substation (street cabinet)" ru.name="Трансформаторная подстанция (ТП, потребительская; шкаф)" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/d/d0/Emoji_u26a1.svg" preset_name_label="true">
+      <item name="Minor power substation (street cabinet)" ru.name="Трансформаторная подстанция (ТП, потребительская; шкаф)" type="node,closedway,multipolygon" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/high_voltage.svg" preset_name_label="true">
         <space />
         <reference ref="operator" />
         <reference ref="ref" />
@@ -3724,7 +3726,7 @@
         <key key="utility" value="power" />
         <key key="substation" value="minor_distribution" />
       </item>
-      <item name="Communication mast" ru.name="Мачта сотовой связи" type="node" preset_name_label="true">
+      <item name="Communication mast" ru.name="Мачта сотовой связи" type="node" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/antenna.svg">
         <space />
         <label text="Typically situated in the urban area. Is relatively short." ru.text="Распространены в городах. Сравнительно невысокие." />
         <label text="Is not a building. Has only ladders, but not platforms." ru.text="Оснащены лишь лестницей, по которой можно взобраться для обслуживания." />
@@ -3739,12 +3741,12 @@
         <link wiki="Proposed_features/Telecommunications_tower" text="Proposed features/Telecommunications tower" />
         <link wiki="Tag:man_made%3Dmast" />
       </item>
-      <item name="Clothes dryer" ru.name="Площадка для сушки белья" type="node,closedway,multipolygon" preset_name_label="true">
+      <item name="Clothes dryer" ru.name="Площадка для сушки белья" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/clothes_dryer.png">
         <!-- https://d30y9cdsu7xlg0.cloudfront.net/png/174655-200.png NOTE: второй вариант иконки -->
         <space />
         <key key="amenity" value="clothes_dryer" />
         <combo key="clothes_dryer" text="Clothes dryer" ru.text="Тип сушилки" values="pulley,rack,t-post,umbrella" ru.display_values="с роликом,стойка,столб,в виде зонта" default="rack" />
-        <combo key="surface" text="Surface" ru.text="Покрытие площадки" values="paved,unpaved,asphalt,concrete,concrete:plates,concrete:lanes,paving_stones,sett,cobblestone,grass_paver,compacted,fine_gravel,gravel,pebblestone,ground,mud,sand,grass,wood,metal" />
+        <combo key="surface" text="Surface" ru.text="Покрытие площадки" values="paved,unpaved,asphalt,concrete,concrete:plates,concrete:lanes,paving_stones,sett,cobblestone,grass_paver,compacted,fine_gravel,gravel,pebblestone,ground,mud,sand,grass,wood,metal" values_searchable="true" />
         <combo key="fee" text="Fee" ru.text="Платная" values="yes,no" />
         <combo key="access" text="Access" values="yes,permissive,private,customers,no" />
         <checkgroup columns="3">
@@ -3754,19 +3756,19 @@
         </checkgroup>
         <link wiki="RU:Tag:amenity%3Dclothes_dryer" />
       </item>
-      <item name="Postbox (Russian Post)" ru.name="Почтовый ящик (Почта России)" type="node" icon="https://upload.wikimedia.org/wikipedia/commons/8/82/Twemoji_1f4ee.svg" preset_name_label="true">
+      <item name="Postbox (Russian Post)" ru.name="Почтовый ящик (Почта России)" type="node" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/post_box.svg" preset_name_label="true">
         <space />
         <text key="ref" text="Reference number" ru.text="Номер почтового ящика" />
         <combo key="collection_times" text="Collection times" values="Mo-Su 05:00\,14:10,Mo-Fr 05:00\,14:10; Sa 09:15; Su 14:10" />
         <combo key="post_box:type" text="Type" values="pillar,lamp,wall,meter" values_context="post_box" />
-        <combo key="post_box:design" text="Design ref" ru.text="Модель" values="ЯПВ-Н-П,ЯПВ-Н-С,ЯПВ-Т-П,ЯПВ-Т-С,ЯПНМ-I-С,ЯПНМ-II-С,ЯПНР-СМ,ЯПНР-II-С,ЯПНР-II-С-red,ЯПНР-II-С-yellow,gabled,rounded_pillar,small_soviet,soviet" />
+        <combo key="post_box:design" text="Design ref" ru.text="Модель" values="ЯПВ-Н-П,ЯПВ-Н-С,ЯПВ-Т-П,ЯПВ-Т-С,ЯПНМ-I-С,ЯПНМ-II-С,ЯПНР-СМ,ЯПНР-II-С,ЯПНР-II-С-red,ЯПНР-II-С-yellow,gabled,rounded_pillar,small_soviet,soviet" values_searchable="true" />
         <check key="drive_through" text="Drive through" />
         <key key="amenity" value="post_box" />
         <key key="brand" value="Почта России" />
         <key key="operator" value="АО «Почта России»" />
         <link wiki="Tag:amenity%3Dpost_box" />
       </item>
-      <item name="MGTS payphone" ru.name="Таксофон &quot;МГТС&quot;" type="node" icon="https://upload.wikimedia.org/wikipedia/commons/a/a0/Twemoji_1f4de.svg" preset_name_label="true">
+      <item name="MGTS payphone" ru.name="Таксофон &quot;МГТС&quot;" type="node" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/payphone.svg" preset_name_label="true">
         <space />
         <key key="amenity" value="telephone" />
         <key key="brand" value="МГТС" />
@@ -3776,7 +3778,7 @@
         <key key="payment:cash" value="no" />
         <key key="payment:telephone_cards" value="yes" />
       </item> <!-- IDEA: есть мысль удалить этот пункт. Судя по https://data.mos.ru/opendata/841/data/map?versionNumber=3&releaseNumber=4 эти таксофоны в основном в помещениях (и туда ограничен доступ). Например, в школах. -->
-      <item name="Rostelecom payphone" ru.name="Таксофон &quot;Ростелеком&quot;" type="node" icon="https://upload.wikimedia.org/wikipedia/commons/a/a0/Twemoji_1f4de.svg" preset_name_label="true">
+      <item name="Rostelecom payphone" ru.name="Таксофон &quot;Ростелеком&quot;" type="node" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/payphone.svg" preset_name_label="true">
         <space />
         <key key="amenity" value="telephone" />
         <combo key="brand" text="Brand" values="Ростелеком,Россвязь" />
@@ -3786,7 +3788,7 @@
         <key key="payment:cash" value="no" />
         <key key="payment:telephone_cards" value="yes" />
       </item>
-      <item name="Local heat substation" ru.name="Центральный/индивидуальный тепловой пункт" type="node,closedway,multipolygon" icon="https://upload.wikimedia.org/wikipedia/commons/c/cb/Emojione_1F3ED.svg" preset_name_label="true">
+      <item name="Local heat substation" ru.name="Центральный/индивидуальный тепловой пункт" type="node,closedway,multipolygon" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/factory.svg" preset_name_label="true">
         <space />
         <reference ref="operator" />
         <reference ref="ref" />
