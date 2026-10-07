@@ -3573,7 +3573,7 @@
       <item name="Telephone Exchanges" ru.name="Автоматическая телефонная станция (АТС)" type="node,closedway,multipolygon" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/telephone_exchange.svg" preset_name_label="true">
         <space />
         <reference ref="operator" />
-        <key key="telecom" value="central_office" />
+        <key key="telecom" value="exchange" />
         <link wiki="WikiProject_Telecoms" />
         <preset_link preset_name="Address" />
         <preset_link preset_name="Building" />

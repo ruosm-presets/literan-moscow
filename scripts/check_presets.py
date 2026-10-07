@@ -13,6 +13,9 @@ Checks:
   6. link targets are reachable via GET (warning by default, error with
      --strict-links); for every http:// link the https:// twin is probed and
      suggested when available
+  7. tags do not use schemes deprecated by JOSM's validator
+     (resources/data/validator/deprecated.mapcss, fetched from the JOSM
+     repository; skipped with --no-http)
 
 Usage:
   python3 scripts/check_presets.py [--no-http] [--strict-links] [file.xml ...]
@@ -38,6 +41,10 @@ PAGES_BASE = "https://ruosm-presets.github.io/literan-moscow/"
 ICON_NAME_RE = re.compile(r"^[a-z0-9_]+\.(svg|png)$")
 LIST_SPLIT_RE = re.compile(r"(?<!\\),")
 UA = {"User-Agent": "literan-moscow-preset-checks/1.0 (JOSM preset CI)"}
+DEPRECATED_MAPCSS_URL = (
+    "https://raw.githubusercontent.com/openstreetmap/josm/master/"
+    "resources/data/validator/deprecated.mapcss"
+)
 
 
 class Report:
@@ -225,6 +232,98 @@ def check_links(links: list[str], rep: Report, workers: int = 16, strict: bool =
             report(f"link returned HTTP {status}: {url}{note}")
 
 
+def load_deprecated() -> list[dict] | None:
+    """Parse JOSM deprecated.mapcss into a list of rules.
+
+    Each rule: {"clauses": [(key, value|None), ...], "alts": [str], "error": bool}.
+    Rules with regex/negation clauses are skipped to avoid false positives.
+    Returns None if the file could not be fetched.
+    """
+    try:
+        req = urllib.request.Request(DEPRECATED_MAPCSS_URL, headers=UA)
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            css = resp.read().decode("utf-8")
+    except Exception:  # noqa: BLE001
+        return None
+    rules = []
+    # selector type part is optional (bare `*[key=...]`), body ends with `}` on its own line
+    for m in re.finditer(r"(?:[\w|]+\s*)?\*?\s*((?:\[[^\]]+\])+)\s*\{(.*?)\n\}", css, re.S):
+        body = m.group(2)
+        if "deprecated" not in body and "throwError" not in body:
+            continue
+        clauses, plain = [], True
+        for clause in re.findall(r"\[([^\]]+)\]", m.group(1)):
+            if "=" in clause and "~" not in clause and "!" not in clause:
+                k, v = clause.split("=", 1)
+                clauses.append((k.strip(), v.strip()))
+            elif re.fullmatch(r"[\w:*-]+", clause.strip()):
+                clauses.append((clause.strip(), None))
+            else:
+                plain = False
+        if plain and clauses:
+            rules.append({
+                "clauses": clauses,
+                "alts": re.findall(r'suggestAlternative:\s*"([^"]+)"', body),
+                "error": "throwError" in body,
+            })
+    return rules
+
+
+def expand_items(root: ET.Element):
+    """Yield (item, group_path, elements) with chunk references expanded."""
+    chunks = {c.get("id"): c for c in root.iter(f"{{{NS}}}chunk")}
+
+    def elems_of(e: ET.Element, seen: frozenset[str]) -> list[ET.Element]:
+        out = []
+        for c in e:
+            t = c.tag.split("}")[-1]
+            if t == "reference" and c.get("ref") in chunks and c.get("ref") not in seen:
+                out += elems_of(chunks[c.get("ref")], seen | {c.get("ref")})
+            else:
+                out.append(c)
+        return out
+
+    def walk(e: ET.Element, gpath: tuple[str, ...]):
+        for c in e:
+            t = c.tag.split("}")[-1]
+            if t == "item":
+                yield c, gpath, elems_of(c, frozenset())
+            elif t == "group":
+                yield from walk(c, gpath + (c.get("name") or "?",))
+
+    yield from walk(root, ())
+
+
+def check_deprecated(root: ET.Element, rep: Report) -> None:
+    """Flag preset tags matching JOSM validator deprecation rules."""
+    rules = load_deprecated()
+    if rules is None:
+        rep.warn("could not fetch deprecated.mapcss; deprecation check skipped")
+        return
+    for item, gpath, elems in expand_items(root):
+        name = item.get("name") or "?"
+        static = {}
+        keys = set()
+        for e in elems:
+            if e.tag == f"{{{NS}}}key" and e.get("value") is not None:
+                static[(e.get("key"), e.get("value"))] = e
+                keys.add(e.get("key"))
+            elif e.tag in COMBO_TAGS and (e.get("values") or "").strip():
+                keys.add(e.get("key"))
+                for v in split_keep(e.get("values")):
+                    static[(e.get("key"), v)] = e
+        for rule in rules:
+            matched = all(
+                (clause[1] is None and clause[0] in keys)
+                or (clause[1] is not None and clause in static)
+                for clause in rule["clauses"]
+            )
+            if matched:
+                tag = "+".join(f"{k}={v}" if v else k for k, v in rule["clauses"])
+                alt = f" -> use {' or '.join(rule['alts'])}" if rule["alts"] else ""
+                rep.error(f"{name}: deprecated tagging {tag}{alt}")
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("files", nargs="+", help="preset XML files")
@@ -242,8 +341,10 @@ def main() -> int:
             print(f"::error file={path}::XML parse error: {exc}")
             return 1
         links = check_structure(root, rep, Path(path))
-        if not args.no_http and links:
-            check_links(links, rep, strict=args.strict_links)
+        if not args.no_http:
+            check_deprecated(root, rep)
+            if links:
+                check_links(links, rep, strict=args.strict_links)
         for w in rep.warnings:
             print(f"::warning file={path}::{w}")
         for e in rep.errors:
