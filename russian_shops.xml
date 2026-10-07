@@ -480,6 +480,25 @@
         <link href="https://www.gemotest.ru/address/moskva/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="oh1_level_wheelchair_address" />
       </item>
+      <item name="Dental-Service" ru.name="Дентал-Сервис" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/tooth.svg">
+        <space />
+        <combo key="contact:phone" text="Phone number" default="+7 383 3080000" />
+        <key key="amenity" value="dentist" />
+        <key key="brand" value="Дентал-Сервис" />
+        <key key="contact:email" value="vopros-otvet@dentservice.ru" />
+        <key key="contact:telegram" value="https://t.me/dentalserviceofficial" />
+        <key key="contact:vk" value="https://vk.com/dentalserviceofficial" />
+        <key key="contact:website" value="https://dentservice.ru/" />
+        <key key="contact:youtube" value="https://www.youtube.com/channel/UCdMZsKWbEgGaN0ZtCBuzeXw" />
+        <key key="health_facility:type" value="clinic" />
+        <key key="health_specialty:dentistry" value="yes" />
+        <key key="healthcare" value="dentist" />
+        <key key="medical_system:western" value="yes" />
+        <key key="name" value="Дентал-Сервис" />
+        <key key="name:ru" value="Дентал-Сервис" />
+        <link href="https://dentservice.ru/contacts/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <reference ref="oh1_level_wheelchair_address" />
+      </item>
       <item name="Invitro" ru.name="Инвитро" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/blood_drop.svg">
         <space />
         <combo key="contact:phone" text="Phone number" values="+7 495 3630363" default="+7 800 2003630" />
