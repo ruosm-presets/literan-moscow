@@ -35,6 +35,7 @@ URL_RE = re.compile(r"^https?://\S+$")
 WIKI_PAGE_RE = re.compile(r"^[A-Za-z0-9_%:.#=/-]+$")
 OSM_WIKI_URL = "https://wiki.openstreetmap.org/wiki/"
 PAGES_BASE = "https://ruosm-presets.github.io/literan-moscow/"
+ICON_NAME_RE = re.compile(r"^[a-z0-9_]+\.(svg|png)$")
 LIST_SPLIT_RE = re.compile(r"(?<!\\),")
 UA = {"User-Agent": "literan-moscow-preset-checks/1.0 (JOSM preset CI)"}
 
@@ -155,6 +156,9 @@ def check_structure(root: ET.Element, rep: Report, xml_path: Path) -> list[str]:
             )
         elif not (base_dir / icon[len(PAGES_BASE):]).is_file():
             rep.error(f"{where(e, ctx)}: icon file missing in repo: {icon[len(PAGES_BASE):]!r}")
+        elif not ICON_NAME_RE.match(icon.rsplit("/", 1)[-1]):
+            rep.error(f"{where(e, ctx)}: icon filename must be lowercase snake_case"
+                      f" (e.g. shopping_cart.svg), got: {icon.rsplit('/', 1)[-1]!r}")
 
     # 4. links: collect URLs for reachability probing
     links: list[str] = []
