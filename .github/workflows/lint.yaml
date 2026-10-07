@@ -17,3 +17,9 @@ jobs:
       with:
         xml-file: ./russian_shops.xml
         xml-schema-file: ./tagging-preset.xsd
+    - name: Set up Python
+      uses: actions/setup-python@v7
+      with:
+        python-version: '3.x'
+    - name: Preset sanity checks (values/chunks/icons/links)
+      run: python scripts/check_presets.py russian_shops.xml
