@@ -3,7 +3,7 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://josm.openstreetmap.de/tagging-preset-1.0 tagging-preset.xsd"
   author="literan and others"
-  version="2026.10.07_7"
+  version="2026.10.07_8"
   link="https://github.com/ruosm-presets/literan-moscow"
   icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/ru_flag.svg"
   shortdescription="Russian POIs"
