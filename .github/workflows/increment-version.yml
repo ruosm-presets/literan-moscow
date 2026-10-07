@@ -9,6 +9,7 @@ on:
 
 jobs:
   update-version:
+    if: github.repository == 'ruosm-presets/literan-moscow'
     runs-on: ubuntu-latest
     permissions:
       contents: write
