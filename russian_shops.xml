@@ -224,6 +224,16 @@
         <link href="https://366.ru/apteki/map" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="oh3_level_wheelchair_address_dispencing" />
       </item>
+      <item name="Berdskaya" ru.name="Бердская" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/pill.svg">
+        <space />
+        <key key="amenity" value="pharmacy" />
+        <key key="brand" value="Бердская" />
+        <key key="healthcare" value="pharmacy" />
+        <key key="name" value="Бердская" />
+        <key key="name:en" value="Berdskaya" />
+        <key key="name:ru" value="Бердская" />
+        <reference ref="oh3_level_wheelchair_address_dispencing" />
+      </item>
       <item name="Vita" ru.name="Вита" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/pill.svg">
         <space />
         <combo key="contact:phone" text="Phone number" default="+7 800 7550003" />
@@ -1345,10 +1355,10 @@
         <key key="brand" value="Мария-Ра" />
         <key key="brand:wikidata" value="Q4281631" />
         <key key="brand:wikipedia" value="ru:Мария-Ра" />
-        <key key="contact:email" value="ura@maria-ra.ru" />
-        <key key="contact:facebook" value="https://www.facebook.com/mariarashop/" />
-        <key key="contact:instagram" value="https://www.instagram.com/mariarashop/" />
+        <key key="contact:ok" value="https://ok.ru/mariarashop" />
         <key key="contact:phone" value="+7 800 1000810" />
+        <key key="contact:telegram" value="https://t.me/mariarashop" />
+        <key key="contact:vk" value="https://vk.com/mariarashop" />
         <key key="contact:website" value="https://www.maria-ra.ru/" />
         <key key="name" value="Мария-Ра" />
         <key key="name:ru" value="Мария-Ра" />
