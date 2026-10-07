@@ -40,7 +40,8 @@ OSM_WIKI_URL = "https://wiki.openstreetmap.org/wiki/"
 PAGES_BASE = "https://ruosm-presets.github.io/literan-moscow/"
 ICON_NAME_RE = re.compile(r"^[a-z0-9_]+\.(svg|png)$")
 LIST_SPLIT_RE = re.compile(r"(?<!\\),")
-UA = {"User-Agent": "literan-moscow-preset-checks/1.0 (JOSM preset CI)"}
+UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) "
+      "Chrome/126.0.0.0 Safari/537.36 literan-moscow-preset-checks/1.0"}
 DEPRECATED_MAPCSS_URL = (
     "https://raw.githubusercontent.com/openstreetmap/josm/master/"
     "resources/data/validator/deprecated.mapcss"
