@@ -284,7 +284,7 @@
         <key key="name:ru" value="Живика" />
         <key key="operator" value="ООО «Живика Центр»" />
         <link href="https://www.aptekazhivika.ru/store" text="Official website (place locator)" ru.text="Ссылка на сайт московской обл (часы работы, координаты и т.п.)" />
-        <link href="http://zhivika.ru/adresa_aptek/" text="Official website ural (place locator)" ru.text="Ссылка на сайт уральского региона (часы работы, координаты и т.п.)" />
+        <link href="https://zhivika.ru/adresa_aptek/" text="Official website ural (place locator)" ru.text="Ссылка на сайт уральского региона (часы работы, координаты и т.п.)" />
         <reference ref="phone_oh2_wheelchair_address" />
       </item>
       <item name="Zdravcity" ru.name="Здравсити" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/pill.svg">
@@ -563,7 +563,7 @@
         <key key="diet:vegetarian" value="yes" />
         <key key="name" value="Il Патио" />
         <key key="name:ru" value="Il Патио" />
-        <link href="http://ilpatio.ru/restaurants/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://ilpatio.ru/restaurants/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address_wifi_outdoorseating_drivethrough" />
       </item>
       <item name="KFC" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/chicken_leg.svg">
@@ -1248,7 +1248,7 @@
         <key key="contact:website" value="https://доброцен.рф/" />
         <key key="name" value="Доброцен" />
         <key key="name:ru" value="Доброцен" />
-        <link href="http://dobrotsen.ru/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://dobrotsen.ru/" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
       <item name="Ermolino" ru.name="Ермолино" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/ice_cube.svg">
@@ -1369,7 +1369,7 @@
         <key key="name" value="Монетка" />
         <key key="name:ru" value="Монетка" />
         <key key="operator" value="ООО &quot;Фокус-Ритейл&quot;" />
-        <link href="http://www.monetka.ru/urfo/shops_map" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <link href="https://www.monetka.ru/urfo/shops_map" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="wheelchair_address" />
       </item>
       <item name="Myasnitsky Ryad" ru.name="Мясницкий ряд" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/meat.svg">
@@ -3419,14 +3419,14 @@
         <key key="contact:phone" value="+7 495 5395454" />
         <key key="contact:twitter" value="https://twitter.com/parking_mos_ru" />
         <key key="contact:vk" value="https://vk.com/transportmos" />
-        <key key="contact:website" value="http://parking.mos.ru" />
+        <key key="contact:website" value="https://parking.mos.ru" />
         <key key="opening_hours" value="24/7" />
         <key key="operator" value="ГКУ «Администратор Московского парковочного пространства»" />
         <key key="payment:cash" value="no" />
         <key key="payment:credit_cards" value="yes" />
         <key key="payment:debit_cards" value="yes" />
         <key key="vending" value="parking_tickets" />
-        <link href="http://parking.mos.ru" text="Official website (place locator)" ru.text="Ссылка на сайт (номера паркоматов)" />
+        <link href="https://parking.mos.ru" text="Official website (place locator)" ru.text="Ссылка на сайт (номера паркоматов)" />
       </item>
       <item name="Suburban train tickets shop" ru.name="Пригородная касса (электрички)" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/train.svg">
         <space />
