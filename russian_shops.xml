@@ -2767,6 +2767,22 @@
         <link href="https://www.r-ulybka.ru/stores" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
         <reference ref="level_wheelchair_address" />
       </item>
+      <item name="4 lapy" ru.name="Четыре лапы" type="node,closedway,multipolygon" preset_name_label="true" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/rainbow.svg">
+        <space />
+        <combo key="contact:phone" text="Phone number" default="+7 800 7700022" />
+        <combo key="opening_hours" text="Opening Hours" values="Mo-Su 10:00-20:00,Mo-Su 10:00-22:00,Mo-Su 09:00-20:00,Mo-Su 09:00-21:00,Mo-Su 10:00-21:00" />
+        <key key="brand" value="Четыре лапы" />
+        <key key="brand:wikidata" value="Q62390783" />
+        <key key="contact:instagram" value="https://www.instagram.com/4lapy.ru" />
+        <key key="contact:telegram" value="https://t.me/zoo_4lapy" />
+        <key key="contact:vk" value="https://vk.ru/4lapy_ru" />
+        <key key="contact:website" value="https://4lapy.ru" />
+        <key key="name" value="Четыре лапы" />
+        <key key="name:ru" value="Четыре лапы" />
+        <key key="shop" value="pet" />
+        <link href="https://4lapy.ru/shops" text="Official website (place locator)" ru.text="Ссылка на сайт (часы работы, координаты и т.п.)" />
+        <reference ref="level_wheelchair_address" />
+      </item>
     </group>
     <separator />
     <group name="Government services" ru.name="Государственные органы" icon="https://ruosm-presets.github.io/literan-moscow/pics/icons/police.svg">
